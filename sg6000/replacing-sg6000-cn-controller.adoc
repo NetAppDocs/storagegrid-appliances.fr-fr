@@ -1,0 +1,129 @@
+---
+permalink: sg6000/replacing-sg6000-cn-controller.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, Replacing, replace, sg6000-cn, controller, remove, removing, removal, install, installing, installation 
+summary: 'Vous devrez peut-être remplacer le contrôleur SG6000-CN s"il ne fonctionne pas de manière optimale ou s"il est défectueux.' 
+---
+= Remplacer le contrôleur SG6000-CN
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous devrez peut-être remplacer le contrôleur SG6000-CN s'il ne fonctionne pas de manière optimale ou s'il est défectueux.
+
+.Avant de commencer
+* Vous disposez d'un contrôleur de remplacement avec la même référence que le contrôleur que vous remplacez.
+* Vous avez des étiquettes pour identifier chaque câble connecté au contrôleur.
+* Vous avez trouvé le contrôleur à remplacer dans le data Center.
++
+link:locating-controller-in-data-center.html["Localiser le contrôleur dans le data Center"]
+
+
+
+.Description de la tâche
+Le nœud de stockage de l'appliance ne sera pas accessible lors du remplacement du contrôleur SG6000-CN. Si le contrôleur SG6000-CN fonctionne suffisamment, vous pouvez effectuer un arrêt contrôlé au début de cette procédure.
+
+
+NOTE: Si vous remplacez le contrôleur avant d'installer le logiciel StorageGRID, il se peut que vous ne puissiez pas accéder au programme d'installation de l'appliance StorageGRID immédiatement après avoir terminé cette procédure. Bien que vous puissiez accéder au programme d'installation de l'appliance StorageGRID à partir d'autres hôtes situés sur le même sous-réseau que l'appliance, vous ne pouvez pas y accéder à partir d'hôtes situés sur d'autres sous-réseaux. Cette condition doit se résoudre dans les 15 minutes (lorsque les entrées du cache ARP pour le contrôleur d'origine sont écoulées), ou vous pouvez effacer immédiatement la condition en éliminant manuellement les anciennes entrées du cache ARP à partir du routeur ou de la passerelle local.
+
+.Étapes
+. Affichez les configurations actuelles de l'appareil et enregistrez-les.
++
+.. Connectez-vous à l'appliance à remplacer :
++
+... Saisissez la commande suivante : `ssh admin@_grid_node_IP_`
+... Entrez le mot de passe indiqué dans le `Passwords.txt` fichier.
+... Entrez la commande suivante pour passer à la racine : `su -`
+... Entrez le mot de passe indiqué dans le `Passwords.txt` fichier.
++
+Lorsque vous êtes connecté en tant que root, l'invite passe de `$` à `#`.
+
+
+
+.. Entrez : `*run-host-command ipmitool lan print*` Pour afficher les configurations BMC actuelles de l'appliance.
+
+
+. Si le contrôleur SG6000-CN fonctionne suffisamment pour permettre un arrêt contrôlé, link:power-sg6000-cn-controller-off-on.html#shut-down-sg6000-cn-controller["Arrêtez le contrôleur SG6000-CN"].
+. Si l'une des interfaces réseau de cette appliance StorageGRID est configurée pour DHCP, vous devrez peut-être mettre à jour les attributions de bail DHCP permanentes sur les serveurs DHCP pour référencer les adresses MAC de l'appliance de remplacement. Cette mise à jour garantit que l'appliance se voit attribuer les adresses IP attendues. Voir link:../commonhardware/locate-mac-address.html["Mettre à jour les références d'adresse MAC"].
+. Retirez et remplacez le contrôleur SG6000-CN :
++
+.. Etiqueter les câbles, puis débrancher les câbles et les émetteurs-récepteurs SFP+ ou SFP28.
++
+
+NOTE: Pour éviter toute dégradation des performances, ne tordez pas, ne pliez pas, ne pincez pas ou ne montez pas sur les câbles.
+
+.. Retirez le contrôleur défectueux de l'armoire ou du rack.
+.. Installez le contrôleur de remplacement dans l'armoire ou le rack.
+.. Remplacez les câbles et les émetteurs-récepteurs SFP+ ou SFP28.
+.. Mettez le contrôleur et sous tension link:../installconfig/viewing-status-indicators.html["Surveiller les LED du contrôleur"] et link:../installconfig/troubleshooting-hardware-installation.html#view-boot-codes["codes de démarrage"].
++
+Au démarrage du contrôleur, il installe automatiquement les mises à jour en attente du contrôleur et des composants de l'appliance. L'installation de ces mises à jour peut prendre une heure ou plus et le contrôleur peut redémarrer plusieurs fois.
+
++
+
+CAUTION: Ne redémarrez pas l'appareil manuellement, sauf si vous êtes certain qu'il est _NOT_ au milieu d'une mise à jour du micrologiciel.
+
++
+Vous pouvez connecter un link:../installconfig/troubleshooting-hardware-installation.html["superviser"] ou link:../installconfig/accessing-storagegrid-appliance-installer.html["ordinateur portable de service"] Au contrôleur SG6000-CN pour surveiller la progression de l'installation de la mise à jour.
+
++
+
+NOTE: Il se peut qu'une connexion de service-ordinateur portable ne soit pas disponible à certaines étapes du processus d'installation.
+
+
+
+. Si l'appliance sur laquelle vous avez remplacé le contrôleur a utilisé un serveur de gestion des clés (KMS) pour chiffrer les données, il est possible que vous ayez besoin d'une configuration supplémentaire avant que le nœud puisse rejoindre la grille. Si le nœud ne rejoint pas automatiquement la grille, assurez-vous que ces paramètres de configuration ont été transférés vers le nouveau contrôleur et configurez manuellement les paramètres qui ne possèdent pas la configuration attendue :
++
+** link:../installconfig/configuring-network-links.html["Configurer les liaisons réseau"]
+** link:../installconfig/setting-ip-configuration.html["Configurez les adresses IP StorageGRID"]
+** https://docs.netapp.com/us-en/storagegrid-118/admin/kms-overview-of-kms-and-appliance-configuration.html#set-up-the-appliance["Configurez le chiffrement des nœuds pour l'appliance"^]
+
+
+. Connectez-vous à l'appliance avec le contrôleur remplacé :
++
+.. Saisissez la commande suivante : `ssh admin@_grid_node_IP_`
+.. Entrez le mot de passe indiqué dans le `Passwords.txt` fichier.
+.. Entrez la commande suivante pour passer à la racine : `su -`
+.. Entrez le mot de passe indiqué dans le `Passwords.txt` fichier.
+
+
+. Restaurez la connectivité réseau du contrôleur BMC pour l'appliance. Deux options sont disponibles :
++
+** Utilisez une adresse IP statique, un masque de réseau et une passerelle
+** Utilisez DHCP pour obtenir une adresse IP, un masque de réseau et une passerelle
++
+... Pour restaurer la configuration du contrôleur BMC afin d'utiliser une adresse IP statique, un masque de réseau et une passerelle, entrez les commandes suivantes :
++
+`*run-host-command ipmitool lan set 1 ipsrc static*`
+
++
+`*run-host-command ipmitool lan set 1 ipaddr _Appliance_IP_*`
+
++
+`*run-host-command ipmitool lan set 1 netmask _Netmask_IP_*`
+
++
+`*run-host-command ipmitool lan set 1 defgw ipaddr _Default_gateway_*`
+
+... Pour restaurer la configuration du contrôleur BMC afin d'utiliser DHCP pour obtenir une adresse IP, un masque de réseau et une passerelle, entrez la commande suivante :
++
+`*run-host-command ipmitool lan set 1 ipsrc dhcp*`
+
+
+
+
+
+. Après avoir restauré la connectivité réseau du contrôleur BMC, connectez-vous à l'interface du contrôleur BMC pour vérifier et restaurer toute configuration BMC personnalisée supplémentaire que vous avez éventuellement appliquée. Par exemple, vous devez confirmer les paramètres des destinations d'interruption SNMP et des notifications par e-mail. Voir link:../installconfig/configuring-bmc-interface.html["Configurer l'interface BMC"].
+. Vérifiez que le nœud de l'appliance s'affiche dans Grid Manager et qu'aucune alerte n'apparaît.
+
+
+Après le remplacement de la pièce, renvoyez la pièce défectueuse à NetApp, en suivant les instructions RMA (retour de matériel) livrées avec le kit. Voir la https://mysupport.netapp.com/site/info/rma["Retour de pièce et amp ; remplacements"^] pour plus d'informations.
+
+.Informations associées
+link:../installconfig/sg6000-cn-installing-into-cabinet-or-rack.html["Installez le SG6000-CN dans l'armoire ou le rack"]
+
+link:../installconfig/viewing-status-indicators.html["Afficher les indicateurs d'état"]
+
+link:../installconfig/troubleshooting-hardware-installation.html#view-boot-codes["Afficher les codes de démarrage du contrôleur SG6000-CN"]

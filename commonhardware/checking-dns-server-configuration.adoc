@@ -1,0 +1,65 @@
+---
+permalink: commonhardware/checking-dns-server-configuration.html 
+sidebar: sidebar 
+keywords: DNS, server, servers, check, checking, change, changing, modify, modifying, modification 
+summary: 'Vous pouvez vérifier et modifier temporairement les serveurs DNS actuellement utilisés par ce nœud d"appliance.' 
+---
+= Vérifiez la configuration du serveur DNS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez vérifier et modifier temporairement les serveurs DNS actuellement utilisés par ce nœud d'appliance.
+
+.Avant de commencer
+L'appareil a été link:../commonhardware/placing-appliance-into-maintenance-mode.html["passage en mode maintenance"].
+
+.Description de la tâche
+Vous devrez peut-être modifier les paramètres du serveur DNS si une appliance chiffrée ne peut pas se connecter au serveur de gestion des clés (KMS) ou au cluster KMS car le nom d'hôte du KMS a été spécifié en tant que nom de domaine au lieu d'une adresse IP. Toute modification apportée aux paramètres DNS de l'appliance est temporaire et perdue lorsque vous quittez le mode de maintenance. Pour rendre ces modifications permanentes, spécifiez les serveurs DNS dans Grid Manager (*MAINTENANCE* > *réseau* > *serveurs DNS*).
+
+* Les modifications temporaires de la configuration DNS ne sont nécessaires que pour les appliances cryptées par nœud où le serveur KMS est défini à l'aide d'un nom de domaine complet, au lieu d'une adresse IP, pour le nom d'hôte.
+* Lorsqu'une appliance chiffrée au nœud se connecte à un KMS à l'aide d'un nom de domaine, elle doit se connecter à l'un des serveurs DNS définis pour la grille. L'un de ces serveurs DNS traduit ensuite le nom de domaine en une adresse IP.
+* Si le nœud ne peut pas atteindre un serveur DNS pour la grille, ou si vous avez modifié les paramètres DNS de la grille lorsqu'un nœud d'appliance chiffré par nœud était hors ligne, le nœud ne peut pas se connecter au KMS. Les données chiffrées de l'appliance ne peuvent pas être déchiffrées tant que le problème DNS n'est pas résolu.
+
+
+Pour résoudre un problème DNS empêchant la connexion KMS, spécifiez l'adresse IP d'un ou plusieurs serveurs DNS dans le programme d'installation de l'appliance StorageGRID. Ces paramètres DNS temporaires permettent à l'appliance de se connecter au KMS et de décrypter les données sur le nœud.
+
+Par exemple, si le serveur DNS de la grille change alors qu'un nœud chiffré était hors ligne, le nœud ne pourra pas atteindre le KMS lorsqu'il sera de nouveau en ligne, car il utilise toujours les valeurs DNS précédentes. La saisie de la nouvelle adresse IP du serveur DNS dans le programme d'installation de l'appliance StorageGRID permet à une connexion KMS temporaire de décrypter les données du nœud.
+
+.Étapes
+. Dans le programme d'installation de l'appliance StorageGRID, sélectionnez *configurer le réseau* > *Configuration DNS*.
+. Vérifiez que les serveurs DNS spécifiés sont corrects.
++
+image::../media/dns_configuration.png[Configuration DNS]
+
+. Si nécessaire, modifiez les serveurs DNS.
++
+
+NOTE: Les modifications apportées aux paramètres DNS sont temporaires et sont perdues lorsque vous quittez le mode de maintenance.
+
+. Lorsque vous êtes satisfait des paramètres DNS temporaires, sélectionnez *Enregistrer*.
++
+Le nœud utilise les paramètres de serveur DNS spécifiés sur cette page pour se reconnecter au KMS, permettant ainsi de décrypter les données du nœud.
+
+. Une fois les données de nœud déchiffrées, redémarrez le nœud. Dans le programme d'installation de l'appliance StorageGRID, sélectionnez *Avancé* > *redémarrer le contrôleur*, puis sélectionnez l'une des options suivantes :
++
+** Sélectionnez *Reboot dans StorageGRID* pour redémarrer le contrôleur avec le noeud qui rejoint la grille. Sélectionnez cette option si vous avez terminé de travailler en mode maintenance et que vous êtes prêt à rétablir le fonctionnement normal du nœud.
+** Sélectionnez *redémarrer en mode maintenance* pour redémarrer le contrôleur avec le nœud restant en mode de maintenance. (Cette option n'est disponible que lorsque le contrôleur est en mode de maintenance.) Sélectionnez cette option si des opérations de maintenance supplémentaires doivent être effectuées sur le nœud avant de rejoindre la grille.
++
+image::../media/reboot_controller_from_maintenance_mode.png[Redémarrez le contrôleur en mode de maintenance]
+
++
+
+NOTE: Lorsque le nœud redémarre et rejoint la grille, il utilise les serveurs DNS du système répertoriés dans Grid Manager. Après avoir rejoint la grille, l'appliance n'utilise plus les serveurs DNS temporaires spécifiés dans le programme d'installation de l'appliance StorageGRID pendant que l'appliance était en mode de maintenance.
+
++
+L'appliance peut redémarrer et rejoindre la grille en 20 minutes. Pour confirmer que le redémarrage est terminé et que le nœud a rejoint la grille, retournez à la grille Manager. La page *NODES* doit afficher un état normal (icône de coche verte image:../media/icon_alert_green_checkmark.png["coche verte"] à gauche du nom du nœud) pour le nœud de l'appliance, indiquant qu'aucune alerte n'est active et que le nœud est connecté à la grille.
+
++
+image::../media/nodes_menu.png[Le nœud d'appliance a rejoint la grille]
+
+
+
+

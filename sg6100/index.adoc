@@ -1,0 +1,43 @@
+---
+permalink: sg6100/index.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6100 storage appliance, SGF6112 storage appliance, maintain, maintaining, hardware, procedures, tasks 
+summary: Vous devrez peut-être effectuer des procédures de maintenance sur votre appareil. Cette section présente les procédures spécifiques à la maintenance de votre système SG6100. 
+---
+= Maintenance de l'appliance SG6100
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous devrez peut-être effectuer des procédures de maintenance sur votre appareil. Cette section présente les procédures spécifiques à la maintenance de votre système SG6100.
+
+Les procédures décrites dans cette section supposent que l'appliance a déjà été déployée en tant que nœud de stockage dans un système StorageGRID.
+
+*Les procédures de maintenance de la configuration* sont effectuées à l'aide de l'interface Appliance installer, Grid Manager ou BMC. Ces procédures comprennent :
+
+* link:turning-sgf6112-identify-led-on-and-off.html["Allumer et éteindre le voyant d'identification de l'appareil"]
+* link:locating-sgf6112-in-data-center.html["Localisez l'appliance dans le data Center"]
+* link:power-sgf6112-off-on.html["Arrêtez l'appareil"]
+* link:changing-link-configuration-of-sgf6112-appliance.html["Modifier la configuration de la liaison de l'appliance"]
+
+
+*Les procédures de maintenance matérielle* nécessitent la manipulation physique de composants SGF6112 spécifiques.
+
+
+
+== Mise à niveau du firmware des disques
+
+Le firmware des disques du SGF6112 est automatiquement vérifié chaque fois que l'appliance est redémarrée. Si nécessaire, le micrologiciel est automatiquement mis à niveau vers la version attendue par la version actuelle de StorageGRID. En règle générale, les mises à niveau de firmware se produisent pendant les mises à niveau du logiciel StorageGRID. Toutes les mises à niveau nécessaires du micrologiciel de lecteur pour les versions StorageGRID existantes seront incluses dans les correctifs. Suivez les instructions fournies avec chaque correctif pour vous assurer que la mise à niveau est appliquée à tous les lecteurs qui pourraient en bénéficier.
+
+
+NOTE: SANtricity System Manager n'est pas nécessaire pour la maintenance de l'appliance SGF6112.
+
+
+
+== Procédures générales de maintenance
+
+Voir link:../commonhardware/index.html["Procédures de maintenance courantes"] pour les procédures identiques pour tous les dispositifs, telles que l'application d'un correctif, la récupération d'un nœud ou d'un site et la maintenance du réseau.
+
+Voir link:../installconfig/configuring-hardware.html["Configurez le matériel de l'appliance"] pour les procédures de maintenance de l'appliance qui sont également effectuées lors de l'installation et de la configuration initiales de l'appliance.

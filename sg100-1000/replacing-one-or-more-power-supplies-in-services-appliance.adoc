@@ -1,0 +1,70 @@
+---
+permalink: sg100-1000/replacing-one-or-more-power-supplies-in-services-appliance.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, Replacing, replace, power supply, remove, removing, removal, install, installing, installation 
+summary: 'L"appareil de services dispose de deux blocs d"alimentation pour assurer la redondance. Si l"un des blocs d"alimentation tombe en panne, vous devez le remplacer dès que possible pour vous assurer que l"appareil est alimenté de manière redondante. Les deux blocs d"alimentation qui fonctionnent au niveau du contrôleur doivent être du même modèle et de la même puissance.' 
+---
+= Remplacez l'une ou les deux alimentations du SG100 ou du SG1000
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+L'appareil de services dispose de deux blocs d'alimentation pour assurer la redondance. En cas de panne de l'un des blocs d'alimentation, vous devez le remplacer dès que possible afin de s'assurer que le contrôleur de calcul est alimenté en redondance. Les deux blocs d'alimentation qui fonctionnent au niveau du contrôleur doivent être du même modèle et de la même puissance.
+
+.Avant de commencer
+* Vous avez link:locating-controller-in-data-center.html["situé physiquement le contrôleur"] avec l'alimentation à remplacer.
+* Si vous remplacez une seule alimentation :
++
+** Vous avez déballé le bloc d'alimentation de remplacement et vous êtes assuré qu'il est le même modèle et la même puissance que l'unité d'alimentation que vous remplacez.
+** Vous avez confirmé que l'autre bloc d'alimentation est installé et en cours d'exécution.
+
+
+* Si vous remplacez les deux alimentations en même temps :
++
+** Vous avez déballé les blocs d'alimentation de remplacement et vous êtes assuré qu'ils sont du même modèle et de la même puissance.
+
+
+
+
+.Description de la tâche
+La figure montre les deux blocs d'alimentation du SG100, accessibles à l'arrière de l'appareil.
+
+image::../media/sg1000_power_supplies.png[Arrière du SG100 avec deux blocs d'alimentation]
+
+
+NOTE: Les alimentations du SG1000 sont identiques.
+
+.Étapes
+. Si vous ne remplacez qu'une seule alimentation, vous n'avez pas besoin d'éteindre l'appareil. Accédez au <<Unplug_the_power_cord,Débranchez le cordon d'alimentation>> étape. Si vous remplacez les deux blocs d'alimentation en même temps, procédez comme suit avant de débrancher les cordons d'alimentation :
++
+.. link:shut-down-sg100-and-sg1000.html["Arrêtez l'appareil"].
+
+
+. [[débrancher_the_power_cordon, START=2]]débranchez le cordon d'alimentation de chaque alimentation à remplacer.
+. Soulevez la poignée de came sur la première alimentation à remplacer.
++
+image::../media/sg6000_cn_lift_cam_handle_psu.gif[Soulever la poignée de came pour déposer le bloc d'alimentation SG6000-CN]
+
+. Appuyez sur le loquet bleu et retirez le bloc d'alimentation.
++
+image::../media/sg6000_cn_remove_power_supply.gif[Retrait d'une alimentation SG6000-CN]
+
+. Avec le loquet bleu sur la droite, faites glisser le bloc d'alimentation de remplacement dans le châssis.
++
+
+NOTE: Les deux blocs d'alimentation doivent avoir le même modèle et la même puissance.
+
++
+Assurez-vous que le loquet bleu se trouve sur le côté droit lorsque vous faites glisser l'unité de rechange.
+
++
+image::../media/sg6000_cn_insert_power_supply.gif[Alimentation coulissante en SG6000-CN]
+
+. Poussez la poignée de came vers le bas pour fixer le bloc d'alimentation de remplacement.
+. Si vous remplacez les deux blocs d'alimentation, répétez les étapes 2 à 6 pour remplacer la seconde.
+. link:../installconfig/connecting-power-cords-and-applying-power.html["Branchez les câbles d'alimentation aux unités remplacées et mettez-les sous tension"].
+
+
+Après le remplacement de la pièce, renvoyez la pièce défectueuse à NetApp, en suivant les instructions RMA (retour de matériel) livrées avec le kit. Voir la https://mysupport.netapp.com/site/info/rma["Retour de pièce et amp ; remplacements"^] pour plus d'informations.

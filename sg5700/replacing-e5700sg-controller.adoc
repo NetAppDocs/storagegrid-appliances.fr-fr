@@ -1,0 +1,117 @@
+---
+permalink: sg5700/replacing-e5700sg-controller.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5700, storage node, storage appliance, Replacing, replace, E5700sg, controller, remove, removing, removal, install, installing, installation 
+summary: 'Vous devrez peut-être remplacer le contrôleur E5700SG s"il ne fonctionne pas de manière optimale ou s"il est défectueux.' 
+---
+= Remplacez le contrôleur de calcul E5700SG
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous devrez peut-être remplacer le contrôleur E5700SG s'il ne fonctionne pas de manière optimale ou s'il est défectueux.
+
+.Avant de commencer
+* Vous disposez d'un contrôleur de remplacement avec la même référence que le contrôleur que vous remplacez.
+* Vous avez téléchargé les instructions du système E-Series pour remplacer un contrôleur E5700 défectueux.
++
+
+NOTE: Utilisez les instructions E-Series à titre de référence uniquement si vous avez besoin de plus de détails pour effectuer une étape spécifique. Ne vous fiez pas aux instructions E-Series pour remplacer un contrôleur de l'appliance StorageGRID, car les procédures ne sont pas identiques. Par exemple, les instructions relatives à E-Series pour le contrôleur E5700 décrivent le retrait de la batterie et la carte d'interface hôte (HIC) d'un contrôleur défectueux et leur installation dans un contrôleur de remplacement. Ces étapes ne s'appliquent pas au contrôleur E5700SG.
+
+* Vous avez des étiquettes pour identifier chaque câble connecté au contrôleur.
+
+
+.Description de la tâche
+L'appliance Storage Node ne sera pas accessible lors du remplacement du contrôleur. Si le contrôleur E5700SG fonctionne suffisamment, vous pouvez effectuer un arrêt contrôlé au début de cette procédure.
+
+
+NOTE: Si vous remplacez le contrôleur avant d'installer le logiciel StorageGRID, il se peut que vous ne puissiez pas accéder au programme d'installation de l'appliance StorageGRID immédiatement après avoir terminé cette procédure. Bien que vous puissiez accéder au programme d'installation de l'appliance StorageGRID à partir d'autres hôtes situés sur le même sous-réseau que l'appliance, vous ne pouvez pas y accéder à partir d'hôtes situés sur d'autres sous-réseaux. Cette condition doit se résoudre dans les 15 minutes (lorsque les entrées du cache ARP pour le contrôleur d'origine sont écoulées), ou vous pouvez effacer immédiatement la condition en éliminant manuellement les anciennes entrées du cache ARP à partir du routeur ou de la passerelle local.
+
+.Étapes
+. Arrêtez le contrôleur E5700SG.
++
+.. Connectez-vous au nœud grid :
++
+... Saisissez la commande suivante : `ssh admin@_grid_node_IP_`
+... Entrez le mot de passe indiqué dans le `Passwords.txt` fichier.
+... Entrez la commande suivante pour passer à la racine : `su -`
+... Entrez le mot de passe indiqué dans le `Passwords.txt` fichier.
++
+Lorsque vous êtes connecté en tant que root, l'invite passe de `$` à `#`.
+
+
+
+.. Arrêtez le contrôleur E5700SG : +
+`*shutdown -h now*`
+.. Attendez que les données de la mémoire cache soient écrites sur les disques.
++
+La LED verte cache actif située à l'arrière du contrôleur E2800 est allumée lorsque les données en cache ont besoin d'être écrites sur les disques. Vous devez attendre que ce voyant s'éteigne.
+
+
+
+. Eteindre l'alimentation en panne.
++
+.. Dans la page d'accueil de SANtricity System Manager, sélectionnez *Afficher les opérations en cours*.
+.. Confirmez que toutes les opérations ont été effectuées.
+.. Éteignez les deux interrupteurs de l'appareil.
+.. Attendez que tous les voyants s'éteignent.
+
+
+. Si les réseaux StorageGRID connectés au contrôleur utilisent des serveurs DHCP :
++
+.. Notez les adresses MAC des ports du contrôleur de remplacement (situées sur les étiquettes du contrôleur).
+.. Demandez à votre administrateur réseau de mettre à jour les paramètres d'adresse IP du contrôleur d'origine afin qu'ils reflètent les adresses MAC du contrôleur de remplacement.
++
+
+CAUTION: Vous devez vous assurer que les adresses IP du contrôleur d'origine ont été mises à jour avant d'appliquer la mise sous tension au contrôleur de remplacement. Dans le cas contraire, le contrôleur obtiendra de nouvelles adresses IP DHCP lors de son démarrage et risque de ne pas pouvoir se reconnecter à StorageGRID. Cette étape s'applique à tous les réseaux StorageGRID reliés au contrôleur.
+
+
+
+. Retirer le contrôleur de l'appliance :
++
+.. Placez un bracelet antistatique ou prenez d'autres précautions antistatiques.
+.. Etiqueter les câbles puis débrancher les câbles et les SFP.
++
+
+NOTE: Pour éviter toute dégradation des performances, ne tordez pas, ne pliez pas, ne pincez pas ou ne montez pas sur les câbles.
+
+.. Libérez le contrôleur de l'appareil en appuyant sur le loquet de la poignée de came jusqu'à ce qu'il se relâche, puis ouvrez la poignée de came vers la droite.
+.. A l'aide de deux mains et de la poignée de came, faites glisser le contrôleur hors de l'appareil.
++
+
+CAUTION: Toujours utiliser deux mains pour soutenir le poids du contrôleur.
+
+
+
+. Installez le contrôleur de remplacement sur l'appliance.
++
+.. Retournez le contrôleur pour que le capot amovible soit orienté vers le bas.
+.. Avec la poignée de came en position ouverte, faites glisser le contrôleur complètement dans l'appareil.
+.. Déplacez la poignée de came vers la gauche pour verrouiller le contrôleur en place.
+.. Remplacer les câbles et les SFP.
+
+
+. Mettez l'appareil sous tension et surveillez les LED du contrôleur et les affichages à sept segments.
++
+Une fois les contrôleurs démarrés, les affichages à sept segments doivent indiquer les éléments suivants :
+
++
+** Contrôleur E2800 Series :
++
+L'état final est `99`.
+
+** Contrôleur E5700SG :
++
+L'état final est `HA`.
+
+
+
+. Vérifiez que le nœud de stockage de l'appliance apparaît dans Grid Manager et qu'aucune alarme ne s'affiche.
+
+
+Après le remplacement de la pièce, renvoyez la pièce défectueuse à NetApp, en suivant les instructions RMA (retour de matériel) livrées avec le kit. Voir la https://mysupport.netapp.com/site/info/rma["Retour de pièce et amp ; remplacements"^] pour plus d'informations.
+
+.Informations associées
+http://mysupport.netapp.com/info/web/ECMP1658252.html["Site de documentation sur les systèmes NetApp E-Series"^]

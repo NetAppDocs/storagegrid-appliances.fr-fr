@@ -1,0 +1,135 @@
+---
+permalink: commonhardware/appliance-node-cloning-procedure.html 
+sidebar: sidebar 
+keywords: storagegrid, appliance node clone, appliance node cloning, node clone, node cloning 
+summary: 'Le processus de clonage peut prendre plusieurs jours pour transférer les données entre le nœud source \(appliance en cours de remplacement\) et l"appliance \(nouvelle\) cible.' 
+---
+= Clonez le nœud d'appliance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le processus de clonage peut prendre plusieurs jours pour transférer les données entre le nœud source (appliance à remplacer) et l'appliance cible (nouvelle).
+
+.Avant de commencer
+* Vous avez installé l'appareil cible compatible dans une armoire ou un rack, connecté tous les câbles et mis sous tension.
+* Vous avez vérifié que la version du programme d'installation de l'appliance StorageGRID installée sur l'appliance de remplacement correspond à la version logicielle de votre système StorageGRID. Vous pouvez ainsi mettre à niveau et rétrograder le micrologiciel du programme d'installation de l'appliance StorageGRID, si nécessaire.
+* L'appliance cible est configurée, y compris la configuration des connexions StorageGRID, SANtricity System Manager (dispositifs de stockage uniquement) et l'interface BMC.
++
+** Lors de la configuration des connexions StorageGRID, utilisez les adresses IP temporaires.
+** Lors de la configuration des liaisons réseau, utilisez la configuration de liaison finale.
+
+
+
+
+
+NOTE: Laissez le programme d'installation de l'appliance StorageGRID ouvert une fois la configuration initiale de l'appliance cible terminée. Vous revenez à la page d'installation de l'appliance cible après avoir démarré le processus de clonage des nœuds.
+
+* Vous avez éventuellement activé le chiffrement de nœud pour l'appliance cible.
+* Vous avez facultatif de définir le mode RAID pour l'appliance cible (dispositifs de stockage uniquement).
+* Vous avez passé en revue le link:considerations-and-requirements-for-appliance-node-cloning.html["considérations et conditions requises pour le clonage des nœuds de l'appliance"].
+
+
+Pour préserver les performances du réseau StorageGRID et la disponibilité des données, vous devez cloner un seul nœud d'appliance à la fois.
+
+.Étapes
+. link:../commonhardware/placing-appliance-into-maintenance-mode.html["Placez le nœud source que vous clonez en mode de maintenance"].
+. À partir du programme d'installation de l'appliance StorageGRID sur le nœud source, dans la section installation de la page d'accueil, sélectionnez *Activer le clonage*.
++
+La section connexion au nœud d'administration principal est remplacée par la section connexion au nœud cible clone.
+
++
+image::../media/clone_peer_node_connection_section.png[Section connexion de nœud cible clone]
+
+. Pour *Clone Target node IP*, entrez l'adresse IP temporaire attribuée au nœud cible pour que le réseau utilise pour le trafic de transfert de données clone, puis sélectionnez *Enregistrer*.
++
+En général, vous entrez l'adresse IP du réseau Grid, mais si vous devez utiliser un autre réseau pour le trafic de transfert de données clone, entrez l'adresse IP du nœud cible sur ce réseau.
+
++
+
+NOTE: L'utilisation du réseau d'administration 1 GbE pour le transfert des données de clonage entraîne un clonage plus lent.
+
++
+Une fois l'appliance cible configurée et validée, dans la section installation, *Start Cloning* est activé sur le nœud source.
+
++
+Si des problèmes empêchent le clonage, *Démarrer le clonage* n'est pas activé et les problèmes que vous devez résoudre sont répertoriés comme l'état *connexion*. Ces problèmes sont répertoriés sur la page d'accueil du programme d'installation de l'appliance StorageGRID du nœud source et de l'appliance cible. Un seul problème s'affiche à la fois et l'état se met automatiquement à jour en fonction des changements de conditions. Résolvez tous les problèmes de clonage pour activer *Démarrer le clonage*.
+
++
+Lorsque *Démarrer le clonage* est activé, l'état *actuel* indique le réseau StorageGRID sélectionné pour le clonage du trafic, ainsi que des informations sur l'utilisation de cette connexion réseau. Voir link:considerations-and-requirements-for-appliance-node-cloning.html["Considérations et configuration requise pour le clonage des nœuds d'appliance"].
+
+. Sélectionnez *Démarrer le clonage* sur le nœud source.
+. Surveillez la progression du clonage à l'aide du programme d'installation de l'appliance StorageGRID sur le nœud source ou cible.
++
+Le programme d'installation de l'appliance StorageGRID sur les nœuds source et cible indique le même état.
+
++
+image::../media/cloning_progress.png[Progression du clonage]
+
++
+La page Monitor Cloning indique la progression détaillée de chaque étape du processus de clonage :
+
++
+** *Établir une relation de peering* montre la progression de la configuration et du clonage.
+** *Clone un autre noeud de ce noeud* indique la progression du transfert de données. (Cette partie du processus de clonage peut prendre plusieurs jours.)
+** *Activer le noeud cloné et le laisser hors ligne* indique la progression du transfert du contrôle vers le noeud cible et le placement du noeud source à l'état de pré-installation, une fois le transfert de données terminé.
+
+
+. Si vous devez mettre fin au processus de clonage et remettre le nœud source en service avant la fin du clonage, accédez à la page d'accueil du programme d'installation de l'appliance StorageGRID et sélectionnez *Avancé* > *redémarrer le contrôleur*, puis sélectionnez *redémarrer dans StorageGRID*.
++
+Si le processus de clonage est terminé :
+
++
+** Le nœud source quitte le mode de maintenance et rejoint StorageGRID.
+** Le nœud cible reste en état de pré-installation.
+Pour redémarrer le clonage du nœud source, redémarrez le processus de clonage à partir de l'étape 1.
+
+
+
+
+Une fois le clonage terminé :
+
+* Les nœuds source et cible échangent des adresses IP :
++
+** Le nœud cible utilise désormais les adresses IP initialement attribuées au nœud source pour les réseaux Grid, Admin et client.
+** Le nœud source utilise maintenant l'adresse IP temporaire initialement attribuée au nœud cible.
+
+
+* Le nœud cible quitte le mode maintenance et rejoint StorageGRID, en remplaçant le nœud source.
+* L'appliance source est préinstallée, comme si vous l'aviez fait https://docs.netapp.com/us-en/storagegrid-118/maintain/preparing-appliance-for-reinstallation-platform-replacement-only.html["préparez-le pour la réinstallation"^].
+
+
+
+NOTE: Si l'appliance ne rejoint pas à nouveau la grille, accédez à la page d'accueil du programme d'installation de l'appliance StorageGRID pour le nœud source, sélectionnez *Avancé* > *redémarrer le contrôleur*, puis sélectionnez *redémarrer en mode de maintenance*. Après le redémarrage du nœud source en mode maintenance, répétez la procédure de clonage de nœuds.
+
+* Les données utilisateur restent sur l'appliance source comme option de restauration si un problème inattendu se produit avec le nœud cible. Une fois que le nœud cible a rejoint StorageGRID, les données de l'utilisateur sur l'appliance source sont obsolètes et ne sont plus nécessaires.
++
+Les données utilisateur obsolètes sont écrasées lorsque vous installez ou développez l'appliance source en tant que nouveau nœud dans une autre grille.
+
++
+Vous pouvez également réinitialiser la configuration du contrôleur sur l'appliance source pour rendre ces données inaccessibles :
+
++
+.. Ouvrez le link:../installconfig/accessing-storagegrid-appliance-installer.html["Programme d'installation de l'appliance StorageGRID"] Pour l'appliance source utilisant l'adresse IP temporaire initialement attribuée au nœud cible.
+.. Sélectionnez *aide* > *Outils de support et de débogage*.
+.. Sélectionnez *Réinitialiser la configuration du contrôleur de stockage*.
++
+
+NOTE: Si nécessaire, contactez le support technique pour obtenir de l'aide sur la réinitialisation de la configuration du contrôleur de stockage.
+
++
+
+NOTE: Le remplacement des données ou la réinitialisation de la configuration du contrôleur rendent difficile ou impossible la récupération des données obsolètes. Cependant, aucune de ces méthodes ne supprime les données de l'appliance source de manière sécurisée. Si une suppression sécurisée est nécessaire, utilisez un outil ou un service de nettoyage des données pour supprimer définitivement et en toute sécurité les données de l'appliance source.
+
+
+
+
+
+Vous pouvez :
+
+* Utilisez l'appliance source comme cible pour les opérations de clonage supplémentaires : aucune configuration supplémentaire n'est requise. Cette appliance dispose déjà de l'adresse IP temporaire attribuée, qui a été spécifiée à l'origine pour la première cible de clone.
+* Installez et configurez l'appliance source en tant que nouveau nœud d'appliance.
+* Jetez l'appareil source s'il n'est plus utilisé avec StorageGRID.
+

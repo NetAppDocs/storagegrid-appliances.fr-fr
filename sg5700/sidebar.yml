@@ -1,0 +1,34 @@
+---
+section: sg5700
+title: Maintenance du matériel SG5700
+url: "/landing-maintain-sg5700/index.html"
+entries:
+- title: Présentation
+  pdf-filename: Maintenance du matériel SG5700
+  url: "/sg5700/index.html"
+- title: Procédures de configuration de la maintenance
+  pdf-filename: Procédures de configuration de la maintenance - SG5700
+  entries:
+  - title: Mettre à niveau le système d'exploitation SANtricity sur le contrôleur
+      de stockage
+    url: "/sg5700/upgrading-santricity-os-on-storage-controller.html"
+    entries:
+    - title: Mettez à niveau le système d'exploitation SANtricity sur les contrôleurs
+        de stockage à l'aide de Grid Manager
+      url: "/sg5700/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg5700.html"
+    - title: Mettez à niveau SANtricity OS sur le contrôleur E2800 à l'aide du mode
+        de maintenance
+      url: "/sg5700/upgrading-santricity-os-on-e2800-controller-using-maintenance-mode.html"
+  - title: Mise à niveau du firmware des disques à l'aide de SANtricity System Manager
+    url: "/sg5700/upgrading-drive-firmware-using-santricity-system-manager.html"
+  - title: Modifier la configuration de liaison du contrôleur E5700SG
+    url: "/sg5700/changing-link-configuration-of-e5700sg-controller.html"
+- title: Procédures matérielles
+  pdf-filename: Procédures matérielles - SG5700
+  entries:
+  - title: Remplacez le contrôleur de stockage E2800
+    url: "/sg5700/replacing-e2800-controller.html"
+  - title: Remplacez le contrôleur de calcul E5700SG
+    url: "/sg5700/replacing-e5700sg-controller.html"
+  - title: Remplacer les autres composants matériels
+    url: "/sg5700/replacing-other-hardware-components-sg5700.html"

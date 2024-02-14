@@ -1,0 +1,63 @@
+---
+permalink: sg6000/reinstalling-sg6000-cn-controller-cover.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, sg6000-cn, controller, cover, install, installing, installation, reinstall, reinstalling, reinstallation, remove, removing, removal 
+summary: 'Retirez le couvercle de l"appareil pour accéder aux composants internes à des fins d"entretien et remettez-le en place une fois l"opération terminée.' 
+---
+= Remettez en place le capot du contrôleur SG6000
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Retirez le couvercle de l'appareil pour accéder aux composants internes à des fins d'entretien et remettez-le en place une fois l'opération terminée.
+
+
+
+== Déposer le couvercle du contrôleur SG6000-CN
+
+Retirer le capot du contrôleur pour accéder aux composants internes en vue de leur maintenance.
+
+.Avant de commencer
+Retirez le contrôleur de l'armoire ou du rack pour accéder au capot supérieur.
+
+link:reinstalling-sg6000-cn-controller-into-cabinet-or-rack.html#remove-sg6000-cn-controller-from-cabinet-or-rack["Retirez le contrôleur SG6000-CN de l'armoire ou du rack"]
+
+.Étapes
+. Assurez-vous que le loquet du capot du contrôleur SG6000-CN n'est pas verrouillé. Si nécessaire, tournez le verrou en plastique bleu d'un quart de tour dans le sens de déverrouillage, comme illustré sur le verrou.
+. Faites pivoter le loquet vers le haut et vers l'arrière du châssis du contrôleur SG6000-CN jusqu'à ce qu'il s'arrête, puis soulevez avec précaution le capot du châssis et mettez-le de côté.
++
+image::../media/sg6060_cover_latch_open.jpg[Loquet du capot SG6060 ouvert]
+
++
+
+CAUTION: Enroulez l'extrémité du bracelet antistatique autour de votre poignet et fixez l'extrémité du clip à une masse métallique pour éviter toute décharge statique lors du travail à l'intérieur du contrôleur SG6000-CN.
+
+
+
+Après le remplacement de la pièce, renvoyez la pièce défectueuse à NetApp, en suivant les instructions RMA (retour de matériel) livrées avec le kit. Voir la https://mysupport.netapp.com/site/info/rma["Retour de pièce et amp ; remplacements"^] pour plus d'informations.
+
+
+
+== Réinstallez le couvercle du contrôleur SG6000-CN
+
+Réinstallez le capot du contrôleur une fois la maintenance matérielle interne terminée.
+
+.Avant de commencer
+Vous avez effectué toutes les procédures de maintenance à l'intérieur du contrôleur.
+
+.Étapes
+. Avec le loquet du capot ouvert, tenez le capot au-dessus du châssis et alignez le trou du loquet du capot supérieur avec la broche du châssis. Lorsque le capot est aligné, abaissez-le sur le châssis.
++
+image::../media/sg6060_cover_latch_alignment_pin.jpg[SG6060 goupille d'alignement du loquet du capot]
+
+. Faites pivoter le loquet du capot vers l'avant et vers le bas jusqu'à ce qu'il s'arrête et que le capot s'insère complètement dans le châssis. Vérifier qu'il n'y a pas d'espace le long du bord avant du couvercle.
++
+Si le capot n'est pas bien en place, il se peut que vous ne puissiez pas faire glisser le contrôleur SG6000-CN dans le rack.
+
+. En option : tournez d'un quart de tour le verrou en plastique bleu dans le sens de verrouillage, comme illustré sur le verrou, pour le verrouiller.
+
+
+.Une fois que vous avez terminé
+link:reinstalling-sg6000-cn-controller-into-cabinet-or-rack.html["Réinstallez le contrôleur dans l'armoire ou le rack."]

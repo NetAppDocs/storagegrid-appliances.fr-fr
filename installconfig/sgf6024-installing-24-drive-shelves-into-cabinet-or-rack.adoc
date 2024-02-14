@@ -1,0 +1,54 @@
+---
+permalink: installconfig/sgf6024-installing-24-drive-shelves-into-cabinet-or-rack.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, install, installing, installation, cabinet, rack, controller, drive shelf, drive shelves, 24-drive, shelf, shelves, rail, rails 
+summary: Vous installez un ensemble de rails pour le tiroir contrôleur EF570 dans votre armoire ou votre rack, puis faites glisser la baie sur les rails. 
+---
+= Installation des tiroirs de 24 disques (SGF6024)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous installez un ensemble de rails pour le tiroir contrôleur EF570 dans votre armoire ou votre rack, puis faites glisser la baie sur les rails.
+
+.Avant de commencer
+* Vous avez passé en revue le document consignes de sécurité inclus dans la boîte et compris les précautions à prendre pour déplacer et installer le matériel.
+* Les instructions sont fournies avec le kit de rails.
+
+
+.Étapes
+. Suivez attentivement les instructions du kit de rails pour installer les rails dans votre armoire ou rack.
++
+Pour les armoires à trous carrés, installez d'abord les écrous cage fournis pour fixer l'avant et l'arrière du shelf à l'aide de vis.
+
+. Retirez la boîte d'emballage extérieure de l'appareil. Pliez ensuite les rabats du boîtier intérieur.
+. Placez l'arrière de la tablette (extrémité avec les connecteurs) sur les rails.
++
+
+CAUTION: Une étagère entièrement chargée pèse environ 24 kg (52 lb). Deux personnes sont nécessaires pour déplacer le boîtier en toute sécurité.
+
+. Faites glisser avec précaution le boîtier tout au long des rails.
++
+
+CAUTION: Vous devrez peut-être ajuster les rails pour vous assurer que le boîtier glisse complètement sur les rails.
+
++
+
+CAUTION: Ne placez pas d'équipement supplémentaire sur les rails après avoir installé le boîtier. Les rails ne sont pas conçus pour supporter un poids supplémentaire.
+
++
+
+NOTE: Le cas échéant, vous devrez peut-être retirer les capuchons d'extrémité du tiroir ou le cadre du système pour fixer le boîtier sur le montant du rack. Si oui, vous devez remplacer les caches d'extrémité ou le cadre lorsque vous avez terminé.
+
+. Fixez le boîtier à l'avant de l'armoire ou du rack et des rails en insérant deux vis M5 à travers les supports de montage (préinstallés de chaque côté de l'avant du boîtier), les trous du rack ou de l'armoire système et les trous à l'avant des rails.
++
+image::../media/secure_shelf.png[Fixez la tablette à l'avant de l'armoire]
+
+. Fixez le boîtier à l'arrière des rails en insérant deux vis M5 dans les supports du boîtier et du support du kit de rails.
+. Le cas échéant, remettez en place les caches d'extrémité des tablettes ou le cadre du système.
++
+image::../media/install_endcaps.png[Remplacez les têtes de gondole des tablettes]
+
+

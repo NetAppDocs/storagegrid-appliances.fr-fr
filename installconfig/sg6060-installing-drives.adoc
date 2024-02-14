@@ -1,0 +1,51 @@
+---
+permalink: installconfig/sg6060-installing-drives.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, drives, drive, disk, disks, install, installing, installation 
+summary: 'Après avoir installé le tiroir de 60 disques dans une armoire ou un rack, installez les 60 disques dans le tiroir. Le numéro d"expédition du tiroir contrôleur E2860 comprend deux disques SSD que vous devez installer dans le tiroir supérieur du tiroir contrôleur. Chaque tiroir d"extension en option comprend 60 disques durs et aucun disque SSD.' 
+---
+= Installation des disques (SG6060)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Après avoir installé le tiroir de 60 disques dans une armoire ou un rack, installez les 60 disques dans le tiroir. Le numéro d'expédition du tiroir contrôleur E2860 comprend deux disques SSD que vous devez installer dans le tiroir supérieur du tiroir contrôleur. Chaque tiroir d'extension en option comprend 60 disques durs et aucun disque SSD.
+
+.Avant de commencer
+Vous avez installé le tiroir contrôleur E2860 ou deux tiroirs d'extension optionnels (un ou deux) dans l'armoire ou le rack.
+
+
+CAUTION: Pour éviter d'endommager le matériel, ne déplacez jamais le tiroir si des disques sont installés. Vous devez retirer tous les disques avant de déplacer le tiroir.
+
+.Étapes
+. Enroulez l'extrémité du bracelet antistatique autour de votre poignet et fixez l'extrémité du clip à une masse métallique afin d'éviter toute décharge statique.
+. Retirez les disques de leur emballage.
+. Relâchez les leviers du tiroir d'entraînement supérieur et faites glisser le tiroir vers l'extérieur à l'aide des leviers.
+. Recherchez les deux disques SSD.
++
+
+NOTE: Les tiroirs d'extension n'utilisent pas de disques SSD.
+
+. Relever chaque poignée d'entraînement en position verticale.
+. Installez les deux disques SSD dans les logements 0 et 1 (les deux premiers logements le long du côté gauche du tiroir).
+. Positionnez doucement chaque disque dans son slot, et abaissez la poignée de lecteur relevée jusqu'à ce qu'il s'enclenche en position.
++
+image::../media/install_drives_in_e2860.gif[Installer les disques]
+
+. Installez 10 disques durs dans le tiroir supérieur.
+. Faites glisser le tiroir vers l'intérieur en appuyant sur le centre et en fermant doucement les deux leviers.
++
+
+CAUTION: Arrêtez de pousser le tiroir si vous vous sentez grippé. Utilisez les leviers de déverrouillage à l'avant du tiroir pour le faire glisser vers l'arrière. Réinsérez ensuite le tiroir avec précaution dans la fente.
+
+. Répétez ces étapes pour installer des disques durs dans les quatre autres tiroirs.
++
+
+NOTE: Vous devez installer les 60 disques pour assurer le bon fonctionnement.
+
+. Fixez le panneau avant sur le shelf.
+. Si vous disposez de tiroirs d'extension, répétez cette procédure pour installer 12 disques durs dans chaque tiroir de chaque tiroir d'extension.
+. Reportez-vous aux instructions d'installation du SG6000-CN dans une armoire ou un rack.
+

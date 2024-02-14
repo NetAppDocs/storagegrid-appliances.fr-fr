@@ -1,0 +1,38 @@
+---
+permalink: installconfig/optional-remapping-network-ports-for-appliance.html 
+sidebar: sidebar 
+keywords: remap appliance ports, network, internal to external port mapping 
+summary: 'Vous pouvez éventuellement remapper les ports internes d"un nœud d"appliance sur différents ports externes. Par exemple, il peut être nécessaire de remappage les ports en raison d"un problème de pare-feu.' 
+---
+= Facultatif : remappage des ports réseau pour l'appliance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez éventuellement remapper les ports internes d'un nœud d'appliance sur différents ports externes. Par exemple, il peut être nécessaire de remappage les ports en raison d'un problème de pare-feu.
+
+.Avant de commencer
+* Vous avez déjà accédé au programme d'installation de l'appliance StorageGRID.
+
+
+.Description de la tâche
+Vous ne pouvez pas utiliser de ports remappés pour les terminaux d'équilibrage de charge. Si vous devez supprimer un port remappé, suivez les étapes de la section https://docs.netapp.com/us-en/storagegrid-118/maintain/removing-port-remaps.html["Supprimer les mappages de port"^].
+
+.Étapes
+. Dans le programme d'installation de l'appliance StorageGRID, sélectionnez *configurer la mise en réseau* > *Remap ports*.
++
+La page Port de remise à neuf s'affiche.
+
+. Dans la liste déroulante *Network*, sélectionnez le réseau du port que vous souhaitez remappage : grid, Admin ou client.
+. Dans la liste déroulante *Protocol*, sélectionnez le protocole IP : TCP ou UDP.
+. Dans la zone de liste déroulante *Remap Direction*, sélectionnez la direction du trafic que vous souhaitez remappage pour ce port : entrant, sortant ou bidirectionnel.
+. Pour *Port d'origine*, entrez le numéro du port que vous souhaitez remappage.
+. Pour *mappé sur le port*, entrez le numéro du port que vous souhaitez utiliser à la place.
+. Sélectionnez *Ajouter une règle*.
++
+Le nouveau mappage de port est ajouté à la table et le remappage est immédiatement pris en compte.
+
+. Pour supprimer un mappage de port, sélectionnez le bouton radio de la règle que vous souhaitez supprimer, puis sélectionnez *Supprimer la règle sélectionnée*.
+

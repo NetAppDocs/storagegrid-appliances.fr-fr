@@ -1,0 +1,167 @@
+---
+permalink: installconfig/obtaining-additional-equipment-and-tools.html 
+sidebar: sidebar 
+keywords: equipment to install appliance, tools for installation 
+summary: 'Avant d"installer une appliance StorageGRID, vérifiez que vous disposez de tous les équipements et outils supplémentaires dont vous avez besoin.' 
+---
+= Procurez-vous des équipements et outils supplémentaires
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Avant d'installer une appliance StorageGRID, vérifiez que vous disposez de tous les équipements et outils supplémentaires dont vous avez besoin.
+
+
+
+== Tous les appareils
+
+Vous avez besoin de l'équipement suivant pour installer et configurer tous les dispositifs.
+
+Tournevis::
++
+--
+* N° Phillips 2 tournevis
+* Tournevis plat moyen
+
+
+--
+Bracelet antistatique::
++
+--
+* https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["Navigateur Web pris en charge"^]
+* Client SSH, tel que PuTTY
+* Port 1 GbE (RJ-45)
+
+
+--
+
+
+
+NOTE: Certains ports ne prennent pas en charge les débits Ethernet 10/100.
+
+Outils en option::
++
+--
+* Perceuse électrique avec embout Phillips
+* Lampe de poche
+
+
+--
+
+
+
+
+== Équipements et outils spécifiques aux appareils
+
+[role="tabbed-block"]
+====
+.SG100 et SG1000
+--
+Vous avez besoin de l'équipement supplémentaire suivant pour installer et configurer le matériel SG100 et SG1000.
+
+Câbles optiques et émetteurs-récepteurs::
++
+--
+* Câbles, 1 à 4 de l'un ou l'autre :
++
+** Twinax/cuivre
+** Fibre optique
+
+
+* Émetteurs-récepteurs/adaptateurs, 1 à 4 de chaque, en fonction de la vitesse de liaison (les vitesses mixtes ne sont pas prises en charge) :
++
+** SG100 :
++
+*** SFP+ 10 GbE
+*** 25 GbE SFP28
+
+
+** SG1000 :
++
+*** Adaptateur QSFP-to-SFP (QSA) et SFP+ 10 GbE
+*** Adaptateur QSFP-to-SFP (QSA) à 25 GbE et SFP28
+*** QSFP+ 40 GbE
+*** QFSP28 100 GbE
+
+
+
+
+
+
+--
+Câbles Ethernet:: RJ-45 (Cat5/Cat5e/Cat6/Cat6a)
+
+
+--
+.SG5700
+--
+Vous avez besoin des équipements supplémentaires suivants pour installer et configurer le matériel SG5700.
+
+Câbles optiques et émetteurs-récepteurs SFP::
++
+--
+* Câbles optiques pour les ports 10/25 GbE que vous souhaitez utiliser
+* Facultatif : les émetteurs-récepteurs SFP28 si vous souhaitez utiliser la vitesse de liaison 25 GbE
+
+
+--
+Câbles Ethernet:: Levage mécanisé pour SG5760
+
+
+--
+.SG6000
+--
+Vous avez besoin de l'équipement supplémentaire suivant pour installer et configurer le matériel SG6000.
+
+Câbles optiques et émetteurs-récepteurs SFP::
++
+--
+* Câbles, 1 à 4 de l'un ou l'autre :
++
+** Twinax/cuivre
+** Fibre optique
+
+
+* Émetteurs-récepteurs/adaptateurs, 1 à 4 de chaque, en fonction de la vitesse de liaison (les vitesses mixtes ne sont pas prises en charge) :
++
+** SFP+ 10 GbE
+** 25 GbE SFP28
+
+
+
+
+--
+Câbles Ethernet:: RJ-45 (Cat5/Cat5e/Cat6)
+Outils en option:: Levage mécanisé pour les tiroirs de 60 disques
+
+
+--
+.SG6100
+--
+Vous avez besoin de l'équipement supplémentaire suivant pour installer et configurer le matériel SGF6112.
+
+Câbles optiques et émetteurs-récepteurs::
++
+--
+* Câbles, 1 à 4 de l'un ou l'autre :
++
+** Twinax/cuivre
+** Fibre optique
+
+
+* Émetteurs-récepteurs/adaptateurs, 1 à 4 de chaque, en fonction de la vitesse de liaison (les vitesses mixtes ne sont pas prises en charge) :
++
+** SFP+ 10 GbE
+** 25 GbE SFP28
+
+
+
+
+--
+Câbles Ethernet:: RJ-45 (Cat5/Cat5e/Cat6/Cat6a)
+
+
+--
+====

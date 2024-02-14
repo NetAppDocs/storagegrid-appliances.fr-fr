@@ -1,0 +1,25 @@
+---
+indexpage:
+  tiles:
+  - title: Procédures fréquemment effectuées
+    links:
+    - title: Allumer ou éteindre le voyant de localisation
+      url: "../sg100-1000/turning-controller-identify-led-on-and-off.html"
+    - title: Localisez l'appliance dans le data Center
+      url: "../sg100-1000/locating-controller-in-data-center.html"
+    - title: Mettez l'appareil hors tension
+      url: "../sg100-1000/shut-down-sg100-and-sg1000.html"
+    - title: Modifier la configuration du lien
+      url: "../sg100-1000/changing-link-configuration-of-services-appliance.html"
+  - title: Procédures de rack
+    links:
+    - title: Remplacez l'appareil
+      url: "../sg100-1000/replacing-services-appliance.html"
+  - title: Procédures matérielles
+    links:
+    - title: Remplacez l'alimentation électrique
+      url: "../sg100-1000/replacing-one-or-more-power-supplies-in-services-appliance.html"
+    - title: Remplacer le ventilateur
+      url: "../sg100-1000/replacing-fan-in-services-appliance.html"
+    - title: Remplacez le lecteur
+      url: "../sg100-1000/replacing-drive-in-services-appliance.html"

@@ -1,0 +1,42 @@
+---
+section: sg6100
+title: Maintenance du matériel SG6100
+url: "/landing-maintain-sgf6112/index.html"
+entries:
+- title: Présentation
+  pdf-filename: Maintenance du matériel SG6100
+  url: "/sg6100/index.html"
+- title: Procédures de maintenance de la configuration
+  pdf-filename: Procédures de maintenance de la configuration - SG6100
+  entries:
+  - title: Utilisez l'onglet gérer les lecteurs
+    url: "/sg6100/manage-drives-tab.html"
+  - title: Allumer et éteindre la LED Identify
+    url: "/sg6100/turning-sgf6112-identify-led-on-and-off.html"
+  - title: Localisez l'appliance dans le data Center
+    url: "/sg6100/locating-sgf6112-in-data-center.html"
+  - title: Mettez l'appareil hors tension et sous tension
+    url: "/sg6100/power-sgf6112-off-on.html"
+  - title: Modifier la configuration du lien
+    url: "/sg6100/changing-link-configuration-of-sgf6112-appliance.html"
+- title: Procédures de maintenance du matériel
+  pdf-filename: Procédures de maintenance du matériel - SG6100
+  entries:
+  - title: Vérifier le composant à remplacer
+    url: "/sg6100/verify-component-to-replace.html"
+  - title: Remplacez une ou plusieurs alimentations
+    url: "/sg6100/replacing-one-or-more-power-supplies-in-sgf6112-appliance.html"
+  - title: Remplacer le ventilateur
+    url: "/sg6100/replacing-fan-in-sgf6112.html"
+  - title: Remplacez le lecteur
+    url: "/sg6100/replacing-drive-in-sgf6112.html"
+  - title: Remplacez la carte réseau
+    url: "/sg6100/replace-nic-in-sgf6112.html"
+  - title: Remplacez la pile CMOS
+    url: "/sg6100/replace-cmos-in-sgf6112.html"
+  - title: Remettez le couvercle en place
+    url: "/sg6100/reinstalling-sgf6112-cover.html"
+  - title: Remplacez l'appliance SGF6112
+    url: "/sg6100/replacing-sgf6112-appliance.html"
+  - title: Déplacer le SGF6112 dans le rack
+    url: "/sg6100/reinstalling-sgf6112-into-cabinet-or-rack.html"

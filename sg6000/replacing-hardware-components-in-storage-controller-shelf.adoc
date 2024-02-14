@@ -1,0 +1,76 @@
+---
+permalink: sg6000/replacing-hardware-components-in-storage-controller-shelf.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, Replacing, replace, hardware, components, remove, removing, removal, install, installing, installation, storage controller shelf, Battery, Drive, Power canister, power supply, Fan canister, fan, Drive drawer 
+summary: En cas de problème matériel, vous devrez peut-être remplacer un composant du tiroir de contrôleur de stockage. 
+---
+= Remplacez les composants matériels du tiroir contrôleur de stockage SG6000
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+En cas de problème matériel, vous devrez peut-être remplacer un composant du tiroir de contrôleur de stockage.
+
+.Avant de commencer
+* Vous disposez de la procédure de remplacement du matériel E-Series.
+* Vous avez physiquement situé l'appliance de stockage où vous remplacez des composants matériels de tiroirs de stockage dans le data Center.
++
+link:locating-controller-in-data-center.html["Localiser le contrôleur dans le data Center"]
+
+
+
+.Description de la tâche
+Pour remplacer la batterie dans le contrôleur de stockage, reportez-vous aux étapes des instructions de link:replacing-storage-controller-sg6000.html["remplacement d'un contrôleur de stockage"]. Ces instructions décrivent le retrait d'un contrôleur de l'appareil, le retrait de la batterie du contrôleur, l'installation de la batterie et le remplacement du contrôleur.
+
+Pour obtenir des instructions sur les autres unités remplaçables sur site (FRU) présentes dans les tiroirs disques, accédez au http://mysupport.netapp.com/info/web/ECMP1658252.html["Procédures de maintenance du système E-Series"^].
+
+[cols="1a,3a"]
+|===
+| FRU | Voir les instructions 
+
+
+ a| 
+Batterie
+ a| 
+StorageGRID (ces instructions) : remplacement d'un contrôleur de stockage
+
+
+
+ a| 
+Lecteur
+ a| 
+Systèmes E-Series :
+
+* Remplacement du lecteur (60 disques)
+* Remplacement du lecteur (12 ou 24 disques)
+
+
+
+
+ a| 
+Réservoir d'alimentation
+ a| 
+E-Series
+
+* Remplacez le boîtier d'alimentation (60 disques)
+* Remplacement du bloc d'alimentation (12 disques ou 24 disques)
+
+
+
+
+ a| 
+Boîtier du ventilateur (étagères à 60 disques uniquement)
+ a| 
+E-Series : remplacement du boîtier du ventilateur (60 disques)
+
+
+
+ a| 
+Tiroir disque (tiroirs de 60 disques uniquement)
+ a| 
+E-Series : remplacement du tiroir disque (60 disques)
+
+|===
+Après le remplacement de la pièce, renvoyez la pièce défectueuse à NetApp, en suivant les instructions RMA (retour de matériel) livrées avec le kit. Voir la https://mysupport.netapp.com/site/info/rma["Retour de pièce et amp ; remplacements"^] pour plus d'informations.

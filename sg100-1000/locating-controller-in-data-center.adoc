@@ -1,0 +1,41 @@
+---
+permalink: sg100-1000/locating-controller-in-data-center.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, locate, find, locating, finding, identify, blue led, blue light 
+summary: Identifiez le contrôleur pour effectuer des opérations de maintenance ou de mise à niveau du matériel. 
+---
+= Localiser SG100 ou SG1000 dans le data Center
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Identifiez le contrôleur pour effectuer des opérations de maintenance ou de mise à niveau du matériel.
+
+.Avant de commencer
+* Vous avez déterminé quel contrôleur doit être entretenu.
+* (Facultatif) pour localiser le contrôleur dans votre data Center, link:turning-controller-identify-led-on-and-off.html["Activez le voyant d'identification bleu"].
+
+
+.Étapes
+. Trouver le contrôleur qui nécessite une maintenance dans le data Center.
++
+** Recherchez une LED d'identification bleue allumée à l'avant ou à l'arrière du contrôleur.
++
+Le voyant d'identification avant se trouve derrière le panneau avant du contrôleur et il peut être difficile de voir si le panneau est installé.
+
++
+image::../media/sg6060_front_panel_service_led_on.jpg[Voyant d'identification avant - allumé]
+
+** Vérifiez que les étiquettes fixées à l'avant de chaque contrôleur correspondent à un numéro de pièce.
+
+
+. Retirez le cadre avant du contrôleur, le cas échéant, pour accéder aux commandes et aux indicateurs du panneau avant.
+. Facultatif : link:turning-controller-identify-led-on-and-off.html["Éteindre la LED bleue Identify"] si vous l'avez utilisé pour localiser le contrôleur.
++
+** Appuyez sur le commutateur LED identifier sur le panneau avant du contrôleur.
+** Utilisez l'interface du contrôleur BMC.
+
+
+

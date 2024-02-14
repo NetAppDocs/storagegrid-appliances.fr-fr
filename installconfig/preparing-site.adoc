@@ -1,0 +1,270 @@
+---
+permalink: installconfig/preparing-site.html 
+sidebar: sidebar 
+keywords: site prep, site preparation, preparing site, site requirements, requirements, site, dimensions, weight, weights, temperature, humidity, altitude, airflow, heat, wiring, power, grounding, facility 
+summary: 'Avant d"installer l"appliance, assurez-vous que le site et l"armoire ou le rack que vous souhaitez utiliser correspondent aux spécifications d"une appliance StorageGRID.' 
+---
+= Préparer le site
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Avant d'installer l'appliance, assurez-vous que le site et l'armoire ou le rack que vous souhaitez utiliser correspondent aux spécifications d'une appliance StorageGRID.
+
+.Étapes
+. Vérifier que le site répond aux exigences en matière de température, d'humidité, d'altitude, de débit d'air, de dissipation thermique, câblage, alimentation et mise à la terre. Voir la https://hwu.netapp.com["NetApp Hardware Universe"^] pour en savoir plus.
+. Vérifiez que votre emplacement fournit la tension correcte de l'alimentation secteur :
++
+[cols="1a,1a"]
+|===
+| Modèle | Conditions requises 
+
+
+ a| 
+SG100 et SG1000
+ a| 
+120 à 240 volts c.a.
+
+
+
+ a| 
+SG5760
+ a| 
+240 V c.a.
+
+
+
+ a| 
+SGF6024
+ a| 
+120 V c.a.
+
+
+
+ a| 
+SG6060
+ a| 
+240 V c.a.
+
+
+
+ a| 
+SGF6112
+ a| 
+100 à 240 volts c.a.
+
+|===
+. Procurez-vous une armoire ou un rack de 19 pouces (48.3 cm) pour les étagères de la taille suivante (sans câbles).
++
+[role="tabbed-block"]
+====
+.SG100 et SG1000
+--
+[cols="1a,1a,1a,1a"]
+|===
+| Hauteur | Largeur | Profondeur | Poids maximum 
+
+
+ a| 
+1.70 po
+
+(4.32 cm)
+ a| 
+17.32 po
+
+(44.0 cm)
+ a| 
+32.0 po
+
+(81.3 cm)
+ a| 
+39 lb
+
+(17.7 kg)
+
+|===
+--
+.SG5700
+--
+[cols="1a,1a,1a,1a,1a"]
+|===
+| Modèle de type appliance | Hauteur | Largeur | Profondeur | Poids maximum 
+
+
+ a| 
+SG5712
+
+(12 lecteurs)
+ a| 
+3.41 po
+
+(8.68 cm)
+ a| 
+17.6 po
+
+(44.7 cm)
+ a| 
+21.1 po
+
+(53.6 cm)
+ a| 
+63.9 lb
+
+(29.0 kg)
+
+
+
+ a| 
+SG5760
+
+(60 lecteurs)
+ a| 
+6.87 po
+
+(17.46 cm)
+ a| 
+17.66 po
+
+(44.86 cm)
+ a| 
+38.25 po
+
+(97.16 cm)
+ a| 
+250 lb
+
+(113 kg)
+
+|===
+--
+.SG6000
+--
+[cols="2a,1a,1a,1a,1a"]
+|===
+| Type d'étagère | Hauteur | Largeur | Profondeur | Poids maximum 
+
+
+ a| 
+Tiroir contrôleur E2860 (SG6060)
+ a| 
+6.87 po
+
+(17.46 cm)
+ a| 
+17.66 po
+
+(44.86 cm)
+ a| 
+38.25 po
+
+(97.16 cm)
+ a| 
+250 lb
+
+(113 kg)
+
+
+
+ a| 
+Tiroir d'extension (SG6060) - en option
+ a| 
+6.87 po
+
+(17.46 cm)
+ a| 
+17.66 po
+
+(44.86 cm)
+ a| 
+38.25 po
+
+(97.16 cm)
+ a| 
+250 lb
+
+(113 kg)
+
+
+
+ a| 
+Tiroir contrôleur EF570 (SGF6024)
+ a| 
+3.35 po
+
+(8.50 cm)
+ a| 
+17.66 po
+
+(44.86 cm)
+ a| 
+19.00 po
+
+(48.26 cm)
+ a| 
+51.74 lb
+
+(23.47 kg)
+
+
+
+ a| 
+Contrôleur de calcul SG6000-CN
+ a| 
+1.70 po
+
+(4.32 cm)
+ a| 
+17.32 po
+
+(44.0 cm)
+ a| 
+32.0 po
+
+(81.3 cm)
+ a| 
+39 lb
+
+(17.7 kg)
+
+|===
+--
+.SG6100
+--
+[cols="1a,1a,1a,1a"]
+|===
+| Hauteur | Largeur | Profondeur | Poids maximum 
+
+
+ a| 
+1.70 po
+
+(4.31 cm)
+ a| 
+18.98 po
+
+(48.2 cm)
+ a| 
+33.11 po
+
+(84.1 cm)
+ a| 
+43.83 lb
+
+(19.88 kg)
+
+|===
+--
+====
+. Choisissez où vous allez installer l'appareil.
++
+
+CAUTION: Lors de l'installation du tiroir contrôleur E2860 ou des tiroirs d'extension en option, installez le matériel en bas jusqu'en haut du rack ou de l'armoire afin d'éviter tout basculement de l'équipement. Pour que l'équipement le plus lourd se trouve au bas de l'armoire ou du rack, installez le contrôleur SG6000-CN au-dessus du tiroir du contrôleur E2860 et des tiroirs d'extension.
+
++
+
+NOTE: Avant de valider l'installation, vérifiez que les câbles optiques de 0,5 m livrés avec un système SG6000 ou les câbles que vous fournissez sont suffisamment longs pour la configuration prévue.
+
+. Installez les commutateurs réseau requis. Voir la link:https://imt.netapp.com/matrix/#welcome["Matrice d'interopérabilité NetApp"^] pour obtenir des informations sur la compatibilité.
+

@@ -1,0 +1,53 @@
+---
+section: sg6000
+title: Maintenance du matériel SG6000
+url: "/landing-maintain-sg6000/index.html"
+entries:
+- title: Présentation
+  pdf-filename: Maintenance du matériel SG6000
+  url: "/sg6000/index.html"
+- title: Procédures de configuration de la maintenance
+  pdf-filename: Procédures de configuration de maintenance - SG6000
+  entries:
+  - title: Mettez à niveau votre système d'exploitation SANtricity sur les contrôleurs
+      de stockage
+    url: "/sg6000/upgrading-santricity-os-on-storage-controllers.html"
+    entries:
+    - title: Mettez à niveau le système d'exploitation SANtricity sur les contrôleurs
+        de stockage à l'aide de Grid Manager
+      url: "/sg6000/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg6000.html"
+    - title: Mettre à niveau le système d'exploitation SANtricity sur les contrôleurs
+        de stockage à l'aide du mode de maintenance
+      url: "/sg6000/upgrading-santricity-os-on-storage-controllers-using-maintenance-mode-sg6000.html"
+  - title: Mise à niveau du firmware des disques à l'aide de SANtricity System Manager
+    url: "/sg6000/upgrading-drive-firmware-using-santricity-system-manager.html"
+  - title: Allumer et éteindre la LED d'identification du contrôleur
+    url: "/sg6000/turning-controller-identify-led-on-and-off.html"
+  - title: Localiser le contrôleur dans le data Center
+    url: "/sg6000/locating-controller-in-data-center.html"
+  - title: Mettez le contrôleur hors tension et sous tension
+    url: "/sg6000/power-sg6000-cn-controller-off-on.html"
+  - title: Modifier la configuration de la liaison du contrôleur SG6000-CN
+    url: "/sg6000/changing-link-configuration-of-sg6000-cn-controller.html"
+- title: Procédures matérielles
+  pdf-filename: Procédures matérielles - SG6000
+  entries:
+  - title: Ajoutez un tiroir d'extension à SG6060 déployé
+    url: "/sg6000/adding-expansion-shelf-to-deployed-sg6060.html"
+  - title: Remplacement du contrôleur de stockage
+    url: "/sg6000/replacing-storage-controller-sg6000.html"
+  - title: Remplacement des composants matériels dans le tiroir de contrôleur de stockage
+    url: "/sg6000/replacing-hardware-components-in-storage-controller-shelf.html"
+  - title: Remplacement des composants matériels dans un tiroir d'extension de 60
+      disques en option
+    url: "/sg6000/replacing-hardware-components-in-optional-60-drive-expansion-shelf.html"
+  - title: Remplacer le contrôleur SG6000-CN
+    url: "/sg6000/replacing-sg6000-cn-controller.html"
+  - title: Remplacez une ou les deux alimentations du contrôleur SG6000-CN
+    url: "/sg6000/replacing-one-or-both-power-supplies-in-sg6000-cn-controller.html"
+  - title: Remplacez le contrôleur dans le rack
+    url: "/sg6000/reinstalling-sg6000-cn-controller-into-cabinet-or-rack.html"
+  - title: Remettez le capot du contrôleur en place
+    url: "/sg6000/reinstalling-sg6000-cn-controller-cover.html"
+  - title: Remplacez la carte HBA Fibre Channel dans le contrôleur SG6000-CN
+    url: "/sg6000/reinstalling-fibre-channel-hba.html"

@@ -1,0 +1,136 @@
+---
+permalink: sg6000/reinstalling-fibre-channel-hba.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, sg6000-cn, hba, host bus adapter, fibre channel, fiber channel, install, installing, installation, reinstall, reinstalling, reinstallation, remove, removing, removal, locate, identify, find 
+summary: Vous devrez peut-être remplacer une carte HBA Fibre Channel si elle ne fonctionne pas de manière optimale ou si elle est défectueuse. 
+---
+= Remplacez l'adaptateur HBA Fibre Channel dans SG6000
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous devrez peut-être remplacer une carte HBA Fibre Channel si elle ne fonctionne pas de manière optimale ou si elle est défectueuse.
+
+
+
+== Vérifiez que la carte HBA Fibre Channel doit être remplacée
+
+En cas de doute sur la carte HBA (Fibre Channel Host bus adapter) à remplacer, procédez comme suit pour l'identifier.
+
+.Avant de commencer
+* Vous disposez du numéro de série de l'appliance de stockage ou du contrôleur SG6000-CN sur lequel l'adaptateur HBA Fibre Channel doit être remplacé.
++
+
+NOTE: Si le numéro de série du dispositif de stockage contenant l'adaptateur HBA Fibre Channel que vous remplacez commence par la lettre Q, il ne sera pas répertorié dans le gestionnaire de réseau. Vous devez vérifier les étiquettes fixées à l'avant de chaque contrôleur SG6000-CN du centre de données jusqu'à ce que vous trouviez la correspondance.
+
+* Vous êtes connecté au Grid Manager à l'aide d'un https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["navigateur web pris en charge"^].
+
+
+.Étapes
+. Dans Grid Manager, sélectionnez *NODES*.
+. Dans le tableau de la page nœuds, sélectionnez un nœud de stockage d'appliance.
+. Sélectionnez l'onglet *matériel*.
++
+Vérifiez le *numéro de série du châssis de l'appliance de stockage* et le *numéro de série du contrôleur de calcul* dans la section serveur StorageGRID. Voyez si l'un de ces numéros de série correspond au numéro de série de l'appliance de stockage où vous remplacez l'adaptateur HBA Fibre Channel. Si l'un ou l'autre des numéros de série correspond, vous avez trouvé l'appliance appropriée.
+
++
+image::../media/nodes_page_hardware_tab_for_appliance_verify_HBA.png[Section de l'appliance pour Fibre Channel HCA]
+
++
+** Si la section appliance StorageGRID ne s'affiche pas, le nœud sélectionné n'est pas une appliance StorageGRID. Sélectionnez un nœud différent dans l'arborescence.
+** Si le modèle d'appliance n'est pas SG6060 ou SG6060X, sélectionnez un nœud différent dans l'arborescence.
+** Si les numéros de série ne correspondent pas, sélectionnez un autre nœud dans l'arborescence.
+
+
+. Une fois que vous avez trouvé le nœud sur lequel l'adaptateur HBA Fibre Channel doit être remplacé, notez l'adresse IP du contrôleur de calcul dans la section Appliance StorageGRID.
++
+Vous pouvez utiliser cette adresse IP pour link:turning-controller-identify-led-on-and-off.html["Activez la LED d'identification du contrôleur de calcul"], pour vous aider à localiser l'appliance dans le centre de données.
+
+
+
+
+
+== Retirez l'adaptateur HBA Fibre Channel
+
+Vous devrez peut-être remplacer l'adaptateur de bus hôte Fibre Channel (HBA) dans le contrôleur SG6000-CN s'il ne fonctionne pas de manière optimale ou s'il est défectueux.
+
+.Avant de commencer
+* Vous disposez de l'adaptateur HBA Fibre Channel de remplacement approprié.
+* Vous avez link:reinstalling-fibre-channel-hba.html#verify-fibre-channel-hba-to-replace["Déterminez quel contrôleur SG6000-CN contient l'adaptateur HBA Fibre Channel à remplacer - effectué"].
+* Vous avez link:locating-controller-in-data-center.html["Emplacement physique du contrôleur SG6000-CN"] dans le data center.
+* Vous avez link:power-sg6000-cn-controller-off-on.html#shut-down-sg6000-cn-controller["Arrêtez le contrôleur SG6000-CN"].
++
+
+CAUTION: Un arrêt contrôlé est nécessaire avant de retirer le contrôleur du rack.
+
+* Vous avez link:reinstalling-sg6000-cn-controller-into-cabinet-or-rack.html#remove-sg6000-cn-controller-from-cabinet-or-rack["retirez le contrôleur de l'armoire ou du rack - effectué"].
+* Vous avez link:reinstalling-sg6000-cn-controller-cover.html#remove-sg6000-cn-controller-cover["retirez le capot du contrôleur - effectué"].
+
+
+.Description de la tâche
+Pour éviter toute interruption de service, vérifiez que tous les autres nœuds de stockage sont connectés à la grille avant de commencer le remplacement de l'adaptateur HBA Fibre Channel ou remplacez-le lors d'une fenêtre de maintenance planifiée lorsque des périodes d'interruption de service sont acceptables. Voir les informations sur https://docs.netapp.com/us-en/storagegrid-118/monitor/monitoring-system-health.html#monitor-node-connection-states["contrôle de l'état de connexion du nœud"^].
+
+
+CAUTION: Si vous avez déjà utilisé une règle ILM pour créer une seule copie d'un objet, vous devez remplacer l'adaptateur HBA Fibre Channel lors d'une fenêtre de maintenance planifiée. Sinon, vous risquez de perdre temporairement l'accès à ces objets au cours de cette procédure. +
+Voir informations sur https://docs.netapp.com/us-en/storagegrid-118/ilm/why-you-should-not-use-single-copy-replication.html["pourquoi ne pas utiliser la réplication à copie unique"^].
+
+.Étapes
+. Enroulez l'extrémité du bracelet antistatique autour de votre poignet et fixez l'extrémité du clip à une masse métallique afin d'éviter toute décharge statique.
+. Repérez l'ensemble de montage à l'arrière du contrôleur contenant le HBA Fibre Channel.
++
+image::../media/sg6060_riser_assembly_location.jpg[Emplacement de l'assemblage de la carte de montage SG6060]
+
+. Saisissez l'ensemble de montage dans les trous marqués de couleur bleue et soulevez-le avec précaution vers le haut. Déplacez l'ensemble de montage vers l'avant du châssis tout en le soulevant pour permettre aux connecteurs externes des adaptateurs installés de dégager le châssis.
+. Placez la carte de montage sur une surface antistatique plane, face en métal vers le bas pour accéder aux adaptateurs.
++
+image::../media/sg6060_fc_hba_location.jpg[SG6060 HBA Fibre Channel dans l'assemblage de montage]
+
++
+L'ensemble carte de montage comprend deux adaptateurs : un adaptateur HBA Fibre Channel et un adaptateur réseau Ethernet. Le HBA Fibre Channel est indiqué sur l'illustration.
+
+. Ouvrez le loquet bleu de l'adaptateur (encerclé) et retirez avec précaution le HBA Fibre Channel de l'ensemble de montage. Secouez légèrement l'adaptateur pour retirer l'adaptateur de son connecteur. N'utilisez pas de force excessive.
+. Placez l'adaptateur sur une surface antistatique plane.
+
+
+.Une fois que vous avez terminé
+link:reinstalling-fibre-channel-hba.html["Installez la carte HBA Fibre Channel de remplacement"].
+
+Après le remplacement de la pièce, renvoyez la pièce défectueuse à NetApp, en suivant les instructions RMA (retour de matériel) livrées avec le kit. Voir la https://mysupport.netapp.com/site/info/rma["Retour de pièce et amp ; remplacements"^] pour plus d'informations.
+
+
+
+== Réinstallez l'adaptateur HBA Fibre Channel
+
+L'adaptateur HBA Fibre Channel de remplacement est installé au même emplacement que celui qui a été retiré.
+
+.Avant de commencer
+* Vous disposez de l'adaptateur HBA Fibre Channel de remplacement approprié.
+* Vous avez supprimé l'adaptateur HBA Fibre Channel existant.
++
+link:reinstalling-fibre-channel-hba.html#remove-fibre-channel-hba["Retirez l'adaptateur HBA Fibre Channel"]
+
+
+
+.Étapes
+. Enroulez l'extrémité du bracelet antistatique autour de votre poignet et fixez l'extrémité du clip à une masse métallique afin d'éviter toute décharge statique.
+. Retirer le HBA Fibre Channel de remplacement de son emballage.
+. Avec le loquet bleu de l'adaptateur en position ouverte, alignez l'adaptateur HBA Fibre Channel avec son connecteur sur le dispositif de montage. Appuyez ensuite avec précaution sur l'adaptateur pour l'insérer dans le connecteur jusqu'à ce qu'il soit bien en place.
++
+image::../media/sg6060_fc_hba_location.jpg[SG6060 HBA Fibre Channel dans l'assemblage de montage]
+
++
+L'ensemble carte de montage comprend deux adaptateurs : un adaptateur HBA Fibre Channel et un adaptateur réseau Ethernet. Le HBA Fibre Channel est indiqué sur l'illustration.
+
+. Repérez le trou d'alignement de l'ensemble de montage (entouré de cercles) qui s'aligne sur une goupille de guidage de la carte système pour assurer le positionnement correct de l'ensemble de montage.
++
+image::../media/sg6060_riser_alignment_hole.jpg[Trou d'alignement sur l'ensemble de montage SG6060]
+
+. Positionnez l'ensemble de montage dans le châssis, en vous assurant qu'il est aligné avec le connecteur et la broche de guidage de la carte système, puis insérez l'ensemble de montage.
+. Appuyez avec précaution sur l'ensemble de montage pour le mettre en place le long de sa ligne centrale, à côté des trous marqués en bleu, jusqu'à ce qu'il soit bien en place.
+. Retirez les capuchons de protection des ports HBA Fibre Channel sur lesquels vous devez réinstaller les câbles.
+
+
+.Une fois que vous avez terminé
+Si vous n'avez pas d'autres procédures de maintenance à effectuer dans le contrôleur, link:reinstalling-sg6000-cn-controller-cover.html["réinstallez le capot du contrôleur"].

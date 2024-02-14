@@ -1,0 +1,138 @@
+---
+permalink: sg6100/replacing-fan-in-sgf6112.html 
+sidebar: sidebar 
+keywords: storagegrid, sgf6112, storage appliance, Replacing, replace, fan, remove, removing, removal, install, installing 
+summary: 'L"appliance SGF6112 est équipée de huit ventilateurs. Si l"un des ventilateurs tombe en panne, vous devez le remplacer dès que possible pour vous assurer que l"appareil est bien refroidi.' 
+---
+= Remplacez le ventilateur dans un SGF6112
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+L'appliance SGF6112 est équipée de huit ventilateurs. Si l'un des ventilateurs tombe en panne, vous devez le remplacer dès que possible pour vous assurer que l'appareil est bien refroidi.
+
+.Avant de commencer
+* Vous disposez du ventilateur de remplacement approprié.
+* Vous avez link:verify-component-to-replace.html["déterminez l'emplacement du ventilateur à remplacer - effectué"].
+* Vous avez link:locating-sgf6112-in-data-center.html["Emplacement physique de l'appliance SGF6112"] emplacement de remplacement du ventilateur dans le centre de données.
++
+
+NOTE: A link:power-sgf6112-off-on.html#shut-down-the-sgf6112-appliance["arrêt contrôlé de l'appareil"] est nécessaire avant de retirer l'appareil du rack.
+
+* Vous avez déconnecté tous les câbles et link:reinstalling-sgf6112-cover.html["retirez le capot de l'appareil - effectué"].
+* Vous avez confirmé que les autres ventilateurs sont installés et en cours d'exécution.
+
+
+.Description de la tâche
+Pour éviter toute interruption de service, vérifiez que tous les autres nœuds de stockage sont connectés à la grille avant de commencer le remplacement du ventilateur ou remplacez le ventilateur dans une fenêtre de maintenance planifiée lorsque des périodes d'interruption de service sont acceptables. Voir les informations sur https://docs.netapp.com/us-en/storagegrid-118/monitor/monitoring-system-health.html#monitor-node-connection-states["contrôle de l'état de connexion du nœud"^].
+
+
+CAUTION: Si vous avez déjà utilisé une règle ILM pour créer une seule copie d'un objet, vous devez remplacer le ventilateur lors d'une fenêtre de maintenance planifiée. Sinon, vous risquez de perdre temporairement l'accès à ces objets au cours de cette procédure. Voir informations sur https://docs.netapp.com/us-en/storagegrid-118/ilm/why-you-should-not-use-single-copy-replication.html["pourquoi ne pas utiliser la réplication à copie unique"^].
+
+Le nœud d'appliance ne sera pas accessible pendant le remplacement du ventilateur.
+
+La photo montre un ventilateur pour l'appareil. Le connecteur électrique est mis en surbrillance. Les ventilateurs de refroidissement sont accessibles après avoir pris le capot supérieur de l'appareil.
+
+
+NOTE: Chacun des deux blocs d'alimentation contient également un ventilateur. Les ventilateurs du bloc d'alimentation ne sont pas inclus dans cette procédure.
+
+image::../media/sgf6112_fan_fru.png[Ventilateur SGF6112 FRU]
+
+.Étapes
+. Enroulez l'extrémité du bracelet antistatique autour de votre poignet et fixez l'extrémité du clip à une masse métallique afin d'éviter toute décharge statique.
+. Localisez le ventilateur que vous devez remplacer.
++
+Les huit ventilateurs se trouvent dans les positions suivantes dans le châssis (la moitié avant du SGF6112 avec le capot supérieur retiré est illustrée) :
+
++
+image::../media/SGF6112-fan-locations.png[Emplacements des ventilateurs]
+
+
+
+|===
+
+
+|  | Ventilateur 
+
+
+ a| 
+1
+ a| 
+Fan_SYS0
+
+
+
+ a| 
+2
+ a| 
+Ventilateur_SYS1
+
+
+
+ a| 
+3
+ a| 
+Ventilateur_SYS2
+
+
+
+ a| 
+4
+ a| 
+FAN_SYS3
+
+
+
+ a| 
+5
+ a| 
+Ventilateur_SYS4
+
+
+
+ a| 
+6
+ a| 
+Ventilateur_SYS5
+
+
+
+ a| 
+7
+ a| 
+Ventilateur_SYS6
+
+
+
+ a| 
+8
+ a| 
+FAN_SYS7
+
+|===
+. Soulevez le ventilateur défectueux hors du châssis à l'aide des languettes bleues.
++
+image::../media/fan_removal.png[Retrait du ventilateur]
+
+. Faites glisser le ventilateur de remplacement dans le logement ouvert du châssis.
++
+Veillez à aligner le connecteur du ventilateur avec la prise de la carte de circuit imprimé.
+
+. Enfoncez fermement le connecteur du ventilateur dans la carte de circuit imprimé (prise en surbrillance).
++
+image::../media/sgf6112_fan_socket_check.png[Contrôle du connecteur du ventilateur]
+
+
+
+.Une fois que vous avez terminé
+. link:reinstalling-sgf6112-cover.html["Replacez le couvercle supérieur sur l'appareil"], et appuyez sur le loquet pour fixer le couvercle en place.
+. link:power-sgf6112-off-on.html["Mettez l'appareil sous tension"] Et surveillez les voyants et les codes de démarrage de l'appareil.
++
+Utilisez l'interface BMC pour surveiller l'état de démarrage.
+
+. Vérifiez que le nœud de l'appliance s'affiche dans Grid Manager et qu'aucune alerte n'apparaît.
+
+
+Après le remplacement de la pièce, renvoyez la pièce défectueuse à NetApp, en suivant les instructions RMA (retour de matériel) livrées avec le kit. Voir la https://mysupport.netapp.com/site/info/rma["Retour de pièce et amp ; remplacements"^] pour plus d'informations.

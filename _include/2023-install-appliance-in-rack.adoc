@@ -1,0 +1,32 @@
+= 
+:allow-uri-read: 
+
+
+.Avant de commencer
+* Vous avez examiné le document des avis de sécurité inclus dans l'emballage et vous avez compris les précautions à prendre pour déplacer et installer le matériel.
+* Les instructions sont fournies avec le kit de rails.
+
+
+.Étapes
+. Suivez attentivement les instructions du kit de rails pour installer les rails dans votre armoire ou rack.
+. Sur les deux rails installés dans l'armoire ou le rack, étendez les pièces mobiles des rails jusqu'à ce que vous entendiez un clic.
++
+image::../media/rails_extended_out.gif[Rails de l'appareil déployés]
+
+. Insérez l'appareil dans les rails.
+. Faites glisser l'appareil dans l'armoire ou le rack.
++
+Lorsque vous ne pouvez plus déplacer l'appareil, tirez sur les loquets bleus des deux côtés du châssis pour faire glisser l'appareil complètement vers l'intérieur.
+
++
+image::../media/sg6000_cn_rails_blue_button.gif[Appareil coulissant sur les rails]
+
+. Serrez les vis imperdables du panneau avant de l'appareil pour fixer l'appareil dans le rack.
++
+image::../media/sg6060_rack_retaining_screws.png[Vis de fixation du rack d'appareils]
+
++
+
+NOTE: Ne fixez le cadre avant qu'après avoir mis l'appareil sous tension.
+
+

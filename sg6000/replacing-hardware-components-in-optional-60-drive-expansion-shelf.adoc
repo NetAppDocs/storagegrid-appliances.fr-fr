@@ -1,0 +1,52 @@
+---
+permalink: sg6000/replacing-hardware-components-in-optional-60-drive-expansion-shelf.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, Replacing, replace, hardware, components, remove, removing, removal, install, installing, installation, i/o module, input/output module, power supply, fan, 60-drive expansion shelf, expansion shelf 
+summary: 'Vous devrez peut-être remplacer un module d"entrée/sortie, un bloc d"alimentation ou un ventilateur dans le tiroir d"extension.' 
+---
+= Remplacez les composants matériels du tiroir d'extension de 60 disques SG6000 en option
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous devrez peut-être remplacer un module d'entrée/sortie, un bloc d'alimentation ou un ventilateur dans le tiroir d'extension.
+
+.Avant de commencer
+* Vous disposez de la procédure de remplacement du matériel E-Series.
+* Vous avez trouvé physiquement l'appliance de stockage où vous remplacez les composants matériels des tiroirs d'extension dans le data Center.
++
+link:locating-controller-in-data-center.html["Localiser le contrôleur dans le data Center"]
+
+
+
+.Description de la tâche
+Pour remplacer un module d'entrée/sortie (IOM) dans un tiroir d'extension de 60 disques, reportez-vous aux étapes des instructions de link:replacing-storage-controller-sg6000.html["remplacement d'un contrôleur de stockage"].
+
+Pour remplacer un bloc d'alimentation ou un ventilateur dans un tiroir d'extension de 60 disques, accédez aux procédures E-Series pour entretenir le matériel de 60 disques.
+
+|===
+| FRU | Reportez-vous aux instructions relatives à la gamme E-Series pour 
+
+
+ a| 
+Module d'entrée/sortie (IOM)
+ a| 
+Remplacement d'un module d'E/S.
+
+
+
+ a| 
+Réservoir d'alimentation
+ a| 
+Remplacez le boîtier d'alimentation (60 disques)
+
+
+
+ a| 
+Boîtier de ventilateur
+ a| 
+Remplacez le boîtier du ventilateur (60 disques)
+
+|===

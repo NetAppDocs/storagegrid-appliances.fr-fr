@@ -1,0 +1,58 @@
+---
+settings:
+  name: StorageGRID Appliances
+  internal:
+    pdf_enabled: true
+    termcheck_enabled: false
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+    hide_language_selector: true
+  langs: fr-fr,us-en,ja-jp,ko-kr,zh-cn,zh-tw,de-de,es-es,it-it
+sidebar:
+  entries:
+  - title: Documents relatifs à l'appliance StorageGRID
+    url: "/index.html"
+  - title: Commencez
+    url: "/landing-learn-hdwr/index.html"
+    entries:
+    - title: Nouveautés en matière d'appliances
+      url: "/whats-new-appliances.html"
+    - title: En savoir plus sur les appliances StorageGRID
+      entries:
+      - title: Appareils de services SG100 et SG1000
+        url: "/installconfig/hardware-description-sg100-and-1000.html"
+      - title: Appliances de stockage SG5700
+        url: "/installconfig/hardware-description-sg5700.html"
+      - title: Dispositifs de stockage SG6000
+        url: "/installconfig/hardware-description-sg6000.html"
+      - title: Appliances de stockage SG6100
+        url: "/installconfig/hardware-description-sg6100.html"
+  - section: installconfig
+  - title: Maintenance du matériel de l'appliance
+    url: "/landing-maintain-hdwr/index.html"
+    entries:
+    - section: commonhardware
+    - title: Clonage de nœuds d'appliance
+      entries:
+      - title: Présentation
+        pdf-filename: Clonage de nœuds d'appliance
+        url: "/commonhardware/how-appliance-node-cloning-works.html"
+      - title: Considérations et configuration requise pour le clonage des nœuds d'appliance
+        url: "/commonhardware/considerations-and-requirements-for-appliance-node-cloning.html"
+      - title: Clonez le nœud d'appliance
+        url: "/commonhardware/appliance-node-cloning-procedure.html"
+    - section: sg100-1000
+    - section: sg5600
+    - section: sg5700
+    - section: sg6000
+    - section: sg6100
+  - title: Documentation du logiciel StorageGRID
+    url: "/storagegrid-documentation.html"
+  - title: Activez StorageGRID
+    url: "/storagegrid-enable.html"
+  - title: Mentions légales
+    url: "/legal-notices.html"
+product-family:
+  name: StorageGRID documentation
+  repo: storagegrid-family

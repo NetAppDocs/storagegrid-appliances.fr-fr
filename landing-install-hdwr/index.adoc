@@ -1,0 +1,13 @@
+---
+layout: landing-page 
+sidebar: sidebar 
+permalink: landing-install-hdwr/index.html 
+summary: 'Installez le matériel de l"appliance sur votre site.' 
+---
+= Installez le matériel de l'appliance
+:hardbreaks:
+:allow-uri-read: 
+:linkattrs: 
+:imagesdir: ./media/
+
+

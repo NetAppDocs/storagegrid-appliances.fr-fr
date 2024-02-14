@@ -1,0 +1,13 @@
+---
+layout: landing-page 
+sidebar: sidebar 
+permalink: landing-appl-install/index.html 
+summary: 'Pour ajouter une appliance de stockage ou de services à votre système StorageGRID, vous devez installer et configurer le matériel de l"appliance. Vous installez ensuite le logiciel StorageGRID sur chaque appliance et connectez le nœud de l"appliance à la grille.' 
+---
+= Installez le matériel de l'appliance StorageGRID
+:hardbreaks:
+:allow-uri-read: 
+:linkattrs: 
+:imagesdir: ./media/
+
+

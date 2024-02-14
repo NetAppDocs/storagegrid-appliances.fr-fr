@@ -1,0 +1,90 @@
+---
+permalink: installconfig/automating-configuration-of-storagegrid.html 
+sidebar: sidebar 
+keywords: automate, automating, automation, automatic, configuration, configure 
+summary: Une fois que vous avez installé et configuré les nœuds grid, vous pouvez automatiser la configuration du système StorageGRID. 
+---
+= Automatisez la configuration de StorageGRID
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Une fois que vous avez installé et configuré les nœuds grid, vous pouvez automatiser la configuration du système StorageGRID.
+
+.Avant de commencer
+* Vous connaissez l'emplacement des fichiers suivants à partir de l'archive d'installation.
++
+[cols="1a,1a"]
+|===
+| Nom du fichier | Description 
+
+
+| configure-storagegrid.py  a| 
+Script Python utilisé pour automatiser la configuration
+
+
+
+| configurez-storagegrid.sample.json  a| 
+Exemple de fichier de configuration à utiliser avec le script
+
+
+
+| configurez-storagegrid.blank.json  a| 
+Fichier de configuration vierge à utiliser avec le script
+
+|===
+* Vous avez créé un `configure-storagegrid.json` fichier de configuration. Pour créer ce fichier, vous pouvez modifier l'exemple de fichier de configuration (`configure-storagegrid.sample.json`) ou le fichier de configuration vierge (`configure-storagegrid.blank.json`).
+
+
+.Description de la tâche
+Vous pouvez utiliser le `configure-storagegrid.py` Script Python et le `configure-storagegrid.json` Fichier de configuration pour automatiser la configuration de votre système StorageGRID.
+
+
+NOTE: Vous pouvez également configurer le système à l'aide du https://docs.netapp.com/us-en/storagegrid-118/primer/exploring-grid-manager.html["Gestionnaire de grille"^] ou le link:overview-of-installation-rest-apis.html["API d'installation"].
+
+.Étapes
+. Connectez-vous à la machine Linux que vous utilisez pour exécuter le script Python.
+. Accédez au répertoire dans lequel vous avez extrait l'archive d'installation.
++
+Par exemple : +
+`cd StorageGRID-Webscale-_version/platform_`
+
++
+où `_platform_` est `debs`, `rpms`, ou `vsphere`.
+
+. Exécutez le script Python et utilisez le fichier de configuration que vous avez créé.
++
+Par exemple :
+
++
+[listing]
+----
+./configure-storagegrid.py ./configure-storagegrid.json --start-install
+----
+
+
+.Une fois que vous avez terminé
+Un progiciel de récupération `.zip` le fichier est généré pendant le processus de configuration et il est téléchargé dans le répertoire où vous exécutez le processus d'installation et de configuration. Vous devez sauvegarder le fichier de package de restauration afin de pouvoir restaurer le système StorageGRID en cas de défaillance d'un ou plusieurs nœuds de la grille. Par exemple, copiez-le dans un emplacement sécurisé, sauvegardé sur le réseau et dans un emplacement de stockage cloud sécurisé.
+
+
+CAUTION: Le fichier du progiciel de récupération doit être sécurisé car il contient des clés de cryptage et des mots de passe qui peuvent être utilisés pour obtenir des données du système StorageGRID.
+
+Si vous avez spécifié que des mots de passe aléatoires doivent être générés, vous devez extraire le `Passwords.txt` Fichier et recherche les mots de passe requis pour accéder au système StorageGRID.
+
+[listing]
+----
+######################################################################
+##### The StorageGRID "recovery package" has been downloaded as: #####
+#####           ./sgws-recovery-package-994078-rev1.zip          #####
+#####   Safeguard this file as it will be needed in case of a    #####
+#####                 StorageGRID node recovery.                 #####
+######################################################################
+----
+Votre système StorageGRID est installé et configuré lorsqu'un message de confirmation s'affiche.
+
+[listing]
+----
+StorageGRID has been configured and installed.
+----

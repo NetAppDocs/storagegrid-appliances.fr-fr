@@ -1,0 +1,37 @@
+---
+permalink: commonhardware/locate-mac-address.html 
+sidebar: sidebar 
+keywords: storagegrid, mac, mac address 
+summary: 'Dans certains cas, vous devrez peut-être mettre à jour les références d"adresse MAC après le remplacement d"un appareil.' 
+---
+= Mettre à jour les références d'adresse MAC
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Dans certains cas, vous devrez peut-être mettre à jour les références d'adresse MAC après le remplacement d'un appareil.
+
+.Description de la tâche
+Si l'une des interfaces réseau d'une appliance que vous remplacez est configurée pour DHCP, vous devrez peut-être mettre à jour les attributions de bail DHCP permanentes sur les serveurs DHCP pour référencer les adresses MAC de l'appliance de remplacement. Cette mise à jour garantit que l'appliance de remplacement se voit attribuer les adresses IP attendues.
+
+.Étapes
+. Repérez l'étiquette à l'avant de l'appareil. L'étiquette indique l'adresse MAC du port de gestion BMC de l'appliance.
+. Pour déterminer l'adresse MAC du port réseau Admin, vous devez ajouter *2* au numéro hexadécimal sur l'étiquette.
++
+Par exemple, si l'adresse MAC de l'étiquette se termine par *09*, l'adresse MAC du port d'administration se terminera par *0B*. Si l'adresse MAC de l'étiquette se termine dans *(_y_)FF*, l'adresse MAC du port d'administration se terminera dans *(_y_+1)01*.
+
++
+Vous pouvez facilement effectuer ce calcul en ouvrant Calculator sous Windows, en le définissant en mode programmateur, en sélectionnant Hex, en saisissant l'adresse MAC, puis en tapant *+ 2 =*.
+
+. Demandez à votre administrateur réseau d'associer le DNS/réseau et l'adresse IP de l'appliance que vous avez retirée à l'adresse MAC du dispositif de remplacement.
++
+
+CAUTION: Vous devez vous assurer que toutes les adresses IP de l'appareil d'origine ont été mises à jour avant d'alimenter l'appareil de remplacement. Dans le cas contraire, l'appliance obtiendra de nouvelles adresses IP DHCP lors du démarrage et pourrait ne pas pouvoir se reconnecter à StorageGRID. Cette étape s'applique à tous les réseaux StorageGRID reliés à l'appliance.
+
++
+
+NOTE: Si l'appliance d'origine utilisait une adresse IP statique, la nouvelle appliance adopte automatiquement les adresses IP de l'appliance que vous avez retirée.
+
+

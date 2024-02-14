@@ -1,0 +1,83 @@
+---
+permalink: sg5700/replacing-other-hardware-components-sg5700.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5700, storage node, storage appliance, Replacing, replace, hardware, components, remove, removing, removal, install, installing, installation, controller battery, battery, drive, fan, power supply 
+summary: 'Vous devrez peut-être remplacer la batterie du contrôleur, le lecteur, le ventilateur ou le bloc d"alimentation de l"appliance StorageGRID.' 
+---
+= Remplacez les autres composants matériels de l'appliance SG5700
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous devrez peut-être remplacer la batterie du contrôleur, le lecteur, le ventilateur ou le bloc d'alimentation de l'appliance StorageGRID.
+
+.Avant de commencer
+* Vous disposez de la procédure de remplacement du matériel E-Series.
+* L'appareil a été link:../commonhardware/placing-appliance-into-maintenance-mode.html["passe en mode maintenance"] si la procédure de remplacement des composants requiert l'arrêt de l'appareil.
+
+
+.Description de la tâche
+Pour remplacer la batterie du contrôleur E2800, reportez-vous aux instructions de la section link:replacing-e2800-controller.html["Remplacement du contrôleur E2800"]. Ces instructions décrivent le retrait du contrôleur de l'appareil, le retrait de la batterie du contrôleur, l'installation de la batterie et le remplacement du contrôleur.
+
+Pour remplacer un lecteur, un boîtier de ventilateur, un boîtier de ventilateur, un boîtier de puissance ou un tiroir de lecteur dans l'appareil, accédez au http://mysupport.netapp.com/info/web/ECMP1658252.html["Procédures E-Series pour la maintenance du matériel E2800"^].
+
+
+
+== Instructions de remplacement des composants SG5712
+
+[cols="1a,3a"]
+|===
+| FRU | Reportez-vous aux instructions relatives à la gamme E-Series pour 
+
+
+ a| 
+Lecteur
+ a| 
+Remplacement d'un disque dans des tiroirs E2800 de 12 ou 24 disques
+
+
+
+ a| 
+Absorbeur de ventilateur d'alimentation
+ a| 
+Réinstallation d'une cartouche de ventilateur à commande électrique dans les tiroirs E2800
+
+|===
+
+
+== Instructions de remplacement des composants SG5760
+
+[cols="1a,3a"]
+|===
+| FRU | Reportez-vous aux instructions relatives à la gamme E-Series pour 
+
+
+ a| 
+Lecteur
+ a| 
+Remplacement d'un disque dans les tiroirs E2860
+
+
+
+ a| 
+Réservoir d'alimentation
+ a| 
+Remplacement d'un boîtier électrique dans les tiroirs E2860
+
+
+
+ a| 
+Boîtier de ventilateur
+ a| 
+Remplacement d'un boîtier de ventilateur dans les tiroirs E2860
+
+
+
+ a| 
+Tiroir d'entraînement
+ a| 
+Remplacement d'un tiroir disque dans les tiroirs E2860
+
+|===

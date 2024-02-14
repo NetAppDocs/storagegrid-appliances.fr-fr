@@ -1,0 +1,102 @@
+= Si nécessaire, déplacez HIC vers un nouveau contrôleur
+:allow-uri-read: 
+
+
+
+
+== Si nécessaire, déplacez HIC vers un nouveau contrôleur
+
+.Étapes
+. Si le contrôleur défectueux est équipé d'une carte d'interface hôte (HIC), déplacez la carte HIC du contrôleur défectueux vers le contrôleur de remplacement.
++
+Une HIC distincte est utilisée uniquement pour le contrôleur E2800B. La carte HIC est montée sur la carte contrôleur principale et comprend deux connecteurs SPF.
+
++
+
+NOTE: Les illustrations de cette procédure montrent une HIC 2 ports. La HIC de votre contrôleur peut avoir un nombre différent de ports.
+
+. Si le contrôleur n'a pas d'HIC (E2800A), remplacer le capot du contrôleur. Si le contrôleur possède une HIC (E2800B), passer à l' <<move_the_HIC_to_the_replacement_controller,Déplacer la HIC du contrôleur défectueux vers le contrôleur de remplacement>>.
++
+.. [[Move_the_HIC_to_the_replace_Controller]]si la carte HIC est équipée, déplacez la carte HIC du contrôleur défectueux vers le contrôleur de remplacement.
+.. Supprimer tout SFP de la HIC.
+.. À l'aide d'un tournevis cruciforme n° 1, retirez les vis qui fixent le cadran HIC au contrôleur.
++
+Il y a quatre vis : une sur le dessus, une sur le côté et deux sur l'avant.
+
++
+image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.png[Vis du panneau avant du système E2800]
+
+.. Retirez la plaque HIC.
+.. À l'aide de vos doigts ou d'un tournevis cruciforme, desserrez les trois vis à molette qui fixent le HIC à la carte contrôleur.
+.. Détachez avec précaution la carte HIC de la carte contrôleur en la soulevant et en la faisant glisser vers l'arrière.
++
+
+CAUTION: Veillez à ne pas rayer ou heurter les composants au bas de la HIC ou au-dessus de la carte contrôleur.
+
++
+image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.png[Vis moletées HIC E2800A]
+
++
+[cols="1a,2a"]
+|===
+| Étiquette | Description 
+
+
+ a| 
+1
+ a| 
+Carte d'interface hôte
+
+
+
+ a| 
+2
+ a| 
+Vis moletées
+
+|===
+.. Placez le HIC sur une surface antistatique.
+.. À l'aide d'un tournevis cruciforme n° 1, retirez les quatre vis qui fixent le cache blanc au contrôleur de remplacement, puis retirez le cache.
+.. Alignez les trois vis moletées de la HIC avec les trous correspondants du contrôleur de remplacement, puis alignez le connecteur situé au bas de la HIC avec le connecteur d'interface HIC de la carte contrôleur.
++
+Veillez à ne pas rayer ou heurter les composants au bas de la HIC ou au-dessus de la carte contrôleur.
+
+.. Abaisser avec précaution la HIC et mettre le connecteur HIC en place en appuyant doucement sur la HIC.
++
+
+CAUTION: *Dommage possible de l'équipement* -- attention de ne pas pincer le connecteur ruban doré pour les voyants du contrôleur entre le HIC et les vis moletées.
+
++
+image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[Vis à serrage à main E2800A HIC]
+
++
+[cols="1a,2a"]
+|===
+| Étiquette | Description 
+
+
+ a| 
+1
+ a| 
+Carte d'interface hôte
+
+
+
+ a| 
+2
+ a| 
+Vis moletées
+
+|===
+.. Serrez les vis à molette HIC à la main.
++
+N'utilisez pas de tournevis, sinon vous risquez de trop serrer les vis.
+
+.. À l'aide d'un tournevis cruciforme n° 1, fixez le cadran HIC retiré du contrôleur d'origine sur le nouveau contrôleur à l'aide de quatre vis.
++
+image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.png[Vis de façade E2800A]
+
+.. Réinstallez tous les SFP retirés dans le HIC.
+
+
+

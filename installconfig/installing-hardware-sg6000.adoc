@@ -1,0 +1,55 @@
+---
+permalink: installconfig/installing-hardware-sg6000.html 
+sidebar: sidebar 
+keywords: install, sg6000, sg6060, sgf6024, expansion shelf, cabinet, rack, drives 
+summary: 'Pour les SGSGSGF6024 et SGF6024, vous installez des rails dans votre armoire ou rack et faites glisser le tiroir contrôleur, les tiroirs d"extension éventuels et le contrôleur de calcul sur les rails. Dans le cas des SG6060, n"installez pas les disques dans chaque shelf avant que les shelfs soient installés.' 
+---
+= Installation dans l'armoire ou le rack (SG6000)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pour les SGSGSGF6024 et SGF6024, vous installez des rails dans votre armoire ou rack et faites glisser le tiroir contrôleur, les tiroirs d'extension éventuels et le contrôleur de calcul sur les rails. Pour les SG6060, n'installez pas les disques dans chaque shelf avant que les shelfs soient installés.
+
+[cols="1a,2a,2a"]
+|===
+| Modèle | Installer | Pour plus d'informations 
+
+
+ a| 
+SG6060
+ a| 
+tiroir contrôleur de 60 disques et tiroir d'extension de 60 disques
+ a| 
+link:sg6060-installing-60-drive-shelves-into-cabinet-or-rack.html["Installez les tiroirs de 60 disques"]
+
+
+
+ a| 
+SG6060
+ a| 
+60 disques dans chaque tiroir
+ a| 
+link:sg6060-installing-drives.html["Installez les lecteurs"]
+
+
+
+ a| 
+SGF6024
+ a| 
+tiroir contrôleur de 24 disques
+ a| 
+link:sgf6024-installing-24-drive-shelves-into-cabinet-or-rack.html["Installez les tiroirs de 24 disques"]
+
+
+
+ a| 
+SG6060 et SGF6024
+ a| 
+Contrôleur de calcul SG6000-CN
+ a| 
+link:sg6000-cn-installing-into-cabinet-or-rack.html["Installer le contrôleur SG6000-CN"]
+
+|===

@@ -1,0 +1,201 @@
+---
+permalink: sg6000/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg6000.html 
+sidebar: sidebar 
+keywords: storage node, storage appliance, controller, storage controller, upgrade, upgrading, SANtricity OS, SANtricity 
+summary: 'Pour les contrôleurs de stockage qui utilisent actuellement SANtricity OS 08.42.20.00 \(11.42\) ou version ultérieure, vous devez utiliser Grid Manager pour appliquer une mise à niveau.' 
+---
+= Mettez à niveau le système d'exploitation SANtricity sur des contrôleurs de stockage SG6000 à l'aide de Grid Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pour les contrôleurs de stockage qui utilisent actuellement SANtricity OS 08.42.20.00 (11.42) ou version ultérieure, vous devez utiliser le gestionnaire grid pour appliquer une mise à niveau.
+
+.Avant de commencer
+* Vous avez consulté le https://imt.netapp.com/matrix/#welcome["Matrice d'interopérabilité NetApp (IMT)"^] Pour vérifier que la version de SANtricity OS utilisée pour la mise à niveau est compatible avec votre appliance.
+* Vous avez le https://docs.netapp.com/us-en/storagegrid-118/admin/admin-group-permissions.html["Maintenance ou autorisation d'accès racine"^].
+* Vous êtes connecté au Grid Manager à l'aide d'un https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["navigateur web pris en charge"^].
+* Vous avez la phrase secrète pour le provisionnement.
+* Vous avez accès à https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["Téléchargement NetApp : appliance StorageGRID"^].
+
+
+.Description de la tâche
+Vous ne pouvez pas effectuer d'autres mises à jour logicielles (mise à niveau du logiciel StorageGRID ou correctif) tant que vous n'avez pas terminé le processus de mise à niveau du système d'exploitation SANtricity. Si vous tentez de lancer un correctif ou une mise à niveau du logiciel StorageGRID avant la fin du processus de mise à niveau de SANtricity OS, vous êtes redirigé vers la page de mise à niveau de SANtricity OS.
+
+La procédure ne sera terminée qu'une fois la mise à niveau de SANtricity OS appliquée avec succès à tous les nœuds applicables sélectionnés pour la mise à niveau. Cela peut prendre plus de 30 minutes pour charger le système d'exploitation SANtricity sur chaque nœud (de façon séquentielle) et jusqu'à 90 minutes pour redémarrer chaque appliance de stockage StorageGRID. Les nœuds de votre grille qui n'utilisent pas SANtricity OS ne seront pas affectés par cette procédure.
+
+
+CAUTION: Les étapes suivantes s'appliquent uniquement lorsque vous utilisez le gestionnaire de grille pour effectuer la mise à niveau. Les contrôleurs de stockage de l'appliance ne peuvent pas être mis à niveau à l'aide du gestionnaire de grid lorsque les contrôleurs utilisent un système d'exploitation SANtricity antérieur à 08.42.20.00 (11.42).
+
+
+NOTE: Cette procédure met automatiquement à niveau la NVSRAM vers la version la plus récente associée à la mise à niveau du système d'exploitation SANtricity. Vous n'avez pas besoin d'appliquer un fichier de mise à niveau NVSRAM distinct.
+
+
+NOTE: Veillez à appliquer le dernier correctif StorageGRID avant de commencer cette procédure. Voir https://docs.netapp.com/us-en/storagegrid-118/maintain/storagegrid-hotfix-procedure.html["Procédure de correctif StorageGRID"^] pour plus d'informations.
+
+.Étapes
+. [[download-santricity-os]] Téléchargez le nouveau fichier du logiciel SANtricity OS depuis le site https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["Téléchargement NetApp : appliance StorageGRID"^].
++
+Veillez à choisir la version de système d'exploitation SANtricity pour vos contrôleurs de stockage.
+
+. Sélectionnez *MAINTENANCE* > *système* > *mise à jour logicielle*.
++
+image::../media/software_update_landing.png[Page d'accueil de mise à jour de logiciels]
+
+. Dans la section mise à jour de SANtricity OS, sélectionnez *mise à jour*.
++
+La page de mise à niveau de SANtricity OS s'affiche et répertorie les détails de chaque nœud d'appliance, notamment :
+
++
+** Nom du nœud
+** Le site
+** Modèle de type appliance
+** Version du système d'exploitation SANtricity
+** État
+** État de la dernière mise à niveau
+
+
+. Consultez les informations du tableau pour tous vos appareils pouvant être mis à niveau. Vérifiez que tous les contrôleurs de stockage ont l'état *nominal*. Si l'état d'un contrôleur est *Inconnu*, passez à *nœuds* > *_appliance node_* > *matériel* pour rechercher et résoudre le problème.
+. Sélectionnez le fichier de mise à niveau du système d'exploitation SANtricity que vous avez téléchargé depuis le site du support NetApp.
++
+.. Sélectionnez *Parcourir*.
+.. Localisez et sélectionnez le fichier.
+.. Sélectionnez *Ouvrir*.
+
+
++
+Le fichier est téléchargé et validé. Une fois le processus de validation terminé, le nom du fichier est affiché avec une coche verte à côté du bouton *Browse*. Ne modifiez pas le nom du fichier car il fait partie du processus de vérification.
+
+. Entrez la phrase de passe de provisionnement et sélectionnez *Continuer*.
++
+Un message d'avertissement s'affiche indiquant que la connexion de votre navigateur peut être perdue temporairement car les services sur les nœuds mis à niveau sont redémarrés.
+
+. Sélectionnez *Oui* pour placer le fichier de mise à niveau de SANtricity OS sur le nœud d'administration principal.
++
+Lorsque la mise à niveau de SANtricity OS démarre :
+
++
+.. Le contrôle de l'état est exécuté. Ce processus vérifie qu'aucun nœud ne présente l'état nécessite une intervention.
++
+
+NOTE: Si des erreurs sont signalées, résolvez-les et sélectionnez à nouveau *Démarrer*.
+
+.. Le tableau de progression de la mise à niveau de SANtricity OS s'affiche. Ce tableau affiche tous les nœuds de stockage de votre grille ainsi que l'étape actuelle de la mise à niveau de chaque nœud.
++
+
+NOTE: Le tableau indique tous les nœuds de stockage de l'appliance. Les nœuds de stockage logiciels ne sont pas affichés. Sélectionnez *Approve* pour tous les nœuds nécessitant la mise à niveau.
+
++
+image::../media/santricity_upgrade_progress_table.png[Capture d'écran affichant la partie progression de la mise à niveau de SANtricity OS de la page mise à niveau de SANtricity OS]
+
+
+
+. Vous pouvez également trier la liste des nœuds par ordre croissant ou décroissant :
++
+** Nom du nœud
+** Version actuelle
+** Progression
+** Étape
+** État
+
+
++
+Vous pouvez également saisir un terme dans la zone de recherche pour rechercher des nœuds spécifiques.
+
+. Approuver les nœuds de grille que vous êtes prêt à ajouter à la file d'attente de mise à niveau. Les nœuds approuvés sont mis à niveau un par un.
++
+
+CAUTION: N'approuvez pas la mise à niveau de SANtricity OS pour un nœud de stockage d'appliance, sauf si vous êtes sûr que le nœud est prêt à être arrêté et redémarré. Lorsque la mise à niveau de SANtricity OS est approuvée sur un nœud, les services qui y sont arrêtés et le processus de mise à niveau commence. Plus tard, lorsque la mise à niveau du nœud est terminée, le nœud d'appliance est redémarré. Ces opérations peuvent entraîner des interruptions de service pour les clients qui communiquent avec le nœud.
+
++
+** Sélectionnez le bouton *Approve All* pour ajouter tous les nœuds de stockage à la file d'attente de mise à niveau de SANtricity OS.
++
+
+NOTE: Si l'ordre dans lequel les nœuds sont mis à niveau est important, approuvez les nœuds ou les groupes de nœuds un par un et attendez que la mise à niveau soit terminée sur chaque nœud avant d'approuver le nœud suivant.
+
+** Sélectionnez un ou plusieurs boutons *Approve* pour ajouter un ou plusieurs nœuds à la file d'attente de mise à niveau de SANtricity OS. Le bouton *Approve* est désactivé si l'état n'est pas nominal.
++
+Après avoir sélectionné *Approve*, le processus de mise à niveau détermine si le noeud peut être mis à niveau. Si un nœud peut être mis à niveau, il est ajouté à la file d'attente de mise à niveau.
+
++
+Pour certains noeuds, le fichier de mise à niveau sélectionné n'est pas appliqué intentionnellement et vous pouvez terminer le processus de mise à niveau sans mettre à niveau ces noeuds spécifiques. Les nœuds volontairement non mis à niveau affichent une étape terminée (tentative de mise à niveau) et indiquent la raison pour laquelle le nœud n'a pas été mis à niveau dans la colonne Détails.
+
+
+
+. Si vous devez supprimer un nœud ou tous les nœuds de la file d'attente de mise à niveau de SANtricity OS, sélectionnez *Supprimer* ou *tout supprimer*.
++
+Lorsque l'étape dépasse la mise en file d'attente, le bouton *Supprimer* est masqué et vous ne pouvez plus supprimer le nœud du processus de mise à niveau de SANtricity OS.
+
+. Attendez que la mise à niveau de SANtricity OS soit appliquée à chaque nœud de grid approuvé.
++
+** Si un nœud affiche une étape d'erreur alors que la mise à niveau de SANtricity OS est appliquée, la mise à niveau a échoué pour le nœud. Avec l'aide du support technique, vous devrez peut-être placer l'appliance en mode maintenance pour la restaurer.
+** Si le firmware du nœud est trop ancien pour être mis à niveau avec le Gestionnaire de grille, le nœud affiche un stade d'erreur avec les détails que vous devez utiliser le mode de maintenance pour mettre à niveau SANtricity OS sur le nœud. Pour résoudre l'erreur, procédez comme suit :
++
+... Utilisez le mode de maintenance pour mettre à niveau SANtricity OS sur le nœud qui affiche une étape d'erreur.
+... Utilisez Grid Manager pour redémarrer et terminer la mise à niveau de SANtricity OS.
+
+
+
+
++
+Une fois la mise à niveau du système d'exploitation SANtricity terminée sur tous les nœuds approuvés, le tableau de progression de la mise à niveau du système d'exploitation SANtricity se ferme et une bannière verte indique le nombre de nœuds mis à niveau, ainsi que la date et l'heure de fin de la mise à niveau.
+
+. Si un nœud ne peut pas être mis à niveau, notez la raison indiquée dans la colonne Détails et prenez l'action appropriée.
++
+
+NOTE: La mise à niveau de SANtricity OS n'est terminée qu'une fois la mise à niveau de SANtricity OS approuvée sur tous les nœuds de stockage répertoriés.
+
++
+[cols="1a,2a"]
+|===
+| Raison | Action recommandée 
+
+
+ a| 
+Le nœud de stockage a déjà été mis à niveau.
+ a| 
+Aucune autre action n'est requise.
+
+
+
+ a| 
+La mise à niveau de SANtricity OS n'est pas applicable à ce nœud.
+ a| 
+Le nœud ne dispose d'aucun contrôleur de stockage qui peut être géré par le système StorageGRID. Terminez le processus de mise à niveau sans mettre à niveau le nœud affichant ce message.
+
+
+
+ a| 
+SANtricity OS fichier n'est pas compatible avec ce nœud.
+ a| 
+Le nœud nécessite un fichier SANtricity OS différent de celui que vous avez sélectionné.
+Une fois la mise à niveau actuelle terminée, téléchargez le fichier SANtricity OS approprié pour le nœud et répétez le processus de mise à niveau.
+
+|===
+. Si vous souhaitez mettre fin à l'approbation des nœuds et revenir à la page SANtricity OS pour permettre le téléchargement d'un nouveau fichier SANtricity OS, procédez comme suit :
++
+.. Sélectionnez *Ignorer les nœuds et Terminer*.
++
+Un avertissement s'affiche vous demandant si vous êtes sûr de vouloir terminer le processus de mise à niveau sans mettre à niveau tous les nœuds applicables.
+
+.. Sélectionnez *OK* pour revenir à la page *SANtricity OS*.
+.. Lorsque vous êtes prêt à poursuivre l'approbation des nœuds, <<download-santricity-os,Téléchargez SANtricity OS>> pour redémarrer le processus de mise à niveau.
++
+
+NOTE: Les nœuds déjà approuvés et mis à niveau sans erreur restent mis à niveau.
+
+
+
+. Répétez cette procédure de mise à niveau pour tous les nœuds dont la procédure de fin nécessite un fichier de mise à niveau SANtricity OS différent.
++
+
+NOTE: Pour les nœuds avec un état de nécessite une intervention, utilisez le mode maintenance pour effectuer la mise à niveau.
+
+
+
+.Informations associées
+https://mysupport.netapp.com/matrix["Matrice d'interopérabilité NetApp"^]
+
+link:upgrading-santricity-os-on-storage-controllers-using-maintenance-mode-sg6000.html["Mettre à niveau le système d'exploitation SANtricity sur les contrôleurs de stockage à l'aide du mode de maintenance"]

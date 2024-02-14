@@ -1,0 +1,150 @@
+---
+permalink: installconfig/hardware-description-sg6100.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6100, sgf6112, storage node, storage appliance, appliance models, appliance features, specifications 
+summary: 'L"appliance StorageGRID SGF6112 fonctionne comme un nœud de stockage dans un système StorageGRID. L"appliance peut être utilisée dans un environnement de grid hybride qui combine des nœuds de stockage d"appliance et des nœuds de stockage virtuels (basés sur logiciel).' 
+---
+= Appliances SG6100 : présentation
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+L'appliance StorageGRID SGF6112 fonctionne comme un nœud de stockage dans un système StorageGRID. L'appliance peut être utilisée dans un environnement de grid hybride qui combine des nœuds de stockage d'appliance et des nœuds de stockage virtuels (basés sur logiciel).
+
+L'appliance SGF6112 offre les fonctionnalités suivantes :
+
+* 12 disques SSD NVMe (Nonvolatile Memory Express) avec contrôleurs de stockage et de calcul intégrés.
+* Intègre les éléments de calcul et de stockage d'un nœud de stockage StorageGRID.
+* Inclut le programme d'installation de l'appliance StorageGRID pour simplifier le déploiement et la configuration des nœuds de stockage.
+* Inclut un contrôleur BMC (Baseboard Management Controller) pour la surveillance et le diagnostic du matériel dans le contrôleur de calcul.
+* Prend en charge jusqu'à quatre connexions 10 GbE ou 25 GbE au réseau Grid et au réseau client StorageGRID.
+
+
+
+
+== Description du matériel du SGF6112
+
+Le système StorageGRID SGF6112 est une appliance 100 % Flash au design compact comprenant un contrôleur de calcul et un contrôleur de stockage intégré dans un châssis 1U. L'appliance prend en charge 12 disques NVMe SSD avec une capacité de stockage allant jusqu'à 15.3 To par disque.
+
+
+
+=== Stockage objet résilient
+
+Le SGF6112 est conçu avec des disques SSD dans une configuration RAID et offre les fonctionnalités de protection des données suivantes :
+
+* Fonctionnement après panne d'un disque SSD unique, sans impact sur la disponibilité des objets.
+* Possibilité de fonctionner après plusieurs pannes SSD avec une réduction minimale de la disponibilité des objets (basée sur la conception du schéma RAID sous-jacent).
+* Restauration complète, pendant la mise en service, suite à des pannes de disque SSD qui ne provoquent pas d'endommagement extrême du RAID hébergeant le volume racine du nœud (le système d'exploitation StorageGRID).
+
+
+
+
+== Composants matériels du SGF6112
+
+L'appliance SGF6112 inclut les composants suivants :
+
+Des plateformes de calcul et de stockage:: Un serveur à une unité de rack (1U) qui comprend :
++
+--
+* Deux processeurs 2.1/2.6 GHz 165 W fournissant 48 cœurs
+* 256 GO DE RAM
+* 2 ports GBase-T 1/10
+* 4 ports Ethernet 10/25 GbE
+* 1 lecteur de démarrage interne de 256 Go (logiciel StorageGRID inclus)
+* Le contrôleur de gestion de la carte mère (BMC) simplifie la gestion du matériel
+* Alimentations et ventilateurs redondants
+
+
+--
+
+
+
+
+== Diagrammes SGF6112
+
+
+
+=== Vue avant du SGF6112
+
+Cette figure illustre l'avant du SGF6112 sans le cadre. L'appliance inclut une plateforme de calcul et de stockage 1U qui contient 12 disques SSD.
+
+image::../media/sgf6112_front_with_ssds.png[Vue avant du SGF6112]
+
+
+
+=== Vue arrière du SGF6112
+
+Cette figure illustre l'arrière du SGF6112, y compris les ports, les ventilateurs et les blocs d'alimentation.
+
+image::../media/sgf6112_rear_view.png[Vue arrière du SGF6112]
+
+[cols="1a,2a,2a,2a"]
+|===
+| Légende | Port | Type | Utiliser 
+
+
+ a| 
+1
+ a| 
+Ports réseau 1-4
+ a| 
+10/25-GbE, basé sur le type de câble ou d'émetteur-récepteur SFP (les modules SFP28 et SFP+ sont pris en charge), la vitesse du switch et la vitesse de liaison configurée.
+ a| 
+Connectez-vous au réseau Grid et au réseau client pour StorageGRID.
+
+
+
+ a| 
+2
+ a| 
+Port de gestion BMC
+ a| 
+1 GbE (RJ-45)
+ a| 
+Se connecte au contrôleur de gestion de la carte de base de l'appliance.
+
+
+
+ a| 
+3
+ a| 
+Ports de diagnostic et de support
+ a| 
+* VGA
+* USB
+* Port console micro-USB
+* Module d'emplacement micro-SD
+
+ a| 
+Réservé au support technique.
+
+
+
+ a| 
+4
+ a| 
+Port réseau d'administration 1
+ a| 
+1/10-GbE (RJ-45)
+ a| 
+Connectez l'appliance au réseau d'administration pour StorageGRID.
+
+
+
+ a| 
+5
+ a| 
+Port réseau d'administration 2
+ a| 
+1/10-GbE (RJ-45)
+ a| 
+Options :
+
+* Liaison avec le port 1 du réseau d'administration pour une connexion redondante au réseau d'administration pour StorageGRID.
+* Laisser déconnecté et disponible pour l'accès local temporaire (IP 169.254.0.1).
+* Lors de l'installation, utilisez le port 2 pour la configuration IP si les adresses IP attribuées par DHCP ne sont pas disponibles.
+
+
+|===

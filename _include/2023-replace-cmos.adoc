@@ -1,0 +1,99 @@
+= Réinstallez la pile CMOS
+:allow-uri-read: 
+
+
+.Description de la tâche
+Pour éviter toute interruption de service, vérifiez que tous les autres nœuds de stockage sont connectés à la grille avant de commencer le remplacement de la batterie CMOS ou remplacez la batterie pendant une fenêtre de maintenance planifiée lorsque des périodes d'interruption de service sont acceptables. Voir les informations sur https://docs.netapp.com/us-en/storagegrid-118/monitor/monitoring-system-health.html#monitor-node-connection-states["contrôle de l'état de connexion du nœud"^].
+
+
+CAUTION: Si vous avez déjà utilisé une règle ILM pour créer une seule copie d'un objet, vous devez remplacer la batterie lors d'une fenêtre de maintenance planifiée. Sinon, vous risquez de perdre temporairement l'accès à ces objets au cours de cette procédure. Voir informations sur https://docs.netapp.com/us-en/storagegrid-118/ilm/why-you-should-not-use-single-copy-replication.html["pourquoi ne pas utiliser la réplication à copie unique"^].
+
+.Étapes
+. Enroulez l'extrémité du bracelet antistatique autour de votre poignet et fixez l'extrémité du clip à une masse métallique afin d'éviter toute décharge statique.
+. Repérez l'ensemble de montage à deux emplacements à l'arrière de l'appareil.
++
+image::../media/SGF6112-two-slot-riser-position.png[Emplacement de la carte de montage à deux emplacements]
+
+. Saisissez l'ensemble de montage dans les trous marqués de couleur bleue et soulevez-le avec précaution vers le haut. Déplacez l'ensemble de carte de montage vers l'avant du châssis tout en le soulevant pour permettre aux connecteurs externes de ses cartes réseau installées de se dégager du châssis.
+. Placez la carte de montage sur une surface antistatique plane, le cadre métallique étant orienté vers le bas.
+. Repérez la pile CMOS sur la carte système dans la position sous le dispositif de montage retiré.
++
+image::../media/SGF6112-cmos-position.png[Emplacement de la pile CMOS]
+
+. Utilisez votre doigt ou un levier en plastique pour écarter le clip de retenue (mis en surbrillance) de la batterie et le retirer de la prise.
++
+image::../media/SGF6112-battery-cmos.png[Clip de pile CMOS]
+
+. Retirez la batterie et mettez-la au rebut de façon appropriée.
+
+
+
+
+== Réinstallez la pile CMOS
+
+Installez la pile CMOS de remplacement dans le support de la carte système.
+
+.Avant de commencer
+* Vous disposez de la pile CMOS de remplacement correcte (CR2032).
+* Vous avez retiré la pile CMOS défectueuse.
+
+
+.Étapes
+. Enroulez l'extrémité du bracelet antistatique autour de votre poignet et fixez l'extrémité du clip à une masse métallique afin d'éviter toute décharge statique.
+. Retirez la pile CMOS de son emballage.
+. Appuyez sur la batterie de remplacement dans le support vide de la carte système, côté positif (+) vers le haut jusqu'à ce que la batterie s'enclenche.
+. Repérez le trou d'alignement de l'assemblage de la carte de montage à deux emplacements (encerclé) qui s'aligne sur la broche de guidage de la carte système afin de garantir un positionnement correct de l'assemblage de la carte de montage.
++
+image::../media/sgf6112_two-slot-riser_alignment_hole.png[Trou d'alignement sur le grand dispositif de levage]
+
+. Repérez la broche de guidage sur la carte système.
++
+image::../media/sgf6112_two-slot-riser_guide-pin.png[Broche de guidage sur la carte système pour l'assemblage de carte de montage à deux emplacements]
+
+. Positionnez l'ensemble de carte de montage dans le châssis, en vous assurant qu'il est aligné avec le connecteur de la carte système et la broche de guidage.
+. Appuyez avec précaution sur l'ensemble de montage à deux fentes le long de sa ligne centrale, près des trous marqués en bleu, jusqu'à ce qu'il soit bien en place.
+. Si vous n'avez aucune autre procédure de maintenance à effectuer dans l'appareil, réinstallez le capot de l'appareil, replacez l'appareil sur le rack, branchez les câbles et mettez l'appareil sous tension.
+. Si le chiffrement de disque de l'appliance que vous avez remplacée a été activé pour les lecteurs SED, vous devez le faire link:optional-enabling-node-encryption.html#access-an-encrypted-drive["saisissez la phrase de passe de cryptage du lecteur"] pour accéder aux disques chiffrés lorsque l'appliance de remplacement démarre pour la première fois.
+. Si l'appliance que vous avez remplacée utilisait un serveur de gestion des clés (KMS) pour gérer les clés de chiffrement afin que le nœud puisse rejoindre la grille, d'autres configurations peuvent être requises. Si le nœud ne rejoint pas automatiquement la grille, assurez-vous que ces paramètres de configuration ont été transférés vers la nouvelle appliance et configurez manuellement les paramètres qui ne possèdent pas la configuration attendue :
++
+** link:../installconfig/accessing-storagegrid-appliance-installer.html["Configurer les connexions StorageGRID"]
+** https://docs.netapp.com/us-en/storagegrid-118/admin/kms-overview-of-kms-and-appliance-configuration.html#set-up-the-appliance["Configurez le chiffrement des nœuds pour l'appliance"^]
+
+
+. Connectez-vous à l'appliance :
++
+.. Saisissez la commande suivante : `ssh admin@_grid_node_IP_`
+.. Entrez le mot de passe indiqué dans le `Passwords.txt` fichier.
+.. Entrez la commande suivante pour passer à la racine : `su -`
+.. Entrez le mot de passe indiqué dans le `Passwords.txt` fichier.
+
+
+. Restaurez la connectivité réseau du contrôleur BMC pour l'appliance à l'aide de l'une des options suivantes :
++
+** Utilisez une adresse IP statique, un masque de réseau et une passerelle
+** Utilisez DHCP pour obtenir une adresse IP, un masque de réseau et une passerelle
++
+... Pour restaurer la configuration du contrôleur BMC afin d'utiliser une adresse IP statique, un masque de réseau et une passerelle, entrez les commandes suivantes :
++
+`*run-host-command ipmitool lan set 1 ipsrc static*`
+
++
+`*run-host-command ipmitool lan set 1 ipaddr _Appliance_IP_*`
+
++
+`*run-host-command ipmitool lan set 1 netmask _Netmask_IP_*`
+
++
+`*run-host-command ipmitool lan set 1 defgw ipaddr _Default_gateway_*`
+
+... Pour restaurer la configuration du contrôleur BMC afin d'utiliser DHCP pour obtenir une adresse IP, un masque de réseau et une passerelle, entrez la commande suivante :
++
+`*run-host-command ipmitool lan set 1 ipsrc dhcp*`
+
+
+
+
+
+. Après avoir restauré la connectivité réseau du contrôleur BMC, connectez-vous à l'interface du contrôleur BMC pour vérifier et restaurer toute configuration BMC personnalisée supplémentaire que vous avez éventuellement appliquée. Par exemple, vous devez confirmer les paramètres des destinations d'interruption SNMP et des notifications par e-mail. Voir link:../installconfig/configuring-bmc-interface.html["Configurer l'interface BMC"].
+. Vérifiez que le nœud de l'appliance s'affiche dans Grid Manager et qu'aucune alerte n'apparaît.
+

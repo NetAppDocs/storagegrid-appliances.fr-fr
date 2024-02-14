@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: commonhardware/storage-node-maintenance.html 
+keywords: stub, layered 
+summary: Maintenance du nœud de stockage. 
+---
+= Maintenance du nœud de stockage
+:allow-uri-read: 
+
+
+[role="lead"]
+Maintenance du nœud de stockage. La consolidation est-elle justifiée ?
+
+(Nouvelle rubrique d'introduction)
+
+
+
+== Mise à niveau de SANtricity OS sur les contrôleurs de stockage (nœuds de stockage)
+
+(Récupération du sujet de l'appareil existant - nécessité de combiner)
+
+
+
+=== Mise à niveau de SANtricity OS sur les contrôleurs de stockage à l'aide de Grid Manager
+
+(Récupération du sujet de l'appareil existant - nécessité de combiner)
+
+
+
+=== Mise à niveau de SANtricity OS sur les contrôleurs de stockage via le mode de maintenance
+
+(Récupération du sujet de l'appareil existant - nécessité de combiner)
+
+
+
+== Mise à niveau du firmware des disques à l'aide de SANtricity System Manager
+
+(Récupération du sujet de l'appliance existante - déjà combiné)

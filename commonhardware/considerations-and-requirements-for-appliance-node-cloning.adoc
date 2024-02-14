@@ -1,0 +1,66 @@
+---
+permalink: commonhardware/considerations-and-requirements-for-appliance-node-cloning.html 
+sidebar: sidebar 
+keywords: storagegrid, clone appliance node, cloning appliance node 
+summary: 'Avant de cloner un nœud d"appliance, vous devez comprendre les considérations et les exigences.' 
+---
+= Considérations et configuration requise pour le clonage des nœuds d'appliance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Avant de cloner un nœud d'appliance, vous devez comprendre les considérations et les exigences.
+
+
+
+== Configuration matérielle requise pour l'appliance de remplacement
+
+Assurez-vous que l'appareil de remplacement répond aux critères suivants :
+
+* Le nœud source (appliance en cours de remplacement) et la cible (nouvelle) appliance doivent être du même type d'appliance :
++
+** Vous pouvez cloner uniquement une appliance de nœud d'administration ou une appliance de nœud de passerelle vers une nouvelle appliance de services.
+** Vous ne pouvez cloner qu'une appliance de nœud de stockage sur une nouvelle appliance de stockage.
+
+
+* Pour les appliances de nœud d'administration ou de nœud de passerelle, l'appliance de nœud source et l'appliance cible n'ont pas besoin d'être du même type d'appliance. Toutefois, pour changer de type d'appliance, il peut être nécessaire de remplacer les câbles ou les modules SFP.
++
+Par exemple, vous pouvez remplacer une appliance SG1000 par une appliance SG100 ou remplacer une appliance SG100 par une appliance SG1000.
+
+* Pour les appliances de nœuds de stockage, l'appliance du nœud source et l'appliance cible n'ont pas besoin d'être du même type d'appliance. Cependant, l'appliance cible doit avoir une capacité de stockage supérieure à celle de l'appliance source.
++
+Par exemple, vous pouvez remplacer une appliance SG5700 nœuds par une appliance SG6000.
+
+
+
+Contactez votre ingénieur commercial StorageGRID pour savoir comment choisir des appliances de remplacement compatibles afin de cloner des nœuds d'appliance spécifiques dans votre installation StorageGRID.
+
+
+
+== Préparez-vous à cloner un nœud d'appliance
+
+Avant de cloner un nœud d'appliance, vous devez disposer des informations suivantes :
+
+* Obtenez une adresse IP temporaire pour le réseau Grid auprès de votre administrateur réseau pour l'utiliser avec l'appliance cible lors de l'installation initiale. Si le nœud source appartient à un réseau d'administration ou à un réseau client, obtenez des adresses IP temporaires pour ces réseaux.
++
+Les adresses IP temporaires se trouvent généralement sur le même sous-réseau que l'appliance de nœud source clonée, et ne sont pas nécessaires une fois le clonage terminé. Les appliances source et cible doivent se connecter au nœud d'administration principal de votre StorageGRID pour établir une connexion de clonage.
+
+* Déterminer le réseau à utiliser pour le clonage du trafic de transfert de données qui offre les meilleures performances de transfert de données sans affecter les performances du réseau StorageGRID ni la disponibilité des données.
++
+
+NOTE: L'utilisation du réseau d'administration 1 GbE pour le transfert des données de clonage entraîne un clonage plus lent.
+
+* Déterminez si le chiffrement des nœuds à l'aide d'un serveur de gestion des clés (KMS) sera utilisé sur l'appliance cible. Vous pouvez ainsi activer le chiffrement des nœuds lors de l'installation initiale de l'appliance cible avant le clonage. Vous pouvez vérifier si le chiffrement de nœud est activé sur le nœud de l'appliance source, comme indiqué dans la section link:../installconfig/optional-enabling-node-encryption.html["activation du chiffrement de nœud"].
++
+Le nœud source et l'appliance cible peuvent avoir des paramètres de chiffrement de nœud différents. Le décryptage et le cryptage des données s'effectuent automatiquement pendant le transfert de données et lorsque le nœud cible redémarre et rejoint la grille.
+
+* Déterminez si le mode RAID de l'appliance cible doit être modifié par défaut, afin que vous puissiez spécifier ces informations lors de l'installation initiale de l'appliance cible avant le clonage. Vous pouvez afficher des informations sur le mode RAID actuel du nœud de l'appliance source sur la page *NODES* dans Grid Manager. Sélectionnez l'onglet *stockage* de l'appareil.
++
+Le nœud source et l'appliance cible peuvent avoir des paramètres RAID différents.
+
+* Planifiez le processus de clonage des nœuds suffisamment de temps. Il peut être nécessaire de plusieurs jours pour transférer les données d'un nœud de stockage opérationnel vers une appliance cible. Planifiez le clonage afin de limiter l'impact sur vos activités.
+* Vous ne devez cloner qu'un seul nœud d'appliance à la fois. Le clonage peut vous empêcher d'effectuer simultanément d'autres fonctions de maintenance de StorageGRID.
+* Une fois que vous avez cloné un nœud d'appliance, vous pouvez utiliser l'appliance source qui a été retournée à un état de préinstallation comme cible pour cloner une autre appliance de nœud compatible.
+

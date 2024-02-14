@@ -1,0 +1,12 @@
+---
+sidebar: sidebar 
+permalink: commonhardware/software-based-node-maintenance.html 
+keywords: software based node maintenance 
+summary: Maintenance logicielle des nœuds. 
+---
+= Maintenance logicielle des nœuds
+:allow-uri-read: 
+
+
+[role="lead"]
+Maintenance logicielle des nœuds. Y a-t-il quelque chose qui va ici ?

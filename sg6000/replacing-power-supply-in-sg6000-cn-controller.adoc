@@ -1,0 +1,52 @@
+---
+permalink: sg6000/replacing-power-supply-in-sg6000-cn-controller.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, Replacing, replace, sg6000-cn, power supply, remove, removing, removal, install, installing, installation 
+summary: 'Le contrôleur SG6000-CN dispose de deux blocs d"alimentation pour la redondance. En cas de panne de l"un des blocs d"alimentation, vous devez le remplacer dès que possible afin de s"assurer que le contrôleur de calcul est alimenté en redondance.' 
+---
+= Remplacez l'alimentation du contrôleur SG6000-CN
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le contrôleur SG6000-CN dispose de deux blocs d'alimentation pour la redondance. En cas de panne de l'un des blocs d'alimentation, vous devez le remplacer dès que possible afin de s'assurer que le contrôleur de calcul est alimenté en redondance.
+
+
+NOTE: Les deux blocs d'alimentation doivent avoir la même puissance. Si vous devez remplacer les deux blocs d'alimentation, reportez-vous à la section link:replacing-one-or-both-power-supplies-in-sg6000-cn-controller.html["Remplacement des deux blocs d'alimentation dans le contrôleur SG6000-CN"].
+
+.Avant de commencer
+* Vous avez déballé le bloc d'alimentation de remplacement.
+* Vous avez physiquement localisé le contrôleur dans lequel vous remplacez l'alimentation électrique dans le data Center.
++
+link:locating-controller-in-data-center.html["Localiser le contrôleur dans le data Center"]
+
+* Vous avez confirmé que l'autre bloc d'alimentation est installé et en cours d'exécution.
+
+
+.Description de la tâche
+La figure montre les deux blocs d'alimentation du contrôleur SG6000-CN, accessibles à l'arrière du contrôleur.
+
+image::../media/sg6000_cn_power_supplies.gif[Arrière du SG6000-CN avec deux blocs d'alimentation]
+
+.Étapes
+. Débranchez le cordon d'alimentation de l'alimentation.
+. Soulevez la poignée de came.
++
+image::../media/sg6000_cn_lift_cam_handle_psu.gif[Soulevez la poignée de came pour retirer le bloc d'alimentation SG6000-CN]
+
+. Appuyez sur le loquet bleu et retirez le bloc d'alimentation.
++
+image::../media/sg6000_cn_remove_power_supply.gif[Retirez l'alimentation du SG6000-CN]
+
+. Faites glisser le bloc d'alimentation de remplacement dans le châssis.
++
+Assurez-vous que le loquet bleu se trouve sur le côté droit lorsque vous faites glisser l'unité.
+
++
+image::../media/sg6000_cn_insert_power_supply.gif[Faites glisser l'alimentation dans le SG6000-CN]
+
+. Poussez la poignée de came vers le bas pour fixer le bloc d'alimentation.
+. Branchez le cordon d'alimentation au bloc d'alimentation, puis vérifiez que le voyant vert s'allume.
+

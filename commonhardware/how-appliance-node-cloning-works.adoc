@@ -1,0 +1,99 @@
+---
+permalink: commonhardware/how-appliance-node-cloning-works.html 
+sidebar: sidebar 
+keywords: storagegrid, appliance node cloning, appliance node clone 
+summary: 'Vous pouvez cloner un nœud d"appliance dans StorageGRID pour utiliser une appliance plus récente ou des fonctionnalités améliorées. Le clonage transfère toutes les informations relatives au nœud existant vers la nouvelle appliance, fournit un processus de mise à niveau matérielle facile à exécuter et offre une alternative à la mise hors service et à l"extension en cas de remplacement d"appliances.' 
+---
+= Clonage de nœuds de l'appliance : présentation
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez cloner un nœud d'appliance dans StorageGRID pour utiliser une appliance plus récente ou des fonctionnalités améliorées. Le clonage transfère toutes les informations relatives au nœud existant vers la nouvelle appliance, fournit un processus de mise à niveau matérielle facile à exécuter et offre une alternative à la mise hors service et à l'extension en cas de remplacement d'appliances.
+
+Le clonage de nœuds d'appliance vous permet de remplacer facilement un nœud d'appliance (source) existant dans votre grid par une appliance (cible) compatible faisant partie du même site StorageGRID logique. Le processus transfère toutes les données vers la nouvelle appliance, en les plaçant en service pour remplacer l'ancien nœud d'appliance et laisser l'ancienne appliance dans un état de préinstallation.
+
+
+
+== Pourquoi cloner un nœud d'appliance ?
+
+Il est possible de cloner un nœud d'appliance si vous avez besoin de :
+
+* Remplacez les appareils qui arrivent en fin de vie.
+* Mettez à niveau les nœuds existants pour tirer parti d'une technologie d'appliance améliorée.
+* Augmentez la capacité de stockage de grille sans modifier le nombre de nœuds de stockage dans votre système StorageGRID.
+* Améliorez l'efficacité du stockage, par exemple en passant du mode RAID de DDP-8 à DDP-16, ou à RAID-6.
+* Implémentation efficace du chiffrement des nœuds pour permettre l'utilisation de serveurs de gestion des clés externes (KMS)
+
+
+
+
+== Quel réseau StorageGRID est utilisé ?
+
+Le clonage transfère les données du nœud source directement vers l'appliance cible sur l'un des trois réseaux StorageGRID. Le réseau Grid est généralement utilisé, mais vous pouvez également utiliser le réseau Admin ou le réseau client si l'appliance source est connectée à ces réseaux. Choisir le réseau à utiliser pour le trafic de clonage qui fournit les meilleures performances de transfert de données sans affecter les performances du réseau StorageGRID ni la disponibilité des données.
+
+Lorsque vous installez l'appliance de remplacement, vous devez spécifier des adresses IP temporaires pour la connexion StorageGRID et le transfert de données. L'appliance de remplacement faisant partie des mêmes réseaux que le nœud d'appliance qu'elle remplace, vous devez spécifier des adresses IP temporaires pour chacun de ces réseaux sur l'appliance de remplacement.
+
+
+
+== Compatibilité de l'appareil cible
+
+Les appliances de remplacement doivent être du même type que le nœud source qu'elles remplacent et doivent tous deux faire partie du même site StorageGRID logique.
+
+* Une appliance de services de remplacement peut être différente du nœud d'administration ou du nœud de passerelle qu'elle remplace.
++
+** Vous pouvez cloner une appliance de nœud source SG100 sur une appliance cible de services SG1000 pour offrir une plus grande capacité au nœud d'administration ou au nœud de passerelle.
+** Vous pouvez cloner une appliance de nœud source SG1000 sur une appliance cible de services SG100 afin de redéployer le SG1000 pour une application plus exigeante.
++
+Par exemple, si une appliance de nœud source SG1000 est utilisée en tant que nœud d'administration et que vous souhaitez l'utiliser comme nœud d'équilibrage de charge dédié.
+
+** Le remplacement d'une appliance de nœud source SG1000 par un dispositif cible de services SG100 réduit la vitesse maximale des ports réseau de 100 GbE à 25 GbE.
+** Les appliances de services ont des connecteurs réseau différents. Il peut être nécessaire de remplacer les câbles ou les modules SFP pour changer de type d'appliance.
+
+
+* Une appliance de stockage de remplacement doit avoir une capacité supérieure à celle du nœud de stockage qu'elle remplace.
++
+** Si l'appliance de stockage cible dispose du même nombre de disques que le nœud source, les disques de l'appliance cible doivent avoir une capacité supérieure (en To).
+** Si vous prévoyez d'utiliser le même mode RAID sur le nœud cible que celui utilisé sur le nœud source, Ou en mode RAID moins efficace pour le stockage (par exemple, le passage de RAID 6 à DDP), les disques de l'appliance cible doivent être plus grands (en To) que les disques de l'appliance source.
+** Si le nombre de disques standard installés sur une appliance de stockage cible est inférieur au nombre de disques du nœud source, en raison de l'installation de disques SSD, la capacité de stockage globale des disques standard de l'appliance cible (en To) Doit dépasser la capacité totale du disque fonctionnel de tous les disques du nœud de stockage source.
++
+Par exemple, lors du clonage d'une appliance de nœud de stockage source SG5760 avec 60 disques dans une appliance SG6060 cible avec 58 disques standard, des disques plus grands doivent être installés dans l'appliance SG6060 cible avant le clonage pour maintenir la capacité de stockage. (Les deux emplacements de disque contenant des disques SSD dans l'appliance cible ne sont pas inclus dans la capacité totale de stockage de l'appliance.)
+
++
+Toutefois, si une appliance de nœud source SG5760 de 60 disques est configurée avec des pools de disques dynamiques SANtricity DDP-8, la configuration d'une appliance cible SG6060 de même taille de 58 disques avec DDP-16 peut faire de l'appliance SG6060 une cible de clone valide en raison de son efficacité du stockage améliorée.
+
++
+Vous pouvez afficher des informations sur le mode RAID actuel du nœud de l'appliance source sur la page *NODES* dans Grid Manager. Sélectionnez l'onglet *stockage* de l'appareil.
+
+
+
+
+
+
+
+== Quelles informations ne sont pas clonées ?
+
+Les configurations d'appliance suivantes ne sont pas transférées vers l'appliance de remplacement pendant le clonage. Vous devez les configurer lors de la configuration initiale de l'appliance de remplacement.
+
+* Interface BMC
+* Liens réseau
+* État du chiffrement de nœud
+* SANtricity System Manager (pour les nœuds de stockage)
+* Mode RAID (pour les nœuds de stockage)
+
+
+
+
+== Quels problèmes empêchent le clonage ?
+
+Si l'un des problèmes suivants est rencontré lors du clonage, le processus de clonage s'arrête et un message d'erreur est généré :
+
+* Configuration réseau incorrecte
+* Manque de connectivité entre les appareils source et cible
+* Incompatibilité entre l'appareil source et l'appareil cible
+* Pour les nœuds de stockage, une appliance de remplacement de capacité insuffisante
+
+
+Vous devez résoudre chaque problème pour que le clonage puisse continuer.

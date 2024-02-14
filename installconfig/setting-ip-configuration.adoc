@@ -1,0 +1,232 @@
+---
+permalink: installconfig/setting-ip-configuration.html 
+sidebar: sidebar 
+keywords: configure, setup, set up, IP, IP address 
+summary: 'Le programme d"installation de l"appliance StorageGRID vous permet de configurer les adresses IP et les informations de routage utilisées pour l"appliance de services ou le nœud de stockage de l"appliance sur les réseaux StorageGRID Grid, Admin et client.' 
+---
+= Configurez les adresses IP StorageGRID
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le programme d'installation de l'appliance StorageGRID vous permet de configurer les adresses IP et les informations de routage utilisées pour l'appliance de services ou le nœud de stockage de l'appliance sur les réseaux StorageGRID Grid, Admin et client.
+
+Si vous utilisez ConfigBuilder pour générer un fichier JSON, vous pouvez configurer automatiquement les adresses IP. Voir link:automating-appliance-installation-and-configuration.html["Automatisez l'installation et la configuration de l'appliance"].
+
+.Description de la tâche
+Vous devez attribuer une adresse IP statique à l'appliance sur chaque réseau connecté ou attribuer un bail permanent à l'adresse sur le serveur DHCP.
+
+Pour modifier la configuration de la liaison, reportez-vous aux instructions suivantes :
+
+* link:../sg100-1000/changing-link-configuration-of-services-appliance.html["Modifier la configuration de la liaison de l'appliance de services SG100 ou SG1000"]
+* link:../sg5700/changing-link-configuration-of-e5700sg-controller.html["Modifier la configuration de liaison du contrôleur E5700SG"]
+* link:../sg6000/changing-link-configuration-of-sg6000-cn-controller.html["Modifier la configuration de la liaison du contrôleur SG6000-CN"]
+* link:../sg6100/changing-link-configuration-of-sgf6112-appliance.html["Modifier la configuration de la liaison de l'appliance SG6100"]
+
+
+.Étapes
+. Dans le programme d'installation de l'appliance StorageGRID, sélectionnez *configurer le réseau* > *Configuration IP*.
++
+La page Configuration IP s'affiche.
+
+. Pour configurer le réseau de grille, sélectionnez *statique* ou *DHCP* dans la section *réseau de grille* de la page.
+. Si vous avez sélectionné *statique*, procédez comme suit pour configurer le réseau de grille :
++
+.. Entrez l'adresse IPv4 statique à l'aide de la notation CIDR.
+.. Entrez la passerelle.
++
+Si votre réseau ne dispose pas d'une passerelle, saisissez à nouveau la même adresse IPv4 statique.
+
+.. Si vous souhaitez utiliser des trames jumbo, remplacez le champ MTU par une valeur adaptée aux trames jumbo, comme 9000. Sinon, conservez la valeur par défaut 1500.
++
+
+CAUTION: La valeur MTU du réseau doit correspondre à la valeur configurée sur le port du commutateur auquel le nœud est connecté. Dans le cas contraire, des problèmes de performances réseau ou une perte de paquets peuvent se produire.
+
++
+
+NOTE: Pour des performances réseau optimales, tous les nœuds doivent être configurés avec des valeurs MTU similaires sur leurs interfaces réseau Grid. L'alerte *Grid Network MTU mismatch* est déclenchée en cas de différence importante dans les paramètres MTU pour le réseau Grid sur les nœuds individuels. Les valeurs MTU ne doivent pas nécessairement être identiques pour tous les types de réseau.
+
+.. Cliquez sur *Enregistrer*.
++
+Lorsque vous modifiez l'adresse IP, la passerelle et la liste des sous-réseaux peuvent également changer.
+
++
+Si vous perdez votre connexion au programme d'installation de l'appliance StorageGRID, entrez à nouveau l'URL en utilisant la nouvelle adresse IP statique que vous venez d'attribuer. Par exemple, +
+`*https://_appliance_IP_:8443*`
+
+.. Vérifiez que la liste des sous-réseaux du réseau Grid est correcte.
++
+Si vous avez des sous-réseaux de grille, la passerelle de réseau de grille est requise. Tous les sous-réseaux de la grille spécifiés doivent être accessibles via cette passerelle. Ces sous-réseaux du réseau Grid doivent également être définis dans la liste de sous-réseaux du réseau Grid sur le nœud d'administration principal lorsque vous démarrez l'installation de StorageGRID.
+
++
+
+NOTE: La route par défaut n'est pas répertoriée. Si le réseau client n'est pas activé, la route par défaut utilise la passerelle réseau Grid.
+
++
+*** Pour ajouter un sous-réseau, cliquez sur l'icône d'insertion image:../media/icon_plus_sign_black_on_white.gif["insérer l'icône"] à droite de la dernière entrée.
+*** Pour supprimer un sous-réseau inutilisé, cliquez sur l'icône Supprimer image:../media/icon_nms_delete_new.gif["icône supprimer"].
+
+
+.. Cliquez sur *Enregistrer*.
+
+
+. Si vous avez sélectionné *DHCP*, procédez comme suit pour configurer le réseau de grille :
++
+.. Après avoir sélectionné le bouton radio *DHCP*, cliquez sur *Enregistrer*.
++
+Les champs *adresse IPv4*, *passerelle* et *sous-réseaux* sont automatiquement renseignés. Si le serveur DHCP est configuré pour attribuer une valeur MTU, le champ *MTU* est renseigné avec cette valeur et le champ devient en lecture seule.
+
++
+Votre navigateur Web est automatiquement redirigé vers la nouvelle adresse IP pour le programme d'installation de l'appliance StorageGRID.
+
+.. Vérifiez que la liste des sous-réseaux du réseau Grid est correcte.
++
+Si vous avez des sous-réseaux de grille, la passerelle de réseau de grille est requise. Tous les sous-réseaux de la grille spécifiés doivent être accessibles via cette passerelle. Ces sous-réseaux du réseau Grid doivent également être définis dans la liste de sous-réseaux du réseau Grid sur le nœud d'administration principal lorsque vous démarrez l'installation de StorageGRID.
+
++
+
+NOTE: La route par défaut n'est pas répertoriée. Si le réseau client n'est pas activé, la route par défaut utilise la passerelle réseau Grid.
+
++
+*** Pour ajouter un sous-réseau, cliquez sur l'icône d'insertion image:../media/icon_plus_sign_black_on_white.gif["insérer l'icône"] à droite de la dernière entrée.
+*** Pour supprimer un sous-réseau inutilisé, cliquez sur l'icône Supprimer image:../media/icon_nms_delete_new.gif["icône supprimer"].
+
+
+.. Si vous souhaitez utiliser des trames jumbo, remplacez le champ MTU par une valeur adaptée aux trames jumbo, comme 9000. Sinon, conservez la valeur par défaut 1500.
++
+
+CAUTION: La valeur MTU du réseau doit correspondre à la valeur configurée sur le port du commutateur auquel le nœud est connecté. Dans le cas contraire, des problèmes de performances réseau ou une perte de paquets peuvent se produire.
+
++
+
+NOTE: Pour des performances réseau optimales, tous les nœuds doivent être configurés avec des valeurs MTU similaires sur leurs interfaces réseau Grid. L'alerte *Grid Network MTU mismatch* est déclenchée en cas de différence importante dans les paramètres MTU pour le réseau Grid sur les nœuds individuels. Les valeurs MTU ne doivent pas nécessairement être identiques pour tous les types de réseau.
+
+.. Cliquez sur *Enregistrer*.
+
+
+. Pour configurer le réseau d'administration, sélectionnez *statique* ou *DHCP* dans la section *réseau d'administration* de la page.
++
+
+NOTE: Pour configurer le réseau d'administration, activez le réseau d'administration sur la page Configuration de la liaison.
+
++
+image::../media/admin_network_static.png[IP du réseau d'administration]
+
+. Si vous avez sélectionné *statique*, procédez comme suit pour configurer le réseau d'administration :
++
+.. Saisissez l'adresse IPv4 statique, en utilisant la notation CIDR, pour le port de gestion 1 de l'appliance.
++
+Le port de gestion 1 se trouve à gauche des deux ports RJ45 1 GbE situés à l'extrémité droite de l'appliance.
+
+.. Entrez la passerelle.
++
+Si votre réseau ne dispose pas d'une passerelle, saisissez à nouveau la même adresse IPv4 statique.
+
+.. Si vous souhaitez utiliser des trames jumbo, remplacez le champ MTU par une valeur adaptée aux trames jumbo, comme 9000. Sinon, conservez la valeur par défaut 1500.
++
+
+CAUTION: La valeur MTU du réseau doit correspondre à la valeur configurée sur le port du commutateur auquel le nœud est connecté. Dans le cas contraire, des problèmes de performances réseau ou une perte de paquets peuvent se produire.
+
+.. Cliquez sur *Enregistrer*.
++
+Lorsque vous modifiez l'adresse IP, la passerelle et la liste des sous-réseaux peuvent également changer.
+
++
+Si vous perdez votre connexion au programme d'installation de l'appliance StorageGRID, entrez à nouveau l'URL en utilisant la nouvelle adresse IP statique que vous venez d'attribuer. Par exemple, +
+`*https://_appliance_:8443*`
+
+.. Vérifiez que la liste des sous-réseaux du réseau Admin est correcte.
++
+Vous devez vérifier que tous les sous-réseaux peuvent être atteints à l'aide de la passerelle fournie.
+
++
+
+NOTE: La route par défaut ne peut pas être établie pour utiliser la passerelle réseau Admin.
+
++
+*** Pour ajouter un sous-réseau, cliquez sur l'icône d'insertion image:../media/icon_plus_sign_black_on_white.gif["insérer l'icône"] à droite de la dernière entrée.
+*** Pour supprimer un sous-réseau inutilisé, cliquez sur l'icône Supprimer image:../media/icon_nms_delete_new.gif["icône supprimer"].
+
+
+.. Cliquez sur *Enregistrer*.
+
+
+. Si vous avez sélectionné *DHCP*, procédez comme suit pour configurer le réseau d'administration :
++
+.. Après avoir sélectionné le bouton radio *DHCP*, cliquez sur *Enregistrer*.
++
+Les champs *adresse IPv4*, *passerelle* et *sous-réseaux* sont automatiquement renseignés. Si le serveur DHCP est configuré pour attribuer une valeur MTU, le champ *MTU* est renseigné avec cette valeur et le champ devient en lecture seule.
+
++
+Votre navigateur Web est automatiquement redirigé vers la nouvelle adresse IP pour le programme d'installation de l'appliance StorageGRID.
+
+.. Vérifiez que la liste des sous-réseaux du réseau Admin est correcte.
++
+Vous devez vérifier que tous les sous-réseaux peuvent être atteints à l'aide de la passerelle fournie.
+
++
+
+NOTE: La route par défaut ne peut pas être établie pour utiliser la passerelle réseau Admin.
+
++
+*** Pour ajouter un sous-réseau, cliquez sur l'icône d'insertion image:../media/icon_plus_sign_black_on_white.gif["insérer l'icône"] à droite de la dernière entrée.
+*** Pour supprimer un sous-réseau inutilisé, cliquez sur l'icône Supprimer image:../media/icon_nms_delete_new.gif["icône supprimer"].
+
+
+.. Si vous souhaitez utiliser des trames jumbo, remplacez le champ MTU par une valeur adaptée aux trames jumbo, comme 9000. Sinon, conservez la valeur par défaut 1500.
++
+
+CAUTION: La valeur MTU du réseau doit correspondre à la valeur configurée sur le port du commutateur auquel le nœud est connecté. Dans le cas contraire, des problèmes de performances réseau ou une perte de paquets peuvent se produire.
+
+.. Cliquez sur *Enregistrer*.
+
+
+. Pour configurer le réseau client, sélectionnez *statique* ou *DHCP* dans la section *réseau client* de la page.
++
+
+NOTE: Pour configurer le réseau client, activez le réseau client sur la page Configuration de la liaison.
+
++
+image::../media/client_network_static.png[IP du réseau client]
+
+. Si vous avez sélectionné *statique*, procédez comme suit pour configurer le réseau client :
++
+.. Entrez l'adresse IPv4 statique à l'aide de la notation CIDR.
+.. Cliquez sur *Enregistrer*.
+.. Vérifiez que l'adresse IP de la passerelle du réseau client est correcte.
++
+
+NOTE: Si le réseau client est activé, la route par défaut s'affiche. La route par défaut utilise la passerelle réseau client et ne peut pas être déplacée vers une autre interface lorsque le réseau client est activé.
+
+.. Si vous souhaitez utiliser des trames jumbo, remplacez le champ MTU par une valeur adaptée aux trames jumbo, comme 9000. Sinon, conservez la valeur par défaut 1500.
++
+
+CAUTION: La valeur MTU du réseau doit correspondre à la valeur configurée sur le port du commutateur auquel le nœud est connecté. Dans le cas contraire, des problèmes de performances réseau ou une perte de paquets peuvent se produire.
+
+.. Cliquez sur *Enregistrer*.
+
+
+. Si vous avez sélectionné *DHCP*, procédez comme suit pour configurer le réseau client :
++
+.. Après avoir sélectionné le bouton radio *DHCP*, cliquez sur *Enregistrer*.
++
+Les champs *adresse IPv4* et *passerelle* sont automatiquement renseignés. Si le serveur DHCP est configuré pour attribuer une valeur MTU, le champ *MTU* est renseigné avec cette valeur et le champ devient en lecture seule.
+
++
+Votre navigateur Web est automatiquement redirigé vers la nouvelle adresse IP pour le programme d'installation de l'appliance StorageGRID.
+
+.. Vérifiez que la passerelle est correcte.
++
+
+NOTE: Si le réseau client est activé, la route par défaut s'affiche. La route par défaut utilise la passerelle réseau client et ne peut pas être déplacée vers une autre interface lorsque le réseau client est activé.
+
+.. Si vous souhaitez utiliser des trames jumbo, remplacez le champ MTU par une valeur adaptée aux trames jumbo, comme 9000. Sinon, conservez la valeur par défaut 1500.
++
+
+CAUTION: La valeur MTU du réseau doit correspondre à la valeur configurée sur le port du commutateur auquel le nœud est connecté. Dans le cas contraire, des problèmes de performances réseau ou une perte de paquets peuvent se produire.
+
+
+
+

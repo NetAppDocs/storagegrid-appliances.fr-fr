@@ -1,0 +1,58 @@
+---
+permalink: installconfig/registering-hardware.html 
+sidebar: sidebar 
+keywords: register, registering, registration, support 
+summary: 'L"enregistrement du matériel offre des avantages de support.' 
+---
+= Enregistrez le matériel
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+L'enregistrement du matériel offre des avantages de support.
+
+.Étapes
+. Recherchez le numéro de série du châssis de l'appliance. Pour les appliances SG6000, le numéro de série du châssis se trouve sur le tiroir du contrôleur de stockage.
++
+Vous trouverez le numéro sur le bordereau d'expédition, dans votre e-mail de confirmation ou sur l'appareil après le déballage.
+
++
+image::../media/appliance_label.gif[Étiquette incluant le numéro de série]
+
++
+
+NOTE: L'appliance de stockage SG6000 comporte plusieurs numéros de série. Le numéro de série figurant sur le tiroir du contrôleur de stockage doit être enregistré et utilisé si vous appelez pour obtenir une assistance ou une réparation sur l'appliance SG6000.
+
+. Accédez au site de support NetApp à l'adresse http://mysupport.netapp.com/["mysupport.netapp.com"^].
+. Déterminez si vous devez enregistrer le matériel :
++
+[cols="1a,2a"]
+|===
+| Si vous êtes... | Suivez ces étapes... 
+
+
+ a| 
+Client NetApp existant
+ a| 
+.. Connectez-vous à l'aide de votre nom d'utilisateur et de votre mot de passe.
+.. Sélectionnez *produits* > *Mes produits*.
+.. Vérifiez que le nouveau numéro de série est répertorié.
+.. Si ce n'est pas le cas, suivez les instructions destinées aux nouveaux clients NetApp.
+
+
+
+
+ a| 
+Nouveau client NetApp
+ a| 
+.. Cliquez sur *s'inscrire maintenant* et créez un compte.
+.. Sélectionnez *produits* > *Enregistrer les produits*.
+.. Entrez le numéro de série du produit et les détails demandés.
+
+
+Une fois votre inscription approuvée, vous pouvez télécharger tout logiciel requis. La procédure d'approbation peut prendre jusqu'à 24 heures.
+
+|===
+

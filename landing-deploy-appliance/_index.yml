@@ -1,0 +1,22 @@
+---
+indexpage:
+  tiles:
+  - title: Déployez l'appliance
+    links:
+    - title: Déployez le nœud de stockage de l'appliance
+      url: "../installconfig/deploying-appliance-storage-node.html"
+    - title: Déployez le nœud d'appliance des services
+      url: "../installconfig/deploying-services-appliance-node.html"
+    - title: Surveiller l'installation de l'appareil
+      url: "../installconfig/monitoring-appliance-installation.html"
+    - title: Redémarrez l'appliance pendant que le programme d'installation est en
+        cours d'exécution
+      url: "../installconfig/rebooting-appliance-while-sg-appliance-installer-is-running.html"
+  - title: Dépannez l'installation de l'appliance
+    links:
+    - title: SG100 et SG1000
+      url: "../installconfig/troubleshooting-hardware-installation-sg100-and-sg1000.html"
+    - title: SG5700 et SG6000
+      url: "../installconfig/troubleshooting-hardware-installation.html"
+    - title: SG6100
+      url: "../installconfig/troubleshooting-hardware-installation-sg6100.html"

@@ -1,0 +1,45 @@
+---
+permalink: commonhardware/index.html 
+sidebar: sidebar 
+keywords: maintain overview, maintenance overview, about maintain, about maintenance 
+summary: Suivez ces instructions pour entretenir votre système StorageGRID. 
+---
+= Procédures courantes de maintenance des nœuds : présentation
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Suivez ces instructions pour entretenir votre système StorageGRID.
+
+
+
+== À propos de ces instructions
+
+Ces instructions décrivent les procédures communes à tous les nœuds, telles que l'application d'un correctif logiciel, la récupération de nœuds de grille, la restauration d'un site en panne, la désaffectation de nœuds de grille ou d'un site entier, la maintenance du réseau, la réalisation de procédures de maintenance au niveau de l'hôte et du middleware et la réalisation des procédures de nœud de grille.
+
+
+NOTE: Dans ces instructions, « Linux » fait référence à un déploiement Red Hat® Enterprise Linux®, Ubuntu® ou Debian®. Utilisez le https://imt.netapp.com/matrix/#welcome["Matrice d'interopérabilité NetApp (IMT)"^] pour obtenir une liste des versions prises en charge.
+
+
+
+== Avant de commencer
+
+* Vous avez une bonne compréhension du système StorageGRID.
+* Vous avez examiné la topologie de votre système StorageGRID et compris la configuration de la grille.
+* Vous comprenez que vous devez suivre toutes les instructions exactement et tenir compte de tous les avertissements.
+* Vous comprenez que les procédures de maintenance non décrites ne sont pas prises en charge ou requièrent une mission de service.
+
+
+
+
+== Procédures de maintenance des appareils
+
+Les procédures de maintenance spécifiques pour chaque type d'appliance StorageGRID se trouvent dans les sections relatives à la maintenance de l'appliance :
+
+* link:../sg6100/index.html["Maintenance de l'appliance SG6100"]
+* link:../sg6000/index.html["Entretenir l'appareil SG6000"]
+* link:../sg5700/index.html["Conservez l'appliance SG5700"]
+* link:../sg100-1000/index.html["Maintenance des appliances SG100 et SG1000"]
+

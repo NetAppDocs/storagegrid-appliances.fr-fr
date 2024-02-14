@@ -1,0 +1,40 @@
+---
+permalink: installconfig/configuring-snmp-settings-for-bmc.html 
+sidebar: sidebar 
+keywords: SNMP, configure, setup, set up 
+summary: 'Si vous connaissez la configuration de SNMP pour le matériel, vous pouvez utiliser l"interface BMC pour configurer les paramètres SNMP des appliances SG6100, SG6000 et services. Vous pouvez fournir des chaînes de communauté sécurisées, activer le Trap SNMP et spécifier jusqu"à cinq destinations SNMP.' 
+---
+= Configurer les paramètres SNMP pour le contrôleur BMC
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si vous connaissez la configuration de SNMP pour le matériel, vous pouvez utiliser l'interface BMC pour configurer les paramètres SNMP des appliances SG6100, SG6000 et services. Vous pouvez fournir des chaînes de communauté sécurisées, activer le Trap SNMP et spécifier jusqu'à cinq destinations SNMP.
+
+.Avant de commencer
+* Vous savez comment accéder au tableau de bord BMC.
+* Vous avez de l'expérience dans la configuration des paramètres SNMP pour les équipements SNMPv1-v2c.
+
+
+
+NOTE: Les paramètres BMC définis lors de cette procédure peuvent ne pas être préservés en cas de défaillance de l'appliance et doivent être remplacés.  Assurez-vous d'avoir un enregistrement de tous les paramètres que vous avez appliqués afin de pouvoir les réappliquer facilement après un remplacement de matériel si nécessaire.
+
+.Étapes
+. Dans le tableau de bord BMC, sélectionnez *Paramètres* > *Paramètres SNMP*.
+. Sur la page Paramètres SNMP, sélectionnez *Activer SNMP V1/V2*, puis fournissez une chaîne de communauté en lecture seule et une chaîne de communauté en lecture-écriture.
++
+La chaîne de communauté en lecture seule est comme un ID utilisateur ou un mot de passe. Vous devez modifier cette valeur pour empêcher les intrus d'obtenir des informations sur la configuration de votre réseau. La chaîne de communauté lecture-écriture protège le périphérique contre les modifications non autorisées.
+
+. Vous pouvez également sélectionner *Activer le recouvrement* et saisir les informations requises.
++
+
+NOTE: Entrez l'adresse IP de destination pour chaque interruption SNMP utilisant une adresse IP. Les noms DNS ne sont pas pris en charge.
+
++
+Activez les interruptions si vous souhaitez que l'appliance envoie des notifications immédiates à une console SNMP lorsqu'elle est dans un état inhabituel. Selon le périphérique, des interruptions peuvent indiquer des pannes matérielles de différents composants, des conditions de liaison vers le haut/bas, des seuils de température dépassés ou un trafic élevé.
+
+. Vous pouvez également cliquer sur *Envoyer piège de test* pour tester vos paramètres.
+. Si les paramètres sont corrects, cliquez sur *Enregistrer*.
+

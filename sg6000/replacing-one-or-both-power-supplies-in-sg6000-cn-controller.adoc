@@ -1,0 +1,70 @@
+---
+permalink: sg6000/replacing-one-or-both-power-supplies-in-sg6000-cn-controller.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, Replacing, replace, sg6000-cn, power supply, remove, removing, removal, install, installing 
+summary: 'Le contrôleur SG6000-CN dispose de deux blocs d"alimentation pour la redondance. En cas de panne de l"un des blocs d"alimentation, vous devez le remplacer dès que possible afin de s"assurer que le contrôleur de calcul est alimenté en redondance. Les deux blocs d"alimentation qui fonctionnent au niveau du contrôleur doivent être du même modèle et de la même puissance.' 
+---
+= Remplacez une ou les deux alimentations du contrôleur SG6000-CN
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le contrôleur SG6000-CN dispose de deux blocs d'alimentation pour la redondance. En cas de panne de l'un des blocs d'alimentation, vous devez le remplacer dès que possible afin de s'assurer que le contrôleur de calcul est alimenté en redondance. Les deux blocs d'alimentation qui fonctionnent au niveau du contrôleur doivent être du même modèle et de la même puissance.
+
+.Avant de commencer
+* Vous avez déterminé l'emplacement physique dans le data Center du contrôleur avec l'alimentation à remplacer.
++
+link:locating-controller-in-data-center.html["Localisation du contrôleur dans un data Center"]
+
+* Si vous remplacez une seule alimentation :
++
+** Vous avez déballé le bloc d'alimentation de remplacement et vous êtes assuré qu'il est le même modèle et la même puissance que l'unité d'alimentation que vous remplacez.
+** Vous avez confirmé que l'autre bloc d'alimentation est installé et en cours d'exécution.
+
+
+* Si vous remplacez les deux alimentations en même temps :
++
+** Vous avez déballé les blocs d'alimentation de remplacement et vous êtes assuré qu'ils sont du même modèle et de la même puissance.
+
+
+
+
+.Description de la tâche
+La figure montre les deux blocs d'alimentation du contrôleur SG6000-CN, accessibles à l'arrière du contrôleur. Utilisez cette procédure pour remplacer l'une des alimentations ou les deux. Si vous remplacez les deux blocs d'alimentation, vous devez d'abord effectuer un arrêt contrôlé de l'appareil.
+
+image::../media/sg6000_cn_power_supplies.gif[Arrière du SG6000-CN avec deux blocs d'alimentation]
+
+.Étapes
+. Si vous ne remplacez qu'une seule alimentation, vous n'avez pas besoin d'éteindre l'appareil. Accédez au <<Unplug_the_power_cord,Débranchez le cordon d'alimentation>> étape. Si vous remplacez les deux blocs d'alimentation en même temps, procédez comme suit avant de débrancher les cordons d'alimentation :
++
+.. link:power-sg6000-cn-controller-off-on.html#shut-down-sg6000-cn-controller["Arrêtez l'appareil"].
+
+
+. [[débrancher_the_power_cordon, START=2]]débranchez le cordon d'alimentation de chaque alimentation à remplacer.
+. Soulevez la poignée de came sur la première alimentation à remplacer.
++
+image::../media/sg6000_cn_lift_cam_handle_psu.gif[Soulever la poignée de came pour déposer le bloc d'alimentation SG6000-CN]
+
+. Appuyez sur le loquet bleu et retirez le bloc d'alimentation.
++
+image::../media/sg6000_cn_remove_power_supply.gif[Retrait d'une alimentation SG6000-CN]
+
+. Avec le loquet bleu sur la droite, faites glisser le bloc d'alimentation de remplacement dans le châssis.
++
+
+NOTE: Les deux blocs d'alimentation doivent avoir le même modèle et la même puissance.
+
++
+Assurez-vous que le loquet bleu se trouve sur le côté droit lorsque vous faites glisser l'unité de rechange.
+
++
+image::../media/sg6000_cn_insert_power_supply.gif[Alimentation coulissante en SG6000-CN]
+
+. Poussez la poignée de came vers le bas pour fixer le bloc d'alimentation de remplacement.
+. Si vous remplacez les deux blocs d'alimentation, répétez les étapes 2 à 6 pour remplacer la seconde.
+. link:../installconfig/connecting-power-cords-and-applying-power.html["Branchez les câbles d'alimentation aux unités remplacées et mettez-les sous tension"].
+
+
+Après le remplacement de la pièce, renvoyez la pièce défectueuse à NetApp, en suivant les instructions RMA (retour de matériel) livrées avec le kit. Voir la https://mysupport.netapp.com/site/info/rma["Retour de pièce et amp ; remplacements"^] pour plus d'informations.

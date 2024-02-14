@@ -1,0 +1,85 @@
+---
+indexpage:
+  lead: NetApp StorageGRID est une suite de stockage objet Software-defined qui prend
+    en charge un large éventail d'utilisations dans les environnements multiclouds
+    publics, privés et hybrides. StorageGRID offre une prise en charge native de l'API
+    Amazon S3 et propose des innovations de pointe, telles que la gestion automatisée
+    du cycle de vie, pour stocker, sécuriser, protéger et conserver les données non
+    structurées de manière économique sur de longues périodes.
+  tiles:
+  - title: Commencez
+    links:
+    - title: Découvrez StorageGRID
+      url: https://docs.netapp.com/us-en/storagegrid-118/primer/index.html
+    - title: Démarrage rapide de StorageGRID
+      url: https://docs.netapp.com/us-en/storagegrid-118/quick-start.html
+    - title: Démarrage rapide de l'installation de l'appareil
+      url: "/installconfig/index.html"
+    - title: Automatisez l'installation et la configuration
+      url: "/installconfig/automating-appliance-installation-and-configuration.html"
+    - title: Automatisez la configuration de StorageGRID
+      url: "/installconfig/automating-configuration-of-storagegrid.html"
+  - title: Présentation des appareils
+    links:
+    - title: SG100 et SG1000
+      url: "/installconfig/hardware-description-sg100-and-1000.html"
+    - title: SG5700
+      url: "/installconfig/hardware-description-sg5700.html"
+    - title: SG6000
+      url: "/installconfig/hardware-description-sg6000.html"
+    - title: SG6100 (nouveau)
+      url: "/installconfig/hardware-description-sg6100.html"
+  - title: Installer le matériel de fixation
+    links:
+    - title: Avant l'installation
+      url: "/landing-install-prep/index.html"
+    - title: Installer le matériel de fixation
+      url: "/landing-install-hdwr/index.html"
+    - title: Configurer le matériel
+      url: "/installconfig/configuring-hardware.html"
+    - title: Déployez le nœud de l'appliance
+      url: "/landing-deploy-appliance/index.html"
+  - title: Maintenance du matériel de l'appliance
+    links:
+    - title: SG100 et SG1000
+      url: "/landing-maintain-sg1000-100/index.html"
+    - title: APPLIANCE SG5600
+      url: "/sg5600/index.html"
+    - title: SG5700
+      url: "/landing-maintain-sg5700/index.html"
+    - title: SG6000
+      url: "/landing-maintain-sg6000/index.html"
+    - title: SG6100
+      url: "/landing-maintain-sgf6112/index.html"
+  - title: Logiciel StorageGRID
+    links:
+    - title: Documentation StorageGRID 11.8
+      url: https://docs.netapp.com/us-en/storagegrid-118/index.html
+    - title: Documentation StorageGRID 11.7
+      url: https://docs.netapp.com/us-en/storagegrid-117/index.html
+    - title: Documentation StorageGRID 11.6
+      url: https://docs.netapp.com/us-en/storagegrid-116/index.html
+    - title: Documentation sur StorageGRID 11.5
+      url: https://docs.netapp.com/us-en/storagegrid-115/index.html
+  - title: Activez StorageGRID
+    links:
+    - title: Intégrer d'autres applications
+      url: https://docs.netapp.com/us-en/storagegrid-enable/index.html
+  - title: Démonstrations et didacticiels
+    links:
+    - title: Vidéothèque StorageGRID
+      url: https://www.youtube.com/playlist?list=PLdXI3bZJEw7nh2wGRA65iulXhtXwLiqrY
+    - title: Services de formation NetApp
+      url: https://www.netapp.com/support-and-training/netapp-university/
+  - title: Ressources supplémentaires
+    links:
+    - title: Page de support StorageGRID
+      url: https://mysupport.netapp.com/site/products/all/details/5d9f1107e01d9c0001ee50f6/downloads-tab
+    - title: Matrice d'interopérabilité NetApp (IMT)
+      url: https://imt.netapp.com/matrix/#welcome
+    - title: Base de connaissances StorageGRID
+      url: https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/StorageGRID
+    - title: Blog NetApp
+      url: https://netapp.com/blog/
+    - title: Communauté NetApp
+      url: https://community.netapp.com/

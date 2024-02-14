@@ -1,0 +1,33 @@
+---
+permalink: sg6000/upgrading-santricity-os-on-storage-controllers.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, controller, storage controller, upgrade, upgrading, SANtricity OS, SANtricity 
+summary: 'Pour optimiser le fonctionnement du contrôleur de stockage, vous devez effectuer une mise à niveau vers la dernière version de maintenance du système d"exploitation SANtricity compatible avec votre appliance StorageGRID.' 
+---
+= Mise à niveau du système d'exploitation SANtricity sur les contrôleurs de stockage SG6000
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pour optimiser le fonctionnement du contrôleur de stockage, vous devez effectuer une mise à niveau vers la dernière version de maintenance du système d'exploitation SANtricity compatible avec votre appliance StorageGRID.
+
+Consulter le https://imt.netapp.com/matrix/#welcome["Matrice d'interopérabilité NetApp (IMT)"^] pour déterminer la version que vous devez utiliser.
+
+Téléchargez le nouveau fichier du logiciel SANtricity OS sur https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["Téléchargement NetApp : appliance StorageGRID"^].
+
+Utilisez l'une des procédures suivantes basées sur la version de SANtricity OS actuellement installée :
+
+* Si le contrôleur de stockage utilise SANtricity OS 08.42.20.00 (11.42) ou une version ultérieure, utilisez Grid Manager pour effectuer la mise à niveau.
++
+link:upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg6000.html["Mettez à niveau le système d'exploitation SANtricity sur les contrôleurs de stockage à l'aide de Grid Manager"]
+
+* Si le contrôleur de stockage utilise une version de SANtricity OS antérieure à 08.42.20.00 (11.42), utilisez le mode de maintenance pour effectuer la mise à niveau.
++
+link:upgrading-santricity-os-on-storage-controllers-using-maintenance-mode-sg6000.html["Mettre à niveau le système d'exploitation SANtricity sur les contrôleurs de stockage à l'aide du mode de maintenance"]
+
+
+
+
+CAUTION: Lorsque vous mettez à niveau SANtricity OS pour votre appliance de stockage, vous devez suivre les instructions de la documentation StorageGRID. Si vous utilisez d'autres instructions, votre appareil risque de ne plus fonctionner.

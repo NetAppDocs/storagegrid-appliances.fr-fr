@@ -1,0 +1,93 @@
+---
+permalink: installconfig/installing-appliance-in-cabinet-or-rack-sg5700.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5700, sg5712, sg5760, install, cabinet, rack, rails, drives 
+summary: 'Vous installez un ensemble de rails dans votre armoire ou rack, puis faites glisser l"appareil sur les rails. Si vous disposez d"un SG5760, installez les lecteurs après l"installation de l"appliance.' 
+---
+= Installation dans l'armoire ou le rack (SG5700)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous installez un ensemble de rails dans votre armoire ou rack, puis faites glisser l'appareil sur les rails. Si vous disposez d'un SG5760, installez les lecteurs après l'installation de l'appliance.
+
+.Avant de commencer
+* Vous avez passé en revue le document consignes de sécurité inclus dans la boîte et compris les précautions à prendre pour déplacer et installer le matériel.
+* Les instructions sont fournies avec le kit de rails.
+
+
+
+
+== Installer SG5712
+
+Procédez comme suit pour installer une appliance SG5712 dans un rack ou une armoire.
+
+
+CAUTION: Le SG5712 pèse environ 29 kg (64 lb) lorsqu'il est entièrement chargé avec des disques. Deux personnes ou un dispositif de levage mécanisé sont nécessaires pour déplacer le SG5712 en toute sécurité.
+
+
+CAUTION: Installez le matériel depuis le bas du rack ou de l'armoire, ou montez le rack pour éviter que l'équipement ne bascule.
+
+.Étapes
+. Suivez les instructions du kit de rails pour installer les rails.
+. Placez l'arrière de l'appareil (l'extrémité avec les connecteurs) sur les rails.
+. Faites glisser avec précaution l'appareil jusqu'au fond de l'armoire ou du rack.
+. Fixez l'appareil à l'armoire ou au rack conformément aux instructions du kit de rails.
+. Fixez le panneau à l'avant.
+
+
+
+
+== Installer SG5760
+
+Suivez ces étapes pour installer une appliance SG5760 et tout tiroir d'extension dans un rack ou une armoire.
+
+
+CAUTION: Installez le matériel depuis le bas du rack ou de l'armoire, ou montez le rack pour éviter que l'équipement ne bascule.
+
+
+CAUTION: Le SG5760 pèse environ 60 kg (132 lb) et n'a pas de disque installé. Quatre personnes ou un dispositif de levage mécanisé sont nécessaires pour déplacer en toute sécurité un SG5760 vide.
+
+
+CAUTION: Pour éviter d'endommager le matériel, ne déplacez jamais un SG5760 si des lecteurs sont installés. Vous devez retirer tous les disques avant de déplacer le tiroir.
+
+.Étapes
+. Suivez les instructions du kit de rails pour installer les rails dans votre armoire ou rack.
+. Préparez-vous à déplacer l'appareil :
++
+.. Retirez la boîte d'emballage extérieure.
+.. Pliez les rabats de la boîte intérieure vers le bas.
+.. Si vous soulevez le SG5760 à la main, fixez les quatre poignées sur les côtés du châssis.
++
+Vous retirez ces poignées lorsque vous faites glisser l'appareil sur les rails.
+
+
+
+. Si votre armoire est dotée d'un trou carré, installez les écrous de cage de manière à pouvoir fixer l'avant et l'arrière du shelf à l'aide de vis.
+. Placez l'arrière de l'appareil (l'extrémité avec les connecteurs) sur les rails.
+. Tout en maintenant l'appareil par le bas, faites-le glisser dans le rack ou l'armoire.
++
+Utilisez les loquets pour retirer les poignées lorsque vous faites glisser l'appareil.
+
+. Fixez l'appareil à l'avant du rack en insérant deux vis dans le premier et le troisième trou (en partant du haut) de chaque côté.
+. Fixez l'appareil à l'arrière du rack ou de l'armoire à l'aide des supports.
+. Installez 12 disques dans chacun des cinq tiroirs.
++
+Vous devez installer les 60 disques pour assurer le bon fonctionnement.
+
++
+.. Placez le bracelet antistatique et retirez les lecteurs de leur emballage.
+.. Relâchez les leviers du tiroir d'entraînement supérieur et faites glisser le tiroir vers l'extérieur à l'aide des leviers.
+.. Relevez la poignée du lecteur à la verticale et alignez les boutons du lecteur avec les encoches du tiroir.
++
+image::../media/appliance_drive_insertion.gif[Installez le lecteur dans l'appliance à 60 disques]
+
+.. Appuyez doucement sur le haut du lecteur, faites pivoter la poignée du lecteur vers le bas jusqu'à ce qu'il s'enclenche.
+.. Après avoir installé les 12 premiers lecteurs, faites glisser le tiroir vers l'intérieur en poussant sur le centre et en fermant doucement les deux leviers.
+.. Répétez ces étapes pour les quatre autres tiroirs.
+
+
+. Fixez le cadre avant.
+

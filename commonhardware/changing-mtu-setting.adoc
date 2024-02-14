@@ -1,0 +1,65 @@
+---
+permalink: commonhardware/changing-mtu-setting.html 
+sidebar: sidebar 
+keywords: mtu, change, changing 
+summary: 'Vous pouvez modifier le paramètre MTU que vous avez attribué lorsque vous avez configuré des adresses IP pour le nœud de l"appliance.' 
+---
+= Modifier le paramètre MTU
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez modifier le paramètre MTU que vous avez attribué lorsque vous avez configuré des adresses IP pour le nœud de l'appliance.
+
+.Description de la tâche
+
+CAUTION: La valeur MTU du réseau doit correspondre à la valeur configurée sur le port du commutateur auquel le nœud est connecté. Dans le cas contraire, des problèmes de performances réseau ou une perte de paquets peuvent se produire.
+
+
+NOTE: Pour des performances réseau optimales, tous les nœuds doivent être configurés avec des valeurs MTU similaires sur leurs interfaces réseau Grid. L'alerte *Grid Network MTU mismatch* est déclenchée en cas de différence importante dans les paramètres MTU pour le réseau Grid sur les nœuds individuels. Les valeurs MTU ne doivent pas nécessairement être identiques pour tous les types de réseau.
+
+Pour modifier le paramètre MTU sans redémarrer le nœud d'appliance, <<Modifiez le paramètre MTU à l'aide de l'outil Modifier l'IP,Utilisez l'outil Modifier IP>>.
+
+Si le réseau client ou administrateur n'a pas été configuré dans le programme d'installation de l'appliance StorageGRID lors de l'installation initiale, <<Modifiez le paramètre MTU en mode maintenance,Modifiez le paramètre MTU en mode maintenance>>.
+
+
+
+== Modifiez le paramètre MTU à l'aide de l'outil Modifier l'IP
+
+.Avant de commencer
+Vous avez le `Passwords.txt` Fichier pour utiliser l'outil Modifier IP.
+
+.Étapes
+Accédez à l'outil Modifier IP et mettez à jour les paramètres MTU comme décrit dans https://docs.netapp.com/us-en/storagegrid-118/maintain/changing-nodes-network-configuration.html["Modifier la configuration réseau du nœud"^].
+
+
+
+== Modifiez le paramètre MTU en mode maintenance
+
+Modifiez le paramètre MTU en mode maintenance si vous ne parvenez pas à accéder à ces paramètres à l'aide de l'outil Modifier IP.
+
+.Avant de commencer
+L'appareil a été link:../commonhardware/placing-appliance-into-maintenance-mode.html["passage en mode maintenance"].
+
+.Étapes
+. Dans le programme d'installation de l'appliance StorageGRID, sélectionnez *configurer le réseau* > *Configuration IP*.
+. Apportez les modifications souhaitées aux paramètres MTU du réseau Grid, du réseau Admin et du réseau client.
+. Lorsque vous êtes satisfait des paramètres, sélectionnez *Enregistrer*.
+. Si cette procédure s'est terminée avec succès et que vous disposez de procédures supplémentaires pour effectuer cette opération pendant que le nœud est en mode de maintenance, effectuez-les maintenant. Lorsque vous avez terminé, ou si vous avez rencontré des échecs et souhaitez recommencer, sélectionnez *Avancé* > *redémarrer le contrôleur*, puis sélectionnez l'une des options suivantes :
++
+** Sélectionnez *redémarrer dans StorageGRID*
+** Sélectionnez *redémarrer en mode maintenance* pour redémarrer le contrôleur avec le nœud restant en mode de maintenance.  Sélectionnez cette option si vous avez rencontré des échecs au cours de la procédure et souhaitez recommencer. Une fois le redémarrage du nœud en mode maintenance terminé, redémarrez à partir de l'étape appropriée de la procédure ayant échoué.
++
+image::../media/reboot_controller_from_maintenance_mode.png[Redémarrez le contrôleur en mode de maintenance]
+
++
+L'appliance peut redémarrer et rejoindre la grille en 20 minutes. Pour confirmer que le redémarrage est terminé et que le nœud a rejoint la grille, retournez à la grille Manager. La page *NODES* doit afficher un état normal (icône de coche verte image:../media/icon_alert_green_checkmark.png["coche verte"] à gauche du nom du nœud) pour le nœud de l'appliance, indiquant qu'aucune alerte n'est active et que le nœud est connecté à la grille.
+
++
+image::../media/nodes_menu.png[Le nœud d'appliance a rejoint la grille]
+
+
+
+

@@ -1,0 +1,168 @@
+---
+permalink: sg6100/replacing-drive-in-sgf6112.html 
+sidebar: sidebar 
+keywords: storagegrid, sgf6112, Replacing, replace, drive, remove, removing, removal, install, installing, installation 
+summary: 'Le dispositif de stockage SGF6112 contient 12 disques SSD. Les données des disques sont protégées par un schéma RAID qui permet à l"appliance de restaurer les données en cas de panne d"un disque sans avoir à copier les données à partir d"un autre nœud. ' 
+---
+= Remplacez les disques du SGF6112
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le dispositif de stockage SGF6112 contient 12 disques SSD. Les données des disques sont protégées par un schéma RAID qui permet à l'appliance de restaurer les données en cas de panne d'un disque sans avoir à copier les données à partir d'un autre nœud.
+
+La défaillance d'un second disque avant la correction d'une panne initiale peut nécessiter la copie des données des autres nœuds pour restaurer la redondance. Cette restauration de redondance peut prendre plus de temps et peut être impossible si des règles ILM à une seule copie sont utilisées ou étaient utilisées auparavant, ou si la redondance des données a été affectée par des défaillances sur d'autres nœuds. Par conséquent, si l'un des disques SGF6112 tombe en panne, vous devez le remplacer dès que possible pour assurer la redondance.
+
+.Avant de commencer
+* Vous avez link:locating-sgf6112-in-data-center.html["l'appareil se trouve physiquement"].
+* Vous avez vérifié quel disque est défaillant en notant que le voyant de gauche du disque est orange fixe ou en utilisant Grid Manager pour link:verify-component-to-replace.html["afficher l'alerte causée par le disque défectueux"].
++
+
+NOTE: Reportez-vous aux informations sur l'affichage des indicateurs d'état pour vérifier l'échec.
+
+* Vous avez obtenu le disque de remplacement.
+* Vous avez obtenu une protection ESD appropriée.
+
+
+.Étapes
+. Vérifiez que le voyant de panne gauche du disque est orange ou utilisez l'ID de logement de disque de l'alerte pour localiser le disque.
++
+Les douze disques se trouvent aux emplacements suivants dans le châssis (avant du châssis avec le cadre retiré) :
+
++
+image::../media/sgf6112_ssds_locations.png[Emplacements des disques]
+
++
+|===
+| Position | Lecteur 
+
+
+ a| 
+1
+ a| 
+HDD00
+
+
+
+ a| 
+2
+ a| 
+HDD01
+
+
+
+ a| 
+3
+ a| 
+HDD02
+
+
+
+ a| 
+4
+ a| 
+HDD03
+
+
+
+ a| 
+5
+ a| 
+HDD04
+
+
+
+ a| 
+6
+ a| 
+HDD05
+
+
+
+ a| 
+7
+ a| 
+HDD06
+
+
+
+ a| 
+8
+ a| 
+HDD07
+
+
+
+ a| 
+9
+ a| 
+HDD08
+
+
+
+ a| 
+10
+ a| 
+HDD09
+
+
+
+ a| 
+11
+ a| 
+HDD10
+
+
+
+ a| 
+12
+ a| 
+HDD11
+
+|===
++
+Vous pouvez également utiliser Grid Manager pour contrôler l'état des disques SSD. Sélectionnez *NOEUDS*. Puis faire `*Storage Node*` > *matériel*. Si un lecteur est défectueux, le champ Storage RAID mode contient un message indiquant quel lecteur est défectueux.
+
+
+
+. Enroulez l'extrémité du bracelet antistatique autour de votre poignet et fixez l'extrémité du clip à une masse métallique afin d'éviter toute décharge statique.
+. Déballez le lecteur de remplacement et placez-le sur une surface plane et sans électricité statique près de l'appareil.
++
+Conservez tous les matériaux d'emballage.
+
+. Appuyez sur le bouton de déverrouillage du disque défectueux.
++
+image::../media/h600s_driveremoval.gif[Dépose de l'entraînement]
+
++
+La poignée des ressorts d'entraînement s'ouvre partiellement et l'entraînement se relâche de la fente.
+
+. Ouvrez la poignée, faites glisser l'entraînement vers l'extérieur et placez-le sur une surface plane et non statique.
+. Appuyez sur le bouton de dégagement du disque de remplacement avant de l'insérer dans le slot.
++
+Les ressorts de verrouillage s'ouvrent.
+
++
+image::../media/h600s_driveinstall.gif[Installation du lecteur]
+
+. Insérez le lecteur de remplacement dans son logement, puis fermez la poignée du lecteur.
++
+
+NOTE: Ne forcez pas trop lorsque vous fermez la poignée.
+
++
+Lorsque le lecteur est complètement inséré, vous entendez un clic.
+
++
+Le lecteur remplacé est automatiquement reconstruit avec les données en miroir des lecteurs en fonctionnement. Le voyant du lecteur doit d'abord clignoter, mais cesse de clignoter dès que le système détermine que le lecteur dispose d'une capacité suffisante et qu'il est fonctionnel.
+
++
+Vous pouvez vérifier l'état de la reconstruction à l'aide du Gestionnaire de grille.
+
+. Si plusieurs disques sont défectueux et ont été remplacés, des alertes vous indiquent que certains volumes doivent être restaurés. Si vous recevez une alerte, avant de tenter une récupération de volume, sélectionnez *NODES* > `*appliance Storage Node*` > *matériel*. Dans la section dispositif StorageGRID de la page, vérifiez que le mode RAID de stockage est en bon état ou qu'il est en cours de reconstruction. Si l'état indique un ou plusieurs disques défaillants, corrigez cette condition avant de tenter la restauration du volume.
+. Dans le Gestionnaire de grille, accédez à *NODES* > `*appliance Storage Node*` > *matériel*. Dans la section dispositif StorageGRID de la page, vérifiez que le mode RAID de stockage fonctionne correctement.
+
+
+Après le remplacement de la pièce, renvoyez la pièce défectueuse à NetApp, en suivant les instructions RMA (retour de matériel) livrées avec le kit. Voir la https://mysupport.netapp.com/site/info/rma["Retour de pièce et amp ; remplacements"^] pour plus d'informations.

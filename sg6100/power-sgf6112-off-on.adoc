@@ -1,0 +1,118 @@
+---
+permalink: sg6100/power-sgf6112-off-on.html 
+sidebar: sidebar 
+keywords: storagegrid, sgf6112, power off, turn off, shut off, shutdown, shut down, power on, turn on, start 
+summary: 'Vous pouvez arrêter l"appliance SGF6112 et la remettre sous tension pour effectuer des opérations de maintenance.' 
+---
+= Mettez l'appareil SGF6112 hors tension et sous tension
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez arrêter l'appliance SGF6112 et la remettre sous tension pour effectuer des opérations de maintenance.
+
+
+
+== Arrêtez l'appliance SGF6112
+
+Arrêtez l'appliance pour effectuer une maintenance matérielle.
+
+.Avant de commencer
+* Vous avez link:locating-sgf6112-in-data-center.html["l'appareil se trouve physiquement"].
+
+
+.Description de la tâche
+Pour éviter toute interruption de service, éteignez l'appareil pendant une fenêtre de maintenance planifiée lorsque les périodes d'interruption de service sont acceptables.
+
+.Étapes
+. Éteignez l'appareil :
++
+
+CAUTION: Vous devez effectuer un arrêt contrôlé de l'appliance en entrant les commandes indiquées ci-dessous. Il est recommandé d'effectuer un arrêt contrôlé lorsque cela est possible pour éviter les alertes inutiles, vérifier que les journaux complets sont disponibles et éviter toute interruption de service.
+
++
+.. Si vous n'avez pas encore ouvert de session sur le nœud grid, connectez-vous à l'aide de PuTTY ou d'un autre client ssh :
++
+... Saisissez la commande suivante : `ssh admin@_grid_node_IP_`
+... Entrez le mot de passe indiqué dans le `Passwords.txt` fichier.
+... Entrez la commande suivante pour passer à la racine : `su -`
+... Entrez le mot de passe indiqué dans le `Passwords.txt` fichier.
++
+Lorsque vous êtes connecté en tant que root, l'invite passe de `$` à `#`.
+
+
+
+.. Arrêtez l'appareil : +
+`*shutdown -h now*`
++
+Cette commande peut prendre jusqu'à 10 minutes.
+
+
+
+. Utilisez l'une des méthodes suivantes pour vérifier que l'appareil est hors tension :
++
+** Vérifiez que le voyant d'alimentation situé à l'avant de l'appareil est éteint.
+** Consultez la page Power Control de l'interface BMC pour vérifier que l'appliance est éteinte.
+
+
+
+
+
+
+== Mettez le SGF6112 sous tension et vérifiez son fonctionnement
+
+Mettez le contrôleur sous tension après la fin de la maintenance.
+
+.Avant de commencer
+* Vous avez link:reinstalling-sgf6112-into-cabinet-or-rack.html["installez le contrôleur dans une armoire ou un rack - effectué"] et connecté les câbles de données et d'alimentation.
+* Vous avez link:locating-sgf6112-in-data-center.html["situé physiquement le contrôleur dans le data center"].
+
+
+.Étapes
+. Mettez l'appareil sous tension.
++
+Vous devrez peut-être retirer le cadre pour accéder à l'interrupteur d'alimentation. Si c'est le cas, n'oubliez pas de le réinstaller ensuite.
+
+. Surveillez les voyants du contrôleur et les codes de démarrage à l'aide de l'une des méthodes suivantes :
++
+** Appuyer sur le bouton de mise sous tension situé à l'avant du contrôleur.
+** Utilisez l'interface du contrôleur BMC :
++
+... link:../installconfig/accessing-bmc-interface.html["Accéder à l'interface BMC du contrôleur"].
+... Sélectionnez *Power Control*.
+... Sélectionnez *Marche*, puis *Exécuter l'action*.
++
+image::../media/sgf6112_power_on_from_bmc.png[Mettez l'appliance sous tension à partir du contrôleur BMC]
+
++
+Utilisez l'interface BMC pour surveiller l'état de démarrage.
+
+
+
+
+
+. Vérifiez que le contrôleur de l'appliance s'affiche dans Grid Manager et sans alertes.
++
+L'affichage du contrôleur dans Grid Manager peut prendre jusqu'à 20 minutes.
+
++
+
+CAUTION: Ne mettez pas un autre nœud d'appliance hors ligne sauf si cette appliance présente une icône verte.
+
+. Vérifiez que la nouvelle appliance est entièrement opérationnelle en vous connectant au nœud grid à l'aide de PuTTY ou d'un autre client ssh :
++
+.. Saisissez la commande suivante : `ssh _Appliance_IP_`
+.. Entrez le mot de passe indiqué dans le `Passwords.txt` fichier.
+.. Entrez la commande suivante pour passer à la racine : `su -`
+.. Entrez le mot de passe indiqué dans le `Passwords.txt` fichier.
++
+Lorsque vous êtes connecté en tant que root, l'invite passe de `$` à `#`.
+
+
+
+
+
+.Informations associées
+link:../installconfig/viewing-status-indicators.html["Afficher les indicateurs d'état"]

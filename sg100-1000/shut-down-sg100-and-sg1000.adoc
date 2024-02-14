@@ -1,0 +1,54 @@
+---
+permalink: sg100-1000/shut-down-sg100-and-sg1000.html 
+sidebar: sidebar 
+keywords: storagegrid, sg1000, SG100, power off, turn off, shut off, shutdown, shut down, 
+summary: 'Arrêtez l"appareil de services pour effectuer la maintenance du matériel.' 
+---
+= Arrêtez le SG100 ou le SG1000
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Arrêtez l'appareil de services pour effectuer la maintenance du matériel.
+
+.Avant de commencer
+* Vous avez physiquement link:locating-controller-in-data-center.html["situé l'appareil de services - effectué"] nécessitant une maintenance dans le data center.
+
+
+.Description de la tâche
+Pour éviter toute interruption de service, arrêtez l'appliance pendant une fenêtre de maintenance planifiée lorsque les périodes d'interruption de service sont acceptables.
+
+.Étapes
+. Éteignez l'appareil :
++
+
+CAUTION: Vous devez effectuer un arrêt contrôlé de l'appliance en entrant les commandes indiquées ci-dessous. Il est recommandé d'effectuer un arrêt contrôlé lorsque cela est possible pour éviter les alertes inutiles, vérifier que les journaux complets sont disponibles et éviter toute interruption de service.
+
++
+.. Si vous n'avez pas encore ouvert de session sur le nœud grid, connectez-vous à l'aide de PuTTY ou d'un autre client ssh :
++
+... Saisissez la commande suivante : `ssh admin@_grid_node_IP_`
+... Entrez le mot de passe indiqué dans le `Passwords.txt` fichier.
+... Entrez la commande suivante pour passer à la racine : `su -`
+... Entrez le mot de passe indiqué dans le `Passwords.txt` fichier.
++
+Lorsque vous êtes connecté en tant que root, l'invite passe de `$` à `#`.
+
+
+
+.. Arrêtez l'appareil de services : +
+`*shutdown -h now*`
++
+Cette commande peut prendre jusqu'à 10 minutes.
+
+
+
+. Utilisez l'une des méthodes suivantes pour vérifier que l'appareil est hors tension :
++
+** Vérifiez que le voyant d'alimentation situé à l'avant de l'appareil est éteint.
+** Consultez la page Power Control de l'interface BMC pour vérifier que l'appliance est éteinte.
+
+
+

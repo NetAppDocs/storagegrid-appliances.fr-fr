@@ -1,0 +1,23 @@
+---
+sidebar: sidebar 
+permalink: whats-new-appliances.html 
+keywords: storagegrid, appliance, whats new 
+summary: Découvrez les nouveautés de ce site de documentation. 
+---
+= Nouveautés des appliances
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Découvrez les nouveautés des appliances StorageGRID.
+
+
+
+== Appliance 100 % Flash SGF6112
+
+La nouvelle appliance de stockage StorageGRID SGF6112 présente une conception compacte avec contrôleur de calcul et contrôleur de stockage intégré dans un châssis 1U. L'appliance prend en charge 12 disques NVMe SSD avec une capacité de stockage allant jusqu'à 15.3 To par disque. Les disques SSD font partie d'un système RAID qui fournit un stockage objet résilient. Voir link:installconfig/hardware-description-sg6100.html["Appliance SGF6112 : présentation"].

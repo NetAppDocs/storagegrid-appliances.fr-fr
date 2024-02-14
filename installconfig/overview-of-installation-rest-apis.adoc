@@ -1,0 +1,62 @@
+---
+permalink: installconfig/overview-of-installation-rest-apis.html 
+sidebar: sidebar 
+keywords: installation REST API, REST API, installation REST APIs, REST APIs, Appliance Installer API, Appliance Installer APIs, Install API, Install APIs, Installer API, Installer APIs, Installation API, Installation APIs, api, apis 
+summary: 'StorageGRID fournit deux API REST pour effectuer des tâches d"installation : l"API d"installation de StorageGRID et l"API du programme d"installation de l"appliance StorageGRID.' 
+---
+= Présentation de l'installation des API REST
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID fournit deux API REST pour effectuer des tâches d'installation : l'API d'installation de StorageGRID et l'API du programme d'installation de l'appliance StorageGRID.
+
+Les deux API utilisent la plate-forme swagger open source API pour fournir la documentation de l'API. Swagger permet aux développeurs et aux non-développeurs d'interagir avec l'API dans une interface utilisateur qui illustre la façon dont l'API répond aux paramètres et aux options. Cette documentation suppose que vous êtes familiarisé avec les technologies Web standard et le format de données JSON.
+
+
+CAUTION: Toutes les opérations d'API que vous effectuez à l'aide de la page Web API Docs sont des opérations en direct. Veillez à ne pas créer, mettre à jour ou supprimer des données de configuration ou d'autres données par erreur.
+
+Chaque commande de l'API REST inclut l'URL de l'API, une action HTTP, tous les paramètres d'URL requis ou facultatifs et une réponse de l'API attendue.
+
+
+
+== API d'installation de StorageGRID
+
+L'API d'installation de StorageGRID n'est disponible que lors de la configuration initiale du système StorageGRID et si vous devez effectuer une restauration du nœud d'administration principal. L'API d'installation est accessible via HTTPS depuis le Grid Manager.
+
+Pour accéder à la documentation de l'API, accédez à la page Web d'installation sur le nœud d'administration principal et sélectionnez *aide* > *documentation de l'API* dans la barre de menus.
+
+L'API d'installation de StorageGRID comprend les sections suivantes :
+
+* *Config* : opérations liées à la version du produit et aux versions de l'API. Vous pouvez lister la version du produit ainsi que les versions principales de l'API prises en charge par cette version.
+* *GRID* : opérations de configuration au niveau de la grille. Vous pouvez obtenir et mettre à jour les paramètres de la grille, y compris les détails de la grille, les sous-réseaux de la grille, les mots de passe de la grille et les adresses IP des serveurs NTP et DNS.
+* *Nœuds* : opérations de configuration au niveau des nœuds. Vous pouvez récupérer une liste de nœuds de la grille, supprimer un nœud de la grille, configurer un nœud de la grille, afficher un nœud de la grille et réinitialiser la configuration d'un nœud de la grille.
+* *Provision*: Opérations de provisionnement. Vous pouvez démarrer l'opération de provisionnement et afficher l'état de cette opération.
+* *Recovery* : opérations de restauration du noeud Admin principal. Vous pouvez réinitialiser les informations, télécharger le progiciel de restauration, démarrer la récupération et afficher l'état de l'opération de récupération.
+* *Recovery-package*: Opérations pour télécharger le progiciel de récupération.
+* *Sites* : opérations de configuration au niveau du site. Vous pouvez créer, afficher, supprimer et modifier un site.
+
+
+
+
+== API du programme d'installation de l'appliance StorageGRID
+
+L'API du programme d'installation de l'appliance StorageGRID est accessible via HTTPS à partir de `_Controller_IP_:8443`.
+
+Pour accéder à la documentation de l'API, accédez au programme d'installation de l'appliance StorageGRID sur l'appliance et sélectionnez *aide* > *API Docs* dans la barre de menus.
+
+L'API du programme d'installation de l'appliance StorageGRID comprend les sections suivantes :
+
+* *Clone* : opérations de configuration et de contrôle du clonage des nœuds.
+* *Cryptage* : opérations de gestion du cryptage et d'affichage de l'état du cryptage.
+* *Configuration matérielle* : opérations permettant de configurer les paramètres système sur le matériel connecté.
+* *Installation* : opérations de démarrage de l'installation de l'appareil et de surveillance de l'état de l'installation.
+* *Mise en réseau* : opérations liées à la configuration du réseau Grid, Admin et client pour une appliance StorageGRID et les paramètres du port de l'appliance.
+* *Setup* : opérations pour faciliter la configuration initiale de l'appliance, y compris les demandes d'obtenir des informations sur le système et de mettre à jour l'adresse IP du nœud d'administration principal.
+* *Support* : opérations de redémarrage du contrôleur et d'obtention des journaux.
+* *Update-config* : opérations de mise à jour de la configuration de l'appliance StorageGRID.
+* *Mise à niveau* : opérations liées à la mise à niveau du micrologiciel de l'appareil.
+* *Uploadsg* : opérations de téléchargement des fichiers d'installation StorageGRID.
+

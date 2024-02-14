@@ -1,0 +1,43 @@
+---
+permalink: sg6100/locating-sgf6112-in-data-center.html 
+sidebar: sidebar 
+keywords: storagegrid, sgf6112, appliance, locate, find, locating, finding, identify, blue led, blue light 
+summary: 'Localisez l"appliance pour pouvoir effectuer les opérations de maintenance ou de mise à niveau du matériel.' 
+---
+= Localisez l'appliance SGF6112 dans le data Center
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Localisez l'appliance pour pouvoir effectuer les opérations de maintenance ou de mise à niveau du matériel.
+
+.Avant de commencer
+* Vous avez déterminé quel appareil doit être entretenu.
+* Pour localiser l'appliance dans votre data Center, link:turning-sgf6112-identify-led-on-and-off.html["Activez le voyant d'identification bleu"].
+
+
+.Étapes
+. Trouvez l'appliance dans le data Center.
++
+** Recherchez un voyant d'identification bleu allumé à l'avant ou à l'arrière de l'appareil.
++
+Le voyant d'identification avant se trouve derrière le cadre avant et peut être difficile à voir si le cadre est installé.
+
++
+image::../media/sgf6112_front_panel_service_led_on.png[Voyant d'identification avant - allumé]
+
++
+Le voyant d'identification arrière se trouve au centre de l'appareil, sous le logement micro-SD.
+
+** Vérifiez que les étiquettes apposées à l'avant de l'appareil correspondent à la référence pour vous assurer que vous avez trouvé l'appareil approprié.
+
+
+. Retirez le cadre avant, le cas échéant, pour accéder aux commandes et aux voyants du panneau avant.
+
+
+.Une fois que vous avez terminé
+link:turning-sgf6112-identify-led-on-and-off.html["Éteindre la LED bleue Identify"] si vous l'avez utilisé pour localiser l'appareil.
+ ** Appuyez sur le commutateur LED Identify situé sur le panneau avant de l'appareil.
+ ** Utilisez l'interface BMC de l'appliance.

@@ -1,0 +1,73 @@
+---
+permalink: installconfig/verifying-port-level-network-connections.html 
+sidebar: sidebar 
+keywords: network connections, network connection, network, connection, connectivity, verify, verifying, check, checking, ports, port, port-level, port level, test, testing, udp, Client Network, Admin Network 
+summary: 'Pour vous assurer que l"accès entre le programme d"installation de l"appliance StorageGRID et d"autres nœuds n"est pas obstrué par des pare-feu, vérifiez que le programme d"installation de l"appliance StorageGRID peut se connecter à un port TCP spécifique ou à un ensemble de ports sur l"adresse IP ou la plage d"adresses spécifiée.' 
+---
+= Vérifiez les connexions réseau au niveau des ports
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pour vous assurer que l'accès entre le programme d'installation de l'appliance StorageGRID et d'autres nœuds n'est pas obstrué par des pare-feu, vérifiez que le programme d'installation de l'appliance StorageGRID peut se connecter à un port TCP spécifique ou à un ensemble de ports sur l'adresse IP ou la plage d'adresses spécifiée.
+
+.Description de la tâche
+À l'aide de la liste des ports fournis dans le programme d'installation de l'appliance StorageGRID, vous pouvez tester la connectivité entre l'appliance et les autres nœuds de votre réseau Grid.
+
+En outre, vous pouvez tester la connectivité sur les réseaux Admin et client et sur les ports UDP, tels que ceux utilisés pour les serveurs NFS ou DNS externes. Pour obtenir la liste de ces ports, reportez-vous au https://docs.netapp.com/us-en/storagegrid-118/network/network-port-reference.html["référence de port réseau"^].
+
+
+NOTE: Les ports réseau de la grille répertoriés dans le tableau de connectivité des ports ne sont valides que pour StorageGRID version 11.7 ou ultérieure. Pour vérifier quels ports sont corrects pour chaque type de nœud, consultez toujours les instructions réseau relatives à votre version de StorageGRID.
+
+.Étapes
+. Dans le programme d'installation de l'appliance StorageGRID, cliquez sur *configurer le réseau* > *Test de connectivité du port (nmap)*.
++
+La page Test de connectivité du port s'affiche.
+
++
+Le tableau de connectivité des ports répertorie les types de nœuds qui nécessitent une connectivité TCP sur le réseau Grid. Pour chaque type de nœud, le tableau répertorie les ports du réseau Grid qui doivent être accessibles à votre appliance.
+
++
+Vous pouvez tester la connectivité entre les ports de l'appliance répertoriés dans le tableau et les autres nœuds de votre réseau Grid Network.
+
+. Dans la liste déroulante *Network*, sélectionnez le réseau à tester : *Grid*, *Admin* ou *client*.
+. Spécifiez une plage d'adresses IPv4 pour les hôtes sur ce réseau.
++
+Par exemple, vous pouvez sonder la passerelle sur le réseau ou le nœud d'administration principal.
+
++
+Spécifiez une plage à l'aide d'un tiret, comme indiqué dans l'exemple.
+
+. Entrez un numéro de port TCP, une liste de ports séparés par des virgules ou une plage de ports.
++
+image::../media/port_connectivity_test_start.png[Test de connectivité du port]
+
+. Cliquez sur *Tester la connectivité*.
++
+** Si les connexions réseau au niveau du port sélectionnées sont valides, le message « Test de connectivité du port réussi » s'affiche en vert. Le résultat de la commande nmap est répertorié sous la bannière.
++
+image::../media/port_connectivity_test_passed.png[Test de connectivité du port réussi]
+
+** Si une connexion réseau au niveau du port est établie à l'hôte distant, mais que l'hôte n'écoute pas sur un ou plusieurs des ports sélectionnés, le message « échec du test de connectivité du port » s'affiche en jaune. Le résultat de la commande nmap est répertorié sous la bannière.
++
+Tout port distant auquel l'hôte n'écoute pas a l'état « fermé ». Par exemple, cette bannière jaune peut s'afficher lorsque le nœud auquel vous essayez de vous connecter est dans un état préinstallé et que le service NMS StorageGRID n'est pas encore exécuté sur ce nœud.
+
++
+image::../media/nmap_test_yellow_banner.png[Bannière jaune test NMAP]
+
+** Si une connexion réseau au niveau du port ne peut pas être établie pour un ou plusieurs ports sélectionnés, le message « échec du test de connectivité du port » apparaît dans une bannière rouge. Le résultat de la commande nmap est répertorié sous la bannière.
++
+La bannière rouge indique qu'une tentative de connexion TCP à un port de l'hôte distant a été effectuée, mais rien n'a été renvoyé à l'expéditeur. Lorsqu'aucune réponse n'est renvoyée, le port a l'état « filtré » et est probablement bloqué par un pare-feu.
+
++
+
+NOTE: Les ports « fermés » sont également répertoriés.
+
++
+image::../media/nmap_test_red_banner.png[Bannière rouge test NMAP]
+
+
+
+

@@ -1,0 +1,115 @@
+---
+permalink: installconfig/deploying-appliance-storage-node.html 
+sidebar: sidebar 
+keywords: storage node, storage appliance, deploy node, deploying node, node, deploy, deploying 
+summary: 'Après avoir installé et configuré l"appliance de stockage, vous pouvez la déployer en tant que nœud de stockage dans un système StorageGRID. Lorsque vous déployez une appliance en tant que nœud de stockage, utilisez le programme d"installation de l"appliance StorageGRID inclus sur l"appliance.' 
+---
+= Déployez le nœud de stockage de l'appliance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Après avoir installé et configuré l'appliance de stockage, vous pouvez la déployer en tant que nœud de stockage dans un système StorageGRID. Lorsque vous déployez une appliance en tant que nœud de stockage, utilisez le programme d'installation de l'appliance StorageGRID inclus sur l'appliance.
+
+.Avant de commencer
+* Si vous clonez un nœud d'appliance, continuez à suivre les instructions de la section link:../commonhardware/appliance-node-cloning-procedure.html["clonage des nœuds de l'appliance"] processus.
+* L'appliance a été installée dans un rack ou une armoire, connectée à vos réseaux et sous tension.
+* Les liens réseau, les adresses IP et le remappage des ports (si nécessaire) ont été configurés pour le serveur à l'aide du programme d'installation de l'appliance StorageGRID.
+* Vous connaissez l'une des adresses IP attribuées au contrôleur de calcul de l'appliance. Vous pouvez utiliser l'adresse IP de n'importe quel réseau StorageGRID connecté.
+* Le nœud d'administration principal du système StorageGRID a été déployé.
+* Tous les sous-réseaux de réseau Grid répertoriés sur la page de configuration IP du programme d'installation de l'appliance StorageGRID ont été définis dans la liste de sous-réseaux de réseau de grille sur le nœud d'administration principal.
+* Vous avez un ordinateur portable de service avec un navigateur Web pris en charge.
+
+
+.Description de la tâche
+Chaque appliance de stockage fonctionne comme un seul nœud de stockage. Tout appareil peut se connecter au réseau Grid, au réseau Admin et au réseau client
+
+Pour déployer un nœud de stockage d'appliance dans un système StorageGRID, accédez au programme d'installation de l'appliance StorageGRID et effectuez les opérations suivantes :
+
+* Vous spécifiez ou confirmez l'adresse IP du nœud d'administration principal et le nom du nœud de stockage.
+* Vous démarrez le déploiement et attendez que les volumes soient configurés et que le logiciel soit installé.
+* Une fois l'installation interrompue pendant une pause dans les tâches d'installation de l'appliance, vous reprenez l'installation en vous connectant au Gestionnaire de grille, en approuvant tous les nœuds de la grille et en complétant les processus d'installation et de déploiement de StorageGRID.
+
+
+
+NOTE: Si vous devez déployer plusieurs nœuds d'appliance à la fois, vous pouvez automatiser le processus d'installation à l'aide du `configure-sga.py` Script d'installation de l'appliance.
+
+* Si vous effectuez une opération d'extension ou de récupération, suivez les instructions appropriées :
++
+** Pour ajouter un nœud de stockage d'appliance à un système StorageGRID existant, reportez-vous aux instructions de https://docs.netapp.com/us-en/storagegrid-118/expand/adding-grid-nodes-to-existing-site-or-adding-new-site.html["ajout de nœuds grid"^].
+** Pour déployer un nœud de stockage d'appliance dans le cadre d'une opération de restauration, reportez-vous aux instructions https://docs.netapp.com/us-en/storagegrid-118/maintain/recovering-storagegrid-appliance-storage-node.html["Restauration d'un nœud de stockage d'appliance"^].
+
+
+
+
+.Étapes
+. Ouvrez un navigateur et entrez l'une des adresses IP du contrôleur de calcul de l'appliance. +
+`*https://_Controller_IP_:8443*`
++
+La page d'accueil du programme d'installation de l'appliance StorageGRID s'affiche.
+
++
+image::../media/appliance_installer_home_start_installation_enabled.gif[Page d'accueil du programme d'installation de l'appliance pour les autres types de nœuds (en plus des nœuds Admin)]
+
+. Dans la section *connexion au noeud d'administration principal*, déterminez si vous devez spécifier l'adresse IP du noeud d'administration principal.
++
+Si vous avez déjà installé d'autres nœuds dans ce centre de données, le programme d'installation de l'appliance StorageGRID peut détecter automatiquement cette adresse IP, en supposant que le nœud d'administration principal, ou au moins un autre nœud de grille avec ADMIN_IP configuré, soit présent sur le même sous-réseau.
+
+. Si cette adresse IP n'apparaît pas ou si vous devez la modifier, spécifiez l'adresse :
++
+[cols="1a,2a"]
+|===
+| Option | Description 
+
+
+ a| 
+Entrée IP manuelle
+ a| 
+.. Décochez la case *Activer la découverte du noeud d'administration*.
+.. Saisissez l'adresse IP manuellement.
+.. Cliquez sur *Enregistrer*.
+.. Attendez que l'état de connexion de la nouvelle adresse IP soit prêt.
+
+
+
+
+ a| 
+Détection automatique de tous les nœuds d'administration principaux connectés
+ a| 
+.. Cochez la case *Activer la découverte du noeud d'administration*.
+.. Attendez que la liste des adresses IP découvertes s'affiche.
+.. Sélectionnez le nœud d'administration principal de la grille dans laquelle ce nœud de stockage de l'appliance sera déployé.
+.. Cliquez sur *Enregistrer*.
+.. Attendez que l'état de connexion de la nouvelle adresse IP soit prêt.
+
+
+|===
+. Dans le champ *Nom du nœud*, indiquez le nom du système que vous souhaitez utiliser pour ce nœud d'appliance, puis cliquez sur *Enregistrer*.
++
+Le nom qui apparaît ici correspond au nom système du nœud de l'appliance. Les noms de système sont requis pour les opérations StorageGRID internes et ne peuvent pas être modifiés.
+
+. Dans la section *installation*, vérifiez que l'état actuel est « prêt à démarrer l'installation de `_node name_` Dans le grid avec le nœud d'administration principal `_admin_ip_` " Et que le bouton *Start installation* est activé.
++
+Si le bouton *Start installation* n'est pas activé, vous devrez peut-être modifier la configuration réseau ou les paramètres de port. Pour obtenir des instructions, reportez-vous aux instructions d'entretien de votre appareil.
+
++
+
+NOTE: Si vous déployez l'appliance Storage Node en tant que cible de clonage de nœud, arrêtez le processus de déploiement ici et poursuivez la
+link:../commonhardware/appliance-node-cloning-procedure.html["procédure de clonage de nœud"].
+
+. Dans la page d'accueil du programme d'installation de l'appliance StorageGRID, cliquez sur *Démarrer l'installation*.
++
+L'état actuel passe à « installation en cours » et la page installation du moniteur s'affiche.
+
++
+
+NOTE: Si vous devez accéder manuellement à la page installation du moniteur, cliquez sur *installation du moniteur*.
+
+. Si votre grid inclut plusieurs nœuds de stockage d'appliance, répétez cette procédure pour chaque appliance.
++
+
+NOTE: Si vous devez déployer plusieurs nœuds de stockage d'appliance à la fois, vous pouvez automatiser le processus d'installation à l'aide du `configure-sga.py` Script d'installation de l'appliance.
+
+

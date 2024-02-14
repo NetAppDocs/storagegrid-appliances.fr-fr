@@ -1,0 +1,92 @@
+= Déplacer la batterie vers le nouveau contrôleur
+:allow-uri-read: 
+
+
+
+
+== Déplacer la batterie vers le nouveau contrôleur
+
+.Étapes
+. Retirer la batterie du contrôleur défectueux et l'installer dans le contrôleur de remplacement :
++
+.. Vérifiez que le voyant vert à l'intérieur du contrôleur (entre la batterie et les modules DIMM) est éteint.
++
+Si ce voyant vert est allumé, le contrôleur utilise toujours l'alimentation de la batterie. Vous devez attendre que ce voyant s'éteigne avant de retirer des composants.
+
++
+image::../media/e2800_internal_cache_active_led.gif[LED verte sur la baie E2800]
+
++
+[cols="1a,2a"]
+|===
+| Élément | Description 
+
+
+ a| 
+1
+ a| 
+LED active du cache interne
+
+
+
+ a| 
+2
+ a| 
+Batterie
+
+|===
+.. Repérez le loquet de dégagement bleu de la batterie.
+.. Déverrouillez la batterie en appuyant sur le loquet de déverrouillage vers le bas et en l'éloignant du contrôleur.
++
+image::../media/e2800_remove_battery.gif[Loquet de la batterie]
+
++
+[cols="1a,2a"]
+|===
+| Élément | Description 
+
+
+ a| 
+1
+ a| 
+Loquet de déblocage de la batterie
+
+
+
+ a| 
+2
+ a| 
+Batterie
+
+|===
+.. Soulevez la batterie et faites-la glisser hors du contrôleur.
+.. Retirer le capot du contrôleur de remplacement.
+.. Orientez le contrôleur de remplacement de manière à ce que le logement de la batterie soit orienté vers vous.
+.. Insérez la batterie dans le contrôleur en l'inclinant légèrement vers le bas.
++
+Vous devez insérer la bride métallique située à l'avant de la batterie dans le logement situé en bas du contrôleur et faire glisser le haut de la batterie sous la petite goupille d'alignement située sur le côté gauche du contrôleur.
+
+.. Déplacez le loquet de la batterie vers le haut pour fixer la batterie.
++
+Lorsque le loquet s'enclenche, le bas des crochets de verrouillage se trouve dans une fente métallique du châssis.
+
+.. Retournez le contrôleur pour vérifier que la batterie est correctement installée.
++
+
+CAUTION: *Dommages matériels possibles* -- la bride métallique à l'avant de la batterie doit être complètement insérée dans le logement du contrôleur (comme indiqué sur la première figure). Si la batterie n'est pas installée correctement (comme illustré sur la deuxième figure), la bride métallique peut entrer en contact avec la carte contrôleur, ce qui peut endommager la carte.
+
++
+*** *Correct -- la bride métallique de la batterie est complètement insérée dans le logement du contrôleur:*
++
+image::../media/e2800_battery_flange_ok.gif[Bride de batterie conforme]
+
+*** *Incorrect -- la bride métallique de la batterie n'est pas insérée dans le logement du contrôleur :*
++
+image::../media/e2800_battery_flange_not_ok.gif[Bride de batterie incorrecte]
+
+
+
+
+
+. Replacer le capot du contrôleur.
+

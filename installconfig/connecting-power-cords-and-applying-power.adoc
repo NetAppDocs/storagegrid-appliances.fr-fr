@@ -1,0 +1,112 @@
+---
+permalink: installconfig/connecting-power-cords-and-applying-power.html 
+sidebar: sidebar 
+keywords: storagegrid, wire, wiring, cabling, cable, Connecting, connect, power cords, power, applying power, apply power, turn on, power up, ac, ac power 
+summary: 'Après avoir branché les câbles réseau, vous êtes prêt à alimenter l"appareil.' 
+---
+= Branchez les câbles d'alimentation et mettez le système sous tension
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Une fois les câbles réseau connectés, vous pouvez mettre l'appliance, le contrôleur ou le tiroir d'extension sous tension.
+
+[role="tabbed-block"]
+====
+.SG100 et SG1000
+--
+.Étapes
+. Connectez un cordon d'alimentation à chacune des deux unités d'alimentation de l'appareil.
+. Branchez ces deux cordons d'alimentation à deux unités de distribution d'alimentation différentes dans l'armoire ou le rack.
+. Si le bouton d'alimentation situé à l'avant de l'appareil n'est pas allumé en bleu, appuyez sur le bouton pour mettre l'appareil sous tension.
++
+N'appuyez pas de nouveau sur le bouton d'alimentation pendant le processus de mise sous tension.
+
+. En cas d'erreur, corrigez tout problème.
+. Si vous avez retiré le cadre avant, fixez-le à l'appareil.
+
+
+--
+.SG5700
+--
+.Avant de commencer
+Les deux interrupteurs doivent être éteints avant de brancher l'appareil.
+
+
+CAUTION: *Risque d'électrocution* -- avant de brancher les cordons d'alimentation, assurez-vous que les deux interrupteurs de l'appareil sont éteints.
+
+.Étapes
+. Vérifiez que les deux interrupteurs de l'appareil sont éteints.
+. Branchez les deux cordons d'alimentation à l'appareil.
+. Connectez les deux cordons d'alimentation à différentes unités de distribution de l'alimentation dans l'armoire ou le rack.
+. Allumez les deux interrupteurs de l'appareil.
++
+** N'éteignez pas les interrupteurs d'alimentation pendant le processus de mise sous tension.
+** Les ventilateurs sont très bruyants lors du premier démarrage. Le bruit est normal au démarrage.
+
+
+. Une fois les contrôleurs démarrés, vérifiez leur affichage à sept segments.
+
+
+--
+.SG6000
+--
+.Étapes
+. Vérifier que les deux contrôleurs du tiroir de contrôleur de stockage sont éteints
++
+
+CAUTION: *Risque d'électrocution* -- avant de connecter les cordons d'alimentation, assurez-vous que les interrupteurs d'alimentation de chacun des deux contrôleurs de stockage sont éteints.
+
+. Si vous disposez de tiroirs d'extension, vérifiez que les deux boutons d'alimentation du module sont éteints.
++
+
+CAUTION: *Risque d'électrocution* -- avant de connecter les cordons d'alimentation, assurez-vous que les deux commutateurs d'alimentation de chacun des étagères d'extension sont éteints.
+
+. Connectez un cordon d'alimentation à chacune des deux unités d'alimentation du contrôleur SG6000-CN.
+. Branchez ces deux cordons d'alimentation à deux unités de distribution d'alimentation différentes dans l'armoire ou le rack.
+. Connectez un cordon d'alimentation à chacune des deux unités d'alimentation du tiroir de contrôleur de stockage.
+. Si vous disposez de tiroirs d'extension, connectez un cordon d'alimentation à chacune des deux unités d'alimentation de chaque tiroir d'extension.
+. Connectez les deux câbles d'alimentation de chaque tiroir de stockage (y compris les tiroirs d'extension en option) à deux unités PDU différentes dans l'armoire ou le rack.
+. Si le bouton d'alimentation situé à l'avant du contrôleur SG6000-CN n'est pas actuellement allumé en bleu, appuyez sur le bouton pour mettre le contrôleur sous tension.
++
+N'appuyez pas de nouveau sur le bouton d'alimentation pendant le processus de mise sous tension.
+
+. Allumer les deux boutons d'alimentation à l'arrière du tiroir du contrôleur de stockage. Si vous avez des tiroirs d'extension, mettez les deux commutateurs d'alimentation sur tension pour chaque tiroir.
++
+** N'éteignez pas les interrupteurs d'alimentation pendant le processus de mise sous tension.
+** Au premier démarrage, les ventilateurs du tiroir de contrôleur de stockage et les tiroirs d'extension en option peuvent être très bruyants. Le bruit est normal au démarrage.
+
+
+. Une fois les composants démarrés, vérifiez leur état.
++
+** Vérifiez l'affichage des sept segments à l'arrière de chaque contrôleur de stockage. Pour plus d'informations, reportez-vous à l'article sur l'affichage des codes d'état de démarrage.
+** Vérifiez que le bouton d'alimentation situé à l'avant du contrôleur SG6000-CN est allumé.
+
+
+. En cas d'erreur, corrigez tout problème.
+. Si vous avez déposé le cadre avant, fixez-le au contrôleur SG6000-CN.
+
+
+--
+.SG6100
+--
+.Étapes
+. Connectez un cordon d'alimentation à chacune des deux unités d'alimentation de l'appareil.
+. Branchez ces deux cordons d'alimentation à deux unités de distribution d'alimentation différentes dans l'armoire ou le rack.
+. Si le bouton d'alimentation situé à l'avant de l'appareil SG6100-CN n'est pas actuellement allumé en bleu, appuyez sur le bouton pour mettre l'appareil sous tension.
++
+N'appuyez pas de nouveau sur le bouton d'alimentation pendant le processus de mise sous tension.
+
++
+Le voyant du bloc d'alimentation doit être allumé en vert sans clignoter.
+
+. En cas d'erreur, corrigez tout problème.
+. Si vous avez retiré le cadre avant, fixez-le à l'appareil.
+
+
+--
+====
+.Informations associées
+link:viewing-status-indicators.html["Afficher les indicateurs d'état"]

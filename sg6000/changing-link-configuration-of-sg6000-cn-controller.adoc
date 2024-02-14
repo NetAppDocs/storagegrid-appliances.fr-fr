@@ -1,0 +1,69 @@
+---
+permalink: sg6000/changing-link-configuration-of-sg6000-cn-controller.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, admin node, link configuration, link, configure, configuring, ethernet, port bond mode, port bond, network bond mode, network bond, link speed, vlan tagging, vlan tag 
+summary: Vous pouvez modifier la configuration de la liaison Ethernet du contrôleur SG6000-CN. Vous pouvez modifier le mode de liaison du port, le mode de liaison réseau et la vitesse de liaison. 
+---
+= Modifier la configuration de la liaison du contrôleur SG6000-CN
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez modifier la configuration de la liaison Ethernet du contrôleur SG6000-CN. Vous pouvez modifier le mode de liaison du port, le mode de liaison réseau et la vitesse de liaison.
+
+.Avant de commencer
+L'appareil a été link:../commonhardware/placing-appliance-into-maintenance-mode.html["passage en mode maintenance"].
+
+.Description de la tâche
+Les options permettant de modifier la configuration de la liaison Ethernet du contrôleur SG6000-CN sont les suivantes :
+
+* Changement du mode *Port bond* de fixe à agrégé, ou d'agrégat à fixe
+* Passage du mode de liaison réseau * d'Active-Backup à LACP, ou de LACP à Active-Backup
+* Activation ou désactivation du balisage VLAN ou modification de la valeur d'une balise VLAN
+* Modification de la vitesse de liaison.
+
+
+.Étapes
+. Dans le programme d'installation de l'appliance StorageGRID, sélectionnez *configurer réseau* > *Configuration lien*.
++
+image::../media/link_configuration_option.gif[Configuration du lien]
+
+. [[LINK_config_changes, start=2]]apportez les modifications souhaitées à la configuration de liaison.
++
+Pour plus d'informations sur les options, reportez-vous à la section link:../installconfig/configuring-network-links.html["Configurer les liaisons réseau"].
+
+. Lorsque vous êtes satisfait de vos sélections, cliquez sur *Enregistrer*.
++
+
+NOTE: Vous risquez de perdre votre connexion si vous avez apporté des modifications au réseau ou au lien auquel vous êtes connecté. Si vous n'êtes pas reconnecté dans un délai d'une minute, saisissez à nouveau l'URL du programme d'installation de l'appliance StorageGRID à l'aide de l'une des autres adresses IP attribuées à l'appliance : +
+`*https://_Appliance_Controller_IP_:8443*`
+
++
+Si vous avez modifié les paramètres VLAN, le sous-réseau de l'appliance a peut-être changé. Si vous devez modifier les adresses IP de l'appareil, suivez la https://docs.netapp.com/us-en/storagegrid-118/maintain/configuring-ip-addresses.html["Configurez les adresses IP"^] instructions.
+
++
+link:../installconfig/setting-ip-configuration.html["Configurez les adresses IP StorageGRID"]
+
+. Sélectionnez *configurer réseau* > *Test Ping* dans le menu.
+. Utilisez l'outil Test Ping pour vérifier la connectivité aux adresses IP sur tous les réseaux susceptibles d'avoir été affectés par les modifications de configuration de liaison que vous avez effectuées dans <<link_config_changes,modification de la configuration des liens>> étape.
++
+En plus des autres tests que vous choisissez d'effectuer, vérifiez que vous pouvez envoyer une requête ping à l'adresse IP du réseau de la grille du nœud d'administration principal et à l'adresse IP du réseau de la grille d'au moins un autre nœud de stockage. Si nécessaire, retourner à l' <<link_config_changes,modification de la configuration des liens>> corrigez tout problème de configuration de lien.
+
+. Lorsque vous êtes satisfait du fait que vos modifications de configuration de liaison fonctionnent et que vous disposez de procédures supplémentaires à effectuer lorsque le nœud est en mode maintenance, effectuez-les maintenant. Lorsque vous avez terminé, ou si vous avez rencontré des échecs et souhaitez recommencer, sélectionnez *Avancé* > *redémarrer le contrôleur*, puis sélectionnez l'une des options suivantes :
++
+** Sélectionnez *redémarrer dans StorageGRID*
+** Sélectionnez *redémarrer en mode maintenance* pour redémarrer le contrôleur avec le nœud restant en mode de maintenance.  Sélectionnez cette option si vous avez rencontré des échecs au cours de la procédure et souhaitez recommencer.  Une fois le redémarrage du nœud en mode maintenance terminé, redémarrez à partir de l'étape appropriée de la procédure ayant échoué.
++
+image::../media/reboot_controller_from_maintenance_mode.png[Redémarrez le contrôleur en mode de maintenance]
+
++
+L'appliance peut redémarrer et rejoindre la grille en 20 minutes. Pour confirmer que le redémarrage est terminé et que le nœud a rejoint la grille, retournez à la grille Manager. La page *NODES* doit afficher un état normal (icône de coche verte image:../media/icon_alert_green_checkmark.png["coche verte"] à gauche du nom du nœud) pour le nœud de l'appliance, indiquant qu'aucune alerte n'est active et que le nœud est connecté à la grille.
+
++
+image::../media/nodes_menu.png[Le nœud d'appliance a rejoint la grille]
+
+
+
+

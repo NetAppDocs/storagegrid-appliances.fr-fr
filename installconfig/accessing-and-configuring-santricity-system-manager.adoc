@@ -1,0 +1,244 @@
+---
+permalink: installconfig/accessing-and-configuring-santricity-system-manager.html 
+sidebar: sidebar 
+keywords: storage node, storage appliance, SANtricity System Manager, SANtricity, System Manager, configure, configuring, setup, set up, setting up, access, accessing, E-Series AutoSupport, autosupport, configure, configuring, setup, set up, setting up, access, accessing, hardware, status, diagnostic, environment drives, drive, temperature, IP, IP address, management port, Appliance Installer 
+summary: 'Vous pouvez utiliser SANtricity System Manager pour surveiller l"état des contrôleurs de stockage, des disques de stockage et d"autres composants matériels du tiroir du contrôleur de stockage. Vous pouvez également configurer un proxy pour E-Series AutoSupport qui vous permet d"envoyer des messages AutoSupport depuis le dispositif sans utiliser le port de gestion.' 
+---
+= Configuration de SANtricity System Manager (SG6000 et SG5700)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser SANtricity System Manager pour surveiller l'état des contrôleurs de stockage, des disques de stockage et d'autres composants matériels du tiroir du contrôleur de stockage. Vous pouvez également configurer un proxy pour E-Series AutoSupport qui vous permet d'envoyer des messages AutoSupport depuis le dispositif sans utiliser le port de gestion.
+
+
+
+== Configuration et accès à SANtricity System Manager
+
+Vous devrez peut-être accéder à SANtricity System Manager sur le contrôleur de stockage pour contrôler le matériel du tiroir du contrôleur de stockage ou configurer les baies E-Series AutoSupport.
+
+.Avant de commencer
+* Vous utilisez un https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["navigateur web pris en charge"^].
+* Pour accéder au Gestionnaire système SANtricity via le Gestionnaire de grille, vous avez installé StorageGRID et vous disposez de l'autorisation d'administrateur de l'appliance de stockage ou de l'autorisation d'accès racine.
+* Pour accéder au Gestionnaire système SANtricity à l'aide du programme d'installation de l'appliance StorageGRID, vous disposez du nom d'utilisateur et du mot de passe de l'administrateur du Gestionnaire système SANtricity.
+* Pour accéder au Gestionnaire système SANtricity directement à l'aide d'un navigateur Web, vous disposez du nom d'utilisateur et du mot de passe de l'administrateur du Gestionnaire système SANtricity.
+
+
+
+NOTE: Vous devez disposer du micrologiciel SANtricity 8.70 ou supérieur pour accéder au Gestionnaire système SANtricity à l'aide du Gestionnaire de grille ou du programme d'installation de l'appliance StorageGRID. Vous pouvez vérifier la version de votre micrologiciel à l'aide du programme d'installation de l'appliance StorageGRID et en sélectionnant *aide* > *à propos*.
+
+
+NOTE: L'accès à SANtricity System Manager à partir de Grid Manager ou du programme d'installation de l'appliance n'est généralement destiné qu'au contrôle de votre matériel et à la configuration des baies E-Series AutoSupport. De nombreuses fonctionnalités et opérations dans SANtricity System Manager, telles que la mise à niveau du firmware, ne s'appliquent pas à la surveillance de l'appliance StorageGRID. Pour éviter tout problème, suivez toujours les instructions d'installation et de maintenance du matériel de votre appareil.
+
+.Description de la tâche
+Il existe trois façons d'accéder à SANtricity System Manager, en fonction de l'étape du processus d'installation et de configuration dans laquelle vous vous trouvez :
+
+* Si l'appliance n'a pas encore été déployée en tant que nœud dans votre système StorageGRID, utilisez l'onglet Avancé du programme d'installation de l'appliance StorageGRID.
++
+
+NOTE: Une fois le nœud déployé, vous ne pouvez plus utiliser le programme d'installation de l'appliance StorageGRID pour accéder à SANtricity System Manager.
+
+* Si l'appliance a été déployée en tant que nœud dans votre système StorageGRID, utilisez l'onglet SANtricity System Manager sur la page nœuds de Grid Manager.
+* Si vous ne pouvez pas utiliser le programme d'installation de l'appliance StorageGRID ou le Gestionnaire de grille, vous pouvez accéder directement au Gestionnaire système SANtricity à l'aide d'un navigateur Web connecté au port de gestion.
+
+
+Cette procédure comprend les étapes de votre accès initial à SANtricity System Manager. Si vous avez déjà configuré SANtricity System Manager, rendez-vous sur le  <<config_hardware_alerts_sg6000,étape de configuration des alertes matérielles>>.
+
+
+NOTE: L'utilisation de Grid Manager ou du programme d'installation de l'appliance StorageGRID vous permet d'accéder à SANtricity System Manager sans avoir à configurer ni à connecter le port de gestion de l'appliance.
+
+Vous utilisez SANtricity System Manager pour contrôler les éléments suivants :
+
+* Des données de performances telles que les performances au niveau des baies de stockage, la latence d'E/S, l'utilisation du CPU et le débit
+* État des composants matériels
+* Fonctions de support, y compris l'affichage des données de diagnostic
+
+
+Vous pouvez utiliser SANtricity System Manager pour configurer les paramètres suivants :
+
+* Alertes par e-mail, alertes SNMP ou syslog correspondant aux composants du tiroir de contrôleur de stockage
+* Paramètres de la gamme E-Series AutoSupport pour les composants du tiroir contrôleur de stockage.
++
+Pour en savoir plus sur les systèmes E-Series AutoSupport, consultez http://mysupport.netapp.com/info/web/ECMP1658252.html["Site de documentation sur les systèmes NetApp E-Series"^].
+
+* Clés de sécurité du lecteur, qui sont nécessaires pour déverrouiller des lecteurs sécurisés (cette étape est requise si la fonction de sécurité du lecteur est activée)
+* Mot de passe d'administrateur pour accéder à SANtricity System Manager
+
+
+.Étapes
+. Effectuez l'une des opérations suivantes :
++
+** Utilisez le programme d'installation de l'appliance StorageGRID et sélectionnez *Avancé* > *Gestionnaire système SANtricity*
+** Utilisez Grid Manager et sélectionnez *NODES* > `*_appliance Storage Node_*` > *SANtricity System Manager*
+
+
++
+
+NOTE: Si ces options ne sont pas disponibles ou si la page de connexion n'apparaît pas, utilisez le <<Définissez les adresses IP des contrôleurs de stockage à l'aide du programme d'installation de l'appliance StorageGRID,Adresses IP des contrôleurs de stockage>>. Accédez à SANtricity System Manager en naviguant sur l'adresse IP du contrôleur de stockage.
+
+. Définissez ou saisissez le mot de passe administrateur.
++
+SANtricity System Manager utilise un mot de passe d'administrateur unique qui est partagé entre tous les utilisateurs.
+
++
+image::../media/san_setup_wizard.gif[Capture d'écran montrant le bouton Annuler de l'assistant de configuration]
+
+. Sélectionnez *Annuler* pour fermer l'assistant.
++
+
+NOTE: Ne suivez pas l'assistant de configuration d'une appliance StorageGRID.
+
++
+image::../media/sam_home_page.gif[Capture d'écran de la page d'accueil de SANtricity System Manager]
+
+. [[config_hardware_Alerts_sg6000, démarrage=4]]configurer les alertes matérielles.
++
+.. Sélectionnez *aide* pour accéder à l'aide en ligne de SANtricity System Manager.
+.. Utilisez la section *Paramètres* > *alertes* de l'aide en ligne pour en savoir plus sur les alertes.
+.. Suivez les instructions « Comment faire » pour configurer les alertes par e-mail, les alertes SNMP ou les alertes syslog.
+
+
+. Gérez AutoSupport pour les composants du tiroir contrôleur de stockage.
++
+.. Sélectionnez *aide* pour accéder à l'aide en ligne de SANtricity System Manager.
+.. Utilisez la section *SUPPORT* > *Centre de support* de l'aide en ligne pour en savoir plus sur la fonction AutoSupport.
+.. Suivez les instructions « Comment faire » pour gérer AutoSupport.
++
+Pour obtenir des instructions spécifiques sur la configuration d'un proxy StorageGRID pour l'envoi de messages AutoSupport E-Series sans utiliser le port de gestion, reportez-vous au https://docs.netapp.com/us-en/storagegrid-118/admin/configuring-storage-proxy-settings.html["instructions de configuration des paramètres de proxy de stockage"^].
+
+
+
+. Si la fonction sécurité du lecteur est activée pour l'appliance, créez et gérez la clé de sécurité.
++
+.. Sélectionnez *aide* pour accéder à l'aide en ligne de SANtricity System Manager.
+.. Utilisez la section *Paramètres* > *système* > *gestion des clés de sécurité* de l'aide en ligne pour en savoir plus sur la sécurité des lecteurs.
+.. Suivez les instructions « Comment faire » pour créer et gérer la clé de sécurité.
+
+
+. Si vous le souhaitez, modifiez le mot de passe administrateur.
++
+.. Sélectionnez *aide* pour accéder à l'aide en ligne de SANtricity System Manager.
+.. Utilisez la section *Accueil* > *Administration de la matrice de stockage* de l'aide en ligne pour en savoir plus sur le mot de passe administrateur.
+.. Suivez les instructions « Comment faire » pour modifier le mot de passe.
+
+
+
+
+
+
+== Révision de l'état du matériel dans SANtricity System Manager
+
+Vous pouvez utiliser SANtricity System Manager pour surveiller et gérer chaque composant matériel du tiroir de contrôleur de stockage, et pour examiner les informations de diagnostic et d'environnement sur le matériel, comme la température des composants et les problèmes liés aux disques.
+
+.Avant de commencer
+* Vous utilisez un https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["navigateur web pris en charge"^].
+* Pour accéder au Gestionnaire système SANtricity via le Gestionnaire de grille, vous disposez de l'autorisation d'administrateur de l'appliance de stockage ou de l'autorisation d'accès racine.
+* Pour accéder au Gestionnaire système SANtricity à l'aide du programme d'installation de l'appliance StorageGRID, vous disposez du nom d'utilisateur et du mot de passe de l'administrateur du Gestionnaire système SANtricity.
+* Pour accéder au Gestionnaire système SANtricity directement à l'aide d'un navigateur Web, vous disposez du nom d'utilisateur et du mot de passe de l'administrateur du Gestionnaire système SANtricity.
+
+
+
+NOTE: Vous devez disposer du micrologiciel SANtricity 8.70 ou supérieur pour accéder au Gestionnaire système SANtricity à l'aide du Gestionnaire de grille ou du programme d'installation de l'appliance StorageGRID.
+
+
+NOTE: L'accès à SANtricity System Manager à partir de Grid Manager ou du programme d'installation de l'appliance n'est généralement destiné qu'au contrôle de votre matériel et à la configuration des baies E-Series AutoSupport. De nombreuses fonctionnalités et opérations dans SANtricity System Manager, telles que la mise à niveau du firmware, ne s'appliquent pas à la surveillance de l'appliance StorageGRID. Pour éviter tout problème, suivez toujours les instructions d'installation et de maintenance du matériel de votre appareil.
+
+.Étapes
+. <<Configuration et accès à SANtricity System Manager,Accédez à SANtricity System Manager>>.
+. Entrez le nom d'utilisateur et le mot de passe de l'administrateur si nécessaire.
+. Cliquez sur *Annuler* pour fermer l'assistant de configuration et afficher la page d'accueil de SANtricity System Manager.
++
+La page d'accueil de SANtricity System Manager s'affiche. Dans SANtricity System Manager, le tiroir contrôleur est appelé baie de stockage.
+
++
+image::../media/sam_home_page.gif[Capture d'écran de la page d'accueil de SANtricity System Manager]
+
+. Consultez les informations affichées pour le matériel de l'appareil et vérifiez que tous les composants matériels ont un état optimal.
++
+.. Cliquez sur l'onglet *matériel*.
+.. Cliquez sur *Afficher le verso de la tablette*.
++
+image::../media/sam_hardware_controllers_a_and_b.gif[Onglet Hardware Status dans SANtricity System Manager]
+
++
+À l'arrière, il est possible de voir les deux contrôleurs de stockage, la batterie de chaque contrôleur de stockage, les deux blocs d'alimentation, les deux blocs de ventilation et les tiroirs d'extension (le cas échéant). Vous pouvez également afficher la température des composants.
+
+.. Pour afficher les paramètres de chaque contrôleur de stockage, sélectionnez le contrôleur et sélectionnez *Afficher les paramètres* dans le menu contextuel.
+.. Pour afficher les paramètres des autres composants à l'arrière du tiroir, sélectionnez le composant à afficher.
+.. Cliquez sur *Afficher le recto de la tablette*, puis sélectionnez le composant que vous souhaitez afficher.
++
+Depuis l'avant du tiroir, vous pouvez afficher les disques et les tiroirs disques du tiroir contrôleur de stockage ou des tiroirs d'extension (le cas échéant).
+
+
+
+
+
+Si l'état d'un composant nécessite une intervention, suivez les étapes du gourou de la restauration pour résoudre le problème ou contacter le support technique.
+
+
+
+== Définissez les adresses IP des contrôleurs de stockage à l'aide du programme d'installation de l'appliance StorageGRID
+
+Le port de gestion 1 de chaque contrôleur de stockage connecte l'appliance au réseau de gestion pour SANtricity System Manager. Si vous ne pouvez pas accéder à SANtricity System Manager à partir du programme d'installation de l'appliance StorageGRID, définissez une adresse IP statique pour chaque contrôleur de stockage afin de vous assurer que vous ne perdez pas votre connexion de gestion au matériel et le firmware du contrôleur dans le tiroir contrôleur.
+
+.Avant de commencer
+* Vous utilisez n'importe quel client de gestion pouvant vous connecter au réseau d'administration StorageGRID ou vous disposez d'un ordinateur portable de service.
+* L'ordinateur portable client ou de service dispose d'un navigateur Web pris en charge.
+
+
+.Description de la tâche
+Les adresses attribuées par DHCP peuvent être modifiées à tout moment. Attribuez des adresses IP statiques aux contrôleurs pour garantir une accessibilité cohérente.
+
+
+NOTE: Suivez cette procédure uniquement si vous n'avez pas accès au Gestionnaire système SANtricity à partir du programme d'installation de l'appliance StorageGRID (*Avancé* > *Gestionnaire système SANtricity*) ou du Gestionnaire de grille (*NOEUDS* > *Gestionnaire système SANtricity*).
+
+.Étapes
+. Dans le client, entrez l'URL du programme d'installation de l'appliance StorageGRID : +
+`*https://_Appliance_Controller_IP_:8443*`
++
+Pour `_Appliance_Controller_IP_`, Utilisez l'adresse IP du serveur sur tout réseau StorageGRID.
+
++
+La page d'accueil du programme d'installation de l'appliance StorageGRID s'affiche.
+
+. Sélectionnez *configurer le matériel* > *Configuration réseau du contrôleur de stockage*.
++
+La page Configuration réseau du contrôleur de stockage s'affiche.
+
+. Selon la configuration de votre réseau, sélectionnez *Enabled* pour IPv4, IPv6 ou les deux.
+. Notez l'adresse IPv4 qui s'affiche automatiquement.
++
+DHCP est la méthode par défaut d'assignation d'une adresse IP au port de gestion du contrôleur de stockage.
+
++
+
+NOTE: L'affichage des valeurs DHCP peut prendre quelques minutes.
+
++
+image::../media/storage_controller_network_config_ipv4.gif[IPv4 de configuration réseau du contrôleur de stockage]
+
+. Vous pouvez également définir une adresse IP statique pour le port de gestion du contrôleur de stockage.
++
+
+NOTE: Vous devez attribuer une adresse IP statique au port de gestion ou attribuer un bail permanent à l'adresse sur le serveur DHCP.
+
++
+.. Sélectionnez *statique*.
+.. Saisissez l'adresse IPv4 à l'aide de la notation CIDR.
+.. Saisissez la passerelle par défaut.
++
+image::../media/storage_controller_ipv4_and_def_gateway.gif[Configuration réseau du contrôleur de stockage IPv4 et passerelle par défaut]
+
+.. Cliquez sur *Enregistrer*.
++
+L'application de vos modifications peut prendre quelques minutes.
+
++
+Lorsque vous vous connectez à SANtricity System Manager, vous utiliserez la nouvelle adresse IP statique comme URL : +
+`*https://_Storage_Controller_IP_*`
+
+
+
+

@@ -1,0 +1,29 @@
+= 
+:allow-uri-read: 
+
+
+.Avant de commencer
+Vous disposez de l'adresse IP BMC de l'appliance que vous souhaitez identifier.
+
+.Étapes
+. link:../installconfig/accessing-bmc-interface.html["Accédez à l'interface BMC de l'appliance"].
+. Sélectionnez *identification du serveur*.
++
+L'état actuel de la LED Identify est sélectionné.
+
+. Sélectionnez *ON* ou *OFF*, puis sélectionnez *Exécuter l'action*.
++
+Lorsque vous sélectionnez *ACTIVÉ*, les voyants d'identification bleus s'allument à l'avant (illustration type) et à l'arrière de l'appareil.
+
++
+image::../media/sgf6112_front_panel_service_led_on.png[Voyant d'identification avant - allumé]
+
++
+
+NOTE: Si un panneau est installé sur le contrôleur, il peut être difficile de voir le voyant d'identification avant.
+
++
+Le voyant d'identification arrière se trouve au centre de l'appareil, sous le logement micro-SD.
+
+. Allumer et éteindre les LED Identify selon les besoins.
+

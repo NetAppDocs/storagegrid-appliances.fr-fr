@@ -1,0 +1,196 @@
+---
+permalink: installconfig/deploying-services-appliance-node.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, deploy node, deploying node, node, deploy, deploying, primary, primary admin node, non-primary admin node, non-primary 
+summary: 'Vous pouvez déployer une appliance de services en tant que nœud d"administration principal, nœud d"administration non primaire ou nœud de passerelle. Toutes les appliances de services peuvent fonctionner simultanément en tant que nœuds de passerelle et nœuds d"administration \(principal ou non principal\).' 
+---
+= Déployez le nœud d'appliance des services
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez déployer une appliance de services en tant que nœud d'administration principal, nœud d'administration non primaire ou nœud de passerelle. Toutes les appliances de services peuvent fonctionner en même temps que des nœuds de passerelle et des nœuds d'administration (primaires ou non).
+
+
+
+== Déployez l'appliance de services en tant que nœud d'administration principal
+
+Lorsque vous déployez une appliance de services en tant que nœud d'administration principal, utilisez le programme d'installation de l'appliance StorageGRID inclus sur l'appliance pour installer le logiciel StorageGRID ou téléchargez la version du logiciel que vous souhaitez installer. Vous devez installer et configurer le nœud d'administration principal avant d'installer tout autre type de nœud d'appliance. Un nœud d'administration principal peut se connecter au réseau Grid et au réseau d'administration et au réseau client en option, si un ou les deux sont configurés.
+
+.Avant de commencer
+* L'appliance a été installée dans un rack ou une armoire, connectée à vos réseaux et sous tension.
+* Les liens réseau, les adresses IP et le remappage des ports (si nécessaire) ont été configurés pour le serveur à l'aide du programme d'installation de l'appliance StorageGRID.
+* Vous avez un ordinateur portable de service avec un https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["navigateur web pris en charge"^].
+* Vous connaissez l'une des adresses IP attribuées à l'appliance. Vous pouvez utiliser l'adresse IP de n'importe quel réseau StorageGRID connecté.
+
+
+.Description de la tâche
+Pour installer StorageGRID sur un nœud d'administration principal de l'appliance :
+
+* Vous utilisez le programme d'installation de l'appliance StorageGRID pour installer le logiciel StorageGRID. Si vous souhaitez installer une autre version du logiciel, vous devez d'abord la télécharger à l'aide du programme d'installation de l'appliance StorageGRID.
+* Vous attendez que le logiciel soit installé.
+* Lorsque le logiciel a été installé, l'appliance est redémarrée automatiquement.
+
+
+.Étapes
+. Ouvrez un navigateur et saisissez l'adresse IP de l'appliance. +
+`*https://_services_appliance_IP_:8443*`
++
+La page d'accueil du programme d'installation de l'appliance StorageGRID s'affiche.
+
+. Dans la section *ce noeud*, sélectionnez *Administrateur principal*.
+. Dans le champ *Nom de noeud*, entrez le nom que vous souhaitez utiliser pour ce noeud d'appliance, puis cliquez sur *Enregistrer*.
++
+Le nom de nœud est attribué à ce nœud d'appliance dans le système StorageGRID. Elle s'affiche sur la page Grid Nodes dans Grid Manager.
+
+. Si vous souhaitez installer une autre version du logiciel StorageGRID, procédez comme suit :
++
+.. Téléchargez l'archive d'installation :
++
+https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["Téléchargement NetApp : appliance StorageGRID"^]
+
+.. Extrayez l'archive.
+.. Dans le programme d'installation de l'appliance StorageGRID, sélectionnez *Avancé* > *Télécharger le logiciel StorageGRID*.
+.. Cliquez sur *Supprimer* pour supprimer le progiciel actuel.
++
+image::../media/appliance_installer_rmv_current_software.png[Programme d'installation de l'appliance - Supprimer le logiciel actuel]
+
+.. Cliquez sur *Parcourir* pour le progiciel que vous avez téléchargé et extrait, puis cliquez sur *Parcourir* pour le fichier de somme de contrôle.
++
+image::../media/appliance_installer_upload_sg_software.png[Programme d'installation de l'appliance - Téléchargement du logiciel SG]
+
+.. Sélectionnez *Accueil* pour revenir à la page d'accueil.
+
+
+. Confirmez que l'état actuel est « prêt à démarrer l'installation du noeud d'administration principal avec la version x.y du logiciel » et que le bouton *Start installation* est activé.
++
+
+NOTE: Si vous déployez l'appliance Admin Node en tant que cible de clonage de nœud, arrêtez le processus de déploiement ici et continuez link:../commonhardware/appliance-node-cloning-procedure.html["procédure de clonage de nœud"].
+
+. Dans la page d'accueil du programme d'installation de l'appliance StorageGRID, cliquez sur *Démarrer l'installation*.
++
+image::../media/appliance_installer_home_start_installation_enabled_primary_an.png[Installation du nœud d'administration principal de l'appliance]
+
++
+L'état actuel passe à « installation en cours » et la page installation du moniteur s'affiche.
+
++
+
+NOTE: Si vous devez accéder manuellement à la page installation du moniteur, cliquez sur *installation du moniteur* dans la barre de menus.
+
+
+
+
+
+== Déployez une appliance de services en tant que passerelle ou nœud d'administration non primaire
+
+Lorsque vous déployez une appliance de services en tant que nœud de passerelle ou nœud d'administration non primaire, utilisez le programme d'installation de l'appliance StorageGRID inclus sur l'appliance.
+
+.Avant de commencer
+* L'appliance a été installée dans un rack ou une armoire, connectée à vos réseaux et sous tension.
+* Les liens réseau, les adresses IP et le remappage des ports (si nécessaire) ont été configurés pour le serveur à l'aide du programme d'installation de l'appliance StorageGRID.
+* Le nœud d'administration principal du système StorageGRID a été déployé.
+* Tous les sous-réseaux de réseau Grid répertoriés sur la page de configuration IP du programme d'installation de l'appliance StorageGRID ont été définis dans la liste de sous-réseaux de réseau de grille sur le nœud d'administration principal.
+* Vous avez un ordinateur portable de service avec un https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["navigateur web pris en charge"^].
+* Vous connaissez l'adresse IP attribuée à l'appliance. Vous pouvez utiliser l'adresse IP de n'importe quel réseau StorageGRID connecté.
+
+
+.Description de la tâche
+Pour installer StorageGRID sur un nœud d'appliance de services :
+
+* Vous spécifiez ou confirmez l'adresse IP du nœud d'administration principal et le nom du nœud d'appliance.
+* Vous démarrez l'installation et attendez que le logiciel soit installé.
++
+L'installation s'interrompt via les tâches d'installation du nœud de passerelle de l'appliance. Pour reprendre l'installation, connectez-vous au Grid Manager, approuvez tous les nœuds de la grille et terminez le processus d'installation de StorageGRID. L'installation d'un noeud d'administration non primaire ne nécessite pas votre approbation.
+
+
+
+
+NOTE: Ne déployez pas d'appliances de services SG100 et SG1000 sur le même site. Cela peut entraîner des performances imprévisibles.
+
+
+NOTE: Si vous devez déployer plusieurs nœuds d'appliance à la fois, vous pouvez automatiser le processus d'installation. Voir link:automating-appliance-installation-and-configuration.html["Automatisez l'installation et la configuration de l'appliance"].
+
+.Étapes
+. Ouvrez un navigateur et saisissez l'adresse IP de l'appliance.
++
+`*https://_Controller_IP_:8443*`
+
++
+La page d'accueil du programme d'installation de l'appliance StorageGRID s'affiche.
+
+. Dans la section connexion au noeud d'administration principal, déterminez si vous devez spécifier l'adresse IP du noeud d'administration principal.
++
+Si vous avez déjà installé d'autres nœuds dans ce centre de données, le programme d'installation de l'appliance StorageGRID peut détecter automatiquement cette adresse IP, en supposant que le nœud d'administration principal, ou au moins un autre nœud de grille avec ADMIN_IP configuré, soit présent sur le même sous-réseau.
+
+. Si cette adresse IP n'apparaît pas ou si vous devez la modifier, spécifiez l'adresse :
++
+[cols="1a,2a"]
+|===
+| Option | Description 
+
+
+ a| 
+Entrée IP manuelle
+ a| 
+.. Décochez la case *Activer la découverte du noeud d'administration*.
+.. Saisissez l'adresse IP manuellement.
+.. Cliquez sur *Enregistrer*.
+.. Attendez que l'état de connexion de la nouvelle adresse IP soit prêt.
+
+
+
+
+ a| 
+Détection automatique de tous les nœuds d'administration principaux connectés
+ a| 
+.. Cochez la case *Activer la découverte du noeud d'administration*.
+.. Attendez que la liste des adresses IP découvertes s'affiche.
+.. Sélectionnez le nœud d'administration principal de la grille dans laquelle ce nœud de stockage de l'appliance sera déployé.
+.. Cliquez sur *Enregistrer*.
+.. Attendez que l'état de connexion de la nouvelle adresse IP soit prêt.
+
+
+|===
+. Dans le champ *Nom du nœud*, indiquez le nom du système que vous souhaitez utiliser pour ce nœud d'appliance, puis cliquez sur *Enregistrer*.
++
+Le nom qui apparaît ici correspond au nom système du nœud de l'appliance. Les noms de système sont requis pour les opérations StorageGRID internes et ne peuvent pas être modifiés.
+
+. Si vous souhaitez installer une autre version du logiciel StorageGRID, procédez comme suit :
++
+.. Téléchargez l'archive d'installation :
++
+https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["Téléchargement NetApp : appliance StorageGRID"^]
+
+.. Extrayez l'archive.
+.. Dans le programme d'installation de l'appliance StorageGRID, sélectionnez *Avancé* > *Télécharger le logiciel StorageGRID*.
+.. Cliquez sur *Supprimer* pour supprimer le progiciel actuel.
++
+image::../media/appliance_installer_rmv_current_software.png[Programme d'installation de l'appliance - Supprimer le logiciel actuel]
+
+.. Cliquez sur *Parcourir* pour le progiciel que vous avez téléchargé et extrait, puis cliquez sur *Parcourir* pour le fichier de somme de contrôle.
++
+image::../media/appliance_installer_upload_sg_software.png[Programme d'installation de l'appliance - Téléchargement du logiciel SG]
+
+.. Sélectionnez *Accueil* pour revenir à la page d'accueil.
+
+
+. Dans la section installation, vérifiez que l'état actuel est « prêt à démarrer l'installation de `_node name_` Dans le grid avec le nœud d'administration principal `_admin_ip_` " Et que le bouton *Start installation* est activé.
++
+Si le bouton *Start installation* n'est pas activé, vous devrez peut-être modifier la configuration réseau ou les paramètres de port. Pour obtenir des instructions, reportez-vous aux instructions d'entretien de votre appareil.
+
+. Dans la page d'accueil du programme d'installation de l'appliance StorageGRID, cliquez sur *Démarrer l'installation*.
++
+image::../media/appliance_installer_services_appliance_non_pan.png[Accueil du programme d'installation de l'appliance - installez un nœud d'administration non primaire]
+
++
+L'état actuel passe à « installation en cours » et la page installation du moniteur s'affiche.
+
++
+
+NOTE: Si vous devez accéder manuellement à la page installation du moniteur, cliquez sur *installation du moniteur* dans la barre de menus.
+
+. Si votre grid inclut plusieurs nœuds d'appliance, répétez les étapes précédentes pour chaque appliance.
+

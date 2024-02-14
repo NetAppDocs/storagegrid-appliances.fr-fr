@@ -1,0 +1,53 @@
+---
+permalink: installconfig/verifying-and-upgrading-storagegrid-appliance-installer-version.html 
+sidebar: sidebar 
+keywords: verifying, verify, upgrading, upgrade, update, updating, Appliance Installer, version, release 
+summary: 'La version du programme d"installation de l"appliance StorageGRID sur l"appliance doit correspondre à la version logicielle installée sur votre système StorageGRID pour s"assurer que toutes les fonctionnalités StorageGRID sont prises en charge.' 
+---
+= Vérifiez et mettez à niveau la version du programme d'installation de l'appliance StorageGRID
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La version du programme d'installation de l'appliance StorageGRID sur l'appliance doit correspondre à la version logicielle installée sur votre système StorageGRID pour s'assurer que toutes les fonctionnalités StorageGRID sont prises en charge.
+
+.Avant de commencer
+Vous avez accédé au programme d'installation de l'appliance StorageGRID.
+
+.Description de la tâche
+Les appliances StorageGRID sont préinstallées en usine avec le programme d'installation de l'appliance StorageGRID. Si vous ajoutez une appliance à un système StorageGRID récemment mis à niveau, vous devrez peut-être mettre à niveau manuellement le programme d'installation de l'appliance StorageGRID avant d'installer l'appliance en tant que nouveau nœud.
+
+Le programme d'installation de l'appliance StorageGRID se met automatiquement à niveau lorsque vous effectuez une mise à niveau vers une nouvelle version de StorageGRID. Vous n'avez pas besoin de mettre à niveau le programme d'installation de l'appliance StorageGRID sur les nœuds d'appliance installés. Cette procédure est uniquement requise lorsque vous installez une appliance qui contient une version antérieure du programme d'installation de l'appliance StorageGRID.
+
+.Étapes
+. Dans le programme d'installation de l'appliance StorageGRID, sélectionnez *Avancé* > *mise à niveau du micrologiciel*.
+. Comparez la version actuelle du micrologiciel avec la version logicielle installée sur votre système StorageGRID. (En haut de Grid Manager, sélectionnez l'icône d'aide et sélectionnez *About*.)
++
+Le second chiffre des deux versions doit correspondre. Par exemple, si votre système StorageGRID exécute la version 11.*6*._x_._y_, la version du programme d'installation de l'appliance StorageGRID doit être 3.*6*._z_.
+
+. Si l'appliance dispose d'une version de niveau inférieur du programme d'installation de l'appliance StorageGRID, passez à https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["Téléchargement NetApp : appliance StorageGRID"^].
++
+Connectez-vous avec le nom d'utilisateur et le mot de passe de votre compte NetApp.
+
+. Téléchargez la version appropriée du fichier *support pour les appliances StorageGRID* et le fichier de somme de contrôle correspondant.
++
+Le fichier de support des appliances StorageGRID est un `.zip` Archive contenant les versions de micrologiciel actuelles et précédentes pour tous les modèles d'appliance StorageGRID.
+
++
+Après avoir téléchargé le fichier de support des appliances StorageGRID, extrayez le `.zip` Archivez et consultez le fichier README pour obtenir des informations importantes sur l'installation du programme d'installation de l'appliance StorageGRID.
+
+. Suivez les instructions de la page mise à niveau du micrologiciel du programme d'installation de votre appliance StorageGRID pour effectuer les opérations suivantes :
++
+.. Téléchargez le fichier de support approprié (image du micrologiciel) pour votre type de contrôleur. Certaines versions de micrologiciel nécessitent également le téléchargement d'un fichier de somme de contrôle. Si vous êtes invité à entrer un fichier de checksum, il peut également être trouvé dans le fichier support pour les appliances StorageGRID.
+.. Mettre à niveau la partition inactive.
+.. Redémarrez et permutez les partitions.
+.. Téléchargez à nouveau le fichier de support approprié (image du micrologiciel) pour votre type de contrôleur. Certaines versions de micrologiciel nécessitent également le téléchargement d'un fichier de somme de contrôle. Si vous êtes invité à entrer un fichier de checksum, il peut également être trouvé dans le fichier support pour les appliances StorageGRID.
+.. Mettez à niveau la deuxième partition (inactive).
+
+
+
+
+.Informations associées
+link:../installconfig/accessing-storagegrid-appliance-installer.html["Accès au programme d'installation de l'appliance StorageGRID"]

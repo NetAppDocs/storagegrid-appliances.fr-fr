@@ -1,0 +1,84 @@
+---
+permalink: installconfig/setting-up-email-notifications-for-alerts.html 
+sidebar: sidebar 
+keywords: email, notifications, alerts, set up, setup, configure, configuration, bmc 
+summary: 'Si vous souhaitez envoyer des notifications par e-mail lorsque des alertes se produisent, utilisez l"interface BMC pour configurer les paramètres SMTP, les utilisateurs, les destinations LAN, les stratégies d"alerte et les filtres d"événements.' 
+---
+= Configurez les notifications par e-mail pour les alertes BMC
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Si vous souhaitez envoyer des notifications par e-mail lorsque des alertes se produisent, utilisez l'interface BMC pour configurer les paramètres SMTP, les utilisateurs, les destinations LAN, les stratégies d'alerte et les filtres d'événements.
+
+
+NOTE: Les paramètres BMC définis par cette procédure peuvent ne pas être conservés si le contrôleur SG6000-CN ou l'appliance de services tombe en panne et doit être remplacée. Assurez-vous d'avoir un enregistrement de tous les paramètres que vous avez appliqués afin de pouvoir les réappliquer facilement après un remplacement de matériel si nécessaire.
+
+.Avant de commencer
+Vous savez comment accéder au tableau de bord BMC.
+
+.Description de la tâche
+Dans l'interface BMC, vous utilisez les options *Paramètres SMTP*, *gestion des utilisateurs* et *filtres d'événements de la plate-forme* de la page Paramètres pour configurer les notifications par e-mail.
+
+image::../media/bmc_settings_menu.png[Menu Paramètres BMC]
+
+.Étapes
+. link:configuring-snmp-settings-for-bmc.html["Configurer les paramètres SNMP pour le contrôleur BMC"].
++
+.. Sélectionnez *Paramètres* > *Paramètres SMTP*.
+.. Pour l'ID e-mail de l'expéditeur, saisissez une adresse e-mail valide.
++
+Cette adresse e-mail est fournie comme adresse de lorsque le contrôleur BMC envoie un e-mail.
+
+
+
+. Configurez les utilisateurs pour recevoir des alertes.
++
+.. Dans le tableau de bord BMC, sélectionnez *Paramètres* > *User Management*.
+.. Ajoutez au moins un utilisateur pour recevoir des notifications d'alerte.
++
+L'adresse e-mail que vous configurez pour un utilisateur est l'adresse à laquelle le contrôleur BMC envoie des notifications d'alerte. Par exemple, vous pouvez ajouter un utilisateur générique, tel que « utilisateur de notification », et utiliser l'adresse électronique d'une liste de diffusion par courrier électronique de l'équipe d'assistance technique.
+
+
+
+. Configurez la destination du réseau local pour les alertes.
++
+.. Sélectionnez *Paramètres* > *filtres d'événements plateforme* > *destinations LAN*.
+.. Configurez au moins une destination LAN.
++
+*** Sélectionnez *Email* comme Type de destination.
+*** Pour le nom d'utilisateur BMC, sélectionnez un nom d'utilisateur que vous avez ajouté précédemment.
+*** Si vous avez ajouté plusieurs utilisateurs et que vous souhaitez qu'ils reçoivent tous des e-mails de notification, ajoutez une destination LAN pour chaque utilisateur.
+
+
+.. Envoyer une alerte de test.
+
+
+. Configurez les règles d'alerte afin de définir le moment et l'emplacement d'envoi des alertes par le contrôleur BMC.
++
+.. Sélectionnez *Paramètres* > *filtres d'événements de plateforme* > *stratégies d'alerte*.
+.. Configurez au moins une règle d'alerte pour chaque destination LAN.
++
+*** Pour Numéro de groupe de polices, sélectionnez *1*.
+*** Pour l'action de police, sélectionnez *toujours envoyer l'alerte à cette destination*.
+*** Pour le canal LAN, sélectionnez *1*.
+*** Dans le sélecteur de destination, sélectionnez la destination LAN de la stratégie.
+
+
+
+
+. Configurez les filtres d'événements pour diriger les alertes pour différents types d'événements vers les utilisateurs appropriés.
++
+.. Sélectionnez *Paramètres* > *filtres d'événements de plate-forme* > *filtres d'événements*.
+.. Pour Numéro de groupe de police d'alerte, entrez *1*.
+.. Créez des filtres pour chaque événement auquel vous souhaitez que le groupe de stratégies d'alerte soit averti.
++
+*** Vous pouvez créer des filtres d'événements pour les actions de puissance, les événements de capteur spécifiques ou tous les événements.
+*** Si vous n'êtes pas certain des événements à surveiller, sélectionnez *tous les capteurs* pour Type de capteur et *tous les événements* pour Options d'événements. Si vous recevez des notifications indésirables, vous pouvez modifier vos sélections ultérieurement.
+
+
+
+
+
