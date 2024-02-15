@@ -4229,4 +4229,5 @@ Voir les informations sur la gestion des objets avec la gestion du cycle de vie 
   <block id="36312847d9ed62c091364066df9b573f" category="sidebar">Remplacement des composants matériels dans le tiroir de contrôleur de stockage</block>
   <block id="297057bf431ff214cf5fb064c5a836ac" category="sidebar">Remplacement des composants matériels dans un tiroir d'extension de 60 disques en option</block>
   <block id="6e59386fb6d09c0b4945ad4afa8a4092" category="sidebar">Remplacez la carte HBA Fibre Channel dans le contrôleur SG6000-CN</block>
+  <block id="46621f49f52b2e7735202aeadc8627bc" category="paragraph"><block ref="46621f49f52b2e7735202aeadc8627bc" category="inline-link-rx"></block></block>
 </blocks>
