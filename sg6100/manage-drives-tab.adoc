@@ -14,11 +14,11 @@ summary: 'Vous pouvez utiliser l"onglet gérer les lecteurs du Gestionnaire de g
 Vous pouvez utiliser l'onglet gérer les lecteurs du Gestionnaire de grille pour effectuer des tâches de dépannage et de maintenance sur les lecteurs de l'appliance SGF6112.
 
 .Avant de commencer
-* Vous êtes connecté au Grid Manager à l'aide d'un https://review.docs.netapp.com/us-en/storagegrid-118_main/admin/web-browser-requirements.html["navigateur web pris en charge"^].
+* Vous êtes connecté au Grid Manager à l'aide d'un https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["navigateur web pris en charge"^].
 
 
 .Description de la tâche
-Si vous disposez d'une appliance SGF6112 et de l'une ou l'autre https://review.docs.netapp.com/us-en/storagegrid-118_main/admin/admin-group-permissions.html["Administrateur de l'appliance de stockage ou autorisation d'accès racine"], Un onglet gérer les lecteurs apparaît sur la page de détails de l'appliance.
+Si vous disposez d'une appliance SGF6112 et de l'une ou l'autre https://docs.netapp.com/us-en/storagegrid-118/admin/admin-group-permissions.html["Administrateur de l'appliance de stockage ou autorisation d'accès racine"], Un onglet gérer les lecteurs apparaît sur la page de détails de l'appliance.
 
 L'onglet gérer les lecteurs contient les vues suivantes :
 
