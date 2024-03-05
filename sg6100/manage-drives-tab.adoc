@@ -18,7 +18,7 @@ Vous pouvez utiliser l'onglet gérer les lecteurs du Gestionnaire de grille pour
 
 
 .Description de la tâche
-Si vous disposez d'une appliance SGF6112 et de l'une ou l'autre https://docs.netapp.com/us-en/storagegrid-118/admin/admin-group-permissions.html["Administrateur de l'appliance de stockage ou autorisation d'accès racine"], Un onglet gérer les lecteurs apparaît sur la page de détails de l'appliance.
+Si vous disposez d'une appliance SGF6112 et de l'une ou l'autre https://docs.netapp.com/us-en/storagegrid-118/admin/admin-group-permissions.html["Administrateur de l'appliance de stockage ou autorisation d'accès racine"^], Un onglet gérer les lecteurs apparaît sur la page de détails de l'appliance.
 
 L'onglet gérer les lecteurs contient les vues suivantes :
 

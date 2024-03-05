@@ -1,28 +1,26 @@
-= Retirer le contrôleur
+= Étape 3 : retirez le contrôleur
 :allow-uri-read: 
 
 
 
 
-== Retirer le contrôleur
+== Étape 3 : retirez le contrôleur
+
+Retirez le contrôleur défectueux de l'appliance.
 
 .Étapes
-. Retirer le contrôleur de l'appliance :
-+
-.. Placez un bracelet antistatique ou prenez d'autres précautions antistatiques.
-.. Etiqueter les câbles puis débrancher les câbles et les SFP.
+. Placez un bracelet antistatique ou prenez d'autres précautions antistatiques.
+. Etiqueter les câbles puis débrancher les câbles et les SFP.
 +
 
 NOTE: Pour éviter toute dégradation des performances, ne tordez pas, ne pliez pas, ne pincez pas ou ne montez pas sur les câbles.
 
-.. Libérez le contrôleur de l'appareil en appuyant sur le loquet de la poignée de came jusqu'à ce qu'il se relâche, puis ouvrez la poignée de came vers la droite.
-.. A l'aide de deux mains et de la poignée de came, faites glisser le contrôleur hors de l'appareil.
+. Libérez le contrôleur de l'appareil en appuyant sur le loquet de la poignée de came jusqu'à ce qu'il se relâche, puis ouvrez la poignée de came vers la droite.
+. A l'aide de deux mains et de la poignée de came, faites glisser le contrôleur hors de l'appareil.
 +
 
 CAUTION: Toujours utiliser deux mains pour soutenir le poids du contrôleur.
 
-.. Placez le contrôleur sur une surface plane et sans électricité statique, le capot amovible orienté vers le haut.
-.. Retirez le capot en appuyant sur le bouton et en le faisant glisser hors du capot.
-
-
+. Placez le contrôleur sur une surface plane et sans électricité statique, le capot amovible orienté vers le haut.
+. Retirez le capot en appuyant sur le bouton et en le faisant glisser hors du capot.
 
