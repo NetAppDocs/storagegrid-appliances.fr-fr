@@ -163,7 +163,7 @@ CAUTION: Si vous souhaitez conserver les données sur les disques, veillez à in
 
 
 . Mettez l'appareil sous tension.
-. Si le chiffrement de disque matériel de l'appliance que vous avez remplacée est activé pour les disques SED, vous devez le faire link:optional-enabling-node-encryption.html#access-an-encrypted-drive["saisissez la phrase de passe de cryptage du lecteur"] pour accéder aux disques chiffrés lorsque l'appliance de remplacement démarre pour la première fois.
+. Si le chiffrement de disque matériel de l'appliance que vous avez remplacée est activé pour les disques SED, vous devez le faire link:../installconfig/optional-enabling-node-encryption.html#access-an-encrypted-drive["saisissez la phrase de passe de cryptage du lecteur"] pour accéder aux disques chiffrés lorsque l'appliance de remplacement démarre pour la première fois.
 . Attendez que l'appareil rejoigne la grille. Si l'appliance ne rejoint pas la grille, suivez les instructions de la page d'accueil du programme d'installation de l'appliance StorageGRID pour résoudre le problème.
 +
 
