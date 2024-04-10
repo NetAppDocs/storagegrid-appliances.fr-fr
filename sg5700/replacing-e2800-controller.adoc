@@ -244,7 +244,7 @@ image::../media/e2800_battery_flange_not_ok.gif[Bride de batterie incorrecte]
 
 == Étape 5 : déplacer HIC vers le nouveau contrôleur, si nécessaire
 
-Si le contrôleur défectueux comprend un HIC, déplacer le HIC du contrôleur défectueux vers le contrôleur de remplacement.
+Si le contrôleur défectueux est équipé d'une carte d'interface hôte (HIC), déplacez la carte HIC du contrôleur défectueux vers le contrôleur de remplacement.
 
 Une HIC distincte est utilisée uniquement pour le contrôleur E2800B. La carte HIC est montée sur la carte contrôleur principale et comprend deux connecteurs SPF.
 

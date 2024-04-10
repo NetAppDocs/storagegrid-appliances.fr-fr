@@ -59,6 +59,9 @@ NOTE: Dans la plupart des modèles d'appliance, les contrôleurs de stockage n'i
 
 == Étape 1 : préparer le contrôleur de remplacement
 
+Préparez le contrôleur E2800A ou E2800B de rechange.
+
+.Étapes
 . Déballez le nouveau contrôleur et placez-le sur une surface plane et sans électricité statique.
 +
 Conservez les matériaux d'emballage à utiliser lors de l'expédition du contrôleur défectueux.
@@ -255,7 +258,7 @@ image::../media/e2800_battery_flange_not_ok.gif[Bride de batterie incorrecte]
 
 == Étape 5 : déplacer HIC vers le nouveau contrôleur, si nécessaire
 
-Si le contrôleur défectueux comprend un HIC, déplacer le HIC du contrôleur défectueux vers le contrôleur de remplacement.
+Si le contrôleur défectueux est équipé d'une carte d'interface hôte (HIC), déplacez la carte HIC du contrôleur défectueux vers le contrôleur de remplacement.
 
 Une HIC distincte est utilisée uniquement pour le contrôleur E2800B. La carte HIC est montée sur la carte contrôleur principale et comprend deux connecteurs SPF.
 

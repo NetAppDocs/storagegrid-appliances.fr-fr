@@ -1,0 +1,152 @@
+---
+permalink: sg5700/upgrading-drive-firmware-using-santricity-system-manager-offline.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5700, storage node, storage appliance, upgrade, upgrading, firmware, drive, disk, SANtricity System Manager, SANtricity 
+summary: Vous mettez à niveau le micrologiciel de votre lecteur pour vous assurer que vous disposez de toutes les dernières fonctionnalités et correctifs. 
+---
+= Mise à niveau du firmware du disque SG5700 à l'aide de SANtricity System Manager via la méthode hors ligne
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Utilisez la méthode en ligne du Gestionnaire système SANtricity pour mettre à niveau le firmware des disques de votre appliance et vous assurer que vous disposez des dernières fonctionnalités et des derniers correctifs.
+
+.Avant de commencer
+* Le dispositif de stockage est à l'état optimal.
+* Tous les disques ont un état optimal.
+* Vous avez link:../commonhardware/placing-appliance-into-maintenance-mode.html["Mettez l'appliance StorageGRID en mode de maintenance - effectué"].
++
+
+NOTE: Lorsque l'appliance est en mode de maintenance, les opérations d'E/S (entrée/sortie) vers le contrôleur de stockage sont arrêtées pour la sécurité des interruptions.
+
+
+
+
+CAUTION: Ne mettez pas à niveau le firmware du disque sur plusieurs appliances StorageGRID à la fois. Cela pourrait entraîner une indisponibilité des données, selon votre modèle de déploiement et votre politique ILM.
+
+.Description de la tâche
+Les disques sont mis à niveau en parallèle lorsque l'appliance est en mode de maintenance. Si le pool ou le groupe de volumes ne prend pas en charge la redondance ou est dégradé, vous devez utiliser la méthode hors ligne pour mettre à niveau le micrologiciel du lecteur. Vous devez également utiliser la méthode offline pour tout disque associé au cache de lecture Flash ou tout pool ou groupe de volumes actuellement dégradé. La méthode hors ligne met à niveau le micrologiciel uniquement lorsque toutes les activités d'E/S sont arrêtées sur les disques à mettre à niveau. Pour arrêter les E/S, placez le nœud en mode de maintenance.
+
+La méthode hors ligne est plus rapide que la méthode en ligne et sera beaucoup plus rapide lorsque de nombreux lecteurs d'une seule appliance auront besoin de mises à niveau. Cependant, il requiert la mise hors service des nœuds. Cela peut nécessiter la planification d'une fenêtre de maintenance et le suivi de l'avancement. Choisissez la méthode la mieux adaptée à vos procédures opérationnelles et le nombre de lecteurs à mettre à niveau.
+
+.Étapes
+. Vérifiez que l'appareil est dans link:../commonhardware/placing-appliance-into-maintenance-mode.html["mode maintenance"].
+. Pour accéder à SANtricity System Manager, utilisez l'une des méthodes suivantes :
++
+** Utilisez le programme d'installation de l'appliance StorageGRID et sélectionnez *Avancé* > *Gestionnaire système SANtricity*
+** Utilisez le Gestionnaire de grille et sélectionnez *NODES* > *_noeud de stockage_* > *Gestionnaire système SANtricity*
+** Pour utiliser SANtricity System Manager, accédez à l'adresse IP du contrôleur de stockage :
++
+`*https://_Storage_Controller_IP_*`
+
+
+
+. Entrez le nom d'utilisateur et le mot de passe de l'administrateur SANtricity System Manager si nécessaire.
+. Vérifiez la version du micrologiciel du lecteur actuellement installé sur l'appliance de stockage :
++
+.. Dans le Gestionnaire système SANtricity, sélectionnez *SUPPORT* > *Centre de mise à niveau*.
+.. Sous mise à niveau du micrologiciel du lecteur, sélectionnez *commencer la mise à niveau*.
++
+La page mettre à niveau le micrologiciel du lecteur affiche les fichiers du micrologiciel du lecteur actuellement installés.
+
+.. Notez les révisions actuelles du micrologiciel du lecteur et les identificateurs de lecteur dans la colonne micrologiciel du lecteur en cours.
++
+image::../media/storagegrid_update_drive_firmware.png[Mettre à niveau le micrologiciel du lecteur]
+
++
+Dans cet exemple :
+
++
+*** La version du micrologiciel du lecteur est *MS02*.
+*** L'identifiant du lecteur est *KPM51VUG800G*.
+
+
+.. Sélectionnez *Afficher les lecteurs* dans la colonne lecteurs associés pour afficher l'emplacement d'installation de ces lecteurs dans votre appliance de stockage.
+.. Fermez la fenêtre mise à niveau du micrologiciel du lecteur.
+
+
+. Téléchargez et préparez la mise à niveau disponible du firmware des disques :
++
+.. Sous mise à niveau du micrologiciel des disques, sélectionnez *NetApp support*.
+.. Sur le site de support NetApp, sélectionnez l'onglet *Téléchargements*, puis sélectionnez *micrologiciel de lecteur de disque E-Series*.
++
+La page firmware des disques E-Series s'affiche.
+
+.. Recherchez chaque *Drive identifier* installé dans votre appliance de stockage et vérifiez que chaque identificateur de lecteur dispose de la dernière révision du micrologiciel.
++
+*** Si la révision du micrologiciel n'est pas un lien, cet identificateur de lecteur a la dernière révision du micrologiciel.
+*** Si un ou plusieurs numéros de référence de lecteur sont répertoriés pour un identificateur de lecteur, une mise à niveau du micrologiciel est disponible pour ces lecteurs. Vous pouvez sélectionner n'importe quel lien pour télécharger le fichier de micrologiciel.
++
+image::../media/storagegrid_drive_firmware_download.png[Firmware des disques E-Series]
+
+
+
+.. Si une version ultérieure du micrologiciel est répertoriée, sélectionnez le lien dans la révision du micrologiciel (Télécharger) pour télécharger un `.zip` archive contenant le fichier du micrologiciel.
+.. Extrayez (décompressez le fichier d'archive du micrologiciel du lecteur que vous avez téléchargé sur le site de support.
+
+
+. Installez la mise à niveau du micrologiciel du lecteur :
++
+.. Dans le Gestionnaire système SANtricity, sous mise à niveau du micrologiciel du lecteur, sélectionnez *commencer la mise à niveau*.
+.. Sélectionnez *Browse*, puis sélectionnez les nouveaux fichiers de micrologiciel de lecteur que vous avez téléchargés à partir du site de support.
++
+Les fichiers du micrologiciel du lecteur ont un nom de fichier similaire à `D_HUC101212CSS600_30602291_MS01_2800_0002.dlp`.
+
++
+Vous pouvez sélectionner jusqu'à quatre fichiers de micrologiciel de lecteur, un par un. Si plusieurs fichiers de micrologiciel de lecteur sont compatibles avec le même lecteur, vous obtenez une erreur de conflit de fichier. Choisissez le fichier de micrologiciel de lecteur que vous souhaitez utiliser pour la mise à niveau et supprimez l'autre.
+
+.. Sélectionnez *Suivant*.
++
+*Sélectionner les lecteurs* répertorie les lecteurs que vous pouvez mettre à niveau avec les fichiers de micrologiciel sélectionnés.
+
++
+Seuls les lecteurs compatibles apparaissent.
+
++
+Le micrologiciel sélectionné pour le lecteur apparaît dans la colonne *micrologiciel proposé*. Si vous devez modifier ce micrologiciel, sélectionnez *Retour*.
+
+.. Sélectionnez *mettre à niveau tous les lecteurs hors ligne (parallèle)* — met à niveau les lecteurs qui peuvent prendre en charge un téléchargement de micrologiciel uniquement lorsque toutes les activités d'E/S sont arrêtées sur tous les volumes qui utilisent les lecteurs.
++
+
+CAUTION: Vous devez mettre l'appareil en mode maintenance avant d'utiliser cette méthode. Vous devez utiliser la méthode *Offline* pour mettre à niveau le micrologiciel du lecteur.
+
++
+
+CAUTION: Si vous souhaitez utiliser la mise à niveau hors ligne (parallèle), ne continuez pas, sauf si vous êtes certain que l'appliance est en mode de maintenance. Si vous ne mettez pas l'appliance en mode de maintenance avant d'effectuer une mise à jour hors ligne du firmware des disques, vous risquez de perdre des données.
+
+.. Dans la première colonne du tableau, sélectionnez le ou les lecteurs que vous souhaitez mettre à niveau.
++
+La meilleure pratique consiste à mettre à niveau tous les lecteurs du même modèle vers la même révision du micrologiciel.
+
+.. Sélectionnez *Démarrer* et confirmez que vous souhaitez effectuer la mise à niveau.
++
+Si vous devez arrêter la mise à niveau, sélectionnez *Stop*. Tous les téléchargements de micrologiciel en cours sont terminés. Tous les téléchargements de micrologiciel qui n'ont pas démarré sont annulés.
+
++
+
+CAUTION: L'arrêt de la mise à niveau du micrologiciel du lecteur peut entraîner une perte de données ou l'indisponibilité des disques.
+
+.. (Facultatif) pour afficher la liste des mises à niveau, sélectionnez *Enregistrer le journal*.
++
+Le fichier journal est enregistré dans le dossier des téléchargements de votre navigateur portant le nom `latest-upgrade-log-timestamp.txt`.
+
++
+link:troubleshoot-upgrading-drive-firmware-using-santricity-system-manager.html["Si nécessaire, dépannez les erreurs de mise à niveau du micrologiciel du pilote"].
+
+
+
+. Une fois la procédure terminée, effectuez les éventuelles procédures de maintenance supplémentaires lorsque le nœud est en mode maintenance. Lorsque vous avez terminé, ou si vous avez rencontré des défaillances et que vous souhaitez recommencer, accédez au programme d'installation de l'appliance StorageGRID et sélectionnez *Avancé* > *redémarrer le contrôleur*. Sélectionnez ensuite l'une des options suivantes :
++
+** *Redémarrer dans StorageGRID*.
+** *Redémarrer en mode Maintenance*. Redémarrez le contrôleur et laissez le nœud en mode de maintenance. Sélectionnez cette option si des échecs se sont produits au cours de la procédure et que vous souhaitez recommencer. Une fois le redémarrage du nœud en mode maintenance terminé, redémarrez à partir de l'étape appropriée de la procédure ayant échoué.
++
+L'appliance peut redémarrer et rejoindre la grille en 20 minutes. Pour confirmer que le redémarrage est terminé et que le nœud a rejoint la grille, retournez à la grille Manager. La page nœuds doit afficher un état normal (icône en forme de coche verte) image:../media/icon_alert_green_checkmark.png["coche verte"] à gauche du nom du nœud) pour le nœud de l'appliance, indiquant qu'aucune alerte n'est active et que le nœud est connecté à la grille.
+
++
+image::../media/nodes_menu.png[Le nœud d'appliance a rejoint la grille]
+
+
+
+

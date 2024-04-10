@@ -1,0 +1,82 @@
+---
+permalink: sg5700/troubleshoot-upgrading-drive-firmware-using-santricity-system-manager.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5700, troubleshoot, storage node, storage appliance, upgrade, upgrading, firmware, drive, disk, SANtricity System Manager, SANtricity 
+summary: Résolvez les erreurs qui peuvent se produire lorsque vous utilisez SANtricity System Manager pour mettre à niveau le firmware des disques de votre appliance. 
+---
+= Dépannez les erreurs de mise à niveau du firmware des disques
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Résolvez les erreurs qui peuvent se produire lorsque vous utilisez SANtricity System Manager pour mettre à niveau le firmware des disques de votre appliance.
+
+* *Disques affectés en échec*
++
+** L'une des raisons de la défaillance est que le lecteur ne possède pas la signature appropriée. Assurez-vous que le disque concerné est un disque autorisé. Contactez le support technique pour plus d'informations.
+** Lorsque vous remplacez un lecteur, assurez-vous que sa capacité est supérieure ou égale à celle du lecteur défectueux que vous remplacez.
+** Vous pouvez remplacer le disque défectueux alors que la matrice de stockage reçoit des E/S.
+
+
+* *Vérifier la matrice de stockage*
++
+** Assurez-vous qu'une adresse IP a été attribuée à chaque contrôleur.
+** Assurez-vous que tous les câbles connectés au contrôleur ne sont pas endommagés.
+** Assurez-vous que tous les câbles sont bien connectés.
+
+
+* *Disques de secours intégrés*
++
+Ce problème d'erreur doit être corrigé avant de pouvoir mettre à niveau le micrologiciel.
+
+* *Groupes de volumes incomplets*
++
+Si un ou plusieurs groupes de volumes ou pools de disques sont incomplets, vous devez corriger cette condition d'erreur avant de pouvoir mettre à niveau le micrologiciel.
+
+* *Opérations exclusives (autres que l'analyse des supports/parité en arrière-plan) actuellement en cours d'exécution sur n'importe quel groupe de volumes*
++
+Si une ou plusieurs opérations exclusives sont en cours, les opérations doivent être effectuées avant la mise à niveau du micrologiciel. Utilisez System Manager pour surveiller la progression des opérations.
+
+* *Volumes manquants*
++
+Vous devez corriger la condition de volume manquant avant de pouvoir mettre à niveau le micrologiciel.
+
+* *L'un ou l'autre des contrôleurs dans un état autre que optimal*
++
+L'un des contrôleurs de la baie de stockage doit faire attention. Ce problème doit être résolu avant la mise à niveau du firmware.
+
+* *Discordance des informations de partition de stockage entre les graphiques d'objet du contrôleur*
++
+Une erreur s'est produite lors de la validation des données sur les contrôleurs. Contactez le support technique pour résoudre ce problème.
+
+* *Échec de la vérification du contrôleur de base de données SPM*
++
+Une erreur de mappage de la base de données de mappage des partitions de stockage s'est produite sur un contrôleur. Contactez le support technique pour résoudre ce problème.
+
+* *Validation de la base de données de configuration (si prise en charge par la version du contrôleur de la matrice de stockage)*
++
+Une erreur de base de données de configuration s'est produite sur un contrôleur. Contactez le support technique pour résoudre ce problème.
+
+* *Vérifications liées au MEL*
++
+Contactez le support technique pour résoudre ce problème.
+
+* *Plus de 10 événements MEL informationnels ou critiques de la DDE ont été rapportés au cours des 7 derniers jours*
++
+Contactez le support technique pour résoudre ce problème.
+
+* *Plus de 2 pages 2C des événements MEL critiques ont été rapportés au cours des 7 derniers jours*
++
+Contactez le support technique pour résoudre ce problème.
+
+* *Plus de 2 événements MEL critiques de canal d'entraînement dégradés ont été signalés au cours des 7 derniers jours*
++
+Contactez le support technique pour résoudre ce problème.
+
+* *Plus de 4 entrées MEL critiques au cours des 7 derniers jours*
++
+Contactez le support technique pour résoudre ce problème.
+
+

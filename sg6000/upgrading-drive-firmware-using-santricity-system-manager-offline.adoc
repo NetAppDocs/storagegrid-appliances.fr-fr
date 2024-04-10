@@ -1,12 +1,22 @@
-= 
+---
+permalink: sg6000/upgrading-drive-firmware-using-santricity-system-manager-offline.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, upgrade, firmware, drive, disk, SANtricity System Manager, SANtricity 
+summary: Vous mettez à niveau le micrologiciel de votre lecteur pour vous assurer que vous disposez de toutes les dernières fonctionnalités et correctifs. 
+---
+= Mettez à niveau le micrologiciel du lecteur SG6000 à l'aide du Gestionnaire système SANtricity en utilisant la méthode hors ligne
 :allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
 
+
+[role="lead"]
+Utilisez la méthode hors ligne du Gestionnaire système SANtricity pour mettre à niveau le firmware des disques de votre appliance et vous assurer que vous disposez des dernières fonctionnalités et des derniers correctifs.
 
 .Avant de commencer
 * Le dispositif de stockage est à l'état optimal.
 * Tous les disques ont un état optimal.
-* La dernière version de SANtricity System Manager est installée et est compatible avec votre version de StorageGRID.
-* Si vous effectuez une mise à niveau hors ligne, vous avez link:../commonhardware/placing-appliance-into-maintenance-mode.html["Mettez l'appliance StorageGRID en mode de maintenance - effectué"].
+* Vous avez link:../commonhardware/placing-appliance-into-maintenance-mode.html["Mettez l'appliance StorageGRID en mode de maintenance - effectué"].
 +
 
 NOTE: Lorsque l'appliance est en mode de maintenance, les opérations d'E/S (entrée/sortie) vers le contrôleur de stockage sont arrêtées pour la sécurité des interruptions.
@@ -17,15 +27,7 @@ NOTE: Lorsque l'appliance est en mode de maintenance, les opérations d'E/S (ent
 CAUTION: Ne mettez pas à niveau le firmware du disque sur plusieurs appliances StorageGRID à la fois. Cela pourrait entraîner une indisponibilité des données, selon votre modèle de déploiement et votre politique ILM.
 
 .Description de la tâche
-Vous pouvez mettre à niveau le micrologiciel du lecteur de votre appliance en utilisant deux méthodes :
-
-*En ligne* : les lecteurs sont mis à niveau un par un pendant que le serveur effectue des E/S. Cette méthode ne nécessite pas le passage de l'appareil en mode de maintenance. Cependant, les performances du système peuvent être affectées et la mise à niveau peut prendre plusieurs heures de plus que la méthode hors ligne.
-
-
-NOTE: Les disques appartenant à des volumes qui ne sont pas redondants doivent être mis à jour à l'aide de la méthode offline. La méthode hors ligne doit être utilisée pour tout disque associé au cache de lecture Flash (par exemple, des disques SSD dans le SG6060) ou tout pool ou groupe de volumes actuellement dégradé.
-
-*Hors ligne* :
-Les disques sont mis à niveau en parallèle lorsque l'appliance est en mode de maintenance. Si le pool ou le groupe de volumes ne prend pas en charge la redondance ou est dégradé, vous devez utiliser la méthode hors ligne pour mettre à niveau le micrologiciel du lecteur. La méthode hors ligne met à niveau le micrologiciel uniquement lorsque toutes les activités d'E/S sont arrêtées sur les disques à mettre à niveau. Pour arrêter les E/S, placez le nœud en mode de maintenance.
+Les disques sont mis à niveau en parallèle lorsque l'appliance est en mode de maintenance. Si le pool ou le groupe de volumes ne prend pas en charge la redondance ou est dégradé, vous devez utiliser la méthode hors ligne pour mettre à niveau le micrologiciel du lecteur. Vous devez également utiliser la méthode offline pour tout disque associé au cache de lecture Flash ou tout pool ou groupe de volumes actuellement dégradé. La méthode hors ligne met à niveau le micrologiciel uniquement lorsque toutes les activités d'E/S sont arrêtées sur les disques à mettre à niveau. Pour arrêter les E/S, placez le nœud en mode de maintenance.
 
 La méthode hors ligne est plus rapide que la méthode en ligne et sera beaucoup plus rapide lorsque de nombreux lecteurs d'une seule appliance auront besoin de mises à niveau. Cependant, il requiert la mise hors service des nœuds. Cela peut nécessiter la planification d'une fenêtre de maintenance et le suivi de l'avancement. Choisissez la méthode la mieux adaptée à vos procédures opérationnelles et le nombre de lecteurs à mettre à niveau.
 
@@ -33,7 +35,7 @@ La méthode hors ligne est plus rapide que la méthode en ligne et sera beaucoup
 CAUTION: Il existe deux types de disques : les disques SSD et les disques durs. Vous devez utiliser la méthode hors ligne pour mettre à niveau le firmware sur les disques SSD (par exemple, des disques SSD dans le SG6060). Vous pouvez utiliser la méthode en ligne ou hors ligne pour mettre à niveau le micrologiciel sur les disques durs.
 
 .Étapes
-. Si vous effectuez une mise à niveau hors ligne, vérifiez que l'appliance est dans link:../commonhardware/placing-appliance-into-maintenance-mode.html["mode maintenance"].
+. Vérifiez que l'appareil est dans link:../commonhardware/placing-appliance-into-maintenance-mode.html["mode maintenance"].
 +
 
 NOTE: Si vous mettez à niveau le micrologiciel de disques SSD faisant partie d'un groupe de cache, vous devez vous assurer qu'aucune E/S n'est envoyée aux volumes mis en cache pendant la mise à niveau. Lorsque l'appliance est en mode de maintenance, aucune E/S n'est envoyée aux volumes pendant la mise à niveau.
@@ -42,8 +44,10 @@ NOTE: Si vous mettez à niveau le micrologiciel de disques SSD faisant partie d'
 +
 ** Utilisez le programme d'installation de l'appliance StorageGRID et sélectionnez *Avancé* > *Gestionnaire système SANtricity*
 ** Utilisez le Gestionnaire de grille et sélectionnez *NODES* > *_noeud de stockage_* > *Gestionnaire système SANtricity*
-** Utilisez SANtricity System Manager en naviguant sur l'IP du contrôleur de stockage : +
+** Pour utiliser SANtricity System Manager, accédez à l'adresse IP du contrôleur de stockage :
++
 `*https://_Storage_Controller_IP_*`
+
 
 
 . Entrez le nom d'utilisateur et le mot de passe de l'administrateur SANtricity System Manager si nécessaire.
@@ -95,8 +99,7 @@ image::../media/storagegrid_drive_firmware_download.png[Firmware des disques E-S
 .. Dans le Gestionnaire système SANtricity, sous mise à niveau du micrologiciel du lecteur, sélectionnez *commencer la mise à niveau*.
 .. Sélectionnez *Browse*, puis sélectionnez les nouveaux fichiers de micrologiciel de lecteur que vous avez téléchargés à partir du site de support.
 +
-Les fichiers du micrologiciel du lecteur ont un nom de fichier similaire à +
-`D_HUC101212CSS600_30602291_MS01_2800_0002.dlp`.
+Les fichiers du micrologiciel du lecteur ont un nom de fichier similaire à `D_HUC101212CSS600_30602291_MS01_2800_0002.dlp`.
 
 +
 Vous pouvez sélectionner jusqu'à quatre fichiers de micrologiciel de lecteur, un par un. Si plusieurs fichiers de micrologiciel de lecteur sont compatibles avec le même lecteur, vous obtenez une erreur de conflit de fichier. Choisissez le fichier de micrologiciel de lecteur que vous souhaitez utiliser pour la mise à niveau et supprimez l'autre.
@@ -111,18 +114,7 @@ Seuls les lecteurs compatibles apparaissent.
 +
 Le micrologiciel sélectionné pour le lecteur apparaît dans la colonne *micrologiciel proposé*. Si vous devez modifier ce micrologiciel, sélectionnez *Retour*.
 
-.. Sélectionnez le type de mise à niveau que vous souhaitez effectuer :
-+
-
-CAUTION: Vous devez utiliser la méthode hors ligne lors de la mise à niveau des disques SSD.
-
-+
-*** *Mettre à niveau tous les lecteurs en ligne* — met à niveau les lecteurs qui peuvent prendre en charge un téléchargement de micrologiciel pendant que la matrice de stockage traite les E/S. Lorsque vous sélectionnez cette méthode de mise à niveau, vous n'avez pas besoin d'arrêter les E/S sur les volumes associés utilisant ces disques.
-+
-
-NOTE: Une mise à niveau en ligne peut prendre plusieurs heures de plus qu'une mise à niveau hors ligne.
-
-*** *Mettre à niveau tous les lecteurs hors ligne (parallèle)* — met à niveau les lecteurs qui peuvent prendre en charge un téléchargement de micrologiciel uniquement alors que toutes les activités d'E/S sont arrêtées sur tous les volumes qui utilisent les lecteurs.
+.. Sélectionnez *mettre à niveau tous les lecteurs hors ligne (parallèle)* — met à niveau les lecteurs qui peuvent prendre en charge un téléchargement de micrologiciel uniquement lorsque toutes les activités d'E/S sont arrêtées sur tous les volumes qui utilisent les lecteurs.
 +
 
 CAUTION: Vous devez mettre l'appareil en mode maintenance avant d'utiliser cette méthode. Vous devez utiliser la méthode *Offline* pour mettre à niveau le micrologiciel du lecteur.
@@ -130,8 +122,6 @@ CAUTION: Vous devez mettre l'appareil en mode maintenance avant d'utiliser cette
 +
 
 CAUTION: Si vous souhaitez utiliser la mise à niveau hors ligne (parallèle), ne continuez pas, sauf si vous êtes certain que l'appliance est en mode de maintenance. Si vous ne mettez pas l'appliance en mode de maintenance avant d'effectuer une mise à jour hors ligne du firmware des disques, vous risquez de perdre des données.
-
-
 
 .. Dans la première colonne du tableau, sélectionnez le ou les lecteurs que vous souhaitez mettre à niveau.
 +
@@ -150,83 +140,11 @@ CAUTION: L'arrêt de la mise à niveau du micrologiciel du lecteur peut entraîn
 Le fichier journal est enregistré dans le dossier des téléchargements de votre navigateur portant le nom `latest-upgrade-log-timestamp.txt`.
 
 +
-Si l'une des erreurs suivantes se produit pendant la procédure de mise à niveau, effectuez l'action recommandée appropriée.
-
-+
-*** *Disques affectés en échec*
-+
-L'une des raisons de la défaillance est que le lecteur ne possède pas la signature appropriée. Assurez-vous que le disque concerné est un disque autorisé. Contactez le support technique pour plus d'informations.
-
-+
-Lorsque vous remplacez un lecteur, assurez-vous que sa capacité est supérieure ou égale à celle du lecteur défectueux que vous remplacez.
-
-+
-Vous pouvez remplacer le disque défectueux alors que la matrice de stockage reçoit des E/S.
-
-*** *Vérifier la matrice de stockage*
-+
-**** Assurez-vous qu'une adresse IP a été attribuée à chaque contrôleur.
-**** Assurez-vous que tous les câbles connectés au contrôleur ne sont pas endommagés.
-**** Assurez-vous que tous les câbles sont bien connectés.
-
-
-*** *Disques de secours intégrés*
-+
-Ce problème d'erreur doit être corrigé avant de pouvoir mettre à niveau le micrologiciel.
-
-*** *Groupes de volumes incomplets*
-+
-Si un ou plusieurs groupes de volumes ou pools de disques sont incomplets, vous devez corriger cette condition d'erreur avant de pouvoir mettre à niveau le micrologiciel.
-
-*** *Opérations exclusives (autres que l'analyse des supports/parité en arrière-plan) actuellement en cours d'exécution sur n'importe quel groupe de volumes*
-+
-Si une ou plusieurs opérations exclusives sont en cours, les opérations doivent être effectuées avant la mise à niveau du micrologiciel. Utilisez System Manager pour surveiller la progression des opérations.
-
-*** *Volumes manquants*
-+
-Vous devez corriger la condition de volume manquant avant de pouvoir mettre à niveau le micrologiciel.
-
-*** *L'un ou l'autre des contrôleurs dans un état autre que optimal*
-+
-L'un des contrôleurs de la baie de stockage doit faire attention. Ce problème doit être résolu avant la mise à niveau du firmware.
-
-*** *Discordance des informations de partition de stockage entre les graphiques d'objet du contrôleur*
-+
-Une erreur s'est produite lors de la validation des données sur les contrôleurs. Contactez le support technique pour résoudre ce problème.
-
-*** *Échec de la vérification du contrôleur de base de données SPM*
-+
-Une erreur de mappage de la base de données de mappage des partitions de stockage s'est produite sur un contrôleur. Contactez le support technique pour résoudre ce problème.
-
-*** *Validation de la base de données de configuration (si prise en charge par la version du contrôleur de la matrice de stockage)*
-+
-Une erreur de base de données de configuration s'est produite sur un contrôleur. Contactez le support technique pour résoudre ce problème.
-
-*** *Vérifications liées au MEL*
-+
-Contactez le support technique pour résoudre ce problème.
-
-*** *Plus de 10 événements MEL informationnels ou critiques de la DDE ont été rapportés au cours des 7 derniers jours*
-+
-Contactez le support technique pour résoudre ce problème.
-
-*** *Plus de 2 pages 2C des événements MEL critiques ont été rapportés au cours des 7 derniers jours*
-+
-Contactez le support technique pour résoudre ce problème.
-
-*** *Plus de 2 événements MEL critiques de canal d'entraînement dégradés ont été signalés au cours des 7 derniers jours*
-+
-Contactez le support technique pour résoudre ce problème.
-
-*** *Plus de 4 entrées MEL critiques au cours des 7 derniers jours*
-+
-Contactez le support technique pour résoudre ce problème.
+link:troubleshoot-upgrading-drive-firmware-using-santricity-system-manager.html["Si nécessaire, dépannez les erreurs de mise à niveau du micrologiciel du pilote"].
 
 
 
-
-
-. Si vous utilisiez la mise à niveau *Offline* et que cette procédure s'est terminée avec succès, effectuez toutes les procédures de maintenance supplémentaires lorsque le nœud est en mode de maintenance. Lorsque vous avez terminé, ou si vous avez rencontré des défaillances et que vous souhaitez recommencer, accédez au programme d'installation de l'appliance StorageGRID et sélectionnez *Avancé* > *redémarrer le contrôleur*. Sélectionnez ensuite l'une des options suivantes :
+. Une fois la procédure terminée, effectuez les éventuelles procédures de maintenance supplémentaires lorsque le nœud est en mode maintenance. Lorsque vous avez terminé, ou si vous avez rencontré des défaillances et que vous souhaitez recommencer, accédez au programme d'installation de l'appliance StorageGRID et sélectionnez *Avancé* > *redémarrer le contrôleur*. Sélectionnez ensuite l'une des options suivantes :
 +
 ** *Redémarrer dans StorageGRID*.
 ** *Redémarrer en mode Maintenance*. Redémarrez le contrôleur et laissez le nœud en mode de maintenance. Sélectionnez cette option si des échecs se sont produits au cours de la procédure et que vous souhaitez recommencer. Une fois le redémarrage du nœud en mode maintenance terminé, redémarrez à partir de l'étape appropriée de la procédure ayant échoué.
