@@ -25,13 +25,21 @@ Assurez-vous que l'appareil de remplacement répond aux critères suivants :
 ** Vous ne pouvez cloner qu'une appliance de nœud de stockage sur une nouvelle appliance de stockage.
 
 
-* Pour les appliances de nœud d'administration ou de nœud de passerelle, l'appliance de nœud source et l'appliance cible n'ont pas besoin d'être du même type d'appliance. Toutefois, pour changer de type d'appliance, il peut être nécessaire de remplacer les câbles ou les modules SFP.
+* Pour les appliances de nœud d'administration ou de nœud de passerelle, l'appliance de nœud source et l'appliance cible n'ont pas besoin d'être le même modèle d'appliance. Toutefois, pour changer de modèle d'appliance, il peut être nécessaire de remplacer les câbles ou les modules SFP.
 +
 Par exemple, vous pouvez remplacer une appliance SG1000 par une appliance SG100 ou remplacer une appliance SG100 par une appliance SG1000.
 
-* Pour les appliances de nœuds de stockage, l'appliance du nœud source et l'appliance cible n'ont pas besoin d'être du même type d'appliance. Cependant, l'appliance cible doit avoir une capacité de stockage supérieure à celle de l'appliance source.
+* Pour les appliances de nœuds de stockage, l'appliance de nœuds source et l'appliance cible n'ont pas besoin d'être du même type d'appliance ; cependant :
++
+** L'appliance cible doit avoir une capacité de stockage supérieure à celle de l'appliance source.
 +
 Par exemple, vous pouvez remplacer une appliance SG5700 nœuds par une appliance SG6000.
+
+** L'appliance cible doit disposer d'un nombre égal ou supérieur de volumes de stockage objet à celui de l'appliance source.
++
+Par exemple, vous ne pouvez pas remplacer une appliance de nœuds SG6000 (16 volumes de magasin d'objets) par une appliance SGF6112 (12 volumes de magasin d'objets).
+
+
 
 
 
@@ -56,7 +64,7 @@ NOTE: L'utilisation du réseau d'administration 1 GbE pour le transfert des donn
 +
 Le nœud source et l'appliance cible peuvent avoir des paramètres de chiffrement de nœud différents. Le décryptage et le cryptage des données s'effectuent automatiquement pendant le transfert de données et lorsque le nœud cible redémarre et rejoint la grille.
 
-* Déterminez si le mode RAID de l'appliance cible doit être modifié par défaut, afin que vous puissiez spécifier ces informations lors de l'installation initiale de l'appliance cible avant le clonage. Vous pouvez afficher des informations sur le mode RAID actuel du nœud de l'appliance source sur la page *NODES* dans Grid Manager. Sélectionnez l'onglet *stockage* de l'appareil.
+* Déterminez si le mode RAID de l'appliance cible doit être modifié par défaut, afin que vous puissiez spécifier ces informations lors de l'installation initiale de l'appliance cible avant le clonage. Vous pouvez afficher des informations sur le mode RAID actuel du nœud de l'appliance source sur la page *NODES* dans Grid Manager. Sélectionnez l'onglet *matériel* de l'appareil.
 +
 Le nœud source et l'appliance cible peuvent avoir des paramètres RAID différents.
 

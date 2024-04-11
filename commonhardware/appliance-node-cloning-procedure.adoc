@@ -63,7 +63,7 @@ Lorsque *Démarrer le clonage* est activé, l'état *actuel* indique le réseau 
 . Sélectionnez *Démarrer le clonage* sur le nœud source.
 . Surveillez la progression du clonage à l'aide du programme d'installation de l'appliance StorageGRID sur le nœud source ou cible.
 +
-Le programme d'installation de l'appliance StorageGRID sur les nœuds source et cible indique le même état.
+Le programme d'installation de l'appliance StorageGRID sur les nœuds source et cible indique un état similaire.
 
 +
 image::../media/cloning_progress.png[Progression du clonage]
@@ -102,9 +102,9 @@ Une fois le clonage terminé :
 
 
 
-NOTE: Si l'appliance ne rejoint pas à nouveau la grille, accédez à la page d'accueil du programme d'installation de l'appliance StorageGRID pour le nœud source, sélectionnez *Avancé* > *redémarrer le contrôleur*, puis sélectionnez *redémarrer en mode de maintenance*. Après le redémarrage du nœud source en mode maintenance, répétez la procédure de clonage de nœuds.
+NOTE: Si l'appliance cible ne rejoint pas la grille, accédez à la page d'accueil du programme d'installation de l'appliance StorageGRID pour le nœud source, sélectionnez *Avancé* > *redémarrer le contrôleur*, puis sélectionnez *redémarrer en mode de maintenance*. Après le redémarrage du nœud source en mode maintenance, répétez la procédure de clonage de nœuds.
 
-* Les données utilisateur restent sur l'appliance source comme option de restauration si un problème inattendu se produit avec le nœud cible. Une fois que le nœud cible a rejoint StorageGRID, les données de l'utilisateur sur l'appliance source sont obsolètes et ne sont plus nécessaires.
+* Les données utilisateur restent sur l'appliance source comme option de restauration si un problème inattendu se produit avec le nœud cible. Une fois que le nœud cible a rejoint StorageGRID, les données utilisateur de l'appliance source sont obsolètes et ne sont plus nécessaires.
 +
 Les données utilisateur obsolètes sont écrasées lorsque vous installez ou développez l'appliance source en tant que nouveau nœud dans une autre grille.
 

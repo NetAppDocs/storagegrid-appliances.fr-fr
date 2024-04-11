@@ -34,7 +34,7 @@ Pour déployer un nœud de stockage d'appliance dans un système StorageGRID, ac
 
 
 
-NOTE: Si vous devez déployer plusieurs nœuds d'appliance à la fois, vous pouvez automatiser le processus d'installation à l'aide du `configure-sga.py` Script d'installation de l'appliance.
+NOTE: Si vous devez déployer plusieurs nœuds d'appliance à la fois, vous pouvez automatiser le processus d'installation en utilisant le lien :./installconfig/automaticating-appliance-installation-and-configuration.html#automation-with-configure-sga-py-script[`configure-sga.py` Script d'installation de l'appliance].
 
 * Si vous effectuez une opération d'extension ou de récupération, suivez les instructions appropriées :
 +
@@ -101,7 +101,7 @@ link:../commonhardware/appliance-node-cloning-procedure.html["procédure de clon
 
 . Dans la page d'accueil du programme d'installation de l'appliance StorageGRID, cliquez sur *Démarrer l'installation*.
 +
-L'état actuel passe à « installation en cours » et la page installation du moniteur s'affiche.
+L'état actuel passe à « installation en cours » et à « installation en cours » link:../installconfig/monitoring-appliance-installation.html["Page d'installation du moniteur"] s'affiche.
 
 +
 
@@ -110,6 +110,6 @@ NOTE: Si vous devez accéder manuellement à la page installation du moniteur, c
 . Si votre grid inclut plusieurs nœuds de stockage d'appliance, répétez cette procédure pour chaque appliance.
 +
 
-NOTE: Si vous devez déployer plusieurs nœuds de stockage d'appliance à la fois, vous pouvez automatiser le processus d'installation à l'aide du `configure-sga.py` Script d'installation de l'appliance.
+NOTE: Si vous avez besoin de déployer plusieurs nœuds de stockage à la fois, vous pouvez automatiser le processus d'installation en utilisant le lien :./installconfig/automaticating-appliance-installation-and-configuration.html#automation-with-configure-sga-py-script[`configure-sga.py` Script d'installation de l'appliance].
 
 

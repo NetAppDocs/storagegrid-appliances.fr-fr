@@ -49,7 +49,7 @@ Le nom de nœud est attribué à ce nœud d'appliance dans le système StorageGR
 +
 .. Téléchargez l'archive d'installation :
 +
-https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["Téléchargement NetApp : appliance StorageGRID"^]
+https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab["Téléchargement NetApp : StorageGRID"^]
 
 .. Extrayez l'archive.
 .. Dans le programme d'installation de l'appliance StorageGRID, sélectionnez *Avancé* > *Télécharger le logiciel StorageGRID*.
@@ -57,10 +57,7 @@ https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/dow
 +
 image::../media/appliance_installer_rmv_current_software.png[Programme d'installation de l'appliance - Supprimer le logiciel actuel]
 
-.. Cliquez sur *Parcourir* pour le progiciel que vous avez téléchargé et extrait, puis cliquez sur *Parcourir* pour le fichier de somme de contrôle.
-+
-image::../media/appliance_installer_upload_sg_software.png[Programme d'installation de l'appliance - Téléchargement du logiciel SG]
-
+.. Cliquez sur *Parcourir* pour trouver le progiciel que vous avez téléchargé et extrait. Sélectionner `storagegrid-webscale-images-_version_.deb` création de package.
 .. Sélectionnez *Accueil* pour revenir à la page d'accueil.
 
 
@@ -103,7 +100,7 @@ Pour installer StorageGRID sur un nœud d'appliance de services :
 * Vous spécifiez ou confirmez l'adresse IP du nœud d'administration principal et le nom du nœud d'appliance.
 * Vous démarrez l'installation et attendez que le logiciel soit installé.
 +
-L'installation s'interrompt via les tâches d'installation du nœud de passerelle de l'appliance. Pour reprendre l'installation, connectez-vous au Grid Manager, approuvez tous les nœuds de la grille et terminez le processus d'installation de StorageGRID. L'installation d'un noeud d'administration non primaire ne nécessite pas votre approbation.
+L'installation s'interrompt via les tâches d'installation du nœud de passerelle de l'appliance. Pour reprendre l'installation, connectez-vous au Grid Manager, approuvez tous les nœuds de la grille et terminez le processus d'installation de StorageGRID.
 
 
 
@@ -162,7 +159,7 @@ Le nom qui apparaît ici correspond au nom système du nœud de l'appliance. Les
 +
 .. Téléchargez l'archive d'installation :
 +
-https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["Téléchargement NetApp : appliance StorageGRID"^]
+https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab["Téléchargement NetApp : StorageGRID"^]
 
 .. Extrayez l'archive.
 .. Dans le programme d'installation de l'appliance StorageGRID, sélectionnez *Avancé* > *Télécharger le logiciel StorageGRID*.
@@ -170,10 +167,7 @@ https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/dow
 +
 image::../media/appliance_installer_rmv_current_software.png[Programme d'installation de l'appliance - Supprimer le logiciel actuel]
 
-.. Cliquez sur *Parcourir* pour le progiciel que vous avez téléchargé et extrait, puis cliquez sur *Parcourir* pour le fichier de somme de contrôle.
-+
-image::../media/appliance_installer_upload_sg_software.png[Programme d'installation de l'appliance - Téléchargement du logiciel SG]
-
+.. Cliquez sur *Parcourir* pour trouver le progiciel que vous avez téléchargé et extrait. Sélectionner `storagegrid-webscale-images-_version_.deb` création de package.
 .. Sélectionnez *Accueil* pour revenir à la page d'accueil.
 
 
@@ -183,10 +177,7 @@ Si le bouton *Start installation* n'est pas activé, vous devrez peut-être modi
 
 . Dans la page d'accueil du programme d'installation de l'appliance StorageGRID, cliquez sur *Démarrer l'installation*.
 +
-image::../media/appliance_installer_services_appliance_non_pan.png[Accueil du programme d'installation de l'appliance - installez un nœud d'administration non primaire]
-
-+
-L'état actuel passe à « installation en cours » et la page installation du moniteur s'affiche.
+L'état actuel passe à « installation en cours » et à « installation en cours » link:../installconfig/monitoring-appliance-installation.html["Page d'installation du moniteur"] s'affiche.
 
 +
 
