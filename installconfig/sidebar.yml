@@ -21,6 +21,8 @@ entries:
       url: "/installconfig/reviewing-appliance-network-connections.html"
     - title: SG100 et SG1000
       url: "/installconfig/gathering-installation-information-sg100-and-sg1000.html"
+    - title: SG110 et SG1100
+      url: "/installconfig/gathering-installation-information-sg110-and-sg1100.html"
     - title: SG5700
       url: "/installconfig/gathering-installation-information-sg5700.html"
     - title: SG6000
@@ -42,6 +44,8 @@ entries:
     entries:
     - title: SG100 et SG1000
       url: "/installconfig/installing-appliance-in-cabinet-or-rack-sg100-and-sg1000.html"
+    - title: SG110 et SG1100
+      url: "/installconfig/installing-appliance-in-cabinet-or-rack-sg110-and-sg1100.html"
     - title: SG5700
       url: "/installconfig/installing-appliance-in-cabinet-or-rack-sg5700.html"
     - title: SG6000
@@ -86,7 +90,8 @@ entries:
       url: "/installconfig/verifying-port-level-network-connections.html"
   - title: Configuration de SANtricity System Manager (SG5700 et SG6000)
     url: "/installconfig/accessing-and-configuring-santricity-system-manager.html"
-  - title: Configuration de l'interface BMC (SG100, SG1000, SG6000 et SG6100)
+  - title: CONFIGURATION DE L'INTERFACE BMC (SG100, SG110, SG1000, SG1100, SG6000,
+      et SG6100)
     entries:
     - title: Présentation
       url: "/installconfig/configuring-bmc-interface.html"
@@ -120,6 +125,8 @@ entries:
     url: "/installconfig/rebooting-appliance-while-sg-appliance-installer-is-running.html"
   - title: Dépannage de l'installation (SG100 et SG1000)
     url: "/installconfig/troubleshooting-hardware-installation-sg100-and-sg1000.html"
+  - title: Dépannage de l'installation (SG110 et SG1100)
+    url: "/installconfig/troubleshooting-hardware-installation-sg110-and-sg1100.html"
   - title: Dépannage de l'installation (SG5700 ou SG6000)
     url: "/installconfig/troubleshooting-hardware-installation.html"
   - title: Dépannage de l'installation (SG6100)

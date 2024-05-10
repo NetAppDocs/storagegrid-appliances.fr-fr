@@ -34,9 +34,19 @@ Pour accéder initialement au programme d'installation de l'appliance StorageGRI
 image::../media/sg100_admin_network_port.png[Port réseau Admin sur le SG100]
 
 --
+.SG110
+--
+image::../media/sg6100_admin_network_port.png[Port réseau d'administration sur le SG110]
+
+--
 .SG1000
 --
 image::../media/sg1000_admin_network_port.png[Port réseau Admin sur le SG1000]
+
+--
+.SG1100
+--
+image::../media/sg1100_admin_network_port.png[Port réseau d'administration sur le SG1100]
 
 --
 .E5700SG
@@ -105,11 +115,25 @@ Connectez un ordinateur portable de service directement au port RJ-45 le plus à
 image::../media/sg100_link_local_port.png[Liaison SG100 - connexion locale]
 
 --
+.SG110
+--
+Connectez un ordinateur portable de service directement au port RJ-45 le plus à droite de l'appareil, à l'aide d'un câble Ethernet.
+
+image::../media/sg6100_link_local_port.png[Connexion lien-local SG110]
+
+--
 .SG1000
 --
 Connectez un ordinateur portable de service directement au port RJ-45 le plus à droite de l'appareil de services à l'aide d'un câble Ethernet.
 
 image::../media/sg1000_link_local_port.png[Liaison SG1000 - connexion locale]
+
+--
+.SG1100
+--
+Connectez un ordinateur portable de service directement au port RJ-45 le plus à droite de l'appareil, à l'aide d'un câble Ethernet.
+
+image::../media/sg1100_link_local_port.png[Connexion lien-local SG1100]
 
 --
 .E5700SG

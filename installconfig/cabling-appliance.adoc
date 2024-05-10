@@ -203,6 +203,194 @@ Réseau Grid
 
 
 --
+.SG110 et SG1100
+--
+Vous connectez le port de gestion de l'appliance à l'ordinateur portable de service et connectez les ports réseau de l'appliance au réseau de réseau et au réseau client en option pour StorageGRID.
+
+.Avant de commencer
+* Vous disposez d'un câble Ethernet RJ-45 pour connecter le port de gestion.
+* Vous avez l'une des options suivantes pour les ports réseau. Ces éléments ne sont pas fournis avec l'appareil.
++
+** Un à quatre câbles TwinAx pour la connexion des quatre ports réseau.
+** Pour le SG110, un à quatre émetteurs-récepteurs SFP+ ou SFP28 si vous prévoyez d'utiliser des câbles optiques pour les ports.
+** Pour le SG1100, un à quatre émetteurs-récepteurs QSFP+ ou QSFP28 si vous prévoyez d'utiliser des câbles optiques pour les ports.
+
+
+
+
+
+CAUTION: *Risque d'exposition au rayonnement laser* -- ne démontez ou ne retirez aucune partie d'un émetteur-récepteur SFP ou QSFP. Vous pourriez être exposé à un rayonnement laser.
+
+.Description de la tâche
+Les figures suivantes montrent les ports situés à l'arrière de l'appareil.
+
+Connexions du port SG110 :
+
+image::../media/sgf6112_connections.png[Connecteurs arrière du SG110]
+
+Connexions du port SG1100 :
+
+image::../media/sg1100_connections.png[Connexions du port SG1000]
+
+[cols="1a,2a,2a,3a"]
+|===
+| Légende | Port | Type de port | Utiliser 
+
+
+ a| 
+1
+ a| 
+Port de gestion BMC de l'appliance
+ a| 
+1 GbE (RJ-45)
+ a| 
+Se connecte au réseau sur lequel vous accédez à l'interface BMC.
+
+
+
+ a| 
+2
+ a| 
+Quatre ports réseau sur l'appliance
+ a| 
+* Pour le SG110 : 10/25 GbE
+* Pour le SG1100 : 10/25/40/100 GbE
+
+ a| 
+Connectez-vous au réseau Grid et au réseau client pour StorageGRID. Voir link:gathering-installation-information-sg110-and-sg1100.html#port-bond-modes["Modes de liaison de port (SG110 et SG1100)"]
+
+
+
+ a| 
+3
+ a| 
+Port réseau d'administration de l'appliance
+ a| 
+1 GbE (RJ-45)
+
+*Important:* ce port fonctionne uniquement à 1/10-GbE (RJ-45) et ne prend pas en charge les vitesses de 100 mégabits.
+ a| 
+Permet de connecter l'appliance au réseau d'administration pour StorageGRID.
+
+
+
+ a| 
+ a| 
+Port RJ-45 le plus à droite de l'appareil
+ a| 
+1 GbE (RJ-45)
+
+*Important:* ce port fonctionne uniquement à 1/10-GbE (RJ-45) et ne prend pas en charge les vitesses de 100 mégabits.
+ a| 
+* Peut être lié avec le port de gestion 1 si vous souhaitez établir une connexion redondante avec le réseau d'administration.
+* Peut être laissée déconnectée et disponible pour l'accès local temporaire (IP 169.254.0.1).
+* Pendant l'installation, peut être utilisé pour connecter l'appliance à un ordinateur portable de service si les adresses IP attribuées par DHCP ne sont pas disponibles.
+
+
+|===
+.Étapes
+. Connectez le port de gestion BMC de l'appliance au réseau de gestion à l'aide d'un câble Ethernet.
++
+Bien que cette connexion soit facultative, elle est recommandée pour faciliter l'assistance.
+
+. Connectez les ports réseau de l'appareil aux commutateurs réseau appropriés à l'aide de câbles TwinAx ou de câbles optiques et d'émetteurs-récepteurs.
++
+Consultez le tableau suivant pour connaître l'équipement requis pour votre matériel et la vitesse de liaison.
+
++
+[cols="2a,2a"]
+|===
+| Vitesse de liaison SG110 (GbE) | Équipement requis 
+
+
+ a| 
+10
+ a| 
+Émetteur-récepteur SFP+
+
+
+
+ a| 
+25
+ a| 
+Émetteur-récepteur SFP28
+
+
+
+| Vitesse de liaison SG1100 (GbE) | Équipement requis 
+
+
+ a| 
+10
+ a| 
+Emetteur-récepteur QSA et SFP+
+
+
+
+ a| 
+25
+ a| 
+Emetteur-récepteur QSA et SFP28
+
+
+
+ a| 
+40
+ a| 
+Émetteur-récepteur QSFP+
+
+
+
+ a| 
+100
+ a| 
+Emetteur-récepteur QFSP28
+
+|===
++
+** Sur les modèles qui prennent en charge la négociation automatique comme option de vitesse de port, si le mode de liaison de port fixe est sélectionné, vous pouvez exécuter les ports dédiés au réseau StorageGRID Grid à une vitesse différente de celle des ports dédiés au réseau client.
+** Sur les modèles qui ne prennent pas en charge la négociation automatique comme option de vitesse de port, les quatre ports réseau doivent utiliser la même vitesse de liaison.
+** Si vous prévoyez d'utiliser le mode de liaison de port fixe (par défaut), connectez les ports aux réseaux StorageGRID Grid et client, comme indiqué dans le tableau.
++
+[cols="1a,2a"]
+|===
+| Port | Se connecte à... 
+
+
+ a| 
+Orifice 1
+ a| 
+Réseau client (facultatif)
+
+
+
+ a| 
+Orifice 2
+ a| 
+Réseau Grid
+
+
+
+ a| 
+Orifice 3
+ a| 
+Réseau client (facultatif)
+
+
+
+ a| 
+Orifice 4
+ a| 
+Réseau Grid
+
+|===
+** Si vous prévoyez d'utiliser le mode de liaison du port de l'agrégat, connectez un ou plusieurs ports réseau à un ou plusieurs commutateurs. Vous devez connecter au moins deux des quatre ports pour éviter d'avoir un point de défaillance unique. Si vous utilisez plusieurs switchs pour une liaison LACP unique, les switchs doivent prendre en charge MLAG ou équivalent.
+
+
+. Si vous envisagez d'utiliser le réseau d'administration pour StorageGRID, connectez le port réseau d'administration de l'appliance au réseau d'administration à l'aide d'un câble Ethernet.
+
+
+--
 .SG5700
 --
 Vous connectez les deux contrôleurs, connectez les ports de gestion de chaque contrôleur et connectez les ports 10/25-GbE du contrôleur E5700SG au réseau Grid et au réseau client en option pour StorageGRID.
@@ -410,7 +598,7 @@ CAUTION: *Risque d'exposition au rayonnement laser* -- ne démontez ou ne retire
 
 
 .Description de la tâche
-Les figures suivantes illustrent les trois contrôleurs des appliances SG6060 et SG6060X, avec le contrôleur de calcul SG6000-CN en haut et les deux contrôleurs de stockage E2800 en bas. Le SG6060 utilise des contrôleurs E2800A et le SG606060X utilise des contrôleurs E2800B.
+Les figures suivantes illustrent les trois contrôleurs des appliances SG6060 et SG6060X, avec le contrôleur de calcul SG6000-CN en haut et les deux contrôleurs de stockage E2800 en bas. Le SG6060 utilise des contrôleurs E2800A et le SG606060X utilise l'une des deux versions de contrôleur E2800B.
 
 
 NOTE: Les deux versions du contrôleur E2800 présentent les mêmes spécifications et fonctionnent, à l'exception de l'emplacement des ports d'interconnexion.
@@ -424,7 +612,19 @@ image::../media/sg6000_e2800_connections.png[SG6060 aux connexions E2800A]
 
 Connexions SG606060X :
 
+* Version 1
++
 image::../media/sg6000x_e2800B_connections.png[SG6060 aux connexions E2800B]
+
+* Version 2
++
+
+NOTE: Si les émetteurs-récepteurs FC du contrôleur E2800B sont installés dans les ports de connexion FC supérieurs (6), déplacez-les vers les ports de connexion FC inférieurs droits (7).
+
++
+image::../media/sg6000x_e2800B2_connections.png[SG6060 aux connexions E2800B]
+
+
 
 La figure suivante présente les trois contrôleurs de l'appliance SGF6024, avec le contrôleur de calcul SG6000-CN en haut et les deux contrôleurs de stockage EF570 en dessous du contrôleur de calcul.
 
@@ -570,7 +770,10 @@ Orifice 4
 Réseau Grid
 
 |===
-** Si vous prévoyez d'utiliser le mode de liaison du port de l'agrégat, connectez un ou plusieurs ports réseau à un ou plusieurs commutateurs. Vous devez connecter au moins deux des quatre ports pour éviter d'avoir un point de défaillance unique. Si vous utilisez plusieurs switchs pour une liaison LACP unique, les switchs doivent prendre en charge MLAG ou équivalent.
++
+*** Si vous prévoyez d'utiliser le mode de liaison du port de l'agrégat, connectez un ou plusieurs ports réseau à un ou plusieurs commutateurs. Vous devez connecter au moins deux des quatre ports pour éviter d'avoir un point de défaillance unique. Si vous utilisez plusieurs switchs pour une liaison LACP unique, les switchs doivent prendre en charge MLAG ou équivalent.
+
+
 
 
 . Si vous prévoyez d'utiliser le réseau d'administration pour StorageGRID, connectez le port réseau d'administration du contrôleur SG6000-CN au réseau d'administration à l'aide d'un câble Ethernet.

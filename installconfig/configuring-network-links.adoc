@@ -39,6 +39,7 @@ NOTE: La politique de hachage de transmission LACP est layer2+3.
 Les figures et les tableaux résument les options pour le mode de liaison du port et le mode de liaison du réseau pour chaque appliance. Pour plus d'informations, reportez-vous aux sections suivantes :
 
 * link:gathering-installation-information-sg100-and-sg1000.html#port-bond-modes["Modes de liaison de port (SG1000 et SG100)"]
+* link:gathering-installation-information-sg110-and-sg1100.html#port-bond-modes["Modes de liaison de port (SG1100 et SG110)"]
 * link:gathering-installation-information-sg5700.html#port-bond-modes["Modes de liaison du port (E5700SG)"]
 * link:gathering-installation-information-sg6000.html#port-bond-modes["Modes de liaison de port (SG6000-CN)"]
 * link:gathering-installation-information-sg6100.html#port-bond-modes["Modes de liaison de port (SGF6112)"]
@@ -172,6 +173,137 @@ image::../media/sg1000_bonded_management_ports.png[Ports réseau d'administratio
 SG100 :
 
 image::../media/sg100_bonded_management_ports.png[Ports réseau d'administration solidés SG100]
+
+--
+
+
+--
+.SG110 et SG1100
+--
+Mode de liaison port fixe (par défaut)::
++
+--
+Les figures montrent comment les quatre ports réseau du SG1100 ou du SG110 sont liés en mode de liaison port fixe (configuration par défaut).
+
+SG1100 :
+
+image::../media/sg1100_fixed_port.png[SG1100 mode de liaison de port fixe]
+
+SG110 :
+
+image::../media/sgf6112_fixed_port.png[SG110 mode de liaison de port fixe]
+
+[cols="1a,3a"]
+|===
+| Légende | Quels ports sont liés 
+
+
+ a| 
+C
+ a| 
+Les ports 1 et 3 sont liés ensemble pour le réseau client, si ce réseau est utilisé.
+
+
+
+ a| 
+G
+ a| 
+Les ports 2 et 4 sont liés ensemble pour le réseau de grille.
+
+|===
+Le tableau récapitule les options de configuration des quatre ports réseau. Vous ne devez configurer les paramètres de la page Configuration des liens que si vous souhaitez utiliser un paramètre autre que celui par défaut.
+
+[cols="1a,2a,2a"]
+|===
+| Mode de liaison réseau | Réseau client désactivé (par défaut) | Réseau client activé 
+
+
+ a| 
+Sauvegarde active/active (par défaut)
+ a| 
+* Les ports 2 et 4 utilisent une liaison de sauvegarde active pour le réseau Grid.
+* Les ports 1 et 3 ne sont pas utilisés.
+* Une balise VLAN est facultative.
+
+ a| 
+* Les ports 2 et 4 utilisent une liaison de sauvegarde active pour le réseau Grid.
+* Les ports 1 et 3 utilisent une liaison de sauvegarde active pour le réseau client.
+* Les balises VLAN peuvent être spécifiées pour les deux réseaux pour le confort de l'administrateur réseau.
+
+
+
+
+ a| 
+LACP (802.3ad)
+ a| 
+* Les ports 2 et 4 utilisent une liaison LACP pour le réseau Grid.
+* Les ports 1 et 3 ne sont pas utilisés.
+* Une balise VLAN est facultative.
+
+ a| 
+* Les ports 2 et 4 utilisent une liaison LACP pour le réseau Grid.
+* Les ports 1 et 3 utilisent une liaison LACP pour le réseau client.
+* Les balises VLAN peuvent être spécifiées pour les deux réseaux pour le confort de l'administrateur réseau.
+
+
+|===
+--
+Mode de liaison du port agrégé::
++
+--
+Ces figures montrent comment les quatre ports réseau sont liés en mode agrégation port bond.
+
+SG1100 :
+
+image::../media/sg1100_aggregate_ports.png[Mode agrégation de liaisons de port SG1100]
+
+SG110 :
+
+image::../media/sgf6112_aggregate_ports.png[SG110 mode de liaison de port agrégé]
+
+[cols="1a,3a"]
+|===
+| Légende | Quels ports sont liés 
+
+
+ a| 
+1
+ a| 
+Les quatre ports sont regroupés en une seule liaison LACP, ce qui permet d'utiliser tous les ports pour le trafic Grid Network et client Network.
+
+|===
+Le tableau récapitule les options de configuration des ports réseau. Vous ne devez configurer les paramètres de la page Configuration des liens que si vous souhaitez utiliser un paramètre autre que celui par défaut.
+
+[cols="1a,2a,2a"]
+|===
+| Mode de liaison réseau | Réseau client désactivé (par défaut) | Réseau client activé 
+
+
+ a| 
+LACP (802.3ad) uniquement
+ a| 
+* Les ports 1-4 utilisent une liaison LACP unique pour le réseau Grid.
+* Une balise VLAN unique identifie les paquets réseau Grid.
+
+ a| 
+* Les ports 1-4 utilisent une liaison LACP unique pour le réseau Grid et le réseau client.
+* Deux balises VLAN permettent de isoler les paquets réseau Grid des paquets réseau client.
+
+
+|===
+--
+Mode de liaison réseau Active-Backup pour les ports de gestion::
++
+--
+Ces figures montrent comment les deux ports de gestion 1 GbE des dispositifs sont liés en mode liaison réseau Active-Backup pour le réseau d'administration.
+
+SG1100 :
+
+image::../media/sg1100_bonded_management_ports.png[Ports réseau d'administration mis en liaison avec le SG1100]
+
+SG110 :
+
+image::../media/sgf6112_bonded_management_ports.png[Ports réseau d'administration mis en liaison SG110]
 
 --
 

@@ -38,13 +38,13 @@ La photo montre un ventilateur pour l'appareil. Le connecteur électrique est mi
 
 NOTE: Chacun des deux blocs d'alimentation contient également un ventilateur. Les ventilateurs du bloc d'alimentation ne sont pas inclus dans cette procédure.
 
-image::../media/sgf6112_fan_fru.png[Ventilateur SGF6112 FRU]
+image::../media/sgf6112_fan_fru.png[FRU de ventilateur]
 
 .Étapes
 . Enroulez l'extrémité du bracelet antistatique autour de votre poignet et fixez l'extrémité du clip à une masse métallique afin d'éviter toute décharge statique.
 . Localisez le ventilateur que vous devez remplacer.
 +
-Les huit ventilateurs se trouvent dans les positions suivantes dans le châssis (la moitié avant du SGF6112 avec le capot supérieur retiré est illustrée) :
+Les huit ventilateurs se trouvent dans les positions suivantes dans le châssis (la moitié avant de l'appliance StorageGRID avec le capot supérieur retiré) :
 
 +
 image::../media/SGF6112-fan-locations.png[Emplacements des ventilateurs]

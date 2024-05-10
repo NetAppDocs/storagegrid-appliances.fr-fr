@@ -46,7 +46,7 @@ Installez la pile CMOS de remplacement dans le support de la carte système.
 +
 image::../media/sgf6112_two-slot-riser_alignment_hole.png[Trou d'alignement sur le grand dispositif de levage]
 
-. Repérez la broche de guidage sur la carte système.
+. Repérez la broche de guidage sur la carte système
 +
 image::../media/sgf6112_two-slot-riser_guide-pin.png[Broche de guidage sur la carte système pour l'assemblage de carte de montage à deux emplacements]
 
@@ -68,7 +68,7 @@ image::../media/sgf6112_two-slot-riser_guide-pin.png[Broche de guidage sur la ca
 .. Entrez le mot de passe indiqué dans le `Passwords.txt` fichier.
 
 
-. Restaurez la connectivité réseau du contrôleur BMC pour l'appliance à l'aide de l'une des options suivantes :
+. Restaurez la connectivité réseau du contrôleur BMC pour l'appliance. Deux options sont disponibles :
 +
 ** Utilisez une adresse IP statique, un masque de réseau et une passerelle
 ** Utilisez DHCP pour obtenir une adresse IP, un masque de réseau et une passerelle

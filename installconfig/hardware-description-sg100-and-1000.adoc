@@ -39,7 +39,7 @@ Cette figure montre l'avant du SG100 et du SG1000 avec le cadre retiré. À part
 
 image::../media/sg1000_front_with_ssds.png[Avant avec SSD SG100 et SG1000]
 
-Les deux disques SSD, dont le contour est orange, peuvent être utilisés pour stocker le système d'exploitation StorageGRID et sont mis en miroir avec RAID 1 pour la redondance. Lorsque l'appliance de services SG100 ou SG1000 est configurée comme un nœud d'administration, ces disques servent à stocker les journaux d'audit, les metrics et les tables de bases de données.
+Les deux disques SSD (Solid-State Drives), indiqués par le contour orange, sont utilisés pour stocker le système d'exploitation StorageGRID et sont mis en miroir avec RAID 1 pour la redondance. Lorsque l'appliance de services SG100 ou SG1000 est configurée en tant que nœud d'administration, ces disques peuvent être utilisés pour stocker les journaux d'audit, les metrics et les tables de base de données.
 
 Les emplacements de lecteur restants sont vides.
 

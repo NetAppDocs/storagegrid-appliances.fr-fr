@@ -1,7 +1,7 @@
 ---
 permalink: installconfig/deploying-services-appliance-node.html 
 sidebar: sidebar 
-keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, deploy node, deploying node, node, deploy, deploying, primary, primary admin node, non-primary admin node, non-primary 
+keywords: storagegrid, sg110, sg1100, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, deploy node, deploying node, node, deploy, deploying, primary, primary admin node, non-primary admin node, non-primary 
 summary: 'Vous pouvez déployer une appliance de services en tant que nœud d"administration principal, nœud d"administration non primaire ou nœud de passerelle. Toutes les appliances de services peuvent fonctionner simultanément en tant que nœuds de passerelle et nœuds d"administration \(principal ou non principal\).' 
 ---
 = Déployez le nœud d'appliance des services
@@ -105,7 +105,7 @@ L'installation s'interrompt via les tâches d'installation du nœud de passerell
 
 
 
-NOTE: Ne déployez pas d'appliances de services SG100 et SG1000 sur le même site. Cela peut entraîner des performances imprévisibles.
+IMPORTANT: L'association d'appliances de services avec différents niveaux de performance sur le même site, comme un système SG100 ou SG110 avec un système SG1000 ou SG1100, peut entraîner des résultats imprévisibles et incohérents lors de l'utilisation de plusieurs nœuds dans un groupe à haute disponibilité ou de l'équilibrage de la charge des clients sur plusieurs appliances de services.
 
 
 NOTE: Si vous devez déployer plusieurs nœuds d'appliance à la fois, vous pouvez automatiser le processus d'installation. Voir link:automating-appliance-installation-and-configuration.html["Automatisez l'installation et la configuration de l'appliance"].

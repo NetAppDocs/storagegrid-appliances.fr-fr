@@ -14,7 +14,9 @@ summary: 'Vous pouvez accéder à l"interface du contrôleur BMC à l"aide de l"
 Vous pouvez accéder à l'interface du contrôleur BMC à l'aide de l'adresse IP DHCP ou statique du port de gestion du contrôleur BMC sur les modèles d'appliance suivants :
 
 * SG100
+* SG110
 * SG1000
+* SG1100
 * SG6000
 * SG6100
 
@@ -30,9 +32,19 @@ Vous pouvez accéder à l'interface du contrôleur BMC à l'aide de l'adresse IP
 image::../media/sg100_bmc_management_port.png[Port de gestion du contrôleur BMC SG100]
 
 --
+.SG110
+--
+image::../media/sgf6112_cn_bmc_management_port.png[Port de gestion du contrôleur BMC SG110]
+
+--
 .SG1000
 --
 image::../media/sg1000_bmc_management_port.png[Port de gestion BMC SG1000]
+
+--
+.SG1100
+--
+image::../media/sg1100_bmc_management_port.png[Port de gestion BMC SG1100]
 
 --
 .SG6000

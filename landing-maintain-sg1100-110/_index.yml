@@ -1,0 +1,33 @@
+---
+indexpage:
+  tiles:
+  - title: Procédures fréquemment effectuées
+    links:
+    - title: Allumer ou éteindre le voyant de localisation
+      url: "../sg110-1100/turning-sg110-and-sg1100-identify-led-on-and-off.html"
+    - title: Localisez l'appliance dans le data Center
+      url: "../sg110-1100/locating-sg110-and-sg1100-in-data-center.html"
+    - title: Mettez l'appareil hors tension et sous tension
+      url: "../sg110-1100/power-sg110-and-sg1100-off-on.html"
+    - title: Modifier la configuration du lien
+      url: "../sg110-1100/changing-link-configuration-of-sg110-and-sg1100-appliance.html"
+  - title: Procédures de rack
+    links:
+    - title: Remplacez l'appliance SG110 ou SG1100
+      url: "../sg110-1100/replacing-sg110-and-sg1100-appliance.html"
+    - title: Déplacez le SG110 ou le SG1100 dans un rack
+      url: "../sg110-1100/reinstalling-sg110-and-sg1100-into-cabinet-or-rack.html"
+  - title: Procédures matérielles
+    links:
+    - title: Remettez le couvercle en place
+      url: "../sg110-1100/reinstalling-sg110-and-sg1100-cover.html"
+    - title: Remplacez l'alimentation électrique
+      url: "../sg110-1100/replacing-one-or-more-power-supplies-in-sg110-and-sg1100-appliance.html"
+    - title: Remplacer le ventilateur
+      url: "../sg110-1100/replacing-fan-in-sg110-and-sg1100.html"
+    - title: Remplacez le lecteur
+      url: "../sg110-1100/replacing-drive-in-sg110-and-sg1100.html"
+    - title: Remplacez la carte réseau
+      url: "../sg110-1100/replace-nic-in-sg110-and-sg1100.html"
+    - title: Remplacez la pile CMOS
+      url: "../sg110-1100/replace-cmos-in-sg110-and-sg1100.html"

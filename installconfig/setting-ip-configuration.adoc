@@ -21,6 +21,7 @@ Vous devez attribuer une adresse IP statique à l'appliance sur chaque réseau c
 Pour modifier la configuration de la liaison, reportez-vous aux instructions suivantes :
 
 * link:../sg100-1000/changing-link-configuration-of-services-appliance.html["Modifier la configuration de la liaison de l'appliance de services SG100 ou SG1000"]
+* link:../sg110-1100/changing-link-configuration-of-services-appliance.html["Modifier la configuration de la liaison de l'appliance de services SG110 ou SG1100"]
 * link:../sg5700/changing-link-configuration-of-e5700sg-controller.html["Modifier la configuration de liaison du contrôleur E5700SG"]
 * link:../sg6000/changing-link-configuration-of-sg6000-cn-controller.html["Modifier la configuration de la liaison du contrôleur SG6000-CN"]
 * link:../sg6100/changing-link-configuration-of-sgf6112-appliance.html["Modifier la configuration de la liaison de l'appliance SG6100"]

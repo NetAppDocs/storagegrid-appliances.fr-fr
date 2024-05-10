@@ -15,7 +15,7 @@ Vous devrez peut-être effectuer des procédures de maintenance sur votre appare
 
 Les procédures décrites dans cette section supposent que l'appliance a déjà été déployée en tant que nœud de stockage dans un système StorageGRID.
 
-*Les procédures de maintenance de la configuration* sont effectuées à l'aide de l'interface Appliance installer, Grid Manager ou BMC. Ces procédures comprennent :
+*Les procédures de configuration de maintenance* sont effectuées à l'aide de l'interface Appliance installer, Grid Manager ou BMC. Ces procédures comprennent :
 
 * link:turning-sgf6112-identify-led-on-and-off.html["Allumer et éteindre le voyant d'identification de l'appareil"]
 * link:locating-sgf6112-in-data-center.html["Localisez l'appliance dans le data Center"]

@@ -50,6 +50,47 @@ image::../media/power_cords.gif[Cordons d'alimentation]
 
 
 --
+.SG110 et SG1100
+--
+* *Matériel*
++
+SG110 ou SG1100::
++
+--
+image::../media/sgf6112_front_with_ssds.png[Disques frontaux, appliances SG110 et SG1100]
+
+--
+Kit de rails avec instructions::
++
+--
+image::../media/rail_kit.gif[Kit de rails]
+
+--
+Panneau avant::
++
+--
+image::../media/sgf_6112_front_bezel.png[Panneau avant]
+
+--
+
+
+* *Cordons d'alimentation*
++
+
+TIP: Il se peut que votre armoire soit équipée de cordons d'alimentation spéciaux à la place des câbles d'alimentation fournis avec l'appliance.
+
++
+Deux cordons d'alimentation pour votre pays::
++
+--
+image::../media/power_cords.gif[Cordons d'alimentation]
+
+--
+
+
+
+
+--
 .SG5700
 --
 * *Matériel*

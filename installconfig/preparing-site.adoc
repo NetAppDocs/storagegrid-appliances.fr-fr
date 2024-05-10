@@ -30,6 +30,13 @@ SG100 et SG1000
 
 
  a| 
+SG110 et SG1100
+ a| 
+100 à 240 volts c.a.
+
+
+
+ a| 
 SG5760
  a| 
 240 V c.a.
@@ -83,6 +90,32 @@ SGF6112
 39 lb
 
 (17.7 kg)
+
+|===
+--
+.SG110 et SG1100
+--
+[cols="1a,1a,1a,1a"]
+|===
+| Hauteur | Largeur | Profondeur | Poids maximum 
+
+
+ a| 
+1.70 po
+
+(4.31 cm)
+ a| 
+18.98 po
+
+(48.2 cm)
+ a| 
+33.11 po
+
+(84.1 cm)
+ a| 
+43.83 lb
+
+(19.88 kg)
 
 |===
 --

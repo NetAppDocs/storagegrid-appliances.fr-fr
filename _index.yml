@@ -12,7 +12,7 @@ indexpage:
     - title: Découvrez StorageGRID
       url: https://docs.netapp.com/us-en/storagegrid-118/primer/index.html
     - title: Démarrage rapide de StorageGRID
-      url: https://docs.netapp.com/us-en/storagegrid-118/quick-start.html
+      url: https://docs.netapp.com/us-en/storagegrid-118/primer/quick-start.html
     - title: Démarrage rapide de l'installation de l'appareil
       url: "/installconfig/index.html"
     - title: Automatisez l'installation et la configuration
@@ -23,11 +23,13 @@ indexpage:
     links:
     - title: SG100 et SG1000
       url: "/installconfig/hardware-description-sg100-and-1000.html"
+    - title: SG110 et SG1100 (nouveau)
+      url: "/installconfig/hardware-description-sg110-and-1100.html"
     - title: SG5700
       url: "/installconfig/hardware-description-sg5700.html"
     - title: SG6000
       url: "/installconfig/hardware-description-sg6000.html"
-    - title: SG6100 (nouveau)
+    - title: SG6100
       url: "/installconfig/hardware-description-sg6100.html"
   - title: Installer le matériel de fixation
     links:
@@ -43,6 +45,8 @@ indexpage:
     links:
     - title: SG100 et SG1000
       url: "/landing-maintain-sg1000-100/index.html"
+    - title: SG110 et SG1100
+      url: "/landing-maintain-sg1100-110/index.html"
     - title: APPLIANCE SG5600
       url: "/sg5600/index.html"
     - title: SG5700

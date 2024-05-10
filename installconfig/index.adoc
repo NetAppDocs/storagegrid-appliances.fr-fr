@@ -32,6 +32,7 @@ Cette étape est facultative. Cependant, la rationalisation et l'automatisation 
 . Installez-le dans l'armoire ou sur le rack
 +
 ** link:installing-appliance-in-cabinet-or-rack-sg100-and-sg1000.html["SG100 et SG1000"]
+** link:installing-appliance-in-cabinet-or-rack-sg110-and-sg1100.html["SG110 et SG1100"]
 ** link:installing-appliance-in-cabinet-or-rack-sg5700.html["SG5700"]
 ** link:installing-hardware-sg6000.html["SG6000"]
 ** link:installing-appliance-in-cabinet-or-rack-sgf6112.html["SG6100"]
@@ -56,8 +57,8 @@ Si vous configurez et déployez plusieurs appliances, utilisez l'outil NetApp Co
 ** link:verifying-port-level-network-connections.html["Vérifiez les connexions réseau au niveau des ports"]
 
 
-. link:accessing-and-configuring-santricity-system-manager.html["Accès à SANtricity System Manager et configuration de celui-ci"] (SG6000 et SG5700)
-. link:configuring-bmc-interface.html["Configurez l'interface BMC"] (SG100, SG1000, SG6000 ET SG6100)
+. link:accessing-and-configuring-santricity-system-manager.html["Accès à SANtricity System Manager et configuration de celui-ci"] (SG5700 et SG6000)
+. link:configuring-bmc-interface.html["Configurez l'interface BMC"] (SG6000, SG6100 et appliances de services)
 . Effectuez les étapes de configuration facultatives
 +
 ** link:optional-enabling-node-encryption.html["Activez le chiffrement des nœuds ou des disques"]

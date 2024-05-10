@@ -144,6 +144,143 @@ Bleu (clignotant) : accès au lecteur
 
 
 --
+.SG110 et SG1100
+--
+L'appliance inclut des indicateurs qui vous permettent de déterminer l'état du contrôleur de l'appliance et des disques SSD :
+
+* <<appliance_indicators,Voyants et boutons de l'appareil>>
+* <<general_boot_codes,Codes de démarrage généraux>>
+* <<ssd_indicators,Indicateurs SSD>>
+
+
+Utilisez ces informations pour vous aider link:troubleshooting-hardware-installation-sg110-and-sg1100.html["Dépanner l'installation matérielle des systèmes SG110 et SG1100"].
+
+[[appliance_indicators]]
+Voyants et boutons de l'appareil::
++
+--
+La figure suivante montre les voyants et les boutons des appareils SG110 et SG1100.
+
+image::../media/sgf6112_front_indicators.png[Clignotants avant - SG110 et SG1100]
+
+[cols="1a,2a,3a"]
+|===
+| Légende | Afficher | État 
+
+
+ a| 
+1
+ a| 
+Bouton d'alimentation
+ a| 
+* Bleu : l'appareil est sous tension.
+* Éteint : l'appareil est hors tension.
+
+
+
+
+ a| 
+2
+ a| 
+Bouton de réinitialisation
+ a| 
+Utilisez ce bouton pour effectuer une réinitialisation matérielle du contrôleur.
+
+
+
+ a| 
+3
+ a| 
+Bouton identifier
+ a| 
+A l'aide du contrôleur BMC, ce bouton peut être défini sur clignotant, activé (fixe) ou Désactivé.
+
+* Bleu clignotant : identifie l'appliance dans l'armoire ou le rack.
+* Bleu, fixe : identifie l'appliance dans l'armoire ou le rack.
+* Éteint : l'appareil n'est pas visuellement identifiable dans l'armoire ou le rack.
+
+
+
+
+ a| 
+4
+ a| 
+Voyant d'état
+ a| 
+* Orange, fixe : une erreur s'est produite.
++
+*Note:* pour afficher les codes de démarrage et d'erreur, link:accessing-bmc-interface.html["Accédez à l'interface BMC"].
+
+* OFF : aucune erreur n'est présente.
+
+
+
+
+ a| 
+5
+ a| 
+PFR
+ a| 
+Cette lampe n'est pas utilisée par les appareils SG110 et SG1100 et reste éteinte.
+
+|===
+--
+
+
+[[general_boot_codes]]
+Codes de démarrage généraux::
++
+--
+Lors du démarrage ou après une réinitialisation matérielle de l'appareil, les événements suivants se produisent :
+
+. Le contrôleur BMC (Baseboard Management Controller) consigne les codes de la séquence de démarrage, y compris les erreurs qui se produisent.
+. Le bouton d'alimentation s'allume.
+. Si des erreurs se produisent au démarrage, le voyant d'alarme s'allume.
++
+Pour afficher les codes de démarrage et d'erreur, link:accessing-bmc-interface.html["Accédez à l'interface BMC"].
+
+
+
+--
+
+
+[[ssd_indicators]]
+Indicateurs SSD::
++
+--
+La figure suivante présente les voyants SSD des appliances SG110 et SG1100.
+
+image::../media/ssd_indicators.png[Indicateurs SSD]
+
+[cols="1a,2a,2a"]
+|===
+| LED | Afficher | État 
+
+
+ a| 
+1
+ a| 
+État/défaut du lecteur
+ a| 
+* Bleu (continu) : le lecteur est en ligne
+* Orange (fixe) : panne de disque
+* OFF : l'emplacement est vide
+
+
+
+
+ a| 
+2
+ a| 
+Entraînement actif
+ a| 
+Bleu (clignotant) : accès au lecteur
+
+|===
+--
+
+
+--
 .SG5700
 --
 Les contrôleurs de l'appareil incluent des indicateurs qui vous aident à déterminer l'état du contrôleur de l'appareil :

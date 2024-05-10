@@ -1,0 +1,43 @@
+---
+permalink: sg110-1100/turning-sg110-and-sg1100-identify-led-on-and-off.html 
+sidebar: sidebar 
+keywords: sg110, sg1100, locate, find, locating, finding, identify, blue led, blue light 
+summary: 'Le voyant d"identification bleu situé à l"avant de l"appareil peut être allumé pour faciliter la localisation de l"appareil dans un centre de données.' 
+---
+= Allumer et éteindre le voyant d'identification du SG110 ou du SG1100
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le voyant d'identification bleu situé à l'avant et à l'arrière de l'appareil peut être allumé pour faciliter la localisation de l'appareil dans un centre de données.
+
+.Avant de commencer
+Vous disposez de l'adresse IP BMC de l'appliance que vous souhaitez identifier.
+
+.Étapes
+. link:../installconfig/accessing-bmc-interface.html["Accédez à l'interface BMC de l'appliance"].
+. Sélectionnez *identification du serveur*.
++
+L'état actuel de la LED Identify est sélectionné.
+
+. Sélectionnez *ON* ou *OFF*, puis sélectionnez *Exécuter l'action*.
++
+Lorsque vous sélectionnez *ACTIVÉ*, les voyants d'identification bleus s'allument à l'avant (illustration type) et à l'arrière de l'appareil.
+
++
+image::../media/sgf6112_front_panel_service_led_on.png[Voyant d'identification avant - allumé]
+
++
+
+NOTE: Si un panneau est installé sur le contrôleur, il peut être difficile de voir le voyant d'identification avant.
+
++
+Le voyant d'identification arrière se trouve au centre de l'appareil, sous le logement micro-SD.
+
+. Allumer et éteindre les LED Identify selon les besoins.
+
+
+.Informations associées
+link:locating-sg110-and-sg1100-in-data-center.html["Localisez l'appliance dans le data Center"]

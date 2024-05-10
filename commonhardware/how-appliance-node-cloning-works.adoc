@@ -44,11 +44,14 @@ Les appliances de remplacement doivent être du même type que le nœud source q
 
 * Une appliance de services de remplacement peut être différente du nœud d'administration ou du nœud de passerelle qu'elle remplace.
 +
-** Vous pouvez cloner une appliance de nœud source SG100 sur une appliance cible de services SG1000 pour offrir une plus grande capacité au nœud d'administration ou au nœud de passerelle.
-** Vous pouvez cloner une appliance de nœud source SG1000 sur une appliance cible de services SG100 afin de redéployer le SG1000 pour une application plus exigeante.
+** Vous pouvez cloner une appliance de nœud source SG100 vers une appliance cible de services SG110, SG1000 ou SG1100. Le clonage du système SG100 vers une appliance cible de services SG1000 ou SG1100 offre des fonctionnalités supérieures au nœud d'administration ou au nœud de passerelle.
+** Vous pouvez cloner une appliance de nœud source SG110 vers une cible d'appliance de services SG1100 afin d'optimiser les fonctionnalités du nœud d'administration ou du nœud de passerelle.
+** Vous pouvez cloner une appliance de nœud source SG1000 vers une appliance cible de services SG100, SG110 ou SG1100. Le clonage du système SG1000 sur une appliance cible de services SG100 ou SG110 vous permet de redéployer le système SG1000 pour une application plus exigeante.
+** Vous pouvez cloner une appliance de nœud source SG1100 vers une appliance cible de services SG110 afin de redéployer le SG1100 pour une application plus exigeante.
 +
-Par exemple, si une appliance de nœud source SG1000 est utilisée en tant que nœud d'administration et que vous souhaitez l'utiliser comme nœud d'équilibrage de charge dédié.
+Par exemple, si une appliance de nœud source SG1100 ou SG1000 est utilisée comme nœud d'administration et que vous souhaitez l'utiliser comme nœud d'équilibrage de charge dédié.
 
+** Le remplacement d'une appliance de nœud source SG1100 par une appliance de services cible SG110 réduit la vitesse maximale des ports réseau de 100 GbE à 25 GbE.
 ** Le remplacement d'une appliance de nœud source SG1000 par un dispositif cible de services SG100 réduit la vitesse maximale des ports réseau de 100 GbE à 25 GbE.
 ** Les appliances de services ont des connecteurs réseau différents. Il peut être nécessaire de remplacer les câbles ou les modules SFP pour changer de type d'appliance.
 

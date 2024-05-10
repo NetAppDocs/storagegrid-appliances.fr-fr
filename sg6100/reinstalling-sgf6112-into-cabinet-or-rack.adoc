@@ -81,4 +81,4 @@ NOTE: Pour éviter toute dégradation des performances, ne tordez pas, ne pliez 
 
 
 .Une fois que vous avez terminé
-link:powering-on-sgf6112-and-verifying-operation.html["Redémarrez l'appareil"].
+link:power-sgf6112-off-on.html#power-on-sgf6112-and-verify-operation["Redémarrez l'appareil"].

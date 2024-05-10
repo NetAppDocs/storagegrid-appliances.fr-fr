@@ -3,9 +3,6 @@
   <block id="daad4dadeda8cd86f01c8ad7f2a30465" category="summary">Découvrez les nouveautés de ce site de documentation.</block>
   <block id="896ec268e957d3c662f84637cbe5cff2" category="doc">Nouveautés des appliances</block>
   <block id="72537bf3eb1f84421991e3c2fd3c6510" category="paragraph">Découvrez les nouveautés des appliances StorageGRID.</block>
-  <block id="46e6e53b63575cf1827147a48464a879" category="section-title">Appliance 100 % Flash SGF6112</block>
-  <block id="0893c8e93b9a4b4059d6e5940b5fd595" category="inline-link-macro">Appliance SGF6112 : présentation</block>
-  <block id="88d0d4b73239c3f30645fd45a0392d6a" category="paragraph">La nouvelle appliance de stockage StorageGRID SGF6112 présente une conception compacte avec contrôleur de calcul et contrôleur de stockage intégré dans un châssis 1U. L'appliance prend en charge 12 disques NVMe SSD avec une capacité de stockage allant jusqu'à 15.3 To par disque. Les disques SSD font partie d'un système RAID qui fournit un stockage objet résilient. Voir <block ref="80483d1684bda77797911f6b469313f1" category="inline-link-macro-rx"></block>.</block>
   <block id="4e2d1b46d32d63f7b20c891a226971a0" category="summary">Vous pouvez modifier la configuration de la liaison Ethernet de l'appliance de services. Vous pouvez modifier le mode de liaison du port, le mode de liaison réseau et la vitesse de liaison.</block>
   <block id="e4d7bc194db0f2b04796f28dca2cb07d" category="doc">Modifier la configuration de la liaison de SG100 ou SG1000</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="list-title">Avant de commencer</block>
@@ -265,7 +262,6 @@
   <block id="64ad6f3be04a1b5eb460f6b5171db9c3" category="paragraph">Pour installer StorageGRID sur un nœud d'appliance de services :</block>
   <block id="81a6c5934583a0f8023199782ebc17af" category="list-text">Vous spécifiez ou confirmez l'adresse IP du nœud d'administration principal et le nom du nœud d'appliance.</block>
   <block id="06ecae27d7a22c2772946f8e600bf743" category="list-text">Vous démarrez l'installation et attendez que le logiciel soit installé.</block>
-  <block id="0ce5a69d66d806ec63dd1df1ede0f5ee" category="admonition">Ne déployez pas d'appliances de services SG100 et SG1000 sur le même site. Cela peut entraîner des performances imprévisibles.</block>
   <block id="7ce1391a56490e2996e89e8be0e35f46" category="inline-link-macro">Automatisez l'installation et la configuration de l'appliance</block>
   <block id="70b1698e02b884a3301d0682ae742bcc" category="admonition">Si vous devez déployer plusieurs nœuds d'appliance à la fois, vous pouvez automatiser le processus d'installation. Voir <block ref="da9e5f931ee7f07fa7e39b6838d21cb5" category="inline-link-macro-rx"></block>.</block>
   <block id="71993e8ea93f8d02397504df8a2f696f" category="list-text">Ouvrez un navigateur et saisissez l'adresse IP de l'appliance.</block>
@@ -1178,7 +1174,6 @@ Dans l'API de gestion de grille, utilisez le terminal privé :<block ref="d6808d
   <block id="5b06ccc1c03f3b182fcc3f498ea6ed33" category="list-text">Vérifiez l'affichage des sept segments à l'arrière de chaque contrôleur de stockage. Pour plus d'informations, reportez-vous à l'article sur l'affichage des codes d'état de démarrage.</block>
   <block id="4c879409f52a908e9d590c416599dad7" category="list-text">Vérifiez que le bouton d'alimentation situé à l'avant du contrôleur SG6000-CN est allumé.</block>
   <block id="9354327818f8e50e42cf51da6c8e515f" category="list-text">Si vous avez déposé le cadre avant, fixez-le au contrôleur SG6000-CN.</block>
-  <block id="1c7c4d0e82f24664cd89fa8aceb51d56" category="list-text">Si le bouton d'alimentation situé à l'avant de l'appareil SG6100-CN n'est pas actuellement allumé en bleu, appuyez sur le bouton pour mettre l'appareil sous tension.</block>
   <block id="d33b4aba25cf9772af1dbcbe99d64d41" category="paragraph">Le voyant du bloc d'alimentation doit être allumé en vert sans clignoter.</block>
   <block id="2f2db283f5abc325514875d486abdc79" category="paragraph"><block ref="2f2db283f5abc325514875d486abdc79" category="inline-link-macro-rx"></block></block>
   <block id="c0dcb6db5300484aab9ea95a8e1d1bdd" category="summary">Avant d'installer l'appareil StorageGRID, déballez toutes les boîtes et comparez le contenu aux éléments du bordereau d'expédition.</block>
@@ -1347,7 +1342,6 @@ Dans l'API de gestion de grille, utilisez le terminal privé :<block ref="d6808d
   <block id="a84b5f1afdd502c061024370bfc6a952" category="section-title">Schémas SG100 et SG1000</block>
   <block id="0b818dd339956b64673c11bfeffba91c" category="paragraph">Cette figure montre l'avant du SG100 et du SG1000 avec le cadre retiré. À partir de l'avant, les deux appareils sont identiques, à l'exception du nom du produit sur le cadre.</block>
   <block id="28989aff1888ad2b7678074c0b2967d1" category="image-alt">Avant avec SSD SG100 et SG1000</block>
-  <block id="dfcfdfb340da954210315d11a2bd0c61" category="paragraph">Les deux disques SSD, dont le contour est orange, peuvent être utilisés pour stocker le système d'exploitation StorageGRID et sont mis en miroir avec RAID 1 pour la redondance. Lorsque l'appliance de services SG100 ou SG1000 est configurée comme un nœud d'administration, ces disques servent à stocker les journaux d'audit, les metrics et les tables de bases de données.</block>
   <block id="6610dc47f2f5383953ec2a1621ffb22e" category="paragraph">Les emplacements de lecteur restants sont vides.</block>
   <block id="e2df10e153cb8c16dadcf714811ec619" category="section-title">Connecteurs SG100</block>
   <block id="d6e5389fc7987a2d5338515d74fde402" category="paragraph">Cette figure montre les connecteurs à l'arrière du SG100.</block>
@@ -1449,9 +1443,7 @@ Dans l'API de gestion de grille, utilisez le terminal privé :<block ref="d6808d
   <block id="259f7ff6cc8d64b66cba93a17304c3d6" category="inline-link-macro">Vérifiez les connexions réseau au niveau des ports</block>
   <block id="b2d8ae65d08c0fc7e0d796288b2adabe" category="list-text"><block ref="b2d8ae65d08c0fc7e0d796288b2adabe" category="inline-link-macro-rx"></block></block>
   <block id="c02e34b6a88ae18cf515d08b091effd3" category="inline-link-macro">Accès à SANtricity System Manager et configuration de celui-ci</block>
-  <block id="54c6ec78161cbcd94d065b290ed99d0d" category="list-text"><block ref="0c770b188189664197ca2af9c5ce06a6" category="inline-link-macro-rx"></block> (SG6000 et SG5700)</block>
   <block id="b24644fb0cb0d2175187599360704730" category="inline-link-macro">Configurez l'interface BMC</block>
-  <block id="cf7c4bd5320fcf86408777d5f9a4fe0c" category="list-text"><block ref="e010cba544d581fc50562d9eaf281bf3" category="inline-link-macro-rx"></block> (SG100, SG1000, SG6000 ET SG6100)</block>
   <block id="6efb63c9dddb08a981caced6ecaa7231" category="list-text">Effectuez les étapes de configuration facultatives</block>
   <block id="1769437c445032226853842293627464" category="inline-link-macro">Activez le chiffrement des nœuds ou des disques</block>
   <block id="0dce870abc630014d0799a7b47dfd01e" category="list-text"><block ref="0dce870abc630014d0799a7b47dfd01e" category="inline-link-macro-rx"></block></block>
@@ -1507,7 +1499,6 @@ Dans l'API de gestion de grille, utilisez le terminal privé :<block ref="d6808d
   <block id="d9f435cb7a4ab03ce6a9dd9556ec754d" category="list-text">Changer de mode RAID</block>
   <block id="8bcdd04428a0e463b5d2942eb52fa7a4" category="list-text">Accéder à l'interface BMC du contrôleur SG6000-CN</block>
   <block id="bf6a9db479978eb4f9d757484d56488a" category="list-text">Appliances de services</block>
-  <block id="ac941add132fd73a9ca0fd82f948c217" category="list-text">Accédez à l'interface BMC pour le SG100 ou le SG1000</block>
   <block id="d66b55cd8d763d06c15eb0e4ec520f0a" category="doc">Dépannage de l'installation du matériel (SG100 et SG1000)</block>
   <block id="2fe63d2b3f22e322fc5a2471a0057de8" category="list-text">Vous savez comment <block ref="de1e0aa09b9ef96e751421d7f7e86d04" category="inline-link-macro-rx"></block>.</block>
   <block id="114f2dd347c68bd8b5310e02290324cd" category="list-text">Connectez-vous au port série DB-9 situé à l'arrière de l'appareil.</block>
@@ -1642,7 +1633,6 @@ Dans l'API de gestion de grille, utilisez le terminal privé :<block ref="d6808d
   <block id="edc8f42c5d3c1c2a2922bf75112aa76a" category="list-text">*Réseau d'administration pour StorageGRID* : le réseau d'administration est un réseau fermé utilisé pour l'administration et la maintenance du système. Le réseau Admin est généralement un réseau privé et n'a pas besoin d'être routable entre les sites. Le réseau d'administration est facultatif.</block>
   <block id="a43ab4ec6314775efb16fdcbad06d69a" category="list-text">*Réseau client pour StorageGRID :* le réseau client est un réseau ouvert utilisé pour fournir un accès aux applications client, y compris S3 et Swift. Le réseau client fournit un accès au protocole client à la grille, de sorte que le réseau Grid puisse être isolé et sécurisé. Vous pouvez configurer le réseau client de sorte que l'appliance soit accessible via ce réseau en utilisant uniquement les ports que vous choisissez d'ouvrir. Le réseau client est facultatif.</block>
   <block id="7ac9f844973adf1cc467bcd4a52f52d5" category="list-text">*Réseau de gestion pour SANtricity* (facultatif pour les dispositifs de stockage, non requis pour le SG6100) : ce réseau permet d'accéder à SANtricity System Manager, ce qui vous permet de surveiller et de gérer les composants matériels de l'appliance et du tiroir du contrôleur de stockage. Ce réseau de gestion peut être le même que le réseau d'administration pour StorageGRID, ou il peut s'agir d'un réseau de gestion indépendant.</block>
-  <block id="28a542bc07290f8a1b1447961bf9fa60" category="list-text">*Réseau de gestion BMC* (en option pour SG100, SG1000, SG6000 et SG6100) : ce réseau permet d'accéder au contrôleur de gestion de la carte de base des appliances SG100, SG1000, SG6000 et SG6100, ce qui vous permet de surveiller et de gérer les composants matériels de l'appliance. Ce réseau de gestion peut être le même que le réseau d'administration pour StorageGRID, ou il peut s'agir d'un réseau de gestion indépendant.</block>
   <block id="660fc24fc18dd99919bb0bc5149a6c14" category="paragraph">Si le réseau de gestion BMC facultatif n'est pas connecté, certaines procédures de support et de maintenance seront plus difficiles à réaliser. Vous pouvez ne pas connecter le réseau de gestion BMC, sauf si nécessaire à des fins de support.</block>
   <block id="735397a80f406e1834aa096854796f06" category="admonition">Pour plus d'informations sur les réseaux StorageGRID, reportez-vous au<block ref="37d143d6aa4e97202e0da5da8774331d" category="inline-link-rx"></block>.</block>
   <block id="536913eab1d549cf61908a5576a405e6" category="summary">Une fois que vous avez installé et configuré les nœuds grid, vous pouvez automatiser la configuration du système StorageGRID.</block>
@@ -1731,7 +1721,6 @@ Dans l'API de gestion de grille, utilisez le terminal privé :<block ref="d6808d
   <block id="d5db6ba99ab0efffe356662c3fc55f4c" category="list-text">Si vous disposez de tiroirs d'extension, répétez cette procédure pour installer 12 disques durs dans chaque tiroir de chaque tiroir d'extension.</block>
   <block id="9cdf68498d339fb0d7d4e4972e1695ce" category="list-text">Reportez-vous aux instructions d'installation du SG6000-CN dans une armoire ou un rack.</block>
   <block id="875693c8e94a9b6f2e275d5162bb0123" category="summary">L'interface utilisateur du contrôleur de gestion de la carte de base \(BMC\) sur le système SG6100, SG6000 ou services fournit des informations sur l'état du matériel et vous permet de configurer les paramètres SNMP et d'autres options pour les appliances.</block>
-  <block id="ed9644f5ceef6febeee33082dacb1a73" category="doc">Interface BMC : présentation (SG100, SG1000, SG6000 et SG6100)</block>
   <block id="ee36a41933a8c47ba8eb1d5246ea022f" category="paragraph">L'interface utilisateur du contrôleur BMC (Baseboard Management Controller) sur le système SG6100, SG6000 ou services fournit des informations sur l'état du matériel et vous permet de configurer les paramètres SNMP et d'autres options pour les appliances.</block>
   <block id="81f3a517925abf11c2bf8f4ed6207237" category="paragraph">Utilisez les procédures suivantes de cette section pour configurer le contrôleur BMC lors de l'installation de l'appliance :</block>
   <block id="961d7f5d7663b6dc951b5e5c4774580d" category="list-text"><block ref="961d7f5d7663b6dc951b5e5c4774580d" category="inline-link-macro-rx"></block></block>
@@ -2449,7 +2438,6 @@ Dans l'API de gestion de grille, utilisez le terminal privé :<block ref="d6808d
   <block id="622dedd3d9518bbe8333a11e6a3906f0" category="list-text">Les quatre câbles optiques fournis avec l'appareil permettent de connecter les deux contrôleurs de stockage au contrôleur SG6000-CN.</block>
   <block id="482c49b0c4f478c3a53f43e2d9354ea9" category="list-text">Vous disposez de câbles Ethernet RJ-45 (quatre minimum) pour connecter les ports de gestion.</block>
   <block id="c7aa0392cfcfae7f9063e19db3429311" category="list-text">Un à quatre émetteurs-récepteurs SFP+ ou SFP28 si vous prévoyez d'utiliser des câbles optiques pour les ports.</block>
-  <block id="40cc77eb24c46b897428cdf99359f949" category="paragraph">Les figures suivantes illustrent les trois contrôleurs des appliances SG6060 et SG6060X, avec le contrôleur de calcul SG6000-CN en haut et les deux contrôleurs de stockage E2800 en bas. Le SG6060 utilise des contrôleurs E2800A et le SG606060X utilise des contrôleurs E2800B.</block>
   <block id="c5da69b0daeee585efd14cbdcd95f9c0" category="admonition">Les deux versions du contrôleur E2800 présentent les mêmes spécifications et fonctionnent, à l'exception de l'emplacement des ports d'interconnexion.</block>
   <block id="85ac648b274fe5b9984597982dd7afad" category="admonition">N'utilisez pas de contrôleur E2800A et E2800B dans le même appareil.</block>
   <block id="2c921c8eaa2b387f856a217c368c4a73" category="paragraph">Connexions SG6060 :</block>
@@ -2900,7 +2888,6 @@ Une fois la mise à niveau actuelle terminée, téléchargez le fichier SANtrici
   <block id="f2f4d90ef6566a91f0d4ee0f2bd0c0cf" category="list-text">Faites pivoter le loquet du capot vers l'avant et vers le bas jusqu'à ce qu'il s'arrête et que le capot s'insère complètement dans le châssis. Vérifier qu'il n'y a pas d'espace le long du bord avant du couvercle.</block>
   <block id="68abdeb4de4c03b18880696414098033" category="paragraph">Si le capot n'est pas bien en place, il se peut que vous ne puissiez pas faire glisser l'appareil dans le rack.</block>
   <block id="bad1c962977ca3ccc3125850f38447b4" category="list-text">En option : tournez d'un quart de tour le verrou en plastique bleu dans le sens de verrouillage, comme illustré sur le verrou, pour le verrouiller.</block>
-  <block id="d786a607ae8af0f0cd8359b84322ac13" category="admonition">Les modifications apportées à la configuration IP lorsque l'appliance est en mode de maintenance ne sont pas appliquées à l'environnement StorageGRID installé. Exécutez le lien :../maintain/changing-nodes-network-configuration.html<block ref="921c87cca9b14f15a73f4570ad9f3247" prefix="[" category="inline-code"></block> Commande] après le redémarrage de l'appliance dans StorageGRID.</block>
   <block id="1b87de5ab81f4f92cfa077be2e09d040" category="admonition">Vous risquez de perdre votre connexion si vous avez apporté des modifications au réseau ou au lien auquel vous êtes connecté. Si vous n'êtes pas reconnecté dans un délai d'une minute, saisissez à nouveau l'URL du programme d'installation de l'appliance StorageGRID à l'aide de l'une des autres adresses IP attribuées à l'appliance :<block ref="7cb9429482151be5ab9338810b072fc0" prefix=" " category="inline-code"></block></block>
   <block id="b318d18a01124d748f6ccb12b914c2dc" category="paragraph">En plus des autres tests que vous choisissez d'effectuer, confirmez que vous pouvez envoyer une commande ping à l'adresse IP du réseau de la grille du nœud d'administration principal et à l'adresse IP du réseau de la grille d'au moins un autre nœud. Si nécessaire, retournez aux instructions de configuration des liaisons réseau et corrigez les problèmes éventuels.</block>
   <block id="f127bf70eac06d5cd43bc646d9b61a11" category="list-text">Lorsque vous êtes satisfait du fonctionnement des modifications de configuration de la liaison, redémarrez le nœud. Dans le programme d'installation de l'appliance StorageGRID, sélectionnez *Avancé* &gt; *redémarrer le contrôleur*, puis sélectionnez l'une des options suivantes :</block>
@@ -2910,9 +2897,7 @@ Une fois la mise à niveau actuelle terminée, téléchargez le fichier SANtrici
   <block id="c97a80297e486669f93485561c3164ed" category="admonition">Si vous avez déjà utilisé une règle ILM pour créer une seule copie d'un objet, vous devez remplacer le ventilateur lors d'une fenêtre de maintenance planifiée. Sinon, vous risquez de perdre temporairement l'accès à ces objets au cours de cette procédure. Voir informations sur<block ref="f69c469323896c5f53b0b141dcfc1ae2" category="inline-link-rx"></block>.</block>
   <block id="aa7a430b5102e55ec29d486c5165e7ba" category="paragraph">La photo montre un ventilateur pour l'appareil. Le connecteur électrique est mis en surbrillance. Les ventilateurs de refroidissement sont accessibles après avoir pris le capot supérieur de l'appareil.</block>
   <block id="dc55836577fc02b16cce59c34c0bd0f3" category="admonition">Chacun des deux blocs d'alimentation contient également un ventilateur. Les ventilateurs du bloc d'alimentation ne sont pas inclus dans cette procédure.</block>
-  <block id="714a2b4dc29fd72668c8e5e36bf4b8c8" category="image-alt">Ventilateur SGF6112 FRU</block>
   <block id="c36b4cc7c715c27cf89053ed16076b2a" category="list-text">Localisez le ventilateur que vous devez remplacer.</block>
-  <block id="d7e7ea11b214fe9c3389d9e2bb1a9335" category="paragraph">Les huit ventilateurs se trouvent dans les positions suivantes dans le châssis (la moitié avant du SGF6112 avec le capot supérieur retiré est illustrée) :</block>
   <block id="faaae5a36ccc39581b4a36a48818db1a" category="image-alt">Emplacements des ventilateurs</block>
   <block id="9fc41f5c47cf13c3dacfca6f1e20a227" category="cell">Ventilateur</block>
   <block id="20466611954593695b4f1b6b35f973bf" category="paragraph">Fan_SYS0</block>
@@ -2946,7 +2931,6 @@ Une fois la mise à niveau actuelle terminée, téléchargez le fichier SANtrici
   <block id="c9c36506fb741805088a0cbb00459a23" category="list-text">Retirez la pile CMOS de son emballage.</block>
   <block id="3e165c924e3bd4588b57bd761d4f07e0" category="list-text">Appuyez sur la batterie de remplacement dans le support vide de la carte système, côté positif (+) vers le haut jusqu'à ce que la batterie s'enclenche.</block>
   <block id="9cf7c93fc766c56873c1ddd46447d057" category="list-text">Repérez le trou d'alignement de l'assemblage de la carte de montage à deux emplacements (encerclé) qui s'aligne sur la broche de guidage de la carte système afin de garantir un positionnement correct de l'assemblage de la carte de montage.</block>
-  <block id="f9df26f43e7cbb8a8facb5017b47ccbe" category="list-text">Repérez la broche de guidage sur la carte système.</block>
   <block id="e2ca2c1368ac8b9d1d8e5571f1857efd" category="image-alt">Broche de guidage sur la carte système pour l'assemblage de carte de montage à deux emplacements</block>
   <block id="f456f175997595ccbac05b05c7dbc0d8" category="inline-link-macro">saisissez la phrase de passe de cryptage du lecteur</block>
   <block id="46f19b3ee8dedf83d42c3a4ff5d0c6bb" category="list-text">Si l'appliance que vous avez remplacée utilisait un serveur de gestion des clés (KMS) pour gérer les clés de chiffrement afin que le nœud puisse rejoindre la grille, d'autres configurations peuvent être requises. Si le nœud ne rejoint pas automatiquement la grille, assurez-vous que ces paramètres de configuration ont été transférés vers la nouvelle appliance et configurez manuellement les paramètres qui ne possèdent pas la configuration attendue :</block>
@@ -2954,7 +2938,6 @@ Une fois la mise à niveau actuelle terminée, téléchargez le fichier SANtrici
   <block id="5d5e7579cc415f2940c02cee9b12c42d" category="inline-link">Configurez le chiffrement des nœuds pour l'appliance</block>
   <block id="0a5611066cc6dfa6acb00a3c98785ae8" category="list-text"><block ref="0a5611066cc6dfa6acb00a3c98785ae8" category="inline-link-rx"></block></block>
   <block id="6c60c1ebcaf910de2a51a8c828bc0f5e" category="list-text">Connectez-vous à l'appliance :</block>
-  <block id="173a66e0398614aa76b044a28acb6ae2" category="list-text">Restaurez la connectivité réseau du contrôleur BMC pour l'appliance à l'aide de l'une des options suivantes :</block>
   <block id="350f00799e345da9d8437a6755232692" category="paragraph">Vous disposez de l'adresse IP BMC de l'appliance que vous souhaitez identifier.</block>
   <block id="12d42de975e694d332bec59aed70bded" category="inline-link-macro">Accédez à l'interface BMC de l'appliance</block>
   <block id="8b999a1febaa917ddad3d11fc533934c" category="list-text"><block ref="255c862e8a70f96afa658300e7161668" category="inline-link-macro-rx"></block>.</block>
@@ -3096,9 +3079,6 @@ Pour redémarrer le clonage du nœud source, redémarrez le processus de clonage
   <block id="e8d170c1d01b5214a9b97ee8fbc40398" category="section-title">Compatibilité de l'appareil cible</block>
   <block id="6cca792a53335169aad8581043148997" category="paragraph">Les appliances de remplacement doivent être du même type que le nœud source qu'elles remplacent et doivent tous deux faire partie du même site StorageGRID logique.</block>
   <block id="3514507af11b532760b83d61e1cfa58d" category="list-text">Une appliance de services de remplacement peut être différente du nœud d'administration ou du nœud de passerelle qu'elle remplace.</block>
-  <block id="53128132390930a1f8d6c6d9519248df" category="list-text">Vous pouvez cloner une appliance de nœud source SG100 sur une appliance cible de services SG1000 pour offrir une plus grande capacité au nœud d'administration ou au nœud de passerelle.</block>
-  <block id="0ed5f431751e37ac1ff96feb9134f783" category="list-text">Vous pouvez cloner une appliance de nœud source SG1000 sur une appliance cible de services SG100 afin de redéployer le SG1000 pour une application plus exigeante.</block>
-  <block id="55f00cb7cf66e41ad1054fc5507a2e0a" category="paragraph">Par exemple, si une appliance de nœud source SG1000 est utilisée en tant que nœud d'administration et que vous souhaitez l'utiliser comme nœud d'équilibrage de charge dédié.</block>
   <block id="8853412a153551cfcaa29f811be54d2a" category="list-text">Le remplacement d'une appliance de nœud source SG1000 par un dispositif cible de services SG100 réduit la vitesse maximale des ports réseau de 100 GbE à 25 GbE.</block>
   <block id="953cb2571b5956e3ac9d0120f56a1235" category="list-text">Les appliances de services ont des connecteurs réseau différents. Il peut être nécessaire de remplacer les câbles ou les modules SFP pour changer de type d'appliance.</block>
   <block id="f99ba690ef7c0b4d695af7ef97254d6b" category="list-text">Une appliance de stockage de remplacement doit avoir une capacité supérieure à celle du nœud de stockage qu'elle remplace.</block>
@@ -3374,7 +3354,6 @@ Pour redémarrer le clonage du nœud source, redémarrez le processus de clonage
   <block id="c5e193e61c8068cebd4cb4fba2c27866" category="inline-link-macro">Rebranchez les câbles d'alimentation du contrôleur</block>
   <block id="b6b0dd970889f43cc1c52597b7622743" category="list-text"><block ref="6f9f5a65c301bc92abf7bdeee5c6a76d" category="inline-link-macro-rx"></block>.</block>
   <block id="37abf98b4de9f33857b199b4587f5694" category="inline-link-macro">Redémarrez l'appareil</block>
-  <block id="e5286716c2baaaba3a8565ab8ef46806" category="paragraph"><block ref="1dd8d3f4f8b694bd6a574f797efa8d57" category="inline-link-macro-rx"></block>.</block>
   <block id="75a0a5a5fe162a7f9fdba4837463d44f" category="summary">Le voyant d'identification bleu situé à l'avant de l'appareil peut être allumé pour faciliter la localisation de l'appareil dans un centre de données.</block>
   <block id="6f0e600a24fecbdf20f99f186e630c00" category="doc">Allumer et éteindre le voyant d'identification de l'appliance SGF6112</block>
   <block id="debdd98b0f5a40d3b21e412c9c782a4d" category="paragraph">Le voyant d'identification bleu situé à l'avant et à l'arrière de l'appareil peut être allumé pour faciliter la localisation de l'appareil dans un centre de données.</block>
@@ -3382,7 +3361,6 @@ Pour redémarrer le clonage du nœud source, redémarrez le processus de clonage
   <block id="48ce381161753a96507e349f7aa77165" category="paragraph"><block ref="48ce381161753a96507e349f7aa77165" category="inline-link-macro-rx"></block></block>
   <block id="93fbb9aaa73dda71ec648251dcaa9967" category="summary">Vous devrez peut-être effectuer des procédures de maintenance sur votre appareil. Cette section présente les procédures spécifiques à la maintenance de votre système SG6100.</block>
   <block id="64afa9c486f46d037a09b05e70cd8b61" category="paragraph">Les procédures décrites dans cette section supposent que l'appliance a déjà été déployée en tant que nœud de stockage dans un système StorageGRID.</block>
-  <block id="1a8829c74e638f60318ff0a8272ab9bb" category="paragraph">*Les procédures de maintenance de la configuration* sont effectuées à l'aide de l'interface Appliance installer, Grid Manager ou BMC. Ces procédures comprennent :</block>
   <block id="3b7a76fa87690a443242d6944757d7d3" category="inline-link-macro">Allumer et éteindre le voyant d'identification de l'appareil</block>
   <block id="6f322a9b2088ce2fcdc4d2570ab4bd4a" category="list-text"><block ref="6f322a9b2088ce2fcdc4d2570ab4bd4a" category="inline-link-macro-rx"></block></block>
   <block id="68f44a5f426fd13a4802cb01ac1d7315" category="list-text"><block ref="68f44a5f426fd13a4802cb01ac1d7315" category="inline-link-macro-rx"></block></block>
@@ -4079,7 +4057,6 @@ Voir les informations sur la gestion des objets avec la gestion du cycle de vie 
   <block id="31e40175f2d3fefac38304e359c80e94" category="sidebar">Clonage de nœuds</block>
   <block id="bf4407ec23ea65719897cbdb78263587" category="sidebar">Exigences de clonage des nœuds</block>
   <block id="ff5cd15e6095aa49c820a70173a97926" category="sidebar">Maintenance spécifique de l'appareil</block>
-  <block id="bc496fc4f5adb6c66aa628a721d4b883" category="sidebar">SG1000 et SG100</block>
   <block id="b82ff6cc8b54f013ccfe94afdb37a599" category="sidebar">APPLIANCE SG5600</block>
   <block id="f36d580564cf2b56f88491948411d4ab" category="sidebar">Installez l'appliance de stockage dans l'armoire ou le rack</block>
   <block id="701c74b841bd25ba8469d3424654b5c9" category="sidebar">Installez l'appliance de services en armoire ou en rack</block>
@@ -4095,7 +4072,6 @@ Voir les informations sur la gestion des objets avec la gestion du cycle de vie 
   <block id="5e77e4e9d10272660f06e394cf1f9698" category="sidebar">Démarrage rapide de l'installation de l'appareil</block>
   <block id="dbafed3b69ea2c476ecca29b838eebf3" category="sidebar">Automatisez l'installation et la configuration</block>
   <block id="a8b2e04cc6d2b7928d150b7f392c761a" category="sidebar">Présentation des appareils</block>
-  <block id="6ea6a276a0e2f68264ddca0d8045ae5e" category="sidebar">SG6100 (nouveau)</block>
   <block id="f9f44cf635afea4827c5ef9038b46622" category="sidebar">Déployez le nœud de l'appliance</block>
   <block id="2d4f4568ad652ff08727bc044f1373cc" category="sidebar">Logiciel StorageGRID</block>
   <block id="7bb5d1e21ca0bacc168d63d7155d3755" category="sidebar">Documentation StorageGRID 11.8</block>
@@ -4124,7 +4100,6 @@ Voir les informations sur la gestion des objets avec la gestion du cycle de vie 
   <block id="0862353a6639a2cdaca55ba2fcbb8033" category="sidebar">Installez le SG6000 dans l'armoire ou le rack</block>
   <block id="1779ca6984a3582b9c1a3c02d22c730c" category="sidebar">Installation du contrôleur SG6000-CN (SG6024 et SG6060)</block>
   <block id="345a844566607ddc6e73586a30452787" category="sidebar">Configuration de SANtricity System Manager (SG5700 et SG6000)</block>
-  <block id="1c4078edbfed6cccf640c5627c0c0678" category="sidebar">Configuration de l'interface BMC (SG100, SG1000, SG6000 et SG6100)</block>
   <block id="682329c411688c214c3b69d3c9177018" category="sidebar">Modifier le mot de passe root</block>
   <block id="f1ddfd50d289ca1496b137a55f34fd6d" category="sidebar">Configurez les notifications par e-mail</block>
   <block id="99f776141c73b268838def5e1fcf8f15" category="sidebar">Facultatif : remap les ports réseau</block>
@@ -4135,8 +4110,6 @@ Voir les informations sur la gestion des objets avec la gestion du cycle de vie 
   <block id="77d2b0ac8e200595c2f4d240b0c80f51" category="sidebar">Maintenance de la configuration de l'appliance (tous les nœuds)</block>
   <block id="48889e269a4d7fca4c265f4a2f877e26" category="sidebar">Maintenance du matériel SG6100</block>
   <block id="14975bfde92215c95436649cec8f726d" category="sidebar">Maintenance du matériel SG6100</block>
-  <block id="4629e39933bc05a37d7d157d0c146d88" category="sidebar">Procédures de maintenance de la configuration</block>
-  <block id="2e2721e5bb6cda8413dddd5a3a61b1c0" category="sidebar">Procédures de maintenance de la configuration - SG6100</block>
   <block id="43669fdd9ce1157a7238aa25102bb3ab" category="sidebar">Utilisez l'onglet gérer les lecteurs</block>
   <block id="26b6d36b296274fea73c7b0861022842" category="sidebar">Mettez l'appareil hors tension et sous tension</block>
   <block id="f038cfedcecfda2c0df73e7e4b3e5a5f" category="sidebar">Procédures de maintenance du matériel</block>
@@ -4257,4 +4230,214 @@ Voir les informations sur la gestion des objets avec la gestion du cycle de vie 
   <block id="f90f2ceee9e0e6f2c8dc65452c0e826d" category="paragraph">Le programme d'installation de l'appliance StorageGRID sur les nœuds source et cible indique un état similaire.</block>
   <block id="dbfeead225216a2d779b955a8689e759" category="admonition">Si l'appliance cible ne rejoint pas la grille, accédez à la page d'accueil du programme d'installation de l'appliance StorageGRID pour le nœud source, sélectionnez *Avancé* &gt; *redémarrer le contrôleur*, puis sélectionnez *redémarrer en mode de maintenance*. Après le redémarrage du nœud source en mode maintenance, répétez la procédure de clonage de nœuds.</block>
   <block id="49bf1a3f02b06cc3de5eca98cee41dba" category="list-text">Les données utilisateur restent sur l'appliance source comme option de restauration si un problème inattendu se produit avec le nœud cible. Une fois que le nœud cible a rejoint StorageGRID, les données utilisateur de l'appliance source sont obsolètes et ne sont plus nécessaires.</block>
+  <block id="3b5a3c695e5378023df688e790ada7b4" category="summary">Maintenance du matériel de votre appliance de services SG1100 et SG110.</block>
+  <block id="d751b295bd431b789da8da77d91a8a1d" category="doc">Maintenance du matériel des appliances de services SG1100 et SG110</block>
+  <block id="70bca0055a2d38054af0059da4e459ed" category="inline-link-macro">SG110 et SG1100</block>
+  <block id="9310c6e3b94e3baa60a2b31f7b80cc71" category="list-text"><block ref="9310c6e3b94e3baa60a2b31f7b80cc71" category="inline-link-macro-rx"></block></block>
+  <block id="f1c7efda23b762cfe6e972e421fb54f8" category="list-text"><block ref="0c770b188189664197ca2af9c5ce06a6" category="inline-link-macro-rx"></block> (SG5700 et SG6000)</block>
+  <block id="e3654db4a646d23dc2d3d64204192d91" category="list-text"><block ref="e010cba544d581fc50562d9eaf281bf3" category="inline-link-macro-rx"></block> (SG6000, SG6100 et appliances de services)</block>
+  <block id="aadf1dcd60cf75ec60913a8a677fcd35" category="list-text">Pour le SG110, un à quatre émetteurs-récepteurs SFP+ ou SFP28 si vous prévoyez d'utiliser des câbles optiques pour les ports.</block>
+  <block id="11a92f98e01c18d06291aad0e993ba9b" category="list-text">Pour le SG1100, un à quatre émetteurs-récepteurs QSFP+ ou QSFP28 si vous prévoyez d'utiliser des câbles optiques pour les ports.</block>
+  <block id="7be200e96b3561254643e0c9ae88d200" category="paragraph">Connexions du port SG110 :</block>
+  <block id="4847cd73c56bfcf0a81879e0f8566e03" category="image-alt">Connecteurs arrière du SG110</block>
+  <block id="efa56b23619be44c1edbb8104e56aee7" category="paragraph">Connexions du port SG1100 :</block>
+  <block id="d12ed4a582d120ead36ad1003ad9be52" category="list-text">Pour le SG110 : 10/25 GbE</block>
+  <block id="5a7820dde5654ab76fc1cbd150870c79" category="list-text">Pour le SG1100 : 10/25/40/100 GbE</block>
+  <block id="d8eb0a72dfa8ed2d5ab5e115e3517823" category="inline-link-macro">Modes de liaison de port (SG110 et SG1100)</block>
+  <block id="2bf13c0d2115d6f9d68cd07ae8122eba" category="paragraph">Connectez-vous au réseau Grid et au réseau client pour StorageGRID. Voir <block ref="2d94b3a29297ea0d5c8d287ca16f56f8" category="inline-link-macro-rx"></block></block>
+  <block id="105b9ed0aaa84d2bba41a7b8dbff5bf2" category="paragraph">Port réseau d'administration de l'appliance</block>
+  <block id="81947e39c5dfaeb209b9d5d46a5f214e" category="cell">Vitesse de liaison SG110 (GbE)</block>
+  <block id="dce2124d604851b9d974b519c3d112b3" category="cell">Vitesse de liaison SG1100 (GbE)</block>
+  <block id="b7b297cde875bcc6e3d13f1b9826b7ba" category="paragraph">Les figures suivantes illustrent les trois contrôleurs des appliances SG6060 et SG6060X, avec le contrôleur de calcul SG6000-CN en haut et les deux contrôleurs de stockage E2800 en bas. Le SG6060 utilise des contrôleurs E2800A et le SG606060X utilise l'une des deux versions de contrôleur E2800B.</block>
+  <block id="d4b36e25c7ff304278d8f8203382ad65" category="list-text">Version 1</block>
+  <block id="425d8e1e777a03c3e220dfaac38dbf1f" category="list-text">Version 2</block>
+  <block id="b47d572334b5a2d49d83db2f13386984" category="admonition">Si les émetteurs-récepteurs FC du contrôleur E2800B sont installés dans les ports de connexion FC supérieurs (6), déplacez-les vers les ports de connexion FC inférieurs droits (7).</block>
+  <block id="6eeb10812f878395fd42337316644656" category="admonition">L'association d'appliances de services avec différents niveaux de performance sur le même site, comme un système SG100 ou SG110 avec un système SG1000 ou SG1100, peut entraîner des résultats imprévisibles et incohérents lors de l'utilisation de plusieurs nœuds dans un groupe à haute disponibilité ou de l'équilibrage de la charge des clients sur plusieurs appliances de services.</block>
+  <block id="9624989f81bd52d3ffbdafbb5e213112" category="list-text">SG110</block>
+  <block id="f067c1ad51f888c421e417d3c8174d73" category="list-text">SG1100</block>
+  <block id="7372a975d9635ea096cdb2e16635d786" category="list-text">Accédez à l'interface BMC pour les systèmes SG100, SG110, SG1000 et SG1100</block>
+  <block id="db9ca1297cfefe282f7bf704613373d2" category="inline-link-macro">Modifier la configuration de la liaison de l'appliance de services SG110 ou SG1100</block>
+  <block id="819eab2ae3e43020e15c4fc95f7ca327" category="list-text"><block ref="819eab2ae3e43020e15c4fc95f7ca327" category="inline-link-macro-rx"></block></block>
+  <block id="fdb721fb29bb12d395a4c90d75692893" category="doc">Dépannage de l'installation matérielle (SG110 et SG1100)</block>
+  <block id="1c8c4e98a896cf2ad92d989eaeee5a54" category="doc">INTERFACE BMC : PRÉSENTATION (SG100, SG110, SG1000, SG1100, SG6000, et SG6100)</block>
+  <block id="65e3a43d7f14275aee46dca655a5201f" category="list-text"><block ref="8a17bb4a8f8c3bd8049fbe657de9b51a" category="inline-xref-macro-rx"></block></block>
+  <block id="7265f603fb8b474e3a419ac242490013" category="list-text"><block ref="b6a11a205501ec5e39f6cf064746681c" category="inline-xref-macro-rx"></block></block>
+  <block id="7844be79442a1f1fad55f9da176b627e" category="list-text"><block ref="be6fab1e0dd362a8d9a11399bc350f55" category="inline-xref-macro-rx"></block></block>
+  <block id="f968bb219612a257c41171656737117f" category="inline-link-macro">Dépanner l'installation matérielle des systèmes SG110 et SG1100</block>
+  <block id="c0a584d4f9599ff521011752760b603a" category="paragraph">Utilisez ces informations pour vous aider <block ref="948381f0a6f9865418651bea4346a2f1" category="inline-link-macro-rx"></block>.</block>
+  <block id="c46d134b23d9b2e563bf4be88b43e659" category="paragraph">La figure suivante montre les voyants et les boutons des appareils SG110 et SG1100.</block>
+  <block id="387739340ec21ff77eb9e92d094b5b92" category="image-alt">Clignotants avant - SG110 et SG1100</block>
+  <block id="587a73f22155129c5ce79bff0c6b56b1" category="paragraph">Cette lampe n'est pas utilisée par les appareils SG110 et SG1100 et reste éteinte.</block>
+  <block id="d01d11481ba69485897f98be94d33893" category="paragraph">La figure suivante présente les voyants SSD des appliances SG110 et SG1100.</block>
+  <block id="4c37ef1bac30cedcc77f06e0f26cd9f3" category="image-alt">Port de gestion du contrôleur BMC SG110</block>
+  <block id="746d15603774fdc0343b8559c77603d4" category="image-alt">Port de gestion BMC SG1100</block>
+  <block id="12f4c4afd397818417fc7cbaedce23b1" category="doc">Installation dans l'armoire ou le rack (SG110 ou SG1100)</block>
+  <block id="3a57cd1d68c79d483d99967be7f6a359" category="paragraph">Les deux disques SSD (Solid-State Drives), indiqués par le contour orange, sont utilisés pour stocker le système d'exploitation StorageGRID et sont mis en miroir avec RAID 1 pour la redondance. Lorsque l'appliance de services SG100 ou SG1000 est configurée en tant que nœud d'administration, ces disques peuvent être utilisés pour stocker les journaux d'audit, les metrics et les tables de base de données.</block>
+  <block id="63f4b50949264b8c54be43e2d12d082a" category="list-text">SG110 ou SG1100</block>
+  <block id="bd6d0b79af19a1baecedcd634248d8ca" category="image-alt">Disques frontaux, appliances SG110 et SG1100</block>
+  <block id="e7d8a7ce9695b24defc169611f51402a" category="paragraph">Vous avez besoin de l'équipement supplémentaire suivant pour installer et configurer le matériel SG110 et SG1100.</block>
+  <block id="54677e4039d0ef7ec9f667d1a0b1e5b5" category="list-text">SG110 :</block>
+  <block id="f33bc3cfe65a7ad9e2f916e1e041e2f3" category="list-text">SG1100 :</block>
+  <block id="668eaf0ed65ab4f0d90cd720e98d9d72" category="image-alt">Port réseau d'administration sur le SG110</block>
+  <block id="572cea252186930a48e6e3b0a64c66ed" category="image-alt">Port réseau d'administration sur le SG1100</block>
+  <block id="c72b64687a9901d2377088780c852eff" category="image-alt">Connexion lien-local SG110</block>
+  <block id="9f50808e83017a9133e8e051bc4983f5" category="image-alt">Connexion lien-local SG1100</block>
+  <block id="a2c99ec32793e479a6a8a0fb11c9666c" category="doc">Collecte d'informations réseau (SG110 et SG1100)</block>
+  <block id="3fa963c883b33f97f091fbe72cafd26f" category="paragraph">Avant d'installer une appliance de services SG110 ou SG1100, vérifiez que votre système StorageGRID utilise une version requise du logiciel StorageGRID.</block>
+  <block id="80cd4249fb4b0334ac9e988dbddb3264" category="paragraph">11.8 ou version ultérieure (dernier correctif recommandé)</block>
+  <block id="8eed5380e537614403b29f3539b7e10c" category="paragraph">Le réseau d'administration pour StorageGRID est un réseau facultatif, utilisé pour l'administration et la maintenance du système. L'appliance se connecte au réseau d'administration via les ports de gestion 1/10-GbE suivants sur l'appliance.</block>
+  <block id="6e6f13400a266a546c81f256261d260b" category="paragraph">Ports RJ-45 SG110 :</block>
+  <block id="5765a003071d8a52fe1398512d9a0660" category="image-alt">Ports RJ-45 SG110</block>
+  <block id="c89838a603eec3f35d1d564f51a40bf9" category="paragraph">Ports RJ-45 SG1100 :</block>
+  <block id="87374a5b7dbfb66091224d376a30f504" category="image-alt">Ports RJ-45 SG1100</block>
+  <block id="2de7b7510b1c4bfe9a42f08f29fcdb3e" category="paragraph">Pour le SG110, choisissez l'une des options suivantes :</block>
+  <block id="018082e73303eec037357829ab824960" category="paragraph">Pour le SG1100, choisissez l'une des options suivantes :</block>
+  <block id="1734c22548c1f8c417968d3230def1c7" category="paragraph">*Remarque :* pour les vitesses SG1100, 10 et 25 GbE, il faut utiliser des adaptateurs QSA.</block>
+  <block id="3a63d3bfca1f636e9168549b70448dfd" category="paragraph">Port de gestion du contrôleur BMC SG110 :</block>
+  <block id="8d77651c88354a545de5eea514584e78" category="image-alt">Port de gestion SG110</block>
+  <block id="f5bb16f206fe60b4fdf497ea0a247e69" category="paragraph">Port de gestion du contrôleur BMC SG1100 :</block>
+  <block id="2bd36acac8c427d3e8157e7f4617b910" category="image-alt">Port de gestion du contrôleur BMC SG1100</block>
+  <block id="45ae167275a7d0d42250b6c67ac9acf0" category="paragraph">Quand <block ref="a60a1925451f4c518cadfb0c9a8cb902" category="inline-link-macro-rx"></block> Pour les appliances SG110 et SG1100, vous pouvez utiliser la liaison de port pour les ports qui se connectent au réseau Grid et au réseau client en option, ainsi que les ports de gestion 1 GbE1/10 GbE qui se connectent au réseau Admin en option. La liaison de ports contribue à protéger vos données en fournissant des chemins redondants entre les réseaux StorageGRID et l'appliance.</block>
+  <block id="a1ec886f8bef1af4f3a70a46a71936a8" category="paragraph">Le mode de liaison de port fixe est la configuration par défaut des ports réseau. Les figures montrent comment les ports réseau du SG1100 ou du SG110 sont liés en mode de liaison port fixe.</block>
+  <block id="e68ddbf32fa99f85ac9b7a4a58b4fa76" category="image-alt">SG110 mode de liaison de port fixe</block>
+  <block id="32f1865bf059fbc469deeb7f0c0161c0" category="image-alt">SG1100 mode de liaison de port fixe</block>
+  <block id="7d95a56d60a171f803b8979c4bf9792b" category="image-alt">SG110 mode de liaison du port agrégé</block>
+  <block id="5cea30664daee040c14b5ec48038f7da" category="image-alt">SG1100 mode agrégation de port Bond</block>
+  <block id="653b7502ed464480d71004eb29fd5de2" category="paragraph">Pour les deux ports de gestion 1/10-GbE de l'appliance de services, vous pouvez choisir le mode de liaison réseau indépendant ou le mode de liaison réseau Active-Backup pour vous connecter au réseau d'administration facultatif. Ces figures montrent comment les ports de gestion des appliances sont liés en mode liaison réseau pour le réseau d'administration.</block>
+  <block id="81e02a1fa6feb949b023cf2108d992a3" category="image-alt">Ports de gestion réseau mis en liaison SG110</block>
+  <block id="3bebac3facc24bea11ba81197af806d2" category="image-alt">SG1100 ports de gestion réseau solidaire</block>
+  <block id="ae5a3f5cb9b3ba960a1cb2e38d2c9290" category="admonition">Si vous devez établir une connexion locale temporaire à l'appliance de services lorsque les ports de gestion 1/10-GbE sont configurés pour le mode Active-Backup, débranchez les câbles des deux ports de gestion, branchez votre câble temporaire dans le port de gestion situé à droite et accédez au dispositif à l'aide de l'adresse IP 169.254.0.1.</block>
+  <block id="d71dc8061014a17250a68fccf3957c0c" category="inline-link-macro">Modes de liaison de port (SG1100 et SG110)</block>
+  <block id="3646dc64c9984fb8e4916b069a738c4d" category="list-text"><block ref="3646dc64c9984fb8e4916b069a738c4d" category="inline-link-macro-rx"></block></block>
+  <block id="1eb5174a3405ee92fa2cb06763568414" category="paragraph">Les figures montrent comment les quatre ports réseau du SG1100 ou du SG110 sont liés en mode de liaison port fixe (configuration par défaut).</block>
+  <block id="80373303baca203e4e14cdd9e3730d3a" category="image-alt">Mode agrégation de liaisons de port SG1100</block>
+  <block id="d724879fa330fae85100664fb33bd284" category="image-alt">SG110 mode de liaison de port agrégé</block>
+  <block id="c185e2af57eb486402a7055cd7b9584b" category="image-alt">Ports réseau d'administration mis en liaison avec le SG1100</block>
+  <block id="168fbbc8217ae40bd5086de4e4935611" category="image-alt">Ports réseau d'administration mis en liaison SG110</block>
+  <block id="835d59e48069a93606ecd047daaf1f61" category="summary">L'appliance de services StorageGRID SG110 et l'appliance de services SG1100 peuvent fonctionner comme un nœud de passerelle et comme un nœud d'administration afin de fournir des services d'équilibrage des charges haute disponibilité dans un système StorageGRID. Les deux appliances peuvent fonctionner en tant que nœuds de passerelle et nœuds d'administration \(primaires ou non-primaires\) en même temps.</block>
+  <block id="075d750e820c89a48b3bccebaab0e9e8" category="doc">Appliances SG110 et SG1100 : présentation</block>
+  <block id="df039f5a970acf6d438e3773b9545296" category="paragraph">L'appliance de services StorageGRID SG110 et l'appliance de services SG1100 peuvent fonctionner comme un nœud de passerelle et comme un nœud d'administration afin de fournir des services d'équilibrage des charges haute disponibilité dans un système StorageGRID. Les deux appliances peuvent fonctionner en tant que nœuds de passerelle et de nœud d'administration (principal ou non primaire) à la fois.</block>
+  <block id="78fe9ec70c03c307edaf827b55bf78d3" category="list-text">Le SG110 prend en charge jusqu'à quatre connexions 10 ou 25 GbE au réseau Grid et au réseau client.</block>
+  <block id="da5b95c24564c9b901b35d67fe3e06f9" category="list-text">Le SG1100 prend en charge jusqu'à quatre connexions 10, 25, 40 ou 100 GbE au réseau Grid et au réseau client.</block>
+  <block id="6cc7f3972c4008dfe1cc07845c3a6c08" category="section-title">Schémas SG110 et SG1100</block>
+  <block id="cf8400ebfb22d05446dbafa234f560eb" category="paragraph">Cette figure illustre l'avant du SG110 et du SG1100 avec le cadre retiré. À partir de l'avant, les deux appareils sont identiques, à l'exception du nom du produit sur le cadre.</block>
+  <block id="3d2ca047e0ba231007c711e0159fd543" category="image-alt">Façade avant avec disques SSD SG110 et SG1100</block>
+  <block id="c65113663b1f6da1bdea3bae1199295d" category="paragraph">Les deux disques SSD (Solid-State Drives), indiqués par le contour orange, sont utilisés pour stocker le système d'exploitation StorageGRID et sont mis en miroir avec RAID 1 pour la redondance. Lorsque l'appliance de services SG110 ou SG1100 est configurée en tant que nœud d'administration, ces disques peuvent être utilisés pour stocker les journaux d'audit, les metrics et les tables de base de données.</block>
+  <block id="529bc7fbe0727a465d63ca1b960f8d1b" category="section-title">Connecteurs SG110</block>
+  <block id="4884d8655bcd090c55821574a69f257f" category="paragraph">Cette figure représente l'arrière du SG110, y compris les ports, les ventilateurs et les blocs d'alimentation.</block>
+  <block id="3f116d8147ca3ee2a9deec5a3615b60a" category="image-alt">Connecteurs arrière SG110</block>
+  <block id="7f545ec0012cd3730868130cc2cc32d8" category="section-title">Connecteurs SG1100</block>
+  <block id="161a3a39166d6d7e69ea53a1220a4857" category="paragraph">Cette figure montre les connecteurs à l'arrière du SG1100.</block>
+  <block id="21d670fa0cbf4d6ef41c014fe84e9791" category="image-alt">Connecteurs arrière SG1100</block>
+  <block id="2352b2130f44ff234de0d0ef0c2249d0" category="paragraph">10/25/40/100-GbE, selon le type de câble ou d'émetteur-récepteur, la vitesse du commutateur et la vitesse de liaison configurée. QSFP56 (limité à 100 GbE/port), QSFP28 (100 GbE) et QSFP+ (40 GbE) sont pris en charge en natif. Les émetteurs-récepteurs SFP+ (10 GbE) ou SFP28 (25 GbE) en option peuvent être utilisés avec un QSA (vendu séparément).</block>
+  <block id="f0454101a72342bdb68e3f847866df68" category="section-title">Applications SG110 et SG1100</block>
+  <block id="2becee645abbd8209a2519e1ba8c9610" category="list-text">Utilisez deux appliances SG110 ou deux appliances SG1100 pour fournir des services de passerelle en les configurant en tant que nœuds de passerelle.</block>
+  <block id="6f0a69f03c1ff183d86866b1f99ec9db" category="admonition">Ne déployez pas les appliances de services SG110 et SG1100 sur le même site. Cela peut entraîner des performances imprévisibles.</block>
+  <block id="8ea4bf911293cfb2bf04ca96e05c3f41" category="list-text">Utilisez deux appliances SG110 ou deux appliances SG1100 pour assurer la redondance de certains services d'administration du grid. Pour ce faire, configurez chaque appliance en tant que nœuds d'administration.</block>
+  <block id="9a36aee0eed152f42afba806fe379d97" category="list-text">Utilisez deux appliances SG110 ou deux appliances SG1100 pour fournir des services hautement disponibles d'équilibrage de charge et de mise en forme du trafic accessibles via une ou plusieurs adresses IP virtuelles. Pour ce faire, les appliances sont configurés comme des combinaisons de nœuds d'administration ou de nœuds de passerelle et vous ajoutez les deux nœuds au même groupe haute disponibilité.</block>
+  <block id="d8a93d72c559dd827dcc442c95aad95b" category="paragraph">Lorsqu'elles sont utilisées avec des appliances de stockage StorageGRID, les appliances de services SG110 et SG1100 permettent le déploiement de grilles exclusivement dédiées aux appliances sans dépendance vis-à-vis d'hyperviseurs externes ou de matériel de calcul.</block>
+  <block id="c477d61bbefb3230a904489ee2393a0c" category="list-text"><block ref="c477d61bbefb3230a904489ee2393a0c" category="inline-link-macro-rx"></block></block>
+  <block id="174d39beebf966f8b0fd97a60a1b64fd" category="list-text">*Réseau de gestion BMC* (en option pour SG100, SG110, SG1000, SG1100, SG6000, et SG6100) : ce réseau permet d'accéder au contrôleur de gestion de la carte de base des appliances SG100, SG1000, SG6000 et SG6100, ce qui vous permet de surveiller et de gérer les composants matériels de l'appliance. Ce réseau de gestion peut être le même que le réseau d'administration pour StorageGRID, ou il peut s'agir d'un réseau de gestion indépendant.</block>
+  <block id="768c56127fcc2636d57e4635785f71f3" category="section-title">Appliances de services SG110 et SG1100</block>
+  <block id="cb8480a76ca9faf13ba8cdaa026a4115" category="inline-link-macro">Appliance de services SG110 et SG1100 : présentation</block>
+  <block id="a6db1221b7bb3dbe5285ed10748c73b9" category="paragraph">Les nouvelles appliances de services StorageGRID SG110 et SG1100 sont une mise à jour matérielle évolutive qui améliore les performances administratives et d'équilibrage de la charge. Voir <block ref="3c058555c619096548fbed1bbe78e3c7" category="inline-link-macro-rx"></block>.</block>
+  <block id="a83eeae8b6fd32d08a2347f7444c21ee" category="admonition">Les modifications apportées à la configuration IP lorsque l'appliance est en mode de maintenance ne sont pas appliquées à l'environnement StorageGRID installé. Exécutez le
+<block ref="cca79d77d4e26ceed98b8b75d018051a" category="inline-link-rx"></block><block ref="921c87cca9b14f15a73f4570ad9f3247" prefix="[" category="inline-code"></block> Commande] après le redémarrage de l'appliance dans StorageGRID.</block>
+  <block id="673f51a198147ee01f0eda8def081663" category="paragraph">Les huit ventilateurs se trouvent dans les positions suivantes dans le châssis (la moitié avant de l'appliance StorageGRID avec le capot supérieur retiré) :</block>
+  <block id="3bd0d1998d06f546858be89f67dafb1c" category="inline-link-macro">Maintenance des appliances SG110 et SG1100</block>
+  <block id="e18debed2185f73ee8477857562ba4ee" category="list-text"><block ref="e18debed2185f73ee8477857562ba4ee" category="inline-link-macro-rx"></block></block>
+  <block id="6632e86febb1a2e603ec2700897f8a86" category="list-text">Vous pouvez cloner une appliance de nœud source SG100 vers une appliance cible de services SG110, SG1000 ou SG1100. Le clonage du système SG100 vers une appliance cible de services SG1000 ou SG1100 offre des fonctionnalités supérieures au nœud d'administration ou au nœud de passerelle.</block>
+  <block id="b4dbdb727139e5ead70576ff4386d050" category="list-text">Vous pouvez cloner une appliance de nœud source SG110 vers une cible d'appliance de services SG1100 afin d'optimiser les fonctionnalités du nœud d'administration ou du nœud de passerelle.</block>
+  <block id="977b528f03583de0752d1521f2d8acb9" category="list-text">Vous pouvez cloner une appliance de nœud source SG1000 vers une appliance cible de services SG100, SG110 ou SG1100. Le clonage du système SG1000 sur une appliance cible de services SG100 ou SG110 vous permet de redéployer le système SG1000 pour une application plus exigeante.</block>
+  <block id="3c893022293982e3947a5e3e05078f75" category="list-text">Vous pouvez cloner une appliance de nœud source SG1100 vers une appliance cible de services SG110 afin de redéployer le SG1100 pour une application plus exigeante.</block>
+  <block id="59830b85779f0e0f99f6eae5dedae7e3" category="paragraph">Par exemple, si une appliance de nœud source SG1100 ou SG1000 est utilisée comme nœud d'administration et que vous souhaitez l'utiliser comme nœud d'équilibrage de charge dédié.</block>
+  <block id="b35c0ef428ec255e038f1521fe8a0683" category="list-text">Le remplacement d'une appliance de nœud source SG1100 par une appliance de services cible SG110 réduit la vitesse maximale des ports réseau de 100 GbE à 25 GbE.</block>
+  <block id="e84c89730f464a482aef94ee1a675b10" category="paragraph">Les procédures spécifiques à la maintenance de votre système SG110 ou SG1100 sont décrites dans cette section.</block>
+  <block id="ac7d3872004b0a65fa2be33e24e28d8a" category="doc">Localisez SG110 ou SG1100 dans le data Center</block>
+  <block id="a1e0a0113c7c2f260e12a69fe64a56b2" category="list-text">Pour localiser l'appliance dans votre data Center, <block ref="1e7dd4d78109ffd028df0a51c4910e28" category="inline-link-macro-rx"></block>.</block>
+  <block id="b147ebaef0a74f708dd546b7388657fd" category="paragraph"><block ref="2ccd8ceb91ba9a831109d5a1ebd5a69c" category="inline-link-macro-rx"></block> si vous l'avez utilisé pour localiser l'appareil.
+ ** Appuyez sur le commutateur LED Identify situé sur le panneau avant de l'appareil.
+ ** Utilisez l'interface BMC de l'appliance.</block>
+  <block id="56a38c5f6e46ea3c7a67a98527c13b47" category="doc">Modifier la configuration de la liaison du SG110 ou du SG1100</block>
+  <block id="8420ab9ffa9537cb869e227077bc2a34" category="summary">Les appliances SG110 et SG1100 disposent de deux blocs d'alimentation pour la redondance. Si l'un des blocs d'alimentation tombe en panne, vous devez le remplacer dès que possible pour vous assurer que l'appareil est alimenté de manière redondante. Les deux blocs d'alimentation fonctionnant dans l'appareil doivent être de même modèle et de même puissance.</block>
+  <block id="35695e12e3087be52ef18cb96aa963a0" category="doc">Remplacez l'une ou les deux alimentations du SG110 ou du SG1100</block>
+  <block id="5c7db8d9add126ce8969ab1fd5b370da" category="paragraph">Les appliances SG110 et SG1100 disposent de deux blocs d'alimentation pour la redondance. Si l'un des blocs d'alimentation tombe en panne, vous devez le remplacer dès que possible pour vous assurer que l'appareil est alimenté de manière redondante. Les deux blocs d'alimentation fonctionnant dans l'appareil doivent être de même modèle et de même puissance.</block>
+  <block id="5d7e2394702b960f6f58e47acfbb6e8c" category="list-text">Vous avez <block ref="8e10515474ef3f5b51856ef8da6b6d0a" category="inline-link-macro-rx"></block> avec l'alimentation à remplacer.</block>
+  <block id="ac1d7d8e6dc26d2f34601663e52a791c" category="paragraph">La figure montre les deux blocs d'alimentation pour les SG110 et SG1100. Les blocs d'alimentation sont accessibles depuis l'arrière de l'appareil.</block>
+  <block id="1677ee8d1b36f438876e123069f4cb74" category="list-text"><block ref="66bdba46c0a2351ab6d6f47ffff23afb" category="inline-link-macro-rx"></block>.</block>
+  <block id="5e9137c2571f75b78aa98161fa9f0946" category="doc">Vérifiez le composant à remplacer dans le SG110 ou le SG1100</block>
+  <block id="f6cc4cce76198c3fc89a8df4d287eb8f" category="paragraph"><block ref="f6cc4cce76198c3fc89a8df4d287eb8f" category="inline-link-macro-rx"></block></block>
+  <block id="d6b9a24ded15866ec7ccfd9dc123e9f1" category="summary">Les appliances de services SG110 et SG1100 contiennent deux disques SSD. Les disques sont mis en miroir à l'aide de RAID1 pour la redondance. Si l'un des lecteurs tombe en panne, vous devez le remplacer dès que possible pour assurer la redondance.</block>
+  <block id="b7e2329725f0e8436052c511156f3748" category="doc">Remplacez les lecteurs du SG110 ou du SG1100</block>
+  <block id="42c7a1dda62ababf4cb674eb7c39cc2a" category="list-text">Vous avez <block ref="8e10515474ef3f5b51856ef8da6b6d0a" category="inline-link-macro-rx"></block>.</block>
+  <block id="de9b0cfebec70b4730ede733544adadc" category="paragraph">Les disques sont aux emplacements suivants dans le châssis (avant du châssis avec le panneau retiré) :</block>
+  <block id="66104298dc21ba6c0533bc9d0b9b6bf8" category="image-alt">Emplacements des lecteurs SG110 et SG1100</block>
+  <block id="bd7f3d409571f64d9e17003a1374da04" category="paragraph">Le lecteur remplacé est automatiquement reconstruit avec les données en miroir du lecteur en fonctionnement.  Vous pouvez vérifier l'état de la reconstruction à l'aide du Gestionnaire de grille. Accédez à *NODES* &gt;<block ref="dde8ded2884e27f868b3a8c4b5416bb3" prefix=" " category="inline-code"></block> &gt; *matériel*. Le champ Storage RAID mode (mode RAID de stockage) contient un message de reconstruction jusqu'à ce que le lecteur soit entièrement reconstruit.</block>
+  <block id="dc707ffba727d12356011f9f73a992eb" category="doc">Remplacement des appliances SG110 ou SG110</block>
+  <block id="f2a5a8758ca15c3a23a2ddbd079a95ee" category="list-text"><block ref="e02d1a5e1dc87cd7778b4a75e2317828" category="inline-link-macro-rx"></block>.</block>
+  <block id="5409d0965e779fcc5620d3cd745ab01f" category="list-text"><block ref="4fa0895d2a03c9ce7010299dc730cc37" category="inline-link-macro-rx"></block>.</block>
+  <block id="a48af9b61164e86b2280ebe2bd272712" category="list-text">Notez la position des composants remplaçables (deux blocs d'alimentation, huit ventilateurs, trois cartes réseau et deux disques SSD) dans l'appliance défectueuse.</block>
+  <block id="8b1659eb1302c159af7985a2c22fa27e" category="paragraph">Les deux disques se trouvent aux emplacements suivants dans le châssis (avant du châssis avec le panneau retiré) :</block>
+  <block id="c2b15088afc135982ed6160ae5eac813" category="list-text"><block ref="f6c9cca69a348acd8905bc371eb6fc7a" category="inline-link-macro-rx"></block>.</block>
+  <block id="94be36ec44c8318cfab0eec6871e7823" category="list-text">Si le chiffrement de disque matériel de l'appliance que vous avez remplacée est activé pour les disques SED, vous devez le faire <block ref="8ca8505552d3e0acf0b7c638e20906f9" category="inline-link-macro-rx"></block> pour accéder aux disques chiffrés lorsque l'appliance de remplacement démarre pour la première fois.</block>
+  <block id="0a5b0b97f6329c71c665a41fb8e50546" category="paragraph"><block ref="0a5b0b97f6329c71c665a41fb8e50546" category="inline-link-macro-rx"></block></block>
+  <block id="77a3632ce069e04667f3c07729bc12e6" category="doc">Remettez en place les capots SG110 et SG1100</block>
+  <block id="17f139a2fd45164bf31db4cbc506794e" category="paragraph"><block ref="94283cdb05b445a973e84301f97caf0b" category="inline-link-macro-rx"></block> pour accéder au capot supérieur.</block>
+  <block id="a216695ce5b47cfaec12a1b19ae3fb60" category="paragraph"><block ref="1b46dbdc1359715fefc31e850941339c" category="inline-link-macro-rx"></block>.</block>
+  <block id="4cac03fe582c6e9c7b00f6150d8de44e" category="summary">Vous devrez peut-être remplacer une carte d'interface réseau \(NIC\) dans le SG110 ou le SG1100 s'il ne fonctionne pas de manière optimale ou s'il est défectueux.</block>
+  <block id="4d5c7b30a4d19a46b8aa8fb041a11e07" category="doc">Remplacez la carte réseau dans un SG110 ou un SG1100</block>
+  <block id="4c68b0943e79e049731958e525193bbd" category="paragraph">Vous devrez peut-être remplacer une carte d'interface réseau (NIC) dans le SG110 ou le SG1100 s'il ne fonctionne pas de manière optimale ou s'il est défectueux.</block>
+  <block id="927be83d9035c123f8d7d9e8cfafeb94" category="inline-link-macro">Emplacement physique de l'appliance SG110 ou SG1100</block>
+  <block id="24bf7ce85a6fb58803cea8f5c88ca74b" category="list-text">Vous avez <block ref="452dbc820d5040c6f7a26972163c857d" category="inline-link-macro-rx"></block> Emplacement de remplacement de la carte réseau dans le centre de données.</block>
+  <block id="73a2518b7d3a736d59aa912a57abda34" category="admonition">A <block ref="937f3ef5575067c7f2242672e77298dc" category="inline-link-macro-rx"></block> est nécessaire avant de retirer l'appareil du rack.</block>
+  <block id="6c5d9be04e7c66d804e9922fc591088c" category="list-text">Vous avez déconnecté tous les câbles et <block ref="dc7225cbd8d4b68386891f4f43bfe53f" category="inline-link-macro-rx"></block>.</block>
+  <block id="f9cae9b628024fbe396a0cbabe539188" category="doc">Remplacez la pile CMOS dans un SG110 ou un SG1100</block>
+  <block id="bfe3df71e69779f16f86cfe5c2c8630c" category="inline-link-macro">Vérifiez que la pile CMOS du SG110 ou du SG1100 doit être remplacée - effectué</block>
+  <block id="41b96317eb4b5bdaa763cb01901ab31a" category="list-text">Vous avez <block ref="f820af276921202483c4883b0f3a4d39" category="inline-link-macro-rx"></block>.</block>
+  <block id="0da2eb69068c217b0fc7a5d5adde18dc" category="list-text">Vous avez <block ref="452dbc820d5040c6f7a26972163c857d" category="inline-link-macro-rx"></block> Emplacement de remplacement de la pile CMOS dans le centre de données.</block>
+  <block id="ccee7529d7d175aca9c5b67b93650e4d" category="admonition">A <block ref="af671dbc17aabf78e439327329fcfaf5" category="inline-link-macro-rx"></block> est nécessaire avant de retirer l'appareil du rack.</block>
+  <block id="f37e66e07e00675fdcc0bb5b4a2d2431" category="doc">Allumer et éteindre le voyant d'identification du SG110 ou du SG1100</block>
+  <block id="93ae44b8461554818c19394aec7564fa" category="paragraph"><block ref="93ae44b8461554818c19394aec7564fa" category="inline-link-macro-rx"></block></block>
+  <block id="3a71c03d18843882d300afa68c266c13" category="summary">Retirez le SG110 ou le SG1100 d'une armoire ou d'un rack pour accéder au capot supérieur ou pour déplacer l'appliance vers un autre emplacement, puis réinstallez l'appliance dans une armoire ou un rack une fois la maintenance matérielle terminée.</block>
+  <block id="bc9596d6807bde2e993c410c91269350" category="doc">Déplacez les SG110 et SG1100 dans l'armoire ou le rack</block>
+  <block id="d6621ea2246b016be3984fe3722f717a" category="section-title">Retirez le SG110 ou le SG1100 de l'armoire ou du rack</block>
+  <block id="2a18f9c740fdc38db3054f80b5148df0" category="list-text">Vous disposez d'étiquettes pour identifier chaque câble connecté au SG110 ou au SG1100.</block>
+  <block id="e8a36eefffb270e7fdfcbe70cfae02c8" category="inline-link-macro">Emplacement physique du SG110 ou du SG1100</block>
+  <block id="da293f6803f9457d5e25775b4d7ba62c" category="list-text">Vous avez <block ref="cbbe557358a36c0ce95c8f4a10b6af30" category="inline-link-macro-rx"></block> où effectuer la maintenance dans le data center ?</block>
+  <block id="c9c52f1bbaf493c0bd060f99e9b4d31b" category="inline-link-macro">Arrêtez le SG110 ou le SG1100</block>
+  <block id="a356c4d9c1948b8dc45c1ffca6f88115" category="list-text">Vous avez <block ref="7c024e7b821ea2605c8d62e2c8b78fe4" category="inline-link-macro-rx"></block>.</block>
+  <block id="654b557c64cf80df53d669b5e931d3da" category="image-alt">Vis de fixation du rack SG110 ou SG1100</block>
+  <block id="4187702a620626981506c308f62e0442" category="list-text">Faites glisser le SG110 ou le SG1100 vers l'avant pour le sortir du rack jusqu'à ce que les rails de montage soient complètement sortis et que vous entendiez un clic sur les loquets des deux côtés.</block>
+  <block id="609dfb79180e75d183414141ff1c7699" category="section-title">Réinstallez le SG110 ou le SG1100 dans l'armoire ou le rack</block>
+  <block id="30c3e76ee9fe69a1db3394d21116aa18" category="paragraph">Vous avez réinstallé le capot de l'appareil.</block>
+  <block id="2779825f63604db4b27b188f2d03737b" category="inline-link-macro">Réinstallez le capot du SG110 ou du SG1100</block>
+  <block id="c95bfc841349ab8679294cc677e88c9d" category="paragraph"><block ref="c95bfc841349ab8679294cc677e88c9d" category="inline-link-macro-rx"></block></block>
+  <block id="e19587ca009fb28c16d995c5edbd1fa5" category="list-text">Appuyez simultanément sur le rail bleu pour libérer les deux rails du rack et faites glisser le SG110 ou le SG1100 dans le rack jusqu'à ce qu'il soit bien en place.</block>
+  <block id="22dc184830c2cbda4b043ab5a3cce6bb" category="image-alt">Rails coulissants SG110 ou SG1100</block>
+  <block id="74c2ea6aca800b8766b877c2b16a7728" category="paragraph"><block ref="c8ee67fa13b2b241963a60e9659d4d7f" category="inline-link-macro-rx"></block>.</block>
+  <block id="b4b1ae13ff19104a2638fac1e91cf92f" category="doc">Mettez le SG110 ou le SG1100 hors tension et sous tension</block>
+  <block id="b9240936ed31e305085463f5cce2c053" category="paragraph">Vous pouvez arrêter l'appliance SG110 ou SG1100 et la remettre sous tension pour effectuer des opérations de maintenance.</block>
+  <block id="b1c1dfb471a6f1f3fd2166422e5ee696" category="section-title">Arrêtez l'appliance SG110 ou SG1100</block>
+  <block id="ac7ab9bcfd9ccd7d72e4ad0c7e3ecfd4" category="section-title">Mettez le SG110 ou le SG1100 sous tension et vérifiez le fonctionnement</block>
+  <block id="2288cb67d86668be6f1a261840ed0916" category="list-text">Vous avez <block ref="c78043e4d899bb99da1fcc488bba84ed" category="inline-link-macro-rx"></block> et connecté les câbles de données et d'alimentation.</block>
+  <block id="fa2af59b6156d0aec104e44663ccb746" category="list-text">Vous avez <block ref="1d434378bf19f38d94d6718c8351074c" category="inline-link-macro-rx"></block>.</block>
+  <block id="6a580be7135080b681d4be92c03ad758" category="summary">Les appareils SG110 ou SG1100 sont équipés de huit ventilateurs de refroidissement. Si l'un des ventilateurs tombe en panne, vous devez le remplacer dès que possible pour vous assurer que l'appareil est bien refroidi.</block>
+  <block id="2f565a1c76f8655ee5b895b48fdd9868" category="doc">Remplacez le ventilateur dans un SG110 ou un SG1100</block>
+  <block id="651fc7ecc07d3c5589bcdbf86900528e" category="list-text">Vous avez <block ref="452dbc820d5040c6f7a26972163c857d" category="inline-link-macro-rx"></block> emplacement de remplacement du ventilateur dans le centre de données.</block>
+  <block id="a494d05ff2448de4863300634404b00e" category="list-text"><block ref="7605313cc83fe468541967e7fefdaac9" category="inline-link-macro-rx"></block>, et appuyez sur le loquet pour fixer le couvercle en place.</block>
+  <block id="2b714c159ee37bfcda3d8997dbf8c34a" category="list-text"><block ref="d562fca429c3ba3818e1a9ce8be74798" category="inline-link-macro-rx"></block> Et surveillez les voyants et les codes de démarrage de l'appareil.</block>
+  <block id="b337d01c3682624445d3043b34d4f142" category="paragraph">*Les procédures de configuration de maintenance* sont effectuées à l'aide de l'interface Appliance installer, Grid Manager ou BMC. Ces procédures comprennent :</block>
+  <block id="e26ffb539a1b2a0b29867450005b8bee" category="paragraph"><block ref="e6765e58c61518e3539dcb7717155370" category="inline-link-macro-rx"></block>.</block>
+  <block id="e7e49b9f955135fd24f83c367558f704" category="sidebar">Remplacez l'appliance SG110 ou SG1100</block>
+  <block id="b2f29fa8f4a845926f04c6b42a76608e" category="sidebar">Déplacez le SG110 ou le SG1100 dans un rack</block>
+  <block id="05e5b945264ec2a7a4fb43cd609f1363" category="sidebar">Informations réseau SG110 et SG1100</block>
+  <block id="74c62c67c3d6082d54f23ecf0b6db84a" category="sidebar">SG110 et SG1100 (nouveau)</block>
+  <block id="d6fca2602ac9cbcfb8a14dfb1f7739de" category="sidebar">CONFIGURATION DE L'INTERFACE BMC (SG100, SG110, SG1000, SG1100, SG6000, et SG6100)</block>
+  <block id="3cedc3146b91b16ed8ebb1fee915113d" category="sidebar">Dépannage de l'installation (SG110 et SG1100)</block>
+  <block id="a2e2012b6b8c458228b1e15b454770f0" category="sidebar">Maintenance du matériel SG110 et SG1100</block>
+  <block id="d1a3d5a511aaa49a39568a8f65ac6b29" category="sidebar">Maintenance matérielle des systèmes SG110 et SG1100</block>
+  <block id="9cb56d535a16391a544c46fd4d91e6ba" category="sidebar">Procédures de configuration de maintenance - SG110 et SG1100</block>
+  <block id="c8815aa195405d61f92fd38ffbcf2c8c" category="sidebar">Procédures de maintenance du matériel - SG110 et SG1100</block>
+  <block id="8234ee9f46864ecf847ef0ef05ff4451" category="sidebar">Replacez l'appareil dans le rack</block>
+  <block id="824ffb105357c984745978d4f897102d" category="sidebar">Procédures de configuration de la maintenance - SG6100</block>
 </blocks>

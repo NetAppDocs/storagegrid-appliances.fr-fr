@@ -6,8 +6,8 @@ entries:
 - title: Présentation
   pdf-filename: Maintenance du matériel SG6100
   url: "/sg6100/index.html"
-- title: Procédures de maintenance de la configuration
-  pdf-filename: Procédures de maintenance de la configuration - SG6100
+- title: Procédures de configuration de la maintenance
+  pdf-filename: Procédures de configuration de la maintenance - SG6100
   entries:
   - title: Utilisez l'onglet gérer les lecteurs
     url: "/sg6100/manage-drives-tab.html"

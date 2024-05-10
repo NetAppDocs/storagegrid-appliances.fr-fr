@@ -29,6 +29,23 @@ N'appuyez pas de nouveau sur le bouton d'alimentation pendant le processus de mi
 
 
 --
+.SG110 et SG1100
+--
+.Étapes
+. Connectez un cordon d'alimentation à chacune des deux unités d'alimentation de l'appareil.
+. Branchez ces deux cordons d'alimentation à deux unités de distribution d'alimentation différentes dans l'armoire ou le rack.
+. Si le bouton d'alimentation situé à l'avant de l'appareil n'est pas allumé en bleu, appuyez sur le bouton pour mettre l'appareil sous tension.
++
+N'appuyez pas de nouveau sur le bouton d'alimentation pendant le processus de mise sous tension.
+
++
+Le voyant du bloc d'alimentation doit être allumé en vert sans clignoter.
+
+. En cas d'erreur, corrigez tout problème.
+. Si vous avez retiré le cadre avant, fixez-le à l'appareil.
+
+
+--
 .SG5700
 --
 .Avant de commencer
@@ -95,7 +112,7 @@ N'appuyez pas de nouveau sur le bouton d'alimentation pendant le processus de mi
 .Étapes
 . Connectez un cordon d'alimentation à chacune des deux unités d'alimentation de l'appareil.
 . Branchez ces deux cordons d'alimentation à deux unités de distribution d'alimentation différentes dans l'armoire ou le rack.
-. Si le bouton d'alimentation situé à l'avant de l'appareil SG6100-CN n'est pas actuellement allumé en bleu, appuyez sur le bouton pour mettre l'appareil sous tension.
+. Si le bouton d'alimentation situé à l'avant de l'appareil n'est pas allumé en bleu, appuyez sur le bouton pour mettre l'appareil sous tension.
 +
 N'appuyez pas de nouveau sur le bouton d'alimentation pendant le processus de mise sous tension.
 

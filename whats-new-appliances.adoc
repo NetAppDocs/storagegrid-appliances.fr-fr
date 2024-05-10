@@ -18,6 +18,6 @@ Découvrez les nouveautés des appliances StorageGRID.
 
 
 
-== Appliance 100 % Flash SGF6112
+== Appliances de services SG110 et SG1100
 
-La nouvelle appliance de stockage StorageGRID SGF6112 présente une conception compacte avec contrôleur de calcul et contrôleur de stockage intégré dans un châssis 1U. L'appliance prend en charge 12 disques NVMe SSD avec une capacité de stockage allant jusqu'à 15.3 To par disque. Les disques SSD font partie d'un système RAID qui fournit un stockage objet résilient. Voir link:installconfig/hardware-description-sg6100.html["Appliance SGF6112 : présentation"].
+Les nouvelles appliances de services StorageGRID SG110 et SG1100 sont une mise à jour matérielle évolutive qui améliore les performances administratives et d'équilibrage de la charge. Voir link:./installconfig/hardware-description-sg110-and-1100.html["Appliance de services SG110 et SG1100 : présentation"].
