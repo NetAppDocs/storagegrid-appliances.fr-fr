@@ -3,6 +3,10 @@ indexpage:
   tiles:
   - title: Procédures fréquemment effectuées
     links:
+    - title: Mise à niveau de SANtricity (SG6160)
+      url: "../sg6100/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg6160.html"
+    - title: Mise à niveau du firmware du disque (SG6160)
+      url: "../sg6100/upgrading-drive-firmware-using-santricity-system-manager.html"
     - title: Allumer ou éteindre le voyant de localisation
       url: "../sg6100/turning-sgf6112-identify-led-on-and-off.html"
     - title: Localisez l'appliance dans le data Center
@@ -17,19 +21,45 @@ indexpage:
     links:
     - title: Remplacez l'appliance SGF6112
       url: "../sg6100/replacing-sgf6112-appliance.html"
+    - title: Remplacement du contrôleur SG6100-CN (SG6160)
+      url: "../sg6100/replacing-sg6100-cn-controller.html"
+    - title: Remplacement du contrôleur de stockage (SG6160)
+      url: "../sg6100/replace-controller-e4000-duplex.html"
     - title: Déplacez le SGF6112 dans un rack
       url: "../sg6100/reinstalling-sgf6112-into-cabinet-or-rack.html"
+    - title: Déplacer le SG6100-CN dans un rack
+      url: "../sg6100/reinstalling-sg6100-cn-controller-into-cabinet-or-rack.html"
   - title: Procédures matérielles
     links:
     - title: Remettez le couvercle en place
       url: "../sg6100/reinstalling-sgf6112-cover.html"
     - title: Remplacez l'alimentation électrique
       url: "../sg6100/replacing-one-or-more-power-supplies-in-sgf6112-appliance.html"
-    - title: Remplacer le ventilateur
+    - title: Remplacement du bloc d'alimentation du tiroir contrôleur de stockage
+        ou du tiroir d'extension (SG6160)
+      url: "/sg6100/replace-6100-cn-power-canister.html"
+    - title: Remplacer le ventilateur dans SGF6112 ou SG6100-CN (SG6160)
       url: "../sg6100/replacing-fan-in-sgf6112.html"
-    - title: Remplacez le lecteur
+    - title: Remplacement du ventilateur dans le tiroir du contrôleur de stockage
+        ou le tiroir d'extension (SG6160)
+      url: "../sg6100/replace-e4000-fan-canister.html"
+    - title: Remplacez le lecteur dans SGF6112
       url: "../sg6100/replacing-drive-in-sgf6112.html"
-    - title: Remplacez la carte réseau
-      url: "../sg6100/replace-nic-in-sgf6112.html"
+    - title: Remplacez l'entraînement dans SG6100-CN
+      url: "../sg6100/replace-drive-sg6100-cn.html"
+    - title: Remplacement du disque dans le tiroir contrôleur de stockage ou le tiroir
+        d'extension (SG6160)
+      url: "../sg6100/replace-6160-drives-60.html"
+    - title: Remplacement de la carte réseau interne (SGF6112 et SG6160)
+      url: "/sg6100/replace-nic-in-sgf6112.html"
+    - title: Remplacement de la carte réseau externe (SG6160)
+      url: "/sg6100/replace-ocp-nic-in-sg6100-cn.html"
+    - title: Remplacement des modules DIMM (SG6160)
+      url: "/sg6100/replace-dimms-e4000.html"
+    - title: Remplacement des piles (SG6160)
+      url: "/sg6100/replace-battery-e4000.html"
+    - title: Remettez le couvercle en place
     - title: Remplacez la pile CMOS
       url: "../sg6100/replace-cmos-in-sgf6112.html"
+    - title: Ajout du tiroir d'extension au SG6160 déployé
+      url: "../sg6100/adding-expansion-shelf-to-deployed-sg6160.html"

@@ -74,9 +74,19 @@ NOTE: Si une adresse IP n'a pas pu être attribuée à l'aide de DHCP, 0.0.0.0 s
 
 
 --
+.SG5800
+--
+image::../media/sg5800_admin_network_port.png[Admin Port réseau sur le contrôleur SG5800]
+
+--
 .SG6000-CN
 --
 image::../media/sg6000_cn_admin_network_port.png[Port Admin Network du contrôleur SG6000-CN]
+
+--
+.SG6100-CN
+--
+image::../media/sg6100_cn_admin_network_port.png[Port Admin Network du contrôleur SG6000-CN]
 
 --
 .SGF6112
@@ -143,11 +153,25 @@ Connectez l'ordinateur portable de service au port de gestion 2 du contrôleur E
 image::../media/e5700sg_mgmt_port_2.gif[Emplacement du port de gestion 2 sur le contrôleur E5700SG]
 
 --
+.SG5800
+--
+Connectez l'ordinateur portable de maintenance au port de gestion 1 du contrôleur SG5800 à l'aide d'un câble Ethernet.
+
+image::../media/sg5800_mgmt_port.png[Emplacement du port de gestion 1 sur le contrôleur SG5800]
+
+--
 .SG6000-CN
 --
 Connectez un ordinateur portable de service directement au port RJ-45 le plus à droite du contrôleur SG6000-CN, à l'aide d'un câble Ethernet.
 
 image::../media/sg6000_cn_link_local_port.png[Emplacement du port de gestion pour SG6000-CN]
+
+--
+.SG6100-CN
+--
+Connectez un ordinateur portable de service directement au port RJ-45 le plus à droite du contrôleur SG6100-CN, à l'aide d'un câble Ethernet.
+
+image::../media/sg6100_cn_link_local_port.png[Emplacement du port de gestion pour SG6100-CN]
 
 --
 .SGF6112

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: sgf6112, locate, find, locating, finding, identify, blue led, blue light 
 summary: 'Le voyant d"identification bleu situé à l"avant de l"appareil peut être allumé pour faciliter la localisation de l"appareil dans un centre de données.' 
 ---
-= Allumer et éteindre le voyant d'identification de l'appliance SGF6112
+= Allumer et éteindre le voyant d'identification de l'appareil SGF6112 ou du contrôleur SG6100-CN
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

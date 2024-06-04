@@ -91,7 +91,14 @@ Vous pouvez afficher l'état du chiffrement de nœud, les détails KMS et les ce
 
 == Chiffrement de disque
 
-Le chiffrement de disque est géré sur du matériel à disques autochiffrés (SED) pendant les processus d'écriture et de lecture. L'accès aux données sur ces disques est contrôlé par une phrase secrète définie par l'utilisateur. Le chiffrement de disque est utilisé pour les disques SSD à connexion directe utilisés pour la mise en cache dans les appliances StorageGRID.
+Le chiffrement de disque est géré sur du matériel à disques autochiffrés (SED) pendant les processus d'écriture et de lecture. L'accès aux données sur ces disques est contrôlé par une phrase secrète définie par l'utilisateur.
+
+Le chiffrement de disque peut être utilisé pour tout disque SSD SED installé dans un système SG100, SG1000, SG110, SG1100, SGF6112, ou nœud de calcul ou contrôleur SG6100-CN.
+
+* Pour les appliances de services, les disques SSD correspondent aux disques racines des nœuds.
+* Dans un contrôleur SG6100-CN, les disques SSD sont utilisés pour la mise en cache.
+* Dans un SGF6112, les disques SSD sont les disques racine du nœud et sont utilisés pour le stockage principal des données d'objet.
+
 
 Les disques SED cryptés se verrouillent automatiquement lorsque l'appareil est mis hors tension ou lorsque le lecteur est retiré de l'appareil. Une SED chiffrée reste verrouillée une fois l'alimentation rétablie jusqu'à ce que la phrase de passe correcte soit saisie. Pour autoriser l'accès aux disques sans saisir à nouveau manuellement la phrase de passe, celle-ci est stockée sur l'appliance StorageGRID afin de déverrouiller les disques chiffrés qui restent dans l'appliance au redémarrage de l'appliance. Tous ceux qui connaissent la phrase de passe peuvent accéder aux disques chiffrés à l'aide d'une phrase de passe SED.
 

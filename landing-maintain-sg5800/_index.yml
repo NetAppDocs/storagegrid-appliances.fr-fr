@@ -1,0 +1,29 @@
+---
+indexpage:
+  tiles:
+  - title: Procédures fréquemment effectuées
+    links:
+    - title: Modifier la configuration du lien
+      url: "../sg5800/changing-link-configuration-of-sg5800-controller.html"
+    - title: Mettez à niveau SANtricity
+      url: "../sg5800/upgrading-santricity-os-on-storage-controller.html"
+    - title: Mettre à niveau le micrologiciel du lecteur
+      url: "../sg5800/upgrading-drive-firmware-using-santricity-system-manager.html"
+  - title: Procédures matérielles
+    links:
+    - title: Remplacer le contrôleur de calcul SG5800
+      url: "../sg5800/replace-controller-sg5800.html"
+    - title: Remplacez le contrôleur de stockage E4000
+      url: "../sg5800/replace-controller-e4000-simplex.html"
+    - title: Remplacer le boîtier du ventilateur
+      url: "../sg5800/replace-fan-canister.html"
+    - title: Remplacez le boîtier d'alimentation
+      url: "../sg5800/replace-power-canister.html"
+    - title: Remplacez les piles
+      url: "../sg5800/replace-battery-e4000.html"
+    - title: Remplacez les modules DIMM
+      url: "../sg5800/replace-dimms-e4000.html"
+    - title: Remplacez les disques
+      url: "../sg5800/replace-drive-e4000.html"
+    - title: Alimentation électrique
+      url: "../sg5800/replace-power-supply.html"

@@ -34,8 +34,15 @@ Cette étape est facultative. Cependant, la rationalisation et l'automatisation 
 ** link:installing-appliance-in-cabinet-or-rack-sg100-and-sg1000.html["SG100 et SG1000"]
 ** link:installing-appliance-in-cabinet-or-rack-sg110-and-sg1100.html["SG110 et SG1100"]
 ** link:installing-appliance-in-cabinet-or-rack-sg5700.html["SG5700"]
+** link:installing-appliance-in-cabinet-or-rack-sg5800.html["SG5800"]
 ** link:installing-hardware-sg6000.html["SG6000"]
-** link:installing-appliance-in-cabinet-or-rack-sgf6112.html["SG6100"]
+** link:installing-appliance-in-cabinet-or-rack-sgf6112.html["SGF6112"]
+** SG6160 :
++
+*** link:sg6100-cn-installing-into-cabinet-or-rack.html["Contrôleur SG6100-CN"]
+*** link:sg6160-installing-60-drive-shelves-into-cabinet-or-rack.html["tiroirs de 60 disques"]
+
+
 
 
 . link:cabling-appliance.html["Appareil câblé"]
@@ -57,12 +64,12 @@ Si vous configurez et déployez plusieurs appliances, utilisez l'outil NetApp Co
 ** link:verifying-port-level-network-connections.html["Vérifiez les connexions réseau au niveau des ports"]
 
 
-. link:accessing-and-configuring-santricity-system-manager.html["Accès à SANtricity System Manager et configuration de celui-ci"] (SG5700 et SG6000)
+. link:accessing-and-configuring-santricity-system-manager.html["Accès à SANtricity System Manager et configuration de celui-ci"] (SG6160, SG5700, SG5800 ET SG6000)
 . link:configuring-bmc-interface.html["Configurez l'interface BMC"] (SG6000, SG6100 et appliances de services)
 . Effectuez les étapes de configuration facultatives
 +
 ** link:optional-enabling-node-encryption.html["Activez le chiffrement des nœuds ou des disques"]
-** link:optional-changing-raid-mode.html["Changement de mode RAID (SG6000 et SG5700)"]
+** link:optional-changing-raid-mode.html["Changement de mode RAID (SG6160, SG6000, SG5860 et SG5760)"]
 ** link:optional-remapping-network-ports-for-appliance.html["Remappez les ports réseau"]
 
 

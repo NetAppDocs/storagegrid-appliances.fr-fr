@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: sgf6112, manage drives tab, locate drive, fail drive, logically replace drive 
 summary: 'Vous pouvez utiliser l"onglet gérer les lecteurs du Gestionnaire de grille pour effectuer des tâches de dépannage et de maintenance sur les lecteurs de l"appliance SGF6112.' 
 ---
-= Utilisez l'onglet gérer les lecteurs
+= Utilisation de l'onglet gérer les lecteurs (SGF6112)
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

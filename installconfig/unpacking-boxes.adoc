@@ -166,6 +166,80 @@ image::../media/fc_cable_and_sfp.gif[Câbles optiques et SFP]
 
 
 --
+.SG5800
+--
+* *Matériel*
++
+Dispositif SG5812 avec 12 disques installés::
++
+--
+image::../media/de212c_table_size.gif[Appliance SG5812 2U]
+
+--
+Appliance SG5860 sans disque installé::
++
+--
+image::../media/de460c_table_size.gif[Appliance SG5860 4U]
+
+--
+Panneau avant de l'appareil::
++
+--
+image::../media/sg5700_front_bezels.gif[Cadres de SG5812 et SG5860]
+
+
+NOTE: Vos cadres peuvent paraître différents.
+
+--
+Kit de rails avec instructions::
++
+--
+image::../media/rail_kit.gif[Kit de rails]
+
+--
+SG5860 : soixante disques NL-SAS::
++
+--
+image::../media/sg5760_drive.gif[Lecteur]
+
+--
+SG5860 : poignées::
++
+--
+image::../media/handles.gif[Poignées SG5860]
+
+--
+SG5860 : supports arrière et écrous à cage pour l'installation en rack à trous carrés::
++
+--
+image::../media/back_brackets_table_size.gif[Supports arrière et écrous à cage pour SG5860]
+
+--
+
+
+* *Câbles et connecteurs*
++
+
+TIP: Il se peut que votre armoire soit équipée de cordons d'alimentation spéciaux à la place des câbles d'alimentation fournis avec l'appliance.
+
++
+Deux cordons d'alimentation pour votre pays::
++
+--
+image::../media/power_cords.gif[Cordons d'alimentation]
+
+--
+Deux câbles 25 GbE SFP28 pour l'interconnexion du contrôleur (iSCSI)::
++
+--
+image::../media/sg5800_25gbe_sfp28_cable.png[Câbles 25 GbE SFP28]
+
+--
+
+
+
+
+--
 .SG6000
 --
 * *Matériel SG6060*
@@ -323,7 +397,108 @@ image::../media/sas_cable.gif[Câbles SAS]
 --
 .SG6100
 --
-* *Matériel*
+* *Matériel SG6160*
++
+Contrôleur SG6100-CN::
++
+--
+image::../media/sg6000_cn_front_without_bezel.gif[Contrôleur SG6100-CN]
+
+--
+Tiroir contrôleur E4000 sans disque installé::
++
+--
+image::../media/de460c_table_size.gif[Appliance SG5860 4U]
+
+--
+Deux encadrements avant::
++
+--
+image::../media/sg6000_front_bezels_for_table.gif[Encadrements avant]
+
+
+NOTE: Vos cadres peuvent paraître différents.
+
+--
+Deux kits de rails avec instructions::
++
+--
+image::../media/rail_kit.gif[Kit de rails]
+
+--
+60 disques NL-SAS::
++
+--
+image::../media/sg5760_drive.gif[Lecteur]
+
+--
+Quatre poignées::
++
+--
+image::../media/handles.gif[Poignées SG5860]
+
+--
+Supports arrière et écrous à cage pour l'installation en rack à trous carrés::
++
+--
+image::../media/back_brackets_table_size.gif[Supports arrière et écrous à cage pour SG5860]
+
+--
+Un câble d'interconnexion de dérivation 100 GbE à 4 x 25 GbE::
++
+--
+image::../media/sg6100_4x25gbe_spf28_cable.png[Câble de dérivation 100 GbE à 4 x 25 GbE]
+
+--
+Quatre cordons d'alimentation pour votre pays::
++
+--
+image::../media/power_cords.gif[Cordons d'alimentation]
+
+--
+
+
+* *Tiroir d'extension SG6160*
++
+Tiroir d'extension sans disque installé::
++
+--
+image::../media/de460c_table_size.gif[Appliance SG5860 4U]
+
+--
+Panneau avant::
++
+--
+image::../media/front_bezel_for_table_de460c.gif[Panneau avant DE460C]
+
+--
+60 disques NL-SAS::
++
+--
+image::../media/sg5760_drive.gif[Lecteur]
+
+--
+Un kit de rails avec instructions::
++
+--
+image::../media/rail_kit.gif[Kit de rails]
+
+--
+Quatre poignées::
++
+--
+image::../media/handles.gif[Poignées SG5860]
+
+--
+Supports arrière et écrous à cage pour l'installation en rack à trous carrés::
++
+--
+image::../media/back_brackets_table_size.gif[Supports arrière et écrous à cage pour SG5860]
+
+--
+
+
+* *SGF6112 matériel*
 +
 SGF6112::
 +

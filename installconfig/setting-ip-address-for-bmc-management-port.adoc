@@ -11,7 +11,7 @@ summary: 'Avant de pouvoir accéder à l"interface BMC, vous devez configurer l"
 
 
 [role="lead"]
-Avant de pouvoir accéder à l'interface BMC, configurez l'adresse IP du port de gestion BMC sur le contrôleur SGF6112, SG6000-CN ou les appliances de services.
+Avant de pouvoir accéder à l'interface BMC, configurez l'adresse IP du port de gestion BMC sur les contrôleurs SGF6112, SG6000-CN, SG6100-CN ou les appliances de services.
 
 Si vous utilisez ConfigBuilder pour générer un fichier JSON, vous pouvez configurer automatiquement les adresses IP. Voir link:automating-appliance-installation-and-configuration.html["Automatisez l'installation et la configuration de l'appliance"].
 
@@ -49,7 +49,13 @@ image::../media/sg6000_cn_bmc_management_port.gif[Port de gestion BMC sur le con
 --
 .SG6100
 --
+_SGF6112_ :
+
 image::../media/sgf6112_cn_bmc_management_port.png[Port de gestion BMC SGF6112]
+
+_SG6100-CN_ :
+
+image::../media/sg6100_cn_bmc_management_port.png[Port de gestion BMC SG610-CN]
 
 --
 ====

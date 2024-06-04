@@ -31,7 +31,7 @@ CAUTION: Si vous retirez le disque en fonctionnement, le nœud de l'appliance es
 
 
 .Étapes
-. Vérifiez que le voyant de gauche du lecteur à remplacer clignote en orange. Si un problème de lecteur a été signalé dans les interfaces utilisateur Grid Manager ou BMC, HDD02 ou HDD2, reportez-vous au lecteur dans le logement supérieur et HDD03 ou HDD3, reportez-vous au lecteur dans le logement inférieur.
+. Vérifiez que le voyant de gauche du lecteur à remplacer clignote en orange. Si un problème de lecteur a été signalé dans l'interface utilisateur Grid Manager ou BMC, HDD02 ou HDD2 reportez-vous au lecteur dans le logement supérieur et HDD03 ou HDD3 reportez-vous au lecteur dans le logement inférieur.
 +
 Vous pouvez également utiliser Grid Manager pour contrôler l'état des disques SSD. Sélectionnez *NOEUDS*. Puis faire `*Appliance Node*` > *matériel*. Si un lecteur est défectueux, le champ Storage RAID mode contient un message indiquant quel lecteur est défectueux.
 

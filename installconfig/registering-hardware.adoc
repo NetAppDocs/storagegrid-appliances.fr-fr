@@ -25,7 +25,7 @@ image::../media/appliance_label.gif[Étiquette incluant le numéro de série]
 
 NOTE: L'appliance de stockage SG6000 comporte plusieurs numéros de série. Le numéro de série figurant sur le tiroir du contrôleur de stockage doit être enregistré et utilisé si vous appelez pour obtenir une assistance ou une réparation sur l'appliance SG6000.
 
-. Accédez au site de support NetApp à l'adresse http://mysupport.netapp.com/["mysupport.netapp.com"^].
+. Accédez au http://mysupport.netapp.com/["Site de support NetApp"^].
 . Déterminez si vous devez enregistrer le matériel :
 +
 [cols="1a,2a"]

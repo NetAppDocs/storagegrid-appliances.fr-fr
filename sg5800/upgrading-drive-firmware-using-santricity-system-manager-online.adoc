@@ -1,0 +1,135 @@
+---
+permalink: sg5800/upgrading-drive-firmware-using-santricity-system-manager-online.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5800, storage node, storage appliance, upgrade, upgrading, firmware, drive, disk, SANtricity System Manager, SANtricity 
+summary: Vous mettez à niveau le micrologiciel de votre lecteur pour vous assurer que vous disposez de toutes les dernières fonctionnalités et correctifs. 
+---
+= Mettez à niveau le micrologiciel du lecteur SG5800 à l'aide de la méthode en ligne du Gestionnaire système SANtricity
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Utilisez la méthode en ligne du Gestionnaire système SANtricity pour mettre à niveau le firmware des disques de votre appliance et vous assurer que vous disposez des dernières fonctionnalités et des derniers correctifs.
+
+.Avant de commencer
+* Le dispositif de stockage est à l'état optimal.
+* Tous les disques ont un état optimal.
+
+
+
+CAUTION: Ne mettez pas à niveau le firmware du disque sur plusieurs appliances StorageGRID à la fois. Cela pourrait entraîner une indisponibilité des données, selon votre modèle de déploiement et votre politique ILM.
+
+.Description de la tâche
+Les disques sont mis à niveau un par un pendant que l'appliance effectue des E/S. Cette méthode ne nécessite pas le passage de l'appareil en mode de maintenance. Cependant, les performances du système peuvent être affectées et la mise à niveau peut prendre plusieurs heures de plus que la méthode hors ligne.
+
+[NOTE]
+====
+Les disques appartenant à des volumes qui ne sont pas redondants doivent être mis à jour à l'aide du link:upgrading-drive-firmware-using-santricity-system-manager-offline.html["méthode hors ligne"]. La méthode offline doit être utilisée pour tout pool ou groupe de volumes actuellement dégradé.
+
+Vous devez utiliser le link:upgrading-drive-firmware-using-santricity-system-manager-offline.html["méthode hors ligne"] Lors de la mise à niveau des disques SSD.
+
+====
+.Étapes
+. Pour accéder à SANtricity System Manager, utilisez l'une des méthodes suivantes :
++
+** Utilisez le programme d'installation de l'appliance StorageGRID et sélectionnez *Avancé* > *Gestionnaire système SANtricity*
+** Utilisez le Gestionnaire de grille et sélectionnez *NODES* > *_noeud de stockage_* > *Gestionnaire système SANtricity*
+** Pour utiliser SANtricity System Manager, accédez à l'adresse IP du contrôleur de stockage :
++
+`*https://_Storage_Controller_IP_*`
+
+
+
+. Entrez le nom d'utilisateur et le mot de passe de l'administrateur SANtricity System Manager si nécessaire.
+. Vérifiez la version du micrologiciel du lecteur actuellement installé sur l'appliance de stockage :
++
+.. Dans le Gestionnaire système SANtricity, sélectionnez *SUPPORT* > *Centre de mise à niveau*.
+.. Sous mise à niveau du micrologiciel du lecteur, sélectionnez *commencer la mise à niveau*.
++
+La page mettre à niveau le micrologiciel du lecteur affiche les fichiers du micrologiciel du lecteur actuellement installés.
+
+.. Notez les révisions actuelles du micrologiciel du lecteur et les identificateurs de lecteur dans la colonne micrologiciel du lecteur en cours.
++
+image::../media/storagegrid_update_drive_firmware.png[Mettre à niveau le micrologiciel du lecteur]
+
++
+Dans cet exemple :
+
++
+*** La version du micrologiciel du lecteur est *MS02*.
+*** L'identifiant du lecteur est *KPM51VUG800G*.
+
+
+.. Sélectionnez *Afficher les lecteurs* dans la colonne lecteurs associés pour afficher l'emplacement d'installation de ces lecteurs dans votre appliance de stockage.
+.. Fermez la fenêtre mise à niveau du micrologiciel du lecteur.
+
+
+. Téléchargez et préparez la mise à niveau disponible du firmware des disques :
++
+.. Sous mise à niveau du micrologiciel des disques, sélectionnez *NetApp support*.
+.. Sur le site de support NetApp, sélectionnez l'onglet *Téléchargements*, puis sélectionnez *micrologiciel de lecteur de disque E-Series*.
++
+La page firmware des disques E-Series s'affiche.
+
+.. Recherchez chaque *Drive identifier* installé dans votre appliance de stockage et vérifiez que chaque identificateur de lecteur dispose de la dernière révision du micrologiciel.
++
+*** Si la révision du micrologiciel n'est pas un lien, cet identificateur de lecteur a la dernière révision du micrologiciel.
+*** Si un ou plusieurs numéros de référence de lecteur sont répertoriés pour un identificateur de lecteur, une mise à niveau du micrologiciel est disponible pour ces lecteurs. Vous pouvez sélectionner n'importe quel lien pour télécharger le fichier de micrologiciel.
++
+image::../media/storagegrid_drive_firmware_download.png[Firmware des disques E-Series]
+
+
+
+.. Si une version ultérieure du micrologiciel est répertoriée, sélectionnez le lien dans la révision du micrologiciel (Télécharger) pour télécharger un `.zip` archive contenant le fichier du micrologiciel.
+.. Extrayez (décompressez le fichier d'archive du micrologiciel du lecteur que vous avez téléchargé sur le site de support.
+
+
+. Installez la mise à niveau du micrologiciel du lecteur :
++
+.. Dans le Gestionnaire système SANtricity, sous mise à niveau du micrologiciel du lecteur, sélectionnez *commencer la mise à niveau*.
+.. Sélectionnez *Browse*, puis sélectionnez les nouveaux fichiers de micrologiciel de lecteur que vous avez téléchargés à partir du site de support.
++
+Les fichiers du micrologiciel du lecteur ont un nom de fichier similaire à `D_HUC101212CSS600_30602291_MS01_2800_0002.dlp`.
+
++
+Vous pouvez sélectionner jusqu'à quatre fichiers de micrologiciel de lecteur, un par un. Si plusieurs fichiers de micrologiciel de lecteur sont compatibles avec le même lecteur, vous obtenez une erreur de conflit de fichier. Choisissez le fichier de micrologiciel de lecteur que vous souhaitez utiliser pour la mise à niveau et supprimez l'autre.
+
+.. Sélectionnez *Suivant*.
++
+*Sélectionner les lecteurs* répertorie les lecteurs que vous pouvez mettre à niveau avec les fichiers de micrologiciel sélectionnés.
+
++
+Seuls les lecteurs compatibles apparaissent.
+
++
+Le micrologiciel sélectionné pour le lecteur apparaît dans la colonne *micrologiciel proposé*. Si vous devez modifier ce micrologiciel, sélectionnez *Retour*.
+
+.. Sélectionnez *mettre à niveau tous les lecteurs en ligne* — met à niveau les lecteurs qui peuvent prendre en charge le téléchargement du micrologiciel pendant que la matrice de stockage traite les E/S. Lorsque vous sélectionnez cette méthode de mise à niveau, vous n'avez pas besoin d'arrêter les E/S sur les volumes associés utilisant ces disques.
++
+
+NOTE: Une mise à niveau en ligne peut prendre plusieurs heures de plus qu'une mise à niveau hors ligne.
+
+.. Dans la première colonne du tableau, sélectionnez le ou les lecteurs que vous souhaitez mettre à niveau.
++
+La meilleure pratique consiste à mettre à niveau tous les lecteurs du même modèle vers la même révision du micrologiciel.
+
+.. Sélectionnez *Démarrer* et confirmez que vous souhaitez effectuer la mise à niveau.
++
+Si vous devez arrêter la mise à niveau, sélectionnez *Stop*. Tous les téléchargements de micrologiciel en cours sont terminés. Tous les téléchargements de micrologiciel qui n'ont pas démarré sont annulés.
+
++
+
+CAUTION: L'arrêt de la mise à niveau du micrologiciel du lecteur peut entraîner une perte de données ou l'indisponibilité des disques.
+
+.. (Facultatif) pour afficher la liste des mises à niveau, sélectionnez *Enregistrer le journal*.
++
+Le fichier journal est enregistré dans le dossier des téléchargements de votre navigateur portant le nom `latest-upgrade-log-timestamp.txt`.
+
++
+link:troubleshoot-upgrading-drive-firmware-using-santricity-system-manager.html["Si nécessaire, dépannez les erreurs de mise à niveau du micrologiciel du pilote"].
+
+
+
+

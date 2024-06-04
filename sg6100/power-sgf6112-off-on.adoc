@@ -4,18 +4,18 @@ sidebar: sidebar
 keywords: storagegrid, sgf6112, power off, turn off, shut off, shutdown, shut down, power on, turn on, start 
 summary: 'Vous pouvez arrêter l"appliance SGF6112 et la remettre sous tension pour effectuer des opérations de maintenance.' 
 ---
-= Mettez l'appareil SGF6112 hors tension et sous tension
+= Mettez l'appliance SGF6112 ou le contrôleur SG6100-CN hors tension et sous tension
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-Vous pouvez arrêter l'appliance SGF6112 et la remettre sous tension pour effectuer des opérations de maintenance.
+Vous pouvez arrêter l'appliance SGF6112 ou le contrôleur SG6100-CN et les remettre sous tension pour effectuer des opérations de maintenance.
 
 
 
-== Arrêtez l'appliance SGF6112
+== Arrêtez l'appliance SGF6112 ou le contrôleur SG6100-CN
 
 Arrêtez l'appliance pour effectuer une maintenance matérielle.
 
@@ -61,7 +61,7 @@ Cette commande peut prendre jusqu'à 10 minutes.
 
 
 
-== Mettez le SGF6112 sous tension et vérifiez son fonctionnement
+== Mettez le SGF6112 ou le SG6100-CN sous tension et vérifiez le fonctionnement
 
 Mettez le contrôleur sous tension après la fin de la maintenance.
 
@@ -71,14 +71,13 @@ Mettez le contrôleur sous tension après la fin de la maintenance.
 
 
 .Étapes
-. Mettez l'appareil sous tension.
+. Mettez l'appareil sous tension :
++
+** Option 1 : appuyez sur le bouton d'alimentation situé à l'avant du contrôleur.
 +
 Vous devrez peut-être retirer le cadre pour accéder à l'interrupteur d'alimentation. Si c'est le cas, n'oubliez pas de le réinstaller ensuite.
 
-. Surveillez les voyants du contrôleur et les codes de démarrage à l'aide de l'une des méthodes suivantes :
-+
-** Appuyer sur le bouton de mise sous tension situé à l'avant du contrôleur.
-** Utilisez l'interface du contrôleur BMC :
+** Option 2 : utilisez l'interface BMC du contrôleur :
 +
 ... link:../installconfig/accessing-bmc-interface.html["Accéder à l'interface BMC du contrôleur"].
 ... Sélectionnez *Power Control*.

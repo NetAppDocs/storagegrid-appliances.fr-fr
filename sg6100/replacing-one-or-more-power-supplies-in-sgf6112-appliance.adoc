@@ -2,16 +2,16 @@
 permalink: sg6100/replacing-one-or-more-power-supplies-in-sgf6112-appliance.html 
 sidebar: sidebar 
 keywords: storagegrid, sg6100, sgf6112, Replacing, replace, power supply, remove, removing, removal, install, installing, installation 
-summary: 'Les appliances SG6100 Series disposent de deux blocs d"alimentation pour la redondance. Si l"un des blocs d"alimentation tombe en panne, vous devez le remplacer dès que possible pour vous assurer que l"appareil est alimenté de manière redondante. Les deux blocs d"alimentation fonctionnant dans l"appareil doivent être de même modèle et de même puissance.' 
+summary: 'L"appliance SGF6112 et le nœud de calcul SG6100-CN disposent de deux blocs d"alimentation pour la redondance. Si l"un des blocs d"alimentation tombe en panne, vous devez le remplacer dès que possible pour vous assurer que l"appareil est alimenté de manière redondante. Les deux blocs d"alimentation fonctionnant dans l"appareil doivent être de même modèle et de même puissance.' 
 ---
-= Remplacez l'une des alimentations ou les deux dans le SGF6112
+= Remplacez une ou les deux alimentations du SGF6112 ou du SG6100-CN
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-L'appliance SGF6112 dispose de deux blocs d'alimentation pour la redondance. Si l'un des blocs d'alimentation tombe en panne, vous devez le remplacer dès que possible pour vous assurer que l'appareil est alimenté de manière redondante. Les deux blocs d'alimentation fonctionnant dans l'appareil doivent être de même modèle et de même puissance.
+L'appliance SGF6112 et le nœud de calcul SG6100-CN disposent de deux blocs d'alimentation pour la redondance. Si l'un des blocs d'alimentation tombe en panne, vous devez le remplacer dès que possible pour vous assurer que l'appareil est alimenté de manière redondante. Les deux blocs d'alimentation fonctionnant dans l'appareil doivent être de même modèle et de même puissance.
 
 .Avant de commencer
 * Vous avez link:locating-sgf6112-in-data-center.html["l'appareil se trouve physiquement"] avec l'alimentation à remplacer.
@@ -30,9 +30,9 @@ L'appliance SGF6112 dispose de deux blocs d'alimentation pour la redondance. Si 
 
 
 .Description de la tâche
-La figure illustre les deux blocs d'alimentation du SGF6112. Les blocs d'alimentation sont accessibles depuis l'arrière de l'appareil.
+La figure présente les deux blocs d'alimentation pour l'appliance SGF6112 ou le nœud de calcul SG6100-CN. Les blocs d'alimentation sont accessibles depuis l'arrière de l'appareil.
 
-image::../media/sgf6112_power_supplies.png[Arrière du SGF6112 avec deux blocs d'alimentation]
+image::../media/sgf6112_power_supplies.png[Dos de SGF6112 ou SG6100-CN avec deux alimentations]
 
 .Étapes
 . Si vous ne remplacez qu'une seule alimentation, vous n'avez pas besoin d'éteindre l'appareil. Accédez au <<Unplug_the_power_cord,Débranchez le cordon d'alimentation>> étape. Si vous remplacez les deux blocs d'alimentation en même temps, procédez comme suit avant de débrancher les cordons d'alimentation :
@@ -40,7 +40,7 @@ image::../media/sgf6112_power_supplies.png[Arrière du SGF6112 avec deux blocs d
 .. link:power-sgf6112-off-on.html#shut-down-the-sgf6112-appliance["Arrêtez l'appareil"].
 +
 
-CAUTION: Si vous avez déjà utilisé une règle ILM pour créer une seule copie d'un objet et que vous remplacez les deux blocs d'alimentation en même temps, vous devez remplacer les blocs d'alimentation durant une fenêtre de maintenance planifiée. Sinon, vous risquez de perdre temporairement l'accès à ces objets au cours de cette procédure. Voir informations sur https://docs.netapp.com/us-en/storagegrid-118/ilm/why-you-should-not-use-single-copy-replication.html["pourquoi ne pas utiliser la réplication à copie unique"^].
+CAUTION: Si vous avez déjà utilisé une règle ILM pour créer une seule copie d'un objet et que vous remplacez les deux blocs d'alimentation en même temps, vous devez remplacer les blocs d'alimentation pendant une fenêtre de maintenance planifiée, car vous risquez de perdre temporairement l'accès à ces objets pendant cette procédure. Voir informations sur https://docs.netapp.com/us-en/storagegrid-118/ilm/why-you-should-not-use-single-copy-replication.html["pourquoi ne pas utiliser la réplication à copie unique"^].
 
 
 

@@ -1,0 +1,139 @@
+---
+permalink: sg5800/replace-drives-12-24.html 
+sidebar: sidebar 
+keywords: E4000 replace drive, replacing E4000 drive, E4000 replace drive, replacing E4000 drive, E4000, E-Series, eseries. sg5812 
+summary: Vous pouvez remplacer un lecteur dans le SG5812. 
+---
+= Remplacez le lecteur dans le SG5812
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez remplacer un lecteur dans un SG5812.
+
+.Description de la tâche
+StorageGRID Grid Manager surveille l'état de l'appliance et déclenche des alertes en cas de panne disque.  Lorsque Grid Manager déclenche une alerte, ou à tout moment, vous pouvez utiliser la fonctionnalité Recovery Guru dans SANtricity System Manager pour obtenir plus d'informations sur le disque concerné par la défaillance.  Lorsqu'un disque est en panne, le voyant d'avertissement orange s'allume. Vous pouvez remplacer à chaud un disque défectueux alors que la matrice de stockage reçoit des E/S.
+
+.Avant de commencer
+* Passez en revue les exigences en matière de manipulation des disques
+* Assurez-vous de disposer des éléments suivants :
++
+** Disque de remplacement pris en charge par NetApp pour le tiroir contrôleur ou le tiroir disque.
+** Un bracelet antistatique ou d'autres précautions antistatiques.
+** Station de gestion avec un navigateur qui peut accéder au Gestionnaire système SANtricity du contrôleur. (Pour ouvrir l'interface System Manager, pointez le navigateur vers le nom de domaine ou l'adresse IP du contrôleur.)
+
+
+
+
+
+
+== Étape 1 : préparer le remplacement de l'entraînement
+
+Préparation au remplacement d'un disque en vérifiant la fonctionnalité Recovery Guru dans SANtricity System Manager et en effectuant les étapes préalables requises. Vous pouvez ensuite localiser le composant défectueux.
+
+.Étapes
+. Si le gourou de la restauration de SANtricity System Manager vous a averti d'une _panne de disque imminente_, mais que le disque n'est pas encore défaillant, suivez les instructions de la fonctionnalité Recovery Guru qui indique la panne du disque.
+. Si nécessaire, utilisez SANtricity System Manager pour confirmer que vous disposez d'un disque de remplacement approprié.
++
+.. Sélectionnez *matériel*.
+.. Sélectionnez le disque défectueux sur le graphique du tiroir.
+.. Cliquez sur le lecteur pour afficher son menu contextuel, puis sélectionnez *Paramètres d'affichage*.
+.. Vérifiez que la capacité du disque de remplacement est égale ou supérieure à celle du disque que vous remplacez et qu'il possède les fonctionnalités attendues.
++
+Par exemple, n'essayez pas de remplacer un disque dur par un disque SSD. De même, si vous remplacez un lecteur compatible avec la sécurité, assurez-vous que le lecteur de remplacement est également compatible avec la sécurité.
+
+
+
+. Si nécessaire, utilisez SANtricity System Manager pour localiser le disque dans la baie de stockage. Dans le menu contextuel du lecteur de la page matériel, sélectionnez *Activer le voyant de localisation*.
++
+Le voyant d'avertissement du lecteur (orange) clignote pour vous permettre d'identifier le lecteur à remplacer.
+
++
+
+NOTE: Si vous remplacez un disque dans un tiroir équipé d'un panneau, vous devez le retirer pour afficher les LED du disque.
+
+
+
+
+
+== Étape 2 : retrait du disque défectueux
+
+Retirez un disque défectueux pour le remplacer par un nouveau disque.
+
+.Étapes
+. Déballez le lecteur de remplacement et placez-le sur une surface plane et sans électricité statique près de l'étagère.
++
+Conservez tous les matériaux d'emballage.
+
+. Appuyez sur le bouton de déverrouillage du disque défectueux.
+. Ouvrez la poignée de came et faites glisser légèrement l'entraînement vers l'extérieur.
+. Attendre 30 secondes.
+. A l'aide des deux mains, retirez le disque du shelf.
+. Placez le lecteur sur une surface antistatique avec amorti, à l'écart des champs magnétiques.
+. Attendez 30 secondes que le logiciel reconnaisse que le lecteur a été retiré.
++
+
+NOTE: Si vous retirez accidentellement un lecteur actif, attendez au moins 30 secondes, puis réinstallez-le. Pour la procédure de restauration, reportez-vous au logiciel de gestion du stockage.
+
+
+
+
+
+== Étape 3 : installer un nouveau lecteur
+
+Installez un nouveau lecteur pour remplacer le lecteur défectueux.
+
+
+CAUTION: Installez le disque de remplacement dès que possible après avoir retiré le disque défectueux. Dans le cas contraire, il existe un risque de surchauffe de l'équipement.
+
+.Étapes
+. Ouvrir la poignée de came.
+. À l'aide de deux mains, insérez le lecteur de remplacement dans la baie ouverte, en appuyant fermement jusqu'à ce que le lecteur s'arrête.
+. Fermez lentement la poignée de came jusqu'à ce que le lecteur soit bien en place dans le fond de panier central et que la poignée s'enclenche.
++
+Le voyant vert du lecteur s'allume lorsque le lecteur est correctement inséré.
+
++
+
+NOTE: Selon votre configuration, le contrôleur peut reconstruire automatiquement les données sur le nouveau disque. Si le tiroir utilise des disques de rechange à chaud, le contrôleur peut avoir à effectuer une reconstruction complète sur le disque de rechange à chaud avant de pouvoir copier les données sur le disque remplacé. Ce processus de reconstruction augmente le temps requis pour mener à bien cette procédure.
+
+
+
+
+
+== Étape 4 : remplacement complet du disque
+
+Procédez au remplacement du lecteur pour vérifier que le nouveau disque fonctionne correctement.
+
+.Étapes
+. Vérifiez le voyant d'alimentation et la LED d'avertissement du disque que vous avez remplacé. (Lorsque vous insérez un disque pour la première fois, sa LED d'avertissement peut s'allume. Toutefois, le voyant devrait s'éteindre en moins d'une minute.)
++
+** La LED d'alimentation est allumée ou clignote et la LED d'avertissement est éteinte : indique que le nouveau disque fonctionne correctement.
+** Le voyant d'alimentation est éteint : indique que le lecteur n'est peut-être pas installé correctement. Retirez le lecteur, attendez 30 secondes, puis réinstallez-le.
+** La LED d'avertissement est allumée : indique que le nouveau disque est susceptible d'être défectueux. Remplacez-le par un autre lecteur neuf.
+
+
+. Si le gourou de la restauration de SANtricity System Manager affiche toujours un problème, sélectionnez *revérifier* pour vous assurer que le problème a été résolu.
+. Si le gourou de la restauration indique que la reconstruction du disque n'a pas démarré automatiquement, lancer la reconstruction manuellement, comme suit :
++
+
+NOTE: Effectuez cette opération uniquement lorsque vous y êtes invité par le support technique ou le gourou de la restauration
+
++
+.. Sélectionnez *matériel*.
+.. Cliquez sur le lecteur que vous avez remplacé.
+.. Dans le menu contextuel du lecteur, sélectionnez *reconstruire*.
+.. Confirmez que vous souhaitez effectuer cette opération.
++
+Une fois la reconstruction du disque terminée, le groupe de volumes est à l'état optimal.
+
+
+
+. Si nécessaire, réinstallez le cadre.
+. Retournez la pièce défectueuse à NetApp, tel que décrit dans les instructions RMA (retour de matériel) fournies avec le kit.
+
+
+.Et la suite ?
+Le remplacement de votre disque est terminé. Vous pouvez reprendre les opérations normales.

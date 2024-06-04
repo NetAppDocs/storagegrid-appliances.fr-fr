@@ -1,0 +1,166 @@
+---
+permalink: sg5800/replace-power-supply.html 
+sidebar: sidebar 
+keywords: E4000 replace canister, replacing E4000 canister, E4000 replace power supply, replacing E4000 power supply, E4000 replace fan, replacing E4000 fan, E4000, E-Series, eseries 
+summary: 'Vous pouvez remplacer un bloc d"alimentation dans le SG5812.' 
+---
+= Remplacez l'alimentation du SG5812
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez remplacer une alimentation dans un SG5812.
+
+.Description de la tâche
+Si vous envisagez de remplacer une alimentation électrique, gardez les exigences suivantes à l'esprit.
+
+* Vous devez disposer d'une alimentation de remplacement prise en charge par votre appareil.
+* Vous avez un bracelet ESD, ou vous avez pris d'autres précautions antistatiques.
++
+
+NOTE: Ne mélangez pas des blocs d'alimentation de différents types de tension. Toujours remplacer comme pour similaire.
+
+
+
+.Avant de commencer
+* Passez en revue les détails du Recovery Guru afin de vérifier qu'il y a un problème avec l'alimentation. Sélectionnez *revérification* dans Recovery Guru pour vous assurer qu'aucun autre élément ne doit être traité en premier.
+* Vérifiez que le voyant d'avertissement orange du bloc d'alimentation est allumé, ce qui indique que le bloc d'alimentation ou son ventilateur intégré est défectueux. Pour obtenir de l'aide, contactez le support technique si les deux blocs d'alimentation du tiroir disposent de LED d'avertissement orange.
+* Assurez-vous de disposer des éléments suivants :
++
+** Bloc d'alimentation de remplacement pris en charge par votre modèle de contrôleur.
+** Un bracelet antistatique ou d'autres précautions antistatiques.
+** Accès à SANtricity System Manager :
++
+*** Dans le Gestionnaire de grille, sélectionnez *NODES* > *_appliance node_* > *SANtricity System Manager*. Les informations relatives au contrôleur se trouvent sur le https://docs.netapp.com/us-en/storagegrid-118/monitor/viewing-santricity-system-manager-tab.html["Onglet Gestionnaire système SANtricity"].
+*** Pointez un navigateur de votre station de gestion vers le nom de domaine ou l'adresse IP du contrôleur.
+
+
+
+
+
+
+
+
+== Étape 1 : préparez-vous à remplacer l'alimentation électrique
+
+Préparez-vous à remplacer un bloc d'alimentation.
+
+.Étapes
+. Collecte des données de support de votre baie de stockage à l'aide de SANtricity System Manager
++
+.. Sélectionnez *support > Centre de support > Diagnostics*.
+.. Sélectionnez *collecter les données de support*.
+.. Cliquez sur *collect*.
++
+Le fichier est enregistré dans le dossier Téléchargements de votre navigateur portant le nom *support-data.7z*.
+
+
+
+. Dans SANtricity System Manager, déterminez quelle alimentation a échoué.
++
+Vous pouvez trouver ces informations dans la zone Détails du gourou de la restauration ou vérifier les informations affichées pour la tiroir.
+
++
+.. Sélectionnez *matériel*.
+.. Regardez la puissance image:../media/sam1130_ss_hardware_power_icon_maint-e2800.gif[""] et ventilateur image:../media/sam1130_ss_hardware_fan_icon_maint-e2800.gif[""] Des icônes à droite des listes déroulantes *Shelf* pour déterminer quel shelf possède l'alimentation défectueuse.
++
+Si un composant est défectueux, l'une de ces icônes ou les deux sont rouges.
+
+.. Lorsque vous trouvez la tablette avec une icône rouge, sélectionnez *Afficher le verso de la tablette*.
+.. Sélectionnez l'une des alimentations.
+.. Dans les onglets *blocs d'alimentation* et *ventilateurs*, observez l'état des blocs d'alimentation, des blocs d'alimentation et des ventilateurs pour déterminer quelle alimentation doit être remplacée.
++
+Un composant ayant l'état *FAILED* doit être remplacé.
+
++
+
+CAUTION: Si le second boîtier d'alimentation de l'étagère ne dispose pas de l'état *optimal*, ne tentez pas de remplacer à chaud l'alimentation défectueuse. Cependant, contactez le support technique pour obtenir de l'aide.
+
+
+
+. À l'arrière de la matrice de stockage, observez les voyants d'avertissement pour localiser le bloc d'alimentation à retirer.
++
+Vous devez remplacer l'alimentation sur laquelle la LED d'avertissement est allumée.
+
+
+
+
+
+== Étape 2 : retirer l'alimentation défectueuse
+
+Retirez un bloc d'alimentation défectueux pour le remplacer par un nouveau.
+
+.Étapes
+. Déballez le nouveau bloc d'alimentation et placez-le sur une surface plane à proximité de la tablette du lecteur.
++
+Conservez tous les matériaux d'emballage pour pouvoir les utiliser lors du retour de l'alimentation défectueuse.
+
+. Mettez le bloc d'alimentation hors tension et débranchez les câbles d'alimentation :
++
+.. Eteindre l'interrupteur de l'alimentation en panne.
+.. Ouvrez le dispositif de retenue du cordon d'alimentation, puis débranchez le cordon d'alimentation du bloc d'alimentation.
+.. Débranchez le cordon d'alimentation de la source d'alimentation.
+
+
+. Appuyez sur le loquet de la poignée de came du bloc d'alimentation, puis ouvrez la poignée de came pour libérer complètement le bloc d'alimentation du plan central.
+. Utilisez la poignée de came pour faire glisser le bloc d'alimentation hors du système.
++
+
+CAUTION: Lors de la dépose d'une alimentation électrique, toujours utiliser deux mains pour soutenir son poids.
+
+
+
+
+
+== Étape 3 : installez une nouvelle alimentation
+
+Installez une nouvelle alimentation électrique pour remplacer la source d'alimentation défectueuse.
+
+.Étapes
+. Assurez-vous que l'interrupteur marche/arrêt du nouveau bloc d'alimentation est en position *arrêt*.
+. À l'aide des deux mains, soutenez et alignez les bords du bloc d'alimentation avec l'ouverture du châssis du système, puis poussez doucement le bloc d'alimentation dans le châssis à l'aide de la poignée de came.
++
+Les blocs d'alimentation sont munis de clés et ne peuvent être installés qu'une seule fois.
+
++
+
+CAUTION: N'utilisez pas de force excessive lorsque vous faites glisser le bloc d'alimentation dans le système ; vous risquez d'endommager le connecteur.
+
+. Fermez la poignée de came de façon à ce que le loquet s'enclenche en position verrouillée et que le bloc d'alimentation soit bien en place.
+. Rebranchez le câblage du bloc d'alimentation :
++
+.. Rebranchez le cordon d'alimentation au bloc d'alimentation et à la source d'alimentation.
+.. Fixez le cordon d'alimentation à l'alimentation à l'aide de la pièce de retenue du cordon d'alimentation.
+
+
+. Mettez le réservoir du nouveau bloc d'alimentation sous tension.
+
+
+
+
+== Étape 4 : remplacement complet de l'alimentation électrique
+
+Vérifiez que la nouvelle alimentation fonctionne correctement, rassemblez les données de support et reprenez le fonctionnement normal.
+
+.Étapes
+. Sur le nouveau bloc d'alimentation, vérifiez que le voyant d'alimentation vert est allumé et que le voyant d'avertissement orange est éteint.
+. Dans le gourou de la restauration de SANtricity System Manager, sélectionnez *revérifier* pour vous assurer que le problème a été résolu.
+. Si une panne d'alimentation est toujours signalée, répétez les étapes de la section <<Étape 2 : retirer l'alimentation défectueuse>>, et dans <<Étape 3 : installez une nouvelle alimentation>>. Si le problème persiste, contactez l'assistance technique.
+. Déposer la protection antistatique.
+. Collecte des données de support de votre baie de stockage à l'aide de SANtricity System Manager
++
+.. Sélectionnez *support > Centre de support > Diagnostics*.
+.. Sélectionnez *collecter les données de support*.
+.. Cliquez sur *collect*.
++
+Le fichier est enregistré dans le dossier Téléchargements de votre navigateur portant le nom *support-data.7z*.
+
+
+
+. Retournez la pièce défectueuse à NetApp, tel que décrit dans les instructions RMA (retour de matériel) fournies avec le kit.
+
+
+.Et la suite ?
+Le remplacement de votre bloc d'alimentation est terminé. Vous pouvez reprendre les opérations normales.

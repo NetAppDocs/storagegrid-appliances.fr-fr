@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6100, sgf6112, storage node, storage appliance, cover, install, installing, installation, reinstall, reinstalling, reinstallation 
 summary: 'Retirez le couvercle de l"appareil pour accéder aux composants internes à des fins d"entretien et remettez-le en place une fois l"opération terminée.' 
 ---
-= Replacez le couvercle du SGF6112
+= Remplacer le couvercle SGF6112 ou SG6100-CN
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

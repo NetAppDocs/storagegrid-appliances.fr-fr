@@ -1,0 +1,204 @@
+---
+permalink: sg6100/adding-expansion-shelf-to-deployed-sg6160.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6100, storage node, storage appliance, sg6160, expansion shelf, expansion, drive, disk, install, installing, installation, add, adding, expand 
+summary: 'Pour augmenter la capacité de stockage, vous pouvez ajouter un ou deux tiroirs d"extension au système SG6160 déployé dans un système StorageGRID.' 
+---
+= Ajout du tiroir d'extension au SG6160 déployé
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pour augmenter la capacité de stockage, vous pouvez ajouter un ou deux tiroirs d'extension au système SG6160 déjà déployé dans un système StorageGRID.
+
+.Avant de commencer
+* Vous devez disposer de la phrase secrète pour le provisionnement.
+* Vous devez exécuter StorageGRID 11.8 ou une version ultérieure.
+* Le tiroir d'extension et deux câbles SAS pour chaque tiroir d'extension sont disponibles.
+* Vous avez trouvé l'appliance de stockage où vous ajoutez le tiroir d'extension dans le data Center.
++
+link:locating-sgf6112-in-data-center.html["Localiser le contrôleur dans le data Center"]
+
+
+
+.Description de la tâche
+Pour ajouter un tiroir d'extension, procédez comme suit :
+
+* Installez le matériel dans l'armoire ou le rack.
+* Placez le SG6160 en mode maintenance.
+* Connectez le tiroir d'extension au tiroir du contrôleur E4000 ou à un autre tiroir d'extension.
+* Démarrez l'extension à l'aide du programme d'installation de l'appliance StorageGRID.
+* Attendez que les nouveaux volumes soient configurés.
+
+
+En procédant à une ou deux tiroirs d'extension, chaque nœud d'appliance doit prendre moins d'une heure. Pour minimiser le temps d'indisponibilité, suivez les instructions ci-dessous afin d'installer les nouveaux disques et tiroirs d'extension avant de placer le SG6160 en mode de maintenance. La durée restante de la procédure doit être d'environ 20 à 30 minutes par nœud d'appliance.
+
+.Étapes
+. Suivez les instructions de la section link:../installconfig/sg6160-installing-60-drive-shelves-into-cabinet-or-rack.html["installation des tiroirs de 60 disques dans une armoire ou un rack"].
+. Dans Grid Manager, link:../commonhardware/placing-appliance-into-maintenance-mode.html["Placer le contrôleur SG6100-CN en mode maintenance"].
+. Connectez chaque tiroir d'extension au tiroir du contrôleur E4000 comme indiqué sur le schéma.
++
+Cette mise en plan montre deux tiroirs d'extension. Si vous n'en avez qu'un, connectez l'E/S A au contrôleur A et connectez l'E/S B au contrôleur B.
+
++
+image::../media/expansion_shelves_connections_sg6160.png[Connexions des tiroirs d'extension SG6160]
+
++
+[cols="1a,2a"]
+|===
+| Légende | Description 
+
+
+ a| 
+1
+ a| 
+SG6100-CN
+
+
+
+ a| 
+2
+ a| 
+Tiroir contrôleur E4000
+
+
+
+ a| 
+3
+ a| 
+Contrôleur A
+
+
+
+ a| 
+4
+ a| 
+Contrôleur B
+
+
+
+ a| 
+5
+ a| 
+Tiroir d'extension 1
+
+
+
+ a| 
+6
+ a| 
+Module d'E/S A pour le tiroir d'extension 1
+
+
+
+ a| 
+7
+ a| 
+Module d'E/S B pour le tiroir d'extension 1
+
+
+
+ a| 
+8
+ a| 
+Tiroir d'extension 2
+
+
+
+ a| 
+9
+ a| 
+Module d'E/S A pour le tiroir d'extension 2
+
+
+
+ a| 
+10
+ a| 
+Module d'E/S B pour le tiroir d'extension 2
+
+|===
+. Branchez les câbles d'alimentation et mettez les tiroirs d'extension sous tension.
++
+.. Connectez un cordon d'alimentation à chacune des deux unités d'alimentation de chaque shelf d'extension.
+.. Connectez les deux cordons d'alimentation de chaque tiroir d'extension à deux PDU différentes dans l'armoire ou le rack.
+.. Allumer les deux boutons d'alimentation pour chaque tiroir d'extension.
++
+*** N'éteignez pas les interrupteurs d'alimentation pendant le processus de mise sous tension.
+*** Les ventilateurs des tiroirs d'extension peuvent être très bruyants lors du premier démarrage. Le bruit est normal au démarrage.
+
+
+
+
+. Surveillez la page d'accueil du programme d'installation de l'appliance StorageGRID.
++
+En cinq minutes environ, les tiroirs d'extension sont mis sous tension et détectés par le système. La page d'accueil indique le nombre de nouveaux tiroirs d'extension détectés et le bouton Démarrer l'extension est activé.
+
++
+La capture d'écran présente des exemples de messages qui peuvent apparaître sur la page d'accueil, selon le nombre de tiroirs d'extension existants ou nouveaux, comme suit :
+
++
+** La bannière entourée en haut de la page indique le nombre total de étagères d'extension détectées.
++
+*** La bannière indique le nombre total de tiroirs d'extension, que ceux-ci soient configurés et déployés ou nouveaux et non configurés.
+*** Si aucun tiroir d'extension n'est détecté, la bannière n'apparaît pas.
+
+
+** Le message encerclé en bas de la page indique qu'une extension est prête à être démarrée.
++
+*** Ce message indique le nombre de nouveaux tiroirs d'extension détectés par StorageGRID. « Connecté » indique que la tablette est détectée. « Non configuré » indique que le tiroir est nouveau et qu'il n'est pas encore configuré à l'aide du programme d'installation de l'appliance StorageGRID.
++
+
+NOTE: Les tiroirs d'extension déjà déployés ne sont pas inclus dans ce message. Ils sont inclus dans le compte dans la bannière en haut de la page.
+
+*** Le message ne s'affiche pas si de nouveaux tiroirs d'extension ne sont pas détectés.
++
+image::../media/appl_installer_home_expansion_shelf_ready_to_install.png[Installation des tiroirs d'extension]
+
+
+
+
+
+. Si nécessaire, résolvez les problèmes décrits dans les messages de la page d'accueil.
++
+Utilisez SANtricity System Manager, par exemple, pour résoudre les problèmes matériels de stockage.
+
+. Vérifiez que le nombre de tiroirs d'extension affichés sur la page d'accueil correspond au nombre de tiroirs d'extension que vous ajoutez.
++
+
+NOTE: Si les nouveaux tiroirs d'extension n'ont pas été détectés, vérifiez qu'ils sont correctement câblés et mis sous tension.
+
+. [[start_expansion]]cliquez sur *Start expansion* pour configurer les tiroirs d'extension et les rendre disponibles pour le stockage d'objets.
+. Surveiller la progression de la configuration du tiroir d'extension.
++
+Des barres de progression apparaissent sur la page Web, comme elles le font lors de l'installation initiale.
+
++
+image::../media/monitor_expansion_for_new_appliance_shelf.png[Contrôle de la configuration des tiroirs d'extension]
+
++
+Une fois la configuration terminée, l'appliance redémarre automatiquement pour quitter le mode de maintenance et rejoindre à nouveau la grille. Ce processus peut prendre jusqu'à 20 minutes.
+
++
+
+NOTE: Pour relancer la configuration du tiroir d'extension en cas d'échec, accédez au programme d'installation de l'appliance StorageGRID, sélectionnez *Avancé* > *redémarrer le contrôleur*, puis sélectionnez *redémarrer en mode de maintenance*. Une fois le nœud redémarré, réessayez dans <<start_expansion,configuration des tiroirs d'extension>>.
+
++
+Une fois le redémarrage terminé, l'onglet *tâches* ressemble à la capture d'écran suivante :
+
++
+image::../media/appliance_installer_reboot_complete.png[Redémarrage terminé]
+
+. Vérifiez l'état du nœud de stockage de l'appliance et des nouveaux tiroirs d'extension.
++
+.. Dans le Gestionnaire de grille, sélectionnez *NODES* et vérifiez que le noeud de stockage de l'appliance possède une icône de coche verte.
++
+L'icône de coche verte signifie qu'aucune alerte n'est active et que le nœud est connecté à la grille. Pour une description des icônes de nœuds, reportez-vous à la section https://docs.netapp.com/us-en/storagegrid-118/monitor/monitoring-system-health.html#monitor-node-connection-states["Surveiller les États de connexion du nœud"^].
+
+.. Sélectionnez l'onglet *stockage* et vérifiez que 16 nouveaux magasins d'objets sont affichés dans la table stockage d'objets pour chaque étagère d'extension ajoutée.
+.. Vérifier que chaque nouveau tiroir d'extension dispose d'un état de tiroir nominal et d'un état de configuration configuré.
+
+
+

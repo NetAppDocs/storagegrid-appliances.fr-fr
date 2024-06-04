@@ -1,0 +1,16 @@
+---
+permalink: sg6100/upgrading-drive-firmware-using-santricity-system-manager.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6160, storage node, storage appliance, upgrade, firmware, drive, disk, SANtricity System Manager, SANtricity 
+summary: Vous mettez à niveau le micrologiciel de votre lecteur pour vous assurer que vous disposez de toutes les dernières fonctionnalités et correctifs. 
+---
+= Mettez à niveau le firmware du disque SG6160 à l'aide du gestionnaire de système SANtricity
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Mettez à niveau le micrologiciel des lecteurs de votre appareil pour vous assurer que vous disposez des dernières fonctionnalités et des derniers correctifs.
+
+Directive non résolue dans <stdin> - include:../_include/upgrading-drive-firmware-using-santricity-system-Manager.adoc[]

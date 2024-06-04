@@ -1,0 +1,64 @@
+---
+permalink: sg5800/changing-link-configuration-of-sg5800-controller.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= Modifier la configuration de la liaison du contrôleur SG5800
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez modifier la configuration de la liaison Ethernet du contrôleur SG5800. Vous pouvez modifier le mode de liaison du port, le mode de liaison réseau et la vitesse de liaison.
+
+.Avant de commencer
+link:../commonhardware/placing-appliance-into-maintenance-mode.html["Placer le contrôleur SG5800 en mode de maintenance"].
+
+
+NOTE: Dans de rares cas, le fait de placer une appliance StorageGRID en mode de maintenance peut rendre l'appliance indisponible pour l'accès à distance.
+
+.Description de la tâche
+Les options permettant de modifier la configuration de la liaison Ethernet du contrôleur SG5800 sont les suivantes :
+
+* Changement du mode *Port bond* de fixe à agrégé, ou d'agrégat à fixe
+* Passage du mode de liaison réseau * d'Active-Backup à LACP, ou de LACP à Active-Backup
+* Activation ou désactivation du balisage VLAN ou modification de la valeur d'une balise VLAN
+* Modification de la vitesse de liaison de 10-GbE à 25-GbE, ou de 25-GbE à 10-GbE
+
+
+.Étapes
+. Sélectionnez *configurer réseau* > *Configuration lien* dans le menu.
++
+image::../media/link_configuration_option.gif[Configuration du lien]
+
+. [[change_link_configuration_sg5800, start=2]]apportez les modifications souhaitées à la configuration du lien.
++
+Pour plus d'informations sur les options, reportez-vous à la section link:../installconfig/configuring-network-links.html["Configurer les liaisons réseau"].
+
+. Lorsque vous êtes satisfait de vos sélections, cliquez sur *Enregistrer*.
++
+
+NOTE: Vous risquez de perdre votre connexion si vous avez apporté des modifications au réseau ou au lien auquel vous êtes connecté. Si vous n'êtes pas reconnecté dans un délai d'une minute, saisissez à nouveau l'URL du programme d'installation de l'appliance StorageGRID à l'aide de l'une des autres adresses IP attribuées à l'appliance : +
+`*https://_SG5800_Controller_IP_:8443*`
+
++
+Si vous avez modifié les paramètres VLAN, le sous-réseau de l'appliance a peut-être changé. Si vous devez modifier les adresses IP de l'appareil, suivez la link:../installconfig/setting-ip-configuration.html["Configurez les adresses IP StorageGRID"] instructions.
+
+. Dans le programme d'installation de l'appliance StorageGRID, sélectionnez *configurer le réseau* > *Test Ping*.
+. Utilisez l'outil Test Ping pour vérifier la connectivité aux adresses IP sur tous les réseaux susceptibles d'avoir été affectés par les modifications de configuration de liaison que vous avez effectuées dans  <<change_link_configuration_sg5700,Modifier la configuration du lien>> étape.
++
+En plus des autres tests que vous choisissez d'effectuer, vérifiez que vous pouvez envoyer une commande ping à l'adresse IP de la grille du nœud d'administration principal et à l'adresse IP de la grille d'au moins un autre nœud de stockage. Si nécessaire, corrigez tout problème de configuration de liaison.
+
+. Une fois que vous êtes satisfait du fait que les modifications de configuration du lien fonctionnent, redémarrez le nœud. Dans le programme d'installation de l'appliance StorageGRID, sélectionnez *Avancé* > *redémarrer le contrôleur*, puis sélectionnez *redémarrer dans StorageGRID*.
++
+image::../media/reboot_controller_from_maintenance_mode.png[Redémarrez le contrôleur en mode de maintenance]
+
++
+L'appliance peut redémarrer et rejoindre la grille en 20 minutes. Pour confirmer que le redémarrage est terminé et que le nœud a rejoint la grille, retournez à la grille Manager. La page *NODES* doit afficher un état normal (icône de coche verte image:../media/icon_alert_green_checkmark.png["coche verte"] à gauche du nom du nœud) pour le nœud de l'appliance, indiquant qu'aucune alerte n'est active et que le nœud est connecté à la grille.
+
++
+image::../media/nodes_menu.png[Le nœud d'appliance a rejoint la grille]
+
+

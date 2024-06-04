@@ -326,7 +326,7 @@ Ports d'extension de disque
  a| 
 12 Gb/s SAS
  a| 
-Non utilisé. Les appliances StorageGRID ne prennent pas en charge les tiroirs disques d'extension.
+Non utilisé.
 
 
 
@@ -421,7 +421,7 @@ Ethernet 1 Gbit (RJ-45)
 * Options du port 1 :
 +
 ** Connectez-vous à un réseau de gestion pour activer l'accès TCP/IP direct à SANtricity System Manager
-** Laissez le câble non câblé pour enregistrer un port de commutateur et une adresse IP.  Accédez à SANtricity System Manager à l'aide des interfaces utilisateur Grid Manager ou Storage Grid Appliance installer.
+** Laissez le câble non câblé pour enregistrer un port de commutateur et une adresse IP.  Accédez au Gestionnaire système SANtricity à l'aide du Gestionnaire de grille ou du programme d'installation de l'appliance Storage Grid.
 
 
 

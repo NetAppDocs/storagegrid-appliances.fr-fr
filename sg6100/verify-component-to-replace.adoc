@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: sgf6112 
 summary: 'Si vous n"êtes pas sûr du composant matériel à remplacer dans votre appareil, suivez cette procédure pour identifier le composant et l"emplacement de l"appareil dans le centre de données.' 
 ---
-= Vérifiez le composant à remplacer dans le SGF6112
+= Vérifier le composant à remplacer dans le SGF6112 ou le SG6100-CN
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

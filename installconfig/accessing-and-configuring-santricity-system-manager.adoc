@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storage node, storage appliance, SANtricity System Manager, SANtricity, System Manager, configure, configuring, setup, set up, setting up, access, accessing, E-Series AutoSupport, autosupport, configure, configuring, setup, set up, setting up, access, accessing, hardware, status, diagnostic, environment drives, drive, temperature, IP, IP address, management port, Appliance Installer 
 summary: 'Vous pouvez utiliser SANtricity System Manager pour surveiller l"état des contrôleurs de stockage, des disques de stockage et d"autres composants matériels du tiroir du contrôleur de stockage. Vous pouvez également configurer un proxy pour E-Series AutoSupport qui vous permet d"envoyer des messages AutoSupport depuis le dispositif sans utiliser le port de gestion.' 
 ---
-= Configuration de SANtricity System Manager (SG6000 et SG5700)
+= Configuration de SANtricity System Manager (SG6160, SG6000, SG5700 et SG5800)
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sgf6112, appliance, locate, find, locating, finding, identify, blue led, blue light 
 summary: 'Localisez l"appliance pour pouvoir effectuer les opérations de maintenance ou de mise à niveau du matériel.' 
 ---
-= Localisez l'appliance SGF6112 dans le data Center
+= Localisez l'appliance SGF6112 ou le contrôleur SG6100-CN dans le data Center
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -38,6 +38,6 @@ Le voyant d'identification arrière se trouve au centre de l'appareil, sous le l
 
 
 .Une fois que vous avez terminé
-link:turning-sgf6112-identify-led-on-and-off.html["Éteindre la LED bleue Identify"] si vous l'avez utilisé pour localiser l'appareil.
+link:turning-sgf6112-identify-led-on-and-off.html["Éteindre la LED bleue Identify"] utilisez l'une des méthodes suivantes si vous l'avez utilisée pour localiser l'appareil :
  ** Appuyez sur le commutateur LED Identify situé sur le panneau avant de l'appareil.
  ** Utilisez l'interface BMC de l'appliance.

@@ -149,6 +149,23 @@ Câbles Ethernet:: Levage mécanisé pour SG5760
 
 
 --
+.SG5800
+--
+Vous avez besoin de l'équipement supplémentaire suivant pour installer et configurer le matériel SG5800.
+
+Câbles et émetteurs-récepteurs SFP::
++
+--
+* Câbles pour les ports 10/25-GbE que vous prévoyez d'utiliser
+* Facultatif : émetteurs-récepteurs SFP28 si vous souhaitez utiliser une vitesse de liaison 25 GbE avec des câbles optiques
+* En option : émetteurs-récepteurs SFP+ si vous souhaitez utiliser une vitesse de liaison 10 GbE et des câbles optiques
+
+
+--
+Câbles Ethernet:: Levage mécanisé pour SG5860
+
+
+--
 .SG6000
 --
 Vous avez besoin de l'équipement supplémentaire suivant pour installer et configurer le matériel SG6000.
@@ -178,9 +195,9 @@ Outils en option:: Levage mécanisé pour les tiroirs de 60 disques
 --
 .SG6100
 --
-Vous avez besoin de l'équipement supplémentaire suivant pour installer et configurer le matériel SGF6112.
+Vous avez besoin de l'équipement supplémentaire suivant pour installer et configurer le matériel SG6100.
 
-Câbles optiques et émetteurs-récepteurs::
+Câbles et émetteurs-récepteurs::
 +
 --
 * Câbles, 1 à 4 de l'un ou l'autre :
@@ -189,16 +206,18 @@ Câbles optiques et émetteurs-récepteurs::
 ** Fibre optique
 
 
-* Émetteurs-récepteurs/adaptateurs, 1 à 4 de chaque, en fonction de la vitesse de liaison (les vitesses mixtes ne sont pas prises en charge) :
+* Émetteurs-récepteurs/adaptateurs, 1 à 8 de chaque, en fonction de la vitesse de liaison (les vitesses mixtes ne sont pas prises en charge) :
 +
 ** SFP+ 10 GbE
 ** 25 GbE SFP28
+** QSFP28 à 100 GbE
 
 
 
 
 --
 Câbles Ethernet:: RJ-45 (Cat5/Cat5e/Cat6/Cat6a)
+Outils en option:: Levage mécanisé pour les tiroirs de 60 disques
 
 
 --

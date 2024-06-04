@@ -1,0 +1,323 @@
+---
+permalink: sg6100/replace-controller-e4000-duplex.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= Remplacement du contrôleur de stockage E4000 (SG6160)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous devrez peut-être remplacer un contrôleur E4000 s'il ne fonctionne pas de manière optimale ou s'il est défectueux.
+
+.Avant de commencer
+* Vous disposez d'un contrôleur de remplacement avec la même référence que le contrôleur que vous remplacez.
+* Vous avez des étiquettes pour identifier chaque câble connecté au contrôleur.
+* Vous avez un bracelet ESD, ou vous avez pris d'autres précautions antistatiques.
+* Vous avez un tournevis cruciforme n° 1.
+* Vous avez trouvé physiquement l'appliance de stockage où vous remplacez le contrôleur dans le data Center.
+
+
+
+NOTE: Ne vous fiez pas aux instructions E-Series pour remplacer un contrôleur de l'appliance StorageGRID, car les procédures ne sont pas identiques.
+
+.Description de la tâche
+Vous pouvez déterminer si vous avez un contrôleur défectueux de deux manières :
+
+* Une alerte Grid Manager indique une panne du contrôleur de stockage. Dans SANtricity System Manager, Grid Manager ou Recovery Guru vous demande de remplacer le contrôleur.
+* La LED d'avertissement orange située sur le contrôleur est allumée, ce qui indique que le contrôleur est en panne.
++
+
+NOTE: Si les deux contrôleurs du tiroir disposent de leurs LED d'avertissement, contactez le support technique pour obtenir de l'aide.
+
+
+
+Si votre appliance contient deux contrôleurs de stockage, vous pouvez remplacer l'un des contrôleurs lorsque votre appliance est sous tension et effectuer des opérations de lecture/écriture, tant que les conditions suivantes sont réunies :
+
+* Le second contrôleur du tiroir est à l'état optimal.
+* Le champ *OK à supprimer* de la zone Détails du gourou de la restauration dans le Gestionnaire de système SANtricity affiche *Oui*, indiquant qu'il est sûr de supprimer ce composant.
+
+
+
+NOTE: Si possible, placez l'appareil en mode de maintenance pour cette procédure de remplacement afin de minimiser l'impact potentiel d'erreurs ou de défaillances imprévues.
+
+
+NOTE: Si le second contrôleur du tiroir n'a pas l'état optimal ou si le gourou de la restauration indique qu'il n'est pas OK pour retirer le contrôleur, contactez le support technique.
+
+
+
+== Étape 1 : préparer le contrôleur de remplacement
+
+Préparez le contrôleur E4000 de remplacement.
+
+.Étapes
+. Déballez le nouveau contrôleur et placez-le sur une surface plane et sans électricité statique.
++
+Conservez les matériaux d'emballage à utiliser lors de l'expédition du contrôleur défectueux.
+
+. Localisez les étiquettes d'adresse MAC et de référence des FRU à l'arrière du contrôleur de remplacement.
+
+
+
+
+== Étape 2 : mettre le contrôleur hors ligne
+
+Vous préparer à retirer le contrôleur défectueux et à le mettre hors ligne. Vous pouvez utiliser SANtricity System Manager pour effectuer ces étapes.
+
+.Étapes
+. Vérifiez que le numéro de référence de la référence de remplacement du contrôleur défectueux est identique à celui de la référence de l'unité remplaçable sur site du contrôleur de remplacement.
++
+Lorsqu'un contrôleur présente une défaillance et doit être remplacé, la référence du remplacement est affichée dans la zone Détails du Recovery Guru. Si vous avez besoin de trouver ce numéro manuellement, vous pouvez consulter l'onglet *base* du contrôleur.
+
++
+
+CAUTION: *Perte possible de l'accès aux données et#8212;* si les deux numéros de pièce ne sont pas les mêmes, ne pas tenter cette procédure.
+
+. Sauvegardez la base de données de configuration.
++
+Si un problème survient lorsque vous supprimez un contrôleur, vous pouvez utiliser le fichier enregistré pour restaurer votre configuration. Le système enregistre l'état actuel de la base de données de configuration RAID, qui inclut toutes les données des groupes de volumes et des pools de disques sur le contrôleur.
+
++
+.. Sélectionnez *support › Centre de support › Diagnostics*.
+.. Sélectionnez *collecter les données de configuration*.
+.. Cliquez sur *collect*.
++
+Le fichier est enregistré dans le dossier Téléchargements de votre navigateur sous le nom *configurationData-<arrayName>-<DateTime>.7z*.
+
+
+
+. Collecte des données d'assistance pour l'appareil.
++
+
+NOTE: La collecte des données de support avant et après le remplacement d'un composant vous permet d'envoyer un ensemble complet de journaux au support technique si le remplacement ne résout pas le problème.
+
++
+En cas de problème lors de la suppression d'un contrôleur, vous pouvez utiliser le fichier enregistré pour résoudre le problème. Le système enregistre les données d'inventaire, d'état et de performances de votre matrice de stockage dans un seul fichier.
+
++
+.. *Sélectionnez support › Centre de support › Diagnostics*.
+.. Sélectionnez *collecter les données de support*.
+.. Cliquez sur *collect*.
+
+
+. Mettre le contrôleur que vous prévoyez de remplacer hors ligne.
+
+
+
+
+== Étape 3 : retirer le boîtier du contrôleur
+
+Déposer un boîtier de contrôleur.
+
+.Étapes
+. Placez un bracelet antistatique ou prenez d'autres précautions antistatiques.
+. Etiqueter chaque câble relié au boîtier du contrôleur.
+. Débrancher tous les câbles du boîtier du contrôleur.
++
+
+CAUTION: Pour éviter de dégrader les performances, ne pas tordre, plier, pincer ou marcher sur les câbles.
+
+. Appuyez sur le loquet de la poignée de la came jusqu'à ce qu'elle se libère, ouvrez complètement la poignée de la came pour libérer le boîtier du contrôleur du fond de panier central, puis, de deux mains, retirez le boîtier du contrôleur du châssis.
+. Placez le contrôleur sur une surface plane et sans électricité statique, le capot amovible orienté vers le haut.
+. Ouvrez le capot en appuyant sur les boutons bleus situés sur les côtés du boîtier du contrôleur pour libérer le capot, puis faites pivoter le capot vers le haut et hors du boîtier du contrôleur.
+
+
+
+
+== Étape 4 : déterminer les pièces à transférer vers le contrôleur de remplacement
+
+Votre contrôleur de remplacement peut être livré avec des pièces préinstallées. Déterminer quelles pièces doivent être transférées vers le boîtier de contrôleur de remplacement.
+
+. Placez le contrôleur de remplacement sur une surface plane et antistatique, le capot amovible orienté vers le haut.
+. Ouvrez le capot en appuyant sur les boutons bleus situés sur les côtés du boîtier du contrôleur pour libérer le capot, puis faites pivoter le capot vers le haut et hors du boîtier du contrôleur.
+. Déterminez si le contrôleur de remplacement contient une batterie et/ou des modules DIMM. Si c'est le cas, réinstallez le capot du contrôleur et passez à l' <<step8_replace_controller,Étape 8 : remplacer le contrôleur>>. Sinon :
++
+** Si le contrôleur de remplacement n'est pas équipé d'une batterie ou d'un module DIMM, passez à l' <<step5_remove_battery,Étape 5 : retirez la batterie>>.
+** Si le contrôleur de remplacement comprend une batterie mais pas un module DIMM, passez à l' <<step6_remove_dimm,Étape 6 : déplacez les modules DIMM>>.
+
+
+
+
+
+
+== Étape 5 : retirez la batterie
+
+Retirez la batterie du contrôleur défectueux et installez-la dans le contrôleur de remplacement si nécessaire.
+
+.Étapes
+. Retirez la batterie du boîtier du contrôleur :
++
+.. Appuyez sur le bouton bleu situé sur le côté du boîtier du contrôleur.
+.. Faites glisser la batterie vers le haut jusqu'à ce qu'elle se dégage des supports de fixation, puis retirez la batterie du boîtier du contrôleur.
+.. Débranchez la fiche mâle batterie en appuyant sur le clip situé sur la face avant de la fiche mâle batterie pour la débrancher de la prise, puis débranchez le câble de batterie de la prise.
++
+image::../media/drw_E4000_replace_nvbattery_IEOPS-862.png[Retirez la batterie NVMEM.]
+
++
+|===
+
+
+ a| 
+image::../media/legend_icon_01.png[icône de légende 01]
+| Languette de déverrouillage de la batterie 
+
+
+ a| 
+image::../media/legend_icon_02.png[icône de légende 02]
+| Connecteur d'alimentation de la batterie 
+|===
+
+
+. Déplacez la batterie dans le boîtier de contrôleur de remplacement et installez-la :
++
+.. Alignez la batterie avec les supports de fixation de la paroi latérale en tôle, mais ne la connectez pas. Vous le branchez une fois que les autres composants sont déplacés vers le boîtier de contrôleur de remplacement.
+
+
+. Si le contrôleur de remplacement possède des modules DIMM préinstallés, passez à l' <<step7_install_battery,Étape 7 : installez la batterie>>. Sinon, passez à l'étape suivante.
+
+
+
+
+== Étape 6 : déplacez les modules DIMM
+
+Retirez les modules DIMM du boîtier du contrôleur défectueux et installez-les dans le boîtier du contrôleur de remplacement.
+
+.Étapes
+. Localisez les modules DIMM sur le boîtier de votre contrôleur.
++
+
+NOTE: Notez l'emplacement du module DIMM dans les supports afin de pouvoir insérer le module DIMM au même emplacement dans le boîtier du contrôleur de remplacement et dans le bon sens.
+Retirez les modules DIMM du boîtier du contrôleur défectueux :
+
++
+.. Éjectez le module DIMM de son logement en écartant lentement les deux pattes d'éjection du module DIMM situées de chaque côté du module DIMM.
++
+Le module DIMM pivote légèrement vers le haut.
+
+.. Faites pivoter le module DIMM aussi loin que possible, puis faites-le glisser hors du support.
++
+
+NOTE: Tenez soigneusement le module DIMM par les bords pour éviter toute pression sur les composants de la carte de circuit DIMM.
+
++
+image::../media/drw_E4000_replace_dimms_IEOPS-865.png[Retirez les MODULES DIMM.]
+
++
+|===
+
+
+ a| 
+image::../media/legend_icon_01.png[icône de légende 01]
+| Languettes d'éjection du module DIMM 
+
+
+ a| 
+image::../media/legend_icon_02.png[icône de légende 02]
+| DIMM 
+|===
+
+
+. Vérifier que la batterie n'est pas branchée dans le boîtier du contrôleur de remplacement.
+. Installez les modules DIMM dans le contrôleur de remplacement au même endroit qu'ils se trouvaient dans le contrôleur défectueux :
++
+.. Poussez délicatement, mais fermement, sur le bord supérieur du module DIMM jusqu'à ce que les languettes de l'éjecteur s'enclenchent sur les encoches situées aux extrémités du module DIMM.
++
+Le module DIMM s'insère bien dans le logement, mais devrait être facilement installé. Si ce n'est pas le cas, réalignez le module DIMM avec le logement et réinsérez-le.
+
++
+
+NOTE: Inspectez visuellement le module DIMM pour vérifier qu'il est bien aligné et complètement inséré dans le logement.
+
+
+
+. Répétez ces étapes pour l'autre module DIMM.
+. Si le contrôleur de remplacement est équipé d'une batterie pré-installée, passer à l' <<step8_replace_controller,Étape 8 : remplacer le contrôleur>>. Sinon, passez à l'étape suivante.
+
+
+
+
+== Étape 7 : installez la batterie
+
+Installer la batterie dans le boîtier de contrôleur de remplacement.
+
+.Étapes
+. Rebranchez la fiche de la batterie dans la prise située sur le boîtier du contrôleur.
++
+Assurez-vous que la fiche se verrouille dans la prise batterie de la carte mère.
+
+. Alignement de la batterie avec les supports de fixation sur la paroi latérale en tôle.
+. Faites glisser la batterie vers le bas jusqu'à ce que le loquet de la batterie s'enclenche et s'enclenche dans l'ouverture de la paroi latérale.
+. Réinstallez le couvercle du boîtier du contrôleur et verrouillez-le en place.
+
+
+
+
+== Étape 8 : remplacer le contrôleur
+
+Installez le contrôleur de remplacement et vérifiez que le nœud a rejoint la grille.
+
+.Étapes
+. Installez le contrôleur de remplacement sur l'appliance.
++
+.. Retournez le contrôleur pour que le capot amovible soit orienté vers le bas.
+.. Avec la poignée de came en position ouverte, faites glisser le contrôleur complètement dans l'appareil.
+.. Déplacez la poignée de came vers la gauche pour verrouiller le contrôleur en place.
+.. Remplacez les câbles.
+.. Si le contrôleur d'origine utilise DHCP pour l'adresse IP, localisez l'adresse MAC sur l'étiquette située à l'arrière du contrôleur de remplacement. Demandez à votre administrateur réseau d'associer le DNS/réseau et l'adresse IP du contrôleur que vous avez supprimé à l'adresse MAC du contrôleur de remplacement.
++
+
+NOTE: Si le contrôleur d'origine n'a pas utilisé DHCP pour l'adresse IP, le nouveau contrôleur adopte l'adresse IP du contrôleur que vous avez retiré.
+
+
+
+. Mettre le contrôleur en ligne à l'aide de SANtricity System Manager :
++
+.. Sélectionnez *matériel*.
+.. Si le graphique montre les lecteurs, sélectionnez *contrôleurs et composants*.
+.. Sélectionnez le contrôleur que vous souhaitez placer en ligne.
+.. Sélectionnez *placer en ligne* dans le menu contextuel et confirmez que vous souhaitez effectuer l'opération.
+
+
+. Pendant le démarrage du contrôleur, vérifiez les LED du contrôleur.
++
+** Le voyant d'avertissement orange du contrôleur s'allume puis s'éteint, à moins qu'une erreur ne s'affiche.
+** Les voyants Host Link peuvent être allumés, clignotants ou éteints, selon l'interface hôte.
+
+
+. Une fois le contrôleur reen ligne, vérifiez que son état est optimal et vérifiez les LED d'avertissement du tiroir contrôleur.
++
+Si l'état n'est pas optimal ou si l'un des voyants d'avertissement est allumé, vérifiez que tous les câbles sont correctement installés et que le boîtier du contrôleur est correctement installé. Au besoin, déposer et réinstaller le boîtier du contrôleur.
+
++
+
+NOTE: Si vous ne pouvez pas résoudre le problème, contactez le support technique.
+
+. Si nécessaire, redistribuez tous les volumes au propriétaire de votre choix à l'aide de SANtricity System Manager.
++
+.. Sélectionnez *stockage › volumes*.
+.. Sélectionnez *plus › redistribuer les volumes*.
+
+
+. Collecte des données de support de votre baie de stockage à l'aide de SANtricity System Manager
++
+.. Sélectionnez *support › Centre de support › Diagnostics*.
+.. Sélectionnez *collecter les données de support*.
+.. Cliquez sur *collect*.
++
+Le fichier est enregistré dans le dossier Téléchargements de votre navigateur portant le nom *support-data.7z*.
+
+
+
+. Si vous avez placé l'appliance en mode maintenance pendant cette procédure, quittez le mode maintenance et attendez que le nœud redémarre et rejoint la grille. Ce processus peut prendre jusqu'à 20 minutes. Ensuite, dans le Gestionnaire de grille, vérifiez que la page nœuds affiche un état normal (icône de coche verte) image:../media/icon_alert_green_checkmark.png["coche verte"] à gauche du nom du nœud) pour le nœud de l'appliance, indiquant qu'aucune alerte n'est active et que le nœud est connecté à la grille.
++
+image::../media/nodes_menu.png[Le nœud d'appliance a rejoint la grille]
+
+
+
+.Et la suite ?
+Le remplacement de votre contrôleur est terminé. Vous pouvez reprendre les opérations normales.
+
+Après le remplacement de la pièce, renvoyez la pièce défectueuse à NetApp, en suivant les instructions RMA (retour de matériel) livrées avec le kit. Voir la https://mysupport.netapp.com/site/info/rma["Retour de pièce et amp ; remplacements"^] pour plus d'informations.

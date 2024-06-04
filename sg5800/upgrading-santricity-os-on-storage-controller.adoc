@@ -1,0 +1,30 @@
+---
+permalink: sg5800/upgrading-santricity-os-on-storage-controller.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5800, storage node, storage appliance, controller, storage controller, upgrade, upgrading, SANtricity OS, SANtricity 
+summary: 'Pour optimiser le fonctionnement du contrôleur de stockage, vous devez effectuer une mise à niveau vers la dernière version de maintenance du système d"exploitation SANtricity compatible avec votre appliance StorageGRID.' 
+---
+= Mettez à niveau SANtricity OS sur le contrôleur de stockage SG5800
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pour optimiser le fonctionnement du contrôleur de stockage, vous devez effectuer une mise à niveau vers la dernière version de maintenance du système d'exploitation SANtricity compatible avec votre appliance StorageGRID.
+
+Consultez nos conseils pour déterminer la dernière version de SANtricity OS compatible avec votre appliance StorageGRID https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["Téléchargement NetApp : appliance StorageGRID"] et le télécharger si nécessaire.
+
+Téléchargez le nouveau fichier du logiciel SANtricity OS sur https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["Téléchargement NetApp : appliance StorageGRID"^].
+
+Utilisez l'une des procédures suivantes basées sur la version de SANtricity OS actuellement installée :
+
+* Si le contrôleur de stockage utilise SANtricity OS 08.42.20.00 (11.42) ou une version ultérieure, utilisez Grid Manager pour effectuer la mise à niveau.
++
+link:upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg5800.html["Mettez à niveau le système d'exploitation SANtricity sur les contrôleurs de stockage à l'aide de Grid Manager"]
+
+* Si le contrôleur de stockage utilise une version de SANtricity OS antérieure à 08.42.20.00 (11.42), utilisez le mode de maintenance pour effectuer la mise à niveau.
++
+link:upgrading-santricity-os-on-e4000-controller-using-maintenance-mode.html["Mettez à niveau SANtricity OS sur le contrôleur E4000 en utilisant le mode de maintenance"]
+
+

@@ -1,0 +1,71 @@
+---
+permalink: sg6100/replace-ocp-nic-in-sg6100-cn.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6100, storage node, storage appliance, Replacing, replace, NIC, network interface card 
+summary: 'Vous devrez peut-être remplacer une carte d"interface réseau \(NIC\) dans le SG6100-CN si elle ne fonctionne pas de manière optimale ou si elle est défectueuse.' 
+---
+= Remplacez la carte réseau externe dans le SG6100-CN
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous devrez peut-être remplacer une carte d'interface réseau (NIC) externe dans le SG6100-CN si elle ne fonctionne pas de manière optimale ou si elle est défectueuse.
+
+Suivez ces procédures pour :
+
+* Retirez la carte réseau
+* Réinstallez la carte réseau
+
+
+.Avant de commencer
+* Vous avez la carte réseau de remplacement correcte.
+* Vous avez déterminé le link:verify-component-to-replace.html["Emplacement de la carte réseau à remplacer"].
++
+image::../media/sg6100_cn_ocp_nic_location.png[Face avant de la carte réseau.]
+
+* Vous avez link:locating-sgf6112-in-data-center.html["Emplacement physique du contrôleur SG6100-CN"] Emplacement de remplacement de la carte réseau dans le centre de données.
++
+
+NOTE: Le remplacement à chaud est *non* pris en charge pour cette procédure. A link:power-sgf6112-off-on.html#shut-down-the-sgf6112-appliance["arrêt contrôlé de l'appareil"] Est nécessaire avant de débrancher les câbles et de retirer la carte réseau.
+
+* Vous avez déconnecté tous les câbles, y compris les deux cordons d'alimentation du SG6100-CN.
+* *Facultatif* : vous avez retiré le contrôleur du rack si la réglementation locale l'exige. Il n'est pas nécessaire de retirer la carte réseau car elle est accessible à l'extérieur.
+
+
+.Description de la tâche
+Pour éviter toute interruption de service, vérifiez que tous les autres nœuds de stockage sont connectés à la grille avant de commencer le remplacement de la carte d'interface réseau (NIC) ou remplacez-la lors d'une fenêtre de maintenance planifiée lorsque les périodes d'interruption de service sont acceptables. Voir informations sur link:https://docs.netapp.com/us-en/storagegrid-118/monitor/monitoring-system-health.html#monitor-node-connection-states["etats de connexion de nœud montioring"].
+
+
+CAUTION: Si vous avez déjà utilisé une règle ILM qui ne crée qu'une seule copie d'un objet, vous devez remplacer la carte réseau au cours d'une fenêtre de maintenance planifiée, car vous risquez de perdre temporairement l'accès à ces objets au cours de cette procédure. Voir informations sur link:https://docs.netapp.com/us-en/storagegrid-118/ilm/why-you-should-not-use-single-copy-replication.html["pourquoi ne pas utiliser la réplication à copie unique"].
+
+
+
+== Retirez la carte réseau externe
+
+.Étapes
+. Enroulez l'extrémité de la sangle d'un bracelet antistatique autour de votre poignet et fixez l'extrémité du clip à une terre métallique pour éviter toute décharge statique.
+. A l'aide d'un tournevis, desserrez la vis située sur la façade de la carte réseau.
++
+
+CAUTION: Le remplacement à chaud est *non* pris en charge pour cette procédure. Le contrôleur doit être déconnecté de l'alimentation avant de retirer la carte réseau.
+
+. Retirez avec précaution la carte réseau en tirant sur la poignée de la façade. Placez la carte réseau sur une surface plane et antistatique.
+
+
+
+
+== Réinstallez la carte réseau externe
+
+.Étapes
+. Enroulez l'extrémité de la sangle d'un bracelet antistatique autour de votre poignet et fixez l'extrémité du clip à une terre métallique pour éviter toute décharge statique.
+. Retirez la carte réseau de remplacement de son emballage.
+. Alignez la carte réseau avec l'ouverture du châssis et poussez-la avec précaution jusqu'à ce qu'elle soit bien en place.
+. Serrez la vis sur la façade de la carte réseau.
+
+
+.Une fois que vous avez terminé
+Si vous ne disposez d'aucune autre procédure de maintenance à effectuer dans l'appareil, replacez l'appareil sur le rack s'il a été retiré, branchez les câbles et mettez l'appareil sous tension.
+
+Après le remplacement de la pièce, renvoyez la pièce défectueuse à NetApp, en suivant les instructions RMA (retour de matériel) livrées avec le kit. Voir la https://mysupport.netapp.com/site/info/rma["Retour de pièce et amp ; remplacements"^] pour plus d'informations.

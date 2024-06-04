@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sgf6112, link configuration, link, configure, configuring, ethernet, port bond mode, port bond, network bond mode, network bond, link speed, vlan tagging, vlan tag 
 summary: 'Vous pouvez modifier la configuration de la liaison Ethernet de l"appliance, notamment le mode de liaison du port, le mode de liaison réseau et la vitesse de liaison.' 
 ---
-= Modifier la configuration de la liaison de l'appliance SGF6112
+= Modifier la configuration de liaison de l'appliance SGF6112 ou du contrôleur SG6100-CN
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

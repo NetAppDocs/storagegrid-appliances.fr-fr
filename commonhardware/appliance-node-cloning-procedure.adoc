@@ -15,7 +15,7 @@ Le processus de clonage peut prendre plusieurs jours pour transférer les donné
 
 .Avant de commencer
 * Vous avez installé l'appareil cible compatible dans une armoire ou un rack, connecté tous les câbles et mis sous tension.
-* Vous avez vérifié que la version du programme d'installation de l'appliance StorageGRID installée sur l'appliance de remplacement correspond à la version logicielle de votre système StorageGRID. Vous pouvez ainsi mettre à niveau et rétrograder le micrologiciel du programme d'installation de l'appliance StorageGRID, si nécessaire.
+* Vous avez vérifié que la version du programme d'installation de l'appliance StorageGRID installée sur l'appliance de remplacement correspond à la version logicielle de votre système StorageGRID, en mettant à niveau ou en rétrogradant le micrologiciel du programme d'installation de l'appliance StorageGRID, si nécessaire.
 * L'appliance cible est configurée, y compris la configuration des connexions StorageGRID, SANtricity System Manager (dispositifs de stockage uniquement) et l'interface BMC.
 +
 ** Lors de la configuration des connexions StorageGRID, utilisez les adresses IP temporaires.

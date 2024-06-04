@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, mac, mac address 
 summary: 'Dans certains cas, vous devrez peut-être mettre à jour les références d"adresse MAC après le remplacement d"un appareil.' 
 ---
-= Mettre à jour les références d'adresse MAC
+= Mise à jour des références d'adresse MAC (SG100, SG1000, SGF6024 et SG6060)
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

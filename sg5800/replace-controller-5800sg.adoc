@@ -1,0 +1,97 @@
+---
+permalink: sg5800/replace-controller-sg5800.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= Remplacer le contrôleur SG5800
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous devrez peut-être remplacer le contrôleur SG5800 s'il ne fonctionne pas de manière optimale ou s'il est défectueux.
+
+.Avant de commencer
+* Vous disposez d'un contrôleur de remplacement avec la même référence que le contrôleur que vous remplacez.
+* Vous avez des étiquettes pour identifier chaque câble connecté au contrôleur.
+
+
+.Description de la tâche
+L'appliance Storage Node ne sera pas accessible lors du remplacement du contrôleur. Si le contrôleur SG5800 fonctionne suffisamment, vous pouvez effectuer un arrêt contrôlé au début de cette procédure.
+
+
+NOTE: Si vous remplacez le contrôleur avant d'installer le logiciel StorageGRID, il se peut que vous ne puissiez pas accéder au programme d'installation de l'appliance StorageGRID immédiatement après avoir terminé cette procédure. Bien que vous puissiez accéder au programme d'installation de l'appliance StorageGRID à partir d'autres hôtes situés sur le même sous-réseau que l'appliance, vous ne pouvez pas y accéder à partir d'hôtes situés sur d'autres sous-réseaux. Cette condition doit se résoudre dans les 15 minutes (lorsque les entrées du cache ARP pour le contrôleur d'origine sont écoulées), ou vous pouvez effacer immédiatement la condition en éliminant manuellement les anciennes entrées du cache ARP à partir du routeur ou de la passerelle local.
+
+.Étapes
+. Arrêtez le contrôleur SG5800.
++
+.. Connectez-vous au nœud grid :
++
+... Saisissez la commande suivante : `ssh admin@grid_node_IP`
+... Entrez le mot de passe indiqué dans le `Passwords.txt` fichier.
+... Entrez la commande suivante pour passer à la racine : `su -`
+... Entrez le mot de passe indiqué dans le `Passwords.txt` fichier.
++
+Lorsque vous êtes connecté en tant que root, l'invite passe de `$` à `#`.
+
+
+
+.. Arrêtez le contrôleur SG5800 :
++
+*`shutdown -h now`*
+
+.. Attendez que les données de la mémoire cache soient écrites sur les disques.
++
+Le voyant vert cache actif situé à l'arrière du contrôleur E4000 est allumé lorsque les données mises en cache doivent être écrites sur les disques. Vous devez attendre que ce voyant s'éteigne.
+
+
+
+. Eteindre l'alimentation en panne.
++
+.. Dans la page d'accueil de SANtricity System Manager, sélectionnez Afficher les opérations en cours.
+.. Confirmez que toutes les opérations ont été effectuées.
+.. Éteignez les deux interrupteurs de l'appareil.
+.. Attendez que tous les voyants s'éteignent.
+
+
+. Si les réseaux StorageGRID connectés au contrôleur utilisent des serveurs DHCP :
++
+.. Notez les adresses MAC des ports du contrôleur de remplacement (situées sur les étiquettes du contrôleur).
+.. Demandez à votre administrateur réseau de mettre à jour les paramètres d'adresse IP du contrôleur d'origine afin qu'ils reflètent les adresses MAC du contrôleur de remplacement.
++
+
+NOTE: Vous devez vous assurer que les adresses IP du contrôleur d'origine ont été mises à jour avant d'appliquer la mise sous tension au contrôleur de remplacement. Dans le cas contraire, le contrôleur obtiendra de nouvelles adresses IP DHCP lors de son démarrage et risque de ne pas pouvoir se reconnecter à StorageGRID. Cette étape s'applique à tous les réseaux StorageGRID reliés au contrôleur.
+
+
+
+. Retirer le contrôleur de l'appliance :
++
+.. Placez un bracelet antistatique ou prenez d'autres précautions antistatiques.
+.. Etiqueter les câbles puis débrancher les câbles et les SFP.
++
+
+NOTE: Pour éviter toute dégradation des performances, ne tordez pas, ne pliez pas, ne pincez pas et ne montez pas sur les câbles.
+Libérez le contrôleur de l'appareil en appuyant sur le loquet de la poignée de came jusqu'à ce qu'il se relâche, puis ouvrez la poignée de came vers la droite.
+
+.. A l'aide de deux mains et de la poignée de came, faites glisser le contrôleur hors de l'appareil.
++
+
+NOTE: Toujours utiliser deux mains pour soutenir le poids du contrôleur.
+
+
+
+. Installez le contrôleur de remplacement sur l'appliance.
++
+.. Retournez le contrôleur pour que le capot amovible soit orienté vers le bas.
+.. Avec la poignée de came en position ouverte, faites glisser le contrôleur complètement dans l'appareil.
+.. Déplacez la poignée de came vers la gauche pour verrouiller le contrôleur en place.
+.. Remplacez les câbles.
+
+
+. Mettez l'appliance sous tension et surveillez les LED du contrôleur.
+. Vérifiez que le nœud de stockage de l'appliance apparaît dans Grid Manager et qu'aucune alarme ne s'affiche.
+
+
+Après le remplacement de la pièce, renvoyez la pièce défectueuse à NetApp, en suivant les instructions RMA (retour de matériel) livrées avec le kit. Voir la https://mysupport.netapp.com/site/info/rma["Retour de pièce et amp ; remplacements"] pour plus d'informations.

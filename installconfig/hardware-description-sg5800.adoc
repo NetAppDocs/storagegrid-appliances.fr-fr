@@ -1,0 +1,317 @@
+---
+permalink: installconfig/hardware-description-sg5800.html 
+sidebar: sidebar 
+keywords: sg5800, sg5812, sg5860, storage appliance 
+summary: 'Le système SG5800 StorageGRID est une plateforme informatique et de stockage intégrée qui fonctionne comme un nœud de stockage dans un grid StorageGRID. L"appliance peut être utilisée dans un environnement de grid hybride qui combine des nœuds de stockage d"appliance et des nœuds de stockage virtuels \(basés sur logiciel\).' 
+---
+= Appareils SG5800 : présentation
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le système SG5800 StorageGRID est une plateforme informatique et de stockage intégrée qui fonctionne comme un nœud de stockage dans un grid StorageGRID.
+
+L'appliance StorageGRID SG5800 offre les fonctionnalités suivantes :
+
+* Intégrez les éléments de stockage et de calcul d'un nœud de stockage StorageGRID.
+* Incluez le programme d'installation de l'appliance StorageGRID pour simplifier le déploiement et la configuration des nœuds de stockage.
+* Inclut E-Series SANtricity System Manager pour la gestion et le contrôle du matériel.
+* Prenez en charge jusqu'à quatre connexions 10 GbE ou 25 GbE avec le réseau Grid et le réseau client StorageGRID.
+* Prise en charge des disques Full Disk Encryption (FDE) ou FIPS Lorsque ces disques sont utilisés avec la fonction de sécurité des disques dans SANtricity System Manager, l'accès non autorisé aux données n'est pas autorisé.
+
+
+Le SG5512 et le SG5860 sont disponibles en deux modèles.
+
+
+
+== Composants du SG5800
+
+Les modèles SG5800 comprennent les composants suivants :
+
+[role="tabbed-block"]
+====
+.SG5812
+--
+Contrôleur de calcul:: Contrôleur SG5800
+Contrôleur de stockage:: Contrôleur E4000
+Châssis:: Boîtier E-Series DE212C, boîtier de deux unités de rack (2U)
+Disques:: 12 disques NL-SAS (3.5 pouces)
+Alimentations et ventilateurs redondants:: Deux blocs d'alimentation
+
+
+--
+.SG5860
+--
+Contrôleur de calcul:: Contrôleur SG5800
+Contrôleur de stockage:: Contrôleur E4000
+Châssis:: Boîtier E-Series DE460C, boîtier 4U
+Disques:: 60 disques NL-SAS (3.5 pouces)
+Alimentations et ventilateurs redondants:: Deux blocs d'alimentation et deux blocs d'alimentation
+
+
+--
+====
+La capacité de stockage brute maximale disponible dans l'appliance StorageGRID est fixe, en fonction du nombre de disques de chaque armoire. Vous ne pouvez pas étendre le stockage disponible en ajoutant un tiroir comportant des disques supplémentaires.
+
+
+
+== Diagrammes SG5800
+
+
+
+=== Vue avant et arrière du SG5812
+
+Les figures illustrent l'avant et l'arrière du SG5812, un boîtier 2U pouvant contenir 12 disques.
+
+image::../media/sg5812_front_and_back_views.png[À l'avant et à l'arrière de l'appareil SG5812]
+
+
+
+=== Composants du SG5812
+
+Le SG5812 comprend deux contrôleurs et deux boîtiers pour ventilateurs d'alimentation.
+
+image::../media/sg5812_with_callouts.png[Contrôleurs et boîtiers pour ventilateurs d'alimentation dans l'appliance SG5812]
+
+[cols="1a,3a"]
+|===
+| Légende | Description 
+
+
+ a| 
+1
+ a| 
+Contrôleur E4000 (contrôleur de stockage)
+
+
+
+ a| 
+2
+ a| 
+Contrôleur SG5800 (contrôleur de calcul)
+
+
+
+ a| 
+3
+ a| 
+Blocs d'alimentation
+
+|===
+
+
+=== Vue avant et arrière du SG5860
+
+Les figures illustrent l'avant et l'arrière du modèle SG5860, un boîtier 4U contenant 60 disques dans 5 tiroirs.
+
+image::../media/sg5860_front_and_back_views.png[À l'avant et à l'arrière du SG5860]
+
+
+
+=== Composants du SG5860
+
+Le SG5860 comprend deux contrôleurs, deux boîtiers de ventilation et deux blocs d'alimentation.
+
+image::../media/sg5860_with_callouts.png[Contrôleurs,fan canisters,and power canisters in SG5860 appliance]
+
+[cols="1a,2a"]
+|===
+| Légende | Description 
+
+
+ a| 
+1
+ a| 
+Contrôleur E4000 (contrôleur de stockage)
+
+
+
+ a| 
+2
+ a| 
+Contrôleur SG5800 (contrôleur de calcul)
+
+
+
+ a| 
+3
+ a| 
+Cartouche de ventilateur (1 sur 2)
+
+
+
+ a| 
+4
+ a| 
+Boîtier de puissance (1 sur 2)
+
+|===
+
+
+== Contrôleur SG5800
+
+Les modèles SG5812 à 12 disques et SG5860 à 60 disques de l'appliance StorageGRID incluent un contrôleur de calcul SG5800 et un contrôleur de stockage E-Series E4000.
+
+
+
+=== Contrôleur de calcul SG5800
+
+* Fonctionne comme serveur de calcul pour l'appliance.
+* Inclut le programme d'installation de l'appliance StorageGRID.
++
+
+NOTE: Le logiciel StorageGRID n'est pas préinstallé sur l'appliance. Lors du déploiement de l'appliance, il est possible d'accéder à ce logiciel à partir du nœud d'administration.
+
+* Peut se connecter aux trois réseaux StorageGRID, y compris le réseau Grid, le réseau d'administration et le réseau client.
+* Se connecte au contrôleur E4000 et fonctionne comme initiateur.
+
+
+
+
+==== Connecteurs SG5800
+
+image::../media/sg5800_controller_with_callouts.png[Connecteurs sur le contrôleur SG5800]
+
+[cols="1a,2a,2a,2a"]
+|===
+| Légende | Port | Type | Utiliser 
+
+
+ a| 
+1
+ a| 
+Port de gestion 1
+ a| 
+Ethernet 1 Gbit (RJ-45)
+ a| 
+Connectez-vous au réseau d'administration pour StorageGRID.
+
+
+
+ a| 
+2
+ a| 
+Ports de diagnostic et de support
+ a| 
+* Port série RJ-45
+* Port série USB-C.
+* Port USB
+
+ a| 
+Réservé au support technique.
+
+
+
+ a| 
+3
+ a| 
+Ports d'extension de disque
+ a| 
+12 Gb/s SAS
+ a| 
+Non utilisé.
+
+
+
+ a| 
+4
+ a| 
+Ports d'interconnexion 1 et 2
+ a| 
+25 GbE iSCSI
+ a| 
+Connectez le contrôleur SGS800 au contrôleur E4000.
+
+
+
+ a| 
+5
+ a| 
+Ports réseau 1-4
+ a| 
+10 GbE ou 25 GbE, selon le type d'émetteur-récepteur SFP, la vitesse du commutateur et la vitesse de liaison configurée
+ a| 
+Connectez-vous au réseau Grid et au réseau client pour StorageGRID.
+
+|===
+
+
+=== Contrôleur de stockage E4000
+
+Le contrôleur de stockage de la série E4000 présente les caractéristiques suivantes :
+
+* Fonctionne comme contrôleur de stockage pour l'appliance.
+* Gère le stockage des données sur les disques.
+* Fonctionne en tant que contrôleur E-Series standard en mode simplex.
+* Inclut le logiciel SANtricity OS (firmware du contrôleur).
+* Inclut SANtricity System Manager pour le matériel de l'appliance de surveillance, la gestion des alertes, la fonction AutoSupport et la sécurité des lecteurs.
+* Se connecte au contrôleur SG5800 et fonctionne comme cible.
+
+
+
+
+==== Connecteurs E4000
+
+image::../media/e4000_controller_with_callouts.png[Connecteurs sur le contrôleur E4000]
+
+[cols="1a,2a,2a,2a"]
+|===
+| Légende | Port | Type | Utiliser 
+
+
+ a| 
+1
+ a| 
+Port de gestion
+ a| 
+Ethernet 1 Gbit (RJ-45)
+ a| 
+Options de port :
+** Se connecter à un réseau de gestion pour permettre un accès TCP/IP direct au Gestionnaire système SANtricity
+** Laisser non câblé pour enregistrer un port de commutateur et une adresse IP.  Accédez au Gestionnaire système SANtricity à l'aide du Gestionnaire de grille ou du programme d'installation de l'appliance Storage Grid.
+
+*Remarque* : certaines fonctionnalités SANtricity en option, telles que la synchronisation NTP pour des horodatages précis du journal, ne sont pas disponibles lorsque vous choisissez de laisser le port de gestion non câblé.
+
+*Note* : StorageGRID 11.8 ou supérieur, et SANtricity 11.8 ou supérieur, sont requis lorsque vous laissez la gestion non câblée.
+
+
+
+ a| 
+2
+ a| 
+Ports de diagnostic et de support
+ a| 
+* Port série RJ-45
+* Port série USB-C.
+* Port USB
+
+ a| 
+Réservé au support technique.
+
+
+
+ a| 
+3
+ a| 
+Ports d'extension de disque.
+ a| 
+12 Gb/s SAS
+ a| 
+Non utilisé.
+
+
+
+ a| 
+4
+ a| 
+Ports d'interconnexion 1 et 2
+ a| 
+25 GbE iSCSI
+ a| 
+Connectez le contrôleur E4000 au contrôleur SGS800.
+
+|===
+.Informations associées
+http://mysupport.netapp.com/info/web/ECMP1658252.html["Site de documentation sur les systèmes NetApp E-Series"^]

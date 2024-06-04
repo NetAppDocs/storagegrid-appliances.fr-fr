@@ -1,0 +1,67 @@
+---
+permalink: sg6100/upgrading-santricity-os-on-storage-controllers-using-maintenance-mode-sg6160.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6160, storage node, storage appliance, controller, storage controller, upgrade, upgrading, SANtricity OS, SANtricity, maintenance mode 
+summary: 'Pour les contrôleurs de stockage qui utilisent actuellement SANtricity OS antérieurs à 08.42.20.00 \(11.42\), vous devez utiliser la procédure du mode de maintenance pour appliquer une mise à niveau.' 
+---
+= Mise à niveau du système d'exploitation SANtricity sur le contrôleur de stockage SG6160 en mode maintenance
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez utiliser le mode maintenance pour mettre à niveau le système d'exploitation SANtricity sur le contrôleur SG6160.
+
+Pour les contrôleurs de stockage qui utilisent actuellement SANtricity OS antérieurs à la version 08.42.20.00 (11.42), vous devez utiliser la procédure du mode de maintenance pour appliquer une mise à niveau.
+
+
+NOTE: Pour les contrôleurs de stockage utilisant actuellement un système d'exploitation SANtricity plus récent que 08.42.20.00 (11.42), il est recommandé de link:upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg6160.html["Utilisez Grid Manager pour appliquer une mise à niveau"]. Toutefois, vous pouvez utiliser la procédure du mode maintenance si vous le préférez ou si vous y avez reçu des instructions du support technique.
+
+.Avant de commencer
+* Vous avez consulté le https://imt.netapp.com/matrix/#welcome["Matrice d'interopérabilité NetApp (IMT)"^] Pour vérifier que la version de SANtricity OS utilisée pour la mise à niveau est compatible avec votre appliance.
+* Vous devez placer le contrôleur SG6160 dans link:../commonhardware/placing-appliance-into-maintenance-mode.html["mode maintenance"], Qui arrête toutes les E/S vers les contrôleurs de stockage E4000.
++
+
+NOTE: Dans de rares cas, le fait de placer une appliance StorageGRID en mode de maintenance peut rendre l'appliance indisponible pour l'accès à distance.
+
+
+
+.Description de la tâche
+Ne mettez pas à niveau le système d'exploitation SANtricity ou la NVSRAM dans le contrôleur de stockage de plusieurs appliances StorageGRID à la fois.
+
+
+CAUTION: La mise à niveau de plusieurs appliances StorageGRID peut entraîner une indisponibilité des données, en fonction du modèle de déploiement et des règles ILM.
+
+.Étapes
+. Vérifiez que l'appareil est dans link:../commonhardware/placing-appliance-into-maintenance-mode.html["mode maintenance"].
+. Depuis un ordinateur portable de service, accédez à SANtricity System Manager et connectez-vous.
+. Téléchargez le nouveau fichier du logiciel SANtricity OS et le fichier NVSRAM sur le client de gestion.
++
+
+CAUTION: La NVSRAM est spécifique à l'appliance StorageGRID. N'utilisez pas le téléchargement standard de NVSRAM.
+
+. Suivez les instructions du _Upgrade SANtricity OS_ guide ou de l'aide en ligne de SANtricity System Manager pour mettre à niveau le micrologiciel et la NVSRAM.
++
+
+NOTE: Activez immédiatement les fichiers de mise à niveau. Ne différez pas l'activation.
+
+. Si cette procédure s'est terminée avec succès et que vous disposez de procédures supplémentaires pour effectuer cette opération pendant que le nœud est en mode de maintenance, effectuez-les maintenant. Lorsque vous avez terminé, ou si vous avez rencontré des échecs et souhaitez recommencer, sélectionnez *Avancé* > *redémarrer le contrôleur*, puis sélectionnez l'une des options suivantes :
++
+** Sélectionnez *redémarrer dans StorageGRID*
+** Sélectionnez *redémarrer en mode maintenance* pour redémarrer le contrôleur avec le nœud restant en mode de maintenance.  Sélectionnez cette option si vous avez rencontré des échecs au cours de la procédure et souhaitez recommencer.  Une fois le redémarrage du nœud en mode maintenance terminé, redémarrez à partir de l'étape appropriée de la procédure ayant échoué.
++
+image::../media/reboot_controller_from_maintenance_mode.png[Redémarrez le contrôleur en mode de maintenance]
+
++
+L'appliance peut redémarrer et rejoindre la grille en 20 minutes. Pour confirmer que le redémarrage est terminé et que le nœud a rejoint la grille, retournez à la grille Manager. La page nœuds doit afficher un état normal (icône en forme de coche verte) image:../media/icon_alert_green_checkmark.png["coche verte"] à gauche du nom du nœud) pour le nœud de l'appliance, indiquant qu'aucune alerte n'est active et que le nœud est connecté à la grille.
+
++
+image::../media/nodes_menu.png[Le nœud d'appliance a rejoint la grille]
+
+
+
+
+
+.Informations associées
+link:upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg6160.html["Mettez à niveau le système d'exploitation SANtricity sur les contrôleurs de stockage à l'aide de Grid Manager"]

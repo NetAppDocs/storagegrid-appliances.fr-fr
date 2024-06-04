@@ -1,10 +1,10 @@
 ---
 permalink: sg6100/replace-cmos-in-sgf6112.html 
 sidebar: sidebar 
-keywords: storagegrid, sg6100, SGF6112, storage node, storage appliance, Replacing, replace, CMOS, battery 
+keywords: storagegrid, sg6100, SGF6112, storage node, storage appliance, Replacing, replace, CMOS, battery, sg6160 
 summary: Utilisez cette procédure pour remplacer la pile bouton CMOS de la carte système. 
 ---
-= Remplacez la pile CMOS SGF6112
+= Remplacez la pile CMOS SGF6112 ou SG6100-CN
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -25,7 +25,7 @@ Suivez ces procédures pour :
 
 .Avant de commencer
 * Vous avez link:verify-component-to-replace.html["Vérifiez l'appareil dans lequel la pile CMOS doit être remplacée - effectué"].
-* Vous avez link:locating-sgf6112-in-data-center.html["Emplacement physique de l'appliance SGF6112"] Emplacement de remplacement de la pile CMOS dans le centre de données.
+* Vous avez link:locating-sgf6112-in-data-center.html["Emplacement physique de l'appliance SGF6112 ou du contrôleur SG6100-CN"] Emplacement de remplacement de la pile CMOS dans le centre de données.
 +
 
 NOTE: A link:power-sgf6112-off-on.html#shut-down-the-sgf6112-appliance["arrêt contrôlé de l'appareil"] est nécessaire avant de retirer l'appareil du rack.
@@ -37,7 +37,7 @@ NOTE: A link:power-sgf6112-off-on.html#shut-down-the-sgf6112-appliance["arrêt c
 Pour éviter toute interruption de service, vérifiez que tous les autres nœuds de stockage sont connectés à la grille avant de commencer le remplacement de la batterie CMOS ou remplacez la batterie pendant une fenêtre de maintenance planifiée lorsque des périodes d'interruption de service sont acceptables. Voir les informations sur https://docs.netapp.com/us-en/storagegrid-118/monitor/monitoring-system-health.html#monitor-node-connection-states["contrôle de l'état de connexion du nœud"^].
 
 
-CAUTION: Si vous avez déjà utilisé une règle ILM pour créer une seule copie d'un objet, vous devez remplacer la batterie lors d'une fenêtre de maintenance planifiée. Sinon, vous risquez de perdre temporairement l'accès à ces objets au cours de cette procédure. Voir informations sur https://docs.netapp.com/us-en/storagegrid-118/ilm/why-you-should-not-use-single-copy-replication.html["pourquoi ne pas utiliser la réplication à copie unique"^].
+CAUTION: Si vous avez déjà utilisé une règle ILM qui ne crée qu'une seule copie d'un objet, vous devez remplacer la batterie au cours d'une fenêtre de maintenance planifiée car vous risquez de perdre temporairement l'accès à ces objets au cours de cette procédure. Voir informations sur https://docs.netapp.com/us-en/storagegrid-118/ilm/why-you-should-not-use-single-copy-replication.html["pourquoi ne pas utiliser la réplication à copie unique"^].
 
 .Étapes
 . Enroulez l'extrémité du bracelet antistatique autour de votre poignet et fixez l'extrémité du clip à une masse métallique afin d'éviter toute décharge statique.

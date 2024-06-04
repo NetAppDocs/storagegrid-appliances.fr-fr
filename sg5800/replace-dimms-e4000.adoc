@@ -1,0 +1,271 @@
+---
+permalink: sg5800/replace-dimms-e4000.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= Remplacement des modules DIMM dans E4000 (SGS800)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous pouvez remplacer un module DIMM du E4000 s'il est défectueux.
+
+.Description de la tâche
+Pour remplacer un module DIMM, vous devez vérifier la taille du cache de votre contrôleur, mettre le contrôleur hors ligne, retirer le contrôleur, retirer les modules DIMM et installer les nouveaux modules DIMM dans votre contrôleur. Vous pouvez ensuite remettre votre contrôleur en ligne et vérifier que la baie de stockage fonctionne correctement.
+
+Le nœud de stockage de l'appliance peut ne pas être accessible lorsque vous remplacez le contrôleur. Si le contrôleur de la série E4000 fonctionne suffisamment, vous pouvez le faire link:../commonhardware/placing-appliance-into-maintenance-mode.html["Placez le contrôleur SG5800 en mode de maintenance"].
+
+.Avant de commencer
+* Assurez-vous de disposer des éléments suivants :
++
+** Un module DIMM de remplacement.
+** Un bracelet antistatique ou d'autres précautions antistatiques.
+** Une zone de travail plate et sans électricité statique.
+** Étiquettes permettant d'identifier chaque câble connecté au boîtier du contrôleur.
+
+
+* Accès à SANtricity System Manager :
++
+** Dans le Gestionnaire de grille, sélectionnez *NODES* > *_appliance node_* > *SANtricity System Manager*. Les informations relatives au contrôleur se trouvent sur le https://docs.netapp.com/us-en/storagegrid-118/monitor/viewing-santricity-system-manager-tab.html["Onglet Gestionnaire système SANtricity"].
++
+
+NOTE: Il se peut que vous ne puissiez pas accéder au Gestionnaire système SANtricity à l'aide du Gestionnaire de grille au cours de certaines étapes de cette procédure. Si le contrôleur SG5800 est arrêté, vous devez accéder au Gestionnaire système SANtricity à l'aide de votre navigateur.
+
+** Pointez un navigateur de votre station de gestion vers le nom de domaine ou l'adresse IP du contrôleur.
+
+
+
+
+
+
+== Étape 1 : déterminez si vous devez remplacer un module DIMM
+
+Vérifiez la taille du cache de votre contrôleur avant de remplacer les MODULES DIMM.
+
+.Étapes
+. Accédez au profil de matrice de stockage du contrôleur. Depuis le Gestionnaire système SANtricity, accédez à *support* › *Centre de support*. Dans la page support Resources, sélectionnez *Storage Array Profile*.
+. Faites défiler vers le bas ou utilisez le champ Rechercher pour localiser les informations *module de cache de données*.
+. Si un module DIMM défectueux ou un module DIMM signalant *Data cache module* comme non optimal est présent, notez l'emplacement du module DIMM et continuez à remplacer les modules DIMM de votre contrôleur.
+
+
+
+
+== Étape 2 : mettez le tiroir contrôleur hors tension
+
+Mettez le contrôleur hors tension pour pouvoir retirer et remplacer les modules DIMM en toute sécurité.
+
+.Étapes
+. Dans SANtricity System Manager, vérifiez les détails dans le gourou de la restauration afin de confirmer qu'il y a un problème avec une mémoire non conforme et de garantir qu'aucun autre élément ne doit être traité en premier.
+. Dans la zone Details du Recovery Guru, déterminez quel DIMM à remplacer.
+. Sauvegardez la base de données de configuration de la baie de stockage à l'aide de SANtricity System Manager.
++
+Si un problème survient lorsque vous supprimez un contrôleur, vous pouvez utiliser le fichier enregistré pour restaurer votre configuration. Le système enregistre l'état actuel de la base de données de configuration RAID, qui inclut toutes les données des groupes de volumes et des pools de disques sur le contrôleur.
+
++
+** Depuis System Manager :
++
+... Sélectionnez *support › Centre de support › Diagnostics*.
+... Sélectionnez *collecter les données de configuration*.
+... Cliquez sur *collect*.
++
+Le fichier est enregistré dans le dossier Téléchargements de votre navigateur sous le nom *configurationData-
+<arrayName>-<dateTime>.7z*.
+
+
+
+
+
+. Arrêtez le contrôleur SG5800.
++
+.. Connectez-vous au nœud grid :
++
+... Saisissez la commande suivante : `ssh admin@grid_node_IP`
+... Entrez le mot de passe indiqué dans le `Passwords.txt` fichier.
+... Entrez la commande suivante pour passer à la racine : `su -`
+... Entrez le mot de passe indiqué dans le `Passwords.txt` fichier.
++
+Lorsque vous êtes connecté en tant que root, l'invite passe de `$` à `#`.
+
+
+
+.. Arrêtez le contrôleur SG5800 :
++
+*`shutdown -h now`*
+
+.. Attendez que les données de la mémoire cache soient écrites sur les disques.
++
+Le voyant vert cache actif situé à l'arrière du contrôleur E4000 est allumé lorsque les données mises en cache doivent être écrites sur les disques. Vous devez attendre que ce voyant s'éteigne.
+
+
+
+. Dans la page d'accueil de SANtricity System Manager, sélectionnez *Afficher les opérations en cours*.
+. Vérifiez que toutes les opérations ont été effectuées avant de passer à l'étape suivante.
+. Eteindre les deux interrupteurs de l'alimentation en panne du tiroir contrôleur.
+. Attendre que toutes les LED du tiroir contrôleur s'éteignent.
+
+
+
+
+== Étape 3 : retirer le boîtier du contrôleur
+
+Retirez le boîtier du contrôleur du système, puis retirez le couvercle du boîtier du contrôleur.
+
+.Étapes
+. Si vous n'êtes pas déjà mis à la terre, mettez-vous à la terre correctement.
+. Desserrez le crochet et la sangle de boucle reliant les câbles au dispositif de gestion des câbles, puis débranchez les câbles système et les SFP (si nécessaire) du boîtier du contrôleur, en gardant la trace de l'endroit où les câbles ont été connectés.
++
+Laissez les câbles dans le périphérique de gestion des câbles de sorte que lorsque vous réinstallez le périphérique de gestion des câbles, les câbles sont organisés.
+
+. Retirez et mettez de côté les dispositifs de gestion des câbles des côtés gauche et droit du boîtier du contrôleur.
+. Appuyez sur le loquet de la poignée de la came jusqu'à ce qu'elle se libère, ouvrez complètement la poignée de la came pour libérer le boîtier du contrôleur du fond de panier central, puis, de deux mains, retirez le boîtier du contrôleur du châssis.
+. Retournez le boîtier du contrôleur et placez-le sur une surface plane et stable.
+. Ouvrez le capot en appuyant sur les boutons bleus situés sur les côtés du boîtier du contrôleur pour libérer le capot, puis faites pivoter le capot vers le haut et hors du boîtier du contrôleur.
++
+image::../media/drw_E4000_open_controller_module_cover_IEOPS-870.png[Ouvrir le couvercle du boîtier du contrôleur.]
+
+
+
+
+
+== Étape 4 : remplacez les modules DIMM
+
+Repérez le module DIMM à l'intérieur du contrôleur, retirez-le et remplacez-le.
+
+.Étapes
+. Si vous n'êtes pas déjà mis à la terre, mettez-vous à la terre correctement.
+. Vous devez effectuer un arrêt correct du système avant de remplacer les composants du système pour éviter de perdre des données non écrites dans la mémoire non volatile (NVMEM). La LED se trouve à l'arrière du boîtier du contrôleur.
+. Si la LED NVMEM ne clignote pas, il n'y a pas de contenu dans la NVMEM ; vous pouvez passer aux étapes suivantes et passer à la tâche suivante de cette procédure.
+. Si la LED NVMEM clignote, des données sont disponibles dans la NVMEM et vous devez la déconnecter pour effacer la mémoire :
++
+.. Retirez la batterie du boîtier du contrôleur en appuyant sur le bouton bleu situé sur le côté du boîtier du contrôleur.
+.. Faites glisser la batterie vers le haut jusqu'à ce qu'elle se dégage des supports de fixation, puis retirez la batterie du boîtier du contrôleur.
+.. Localisez le câble de batterie, appuyez sur le clip de la fiche mâle batterie pour libérer le clip de verrouillage de la prise, puis débranchez le câble de batterie de la prise.
+.. Vérifiez que la LED NVMEM n'est plus allumée.
+.. Rebranchez le connecteur de la batterie et vérifiez à nouveau le voyant à l'arrière du contrôleur.
+.. Débranchez le câble de la batterie.
+
+
+. Localisez les modules DIMM sur le boîtier de votre contrôleur.
+. Notez l'orientation et l'emplacement du module DIMM dans le support de manière à pouvoir insérer le module DIMM de remplacement dans le bon sens.
+. Éjectez le module DIMM de son logement en écartant lentement les deux languettes de l'éjecteur de DIMM de chaque côté du module DIMM, puis en faisant glisser le module DIMM hors de son logement.
++
+Le module DIMM pivote légèrement vers le haut.
+
+. Faites pivoter le module DIMM aussi loin que possible, puis faites-le glisser hors du support.
++
+
+NOTE: Tenez soigneusement le module DIMM par les bords pour éviter toute pression sur les composants de la carte de circuit DIMM.
+
++
+image::../media/drw_E4000_replace_dimms_IEOPS-865.png[Retirez les MODULES DIMM.]
+
++
+|===
+
+
+ a| 
+image::../media/legend_icon_01.png[icône de légende 01]
+| Languettes d'éjection du module DIMM 
+
+
+ a| 
+image::../media/legend_icon_02.png[icône de légende 02]
+| DIMM 
+|===
+. Retirez le module DIMM de remplacement du sac d'expédition antistatique, tenez le module DIMM par les coins et alignez-le sur le logement.
++
+L'encoche entre les broches du DIMM doit être alignée avec la languette du support.
+
+. Insérez le module DIMM directement dans le logement.
++
+Le module DIMM s'insère bien dans le logement, mais devrait être facilement installé. Si ce n'est pas le cas, réalignez le module DIMM avec le logement et réinsérez-le.
+
++
+
+NOTE: Inspectez visuellement le module DIMM pour vérifier qu'il est bien aligné et complètement inséré dans le logement.
+
+. Poussez délicatement, mais fermement, sur le bord supérieur du module DIMM jusqu'à ce que les languettes de l'éjecteur s'enclenchent sur les encoches situées aux extrémités du module DIMM.
+. Rebranchez la batterie :
++
+.. Branchez la batterie.
+.. Assurez-vous que la fiche se verrouille dans la prise d'alimentation de la batterie de la carte mère.
+.. Alignez la batterie avec les supports de fixation de la paroi latérale en tôle.
+.. Faites glisser la batterie vers le bas jusqu'à ce que le loquet de la batterie s'enclenche et s'enclenche dans l'ouverture de la paroi latérale.
+
+
+. Réinstallez le couvercle du boîtier du contrôleur.
+
+
+
+
+== Étape 5 : réinstallez le boîtier du contrôleur
+
+Réinstallez le boîtier du contrôleur dans le châssis.
+
+.Étapes
+. Si vous n'êtes pas déjà mis à la terre, mettez-vous à la terre correctement.
+. Si ce n'est pas déjà fait, remettre en place le couvercle sur le boîtier du contrôleur.
+. Retournez le boîtier du contrôleur et alignez l'extrémité sur l'ouverture du châssis.
+. Poussez doucement le boîtier du contrôleur à mi-chemin dans le système. Alignez l'extrémité du boîtier du contrôleur avec l'ouverture du châssis, puis poussez doucement le boîtier du contrôleur à mi-chemin dans le système.
++
+
+NOTE: N'insérez pas complètement le boîtier du contrôleur dans le châssis avant d'y être invité.
+
+. Recâblage du système, selon les besoins.
+. Terminer la réinstallation du boîtier du contrôleur :
++
+.. Avec la poignée de la came en position ouverte, poussez fermement le boîtier du contrôleur jusqu'à ce qu'il rencontre le fond de panier central et qu'il soit bien en place, puis fermez la poignée de la came en position verrouillée.
++
+
+NOTE: N'appliquez pas de force excessive lorsque vous faites glisser le boîtier du contrôleur dans le châssis pour éviter d'endommager les connecteurs.
+
++
+Le contrôleur commence à démarrer dès qu'il est assis dans le châssis.
+
+.. Si ce n'est déjà fait, réinstallez le périphérique de gestion des câbles.
+.. Fixez les câbles au dispositif de gestion des câbles à l'aide du crochet et de la sangle de boucle.
+
+
+. Mettez les deux boutons marche/arrêt sur le tiroir contrôleur.
+
+
+
+
+== Étape 6 : remplacement complet des modules DIMM
+
+Placez le contrôleur en ligne, collectez les données de support et reprenez les opérations.
+
+.Étapes
+. Pendant le démarrage du contrôleur, vérifiez les LED du contrôleur.
++
+Lorsque la communication avec l'autre contrôleur est rétablie :
+
++
+** Le voyant d'avertissement orange reste allumé.
+** Les voyants Host Link peuvent être allumés, clignotants ou éteints, selon l'interface hôte.
+
+
+. Une fois le contrôleur remis en ligne, vérifiez que son état est optimal et vérifiez les LED d'avertissement du tiroir contrôleur.
++
+Si l'état n'est pas optimal ou si l'un des voyants d'avertissement est allumé, vérifiez que tous les câbles sont correctement installés et que le boîtier du contrôleur est correctement installé. Au besoin, déposer et réinstaller le boîtier du contrôleur.
+REMARQUE : si vous ne parvenez pas à résoudre le problème, contactez le support technique.
+
+. Collecte des données de support de votre baie de stockage à l'aide de SANtricity System Manager
++
+.. Sélectionnez *support › Centre de support › Diagnostics*.
+.. Sélectionnez *collecter les données de support*.
+.. Cliquez sur *collect*.
++
+Le fichier est enregistré dans le dossier Téléchargements de votre navigateur portant le nom *support-data.7z*.
+
+
+
+. Vérifiez que le redémarrage est terminé et que le nœud a rejoint à nouveau la grille. Dans le Gestionnaire de grille, vérifiez que la page *nœuds* affiche un état normal (coche verte à gauche du nom du nœud) pour le nœud de l'appliance, indiquant qu'aucune alerte n'est active et que le nœud est connecté à la grille.
++
+
+NOTE: L'opération peut prendre 20 minutes entre la mise sous tension des boutons d'alimentation et le moment où le nœud rejoint la grille et affiche un état normal dans Grid Manager. »
+
+

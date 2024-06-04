@@ -4,23 +4,23 @@ sidebar: sidebar
 keywords: storagegrid, sgf6112, storage node, storage appliance, install, installing, installation, cabinet, rack 
 summary: 'Retirez le SGF6112 d"une armoire ou d"un rack pour accéder au capot supérieur ou pour déplacer l"appliance vers un autre emplacement, puis réinstallez l"appliance dans une armoire ou un rack une fois la maintenance matérielle terminée.' 
 ---
-= Déplacez le SGF6112 dans l'armoire ou le rack
+= Déplacer le SGF6112 ou le SG6100-CN dans une armoire ou un rack
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-Retirez le SGF6112 d'une armoire ou d'un rack pour accéder au capot supérieur ou pour déplacer l'appliance vers un autre emplacement, puis réinstallez l'appliance dans une armoire ou un rack une fois la maintenance matérielle terminée.
+Retirez le SGF6112 ou le SG6100-CN d'une armoire ou d'un rack pour accéder au capot supérieur ou pour déplacer l'appliance vers un autre emplacement, puis réinstallez-la dans une armoire ou un rack une fois la maintenance matérielle terminée.
 
 
 
-== Retirez le SGF6112 de l'armoire ou du rack
+== Retirez le SGF6112 ou le SG6100-CN de l'armoire ou du rack
 
 .Avant de commencer
-* Vous disposez d'étiquettes pour identifier chaque câble connecté au SGF6112.
-* Vous avez link:locating-sgf6112-in-data-center.html["Emplacement physique du SGF6112"] où effectuer la maintenance dans le data center ?
-* Vous avez link:power-sgf6112-off-on.html#shut-down-the-sgf6112-appliance["Arrêtez le SGF6112"].
+* Vous disposez d'étiquettes pour identifier chaque câble connecté au SGF6112 ou au SG6100-CN.
+* Vous avez link:locating-sgf6112-in-data-center.html["Physiquement situé le SGF6112 ou le SG6100-CN"] où effectuer la maintenance dans le data center ?
+* Vous avez link:power-sgf6112-off-on.html#shut-down-the-sgf6112-appliance["Arrêtez le SGF6112 ou le SG6100-CN"].
 +
 
 CAUTION: N'éteignez pas l'appareil à l'aide de l'interrupteur d'alimentation.
@@ -37,9 +37,9 @@ NOTE: Pour éviter toute dégradation des performances, ne tordez pas, ne pliez 
 
 . Desserrez les deux vis imperdables situées sur le panneau avant de l'appareil.
 +
-image::../media/sg6060_rack_retaining_screws.png[Vis de fixation du rack SGF6112]
+image::../media/sg6060_rack_retaining_screws.png[Vis de fixation du rack SGF6112 ou SG6100-CN]
 
-. Faites glisser le SGF6112 vers l'avant pour le sortir du rack jusqu'à ce que les rails de montage soient complètement sortis et que vous entendiez un clic sur les loquets des deux côtés.
+. Faites glisser le SGF6112 ou le SG6100-CN vers l'avant pour le sortir du rack jusqu'à ce que les rails de montage soient complètement sortis et que vous entendiez un clic sur les loquets des deux côtés.
 +
 Le capot supérieur de l'appareil est accessible.
 
@@ -50,7 +50,7 @@ Après le remplacement de la pièce, renvoyez la pièce défectueuse à NetApp, 
 
 
 
-== Réinstallez le SGF6112 dans l'armoire ou le rack
+== Réinstallez le SGF6112 ou le SG6100-CN dans l'armoire ou le rack
 
 .Avant de commencer
 Vous avez link:reinstalling-sgf6112-cover.html["réinstallez le capot de l'appareil - effectué"].

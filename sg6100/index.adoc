@@ -23,7 +23,7 @@ Les procédures décrites dans cette section supposent que l'appliance a déjà 
 * link:changing-link-configuration-of-sgf6112-appliance.html["Modifier la configuration de la liaison de l'appliance"]
 
 
-*Les procédures de maintenance matérielle* nécessitent la manipulation physique de composants SGF6112 spécifiques.
+*Les procédures de maintenance matérielle* nécessitent la manipulation physique de composants SGF6112 ou SG6160 spécifiques.
 
 
 

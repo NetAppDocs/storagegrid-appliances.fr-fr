@@ -668,6 +668,95 @@ L'installation ou la communication avec le contrôleur E2800 est défectueuse.
 
 
 --
+.SG5800
+--
+Les contrôleurs de l'appareil incluent des indicateurs qui vous aident à déterminer l'état du contrôleur de l'appareil :
+
+* <<status_indicators_SG5800_controller,Voyants d'état sur le contrôleur SG5800>>
+* <<general_boot_codes_sg5800,Codes de démarrage généraux>>
+* <<boot_codes_SG5800_controller,Codes de démarrage du contrôleur SG5800>>
+* <<error_codes_SG5800_controller,Codes d'erreur du contrôleur SG5800>>
+
+
+Utilisez ces informations pour vous aider link:troubleshooting-hardware-installation.html["Dépanner l'installation matérielle du SG5800"].
+
+[[status_indicators_SG5800_controller]]
+Voyants d'état sur le contrôleur SG5800::
++
+--
+Une fois le programme d'installation de l'appliance StorageGRID lancé, vous devez vérifier régulièrement les indicateurs d'état du contrôleur SG5800.
+
+La figure suivante montre les indicateurs d'état sur le contrôleur SG5800.
+
+image::../media/sg5800_leds.png[Voyants d'état sur le contrôleur SG5800]
+
+[cols="1a,2a,2a"]
+|===
+| Légende | Afficher | Description 
+
+
+ a| 
+1
+ a| 
+LED d'avertissement
+ a| 
+Orange : le contrôleur est défectueux et nécessite l'intervention de l'opérateur, ou le script d'installation est introuvable.
+
+OFF : le contrôleur fonctionne normalement.
+
+
+
+ a| 
+2
+ a| 
+Voyants d'avertissement du port d'extension
+ a| 
+Orange : ces voyants sont toujours orange (aucune liaison établie) car le dispositif n'utilise pas les ports d'extension.
+
+
+
+ a| 
+3
+ a| 
+Voyants d'état de la liaison du port hôte
+ a| 
+Vert : le lien fonctionne.
+
+OFF : le lien ne fonctionne pas.
+
+
+
+ a| 
+4
+ a| 
+Voyants d'état de la liaison Ethernet
+ a| 
+Vert : un lien est établi.
+
+Désactivé : aucun lien n'est établi.
+
+
+
+ a| 
+5
+ a| 
+LED d'activités Ethernet
+ a| 
+Vert : la liaison entre le port de gestion et le périphérique auquel il est connecté (par exemple, un commutateur Ethernet) est active.
+
+Éteint : il n'y a pas de lien entre le contrôleur et le périphérique connecté.
+
+Vert clignotant : activité Ethernet.
+
+|===
+--
+
+
+.Informations associées
+* https://mysupport.netapp.com/site/global/dashboard["Support NetApp"^]
+
+
+--
 .SG6000
 --
 Les contrôleurs de l'appliance SG6000 comprennent des indicateurs qui vous aident à déterminer l'état du contrôleur de l'appliance :
@@ -809,7 +898,7 @@ Utilisez ces informations pour vous aider link:troubleshooting-hardware-installa
 Voyants et boutons de l'appareil::
 +
 --
-La figure suivante montre les voyants et les boutons de l'appareil SGF6112.
+La figure suivante présente les voyants et les boutons des appareils SG6100.
 
 image::../media/sgf6112_front_indicators.png[Clignotants avant - SGF6112]
 
@@ -871,7 +960,7 @@ Voyant d'état
  a| 
 PFR
  a| 
-Ce voyant n'est pas utilisé par l'appareil SGF6112 et reste éteint.
+Cette lampe n'est pas utilisée par les appareils SG6100 et reste éteinte.
 
 |===
 --
@@ -898,7 +987,7 @@ Pour afficher les codes de démarrage et d'erreur, link:accessing-bmc-interface.
 Indicateurs SSD::
 +
 --
-La figure suivante montre les voyants des disques SSD de l'appliance SGF6112.
+La figure suivante montre les voyants des disques SSD sur l'appliance SGF6112 ou SG6160.
 
 image::../media/ssd_indicators.png[Indicateurs SSD]
 
@@ -917,7 +1006,7 @@ image::../media/ssd_indicators.png[Indicateurs SSD]
 * OFF : l'emplacement est vide
 
 
-*Remarque :* si un nouveau disque SSD en fonctionnement est inséré dans un nœud StorageGRID SGF6112 en fonctionnement, les voyants du disque SSD doivent clignoter au début, mais cessent de clignoter dès que le système détermine que le disque dur a suffisamment de capacité et qu'il est fonctionnel.
+*Remarque :* si un nouveau disque SSD en fonctionnement est inséré dans un nœud StorageGRID SGF6112 ou SG6160 en fonctionnement, les voyants du disque SSD doivent d'abord clignoter, mais cessent de clignoter dès que le système détermine que le disque dur a une capacité suffisante et qu'il est fonctionnel.
 
 
 
@@ -930,6 +1019,10 @@ Bleu (clignotant) : accès au lecteur
 
 |===
 --
+
+
+.Informations associées
+* https://mysupport.netapp.com/site/global/dashboard["Support NetApp"^]
 
 
 --

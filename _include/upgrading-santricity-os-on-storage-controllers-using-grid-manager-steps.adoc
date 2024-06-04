@@ -3,15 +3,14 @@
 
 
 .Avant de commencer
-* Vous avez consulté le https://imt.netapp.com/matrix/#welcome["Matrice d'interopérabilité NetApp (IMT)"^] Pour vérifier que la version de SANtricity OS utilisée pour la mise à niveau est compatible avec votre appliance.
+* Si vous n'avez pas obtenu la version du système d'exploitation SANtricity que vous souhaitez mettre à niveau vers à partir de https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["Téléchargement NetApp : appliance StorageGRID"^], vous avez consulté https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["Téléchargement NetApp : appliance StorageGRID"^] ou le https://imt.netapp.com/matrix/#welcome["Matrice d'interopérabilité NetApp (IMT)"^] Pour vérifier que la version de SANtricity OS utilisée pour la mise à niveau est compatible avec votre appliance.
 * Vous avez le https://docs.netapp.com/us-en/storagegrid-118/admin/admin-group-permissions.html["Maintenance ou autorisation d'accès racine"^].
 * Vous êtes connecté au Grid Manager à l'aide d'un https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["navigateur web pris en charge"^].
 * Vous avez la phrase secrète pour le provisionnement.
-* Vous avez accès à https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["Téléchargement NetApp : appliance StorageGRID"^].
 
 
 .Description de la tâche
-Vous ne pouvez pas effectuer d'autres mises à jour logicielles (mise à niveau du logiciel StorageGRID ou correctif) tant que vous n'avez pas terminé le processus de mise à niveau du système d'exploitation SANtricity. Si vous tentez de lancer un correctif ou une mise à niveau du logiciel StorageGRID avant la fin du processus de mise à niveau de SANtricity OS, vous êtes redirigé vers la page de mise à niveau de SANtricity OS.
+Vous ne pouvez pas effectuer d'autres mises à jour logicielles (mise à niveau du logiciel StorageGRID ou correctif) pendant qu'une mise à niveau du système d'exploitation SANtricity est en cours. Si vous tentez de lancer un correctif ou une mise à niveau du logiciel StorageGRID avant la fin du processus de mise à niveau de SANtricity OS, vous êtes redirigé vers la page de mise à niveau de SANtricity OS.
 
 La procédure ne sera terminée qu'une fois la mise à niveau de SANtricity OS appliquée avec succès à tous les nœuds applicables sélectionnés pour la mise à niveau. Cela peut prendre plus de 30 minutes pour charger le système d'exploitation SANtricity sur chaque nœud (de façon séquentielle) et jusqu'à 90 minutes pour redémarrer chaque appliance de stockage StorageGRID. Les nœuds de votre grille qui n'utilisent pas SANtricity OS ne seront pas affectés par cette procédure.
 
