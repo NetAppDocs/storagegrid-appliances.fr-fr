@@ -37,7 +37,7 @@ indexpage:
       url: "../sg6100/replacing-one-or-more-power-supplies-in-sgf6112-appliance.html"
     - title: Remplacement du bloc d'alimentation du tiroir contrôleur de stockage
         ou du tiroir d'extension (SG6160)
-      url: "/sg6100/replace-6100-cn-power-canister.html"
+      url: "../sg6100/replace-6100-cn-power-canister.html"
     - title: Remplacer le ventilateur dans SGF6112 ou SG6100-CN (SG6160)
       url: "../sg6100/replacing-fan-in-sgf6112.html"
     - title: Remplacement du ventilateur dans le tiroir du contrôleur de stockage
@@ -51,14 +51,15 @@ indexpage:
         d'extension (SG6160)
       url: "../sg6100/replace-6160-drives-60.html"
     - title: Remplacement de la carte réseau interne (SGF6112 et SG6160)
-      url: "/sg6100/replace-nic-in-sgf6112.html"
+      url: "../sg6100/replace-nic-in-sgf6112.html"
     - title: Remplacement de la carte réseau externe (SG6160)
-      url: "/sg6100/replace-ocp-nic-in-sg6100-cn.html"
+      url: "../sg6100/replace-ocp-nic-in-sg6100-cn.html"
     - title: Remplacement des modules DIMM (SG6160)
-      url: "/sg6100/replace-dimms-e4000.html"
+      url: "../sg6100/replace-dimms-e4000.html"
     - title: Remplacement des piles (SG6160)
-      url: "/sg6100/replace-battery-e4000.html"
+      url: "../sg6100/replace-battery-e4000.html"
     - title: Remettez le couvercle en place
+      url: "../sg6100/reinstalling-sgf6112-cover.html"
     - title: Remplacez la pile CMOS
       url: "../sg6100/replace-cmos-in-sgf6112.html"
     - title: Ajout du tiroir d'extension au SG6160 déployé
