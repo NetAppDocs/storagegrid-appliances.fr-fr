@@ -88,8 +88,4 @@ entries:
     - title: Contrôleur E4000 (SG6160)
       url: "/sg6100/replace-controller-e4000-duplex.html"
   - title: Déplacer dans le portoir
-    entries:
-    - title: SGF6112
-      url: "/sg6100/reinstalling-sgf6112-into-cabinet-or-rack.html"
-    - title: CONTRÔLEUR SG6100-CN (SG6160)
-      url: "/sg6100/reinstalling-sg6100-cn-controller-into-cabinet-or-rack.html"
+    url: "/sg6100/reinstalling-sgf6112-into-cabinet-or-rack.html"

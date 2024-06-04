@@ -670,17 +670,8 @@ L'installation ou la communication avec le contrôleur E2800 est défectueuse.
 --
 .SG5800
 --
-Les contrôleurs de l'appareil incluent des indicateurs qui vous aident à déterminer l'état du contrôleur de l'appareil :
+Les contrôleurs de l'appareil incluent des indicateurs qui vous aident à déterminer l'état du contrôleur de l'appareil. Utilisez ces informations pour vous aider link:troubleshooting-hardware-installation.html["Dépanner l'installation matérielle du SG5800"].
 
-* <<status_indicators_SG5800_controller,Voyants d'état sur le contrôleur SG5800>>
-* <<general_boot_codes_sg5800,Codes de démarrage généraux>>
-* <<boot_codes_SG5800_controller,Codes de démarrage du contrôleur SG5800>>
-* <<error_codes_SG5800_controller,Codes d'erreur du contrôleur SG5800>>
-
-
-Utilisez ces informations pour vous aider link:troubleshooting-hardware-installation.html["Dépanner l'installation matérielle du SG5800"].
-
-[[status_indicators_SG5800_controller]]
 Voyants d'état sur le contrôleur SG5800::
 +
 --

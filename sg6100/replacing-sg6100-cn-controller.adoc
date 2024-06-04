@@ -18,7 +18,7 @@ Vous devrez peut-être remplacer le contrôleur SG6100-CN s'il ne fonctionne pas
 * Vous avez des étiquettes pour identifier chaque câble connecté au contrôleur.
 * Vous avez trouvé le contrôleur à remplacer dans le data Center.
 +
-link:locating-controller-in-data-center.html["Localiser le contrôleur dans le data Center"]
+link:locating-sgf6112-in-data-center.html["Localiser le contrôleur dans le data Center"]
 
 
 
@@ -45,7 +45,7 @@ Lorsque vous êtes connecté en tant que root, l'invite passe de `$` à `#`.
 .. Entrez : `*run-host-command ipmitool lan print*` Pour afficher les configurations BMC actuelles de l'appliance.
 
 
-. Si le contrôleur SG6100-CN fonctionne suffisamment pour permettre un arrêt contrôlé, link:power-sg6100-cn-controller-off-on.html#shut-down-sg6100-cn-controller["Arrêtez le contrôleur SG6100-CN"].
+. Si le contrôleur SG6100-CN fonctionne suffisamment pour permettre un arrêt contrôlé, link:power-sgf6112-off-on.html["Arrêtez le contrôleur SG6100-CN"].
 . Si l'une des interfaces réseau de cette appliance StorageGRID est configurée pour DHCP, vous devrez peut-être mettre à jour les attributions de bail DHCP permanentes sur les serveurs DHCP pour référencer les adresses MAC de l'appliance de remplacement. Cette mise à jour garantit que l'appliance se voit attribuer les adresses IP attendues.
 . Déposer et remplacer le contrôleur SG6100-CN :
 +

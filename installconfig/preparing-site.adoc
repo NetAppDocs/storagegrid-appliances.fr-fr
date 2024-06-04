@@ -30,16 +30,16 @@ SG100 et SG1000
 
 
  a| 
-SG5712
- a| 
-120 à 240 volts c.a.
-
-
-
- a| 
 SG110 et SG1100
  a| 
 100 à 240 volts c.a.
+
+
+
+ a| 
+SG5712
+ a| 
+120 à 240 volts c.a.
 
 
 
