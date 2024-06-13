@@ -4921,7 +4921,6 @@ Libérez le contrôleur de l'appareil en appuyant sur le loquet de la poignée d
   <block id="f3a0ab2289e5d894b80255c441fc9f46" category="list-text">Deux ports 10 GbE sur chacun des contrôleurs de stockage</block>
   <block id="2e869104086dd4cd2c4b722cc80e77b6" category="paragraph">Connectez chaque contrôleur de stockage au contrôleur SG6100-CN.</block>
   <block id="776053d9d5cca53346c2eb33c73396bf" category="paragraph">5 (SG6160 uniquement)</block>
-  <block id="d14bfbc5b95f245a7cd1ac38c7f3ce2d" category="list-text">Connectez les deux ports d'interconnexion de chaque contrôleur de stockage au port 100 GbE du contrôleur SG6100-CN à l'aide d'un câble 100 GbE GSFP28 à 4x25-GbE SFP28.</block>
   <block id="fcb7aea9a14248650fc2b4195b723923" category="cell">Vitesse de liaison (GbE)</block>
   <block id="20d4ad7302d59cc00a8fda9a9f549883" category="list-text">Les ports réseau Grid et client ne peuvent être exécutés à des vitesses différentes que si la négociation automatique est sélectionnée comme vitesse de liaison, et que Fixed est sélectionné comme mode de liaison de port. Sinon, les quatre ports fonctionnent à la même vitesse.</block>
   <block id="76caeddfbf7a30108ac0c230c0790b19" category="paragraph">Pour les systèmes SG6160, SG6000, SG5800 et SG5700, vous configurez SANtricity System Manager. Le logiciel SANtricity est utilisé pour contrôler le matériel de ces dispositifs.</block>
@@ -5506,4 +5505,5 @@ Affiche Oui, indiquant qu'il est possible de retirer ce composant en toute sécu
   <block id="1b137b50e38b53f7a19b8ae2f6114d7d" category="sidebar">Déplacer dans le portoir</block>
   <block id="d1fc100be07ba82ec7383450a44baff8" category="list-text">Si le contrôleur SG6100-CN fonctionne suffisamment pour permettre un arrêt contrôlé, <block ref="0a3cf65437375f485bddbc72eccdb305" category="inline-link-macro-rx"></block>.</block>
   <block id="d0f113fd26d2007a359ab568d6af75eb" category="paragraph">Les contrôleurs de l'appareil incluent des indicateurs qui vous aident à déterminer l'état du contrôleur de l'appareil. Utilisez ces informations pour vous aider <block ref="e0e94668a35b0e62f1c3c83bc6a3960d" category="inline-link-macro-rx"></block>.</block>
+  <block id="a0fdf2c022cdb2b6d6cca277318ea2b2" category="list-text">Connectez les deux ports d'interconnexion de chaque contrôleur de stockage au port 100 GbE du contrôleur SG6100-CN à l'aide d'un câble QSFP28 à 100 GbE SFP28.</block>
 </blocks>

@@ -1060,7 +1060,7 @@ Connexion au réseau sur lequel vous accédez à SANtricity System Manager.
 +
 Bien que cette connexion soit facultative, elle est recommandée pour faciliter l'assistance.
 
-. Connectez les deux ports d'interconnexion de chaque contrôleur de stockage au port 100 GbE du contrôleur SG6100-CN à l'aide d'un câble 100 GbE GSFP28 à 4x25-GbE SFP28.
+. Connectez les deux ports d'interconnexion de chaque contrôleur de stockage au port 100 GbE du contrôleur SG6100-CN à l'aide d'un câble QSFP28 à 100 GbE SFP28.
 . Connectez les ports réseau de l'appareil aux commutateurs réseau appropriés à l'aide de câbles TwinAx ou de câbles optiques et d'émetteurs-récepteurs.
 +
 [cols="2a,2a"]
