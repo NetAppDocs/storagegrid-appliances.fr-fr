@@ -67,6 +67,9 @@ entries:
         url: "/installconfig/sg6000-cn-installing-into-cabinet-or-rack.html"
     - title: SG6100
       entries:
+      - title: Présentation
+        pdf-filename: Installez le SG6100 dans l'armoire ou le rack
+        url: "/installconfig/installing-hardware-sg6100.html"
       - title: Installation des tiroirs de 60 disques (SG6160)
         url: "/installconfig/sg6160-installing-60-drive-shelves-into-cabinet-or-rack.html"
       - title: Installation des tiroirs de 12 disques (SGF6112)

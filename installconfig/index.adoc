@@ -36,13 +36,7 @@ Cette étape est facultative. Cependant, la rationalisation et l'automatisation 
 ** link:installing-appliance-in-cabinet-or-rack-sg5700.html["SG5700"]
 ** link:installing-appliance-in-cabinet-or-rack-sg5800.html["SG5800"]
 ** link:installing-hardware-sg6000.html["SG6000"]
-** link:installing-appliance-in-cabinet-or-rack-sgf6112.html["SGF6112"]
-** SG6160 :
-+
-*** link:sg6100-cn-installing-into-cabinet-or-rack.html["Contrôleur SG6100-CN"]
-*** link:sg6160-installing-60-drive-shelves-into-cabinet-or-rack.html["tiroirs de 60 disques"]
-
-
+** link:installing-hardware-sg6100.html["SG6100"]
 
 
 . link:cabling-appliance.html["Appareil câblé"]

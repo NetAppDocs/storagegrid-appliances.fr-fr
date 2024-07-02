@@ -1,0 +1,46 @@
+---
+permalink: installconfig/installing-hardware-sg6100.html 
+sidebar: sidebar 
+keywords: install, sg6100, sg6112, expansion shelf, cabinet, rack, drives 
+summary: 'Pour les systèmes SG6160 et SGF6112, vous installez des rails dans votre armoire ou rack et faites glisser le tiroir contrôleur, les tiroirs d"extension éventuels et le contrôleur de calcul sur les rails.' 
+---
+= Installation dans l'armoire ou le rack (SG6100)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pour les systèmes SG6160 et SGF6112, vous installez des rails dans votre armoire ou rack et faites glisser le tiroir contrôleur, les tiroirs d'extension éventuels et le contrôleur de calcul sur les rails.
+
+[cols="1a,2a,2a"]
+|===
+| Modèle | Installer | Pour plus d'informations 
+
+
+ a| 
+SG6160
+ a| 
+tiroir contrôleur de 60 disques et tiroir d'extension de 60 disques
+ a| 
+link:sg6160-installing-60-drive-shelves-into-cabinet-or-rack.html["Installez les tiroirs de 60 disques"]
+
+
+
+ a| 
+SG6112
+ a| 
+tiroir appliance de 12 disques
+ a| 
+link:installing-appliance-in-cabinet-or-rack-sgf6112.html["Installez les tiroirs de 12 disques"]
+
+
+
+ a| 
+SG6160
+ a| 
+Contrôleur de calcul SG6100-CN
+ a| 
+link:sg6100-cn-installing-into-cabinet-or-rack.html["Installer le contrôleur SG6100-CN"]
+
+|===
