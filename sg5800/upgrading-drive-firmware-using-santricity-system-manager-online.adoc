@@ -26,9 +26,7 @@ Les disques sont mis à niveau un par un pendant que l'appliance effectue des E/
 
 [NOTE]
 ====
-Les disques appartenant à des volumes qui ne sont pas redondants doivent être mis à jour à l'aide du link:upgrading-drive-firmware-using-santricity-system-manager-offline.html["méthode hors ligne"]. La méthode offline doit être utilisée pour tout pool ou groupe de volumes actuellement dégradé.
-
-Vous devez utiliser le link:upgrading-drive-firmware-using-santricity-system-manager-offline.html["méthode hors ligne"] Lors de la mise à niveau des disques SSD.
+Les disques appartenant à des volumes qui n'ont pas de redondance doivent être mis à jour à l'aide de link:upgrading-drive-firmware-using-santricity-system-manager-offline.html["méthode hors ligne"].
 
 ====
 .Étapes

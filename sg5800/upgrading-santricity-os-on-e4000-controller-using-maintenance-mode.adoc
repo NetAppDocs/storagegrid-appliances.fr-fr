@@ -19,8 +19,8 @@ Pour les contrôleurs de stockage qui utilisent actuellement SANtricity OS anté
 NOTE: Pour les contrôleurs de stockage utilisant actuellement un système d'exploitation SANtricity plus récent que 08.42.20.00 (11.42), il est recommandé de link:upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg5800.html["Utilisez Grid Manager pour appliquer une mise à niveau"]. Toutefois, vous pouvez utiliser la procédure du mode maintenance si vous le préférez ou si vous y avez reçu des instructions du support technique.
 
 .Avant de commencer
-* Vous avez consulté le https://imt.netapp.com/matrix/#welcome["Matrice d'interopérabilité NetApp (IMT)"^] Pour vérifier que la version de SANtricity OS utilisée pour la mise à niveau est compatible avec votre appliance.
-* Vous devez placer le contrôleur SG5800 dans link:../commonhardware/placing-appliance-into-maintenance-mode.html["mode maintenance"], Qui interrompt la connexion au contrôleur E4000.
+* Si vous n'avez pas obtenu la version du système d'exploitation SANtricity que vous souhaitez mettre à niveau vers à partir de https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["Téléchargement NetApp : appliance StorageGRID"^], vous avez consulté https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["Téléchargement NetApp : appliance StorageGRID"^] ou le https://imt.netapp.com/matrix/#welcome["Matrice d'interopérabilité NetApp (IMT)"^] Pour vérifier que la version de SANtricity OS utilisée pour la mise à niveau est compatible avec votre appliance.
+* Vous devez placer le contrôleur SGS800 dans link:../commonhardware/placing-appliance-into-maintenance-mode.html["mode maintenance"], qui arrête toutes les E/S vers le contrôleur E4000.
 +
 
 NOTE: Dans de rares cas, le fait de placer une appliance StorageGRID en mode de maintenance peut rendre l'appliance indisponible pour l'accès à distance.

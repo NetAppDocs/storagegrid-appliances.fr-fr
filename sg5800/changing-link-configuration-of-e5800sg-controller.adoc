@@ -25,7 +25,7 @@ Les options permettant de modifier la configuration de la liaison Ethernet du co
 * Changement du mode *Port bond* de fixe à agrégé, ou d'agrégat à fixe
 * Passage du mode de liaison réseau * d'Active-Backup à LACP, ou de LACP à Active-Backup
 * Activation ou désactivation du balisage VLAN ou modification de la valeur d'une balise VLAN
-* Modification de la vitesse de liaison de 10-GbE à 25-GbE, ou de 25-GbE à 10-GbE
+* Modification de la vitesse de liaison sur ou depuis Auto (recommandé), 10-GbE ou 25-GbE.
 
 
 .Étapes

@@ -22,7 +22,12 @@ StorageGRID Grid Manager surveille l'état de l'appliance et déclenche des aler
 +
 ** Disque de remplacement pris en charge par NetApp pour le tiroir contrôleur ou le tiroir disque.
 ** Un bracelet antistatique ou d'autres précautions antistatiques.
-** Station de gestion avec un navigateur qui peut accéder au Gestionnaire système SANtricity du contrôleur. (Pour ouvrir l'interface System Manager, pointez le navigateur vers le nom de domaine ou l'adresse IP du contrôleur.)
+** Accès à SANtricity System Manager :
++
+*** Dans le Gestionnaire de grille, sélectionnez *NODES* > *_appliance node_* > *SANtricity System Manager*. Les informations relatives au contrôleur se trouvent sur le https://docs.netapp.com/us-en/storagegrid-118/monitor/viewing-santricity-system-manager-tab.html["Onglet Gestionnaire système SANtricity"].
+*** Pointez un navigateur de votre station de gestion vers le nom de domaine ou l'adresse IP du contrôleur.
+
+
 
 
 

@@ -39,5 +39,7 @@ Le voyant d'identification arrière se trouve au centre de l'appareil, sous le l
 
 .Une fois que vous avez terminé
 link:turning-sgf6112-identify-led-on-and-off.html["Éteindre la LED bleue Identify"] utilisez l'une des méthodes suivantes si vous l'avez utilisée pour localiser l'appareil :
- ** Appuyez sur le commutateur LED Identify situé sur le panneau avant de l'appareil.
- ** Utilisez l'interface BMC de l'appliance.
+
+* Appuyez sur le commutateur LED Identify situé sur le panneau avant de l'appareil.
+* Utilisez l'interface BMC de l'appliance.
+

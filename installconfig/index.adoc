@@ -59,7 +59,7 @@ Si vous configurez et déployez plusieurs appliances, utilisez l'outil NetApp Co
 
 
 . link:accessing-and-configuring-santricity-system-manager.html["Accès à SANtricity System Manager et configuration de celui-ci"] (SG6160, SG5700, SG5800 ET SG6000)
-. link:configuring-bmc-interface.html["Configurez l'interface BMC"] (SG6000, SG6100 et appliances de services)
+. link:configuring-bmc-interface.html["Configurez l'interface BMC"] (SG6100, SG6000 et appliances de services)
 . Effectuez les étapes de configuration facultatives
 +
 ** link:optional-enabling-node-encryption.html["Activez le chiffrement des nœuds ou des disques"]

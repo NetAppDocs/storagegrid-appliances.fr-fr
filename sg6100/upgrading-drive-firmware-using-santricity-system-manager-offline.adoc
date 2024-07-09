@@ -22,7 +22,7 @@ NOTE: Cette procédure ne s'applique pas * aux disques SSD NVMe du SG6100-CN qui
 * Vous avez link:../commonhardware/placing-appliance-into-maintenance-mode.html["Mettez l'appliance StorageGRID en mode de maintenance - effectué"].
 +
 
-NOTE: Lorsque l'appliance est en mode de maintenance, les opérations d'E/S (entrée/sortie) vers le contrôleur de stockage sont arrêtées pour la sécurité des interruptions.
+NOTE: Lorsque l'appliance est en mode de maintenance, les opérations d'E/S (entrée/sortie) vers les contrôleurs de stockage sont arrêtées pour la sécurité des interruptions.
 
 
 

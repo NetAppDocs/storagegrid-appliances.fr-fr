@@ -80,6 +80,7 @@ Contrôleur de calcul:: Le contrôleur SG6100-CN est un serveur à une unité de
 * 256 GO DE RAM
 * Jusqu'à 4 × 25 GbE de bande passante Ethernet agrégée (ou jusqu'à 4 x 100 GbE avec référence de carte réseau 100G en option)
 * 1 interconnexion 100 GbE
+* Deux SSD NVMe pour le cache de lecture
 * Le contrôleur de gestion de la carte mère (BMC) simplifie la gestion du matériel
 * Alimentations et ventilateurs redondants
 
