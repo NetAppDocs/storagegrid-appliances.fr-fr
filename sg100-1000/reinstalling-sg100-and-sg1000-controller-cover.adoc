@@ -1,0 +1,63 @@
+---
+permalink: sg100-1000/reinstalling-sg100-and-sg1000-controller-cover.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, cover, install, installing, installation, reinstall, reinstalling, reinstallation, remove, removing, removal 
+summary: 'Retirez le couvercle de l"appareil pour accéder aux composants internes à des fins d"entretien et remettez-le en place une fois l"opération terminée.' 
+---
+= Replacez le capot de l'appliance SG100 ou SG1000
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Retirez le couvercle de l'appareil pour accéder aux composants internes à des fins d'entretien et remettez-le en place une fois l'opération terminée.
+
+
+
+== Retirez le capot de l'appliance SG100 ou SG1000
+
+Retirez le couvercle de l'appareil pour accéder aux composants internes à des fins d'entretien.
+
+.Avant de commencer
+Retirez l'appareil de l'armoire ou du rack pour accéder au capot supérieur.
+
+link:reinstalling-sg100-and-sg1000-into-cabinet-or-rack.html["Retirez l'appliance SG100 ou SG1000 de l'armoire ou du rack"]
+
+.Étapes
+. Assurez-vous que le loquet du capot de l'appareil n'est pas verrouillé. Si nécessaire, tournez le verrou en plastique bleu d'un quart de tour dans le sens de déverrouillage, comme illustré sur le verrou.
+. Faites pivoter le loquet vers le haut et vers l'arrière du châssis de l'appareil jusqu'à ce qu'il s'arrête, puis soulevez avec précaution le capot du châssis et mettez-le de côté.
++
+image::../media/sg6060_cover_latch_open.jpg[Loquet du couvercle ouvert]
+
++
+
+CAUTION: Enroulez l'extrémité de la sangle d'un bracelet antistatique autour de votre poignet et fixez l'extrémité de la pince à une terre métallique pour éviter toute décharge statique lors d'une intervention à l'intérieur de l'appareil.
+
+
+
+Après le remplacement de la pièce, renvoyez la pièce défectueuse à NetApp, en suivant les instructions RMA (retour de matériel) livrées avec le kit. Voir la https://mysupport.netapp.com/site/info/rma["Retour de pièce et amp ; remplacements"^] pour plus d'informations.
+
+
+
+== Réinstallez le capot de l'appliance SG100 ou SG1000
+
+Réinstallez le capot de l'appareil une fois la maintenance matérielle interne terminée.
+
+.Avant de commencer
+Vous avez effectué toutes les procédures de maintenance à l'intérieur de l'appareil.
+
+.Étapes
+. Avec le loquet du capot ouvert, tenez le capot au-dessus du châssis et alignez le trou du loquet du capot supérieur avec la broche du châssis. Lorsque le capot est aligné, abaissez-le sur le châssis.
++
+image::../media/sg6060_cover_latch_alignment_pin.jpg[Goupille d'alignement du loquet du couvercle]
+
+. Faites pivoter le loquet du capot vers l'avant et vers le bas jusqu'à ce qu'il s'arrête et que le capot s'insère complètement dans le châssis. Vérifier qu'il n'y a pas d'espace le long du bord avant du couvercle.
++
+Si le capot n'est pas bien en place, il se peut que vous ne puissiez pas faire glisser l'appareil dans le rack.
+
+. En option : tournez d'un quart de tour le verrou en plastique bleu dans le sens de verrouillage, comme illustré sur le verrou, pour le verrouiller.
+
+
+.Une fois que vous avez terminé
+link:reinstalling-sg100-and-sg1000-into-cabinet-or-rack.html["Réinstallez l'appareil dans l'armoire ou le rack."]

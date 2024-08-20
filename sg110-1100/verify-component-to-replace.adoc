@@ -19,7 +19,7 @@ Si vous n'êtes pas sûr du composant matériel à remplacer dans votre appareil
 
 
 .Description de la tâche
-Utilisez cette procédure pour identifier l'appareil dont le matériel est défectueux et lequel des composants matériels remplaçables ne fonctionne pas correctement. Les composants pouvant être identifiés pour être remplacés sont les suivants :
+Utilisez cette procédure pour identifier l'appareil dont le matériel est défectueux et lequel des composants matériels remplaçables ne fonctionne pas correctement. Les composants susceptibles d'être identifiés en vue d'un remplacement peuvent être les suivants :
 
 * Blocs d'alimentation
 * Ventilateurs

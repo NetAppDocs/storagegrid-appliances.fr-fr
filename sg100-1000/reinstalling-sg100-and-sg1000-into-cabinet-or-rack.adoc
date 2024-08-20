@@ -1,0 +1,99 @@
+---
+permalink: sg100-1000/reinstalling-sg100-and-sg1000-into-cabinet-or-rack.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, appliance, install, installing, installation, cabinet, rack, controller, remove, removing, removal 
+summary: 'Retirez le SG100 ou le SG1000 d"une armoire ou d"un rack pour accéder au capot supérieur ou pour déplacer l"appliance vers un autre emplacement, puis réinstallez-la dans une armoire ou un rack une fois la maintenance matérielle terminée.' 
+---
+= Déplacer le SG100 ou le SG1000 dans une armoire ou un rack
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Retirez l'appliance SG100 ou SG1000 d'une armoire ou d'un rack pour accéder au capot supérieur ou pour déplacer l'appliance vers un autre emplacement, puis réinstallez l'appliance dans une armoire ou un rack une fois la maintenance matérielle terminée.
+
+
+
+== Retirez le SG100 ou le SG1000 de l'armoire ou du rack
+
+Retirez le SG100 ou le SG1000 d'une armoire ou d'un rack pour accéder au capot supérieur ou pour déplacer l'appliance vers un autre emplacement.
+
+.Avant de commencer
+* Vous disposez d'étiquettes pour identifier chaque câble connecté à l'appliance SG100 ou SG1000.
+* Vous avez physiquement localisé l'appliance SG100 ou SG1000 où vous effectuez la maintenance dans le data Center.
++
+link:locating-controller-in-data-center.html["Localisez l'appliance dans le data Center"]
+
+* Vous avez link:shut-down-sg100-and-sg1000.html["Arrêtez l'appliance SG100 ou SG1000"].
++
+
+CAUTION: N'éteignez pas l'appareil à l'aide de l'interrupteur d'alimentation.
+
+
+
+.Étapes
+. Etiqueter puis débrancher les câbles d'alimentation du contrôleur.
+. Enroulez l'extrémité du bracelet antistatique autour de votre poignet et fixez l'extrémité du clip à une masse métallique afin d'éviter toute décharge statique.
+. Etiqueter puis débrancher les câbles de données du contrôleur et les émetteurs-récepteurs SFP+ ou SFP28.
++
+
+NOTE: Pour éviter toute dégradation des performances, ne tordez pas, ne pliez pas, ne pincez pas ou ne montez pas sur les câbles.
+
+. Desserrez les deux vis imperdables du panneau avant du contrôleur.
++
+image::../media/sg6060_rack_retaining_screws.png[Vis de fixation du rack SG6060]
+
+. Faites glisser l'appareil vers l'avant pour l'extraire du rack jusqu'à ce que les rails de montage soient complètement sortis et que vous entendiez un clic sur les loquets des deux côtés.
++
+Le capot supérieur du contrôleur est accessible.
+
+. Facultatif : si vous retirez complètement l'appareil de l'armoire ou du rack, suivez les instructions du kit de rails pour retirer l'appareil des rails.
+
+
+Après le remplacement de la pièce, renvoyez la pièce défectueuse à NetApp, en suivant les instructions RMA (retour de matériel) livrées avec le kit. Voir la https://mysupport.netapp.com/site/info/rma["Retour de pièce et amp ; remplacements"^] pour plus d'informations.
+
+
+
+== Réinstallez le SG100 ou le SG1000 dans l'armoire ou le rack
+
+Une fois la maintenance du matériel terminée, réinstallez l'appareil dans une armoire ou un rack.
+
+.Avant de commencer
+Vous avez réinstallé le capot de l'appareil.
+
+link:reinstalling-sg100-and-sg1000-controller-cover.html["Réinstallez le capot du SG100 ou du SG1000"]
+
+.Étapes
+. Appuyez sur le rail bleu pour libérer les deux rails du rack en même temps et faites glisser l'appareil dans le rack jusqu'à ce qu'il soit bien en place.
++
+Lorsque vous ne pouvez plus déplacer l'appareil, tirez sur les loquets bleus des deux côtés du châssis pour faire glisser l'appareil complètement vers l'intérieur.
+
++
+image::../media/sg6000_cn_rails_blue_button.gif[Appareil coulissant sur les rails]
+
++
+
+NOTE: Ne fixez le cadre avant qu'après avoir mis l'appareil sous tension.
+
+. Serrez les vis imperdables du panneau avant de l'appareil pour fixer l'appareil dans le rack.
++
+image::../media/sg6060_rack_retaining_screws.png[Vis de fixation du rack]
+
+. Enroulez l'extrémité du bracelet antistatique autour de votre poignet et fixez l'extrémité du clip à une masse métallique afin d'éviter toute décharge statique.
+. Reconnectez les câbles de données du contrôleur et les émetteurs-récepteurs SFP+ ou SFP28.
++
+
+NOTE: Pour éviter toute dégradation des performances, ne tordez pas, ne pliez pas, ne pincez pas ou ne montez pas sur les câbles.
+
++
+link:../installconfig/cabling-appliance.html["Appareil câblé"]
+
+. Rebranchez les câbles d'alimentation de l'appareil.
++
+link:../installconfig/connecting-power-cords-and-applying-power.html["Branchement des câbles d'alimentation et mise sous tension (SG100 ou SG1000)"]
+
+
+
+.Une fois que vous avez terminé
+L'appareil peut être redémarré.

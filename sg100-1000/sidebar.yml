@@ -20,11 +20,19 @@ entries:
 - title: Procédures matérielles
   pdf-filename: Procédures matérielles - SG100 et SG1000
   entries:
+  - title: Vérifier le composant à remplacer
+    url: "/sg100-1000/verify-component-to-replace-sg100-and-sg1000.html"
+  - title: Remettez le couvercle en place
+    url: "/sg100-1000/reinstalling-sg100-and-sg1000-controller-cover.html"
   - title: Remplacez l'un des blocs d'alimentation, ou les deux
     url: "/sg100-1000/replacing-one-or-more-power-supplies-in-services-appliance.html"
   - title: Remplacer le ventilateur
     url: "/sg100-1000/replacing-fan-in-services-appliance.html"
   - title: Remplacez le lecteur
     url: "/sg100-1000/replacing-drive-in-services-appliance.html"
+  - title: Remplacez la pile CMOS
+    url: "/sg100-1000/replace-cmos-in-sg100-and-sg1000.html"
   - title: Remplacez l'appareil
     url: "/sg100-1000/replacing-services-appliance.html"
+  - title: Replacez l'appareil dans le rack
+    url: "/sg100-1000/reinstalling-sg100-and-sg1000-into-cabinet-or-rack.html"

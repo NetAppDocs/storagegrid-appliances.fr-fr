@@ -40,6 +40,8 @@ entries:
 - title: Procédures matérielles
   pdf-filename: Procédures matérielles - SG6000
   entries:
+  - title: Vérifier le composant à remplacer
+    url: "/sg6000/verify-component-to-replace-sg6000cn.html"
   - title: Ajoutez un tiroir d'extension à SG6060 déployé
     url: "/sg6000/adding-expansion-shelf-to-deployed-sg6060.html"
   - title: Remplacement du contrôleur de stockage
@@ -53,6 +55,8 @@ entries:
     url: "/sg6000/replacing-sg6000-cn-controller.html"
   - title: Remplacez une ou les deux alimentations du contrôleur SG6000-CN
     url: "/sg6000/replacing-one-or-both-power-supplies-in-sg6000-cn-controller.html"
+  - title: Remplacez la pile CMOS dans le contrôleur SG6000-CN
+    url: "/sg6000/replace-cmos-in-sg6000cn.html"
   - title: Remplacez le contrôleur dans le rack
     url: "/sg6000/reinstalling-sg6000-cn-controller-into-cabinet-or-rack.html"
   - title: Remettez le capot du contrôleur en place

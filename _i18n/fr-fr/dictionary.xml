@@ -2650,7 +2650,6 @@ Dans l'API de gestion de grille, utilisez le terminal privé :<block ref="d6808d
   <block id="c7c19b3cb79ee9f5fdbc22cfac916b00" category="paragraph">L'appliance peut redémarrer et rejoindre la grille en 20 minutes. Pour confirmer que le redémarrage est terminé et que le nœud a rejoint la grille, retournez à la grille Manager. La page nœuds doit afficher un état normal (icône en forme de coche verte) <block ref="b0c066af00a4ff17f603acf55958d068" category="inline-image-macro-rx" type="image"></block> à gauche du nom du nœud) pour le nœud de l'appliance, indiquant qu'aucune alerte n'est active et que le nœud est connecté à la grille.</block>
   <block id="5d4d9bbd71eda7ec2ba074c8e6717b0b" category="list-text">Vous disposez du numéro de série du dispositif de stockage sur lequel le composant doit être remplacé.</block>
   <block id="fe96bb389ae099a3c5dcdd5b5427e3bc" category="list-text">Vous êtes connecté au Grid Manager à l'aide d'un<block ref="a18f1d7592d98ae161543980d36b8697" category="inline-link-rx"></block>.</block>
-  <block id="7aa733436808f3ef7dbb843f0bfd7537" category="paragraph">Utilisez cette procédure pour identifier l'appareil dont le matériel est défectueux et lequel des composants matériels remplaçables ne fonctionne pas correctement. Les composants pouvant être identifiés pour être remplacés sont les suivants :</block>
   <block id="620e2edf2db0c3c3cad57aeb246c6bfe" category="list-text">Blocs d'alimentation</block>
   <block id="4604f841b0b16d3013cac1e2078e5b1b" category="list-text">Ventilateurs</block>
   <block id="3907a0fffff4b13006f3069d9186c0d5" category="list-text">Disques SSD</block>
@@ -5517,4 +5516,58 @@ Affiche Oui, indiquant qu'il est possible de retirer ce composant en toute sécu
   <block id="32560f7f516484a70333e63586d49ee8" category="list-text">Appuyez sur le commutateur LED Identify situé sur le panneau avant de l'appareil.</block>
   <block id="84f9f6b07fa3b7c2043dcb10969d9836" category="list-text">Utilisez l'interface BMC de l'appliance.</block>
   <block id="c3767fd24594af27204c85f38e6485de" category="admonition">Lorsque l'appliance est en mode de maintenance, les opérations d'E/S (entrée/sortie) vers les contrôleurs de stockage sont arrêtées pour la sécurité des interruptions.</block>
+  <block id="a5c480dfbb1146eeb42a0bcc0d8bbbb4" category="paragraph">Utilisez cette procédure pour identifier l'appareil dont le matériel est défectueux et lequel des composants matériels remplaçables ne fonctionne pas correctement. Les composants susceptibles d'être identifiés en vue d'un remplacement peuvent être les suivants :</block>
+  <block id="a26cdf0f1745cbb76eb5328668e38b6f" category="image-alt">Emplacement de l'ensemble de la carte de montage</block>
+  <block id="48588d23b204532125483be8736cc62b" category="list-text">Utilisez votre doigt ou un levier en plastique pour extraire le clip de retenue de la batterie et le retirer de la prise.</block>
+  <block id="65dc474701428334be6aca7529908454" category="image-alt">Trou d'alignement sur l'ensemble de carte de montage</block>
+  <block id="665f25079cb5accd5eb43f2913b6c37f" category="doc">Replacez le capot de l'appliance SG100 ou SG1000</block>
+  <block id="f1d6d43707540812eb946d45ccef5ec4" category="section-title">Retirez le capot de l'appliance SG100 ou SG1000</block>
+  <block id="64e8eab7438cec59cd0671f1a5e3dbb6" category="paragraph">Retirez le couvercle de l'appareil pour accéder aux composants internes à des fins d'entretien.</block>
+  <block id="b1d5df074b99621759036a9121b85e98" category="paragraph">Retirez l'appareil de l'armoire ou du rack pour accéder au capot supérieur.</block>
+  <block id="511c877284f772f66774598abeeea6f5" category="inline-link-macro">Retirez l'appliance SG100 ou SG1000 de l'armoire ou du rack</block>
+  <block id="2285eddd6702074129ac0f1ecda4b2f4" category="paragraph"><block ref="2285eddd6702074129ac0f1ecda4b2f4" category="inline-link-macro-rx"></block></block>
+  <block id="b0e7c1ff76e24cb7116c6fb8b809271c" category="image-alt">Loquet du couvercle ouvert</block>
+  <block id="827c9e961d14d7b5f5337e655b29df10" category="section-title">Réinstallez le capot de l'appliance SG100 ou SG1000</block>
+  <block id="e1095c022f98a1bb69eb7e440dbb0ced" category="paragraph">Réinstallez le capot de l'appareil une fois la maintenance matérielle interne terminée.</block>
+  <block id="7b6a35b28349993ccb044f99d3cb9c05" category="image-alt">Goupille d'alignement du loquet du couvercle</block>
+  <block id="77e20811baef645173a9afd272aed5f2" category="inline-link-macro">Réinstallez l'appareil dans l'armoire ou le rack.</block>
+  <block id="fee143211358506f5958deb39267a94d" category="paragraph"><block ref="fee143211358506f5958deb39267a94d" category="inline-link-macro-rx"></block></block>
+  <block id="8d74142d0d3a9120da2ba9c70236cdd6" category="summary">Retirez le SG100 ou le SG1000 d'une armoire ou d'un rack pour accéder au capot supérieur ou pour déplacer l'appliance vers un autre emplacement, puis réinstallez-la dans une armoire ou un rack une fois la maintenance matérielle terminée.</block>
+  <block id="a5b8a777a1b08a83ca76ba17d2003033" category="doc">Déplacer le SG100 ou le SG1000 dans une armoire ou un rack</block>
+  <block id="5fc59c0417d710999eccabc5f2b53e54" category="paragraph">Retirez l'appliance SG100 ou SG1000 d'une armoire ou d'un rack pour accéder au capot supérieur ou pour déplacer l'appliance vers un autre emplacement, puis réinstallez l'appliance dans une armoire ou un rack une fois la maintenance matérielle terminée.</block>
+  <block id="4faf0e30b4acd7fb71c04eecc674f9bb" category="section-title">Retirez le SG100 ou le SG1000 de l'armoire ou du rack</block>
+  <block id="1e2dad3dc1303cb9c34342a08ac369c2" category="paragraph">Retirez le SG100 ou le SG1000 d'une armoire ou d'un rack pour accéder au capot supérieur ou pour déplacer l'appliance vers un autre emplacement.</block>
+  <block id="fd4bc1e04629aac76e335abbe4b95110" category="list-text">Vous disposez d'étiquettes pour identifier chaque câble connecté à l'appliance SG100 ou SG1000.</block>
+  <block id="00265604d07e83e9fa37acfb58aea0a6" category="list-text">Vous avez physiquement localisé l'appliance SG100 ou SG1000 où vous effectuez la maintenance dans le data Center.</block>
+  <block id="e062f7e106df68638e79abdb18fac222" category="paragraph"><block ref="e062f7e106df68638e79abdb18fac222" category="inline-link-macro-rx"></block></block>
+  <block id="0fcf830f0c15b1400c1db9718be45ada" category="inline-link-macro">Arrêtez l'appliance SG100 ou SG1000</block>
+  <block id="5c1320f429c4112c2bba2f8f6cb8fa01" category="list-text">Vous avez <block ref="f1505d4606b132b8853f29fe0a332652" category="inline-link-macro-rx"></block>.</block>
+  <block id="9b0bec7300d43ef7de3808046f83438c" category="list-text">Faites glisser l'appareil vers l'avant pour l'extraire du rack jusqu'à ce que les rails de montage soient complètement sortis et que vous entendiez un clic sur les loquets des deux côtés.</block>
+  <block id="72c93dbd5f5d24a30424f10682ce2429" category="section-title">Réinstallez le SG100 ou le SG1000 dans l'armoire ou le rack</block>
+  <block id="605201180c8af58706d2950dc2815425" category="paragraph">Une fois la maintenance du matériel terminée, réinstallez l'appareil dans une armoire ou un rack.</block>
+  <block id="185e5b18a157d76176305c8be330d521" category="inline-link-macro">Réinstallez le capot du SG100 ou du SG1000</block>
+  <block id="134ec335795fdd11457bc3cf0025baf5" category="paragraph"><block ref="134ec335795fdd11457bc3cf0025baf5" category="inline-link-macro-rx"></block></block>
+  <block id="e3cda821d00824f87e103cfa79fa642c" category="list-text">Appuyez sur le rail bleu pour libérer les deux rails du rack en même temps et faites glisser l'appareil dans le rack jusqu'à ce qu'il soit bien en place.</block>
+  <block id="684fc7e3b4be959ee39744c82078ef0c" category="image-alt">Vis de fixation du rack</block>
+  <block id="c934d158cd3ec0bfbf3cbdd7b7827955" category="list-text">Rebranchez les câbles d'alimentation de l'appareil.</block>
+  <block id="05c9535932e03bb8444cfbfc967af3e2" category="inline-link-macro">Branchement des câbles d'alimentation et mise sous tension (SG100 ou SG1000)</block>
+  <block id="a76302d15eb6041c12b94bdbf80ddf79" category="paragraph"><block ref="a76302d15eb6041c12b94bdbf80ddf79" category="inline-link-macro-rx"></block></block>
+  <block id="bbbfb5089b20d2a9a438d1f300dc3951" category="paragraph">L'appareil peut être redémarré.</block>
+  <block id="1aab7af93e422001302d3d72d844aa68" category="doc">Remplacez la pile CMOS dans un SG100 ou un SG1000</block>
+  <block id="2de23f109c4b7a2ebaf85dfa94d803d2" category="inline-link-macro">Vérifiez que la pile CMOS du SG100 ou du SG1000 doit être remplacée - effectué</block>
+  <block id="d31100686fc52b53392732b7d3ae0dbb" category="list-text">Vous avez <block ref="fcfad0bf3ec87a01189dcc7ef62e31e5" category="inline-link-macro-rx"></block>.</block>
+  <block id="76dc6b7b32167d9bd3a9ee4280cd472c" category="inline-link-macro">Emplacement physique de l'appliance SG100 ou SG1000</block>
+  <block id="295f39bc37ea49d39fdef10ffc386a4d" category="list-text">Vous avez <block ref="1c34acfb2667f43feb9d3c66f2b8ed39" category="inline-link-macro-rx"></block> là où vous remplacez la pile CMOS dans le centre de données.</block>
+  <block id="7d406e9712f1c209336e5e697cc447ef" category="admonition">Un <block ref="db7c721060dced196b796faf173aec6a" category="inline-link-macro-rx"></block> est nécessaire avant de retirer l'appareil du rack.</block>
+  <block id="126a827d213a0e5e13049b3f4047c548" category="list-text">Vous avez déconnecté tous les câbles et <block ref="b4ae088a94cfd6b68a1d3b21b7e66f50" category="inline-link-macro-rx"></block>.</block>
+  <block id="20015455ab5d561bb2f053becbe04427" category="doc">Vérifier le composant à remplacer dans le SG100 ou le SG1000</block>
+  <block id="155f05305b468da8a62a625c5bb46d08" category="paragraph"><block ref="155f05305b468da8a62a625c5bb46d08" category="inline-link-macro-rx"></block></block>
+  <block id="a3920e91582773914df89ce69b0b4103" category="doc">Remplacez la pile CMOS SG6000-CN</block>
+  <block id="b3b2dfaac1200c3b68a403bd40179bdf" category="list-text">Vous avez <block ref="1ec8c115f0c3870ab94b38ffe7b9d363" category="inline-link-macro-rx"></block>.</block>
+  <block id="52f39f79f4d9a5685bc2024f2a087065" category="list-text">Vous avez <block ref="f706bf55d44d59c0b4f06acfce2f61ee" category="inline-link-macro-rx"></block> là où vous remplacez la pile CMOS dans le centre de données.</block>
+  <block id="a1294f5ec4aea9551adb3b8c8723fea7" category="admonition">Un <block ref="01cb3624578c0b6333a3e47dc48ec415" category="inline-link-macro-rx"></block> est nécessaire avant de retirer l'appareil du rack.</block>
+  <block id="27a168d0228d72534f07ee949d2796ff" category="list-text">Vous avez déconnecté tous les câbles et <block ref="15196f495d147a32d6ddc13b14aad025" category="inline-link-macro-rx"></block>.</block>
+  <block id="10fa39edb4e5d5fc91498d5271535f37" category="doc">Vérifiez le composant à remplacer dans le SG6000-CN</block>
+  <block id="ca37341c514b082d1be600ae89827bce" category="sidebar">Déplacez le SG100 ou le SG1000 dans un rack</block>
+  <block id="530a7cab0d75789e4984b34660953995" category="sidebar">Remplacez la pile CMOS dans le contrôleur SG6000-CN</block>
 </blocks>

@@ -15,11 +15,17 @@ indexpage:
     links:
     - title: Remplacez l'appareil
       url: "../sg100-1000/replacing-services-appliance.html"
+    - title: Déplacez le SG100 ou le SG1000 dans un rack
+      url: "../sg100-1000/reinstalling-sg100-and-sg1000-into-cabinet-or-rack.html"
   - title: Procédures matérielles
     links:
+    - title: Remettez le couvercle en place
+      url: "../sg100-1000/reinstalling-sg100-and-sg1000-controller-cover.html"
     - title: Remplacez l'alimentation électrique
       url: "../sg100-1000/replacing-one-or-more-power-supplies-in-services-appliance.html"
     - title: Remplacer le ventilateur
       url: "../sg100-1000/replacing-fan-in-services-appliance.html"
     - title: Remplacez le lecteur
       url: "../sg100-1000/replacing-drive-in-services-appliance.html"
+    - title: Remplacez la pile CMOS
+      url: "../sg100-1000/replace-cmos-in-sg100-and-sg1000.html"

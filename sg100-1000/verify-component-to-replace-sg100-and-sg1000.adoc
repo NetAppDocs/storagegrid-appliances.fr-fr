@@ -1,10 +1,10 @@
 ---
-permalink: sg6100/verify-component-to-replace.html 
+permalink: sg100-1000/verify-component-to-replace-sg100-and-sg1000.html 
 sidebar: sidebar 
-keywords: sgf6112 
+keywords: sg100, sg1000 
 summary: 'Si vous n"êtes pas sûr du composant matériel à remplacer dans votre appareil, suivez cette procédure pour identifier le composant et l"emplacement de l"appareil dans le centre de données.' 
 ---
-= Vérifier le composant à remplacer dans le SGF6112 ou le SG6100-CN
+= Vérifier le composant à remplacer dans le SG100 ou le SG1000
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -68,4 +68,4 @@ Pour vous aider à localiser l'appliance dans le centre de données, vous pouvez
 
 
 .Informations associées
-link:turning-sgf6112-identify-led-on-and-off.html["Allumez le voyant d'identification de l'appareil"]
+link:turning-controller-identify-led-on-and-off.html["Allumez le voyant d'identification de l'appareil"]
