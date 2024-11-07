@@ -38,8 +38,8 @@ NOTE: Si vous devez déployer plusieurs nœuds d'appliance à la fois, vous pouv
 
 * Si vous effectuez une opération d'extension ou de récupération, suivez les instructions appropriées :
 +
-** Pour ajouter un nœud de stockage d'appliance à un système StorageGRID existant, reportez-vous aux instructions de https://docs.netapp.com/us-en/storagegrid-118/expand/adding-grid-nodes-to-existing-site-or-adding-new-site.html["ajout de nœuds grid"^].
-** Pour déployer un nœud de stockage d'appliance dans le cadre d'une opération de restauration, reportez-vous aux instructions https://docs.netapp.com/us-en/storagegrid-118/maintain/recovering-storagegrid-appliance-storage-node.html["Restauration d'un nœud de stockage d'appliance"^].
+** Pour ajouter un nœud de stockage d'appliance à un système StorageGRID existant, reportez-vous aux instructions de https://docs.netapp.com/us-en/storagegrid/expand/adding-grid-nodes-to-existing-site-or-adding-new-site.html["ajout de nœuds grid"^].
+** Pour déployer un nœud de stockage d'appliance dans le cadre d'une opération de restauration, reportez-vous aux instructions https://docs.netapp.com/us-en/storagegrid/maintain/recovering-storagegrid-appliance-storage-node.html["Restauration d'un nœud de stockage d'appliance"^].
 
 
 
@@ -50,8 +50,14 @@ NOTE: Si vous devez déployer plusieurs nœuds d'appliance à la fois, vous pouv
 +
 La page d'accueil du programme d'installation de l'appliance StorageGRID s'affiche.
 
+. Sélectionnez le *Type de noeud*. Pour plus d'informations, voir https://docs.netapp.com/us-en/storagegrid/primer/what-storage-node-is.html#types-of-storage-nodes["Types de nœuds de stockage"].
 +
-image::../media/appliance_installer_home_start_installation_enabled.gif[Page d'accueil du programme d'installation de l'appliance pour les autres types de nœuds (en plus des nœuds Admin)]
+
+NOTE: Seules les métadonnées peuvent être sélectionnées lors du déploiement de l'appliance. Si l'option métadonnées uniquement est sélectionnée comme type de nœud de stockage, elle ne peut pas être modifiée après le déploiement de l'appliance.
+
+. Dans le champ *Nom du nœud*, indiquez le nom du système que vous souhaitez utiliser pour ce nœud d'appliance, puis cliquez sur *Enregistrer*.
++
+Le nom qui apparaît ici correspond au nom système du nœud de l'appliance. Les noms de système sont requis pour les opérations StorageGRID internes et ne peuvent pas être modifiés.
 
 . Dans la section *connexion au noeud d'administration principal*, déterminez si vous devez spécifier l'adresse IP du noeud d'administration principal.
 +
@@ -86,10 +92,6 @@ Détection automatique de tous les nœuds d'administration principaux connectés
 
 
 |===
-. Dans le champ *Nom du nœud*, indiquez le nom du système que vous souhaitez utiliser pour ce nœud d'appliance, puis cliquez sur *Enregistrer*.
-+
-Le nom qui apparaît ici correspond au nom système du nœud de l'appliance. Les noms de système sont requis pour les opérations StorageGRID internes et ne peuvent pas être modifiés.
-
 . Dans la section *installation*, vérifiez que l'état actuel est « prêt à démarrer l'installation de `_node name_` Dans le grid avec le nœud d'administration principal `_admin_ip_` " Et que le bouton *Start installation* est activé.
 +
 Si le bouton *Start installation* n'est pas activé, vous devrez peut-être modifier la configuration réseau ou les paramètres de port. Pour obtenir des instructions, reportez-vous aux instructions d'entretien de votre appareil.

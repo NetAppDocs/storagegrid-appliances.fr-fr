@@ -88,7 +88,7 @@ Au cours de cette étape, le programme d'installation copie l'image du système 
 
 . Continuez à surveiller la progression de l'installation jusqu'à ce que l'un des processus suivants se produise :
 +
-** Pour tous les nœuds de l'appliance, à l'exception du nœud d'administration principal, l'étape installer StorageGRID s'interrompt et un message s'affiche sur la console intégrée, vous invitant à approuver ce nœud sur le nœud d'administration à l'aide de https://docs.netapp.com/us-en/storagegrid-118/admin/signing-in-to-grid-manager.html["Gestionnaire de grille"^]. Passez à l'étape suivante.
+** Pour tous les nœuds d'appliance, à l'exception du nœud d'administration principal, l'étape installer StorageGRID s'arrête et un message s'affiche sur la console intégrée, vous invitant à approuver ce nœud sur le nœud d'administration à l'aide de https://docs.netapp.com/us-en/storagegrid/admin/signing-in-to-grid-manager.html["Gestionnaire de grille"^] . Passez à l'étape suivante.
 ** Pour l'installation du nœud d'administration principal de l'appliance, il n'est pas nécessaire d'approuver le nœud. L'appliance est redémarrée. Vous pouvez passer à l'étape suivante.
 +
 
@@ -99,7 +99,7 @@ image::../media/monitor_installation_install_sgws.gif[Cette image est expliquée
 
 
 
-. https://docs.netapp.com/us-en/storagegrid-118/admin/signing-in-to-grid-manager.html["Accédez au Gestionnaire de grille"^] Du nœud d'administration principal, approuvez le nœud de grille en attente et terminez le processus d'installation de StorageGRID.
+. https://docs.netapp.com/us-en/storagegrid/admin/signing-in-to-grid-manager.html["Accédez au Gestionnaire de grille"^] Du nœud d'administration principal, approuvez le nœud de grille en attente et terminez le processus d'installation de StorageGRID.
 +
 Lorsque vous cliquez sur *Install* dans Grid Manager, l'étape 3 se termine et l'étape 4, *Finalisation installation*, commence. Une fois l'étape 4 terminée, l'appareil est redémarré.
 

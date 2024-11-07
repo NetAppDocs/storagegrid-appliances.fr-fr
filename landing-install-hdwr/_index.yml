@@ -1,5 +1,9 @@
 ---
 indexpage:
+  title: Installez le matériel de l'appliance
+  summary: Installez le matériel de l'appliance sur votre site.
+  keywords: storagegrid install hardware, storagegrid install appliance
+  lead: Installez le matériel de l'appliance sur votre site.
   tiles:
   - title: Installez l'appliance de stockage dans l'armoire ou le rack
     links:

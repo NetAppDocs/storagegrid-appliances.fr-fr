@@ -25,7 +25,7 @@ En cas de doute sur la carte HBA (Fibre Channel Host bus adapter) à remplacer, 
 
 NOTE: Si le numéro de série du dispositif de stockage contenant l'adaptateur HBA Fibre Channel que vous remplacez commence par la lettre Q, il ne sera pas répertorié dans le gestionnaire de réseau. Vous devez vérifier les étiquettes fixées à l'avant de chaque contrôleur SG6000-CN du centre de données jusqu'à ce que vous trouviez la correspondance.
 
-* Vous êtes connecté au Grid Manager à l'aide d'un https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["navigateur web pris en charge"^].
+* Vous êtes connecté au Gestionnaire de grille à l'aide d'un https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["navigateur web pris en charge"^].
 
 
 .Étapes
@@ -70,11 +70,10 @@ CAUTION: Un arrêt contrôlé est nécessaire avant de retirer le contrôleur du
 
 
 .Description de la tâche
-Pour éviter toute interruption de service, vérifiez que tous les autres nœuds de stockage sont connectés à la grille avant de commencer le remplacement de l'adaptateur HBA Fibre Channel ou remplacez-le lors d'une fenêtre de maintenance planifiée lorsque des périodes d'interruption de service sont acceptables. Voir les informations sur https://docs.netapp.com/us-en/storagegrid-118/monitor/monitoring-system-health.html#monitor-node-connection-states["contrôle de l'état de connexion du nœud"^].
+Pour éviter toute interruption de service, vérifiez que tous les autres nœuds de stockage sont connectés à la grille avant de commencer le remplacement de l'adaptateur HBA Fibre Channel ou remplacez-le lors d'une fenêtre de maintenance planifiée lorsque des périodes d'interruption de service sont acceptables. Voir les informations sur https://docs.netapp.com/us-en/storagegrid/monitor/monitoring-system-health.html#monitor-node-connection-states["contrôle de l'état de connexion du nœud"^].
 
 
-CAUTION: Si vous avez déjà utilisé une règle ILM pour créer une seule copie d'un objet, vous devez remplacer l'adaptateur HBA Fibre Channel lors d'une fenêtre de maintenance planifiée. Sinon, vous risquez de perdre temporairement l'accès à ces objets au cours de cette procédure. +
-Voir informations sur https://docs.netapp.com/us-en/storagegrid-118/ilm/why-you-should-not-use-single-copy-replication.html["pourquoi ne pas utiliser la réplication à copie unique"^].
+CAUTION: Si vous avez déjà utilisé une règle ILM pour créer une seule copie d'un objet, vous devez remplacer l'adaptateur HBA Fibre Channel lors d'une fenêtre de maintenance planifiée. Sinon, vous risquez de perdre temporairement l'accès à ces objets au cours de cette procédure. + Voir informations sur https://docs.netapp.com/us-en/storagegrid/ilm/why-you-should-not-use-single-copy-replication.html["pourquoi ne pas utiliser la réplication à copie unique"^].
 
 .Étapes
 . Enroulez l'extrémité du bracelet antistatique autour de votre poignet et fixez l'extrémité du clip à une masse métallique afin d'éviter toute décharge statique.

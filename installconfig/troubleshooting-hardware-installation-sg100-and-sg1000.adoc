@@ -107,6 +107,13 @@ NOTE: Dans certains cas, le nom d'utilisateur par défaut peut être `root` au l
 
 
  a| 
+HT
+ a| 
+Le script d'amorçage principal attend la fin du démarrage du système d'exploitation.
+
+
+
+ a| 
 BONJOUR
  a| 
 Le script de démarrage principal a démarré.
@@ -114,9 +121,23 @@ Le script de démarrage principal a démarré.
 
 
  a| 
+PP
+ a| 
+Le système vérifie si le FPGA doit être mis à jour.
+
+
+
+ a| 
 HP
  a| 
 Le système vérifie si le micrologiciel de la carte d'interface réseau (NIC) doit être mis à jour.
+
+
+
+ a| 
+HB
+ a| 
+Le système vérifie si le micrologiciel du contrôleur 10/25-GbE doit être mis à jour.
 
 
 
@@ -160,18 +181,48 @@ StorageGRID est en cours d'exécution.
 
 == Afficher les codes d'erreur
 
-Si une erreur matérielle se produit lors du démarrage de l'appliance, le contrôleur BMC consigne un code d'erreur. Si nécessaire, vous pouvez afficher ces codes d'erreur à l'aide de l'interface BMC, puis travailler avec le support technique pour résoudre le problème.
+Si une erreur matérielle se produit lors du démarrage de l'appliance, le contrôleur BMC consigne un code d'erreur. Si nécessaire, vous pouvez afficher ces codes d'erreur via l'interface BMC ou le port série de l'appareil, puis travailler avec le support technique pour résoudre le problème.
 
 .Avant de commencer
-* Vous savez comment link:accessing-bmc-interface.html["Accéder au tableau de bord BMC"].
+
+NOTE: Si votre BMC ne dispose pas d'un élément de menu Code POST du BIOS, accédez aux codes d'erreur à l'aide du port série de l'appareil.
+
+* Si vous utilisez BMC, vous savez comment link:accessing-bmc-interface.html["Accéder au tableau de bord BMC"].
+* Si vous utilisez un port série et un terminal, rassemblez l'équipement requis :
++
+** Câble série DB-9
+** Terminal série virtuel
+
+
 
 
 .Étapes
-. Dans le tableau de bord BMC, sélectionnez *Code POST BIOS*.
-. Passez en revue les informations affichées pour le code actuel et le code précédent.
+. Accédez aux codes d'erreur en utilisant l'une des méthodes suivantes.
 +
-Si l'un des codes d'erreur suivants s'affiche, contactez le support technique pour résoudre le problème.
+[role="tabbed-block"]
+====
+.BMC
+--
+Si vous utilisez BMC, effectuez les opérations suivantes :
 
+.. link:accessing-bmc-interface.html["Accédez au tableau de bord BMC"].
+.. Dans le tableau de bord BMC, sélectionnez *Code POST BIOS*.
+.. Passez en revue les informations affichées pour le code actuel et le code précédent.
+
+
+--
+.Port série
+--
+Si vous utilisez un port série et un terminal, procédez comme suit pour afficher les codes d'erreur. Les codes POST du BIOS s'affichent sur la console série lorsque l'appareil redémarre.
+
+.. Connectez-vous au port série DB-9 situé à l'arrière de l'appareil.
+.. Utiliser les paramètres `115200 8-N-1`.
+.. Afficher les codes imprimés sur le terminal série.
+
+
+--
+====
+. Si l'un des codes d'erreur suivants s'affiche, contactez le support technique pour résoudre le problème.
 +
 [cols="1a,3a"]
 |===

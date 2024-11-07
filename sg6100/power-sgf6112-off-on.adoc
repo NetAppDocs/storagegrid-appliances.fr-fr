@@ -20,8 +20,7 @@ Vous pouvez arrêter l'appliance SGF6112 ou le contrôleur SG6100-CN et les reme
 Arrêtez l'appliance pour effectuer une maintenance matérielle.
 
 .Avant de commencer
-* Vous avez link:locating-sgf6112-in-data-center.html["l'appareil se trouve physiquement"].
-
+Vous avez link:locating-sgf6112-in-data-center.html["l'appareil se trouve physiquement"].
 
 .Description de la tâche
 Pour éviter toute interruption de service, éteignez l'appareil pendant une fenêtre de maintenance planifiée lorsque les périodes d'interruption de service sont acceptables.

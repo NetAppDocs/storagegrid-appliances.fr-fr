@@ -196,7 +196,7 @@ image::../media/appliance_installer_reboot_complete.png[Redémarrage terminé]
 +
 .. Dans le Gestionnaire de grille, sélectionnez *NODES* et vérifiez que le noeud de stockage de l'appliance possède une icône de coche verte.
 +
-L'icône de coche verte signifie qu'aucune alerte n'est active et que le nœud est connecté à la grille. Pour une description des icônes de nœuds, reportez-vous à la section https://docs.netapp.com/us-en/storagegrid-118/monitor/monitoring-system-health.html#monitor-node-connection-states["Surveiller les États de connexion du nœud"^].
+L'icône de coche verte signifie qu'aucune alerte n'est active et que le nœud est connecté à la grille. Pour une description des icônes de nœud, reportez-vous àla section https://docs.netapp.com/us-en/storagegrid/monitor/monitoring-system-health.html#monitor-node-connection-states["Surveiller les États de connexion du nœud"^].
 
 .. Sélectionnez l'onglet *stockage* et vérifiez que 16 nouveaux magasins d'objets sont affichés dans la table stockage d'objets pour chaque étagère d'extension ajoutée.
 .. Vérifier que chaque nouveau tiroir d'extension dispose d'un état de tiroir nominal et d'un état de configuration configuré.

@@ -29,9 +29,10 @@ IMPORTANT: Reportez-vous aux informations sur l'affichage des indicateurs d'éta
 +
 Les disques sont aux emplacements suivants dans le châssis (avant du châssis avec le panneau retiré) :
 
-
-
++
 image::../media/sg1100_front_with_ssds.png[Emplacements des lecteurs SG110 et SG1100]
+
+
 
 . Enroulez l'extrémité du bracelet antistatique autour de votre poignet et fixez l'extrémité du clip à une masse métallique afin d'éviter toute décharge statique.
 . Déballez le lecteur de remplacement et placez-le sur une surface plane et sans électricité statique près de l'appareil.

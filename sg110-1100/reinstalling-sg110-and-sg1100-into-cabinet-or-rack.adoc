@@ -20,7 +20,7 @@ Retirez le SG110 ou le SG1100 d'une armoire ou d'un rack pour accéder au capot 
 .Avant de commencer
 * Vous disposez d'étiquettes pour identifier chaque câble connecté au SG110 ou au SG1100.
 * Vous avez link:locating-sg110-and-sg1100-in-data-center.html["Emplacement physique du SG110 ou du SG1100"] où effectuer la maintenance dans le data center ?
-* Vous avez link:power-sg110-and-sg1100-off-on.html#shut-down-the-appliance["Arrêtez le SG110 ou le SG1100"].
+* Vous avez link:power-sg110-and-sg1100-off-on.html#shut-down-the-sg110-or-sg1100-appliance["Arrêtez le SG110 ou le SG1100"].
 +
 
 CAUTION: N'éteignez pas l'appareil à l'aide de l'interrupteur d'alimentation.
@@ -83,4 +83,4 @@ IMPORTANT: Pour éviter toute dégradation des performances, ne tordez pas, ne p
 
 
 .Une fois que vous avez terminé
-link:power-sg110-and-sg1100-off-on.html#power-on-sg110-or-sg1100-and-verify-operation.html["Redémarrez l'appareil"].
+link:power-sg110-and-sg1100-off-on.html#power-on-sg110-or-sg1100-and-verify-operation["Redémarrez l'appareil"].

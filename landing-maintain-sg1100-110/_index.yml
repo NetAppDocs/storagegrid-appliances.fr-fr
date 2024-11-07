@@ -1,9 +1,13 @@
 ---
 indexpage:
+  title: Maintenance du matériel des appliances de services SG1100 et SG110
+  summary: Maintenance du matériel de votre appliance de services SG1100 et SG110.
+  keywords: maintain storagegrid sg110, maintain storagegrid sg1100
+  lead: Maintenance du matériel de votre appliance de services SG1100 et SG110.
   tiles:
   - title: Procédures fréquemment effectuées
     links:
-    - title: Allumer ou éteindre le voyant de localisation
+    - title: Allumer ou éteindre la LED Identify
       url: "../sg110-1100/turning-sg110-and-sg1100-identify-led-on-and-off.html"
     - title: Localisez l'appliance dans le data Center
       url: "../sg110-1100/locating-sg110-and-sg1100-in-data-center.html"

@@ -11,7 +11,7 @@ summary: 'Avant d"installer l"appliance StorageGRID, vous devez savoir quels ré
 
 
 [role="lead"]
-Avant d'installer l'appliance StorageGRID, vous devez savoir quels réseaux peuvent être connectés à l'appliance et comment les ports de chaque contrôleur sont utilisés. La configuration réseau requise pour StorageGRID est expliquée en détail dans le https://docs.netapp.com/us-en/storagegrid-118/network/index.html["Instructions de mise en réseau"^].
+Avant d'installer l'appliance StorageGRID, vous devez savoir quels réseaux peuvent être connectés à l'appliance et comment les ports de chaque contrôleur sont utilisés. La configuration réseau requise pour StorageGRID est expliquée en détail dans le https://docs.netapp.com/us-en/storagegrid/network/index.html["Instructions de mise en réseau"^].
 
 Reportez-vous aux instructions de votre appareil pour déterminer les informations dont vous avez besoin :
 
@@ -30,7 +30,7 @@ Lorsque vous déployez une appliance StorageGRID en tant que nœud d'un système
 * *Réseau Grid pour StorageGRID* : le réseau Grid est utilisé pour tout le trafic StorageGRID interne. Il assure la connectivité entre tous les nœuds de la grille, sur tous les sites et sous-réseaux. Le réseau Grid est requis.
 * *Réseau d'administration pour StorageGRID* : le réseau d'administration est un réseau fermé utilisé pour l'administration et la maintenance du système. Le réseau Admin est généralement un réseau privé et n'a pas besoin d'être routable entre les sites. Le réseau d'administration est facultatif.
 * *Réseau client pour StorageGRID :* le réseau client est un réseau ouvert utilisé pour fournir un accès aux applications client, y compris S3 et Swift. Le réseau client fournit un accès au protocole client à la grille, de sorte que le réseau Grid puisse être isolé et sécurisé. Vous pouvez configurer le réseau client de sorte que l'appliance soit accessible via ce réseau en utilisant uniquement les ports que vous choisissez d'ouvrir. Le réseau client est facultatif.
-* *Réseau de gestion pour SANtricity* (facultatif pour les dispositifs de stockage, non requis pour le SG6100) : ce réseau permet d'accéder à SANtricity System Manager, ce qui vous permet de surveiller et de gérer les composants matériels de l'appliance et du tiroir du contrôleur de stockage. Ce réseau de gestion peut être le même que le réseau d'administration pour StorageGRID, ou il peut s'agir d'un réseau de gestion indépendant.
+* *Réseau de gestion pour SANtricity* (facultatif pour les dispositifs de stockage, non requis pour le SGF6112) : ce réseau permet d'accéder à SANtricity System Manager, ce qui vous permet de surveiller et de gérer les composants matériels de l'appliance et du tiroir du contrôleur de stockage. Ce réseau de gestion peut être le même que le réseau d'administration pour StorageGRID, ou il peut s'agir d'un réseau de gestion indépendant.
 * *Réseau de gestion BMC* (en option pour SG100, SG110, SG1000, SG1100, SG6000, et SG6100) : ce réseau permet d'accéder au contrôleur de gestion de la carte de base des appliances SG100, SG1000, SG6000 et SG6100, ce qui vous permet de surveiller et de gérer les composants matériels de l'appliance. Ce réseau de gestion peut être le même que le réseau d'administration pour StorageGRID, ou il peut s'agir d'un réseau de gestion indépendant.
 +
 Si le réseau de gestion BMC facultatif n'est pas connecté, certaines procédures de support et de maintenance seront plus difficiles à réaliser. Vous pouvez ne pas connecter le réseau de gestion BMC, sauf si nécessaire à des fins de support.
@@ -38,4 +38,4 @@ Si le réseau de gestion BMC facultatif n'est pas connecté, certaines procédur
 
 
 
-NOTE: Pour plus d'informations sur les réseaux StorageGRID, reportez-vous au https://docs.netapp.com/us-en/storagegrid-118/network/storagegrid-network-types.html["Types de réseau StorageGRID"^].
+NOTE: Pour plus d'informations sur les réseaux StorageGRID, reportez-vous au https://docs.netapp.com/us-en/storagegrid/network/storagegrid-network-types.html["Types de réseau StorageGRID"^] .

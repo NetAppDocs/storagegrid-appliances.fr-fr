@@ -25,7 +25,7 @@ Pour remplacer un module DIMM, vous devez vérifier la taille du cache de votre 
 ** Étiquettes permettant d'identifier chaque câble connecté au boîtier du contrôleur.
 ** Accès à SANtricity System Manager :
 +
-*** Dans le Gestionnaire de grille, sélectionnez *NODES* > *_appliance node_* > *SANtricity System Manager*. Les informations relatives au contrôleur se trouvent sur le https://docs.netapp.com/us-en/storagegrid-118/monitor/viewing-santricity-system-manager-tab.html["Onglet Gestionnaire système SANtricity"].
+*** Dans le Gestionnaire de grille, sélectionnez *NODES* > *_appliance node_* > *SANtricity System Manager*. Les informations du contrôleur se trouvent sur le https://docs.netapp.com/us-en/storagegrid/monitor/viewing-santricity-system-manager-tab.html["Onglet Gestionnaire système SANtricity"].
 *** Pointez un navigateur de votre station de gestion vers le nom de domaine ou l'adresse IP du contrôleur.
 
 
@@ -158,12 +158,12 @@ image::../media/drw_E4000_replace_dimms_IEOPS-865.png[Retirez les MODULES DIMM.]
 
 
  a| 
-image::../media/legend_icon_01.png[icône de légende 01]
+image::../media/legend_icon_01.png[Référence de légende 1]
 | Languettes d'éjection du module DIMM 
 
 
  a| 
-image::../media/legend_icon_02.png[icône de légende 02]
+image::../media/legend_icon_02.png[Référence de légende 2]
 | DIMM 
 |===
 . Retirez le module DIMM de remplacement du sac d'expédition antistatique, tenez le module DIMM par les coins et alignez-le sur le logement.

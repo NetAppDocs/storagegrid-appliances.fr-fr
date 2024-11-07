@@ -14,7 +14,7 @@ summary: 'Vous devrez peut-être remplacer l"appareil s"il ne fonctionne pas de 
 Vous devrez peut-être remplacer l'appareil s'il ne fonctionne pas de manière optimale ou s'il est défectueux.
 
 .Avant de commencer
-* Vous disposez d'un appareil de remplacement avec le même numéro de pièce que l'appareil que vous remplacez.
+* Vous disposez d'un appareil de remplacement avec le même numéro de pièce que l'appareil que vous remplacez. Vérifiez les étiquettes apposées à l'avant des appareils pour vous assurer que les numéros de pièce correspondent.
 * Vous disposez d'étiquettes pour identifier chaque câble connecté à l'appareil.
 * Vous avez link:locating-controller-in-data-center.html["l'appareil se trouve physiquement"].
 
@@ -112,6 +112,6 @@ Suivez les instructions fournies pour le remplacement de ces composants.
 Après le remplacement de la pièce, renvoyez la pièce défectueuse à NetApp, en suivant les instructions RMA (retour de matériel) livrées avec le kit. Voir la https://mysupport.netapp.com/site/info/rma["Retour de pièce et amp ; remplacements"^] pour plus d'informations.
 
 .Informations associées
-link:../installconfig/viewing-status-indicators.html["Afficher les indicateurs d'état"]
+* link:../installconfig/viewing-status-indicators.html["Afficher les indicateurs d'état"]
+* link:../installconfig/troubleshooting-hardware-installation-sg100-and-sg1000.html#view-boot-codes["Afficher les codes de démarrage de l'appareil"]
 
-link:../installconfig/troubleshooting-hardware-installation-sg100-and-sg1000.html#view-boot-codes["Afficher les codes de démarrage de l'appareil"]

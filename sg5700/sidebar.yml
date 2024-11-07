@@ -11,8 +11,10 @@ entries:
   entries:
   - title: Mettre à niveau le système d'exploitation SANtricity sur le contrôleur
       de stockage
-    url: "/sg5700/upgrading-santricity-os-on-storage-controller.html"
     entries:
+    - title: À propos de la mise à niveau de SANtricity OS sur un contrôleur de stockage
+        SG5700
+      url: "/sg5700/upgrading-santricity-os-on-storage-controller.html"
     - title: Mettez à niveau le système d'exploitation SANtricity sur les contrôleurs
         de stockage à l'aide de Grid Manager
       url: "/sg5700/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg5700.html"

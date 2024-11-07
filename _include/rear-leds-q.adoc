@@ -1,0 +1,33 @@
+= 
+:allow-uri-read: 
+
+
+[cols="1a,2a,3a"]
+|===
+| Légende | LED | État 
+
+
+ a| 
+1
+ a| 
+Voyant d'alimentation
+ a| 
+* Vert, fixe : l'appareil est sous tension, le bouton d'alimentation est sous tension.
+* Vert, clignotant : l'appareil est sous tension, le bouton d'alimentation est hors tension.
+* Éteint : l'appareil n'est pas alimenté.
+* Orange : panne de l'alimentation.
+
+
+
+
+ a| 
+2
+ a| 
+Identifier la LED
+ a| 
+* Bleu clignotant : identifie l'appliance dans l'armoire ou le rack.
+* Bleu, fixe : identifie l'appliance dans l'armoire ou le rack.
+* Éteint : l'appareil n'est pas visuellement identifiable dans l'armoire ou le rack.
+
+
+|===

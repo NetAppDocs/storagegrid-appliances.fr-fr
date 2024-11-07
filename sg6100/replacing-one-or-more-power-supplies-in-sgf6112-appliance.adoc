@@ -37,10 +37,10 @@ image::../media/sgf6112_power_supplies.png[Dos de SGF6112 ou SG6100-CN avec deux
 .Étapes
 . Si vous ne remplacez qu'une seule alimentation, vous n'avez pas besoin d'éteindre l'appareil. Accédez au <<Unplug_the_power_cord,Débranchez le cordon d'alimentation>> étape. Si vous remplacez les deux blocs d'alimentation en même temps, procédez comme suit avant de débrancher les cordons d'alimentation :
 +
-.. link:power-sgf6112-off-on.html#shut-down-the-sgf6112-appliance["Arrêtez l'appareil"].
+.. link:power-sgf6112-off-on.html#shut-down-the-sgf6112-appliance-or-sg6100-cn-controller["Arrêtez l'appareil"].
 +
 
-CAUTION: Si vous avez déjà utilisé une règle ILM pour créer une seule copie d'un objet et que vous remplacez les deux blocs d'alimentation en même temps, vous devez remplacer les blocs d'alimentation pendant une fenêtre de maintenance planifiée, car vous risquez de perdre temporairement l'accès à ces objets pendant cette procédure. Voir informations sur https://docs.netapp.com/us-en/storagegrid-118/ilm/why-you-should-not-use-single-copy-replication.html["pourquoi ne pas utiliser la réplication à copie unique"^].
+CAUTION: Si vous avez déjà utilisé une règle ILM pour créer une seule copie d'un objet et que vous remplacez les deux blocs d'alimentation en même temps, vous devez remplacer les blocs d'alimentation pendant une fenêtre de maintenance planifiée, car vous risquez de perdre temporairement l'accès à ces objets pendant cette procédure. Voir les informations sur https://docs.netapp.com/us-en/storagegrid/ilm/why-you-should-not-use-single-copy-replication.html["pourquoi ne pas utiliser la réplication à copie unique"^].
 
 
 

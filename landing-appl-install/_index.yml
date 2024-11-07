@@ -1,5 +1,15 @@
 ---
 indexpage:
+  title: Installez le matériel de l'appliance StorageGRID
+  summary: Pour ajouter une appliance de stockage ou de services à votre système StorageGRID,
+    vous devez installer et configurer le matériel de l'appliance. Vous installez
+    ensuite le logiciel StorageGRID sur chaque appliance et connectez le nœud de l'appliance
+    à la grille.
+  keywords: storagegrid appliance install, storagegrid hardware install
+  lead: Pour ajouter une appliance de stockage ou de services à votre système StorageGRID,
+    vous devez installer et configurer le matériel de l'appliance. Vous installez
+    ensuite le logiciel StorageGRID sur chaque appliance et connectez le nœud de l'appliance
+    à la grille.
   tiles:
   - title: Démarrage rapide
     links:

@@ -13,5 +13,9 @@ entries:
   url: "/commonhardware/checking-dns-server-configuration.html"
 - title: Mise à jour des références d'adresse MAC (SG100, SG1000, SGF6024 et SG6060)
   url: "/commonhardware/locate-mac-address.html"
+- title: Gestion des disques (SG110, SG1100, SGF6112 et SG6160)
+  url: "/commonhardware/manage-drives-tab.html"
 - title: Surveillez le chiffrement des nœuds en mode de maintenance
   url: "/commonhardware/monitoring-node-encryption-in-maintenance-mode.html"
+- title: Utilisez l'interface BMC
+  url: "/commonhardware/use-bmc.html"

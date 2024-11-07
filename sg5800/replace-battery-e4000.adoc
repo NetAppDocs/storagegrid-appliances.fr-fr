@@ -23,7 +23,7 @@ Si vous envisagez de remplacer une batterie défectueuse, vous devez disposer de
 * Étiquettes permettant d'identifier chaque câble connecté au boîtier du contrôleur.
 * Accès à SANtricity System Manager :
 +
-** Dans le Gestionnaire de grille, sélectionnez *NODES* > *_appliance node_* > *SANtricity System Manager*. Les informations relatives au contrôleur se trouvent sur le https://docs.netapp.com/us-en/storagegrid-118/monitor/viewing-santricity-system-manager-tab.html["Onglet Gestionnaire système SANtricity"].
+** Dans le Gestionnaire de grille, sélectionnez *NODES* > *_appliance node_* > *SANtricity System Manager*. Les informations du contrôleur se trouvent sur le https://docs.netapp.com/us-en/storagegrid/monitor/viewing-santricity-system-manager-tab.html["Onglet Gestionnaire système SANtricity"].
 ** Pointez un navigateur de votre station de gestion vers le nom de domaine ou l'adresse IP du contrôleur.
 
 
@@ -156,12 +156,12 @@ image::../media/drw_E4000_replace_nvbattery_IEOPS-862.png[Retirez la batterie NV
 
 
  a| 
-image::../media/legend_icon_01.png[icône de légende 01]
+image::../media/legend_icon_01.png[Référence de légende 1]
 | Languette de déverrouillage de la batterie 
 
 
  a| 
-image::../media/legend_icon_02.png[icône de légende 02]
+image::../media/legend_icon_02.png[Référence de légende 2]
 | Connecteur d'alimentation de la batterie 
 |===
 

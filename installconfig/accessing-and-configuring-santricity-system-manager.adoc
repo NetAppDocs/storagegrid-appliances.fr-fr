@@ -20,7 +20,7 @@ Vous pouvez utiliser SANtricity System Manager pour surveiller l'état des contr
 Vous devrez peut-être accéder à SANtricity System Manager sur le contrôleur de stockage pour contrôler le matériel du tiroir du contrôleur de stockage ou configurer les baies E-Series AutoSupport.
 
 .Avant de commencer
-* Vous utilisez un https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["navigateur web pris en charge"^].
+* Vous utilisez un https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["navigateur web pris en charge"^].
 * Pour accéder au Gestionnaire système SANtricity via le Gestionnaire de grille, vous avez installé StorageGRID et vous disposez de l'autorisation d'administrateur de l'appliance de stockage ou de l'autorisation d'accès racine.
 * Pour accéder au Gestionnaire système SANtricity à l'aide du programme d'installation de l'appliance StorageGRID, vous disposez du nom d'utilisateur et du mot de passe de l'administrateur du Gestionnaire système SANtricity.
 * Pour accéder au Gestionnaire système SANtricity directement à l'aide d'un navigateur Web, vous disposez du nom d'utilisateur et du mot de passe de l'administrateur du Gestionnaire système SANtricity.
@@ -61,7 +61,7 @@ Vous pouvez utiliser SANtricity System Manager pour configurer les paramètres s
 * Alertes par e-mail, alertes SNMP ou syslog correspondant aux composants du tiroir de contrôleur de stockage
 * Paramètres de la gamme E-Series AutoSupport pour les composants du tiroir contrôleur de stockage.
 +
-Pour en savoir plus sur les systèmes E-Series AutoSupport, consultez http://mysupport.netapp.com/info/web/ECMP1658252.html["Site de documentation sur les systèmes NetApp E-Series"^].
+Pour plus d'informations sur la gamme E-Series AutoSupport, consultez le https://docs.netapp.com/us-en/e-series-family/index.html["Documentation des baies NetApp E-Series"^].
 
 * Clés de sécurité du lecteur, qui sont nécessaires pour déverrouiller des lecteurs sécurisés (cette étape est requise si la fonction de sécurité du lecteur est activée)
 * Mot de passe d'administrateur pour accéder à SANtricity System Manager
@@ -106,24 +106,58 @@ image::../media/sam_home_page.gif[Capture d'écran de la page d'accueil de SANtr
 .. Utilisez la section *SUPPORT* > *Centre de support* de l'aide en ligne pour en savoir plus sur la fonction AutoSupport.
 .. Suivez les instructions « Comment faire » pour gérer AutoSupport.
 +
-Pour obtenir des instructions spécifiques sur la configuration d'un proxy StorageGRID pour l'envoi de messages AutoSupport E-Series sans utiliser le port de gestion, reportez-vous au https://docs.netapp.com/us-en/storagegrid-118/admin/configuring-storage-proxy-settings.html["instructions de configuration des paramètres de proxy de stockage"^].
+Pour obtenir des instructions spécifiques sur la configuration d'un proxy StorageGRID pour l'envoi de messages AutoSupport E-Series sans utiliser le port de gestion, reportez-vous au https://docs.netapp.com/us-en/storagegrid/admin/configuring-storage-proxy-settings.html["instructions de configuration des paramètres de proxy de stockage"^].
 
 
 
-. Si la fonction sécurité du lecteur est activée pour l'appliance, créez et gérez la clé de sécurité.
+. Si https://docs.netapp.com/us-en/e-series-santricity/sm-settings/overview-drive-security.html#what-is-drive-security["Sécurité du lecteur"^] est activé pour l'appliance, créez et gérez la clé de sécurité.
 +
-.. Sélectionnez *aide* pour accéder à l'aide en ligne de SANtricity System Manager.
-.. Utilisez la section *Paramètres* > *système* > *gestion des clés de sécurité* de l'aide en ligne pour en savoir plus sur la sécurité des lecteurs.
-.. Suivez les instructions « Comment faire » pour créer et gérer la clé de sécurité.
+[role="tabbed-block"]
+====
+.SG5700 et SG5800
+--
+Pour les appliances de stockage SG5700 et SG5800, suivez les étapes générales de https://docs.netapp.com/us-en/e-series-santricity/sm-settings/how-the-drive-security-feature-works.html#how-to-implement-drive-security["mettre en œuvre la sécurité de l'entraînement"^] SANtricity System Manager.
 
+--
+.SG6060
+--
+Pour l'appliance de stockage SG6060, la sécurité des disques peut être automatiquement activée sur les disques SSD uniquement si la gestion des clés a été configurée avant l'installation de l'appliance de stockage.
 
-. Si vous le souhaitez, modifiez le mot de passe administrateur.
+.. Equipez votre baie de stockage de disques compatibles sécurité (disques FDE ou FIPS).
 +
-.. Sélectionnez *aide* pour accéder à l'aide en ligne de SANtricity System Manager.
-.. Utilisez la section *Accueil* > *Administration de la matrice de stockage* de l'aide en ligne pour en savoir plus sur le mot de passe administrateur.
-.. Suivez les instructions « Comment faire » pour modifier le mot de passe.
+*** Pour les volumes nécessitant une prise en charge de FIPS, utilisez uniquement des disques FIPS.
+*** L'association de disques FIPS et FDE dans un groupe de volumes ou un pool entraîne le traitement de tous les disques FDE.
+*** Un disque FDE ne peut pas être ajouté ou utilisé comme disque de secours dans un groupe de volumes ou un pool FIPS.
 
 
+.. Pour le tiroir contrôleur E4000, créez une clé de sécurité (une chaîne de caractères partagée par le contrôleur et les lecteurs pour l'accès en lecture et en écriture).
++
+*** Vous pouvez https://docs.netapp.com/us-en/e-series-santricity/sm-settings/create-internal-security-key.html["créer une clé interne"^] utiliser la mémoire persistante du contrôleur ou une clé externe fournie par un serveur de gestion des clés.
+*** Pour utiliser une clé externe fournie par un serveur de gestion des clés, vous devez d'abord utiliser https://docs.netapp.com/us-en/e-series-santricity/sm-settings/overview-drive-security.html["établissez l'authentification avec un serveur de gestion des clés"^] SANtricity System Manager.
+
+
+.. link:deploying-appliance-storage-node.html["Démarrez l'installation"] de l'appareil.
+.. Une fois l'installation de l'appliance terminée, vérifiez que la sécurité des disques a été activée pour le cache Flash StorageGRID et activez la sécurité des disques pour tous les pools de disques ou groupes de volumes restants (voir https://docs.netapp.com/us-en/e-series-santricity/sm-storage/enable-security.html["Activer la sécurité d'un pool ou d'un groupe de volumes"^] dans le Gestionnaire système SANtricity).
+
+
+--
+.SG6160
+--
+Le système de stockage SG6160 peut être équipé de disques compatibles FIPS dans le contrôleur de calcul SG6100-CN et le tiroir contrôleur E4000. Le cryptage de lecteur est configuré séparément pour les lecteurs SG6100-CN et E4000.
+
+.. link:optional-enabling-node-encryption.html#drive-encryption["Activez Drive Encryption"] Pour les disques SSD SED installés dans le nœud de calcul SG6100-CN.
+.. Créez une clé de sécurité (une chaîne de caractères partagée par le contrôleur et des lecteurs pour l'accès en lecture/écriture).
++
+*** Vous pouvez https://docs.netapp.com/us-en/e-series-santricity/sm-settings/create-internal-security-key.html["créer une clé interne"^] utiliser la mémoire persistante du contrôleur ou une clé externe fournie par un serveur de gestion des clés.
+*** Pour utiliser une clé externe fournie par un serveur de gestion des clés, vous devez d'abord utiliser https://docs.netapp.com/us-en/e-series-santricity/sm-settings/overview-drive-security.html["établissez l'authentification avec un serveur de gestion des clés"^] SANtricity System Manager.
+
+
+.. link:deploying-appliance-storage-node.html["Démarrez l'installation"] de l'appareil.
+.. Une fois l'installation terminée, https://docs.netapp.com/us-en/e-series-santricity/sm-storage/enable-security.html["activez la sécurité du lecteur"^] dans le Gestionnaire système SANtricity pour tous les pools de disques ou groupes de volumes.
+
+
+--
+====
 
 
 
@@ -133,7 +167,7 @@ Pour obtenir des instructions spécifiques sur la configuration d'un proxy Stora
 Vous pouvez utiliser SANtricity System Manager pour surveiller et gérer chaque composant matériel du tiroir de contrôleur de stockage, et pour examiner les informations de diagnostic et d'environnement sur le matériel, comme la température des composants et les problèmes liés aux disques.
 
 .Avant de commencer
-* Vous utilisez un https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["navigateur web pris en charge"^].
+* Vous utilisez un https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["navigateur web pris en charge"^].
 * Pour accéder au Gestionnaire système SANtricity via le Gestionnaire de grille, vous disposez de l'autorisation d'administrateur de l'appliance de stockage ou de l'autorisation d'accès racine.
 * Pour accéder au Gestionnaire système SANtricity à l'aide du programme d'installation de l'appliance StorageGRID, vous disposez du nom d'utilisateur et du mot de passe de l'administrateur du Gestionnaire système SANtricity.
 * Pour accéder au Gestionnaire système SANtricity directement à l'aide d'un navigateur Web, vous disposez du nom d'utilisateur et du mot de passe de l'administrateur du Gestionnaire système SANtricity.

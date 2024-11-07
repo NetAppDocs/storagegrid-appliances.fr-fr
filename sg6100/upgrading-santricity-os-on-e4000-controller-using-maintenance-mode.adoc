@@ -14,7 +14,7 @@ summary: Vous pouvez utiliser le mode maintenance pour mettre à niveau SANtrici
 Vous pouvez utiliser le mode maintenance pour mettre à niveau SANtricity OS sur le contrôleur E4000.
 
 
-NOTE: Pour les contrôleurs de stockage utilisant actuellement un système d'exploitation SANtricity plus récent que 08.42.20.00 (11.42), il est recommandé de link:upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg5800.html["Utilisez Grid Manager pour appliquer une mise à niveau"]. Toutefois, vous pouvez utiliser la procédure du mode maintenance si vous le préférez ou si vous y avez reçu des instructions du support technique.
+NOTE: Pour les contrôleurs de stockage utilisant actuellement un système d'exploitation SANtricity plus récent que 08.42.20.00 (11.42), il est recommandé de link:upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg6160.html["Utilisez Grid Manager pour appliquer une mise à niveau"]. Toutefois, vous pouvez utiliser la procédure du mode maintenance si vous le préférez ou si vous y avez reçu des instructions du support technique.
 
 .Avant de commencer
 * Vous avez consulté le https://imt.netapp.com/matrix/#welcome["Matrice d'interopérabilité NetApp (IMT)"^] Pour vérifier que la version de SANtricity OS utilisée pour la mise à niveau est compatible avec votre appliance.
@@ -62,4 +62,4 @@ image::../media/nodes_menu.png[Le nœud d'appliance a rejoint la grille]
 
 
 .Informations associées
-link:upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg5800.html["Mettez à niveau le système d'exploitation SANtricity sur les contrôleurs de stockage à l'aide de Grid Manager"]
+link:upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg6160.html["Mettez à niveau le système d'exploitation SANtricity sur les contrôleurs de stockage à l'aide de Grid Manager"]

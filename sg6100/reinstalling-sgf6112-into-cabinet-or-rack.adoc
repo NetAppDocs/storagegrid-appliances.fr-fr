@@ -20,7 +20,7 @@ Retirez le SGF6112 ou le SG6100-CN d'une armoire ou d'un rack pour accéder au c
 .Avant de commencer
 * Vous disposez d'étiquettes pour identifier chaque câble connecté au SGF6112 ou au SG6100-CN.
 * Vous avez link:locating-sgf6112-in-data-center.html["Physiquement situé le SGF6112 ou le SG6100-CN"] où effectuer la maintenance dans le data center ?
-* Vous avez link:power-sgf6112-off-on.html#shut-down-the-sgf6112-appliance["Arrêtez le SGF6112 ou le SG6100-CN"].
+* Vous avez link:power-sgf6112-off-on.html#shut-down-the-sgf6112-appliance-or-sg6100-cn-controller["Arrêtez le SGF6112 ou le SG6100-CN"].
 +
 
 CAUTION: N'éteignez pas l'appareil à l'aide de l'interrupteur d'alimentation.
@@ -81,4 +81,4 @@ NOTE: Pour éviter toute dégradation des performances, ne tordez pas, ne pliez 
 
 
 .Une fois que vous avez terminé
-link:power-sgf6112-off-on.html#power-on-sgf6112-and-verify-operation["Redémarrez l'appareil"].
+link:power-sgf6112-off-on.html#power-on-sgf6112-or-sg6100-cn-and-verify-operation["Redémarrez l'appareil"].

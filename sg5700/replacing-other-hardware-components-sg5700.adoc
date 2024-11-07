@@ -21,7 +21,7 @@ Vous devrez peut-être remplacer la batterie du contrôleur, le lecteur, le vent
 .Description de la tâche
 Pour remplacer la batterie du contrôleur E2800, reportez-vous aux instructions de la section link:replacing-e2800-controller.html["Remplacement du contrôleur E2800"]. Ces instructions décrivent le retrait du contrôleur de l'appareil, le retrait de la batterie du contrôleur, l'installation de la batterie et le remplacement du contrôleur.
 
-Pour remplacer un lecteur, un boîtier de ventilateur, un boîtier de ventilateur, un boîtier de puissance ou un tiroir de lecteur dans l'appareil, accédez au http://mysupport.netapp.com/info/web/ECMP1658252.html["Procédures E-Series pour la maintenance du matériel E2800"^].
+Pour remplacer un lecteur, un boîtier de ventilateur de puissance, un boîtier de ventilateur, un boîtier de puissance ou un tiroir de lecteur dans l'appareil, accédez au https://docs.netapp.com/us-en/e-series-family/index.html["Procédures E-Series pour la maintenance du matériel E2800"^].
 
 
 

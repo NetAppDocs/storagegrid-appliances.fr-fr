@@ -46,49 +46,167 @@ SG5712
  a| 
 SG5760
  a| 
-240 V c.a.
+240 volts c.a.
 
 
 
  a| 
 SG5812
  a| 
-120 à 240 volts c.a.
+120 à 240 volts CA
 
 
 
  a| 
 SG5860
  a| 
-240 V c.a.
+240 volts c.a.
 
 
 
  a| 
 SGF6024
  a| 
-120 V c.a.
+120 volts c.a.
 
 
 
  a| 
 SG6060
  a| 
-240 V c.a.
+240 volts c.a.
 
 
 
  a| 
 SGF6112
  a| 
-100 à 240 volts CA
+240 volts c.a.
 
 
 
  a| 
 SG6160
  a| 
-240 V c.a.
+240 volts c.a.
+
+|===
+. Vérifiez que votre emplacement est conforme aux exigences d'alimentation de votre appareil :
++
+
+NOTE: Les alimentations des appliances StorageGRID sont évaluées pour des puissances significativement plus élevées que celles utilisées par le matériel de l'appliance StorageGRID, même pendant les périodes de consommation électrique maximale. NetApp recommande d'utiliser les chiffres du tableau suivant pour déterminer si la disposition des racks proposée, incluant des appliances StorageGRID, est compatible avec votre budget d'alimentation en rack.
+
++
+[cols="1a,1a,1a"]
+|===
+| Modèle | Puissance moyenne requise (W) | Puissance maximale requise (W) 
+
+
+ a| 
+SG100
+ a| 
+273
+ a| 
+400
+
+
+
+ a| 
+SG1000
+ a| 
+337
+ a| 
+600
+
+
+
+ a| 
+SG110
+ a| 
+352
+ a| 
+500
+
+
+
+ a| 
+SG1100
+ a| 
+422
+ a| 
+700
+
+
+
+ a| 
+SG5712
+ a| 
+578
+ a| 
+700
+
+
+
+ a| 
+SG5760
+ a| 
+1394
+ a| 
+1800
+
+
+
+ a| 
+SG5812
+ a| 
+449
+ a| 
+600
+
+
+
+ a| 
+SG5860
+ a| 
+1048
+ a| 
+1300
+
+
+
+ a| 
+SGF6024
+ a| 
+1027
+ a| 
+1900
+
+
+
+ a| 
+SG6060
+ a| 
+1484
+ a| 
+2300
+
+
+
+ a| 
+SGF6112
+ a| 
+446
+ a| 
+700
+
+
+
+ a| 
+SG6160
+ a| 
+1312
+ a| 
+1800
 
 |===
 . Procurez-vous une armoire ou un rack de 19 pouces (48.3 cm) pour les étagères de la taille suivante (sans câbles).

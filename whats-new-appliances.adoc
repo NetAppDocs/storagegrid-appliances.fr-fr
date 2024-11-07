@@ -18,15 +18,21 @@ Découvrez les nouveautés des appliances StorageGRID.
 
 
 
+== Informations sur les BMC
+
+Des informations détaillées sur l'utilisation de l'interface BMC de l'appliance StorageGRID sont disponibles. Voir link:./commonhardware/use-bmc.html["Utilisation du contrôleur de gestion de la carte mère (BMC) de l'appliance StorageGRID"].
+
+
+
 == Appareils SG5812 et SG5860
 
-Les nouvelles appliances StorageGRID SG5812 et SG5860 sont des plateformes de stockage et de calcul intégrées qui fonctionnent comme des nœuds de stockage dans un grid StorageGRID. Voir la https://docs.netapp.com/us-en/storagegrid-appliances/installconfig/hardware-description-sg5800.html["Appareils SG5800 : présentation"] pour en savoir plus.
+Les nouvelles appliances StorageGRID SG5812 et SG5860 sont des plateformes de stockage et de calcul intégrées qui fonctionnent comme des nœuds de stockage dans un grid StorageGRID. Consultez le link:./installconfig/hardware-description-sg5800.html["Appareils SG5800 : présentation"] pour en savoir plus.
 
 
 
 == Appliance SG6160
 
-La nouvelle appliance StorageGRID SG6160 inclut un contrôleur de calcul et un tiroir de contrôleur de stockage contenant deux contrôleurs de stockage et 60 disques, ainsi que deux disques SSD NVMe pour la mise en cache. Des tiroirs d'extension de 60 disques peuvent également être ajoutés au SG6160. Voir link:installconfig/hardware-description-sg6100.html["Appliances SGF6100 : présentation"] pour en savoir plus.
+La nouvelle appliance StorageGRID SG6160 inclut un contrôleur de calcul et un tiroir de contrôleur de stockage contenant deux contrôleurs de stockage et 60 disques, ainsi que deux disques SSD NVMe pour la mise en cache. Des tiroirs d'extension de 60 disques peuvent également être ajoutés au SG6160. Voir link:./installconfig/hardware-description-sg6100.html["Appliances SGF6100 : présentation"] pour en savoir plus.
 
 
 

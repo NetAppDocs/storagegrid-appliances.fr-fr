@@ -24,7 +24,7 @@ link:locating-controller-in-data-center.html["Localiser le contrôleur dans le d
 .Description de la tâche
 Pour remplacer la batterie dans le contrôleur de stockage, reportez-vous aux étapes des instructions de link:replacing-storage-controller-sg6000.html["remplacement d'un contrôleur de stockage"]. Ces instructions décrivent le retrait d'un contrôleur de l'appareil, le retrait de la batterie du contrôleur, l'installation de la batterie et le remplacement du contrôleur.
 
-Pour obtenir des instructions sur les autres unités remplaçables sur site (FRU) présentes dans les tiroirs disques, accédez au http://mysupport.netapp.com/info/web/ECMP1658252.html["Procédures de maintenance du système E-Series"^].
+Pour obtenir des instructions sur les autres unités remplaçables sur site (FRU) des tiroirs de contrôleur, accédez au https://docs.netapp.com/us-en/e-series-family/index.html["Procédures de maintenance du système E-Series"^].
 
 [cols="1a,3a"]
 |===

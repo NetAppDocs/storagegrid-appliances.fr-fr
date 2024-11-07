@@ -1,9 +1,13 @@
 ---
 indexpage:
+  title: Maintenance du matériel de l'appliance de stockage SG6000
+  summary: Maintenance du matériel de votre système de stockage SG6000.
+  keywords: maintain storagegrid sg6000
+  lead: Maintenance du matériel de votre système de stockage SG6000.
   tiles:
   - title: Procédures fréquemment effectuées
     links:
-    - title: Allumer ou éteindre le voyant de localisation
+    - title: Allumer ou éteindre la LED Identify
       url: "../sg6000/turning-controller-identify-led-on-and-off.html"
     - title: Localisez l'appliance dans le data Center
       url: "../sg6000/locating-controller-in-data-center.html"
@@ -13,8 +17,10 @@ indexpage:
       url: "../sg6000/changing-link-configuration-of-sg6000-cn-controller.html"
     - title: Mettez à niveau SANtricity
       url: "../sg6000/upgrading-santricity-os-on-storage-controllers.html"
-    - title: Mettre à niveau le micrologiciel du lecteur
-      url: "../sg6000/upgrading-drive-firmware-using-santricity-system-manager.html"
+    - title: Mettre à niveau le micrologiciel du lecteur (méthode en ligne)
+      url: "../sg6000/upgrading-drive-firmware-using-santricity-system-manager-online.html"
+    - title: Mettre à niveau le firmware du disque (méthode hors ligne)
+      url: "../sg6000/upgrading-drive-firmware-using-santricity-system-manager-offline.html"
   - title: Procédures de rack
     links:
     - title: Remplacez le contrôleur dans le rack

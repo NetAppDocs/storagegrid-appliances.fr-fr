@@ -3,7 +3,7 @@
 
 
 .Avant de commencer
-* Vous avez examiné le document des avis de sécurité inclus dans l'emballage et vous avez compris les précautions à prendre pour déplacer et installer le matériel.
+* Vous avez examiné le document inclus dans l'emballage et vous avez https://library.netapp.com/ecm/ecm_download_file/ECMP12475945["Avis de sécurité"^] compris les précautions à prendre pour déplacer et installer le matériel.
 * Les instructions sont fournies avec le kit de rails.
 
 

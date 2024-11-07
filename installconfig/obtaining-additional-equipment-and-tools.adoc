@@ -30,7 +30,7 @@ Tournevis::
 Bracelet antistatique::
 +
 --
-* https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["Navigateur Web pris en charge"^]
+* https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["Navigateur Web pris en charge"^]
 * Client SSH, tel que PuTTY
 * Port 1 GbE (RJ-45)
 

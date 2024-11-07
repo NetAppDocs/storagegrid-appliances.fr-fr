@@ -1,5 +1,5 @@
 ---
-permalink: sg6100/replace-ocp-nic-in-sg6100-cn.html 
+permalink: sg6100/replace-ocp-nic-sg6100-cn.html 
 sidebar: sidebar 
 keywords: storagegrid, sg6100, storage node, storage appliance, Replacing, replace, NIC, network interface card 
 summary: 'Vous devrez peut-être remplacer une carte d"interface réseau \(NIC\) dans le SG6100-CN si elle ne fonctionne pas de manière optimale ou si elle est défectueuse.' 
@@ -28,17 +28,17 @@ image::../media/sg6100_cn_ocp_nic_location.png[Face avant de la carte réseau.]
 * Vous avez link:locating-sgf6112-in-data-center.html["Emplacement physique du contrôleur SG6100-CN"] Emplacement de remplacement de la carte réseau dans le centre de données.
 +
 
-NOTE: Le remplacement à chaud est *non* pris en charge pour cette procédure. A link:power-sgf6112-off-on.html#shut-down-the-sgf6112-appliance["arrêt contrôlé de l'appareil"] Est nécessaire avant de débrancher les câbles et de retirer la carte réseau.
+NOTE: Le remplacement à chaud est *non* pris en charge pour cette procédure. Un link:power-sgf6112-off-on.html#shut-down-the-sgf6112-appliance-or-sg6100-cn-controller["arrêt contrôlé de l'appareil"] est nécessaire avant de débrancher les câbles et de retirer la carte réseau.
 
 * Vous avez déconnecté tous les câbles, y compris les deux cordons d'alimentation du SG6100-CN.
 * *Facultatif* : vous avez retiré le contrôleur du rack si la réglementation locale l'exige. Il n'est pas nécessaire de retirer la carte réseau car elle est accessible à l'extérieur.
 
 
 .Description de la tâche
-Pour éviter toute interruption de service, vérifiez que tous les autres nœuds de stockage sont connectés à la grille avant de commencer le remplacement de la carte d'interface réseau (NIC) ou remplacez-la lors d'une fenêtre de maintenance planifiée lorsque les périodes d'interruption de service sont acceptables. Voir informations sur link:https://docs.netapp.com/us-en/storagegrid-118/monitor/monitoring-system-health.html#monitor-node-connection-states["etats de connexion de nœud montioring"].
+Pour éviter toute interruption de service, vérifiez que tous les autres nœuds de stockage sont connectés à la grille avant de commencer le remplacement de la carte d'interface réseau (NIC) ou remplacez-la lors d'une fenêtre de maintenance planifiée lorsque les périodes d'interruption de service sont acceptables. Voir les informations sur link:https://docs.netapp.com/us-en/storagegrid/monitor/monitoring-system-health.html#monitor-node-connection-states["etats de connexion de nœud montioring"].
 
 
-CAUTION: Si vous avez déjà utilisé une règle ILM qui ne crée qu'une seule copie d'un objet, vous devez remplacer la carte réseau au cours d'une fenêtre de maintenance planifiée, car vous risquez de perdre temporairement l'accès à ces objets au cours de cette procédure. Voir informations sur link:https://docs.netapp.com/us-en/storagegrid-118/ilm/why-you-should-not-use-single-copy-replication.html["pourquoi ne pas utiliser la réplication à copie unique"].
+CAUTION: Si vous avez déjà utilisé une règle ILM qui ne crée qu'une seule copie d'un objet, vous devez remplacer la carte réseau au cours d'une fenêtre de maintenance planifiée, car vous risquez de perdre temporairement l'accès à ces objets au cours de cette procédure. Voir les informations sur link:https://docs.netapp.com/us-en/storagegrid/ilm/why-you-should-not-use-single-copy-replication.html["pourquoi ne pas utiliser la réplication à copie unique"].
 
 
 

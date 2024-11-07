@@ -26,7 +26,7 @@ NOTE: Ne vous fiez pas aux instructions E-Series pour remplacer un contrôleur d
 CAUTION: Vous ne pourrez pas utiliser l'appareil avant de déverrouiller les lecteurs à l'aide de la touche enregistrée.
 
 * Vous devez disposer d'autorisations d'accès spécifiques.
-* Vous devez être connecté au Grid Manager à l'aide d'un https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["navigateur web pris en charge"^].
+* Vous devez être connecté au Gestionnaire de grille à l'aide d'un https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["navigateur web pris en charge"^].
 
 
 .Description de la tâche

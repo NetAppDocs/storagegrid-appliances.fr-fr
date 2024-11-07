@@ -1,0 +1,94 @@
+---
+permalink: commonhardware/use-bmc.html 
+sidebar: sidebar 
+keywords: storagegrid, bmc 
+summary: 'Certaines appliances StorageGRID incluent un contrôleur de gestion de carte de base (BMC) qui permet un accès matériel de bas niveau pour la configuration, la surveillance et le diagnostic des appliances.' 
+---
+= Utilisation du contrôleur de gestion de la carte mère (BMC) de l'appliance StorageGRID
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Certaines appliances StorageGRID incluent un contrôleur de gestion de carte de base (BMC) qui permet un accès matériel de bas niveau pour la configuration, la surveillance et le diagnostic des appliances.
+
+L'interface BMC est prise en charge par les modèles d'appliance StorageGRID suivants :
+
+* SG100
+* SG110
+* SG1000
+* SG1100
+* SG6000
+* SG6100
+
+
+Pour plus d'informations sur l'utilisation de l'interface BMC de ces dispositifs, reportez-vous au https://kb.netapp.com/hybrid/StorageGRID/Platforms/How_to_use_StorageGRID_Appliance_BMC_with_vendor_supplied_user_guide["Guide de l'utilisateur BMC"^]. Vous ne devez accéder aux fonctions BMC qui sont _non_ documentées dans la documentation StorageGRID que lorsque vous êtes dirigé par le support technique.
+
+Ce guide de l'utilisateur BMC contient la dernière version du micrologiciel BMC disponible pour certaines appliances StorageGRID. La version du firmware BMC de votre appliance StorageGRID peut être légèrement différente.
+
+* Les mises à jour du micrologiciel BMC sont effectuées lors des mises à niveau du logiciel StorageGRID. Si vous n'exécutez pas la dernière version du logiciel StorageGRID, vous pouvez mettre à jour votre appliance avec la dernière version de StorageGRID pour installer https://docs.netapp.com/us-en/storagegrid/upgrade/how-your-system-is-affected-during-upgrade.html#appliance-firmware-is-upgraded["Dernière version du micrologiciel BMC disponible pour votre appliance"] .
+* Si votre BMC semble différent avant ou après une mise à jour StorageGRID, les informations du https://kb.netapp.com/hybrid/StorageGRID/Platforms/How_to_use_StorageGRID_Appliance_BMC_with_vendor_supplied_user_guide["Guide de l'utilisateur BMC"^] peuvent vous aider à adapter les instructions pour votre version de BMC.
+
+
+
+
+== BMC pour les appliances StorageGRID
+
+Les procédures BMC suivantes sont documentées pour une utilisation avec les appliances StorageGRID prises en charge :
+
+* link:../installconfig/accessing-bmc-interface.html["Accédez au tableau de bord BMC"]
+* link:../installconfig/configuring-snmp-settings-for-bmc.html["Configurer les paramètres SNMP de BMC"]
+* link:../installconfig/setting-up-email-notifications-for-alerts.html["Configurez les notifications d'alertes par e-mail"]
+* Dépannage de l'installation matérielle :
++
+** link:../installconfig/troubleshooting-hardware-installation-sg100-and-sg1000.html["SG1000 et SG100"]
+** link:../installconfig/troubleshooting-hardware-installation-sg110-and-sg1100.html["SG1100 et SG110"]
+** link:../installconfig/troubleshooting-hardware-installation.html["SG6000"]
+** link:../installconfig/troubleshooting-hardware-installation-sg6100.html["SG6100"]
+
+
+* Déterminez l'état d'alimentation de l'appareil :
++
+** link:../sg100-1000/shut-down-sg100-and-sg1000.html["SG1000 et SG100"]
+** link:../sg110-1100/power-sg110-and-sg1100-off-on.html["SG1100 et SG110"]
+** link:../sg6000/power-sg6000-cn-controller-off-on.html["SG6000"]
+** link:../sg6100/power-sgf6112-off-on.html["SG6100"]
+
+
+* Allumez et éteignez le voyant d'identification de l'appareil :
++
+** link:../sg100-1000/turning-controller-identify-led-on-and-off.html["SG1000 et SG100"]
+** link:../sg110-1100/turning-sg110-and-sg1100-identify-led-on-and-off.html["SG1100 et SG110"]
+** link:../sg6000/turning-controller-identify-led-on-and-off.html["SG6000"]
+** link:../sg6100/turning-sgf6112-identify-led-on-and-off.html["SG6100"]
+
+
+
+
+
+
+== Fonctionnalités BMC non prises en charge par les appliances StorageGRID
+
+Les fonctions BMC suivantes entrent en conflit avec une configuration spécifique à StorageGRID et ne doivent pas être utilisées.
+
+* Paramètres
++
+** Gestion RAID
+** Gestion IT SAS
+** Interfaces IPMI
+** Redondance à froid
+** Sélection de carte réseau
+
+
+* Redirection d'images
+* Diagnostics du système hôte
+* Maintenance
++
+** Configuration double image
+** Informations sur le micrologiciel
+** Mise à jour du micrologiciel
+** Restaurer les paramètres par défaut
+
+
+

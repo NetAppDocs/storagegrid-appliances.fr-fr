@@ -18,13 +18,36 @@ Si vous utilisez ConfigBuilder pour générer un fichier JSON, vous pouvez modif
 .Description de la tâche
 Si votre appliance est prise en charge, vous pouvez choisir l'une des options de configuration de volume suivantes :
 
-* *DDP* : ce mode utilise deux disques de parité pour huit disques de données. Il s'agit du mode par défaut et recommandé pour tous les appareils. Par rapport au niveau RAID 6, les pools de disques dynamiques offrent de meilleures performances du système, un temps de reconstruction réduit après une panne disque et une gestion simplifiée. Ils assurent également la protection contre les pertes de tiroirs dans les appliances SG5760, SG5860 et SG6160.
+
+NOTE: La taille des volumes n'est pas cohérente entre tous les types DDP et RAID. Les variations du mode de fonctionnement des pools de disques dynamiques et de RAID6 entraînent des tailles de volume différentes.
+
+* *DDP* : ce mode utilise deux disques de parité pour huit disques de données. Il s'agit du mode par défaut et recommandé pour tous les appareils.
++
+** Par rapport au niveau RAID 6, les pools de disques dynamiques offrent de meilleures performances du système, un temps de reconstruction réduit après une panne disque et une gestion simplifiée.
+** Un pool de disques est créé par appliance de stockage ou tiroir d'extension.
+** DDP protège les appliances SG5760, SG5860 et SG6160 en cas de perte de tiroir.
 +
 
-NOTE: Les DDP ne protègent pas la perte de tiroirs dans les appliances SG6060 en raison des deux disques SSD. La protection contre la perte des tiroirs est effective dans toutes les étagères d'extension ajoutées à une SG6060.
+NOTE: La technologie DDP ne protège pas la perte de tiroirs dans les appliances SG6060, à cause des deux disques SSD. La protection contre la perte des tiroirs est effective dans toutes les étagères d'extension ajoutées à une SG6060.
 
-* *DDP16* : ce mode utilise deux disques de parité pour chaque 16 disques de données, ce qui améliore l'efficacité du stockage par rapport au pool DDP. Par rapport à RAID 6, DDP16 offre de meilleures performances système, des délais de reconstruction réduits après une panne disque, une gestion simplifiée et une efficacité de stockage comparable. Pour utiliser le mode DDP16, votre configuration doit contenir au moins 20 lecteurs. Le DDP16 n'offre pas de protection contre les pertes de tiroirs.
+
+
+* *DDP16* : ce mode utilise deux disques de parité pour chaque 16 disques de données, ce qui améliore l'efficacité du stockage par rapport au pool DDP.
++
+** Par rapport à RAID 6, DDP16 offre de meilleures performances système, des délais de reconstruction réduits après une panne disque, une gestion simplifiée et une efficacité de stockage comparable.
+** Pour utiliser le mode DDP16, votre dispositif de stockage doit contenir au moins 20 lecteurs.
+** Un pool de disques est créé par appliance de stockage ou tiroir d'extension.
+** Le DDP16 ne protège pas les tiroirs contre les pertes.
+
+
 * *RAID6* : ce mode utilise deux lecteurs de parité pour chaque disque de données de 16 ou plus. Il s'agit d'un schéma de protection matérielle qui utilise des bandes de parité sur chaque disque et autorise deux pannes de disque au sein de l'ensemble RAID avant la perte de données. Pour utiliser le mode RAID 6, votre configuration doit contenir au moins 20 lecteurs. Bien que RAID 6 puisse améliorer l'efficacité du stockage de l'appliance par rapport à des pools de disques dynamiques, il n'est pas recommandé dans la plupart des environnements StorageGRID.
++
+** RAID 6 fournit un disque de secours global par tiroir d'extension. Par exemple, un SG6160 doté de deux tiroirs d'extension dispose de trois disques de secours.
+** Sur une appliance de stockage de 60 disques, StorageGRID crée trois groupes de volumes, chacun avec un minimum de 18 disques (16+2) et une taille maximale de 21 disques (19+2).
+** Sur le SGF6024, un groupe de volumes RAID 6 est composé de 23 disques avec un disque de secours.
+** Les volumes RAID 6 sont légèrement plus grands, ce qui permet le clonage de nœuds depuis DDP16 dans la plupart des cas. La taille des volumes peut varier selon les groupes de volumes d'une configuration RAID 6.
+
+
 
 
 
@@ -37,7 +60,7 @@ CAUTION: Si un volume a déjà été configuré ou si StorageGRID a été instal
 .Avant de commencer
 * Vous avez un SG5760 avec 60 disques. Si vous disposez d'un SG5712, vous devez utiliser le mode DDP par défaut.
 * Vous utilisez n'importe quel client pouvant vous connecter à StorageGRID.
-* Le client a un https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["navigateur web pris en charge"^].
+* Le client a un https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["navigateur web pris en charge"^].
 
 
 .Étapes
@@ -57,7 +80,7 @@ Où `_E5700SG_Controller_IP_` Est l'une des adresses IP du contrôleur E5700SG.
 .Avant de commencer
 * Vous avez un SG5860 avec 60 disques. Si vous disposez d'un SG5812, vous devez utiliser le mode DDP par défaut.
 * Vous utilisez n'importe quel client pouvant vous connecter à StorageGRID.
-* Le client a un https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["navigateur web pris en charge"^].
+* Le client a un https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["navigateur web pris en charge"^].
 
 
 .Étapes
@@ -76,7 +99,7 @@ Où `_SG5800_Controller_IP_` Est l'une des adresses IP du contrôleur SG5800.
 --
 .Avant de commencer
 * Vous utilisez n'importe quel client pouvant vous connecter à StorageGRID.
-* Le client a un  https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["navigateur web pris en charge"^].
+* Le client a un  https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["navigateur web pris en charge"^].
 
 
 .Étapes
@@ -100,7 +123,7 @@ La page d'accueil du programme d'installation de l'appliance StorageGRID s'affic
 --
 .Avant de commencer
 * Vous utilisez n'importe quel client pouvant vous connecter à StorageGRID.
-* Le client a un  https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["navigateur web pris en charge"^].
+* Le client a un  https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["navigateur web pris en charge"^].
 
 
 .Étapes

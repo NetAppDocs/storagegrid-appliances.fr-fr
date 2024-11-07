@@ -22,7 +22,7 @@ Cette étape est facultative. Cependant, la rationalisation et l'automatisation 
 . link:preparing-site.html["Préparer le site"]
 . link:unpacking-boxes.html["Déballez les boîtes"]
 . link:obtaining-additional-equipment-and-tools.html["Procurez-vous des équipements et outils supplémentaires"]
-. https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["Consultez les exigences relatives au navigateur Web"^]
+. https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["Consultez les exigences relatives au navigateur Web"^]
 . link:reviewing-appliance-network-connections.html["Collecte d'informations sur le réseau"]
 
 

@@ -9,10 +9,12 @@ entries:
 - title: Procédures de configuration de la maintenance
   pdf-filename: Procédures de configuration de maintenance - SG6000
   entries:
-  - title: Mettez à niveau votre système d'exploitation SANtricity sur les contrôleurs
+  - title: Mettre à niveau le système d'exploitation SANtricity sur le contrôleur
       de stockage
-    url: "/sg6000/upgrading-santricity-os-on-storage-controllers.html"
     entries:
+    - title: À propos de la mise à niveau de SANtricity OS sur des contrôleurs de
+        stockage SG6000
+      url: "/sg6000/upgrading-santricity-os-on-storage-controllers.html"
     - title: Mettez à niveau le système d'exploitation SANtricity sur les contrôleurs
         de stockage à l'aide de Grid Manager
       url: "/sg6000/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg6000.html"

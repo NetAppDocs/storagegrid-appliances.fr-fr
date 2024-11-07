@@ -52,7 +52,7 @@ KVM
  a| 
 Port série
  a| 
-** Câble série DB-9
+** Câble USB
 ** Terminal série virtuel
 
 
@@ -103,9 +103,23 @@ SOL
 
 
  a| 
+HT
+ a| 
+Le script d'amorçage principal attend la fin du démarrage du système d'exploitation.
+
+
+
+ a| 
 BONJOUR
  a| 
 Le script de démarrage principal a démarré.
+
+
+
+ a| 
+PP
+ a| 
+Le système vérifie si le FPGA doit être mis à jour.
 
 
 
@@ -156,15 +170,21 @@ StorageGRID est en cours d'exécution.
 
 == Afficher les codes d'erreur
 
-Si une erreur matérielle se produit lors du démarrage de l'appliance, le contrôleur BMC consigne un code d'erreur. Si nécessaire, vous pouvez afficher ces codes d'erreur à l'aide de l'interface BMC, puis travailler avec le support technique pour résoudre le problème.
+Si une erreur matérielle se produit lors du démarrage de l'appliance, le contrôleur BMC consigne un code d'erreur. Si nécessaire, vous pouvez afficher ces codes d'erreur à l'aide du port série de l'appareil, puis travailler avec le support technique pour résoudre le problème.
 
 .Avant de commencer
-* Vous savez comment link:accessing-bmc-interface.html["Accéder au tableau de bord BMC"].
+* Rassembler l'équipement requis :
++
+** Câble USB
+** Terminal série virtuel
+
+
 
 
 .Étapes
-. Dans le tableau de bord BMC, sélectionnez *Code POST BIOS*.
-. Passez en revue les informations affichées pour le code actuel et le code précédent.
+. Connectez-vous au port USB série situé à l'arrière de l'appareil.
+. Utiliser les paramètres `115200 8-N-1`.
+. Vérifiez les informations imprimées sur le terminal série pour le code actuel et le code précédent.
 +
 Si l'un des codes d'erreur suivants s'affiche, contactez le support technique pour résoudre le problème.
 

@@ -15,7 +15,7 @@ Vous devez accéder au programme d'installation de l'appliance StorageGRID pour 
 
 .Avant de commencer
 * Vous utilisez n'importe quel client de gestion pouvant vous connecter au réseau d'administration StorageGRID ou vous disposez d'un ordinateur portable de service.
-* Le client ou l'ordinateur portable de service a un https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["navigateur web pris en charge"^].
+* Le client ou l'ordinateur portable de service a un https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["navigateur web pris en charge"^].
 * L'appliance de services ou le contrôleur de l'appliance de stockage est connecté à tous les réseaux StorageGRID que vous souhaitez utiliser.
 * Vous connaissez l'adresse IP, la passerelle et le sous-réseau de l'appliance de services ou du contrôleur d'appliance de stockage sur ces réseaux.
 * Vous avez configuré les commutateurs réseau que vous prévoyez d'utiliser.
@@ -110,7 +110,7 @@ L'alerte n'apparaît pas la prochaine fois que vous accédez à cette URL.
 La page d'accueil du programme d'installation de l'appliance StorageGRID s'affiche. Les informations et les messages affichés lorsque vous accédez pour la première fois à cette page dépendent de la manière dont votre appareil est actuellement connecté aux réseaux StorageGRID. Des messages d'erreur peuvent s'afficher et seront résolus dans les étapes suivantes.
 
 +
-image::../media/appliance_installer_home_5700_5600.png[Capture d'écran de la partie supérieure de la page d'accueil du programme d'installation de l'appliance StorageGRID Webscale]
+image::../media/appliance_installer_home_5700_5600.png[Capture d'écran de la partie supérieure de la page d'accueil du programme d'installation de l'appliance StorageGRID]
 
 
 

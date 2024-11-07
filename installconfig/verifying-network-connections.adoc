@@ -35,7 +35,7 @@ Par exemple, vous pouvez tester le chemin d'accès entre le nœud d'appliance et
 Si la connexion réseau est valide, le message « test Ping réussi » s'affiche, avec la sortie de la commande ping répertoriée.
 
 +
-image::../media/ping_test_passed.png[Capture d'écran des résultats du test ping dans le programme d'installation de l'appliance StorageGRID Webscale]
+image::../media/ping_test_passed.png[Capture d'écran des résultats du test ping dans le programme d'installation de l'appliance StorageGRID]
 
 
 

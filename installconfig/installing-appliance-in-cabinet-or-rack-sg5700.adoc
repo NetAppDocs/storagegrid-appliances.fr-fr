@@ -14,7 +14,7 @@ summary: 'Vous installez un ensemble de rails dans votre armoire ou rack, puis f
 Vous installez un ensemble de rails dans votre armoire ou rack, puis faites glisser l'appareil sur les rails. Si vous disposez d'un SG5760, installez les lecteurs après l'installation de l'appliance.
 
 .Avant de commencer
-* Vous avez passé en revue le document consignes de sécurité inclus dans la boîte et compris les précautions à prendre pour déplacer et installer le matériel.
+* Vous avez passé en revue le https://library.netapp.com/ecm/ecm_download_file/ECMP12475945["Avis de sécurité"^] document inclus dans l'emballage et comprendre les précautions à prendre pour déplacer et installer le matériel.
 * Les instructions sont fournies avec le kit de rails.
 
 

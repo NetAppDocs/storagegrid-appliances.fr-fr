@@ -58,12 +58,12 @@ Les appliances suivantes ont une interface BMC qui doit être configurée :
 +
 ** Configurez le logiciel SANtricity System Manager (SG5700, SGS5800, SG6000 et SG6100) que vous utiliserez pour surveiller le matériel
 ** Changer de mode RAID
-** Accéder à l'interface BMC du contrôleur SG6000-CN ou SG6100-CN
+** link:../installconfig/accessing-bmc-interface.html["Accéder à l'interface BMC"] Pour le contrôleur SG6000-CN ou SG6100-CN
 
 
 * Appliances de services
 +
-** Accédez à l'interface BMC pour les systèmes SG100, SG110, SG1000 et SG1100
+** link:../installconfig/accessing-bmc-interface.html["Accéder à l'interface BMC"] Pour les systèmes SG100, SG110, SG1000 et SG1100
 
 
 

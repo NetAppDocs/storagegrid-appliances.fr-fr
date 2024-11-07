@@ -4,7 +4,7 @@
 
 .Avant de commencer
 * Vous disposez du numéro de série du dispositif de stockage sur lequel le composant doit être remplacé.
-* Vous êtes connecté au Grid Manager à l'aide d'un https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["navigateur web pris en charge"^].
+* Vous êtes connecté au Gestionnaire de grille à l'aide d'un https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["navigateur web pris en charge"^].
 
 
 .Description de la tâche
@@ -31,7 +31,7 @@ NOTE: Sélectionnez l'alerte, et non l'en-tête d'un groupe d'alertes.
 
 .. Notez le nom du nœud et l'étiquette d'identification unique du composant qui a échoué.
 +
-image::../media/nic-alert-sgf6112.jpg[Alerte avec ID de composant]
+image::../media/nic-alert-sgf6112.png[Alerte avec ID de composant]
 
 
 

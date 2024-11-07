@@ -1,5 +1,9 @@
 ---
 indexpage:
+  title: Déployez un nœud d'appliance
+  summary: Déployer un nœud d'appliance StorageGRID et vérifier son fonctionnement.
+  keywords: storagegrid deployment, deploy storagegrid
+  lead: Déployer un nœud d'appliance StorageGRID et vérifier son fonctionnement.
   tiles:
   - title: Déployez l'appliance
     links:

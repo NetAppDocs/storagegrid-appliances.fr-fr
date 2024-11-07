@@ -108,6 +108,39 @@ Contrôleur de calcul SG6000-CN avec cadre avant retiré
 Tiroir contrôleur E2860 avec panneau avant retiré (le tiroir d'extension en option apparaît identique)
 
 |===
+Cette figure montre l'emplacement de l'alimentation et identifie les LED à l'arrière du contrôleur de calcul SG6000-CN utilisé dans les SG6060 et SG6060X. Des LED d'état et d'activité supplémentaires se trouvent sur les ports de l'appliance. Ces voyants peuvent varier en fonction du modèle de l'appareil.
+
+image::../media/q2023_rear_leds.png[LED arrière SG6000-CN]
+
+[cols="1a,2a,3a"]
+|===
+| Légende | LED | État 
+
+
+ a| 
+1
+ a| 
+Voyant d'alimentation
+ a| 
+* Vert, fixe : l'appareil est sous tension, le bouton d'alimentation est sous tension.
+* Vert, clignotant : l'appareil est sous tension, le bouton d'alimentation est hors tension.
+* Éteint : l'appareil n'est pas alimenté.
+* Orange : panne de l'alimentation.
+
+
+
+
+ a| 
+2
+ a| 
+Identifier la LED
+ a| 
+* Bleu clignotant : identifie l'appliance dans l'armoire ou le rack.
+* Bleu, fixe : identifie l'appliance dans l'armoire ou le rack.
+* Éteint : l'appareil n'est pas visuellement identifiable dans l'armoire ou le rack.
+
+
+|===
 
 
 === Vue arrière SG6060
@@ -259,7 +292,7 @@ NOTE: Le logiciel StorageGRID n'est pas préinstallé sur l'appliance. Ce logici
 
 ==== Connecteurs SG6000-CN
 
-image::../media/sg6000_cn_rear_connectors.gif[Connecteurs arrière SG6000-CN]
+image::../media/sg6000_cn_rear_connectors.png[Connecteurs arrière SG6000-CN]
 
 [cols="1a,2a,2a,3a"]
 |===

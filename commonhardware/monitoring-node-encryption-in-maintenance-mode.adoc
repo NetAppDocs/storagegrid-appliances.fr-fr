@@ -13,7 +13,7 @@ summary: 'Si vous avez activé le chiffrement de nœud pour l"appliance lors de 
 [role="lead"]
 Si vous avez activé le chiffrement des nœuds pour l'appliance lors de l'installation, vous pouvez surveiller l'état du chiffrement des nœuds de chaque nœud d'appliance, notamment les informations détaillées sur l'état de chiffrement des nœuds et le serveur de gestion des clés (KMS).
 
-Voir https://docs.netapp.com/us-en/storagegrid-118/admin/kms-configuring.html["Configurer les serveurs de gestion des clés"^] Pour plus d'informations sur l'implémentation de KMS pour les appliances StorageGRID,
+Pour plus d'informations sur l'implémentation de KMS pour les appliances StorageGRID, reportez-vous à la section https://docs.netapp.com/us-en/storagegrid/admin/kms-configuring.html["Configurer les serveurs de gestion des clés"^].
 
 .Avant de commencer
 * Vous avez activé le cryptage de nœud pour l'appliance pendant l'installation. Une fois l'appliance installée, vous ne pouvez pas activer le chiffrement des nœuds.
@@ -32,7 +32,7 @@ La page Node Encryption comprend trois sections :
 ** L'état du chiffrement indique si le chiffrement de nœud est activé ou désactivé pour l'appliance.
 ** Détails du serveur de gestion des clés affiche des informations sur le KMS utilisé pour crypter l'appliance. Vous pouvez développer les sections de certificat du serveur et du client pour afficher les détails et l'état du certificat.
 +
-*** Pour résoudre les problèmes avec les certificats eux-mêmes, tels que le renouvellement des certificats expirés, consultez le https://docs.netapp.com/us-en/storagegrid-118/admin/kms-configuring.html["Instructions de configuration de KMS"^].
+*** Pour résoudre les problèmes liés aux certificats eux-mêmes, tels que le renouvellement des certificats expirés, reportez-vous au https://docs.netapp.com/us-en/storagegrid/admin/kms-configuring.html["Instructions de configuration de KMS"^] .
 *** En cas de problèmes inattendus lors de la connexion aux hôtes KMS, vérifiez que le système link:../commonhardware/checking-dns-server-configuration.html["Les serveurs DNS sont corrects"] et ça link:../installconfig/configuring-network-links.html["la mise en réseau de l'appliance est correctement configurée"].
 *** Si vous ne parvenez pas à résoudre les problèmes liés à votre certificat, contactez le support technique.
 
@@ -73,7 +73,7 @@ Si vous devez conserver les données sur l'appliance, vous devez effectuer une p
 
 CAUTION: Lorsque le KMS est effacé, les données de l'appliance seront définitivement supprimées et ne sont plus accessibles. Ces données ne peuvent pas être récupérées.
 
-https://docs.netapp.com/us-en/storagegrid-118/maintain/grid-node-decommissioning.html["Mise hors service du nœud"^] Pour déplacer toutes les données qu'il contient vers d'autres nœuds de StorageGRID.
+https://docs.netapp.com/us-en/storagegrid/maintain/grid-node-decommissioning.html["Mise hors service du nœud"^] Pour déplacer les données qu'il contient vers d'autres nœuds dans StorageGRID.
 
 .Description de la tâche
 L'effacement de la configuration KMS de l'appliance désactive le cryptage des nœuds, supprimant ainsi l'association entre le nœud de l'appliance et la configuration KMS pour le site StorageGRID. Les données de l'appliance sont ensuite supprimées et l'appliance reste en état préinstallation. Ce processus ne peut pas être inversé.
@@ -130,4 +130,4 @@ Le chiffrement de nœud ne peut pas être réactivé sur l'appliance tant qu'il 
 
 
 .Une fois que vous avez terminé
-Après le redémarrage de l'appliance et après avoir vérifié que KMS a été effacé et que l'appliance est dans un état de pré-installation, vous pouvez physiquement retirer l'appliance de votre système StorageGRID. Voir la https://docs.netapp.com/us-en/storagegrid-118/maintain/preparing-appliance-for-reinstallation-platform-replacement-only.html["instructions de préparation de l'appareil pour la réinstallation"^].
+Après le redémarrage de l'appliance et après avoir vérifié que KMS a été effacé et que l'appliance est dans un état de pré-installation, vous pouvez physiquement retirer l'appliance de votre système StorageGRID. Voir la https://docs.netapp.com/us-en/storagegrid/maintain/preparing-appliance-for-reinstallation-platform-replacement-only.html["instructions de préparation de l'appareil pour la réinstallation"^].

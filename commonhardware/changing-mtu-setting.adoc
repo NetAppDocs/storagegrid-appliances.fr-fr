@@ -32,7 +32,7 @@ Si le réseau client ou administrateur n'a pas été configuré dans le programm
 Vous avez le `Passwords.txt` Fichier pour utiliser l'outil Modifier IP.
 
 .Étapes
-Accédez à l'outil Modifier IP et mettez à jour les paramètres MTU comme décrit dans https://docs.netapp.com/us-en/storagegrid-118/maintain/changing-nodes-network-configuration.html["Modifier la configuration réseau du nœud"^].
+Accédez à l'outil Modifier IP et mettez à jour les paramètres MTU comme décrit dans https://docs.netapp.com/us-en/storagegrid/maintain/changing-nodes-network-configuration.html["Modifier la configuration réseau du nœud"^].
 
 
 

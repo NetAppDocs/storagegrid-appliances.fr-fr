@@ -57,7 +57,7 @@ CAUTION: Ne forcez pas trop lorsque vous fermez la poignée.
 Lorsque le lecteur est complètement inséré, vous entendez un clic.
 
 +
-Lorsque les deux disques SSD fonctionnent normalement, le système restaure automatiquement la fonctionnalité de cache de lecture. C'est possible https://docs.netapp.com/us-en/storagegrid-118/monitor/running-diagnostics.html["exécuter les diagnostics"^] pour surveiller le taux d'accès au cache de lecture. Comme le cache vient d'être reconstruit, le taux d'accès peut être faible au départ, mais il devrait augmenter au fil du temps lorsque le cache est rerempli par les clients accédant aux données d'objet.
+Lorsque les deux disques SSD fonctionnent normalement, le système restaure automatiquement la fonctionnalité de cache de lecture. Vous pouvez https://docs.netapp.com/us-en/storagegrid/monitor/running-diagnostics.html["exécuter les diagnostics"^] contrôler le taux d'accès au cache de lecture. Comme le cache vient d'être reconstruit, le taux d'accès peut être faible au départ, mais il devrait augmenter au fil du temps lorsque le cache est rerempli par les clients accédant aux données d'objet.
 
 
 

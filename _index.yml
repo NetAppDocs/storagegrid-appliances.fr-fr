@@ -1,5 +1,13 @@
 ---
 indexpage:
+  title: Documentation de l'appliance StorageGRID
+  summary: NetApp StorageGRID est une suite de stockage objet Software-defined qui
+    prend en charge un large éventail d'utilisations dans les environnements multiclouds
+    publics, privés et hybrides. StorageGRID offre une prise en charge native de l'API
+    Amazon S3 et propose des innovations de pointe, telles que la gestion automatisée
+    du cycle de vie, pour stocker, sécuriser, protéger et conserver les données non
+    structurées de manière économique sur de longues périodes.
+  keywords: storagegrid appliances, storagegrid hardware, install, configure
   lead: NetApp StorageGRID est une suite de stockage objet Software-defined qui prend
     en charge un large éventail d'utilisations dans les environnements multiclouds
     publics, privés et hybrides. StorageGRID offre une prise en charge native de l'API
@@ -10,9 +18,9 @@ indexpage:
   - title: Commencez
     links:
     - title: Découvrez StorageGRID
-      url: https://docs.netapp.com/us-en/storagegrid-118/primer/index.html
+      url: https://docs.netapp.com/us-en/storagegrid/primer/index.html
     - title: Démarrage rapide de StorageGRID
-      url: https://docs.netapp.com/us-en/storagegrid-118/primer/quick-start.html
+      url: https://docs.netapp.com/us-en/storagegrid/primer/quick-start.html
     - title: Démarrage rapide de l'installation de l'appareil
       url: "/installconfig/index.html"
     - title: Automatisez l'installation et la configuration
@@ -23,7 +31,7 @@ indexpage:
     links:
     - title: SG100 et SG1000
       url: "/installconfig/hardware-description-sg100-and-1000.html"
-    - title: SG110 et SG1100 (nouveau)
+    - title: SG110 et SG1100
       url: "/installconfig/hardware-description-sg110-and-1100.html"
     - title: SG5700
       url: "/installconfig/hardware-description-sg5700.html"
@@ -61,6 +69,8 @@ indexpage:
       url: "/landing-maintain-sgf6112/index.html"
   - title: Logiciel StorageGRID
     links:
+    - title: Documentation StorageGRID 11.9
+      url: https://docs.netapp.com/us-en/storagegrid/index.html
     - title: Documentation StorageGRID 11.8
       url: https://docs.netapp.com/us-en/storagegrid-118/index.html
     - title: Documentation StorageGRID 11.7

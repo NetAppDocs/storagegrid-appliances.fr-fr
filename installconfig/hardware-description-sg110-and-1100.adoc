@@ -43,6 +43,39 @@ Les deux disques SSD (Solid-State Drives), indiqués par le contour orange, sont
 
 Les emplacements de lecteur restants sont vides.
 
+Cette figure montre l'emplacement du bloc d'alimentation et identifie les voyants à l'arrière du SG110 et du SG1100. Des LED d'état et d'activité supplémentaires se trouvent sur les ports de l'appliance. Ces voyants peuvent varier en fonction du modèle de l'appareil.
+
+image::../media/q2024_rear_leds.png[LED arrière SG110 et SG1100]
+
+[cols="1a,2a,3a"]
+|===
+| Légende | LED | État 
+
+
+ a| 
+1
+ a| 
+Voyant d'alimentation
+ a| 
+* Vert, fixe : l'appareil est sous tension, le bouton d'alimentation est sous tension.
+* Vert, clignotant : l'appareil est sous tension, le bouton d'alimentation est hors tension.
+* Éteint : l'appareil n'est pas alimenté.
+* Orange : panne de l'alimentation.
+
+
+
+
+ a| 
+2
+ a| 
+Identifier la LED
+ a| 
+* Bleu clignotant : identifie l'appliance dans l'armoire ou le rack.
+* Bleu, fixe : identifie l'appliance dans l'armoire ou le rack.
+* Éteint : l'appareil n'est pas visuellement identifiable dans l'armoire ou le rack.
+
+
+|===
 
 
 == Connecteurs SG110
@@ -215,13 +248,13 @@ Les exemples suivants décrivent comment optimiser les capacités de l'appliance
 * Utilisez deux appliances SG110 ou deux appliances SG1100 pour fournir des services de passerelle en les configurant en tant que nœuds de passerelle.
 +
 
-IMPORTANT: Ne déployez pas les appliances de services SG110 et SG1100 sur le même site. Cela peut entraîner des performances imprévisibles.
+IMPORTANT: L'association d'appliances de services avec différents niveaux de performance sur le même site, comme un système SG100 ou SG110 avec un système SG1000 ou SG1100, peut entraîner des résultats imprévisibles et incohérents lors de l'utilisation de plusieurs nœuds dans un groupe à haute disponibilité ou de l'équilibrage de la charge des clients sur plusieurs appliances de services
 
 * Utilisez deux appliances SG110 ou deux appliances SG1100 pour assurer la redondance de certains services d'administration du grid. Pour ce faire, configurez chaque appliance en tant que nœuds d'administration.
 * Utilisez deux appliances SG110 ou deux appliances SG1100 pour fournir des services hautement disponibles d'équilibrage de charge et de mise en forme du trafic accessibles via une ou plusieurs adresses IP virtuelles. Pour ce faire, les appliances sont configurés comme des combinaisons de nœuds d'administration ou de nœuds de passerelle et vous ajoutez les deux nœuds au même groupe haute disponibilité.
 +
 
-IMPORTANT: Si vous utilisez des nœuds d'administration et des nœuds de passerelle dans le même groupe haute disponibilité, le port Admin nœud seul ne basculera pas. Reportez-vous aux instructions pour https://docs.netapp.com/us-en/storagegrid-118/admin/configure-high-availability-group.html["Configuration des groupes haute disponibilité"^].
+IMPORTANT: Si vous utilisez des nœuds d'administration et des nœuds de passerelle dans le même groupe haute disponibilité, le port Admin nœud seul ne basculera pas. Voir les instructions pour https://docs.netapp.com/us-en/storagegrid/admin/configure-high-availability-group.html["Configuration des groupes haute disponibilité"^].
 
 
 

@@ -2,7 +2,7 @@
 permalink: sg110-1100/turning-sg110-and-sg1100-identify-led-on-and-off.html 
 sidebar: sidebar 
 keywords: sg110, sg1100, locate, find, locating, finding, identify, blue led, blue light 
-summary: 'Le voyant d"identification bleu situé à l"avant de l"appareil peut être allumé pour faciliter la localisation de l"appareil dans un centre de données.' 
+summary: 'Le voyant d"identification bleu situé à l"avant et à l"arrière de l"appareil peut être allumé pour faciliter la localisation de l"appareil dans un centre de données.' 
 ---
 = Allumer et éteindre le voyant d'identification du SG110 ou du SG1100
 :allow-uri-read: 

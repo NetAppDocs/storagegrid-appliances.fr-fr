@@ -4,8 +4,8 @@
 
 .Avant de commencer
 * Si vous n'avez pas obtenu la version du système d'exploitation SANtricity que vous souhaitez mettre à niveau vers à partir de https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["Téléchargement NetApp : appliance StorageGRID"^], vous avez consulté https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["Téléchargement NetApp : appliance StorageGRID"^] ou le https://imt.netapp.com/matrix/#welcome["Matrice d'interopérabilité NetApp (IMT)"^] Pour vérifier que la version de SANtricity OS utilisée pour la mise à niveau est compatible avec votre appliance.
-* Vous avez le https://docs.netapp.com/us-en/storagegrid-118/admin/admin-group-permissions.html["Maintenance ou autorisation d'accès racine"^].
-* Vous êtes connecté au Grid Manager à l'aide d'un https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["navigateur web pris en charge"^].
+* Vous avez le https://docs.netapp.com/us-en/storagegrid/admin/admin-group-permissions.html["Maintenance ou autorisation d'accès racine"^].
+* Vous êtes connecté au Gestionnaire de grille à l'aide d'un https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["navigateur web pris en charge"^].
 * Vous avez la phrase secrète pour le provisionnement.
 
 
@@ -21,7 +21,7 @@ CAUTION: Les étapes suivantes s'appliquent uniquement lorsque vous utilisez le 
 NOTE: Cette procédure met automatiquement à niveau la NVSRAM vers la version la plus récente associée à la mise à niveau du système d'exploitation SANtricity. Vous n'avez pas besoin d'appliquer un fichier de mise à niveau NVSRAM distinct.
 
 
-NOTE: Veillez à appliquer le dernier correctif StorageGRID avant de commencer cette procédure. Voir https://docs.netapp.com/us-en/storagegrid-118/maintain/storagegrid-hotfix-procedure.html["Procédure de correctif StorageGRID"^] pour plus d'informations.
+NOTE: Veillez à appliquer le dernier correctif StorageGRID avant de commencer cette procédure. Voir https://docs.netapp.com/us-en/storagegrid/maintain/storagegrid-hotfix-procedure.html["Procédure de correctif StorageGRID"^] pour plus de détails.
 
 .Étapes
 . [[download-santricity-os]] Téléchargez le nouveau fichier du logiciel SANtricity OS depuis le site https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["Téléchargement NetApp : appliance StorageGRID"^].

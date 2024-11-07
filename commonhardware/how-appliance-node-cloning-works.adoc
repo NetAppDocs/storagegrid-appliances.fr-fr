@@ -38,45 +38,6 @@ Lorsque vous installez l'appliance de remplacement, vous devez spécifier des ad
 
 
 
-== Compatibilité de l'appareil cible
-
-Les appliances de remplacement doivent être du même type que le nœud source qu'elles remplacent et doivent tous deux faire partie du même site StorageGRID logique.
-
-* Une appliance de services de remplacement peut être différente du nœud d'administration ou du nœud de passerelle qu'elle remplace.
-+
-** Vous pouvez cloner une appliance de nœud source SG100 vers une appliance cible de services SG110, SG1000 ou SG1100. Le clonage du système SG100 vers une appliance cible de services SG1000 ou SG1100 offre des fonctionnalités supérieures au nœud d'administration ou au nœud de passerelle.
-** Vous pouvez cloner une appliance de nœud source SG110 vers une cible d'appliance de services SG1100 afin d'optimiser les fonctionnalités du nœud d'administration ou du nœud de passerelle.
-** Vous pouvez cloner une appliance de nœud source SG1000 vers une appliance cible de services SG100, SG110 ou SG1100. Le clonage du système SG1000 sur une appliance cible de services SG100 ou SG110 vous permet de redéployer le système SG1000 pour une application plus exigeante.
-** Vous pouvez cloner une appliance de nœud source SG1100 vers une appliance cible de services SG110 afin de redéployer le SG1100 pour une application plus exigeante.
-+
-Par exemple, si une appliance de nœud source SG1100 ou SG1000 est utilisée comme nœud d'administration et que vous souhaitez l'utiliser comme nœud d'équilibrage de charge dédié.
-
-** Le remplacement d'une appliance de nœud source SG1100 par une appliance de services cible SG110 réduit la vitesse maximale des ports réseau de 100 GbE à 25 GbE.
-** Le remplacement d'une appliance de nœud source SG1000 par un dispositif cible de services SG100 réduit la vitesse maximale des ports réseau de 100 GbE à 25 GbE.
-** Les appliances de services ont des connecteurs réseau différents. Il peut être nécessaire de remplacer les câbles ou les modules SFP pour changer de type d'appliance.
-
-
-* Une appliance de stockage de remplacement doit avoir une capacité supérieure à celle du nœud de stockage qu'elle remplace.
-+
-** Si l'appliance de stockage cible dispose du même nombre de disques que le nœud source, les disques de l'appliance cible doivent avoir une capacité supérieure (en To).
-** Si vous prévoyez d'utiliser le même mode RAID sur le nœud cible que celui utilisé sur le nœud source, Ou en mode RAID moins efficace pour le stockage (par exemple, le passage de RAID 6 à DDP), les disques de l'appliance cible doivent être plus grands (en To) que les disques de l'appliance source.
-** Si le nombre de disques standard installés sur une appliance de stockage cible est inférieur au nombre de disques du nœud source, en raison de l'installation de disques SSD, la capacité de stockage globale des disques standard de l'appliance cible (en To) Doit dépasser la capacité totale du disque fonctionnel de tous les disques du nœud de stockage source.
-+
-Par exemple, lors du clonage d'une appliance de nœud de stockage source SG5760 avec 60 disques dans une appliance SG6060 cible avec 58 disques standard, des disques plus grands doivent être installés dans l'appliance SG6060 cible avant le clonage pour maintenir la capacité de stockage. (Les deux emplacements de disque contenant des disques SSD dans l'appliance cible ne sont pas inclus dans la capacité totale de stockage de l'appliance.)
-
-+
-Toutefois, si une appliance de nœud source SG5760 de 60 disques est configurée avec des pools de disques dynamiques SANtricity DDP-8, la configuration d'une appliance cible SG6060 de même taille de 58 disques avec DDP-16 peut faire de l'appliance SG6060 une cible de clone valide en raison de son efficacité du stockage améliorée.
-
-+
-Vous pouvez afficher des informations sur le mode RAID actuel du nœud de l'appliance source sur la page *NODES* dans Grid Manager. Sélectionnez l'onglet *stockage* de l'appareil.
-
-
-
-* Le nombre de volumes d'une appliance de stockage cible doit être supérieur ou égal au nombre de volumes du nœud source. Vous ne pouvez pas cloner un nœud source avec 16 volumes de magasin d'objets (rangedb) vers une appliance de stockage cible avec 12 volumes de magasin d'objets, même si l'appliance cible a une capacité supérieure au nœud source. La plupart des appliances de stockage disposent de 16 volumes de stockage objet, à l'exception de l'appliance SGF6112 qui ne dispose que de 12 volumes de stockage objet.
-
-
-
-
 == Quelles informations ne sont pas clonées ?
 
 Les configurations d'appliance suivantes ne sont pas transférées vers l'appliance de remplacement pendant le clonage. Vous devez les configurer lors de la configuration initiale de l'appliance de remplacement.
@@ -101,3 +62,120 @@ Si l'un des problèmes suivants est rencontré lors du clonage, le processus de 
 
 
 Vous devez résoudre chaque problème pour que le clonage puisse continuer.
+
+
+
+== Compatibilité de l'appareil cible
+
+Les appliances de remplacement doivent être du même type que le nœud source qu'elles remplacent et doivent tous deux faire partie du même site StorageGRID logique.
+
+Avant de procéder au clonage, examinez les considérations générales relatives au clonage ainsi que les informations et restrictions spécifiques relatives au clonage pour chaque type d'appliance.
+
+
+
+=== Considérations générales sur le clonage des appliances de services
+
+* Le modèle d'une appliance de services de remplacement peut être différent du nœud d'administration ou du nœud de passerelle qu'elle remplace.
+* Les appliances de services ont des connecteurs réseau différents. Il peut être nécessaire de remplacer les câbles ou les modules SFP pour changer de type d'appliance.
+
+
+
+
+=== Considérations générales sur le clonage des appliances de stockage
+
+* Une appliance de stockage de remplacement doit avoir une capacité supérieure à celle du nœud de stockage qu'elle remplace.
++
+** Si l'appliance de stockage cible dispose du même nombre de disques que le nœud source, les disques de l'appliance cible doivent avoir une capacité supérieure (en To).
+** Si vous prévoyez d'utiliser le même mode RAID sur le nœud cible que celui utilisé sur le nœud source, Ou en mode RAID moins efficace pour le stockage (par exemple, le passage de RAID 6 à DDP), les disques de l'appliance cible doivent être plus grands (en To) que les disques de l'appliance source.
+** Voici quelques exceptions aux considérations générales relatives au clonage d'une appliance de stockage :
++
+*** Si le nombre de disques standard installés sur une appliance de stockage cible est inférieur au nombre de disques du nœud source, en raison de l'installation de disques SSD, la capacité de stockage globale des disques standard de l'appliance cible (en To) Doit dépasser la capacité totale du disque fonctionnel de tous les disques du nœud de stockage source.
++
+Par exemple, lors du clonage d'une appliance de nœud de stockage source SG5760 avec 60 disques dans une appliance SG6060 cible avec 58 disques standard, des disques plus grands doivent être installés dans l'appliance SG6060 cible avant le clonage pour maintenir la capacité de stockage. (Les deux emplacements de disque contenant des disques SSD dans l'appliance cible ne sont pas inclus dans la capacité totale de stockage de l'appliance.)
+
++
+Toutefois, si une appliance de nœud source SG5760 de 60 disques est configurée avec SANtricity Dynamic Disk Pools DDP-8 (DDP), la configuration d'une appliance SG6060 cible de même taille de 58 disques avec DDP-16 peut faire de l'appliance SG6060 une cible de clone valide en raison de son efficacité du stockage améliorée.
+
++
+Vous pouvez afficher des informations sur le mode RAID actuel du nœud de l'appliance source sur la page *NODES* dans Grid Manager. Sélectionnez l'onglet *stockage* de l'appareil.
+
+*** Le nombre de volumes d'une appliance de stockage cible doit être supérieur ou égal au nombre de volumes du nœud source. Vous ne pouvez pas cloner un nœud source avec 16 volumes de magasin d'objets (rangedb) vers une appliance de stockage cible avec 12 volumes de magasin d'objets, même si l'appliance cible a une capacité supérieure au nœud source. La plupart des appliances de stockage disposent de 16 volumes de stockage objet, à l'exception de l'appliance SGF6112 qui ne dispose que de 12 volumes de stockage objet.
+
+
+
+
+
+
+
+
+=== Informations et restrictions de clonage de l'appliance SG100
+
+Vous pouvez cloner une appliance de nœud source SG100 vers une appliance cible de services SG110, SG1000 ou SG1100. Le clonage du système SG100 vers une appliance cible de services SG1000 ou SG1100 offre des fonctionnalités supérieures au nœud d'administration ou au nœud de passerelle.
+
+
+
+=== Informations et restrictions de clonage de l'appliance SG110
+
+Vous pouvez cloner une appliance de nœud source SG110 vers une cible d'appliance de services SG1100 afin d'optimiser les fonctionnalités du nœud d'administration ou du nœud de passerelle.
+
+
+
+=== Informations et restrictions de clonage de l'appliance SG1000
+
+Vous pouvez cloner une appliance de nœud source SG1000 vers une appliance cible de services SG100, SG110 ou SG1100.
+
+* Le clonage du système SG1000 sur une appliance cible de services SG100 ou SG110 vous permet de redéployer le système SG1000 pour une application plus exigeante.
+* Le remplacement d'une appliance de nœud source SG1000 par un dispositif cible de services SG100 réduit la vitesse maximale des ports réseau de 100 GbE à 25 GbE.
+
+
+
+
+=== Informations et restrictions de clonage de l'appliance SG1100
+
+Vous pouvez cloner une appliance de nœud source SG1100 vers une appliance cible de services SG110.
+
+* Le clonage du SG1100 vers une appliance cible de services SG110 vous permet de redéployer le SG1100 pour une application plus exigeante. Par exemple, si une appliance de nœud source SG1100 est utilisée en tant que nœud d'administration et que vous souhaitez l'utiliser comme nœud d'équilibrage de charge dédié.
+* Le remplacement d'une appliance de nœud source SG1100 par une appliance de services cible SG110 réduit la vitesse maximale des ports réseau de 100 GbE à 25 GbE.
+
+
+
+
+=== Informations et restrictions de clonage de l'appliance SG5712
+
+Vous pouvez cloner une appliance de nœud source SG5712 configurée avec DDP sur une appliance de stockage cible SG5812.
+
+
+
+=== Informations et restrictions de clonage de l'appliance SG5760
+
+* Vous pouvez cloner une appliance de nœud source SG5760 configurée avec DDP16 vers une appliance de stockage cible SG5860 configurée avec DDP16.
+* Une appliance de nœud source SG5760 configurée avec DDP _Cannot_ être clonée vers une appliance de stockage cible SG5860 configurée avec DDP.
+* Une appliance de nœud source SG5760 configurée avec DDP ou DDP-16 _ne peut pas_ être clonée vers une appliance de stockage cible SG6160 avec un mode RAID correspondant.
+
+
+
+
+=== Informations et restrictions de clonage de l'appliance SG5812
+
+Vous pouvez cloner une appliance SG5812 en tant que source ou cible.
+
+
+
+=== Informations et restrictions de clonage de l'appliance SG5860
+
+Vous pouvez cloner une appliance SG5860 en tant que source ou cible avec certaines restrictions (répertoriées dans les informations de clonage de l'appliance et les restrictions applicables à chaque source).
+
+
+
+=== Informations et restrictions sur le clonage de l'appliance SG6060
+
+* Vous pouvez cloner une appliance de nœud source SG6060 configurée avec DDP ou DDP16 vers une appliance de stockage cible SG5860 avec un mode RAID correspondant.
+* Vous pouvez cloner une appliance de nœud source SG6060 sans aucun tiroir d'extension vers une appliance cible de stockage SG6160 sans tiroir d'extension si les tailles de disques et les modes RAID sont identiques.
+* Une appliance de nœud source SG6060 avec un nombre illimité de tiroirs d'extension _ne peut pas_ être clonée vers une appliance de stockage cible SG6160 même si le nombre de tiroirs d'extension, la taille des disques et les modes RAID sont identiques.
+
+
+
+
+=== Informations et restrictions de clonage de l'appliance SG6160
+
+Vous pouvez cloner une appliance SG6160 en tant que source ou cible avec certaines restrictions (répertoriées dans les informations de clonage de l'appliance et les restrictions applicables à chaque source).

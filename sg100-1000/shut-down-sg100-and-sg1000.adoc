@@ -14,8 +14,7 @@ summary: 'Arrêtez l"appareil de services pour effectuer la maintenance du maté
 Arrêtez l'appareil de services pour effectuer la maintenance du matériel.
 
 .Avant de commencer
-* Vous avez physiquement link:locating-controller-in-data-center.html["situé l'appareil de services - effectué"] nécessitant une maintenance dans le data center.
-
+Vous avez physiquement link:locating-controller-in-data-center.html["situé l'appareil de services - effectué"] nécessitant une maintenance dans le data center.
 
 .Description de la tâche
 Pour éviter toute interruption de service, arrêtez l'appliance pendant une fenêtre de maintenance planifiée lorsque les périodes d'interruption de service sont acceptables.

@@ -19,7 +19,7 @@ Vous pouvez activer le chiffrement au niveau du nœud et du disque afin de prot�
 
 Pour plus de sécurité, vous pouvez effectuer les deux niveaux de cryptage sur les disques pris en charge.
 
-Voir https://docs.netapp.com/us-en/storagegrid-118/admin/reviewing-storagegrid-encryption-methods.html["Méthodes de cryptage StorageGRID"^] Pour plus d'informations sur toutes les méthodes de chiffrement disponibles pour les appliances StorageGRID.
+Pour plus d'informations sur toutes les méthodes de chiffrement disponibles pour les appliances StorageGRID, reportez-vous à la section https://docs.netapp.com/us-en/storagegrid/admin/reviewing-storagegrid-encryption-methods.html["Méthodes de cryptage StorageGRID"^].
 
 
 
@@ -30,7 +30,7 @@ Si vous activez le chiffrement des nœuds, les disques de votre appliance peuven
 Si vous utilisez ConfigBuilder pour générer un fichier JSON, vous pouvez activer le chiffrement de nœud automatiquement. Voir link:automating-appliance-installation-and-configuration.html["Automatisez l'installation et la configuration de l'appliance"].
 
 .Avant de commencer
-Passez en revue les informations sur https://docs.netapp.com/us-en/storagegrid-118/admin/kms-configuring.html["Configuration de KMS"^].
+Passez en revue les informations sur https://docs.netapp.com/us-en/storagegrid/admin/kms-configuring.html["Configuration de KMS"^].
 
 .Description de la tâche
 Une appliance pour laquelle le chiffrement des nœuds est activé se connecte au serveur de gestion externe des clés (KMS) configuré pour le site StorageGRID. Chaque cluster KMS (ou KMS) gère les clés de chiffrement pour tous les nœuds d'appliance du site. Ces clés cryptent et décrypter les données sur chaque disque d'une appliance sur laquelle le cryptage des nœuds est activé.
@@ -42,7 +42,7 @@ Un KMS peut être configuré dans Grid Manager avant ou après l'installation de
 
 
 
-CAUTION: Lorsqu'un dispositif est installé et que le chiffrement de nœud est activé, une clé temporaire est attribuée. Les données de l'appliance ne sont pas protégées tant que l'appliance n'est pas connectée au système de gestion des clés (KMS) et qu'une clé de sécurité KMS n'est pas installée. Voir la https://docs.netapp.com/us-en/storagegrid-118/admin/kms-overview-of-kms-and-appliance-configuration.html["Présentation de la configuration de l'appliance KM"^] pour plus d'informations.
+CAUTION: Lorsqu'un dispositif est installé et que le chiffrement de nœud est activé, une clé temporaire est attribuée. Les données de l'appliance ne sont pas protégées tant que l'appliance n'est pas connectée au système de gestion des clés (KMS) et qu'une clé de sécurité KMS n'est pas installée. Pour plus d'informations, reportez-vous au https://docs.netapp.com/us-en/storagegrid/admin/kms-overview-of-kms-and-appliance-configuration.html["Présentation de la configuration de l'appliance KM"^].
 
 Sans la clé KMS requise pour décrypter le disque, les données de l'appliance ne peuvent pas être récupérées et sont perdues. C'est le cas lorsque la clé de déchiffrement ne peut pas être récupérée à partir du KMS. La clé devient inaccessible si un client efface la configuration KMS, une clé KMS expire, la connexion au KMS est perdue ou l'appliance est supprimée du système StorageGRID dans lequel ses clés KMS sont installées.
 
@@ -107,7 +107,7 @@ Le chiffrement de disque ne s'applique pas aux disques gérés par SANtricity. S
 Vous pouvez activer le chiffrement des lecteurs lors de l'installation initiale de l'appliance avant de charger Grid Manager. Vous pouvez également activer le chiffrement des nœuds ou modifier votre phrase secrète en plaçant l'appliance en mode maintenance.
 
 .Avant de commencer
-Passez en revue les informations sur https://docs.netapp.com/us-en/storagegrid-118/admin/reviewing-storagegrid-encryption-methods.html["Méthodes de cryptage StorageGRID"^].
+Passez en revue les informations sur https://docs.netapp.com/us-en/storagegrid/admin/reviewing-storagegrid-encryption-methods.html["Méthodes de cryptage StorageGRID"^].
 
 .Description de la tâche
 Une phrase de passe est définie lorsque le chiffrement de disque est activé au départ. Si un nœud de calcul est remplacé ou si un SED chiffré est déplacé vers un nouveau nœud de calcul, vous devez saisir à nouveau manuellement la phrase de passe.

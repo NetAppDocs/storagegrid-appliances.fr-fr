@@ -239,6 +239,7 @@ Choisir une option :
 * Auto (par défaut)
 * 10 GbE
 * 25 GbE
+* 40 GbE avec la référence de carte réseau 100G en option (SG6160 uniquement)
 * 100 GbE (SG6160 uniquement)
 
 

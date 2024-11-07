@@ -199,6 +199,39 @@ Options :
 
 
 |===
+Cette figure indique l'emplacement du bloc d'alimentation et les voyants d'identification à l'arrière du SGF6112. Des LED d'état et d'activité supplémentaires se trouvent sur les ports de l'appliance. Ces voyants peuvent varier en fonction du modèle de l'appareil.
+
+image::../media/q2024_rear_leds.png[LED arrière SGF6112]
+
+[cols="1a,2a,3a"]
+|===
+| Légende | LED | État 
+
+
+ a| 
+1
+ a| 
+Voyant d'alimentation
+ a| 
+* Vert, fixe : l'appareil est sous tension, le bouton d'alimentation est sous tension.
+* Vert, clignotant : l'appareil est sous tension, le bouton d'alimentation est hors tension.
+* Éteint : l'appareil n'est pas alimenté.
+* Orange : panne de l'alimentation.
+
+
+
+
+ a| 
+2
+ a| 
+Identifier la LED
+ a| 
+* Bleu clignotant : identifie l'appliance dans l'armoire ou le rack.
+* Bleu, fixe : identifie l'appliance dans l'armoire ou le rack.
+* Éteint : l'appareil n'est pas visuellement identifiable dans l'armoire ou le rack.
+
+
+|===
 
 
 === Vue avant du SG6160
@@ -290,6 +323,8 @@ NOTE: Le logiciel StorageGRID n'est pas préinstallé sur l'appliance. Ce logici
 * Connexion aux contrôleurs de stockage E-Series et fonctionnement comme initiateur.
 
 
+Cette figure présente les ports à l'arrière du contrôleur de calcul SG6100-CN.
+
 image::../media/sg6100_cn_rear_connectors.png[Connecteurs arrière SG6100-CN]
 
 [cols="1a,2a,2a,3a"]
@@ -302,7 +337,9 @@ image::../media/sg6100_cn_rear_connectors.png[Connecteurs arrière SG6100-CN]
  a| 
 Ports réseau 1-4
  a| 
-10 GbE, 25 GbE ou 100 GbE en fonction du type d'émetteur-récepteur câble ou SFP, de la vitesse du commutateur et de la vitesse de liaison configurée
+* 10/25-GbE en fonction du type de câble ou d'émetteur-récepteur SFP (les modules SFP28 et SFP+ sont pris en charge), de la vitesse du switch et de la vitesse de liaison configurée.
+* Avec référence de carte réseau 100G en option (SG6160 uniquement), 10/25/40/100-GbE en fonction du type de câble ou d'émetteur-récepteur, de la vitesse du commutateur et de la vitesse de liaison configurée. QSFP56 (limité à 100 GbE/port), QSFP28 (100 GbE) et QSFP+ (40 GbE) sont pris en charge en natif. Les émetteurs-récepteurs SFP+ (10 GbE) ou SFP28 (25 GbE) en option peuvent être utilisés avec un QSA (vendu séparément).
+
  a| 
 Connectez-vous au réseau Grid et au réseau client pour StorageGRID.
 
@@ -369,6 +406,39 @@ Port d'interconnexion
 100 GbE
  a| 
 Connectez le contrôleur SG6100-CN aux contrôleurs E4000.
+
+|===
+Cette figure montre l'emplacement du bloc d'alimentation et les voyants d'identification à l'arrière du contrôleur de calcul SG6100-CN. Des LED d'état et d'activité supplémentaires se trouvent sur les ports de l'appliance. Ces voyants peuvent varier en fonction du modèle de l'appareil.
+
+image::../media/q2023_rear_leds.png[LED arrière SG6100-CN]
+
+[cols="1a,2a,3a"]
+|===
+| Légende | LED | État 
+
+
+ a| 
+1
+ a| 
+Voyant d'alimentation
+ a| 
+* Vert, fixe : l'appareil est sous tension, le bouton d'alimentation est sous tension.
+* Vert, clignotant : l'appareil est sous tension, le bouton d'alimentation est hors tension.
+* Éteint : l'appareil n'est pas alimenté.
+* Orange : panne de l'alimentation.
+
+
+
+
+ a| 
+2
+ a| 
+Identifier la LED
+ a| 
+* Bleu clignotant : identifie l'appliance dans l'armoire ou le rack.
+* Bleu, fixe : identifie l'appliance dans l'armoire ou le rack.
+* Éteint : l'appareil n'est pas visuellement identifiable dans l'armoire ou le rack.
+
 
 |===
 

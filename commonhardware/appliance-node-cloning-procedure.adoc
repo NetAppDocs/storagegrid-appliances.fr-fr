@@ -98,7 +98,7 @@ Une fois le clonage terminé :
 
 
 * Le nœud cible quitte le mode maintenance et rejoint StorageGRID, en remplaçant le nœud source.
-* L'appliance source est préinstallée, comme si vous l'aviez fait https://docs.netapp.com/us-en/storagegrid-118/maintain/preparing-appliance-for-reinstallation-platform-replacement-only.html["préparez-le pour la réinstallation"^].
+* L'appliance source est dans un état pré-installé, comme si vous aviez https://docs.netapp.com/us-en/storagegrid/maintain/preparing-appliance-for-reinstallation-platform-replacement-only.html["préparez-le pour la réinstallation"^].
 
 
 

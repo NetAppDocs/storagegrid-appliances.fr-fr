@@ -1,5 +1,9 @@
 ---
 indexpage:
+  title: Maintenance du matériel de l'appliance
+  summary: Maintenance du matériel de votre système de stockage ou de services.
+  keywords: maintain storagegrid hardware
+  lead: Maintenance du matériel de votre système de stockage ou de services.
   tiles:
   - title: Procédures fréquemment effectuées
     links:
@@ -11,6 +15,8 @@ indexpage:
       url: "../commonhardware/checking-dns-server-configuration.html"
     - title: Mettre à jour l'adresse MAC
       url: "../commonhardware/locate-mac-address.html"
+    - title: Gérer les disques
+      url: "../commonhardware/manage-drives-tab.html"
     - title: Surveillez le chiffrement des nœuds
       url: "../commonhardware/monitoring-node-encryption-in-maintenance-mode.html"
   - title: Clonage de nœuds

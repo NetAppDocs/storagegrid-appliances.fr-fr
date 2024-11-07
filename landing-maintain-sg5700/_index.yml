@@ -1,5 +1,9 @@
 ---
 indexpage:
+  title: Maintenance du matériel de l'appliance de stockage SG5700
+  summary: Maintenance du matériel de votre appliance de stockage SG5700.
+  keywords: maintain storagegrid sg5700
+  lead: Maintenance du matériel de votre appliance de stockage SG5700.
   tiles:
   - title: Procédures fréquemment effectuées
     links:
@@ -7,8 +11,10 @@ indexpage:
       url: "../sg5700/changing-link-configuration-of-e5700sg-controller.html"
     - title: Mettez à niveau SANtricity
       url: "../sg5700/upgrading-santricity-os-on-storage-controller.html"
-    - title: Mettre à niveau le micrologiciel du lecteur
-      url: "../sg5700/upgrading-drive-firmware-using-santricity-system-manager.html"
+    - title: Mettre à niveau le micrologiciel du lecteur (méthode en ligne)
+      url: "../sg5700/upgrading-drive-firmware-using-santricity-system-manager-online.html"
+    - title: Mettre à niveau le firmware du disque (méthode hors ligne)
+      url: "../sg5700/upgrading-drive-firmware-using-santricity-system-manager-offline.html"
   - title: Procédures matérielles
     links:
     - title: Remplacez le contrôleur de stockage E2800 Series

@@ -14,7 +14,7 @@ summary: 'Vous devrez peut-être remplacer l"appareil s"il ne fonctionne pas de 
 Vous devrez peut-être remplacer l'appareil s'il ne fonctionne pas de manière optimale ou s'il est défectueux.
 
 .Avant de commencer
-* Vous disposez d'un appareil de remplacement avec le même numéro de pièce que l'appareil que vous remplacez.
+* Vous disposez d'un appareil de remplacement avec le même numéro de pièce que l'appareil que vous remplacez. Vérifiez les étiquettes apposées à l'avant des appareils pour vous assurer que les numéros de pièce correspondent.
 * Vous disposez d'étiquettes pour identifier chaque câble connecté à l'appareil.
 * Vous avez link:locating-sg110-and-sg1100-in-data-center.html["l'appareil se trouve physiquement"].
 
@@ -42,7 +42,7 @@ Lorsque vous êtes connecté en tant que root, l'invite passe de `$` à `#`.
 .. Entrez : `*run-host-command ipmitool lan print*` Pour afficher les configurations BMC actuelles de l'appliance.
 
 
-. link:power-sg110-and-sg1100-off-on.html#shut-down-the-sgf6112-appliance["Arrêtez l'appareil"].
+. link:power-sg110-and-sg1100-off-on.html#shut-down-the-sg110-or-sg1100-appliance["Arrêtez l'appareil"].
 . Si l'une des interfaces réseau de cette appliance StorageGRID est configurée pour DHCP, vous devez mettre à jour les attributions de bail DHCP permanentes sur les serveurs DHCP pour référencer les adresses MAC de l'appliance de remplacement. Cela permet de s'assurer que l'appliance se voit attribuer les adresses IP attendues.
 +
 Contactez votre administrateur réseau ou serveur DHCP pour mettre à jour les attributions de bail DHCP permanentes. L'administrateur peut déterminer les adresses MAC de l'appliance de remplacement à partir des journaux du serveur DHCP ou en inspectant les tables d'adresses MAC des commutateurs auxquels les ports Ethernet de l'appliance sont connectés.
@@ -93,7 +93,7 @@ CAUTION: Si vous souhaitez conserver les données sur les disques, veillez à in
 
 
 . Mettez l'appareil sous tension.
-. Si le chiffrement de disque matériel de l'appliance que vous avez remplacée est activé pour les disques SED, vous devez le faire link:optional-enabling-node-encryption.html#access-an-encrypted-drive["saisissez la phrase de passe de cryptage du lecteur"] pour accéder aux disques chiffrés lorsque l'appliance de remplacement démarre pour la première fois.
+. Si le chiffrement de disque matériel de l'appliance que vous avez remplacée est activé pour les disques SED, vous devez le faire link:../installconfig/optional-enabling-node-encryption.html#access-an-encrypted-drive["saisissez la phrase de passe de cryptage du lecteur"] pour accéder aux disques chiffrés lorsque l'appliance de remplacement démarre pour la première fois.
 . Attendez que l'appareil rejoigne la grille. Si l'appliance ne rejoint pas la grille, suivez les instructions de la page d'accueil du programme d'installation de l'appliance StorageGRID pour résoudre le problème.
 +
 
@@ -102,7 +102,7 @@ WARNING: Pour éviter toute perte de données si le programme d'installation de 
 . Si l'appliance que vous avez remplacée utilisait un serveur de gestion des clés (KMS) pour gérer les clés de chiffrement afin que le nœud puisse rejoindre la grille, d'autres configurations peuvent être requises. Si le nœud ne rejoint pas automatiquement la grille, assurez-vous que ces paramètres de configuration ont été transférés vers la nouvelle appliance et configurez manuellement les paramètres qui ne possèdent pas la configuration attendue :
 +
 ** link:../installconfig/accessing-storagegrid-appliance-installer.html["Configurer les connexions StorageGRID"]
-** https://docs.netapp.com/us-en/storagegrid-118/admin/kms-overview-of-kms-and-appliance-configuration.html#set-up-the-appliance["Configurez le chiffrement des nœuds pour l'appliance"^]
+** https://docs.netapp.com/us-en/storagegrid/admin/kms-overview-of-kms-and-appliance-configuration.html#set-up-the-appliance["Configurez le chiffrement des nœuds pour l'appliance"^]
 
 
 . Connectez-vous à l'appliance remplacée :
@@ -141,8 +141,8 @@ WARNING: Pour éviter toute perte de données si le programme d'installation de 
 
 
 .Informations associées
-link:../installconfig/viewing-status-indicators.html["Afficher les indicateurs d'état"]
+* link:../installconfig/viewing-status-indicators.html["Afficher les indicateurs d'état"]
+* link:../installconfig/troubleshooting-hardware-installation-sg110-and-sg1100.html#view-error-codes["Afficher les codes de démarrage de l'appareil"]
 
-link:../installconfig/troubleshooting-hardware-installation-sg110-and-sg1100.html#view-error-codes["Afficher les codes de démarrage de l'appareil"]
 
 Après le remplacement de la pièce, renvoyez la pièce défectueuse à NetApp, en suivant les instructions RMA (retour de matériel) livrées avec le kit. Voir la https://mysupport.netapp.com/site/info/rma["Retour de pièce et amp ; remplacements"^] pour plus d'informations.

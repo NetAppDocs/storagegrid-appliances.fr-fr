@@ -314,4 +314,4 @@ Connectez le contrôleur E4000 au contrôleur SGS800.
 
 |===
 .Informations associées
-http://mysupport.netapp.com/info/web/ECMP1658252.html["Site de documentation sur les systèmes NetApp E-Series"^]
+https://docs.netapp.com/us-en/e-series-family/index.html["Documentation des baies NetApp E-Series"^]

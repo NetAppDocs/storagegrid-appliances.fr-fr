@@ -2,12 +2,6 @@
 :allow-uri-read: 
 
 
-.Description de la tâche
-Pour éviter toute interruption de service, vérifiez que tous les autres nœuds de stockage sont connectés à la grille avant de commencer le remplacement de la batterie CMOS ou remplacez la batterie pendant une fenêtre de maintenance planifiée lorsque des périodes d'interruption de service sont acceptables. Voir les informations sur https://docs.netapp.com/us-en/storagegrid-118/monitor/monitoring-system-health.html#monitor-node-connection-states["contrôle de l'état de connexion du nœud"^].
-
-
-CAUTION: Si vous avez déjà utilisé une règle ILM qui ne crée qu'une seule copie d'un objet, vous devez remplacer la batterie au cours d'une fenêtre de maintenance planifiée car vous risquez de perdre temporairement l'accès à ces objets au cours de cette procédure. Voir informations sur https://docs.netapp.com/us-en/storagegrid-118/ilm/why-you-should-not-use-single-copy-replication.html["pourquoi ne pas utiliser la réplication à copie unique"^].
-
 .Étapes
 . Enroulez l'extrémité du bracelet antistatique autour de votre poignet et fixez l'extrémité du clip à une masse métallique afin d'éviter toute décharge statique.
 . Repérez l'ensemble de montage à deux emplacements à l'arrière de l'appareil.
@@ -57,7 +51,7 @@ image::../media/sgf6112_two-slot-riser_guide-pin.png[Broche de guidage sur la ca
 . Si l'appliance que vous avez remplacée utilisait un serveur de gestion des clés (KMS) pour gérer les clés de chiffrement afin que le nœud puisse rejoindre la grille, d'autres configurations peuvent être requises. Si le nœud ne rejoint pas automatiquement la grille, assurez-vous que ces paramètres de configuration ont été transférés vers la nouvelle appliance et configurez manuellement les paramètres qui ne possèdent pas la configuration attendue :
 +
 ** link:../installconfig/accessing-storagegrid-appliance-installer.html["Configurer les connexions StorageGRID"]
-** https://docs.netapp.com/us-en/storagegrid-118/admin/kms-overview-of-kms-and-appliance-configuration.html#set-up-the-appliance["Configurez le chiffrement des nœuds pour l'appliance"^]
+** https://docs.netapp.com/us-en/storagegrid/admin/kms-overview-of-kms-and-appliance-configuration.html#set-up-the-appliance["Configurez le chiffrement des nœuds pour l'appliance"^]
 
 
 . Connectez-vous à l'appliance :

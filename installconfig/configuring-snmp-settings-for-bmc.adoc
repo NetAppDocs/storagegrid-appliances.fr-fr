@@ -13,8 +13,57 @@ summary: 'Si vous connaissez la configuration de SNMP pour le matériel, vous po
 [role="lead"]
 Si vous connaissez la configuration de SNMP pour le matériel, vous pouvez utiliser l'interface BMC pour configurer les paramètres SNMP des appliances SG6100, SG6000 et services. Vous pouvez fournir des chaînes de communauté sécurisées, activer le Trap SNMP et spécifier jusqu'à cinq destinations SNMP.
 
+[role="tabbed-block"]
+====
+.SG110, SG1100, SG6100-CN, SGF6112
+--
 .Avant de commencer
-* Vous savez comment accéder au tableau de bord BMC.
+* Vous savez comment link:../installconfig/accessing-bmc-interface.html["Accéder au tableau de bord BMC"].
+* Vous avez de l'expérience dans la configuration des paramètres SNMP pour l'équipement SNMPv3.
+
+
+
+NOTE: Les paramètres BMC définis lors de cette procédure peuvent ne pas être préservés en cas de défaillance de l'appliance et doivent être remplacés.  Assurez-vous d'avoir un enregistrement de tous les paramètres que vous avez appliqués afin de pouvoir les réappliquer facilement après un remplacement de matériel si nécessaire.
+
+Ces instructions indiquent la dernière version du firmware BMC disponible pour certains dispositifs StorageGRID. La version du firmware BMC de votre appliance StorageGRID peut être légèrement différente.
+
+* La dernière version du micrologiciel BMC prend uniquement en charge SNMPv3.
+* Les mises à jour du micrologiciel BMC sont effectuées lors des mises à niveau du logiciel StorageGRID. Si vous n'exécutez pas la dernière version du logiciel StorageGRID, vous pouvez mettre à jour votre appliance avec la dernière version de StorageGRID pour installer https://docs.netapp.com/us-en/storagegrid/upgrade/how-your-system-is-affected-during-upgrade.html#appliance-firmware-is-upgraded["Dernière version du micrologiciel BMC disponible pour votre appliance"] .
+* Si votre BMC apparaît différent avant ou après une mise à jour StorageGRID :
++
+** Voir les instructions sur l'onglet SG100, SG1000, SG6000-CN.
+** link:../commonhardware/use-bmc.html["Utilisez le StorageGRID BMC"] Peut également avoir des informations pour vous aider à adapter ces instructions à votre version de BMC.
+
+
+
+
+.Étapes
+. Configurer les interruptions SNMP en tant que destination LAN.
++
+.. Dans le tableau de bord BMC, sélectionnez *Paramètres* > *filtres d'événements de plate-forme* > *destinations LAN*.
+.. Pour Type de destination, sélectionnez *SNMP Trap*.
+.. Pour adresse de destination SNMP, entrez l'adresse IP cible.
++
+
+NOTE: Utilisez une adresse IP pour l'adresse de destination SNMP. Les noms DNS ne sont pas pris en charge.
+
+.. Sélectionnez *Enregistrer*.
+
+
+. Si vous utilisez des interruptions SNMP pour envoyer des notifications d'alerte, reportez-vous à la section filtres d'événements sur plate-forme du https://kb.netapp.com/hybrid/StorageGRID/Platforms/How_to_use_StorageGRID_Appliance_BMC_with_vendor_supplied_user_guide["Guide de l'utilisateur BMC"^] pour plus d'informations sur l'utilisation de BMC pour configurer les stratégies d'alerte et les filtres d'événements.
+. (Facultatif) activez et configurez SNMP pour un utilisateur BMC.
++
+.. Dans le tableau de bord BMC, sélectionnez *Paramètres* > *gestion des utilisateurs*, puis sélectionnez un utilisateur BMC.
+.. Pour plus d'informations sur la configuration des paramètres SNMP pour un utilisateur BMC, reportez-vous à la section gestion des https://kb.netapp.com/hybrid/StorageGRID/Platforms/How_to_use_StorageGRID_Appliance_BMC_with_vendor_supplied_user_guide["Guide de l'utilisateur BMC"^] utilisateurs du.
+
+
+
+
+--
+.SG100, SG1000, SG6000-CN
+--
+.Avant de commencer
+* Vous savez comment link:../installconfig/accessing-bmc-interface.html["Accéder au tableau de bord BMC"].
 * Vous avez de l'expérience dans la configuration des paramètres SNMP pour les équipements SNMPv1-v2c.
 
 
@@ -38,3 +87,6 @@ Activez les interruptions si vous souhaitez que l'appliance envoie des notificat
 . Vous pouvez également cliquer sur *Envoyer piège de test* pour tester vos paramètres.
 . Si les paramètres sont corrects, cliquez sur *Enregistrer*.
 
+
+--
+====

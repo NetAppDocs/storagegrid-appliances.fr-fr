@@ -161,12 +161,12 @@ image::../media/drw_E4000_replace_nvbattery_IEOPS-862.png[Retirez la batterie NV
 
 
  a| 
-image::../media/legend_icon_01.png[icône de légende 01]
+image::../media/legend_icon_01.png[Référence de légende 1]
 | Languette de déverrouillage de la batterie 
 
 
  a| 
-image::../media/legend_icon_02.png[icône de légende 02]
+image::../media/legend_icon_02.png[Référence de légende 2]
 | Connecteur d'alimentation de la batterie 
 |===
 
@@ -210,12 +210,12 @@ image::../media/drw_E4000_replace_dimms_IEOPS-865.png[Retirez les MODULES DIMM.]
 
 
  a| 
-image::../media/legend_icon_01.png[icône de légende 01]
+image::../media/legend_icon_01.png[Référence de légende 1]
 | Languettes d'éjection du module DIMM 
 
 
  a| 
-image::../media/legend_icon_02.png[icône de légende 02]
+image::../media/legend_icon_02.png[Référence de légende 2]
 | DIMM 
 |===
 

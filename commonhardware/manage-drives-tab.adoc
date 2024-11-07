@@ -1,24 +1,26 @@
 ---
-permalink: sg6100/manage-drives-tab.html 
+permalink: commonhardware/manage-drives-tab.html 
 sidebar: sidebar 
-keywords: sgf6112, manage drives tab, locate drive, fail drive, logically replace drive 
-summary: 'Vous pouvez utiliser l"onglet gérer les lecteurs du Gestionnaire de grille pour effectuer des tâches de dépannage et de maintenance sur les lecteurs de l"appliance SGF6112.' 
+keywords: sgf6112, sg110, sg1100, sg6160, manage drives tab, locate drive, fail drive, logically replace drive 
+summary: 'Vous pouvez utiliser l"onglet gérer les lecteurs dans le Gestionnaire de grille pour effectuer des tâches de dépannage et de maintenance sur les lecteurs pour les appliances qui prennent en charge cette fonctionnalité.' 
 ---
-= Utilisation de l'onglet gérer les lecteurs (SGF6112)
+= Utilisez l'onglet gérer les lecteurs (SG110, SG1100, SGF6112 et SG6160)
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-Vous pouvez utiliser l'onglet gérer les lecteurs du Gestionnaire de grille pour effectuer des tâches de dépannage et de maintenance sur les lecteurs de l'appliance SGF6112.
+Vous pouvez utiliser l'onglet gérer les lecteurs dans le Gestionnaire de grille pour effectuer des tâches de dépannage et de maintenance sur les lecteurs pour les appliances qui prennent en charge cette fonctionnalité.
 
 .Avant de commencer
-* Vous êtes connecté au Grid Manager à l'aide d'un https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["navigateur web pris en charge"^].
-
+Vous êtes connecté au Gestionnaire de grille à l'aide d'un https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["navigateur web pris en charge"^].
 
 .Description de la tâche
-Si vous disposez d'une appliance SGF6112 et de l'une ou l'autre https://docs.netapp.com/us-en/storagegrid-118/admin/admin-group-permissions.html["Administrateur de l'appliance de stockage ou autorisation d'accès racine"^], Un onglet gérer les lecteurs apparaît sur la page de détails de l'appliance.
+Si votre appareil prend en charge cette fonction et que l' https://docs.netapp.com/us-en/storagegrid/admin/admin-group-permissions.html["Administrateur de l'appliance de stockage ou autorisation d'accès racine"^], un onglet gérer les lecteurs s'affiche sur la page de détails de l'appareil.
+
+
+NOTE: Pour StorageGRID 11.8, l'onglet gérer les disques est pris en charge uniquement pour l'appliance SGF6112.
 
 L'onglet gérer les lecteurs contient les vues suivantes :
 

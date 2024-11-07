@@ -1,5 +1,5 @@
 ---
-permalink: sg6100/replace-power-supply-e4000.html 
+permalink: sg6100/replace-power-supply-sg6100-e4000.html 
 sidebar: sidebar 
 keywords: E4000 replace canister, replacing E4000 canister, E4000 replace power supply, replacing E4000 power supply, E4000 replace fan, replacing E4000 fan, E4000, E-Series, eseries 
 summary: Passez en revue les types de canister E4000 et les exigences. 
@@ -33,7 +33,7 @@ NOTE: Ne mélangez pas des blocs d'alimentation de différents types de tension.
 ** Un bracelet antistatique ou d'autres précautions antistatiques.
 ** Accès à SANtricity System Manager :
 +
-*** Dans le Gestionnaire de grille, sélectionnez *NODES* > *_appliance node_* > *SANtricity System Manager*. Les informations relatives au contrôleur se trouvent sur le https://docs.netapp.com/us-en/storagegrid-118/monitor/viewing-santricity-system-manager-tab.html["Onglet Gestionnaire système SANtricity"].
+*** Dans le Gestionnaire de grille, sélectionnez *NODES* > *_appliance node_* > *SANtricity System Manager*. Les informations du contrôleur se trouvent sur le https://docs.netapp.com/us-en/storagegrid/monitor/viewing-santricity-system-manager-tab.html["Onglet Gestionnaire système SANtricity"].
 *** Pointez un navigateur de votre station de gestion vers le nom de domaine ou l'adresse IP du contrôleur.
 
 
@@ -64,7 +64,7 @@ Vous pouvez trouver ces informations dans la zone Détails du gourou de la resta
 
 +
 .. Sélectionnez *matériel*.
-.. Regardez la puissance image:../media/sam1130_ss_hardware_power_icon_maint-e2800.gif[""] et ventilateur image:../media/sam1130_ss_hardware_fan_icon_maint-e2800.gif[""] Des icônes à droite des listes déroulantes *Shelf* pour déterminer quel shelf possède l'alimentation défectueuse.
+.. Examinez les icônes d'alimentation image:../media/sam1130_ss_hardware_power_icon_maint-e2800.gif["Icône d'alimentation"] et de ventilateur image:../media/sam1130_ss_hardware_fan_icon_maint-e2800.gif["Icône de ventilateur"]situées à droite des listes déroulantes *Shelf* pour déterminer quel shelf est celui qui présente le bloc d'alimentation défectueux.
 +
 Si un composant est défectueux, l'une de ces icônes ou les deux sont rouges.
 

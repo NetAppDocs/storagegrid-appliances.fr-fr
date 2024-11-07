@@ -29,16 +29,16 @@ Suivez ces procédures pour :
 * Vous avez link:locating-sgf6112-in-data-center.html["Emplacement physique de l'appliance SGF6112 ou du contrôleur SG6100-CN"] Emplacement de remplacement de la carte réseau dans le centre de données.
 +
 
-NOTE: A link:power-sgf6112-off-on.html#shut-down-the-sgf6112-appliance["arrêt contrôlé de l'appareil"] est nécessaire avant de retirer l'appareil du rack.
+NOTE: Un link:power-sgf6112-off-on.html#shut-down-the-sgf6112-appliance-or-sg6100-cn-controller["arrêt contrôlé de l'appareil"] est nécessaire avant de retirer l'appareil du rack.
 
 * Vous avez déconnecté tous les câbles et link:reinstalling-sgf6112-cover.html["retirez le capot de l'appareil - effectué"].
 
 
 .Description de la tâche
-Pour éviter toute interruption de service, vérifiez que tous les autres nœuds de stockage sont connectés à la grille avant de commencer le remplacement de la carte d'interface réseau (NIC) ou remplacez la carte réseau pendant une fenêtre de maintenance planifiée lorsque les périodes d'interruption de service sont acceptables. Voir les informations sur https://docs.netapp.com/us-en/storagegrid-118/monitor/monitoring-system-health.html#monitor-node-connection-states["contrôle de l'état de connexion du nœud"^].
+Pour éviter toute interruption de service, vérifiez que tous les autres nœuds de stockage sont connectés à la grille avant de commencer le remplacement de la carte d'interface réseau (NIC) ou remplacez la carte réseau pendant une fenêtre de maintenance planifiée lorsque les périodes d'interruption de service sont acceptables. Voir les informations sur https://docs.netapp.com/us-en/storagegrid/monitor/monitoring-system-health.html#monitor-node-connection-states["contrôle de l'état de connexion du nœud"^].
 
 
-CAUTION: Si vous avez déjà utilisé une règle ILM qui ne crée qu'une seule copie d'un objet, vous devez remplacer la carte réseau au cours d'une fenêtre de maintenance planifiée, car vous risquez de perdre temporairement l'accès à ces objets au cours de cette procédure. Voir informations sur https://docs.netapp.com/us-en/storagegrid-118/ilm/why-you-should-not-use-single-copy-replication.html["pourquoi ne pas utiliser la réplication à copie unique"^].
+CAUTION: Si vous avez déjà utilisé une règle ILM qui ne crée qu'une seule copie d'un objet, vous devez remplacer la carte réseau au cours d'une fenêtre de maintenance planifiée, car vous risquez de perdre temporairement l'accès à ces objets au cours de cette procédure. Voir les informations sur https://docs.netapp.com/us-en/storagegrid/ilm/why-you-should-not-use-single-copy-replication.html["pourquoi ne pas utiliser la réplication à copie unique"^].
 
 .Étapes
 . Enroulez l'extrémité du bracelet antistatique autour de votre poignet et fixez l'extrémité du clip à une masse métallique afin d'éviter toute décharge statique.
@@ -47,7 +47,7 @@ CAUTION: Si vous avez déjà utilisé une règle ILM qui ne crée qu'une seule c
 Les trois cartes réseau de l'appareil sont dans deux ensembles de montage dans les positions du châssis indiquées sur la photo (arrière de l'appareil avec le capot supérieur retiré) :
 
 +
-image::../media/sgf6112-nic-positions.jpg[Emplacements des cartes réseau]
+image::../media/sgf6112-nic-positions.png[Emplacements des cartes réseau]
 
 +
 [cols="1a,2a,4a"]

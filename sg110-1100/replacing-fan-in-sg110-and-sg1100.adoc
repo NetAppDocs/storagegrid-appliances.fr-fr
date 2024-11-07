@@ -26,14 +26,11 @@ NOTE: A link:power-sg110-and-sg1100-off-on.html#shut-down-the-sg110-or-sg1100-ap
 
 
 .Description de la tâche
-Pour éviter toute interruption de service, vérifiez que tous les autres nœuds de stockage sont connectés à la grille avant de commencer le remplacement du ventilateur ou remplacez le ventilateur dans une fenêtre de maintenance planifiée lorsque des périodes d'interruption de service sont acceptables. Voir les informations sur https://docs.netapp.com/us-en/storagegrid-118/monitor/monitoring-system-health.html#monitor-node-connection-states["contrôle de l'état de connexion du nœud"^].
-
-
-CAUTION: Si vous avez déjà utilisé une règle ILM qui ne crée qu'une copie d'un objet, vous devez remplacer le ventilateur lors d'une fenêtre de maintenance planifiée, car vous risquez de perdre temporairement l'accès à ces objets au cours de cette procédure. Voir informations sur https://docs.netapp.com/us-en/storagegrid-118/ilm/why-you-should-not-use-single-copy-replication.html["pourquoi ne pas utiliser la réplication à copie unique"^].
+Pour éviter toute interruption de service, vérifiez que tous les autres nœuds de stockage sont connectés à la grille avant de commencer le remplacement du ventilateur ou remplacez le ventilateur dans une fenêtre de maintenance planifiée lorsque des périodes d'interruption de service sont acceptables. Voir les informations sur https://docs.netapp.com/us-en/storagegrid/monitor/monitoring-system-health.html#monitor-node-connection-states["contrôle de l'état de connexion du nœud"^].
 
 Le nœud d'appliance ne sera pas accessible pendant le remplacement du ventilateur.
 
-La photo montre un ventilateur pour l'appareil. Le connecteur électrique est mis en surbrillance. Les ventilateurs de refroidissement sont accessibles après avoir pris le capot supérieur de l'appareil.
+L'image montre un ventilateur pour l'appareil avec le connecteur électrique en surbrillance. Les ventilateurs de refroidissement sont accessibles après avoir pris le capot supérieur de l'appareil.
 
 
 NOTE: Chacun des deux blocs d'alimentation contient également un ventilateur. Les ventilateurs du bloc d'alimentation ne sont pas inclus dans cette procédure.
@@ -49,11 +46,8 @@ Les huit ventilateurs se trouvent dans les positions suivantes dans le châssis 
 +
 image::../media/SGF6112-fan-locations.png[Emplacements des ventilateurs]
 
-
-
++
 |===
-
-
 |  | Ventilateur 
 
 

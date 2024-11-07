@@ -987,8 +987,11 @@ Se connecte au réseau sur lequel vous accédez à l'interface BMC.
  a| 
 2
  a| 
-Quatre ports réseau 10/25-GbE sur l'appliance
+Quatre ports réseau sur le contrôleur SG6100-CN
  a| 
+* Quatre ports réseau 10/25-GbE sur l'appliance
+* Quatre ports réseau 10/25/40/100 GbE avec référence de carte réseau 100G en option (SG6160 uniquement)
+
  a| 
 Connectez-vous au réseau Grid et au réseau client pour StorageGRID. Voir link:gathering-installation-information-sg6100.html#port-bond-modes["Modes de liaison de port (SG6100)"]
 

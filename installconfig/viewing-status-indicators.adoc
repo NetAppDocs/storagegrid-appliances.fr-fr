@@ -30,7 +30,7 @@ Utilisez ces informations pour vous aider link:troubleshooting-hardware-installa
 Voyants et boutons de l'appareil::
 +
 --
-La figure suivante montre les indicateurs d'état et les boutons sur les SG100 et SG1000.
+La figure suivante montre les voyants d'état et les boutons situés à l'avant des SG100 et SG1000.
 
 image::../media/sg6000_cn_front_indicators.gif[Clignotants avant - SG1000]
 
@@ -89,6 +89,39 @@ Voyant d'alarme
 --
 
 
+La figure suivante montre l'emplacement du bloc d'alimentation et identifie les voyants à l'arrière du SG100 et du SG1000. Des LED d'état et d'activité supplémentaires se trouvent sur les ports de l'appliance. Ces voyants peuvent varier en fonction du modèle de l'appareil.
+
+image::../media/q2023_rear_leds.png[LED arrière SG100 et SG1000]
+
+[cols="1a,2a,3a"]
+|===
+| Légende | LED | État 
+
+
+ a| 
+1
+ a| 
+Voyant d'alimentation
+ a| 
+* Vert, fixe : l'appareil est sous tension, le bouton d'alimentation est sous tension.
+* Vert, clignotant : l'appareil est sous tension, le bouton d'alimentation est hors tension.
+* Éteint : l'appareil n'est pas alimenté.
+* Orange : panne de l'alimentation.
+
+
+
+
+ a| 
+2
+ a| 
+Identifier la LED
+ a| 
+* Bleu clignotant : identifie l'appliance dans l'armoire ou le rack.
+* Bleu, fixe : identifie l'appliance dans l'armoire ou le rack.
+* Éteint : l'appareil n'est pas visuellement identifiable dans l'armoire ou le rack.
+
+
+|===
 [[general_boot_codes_SG100_1000]]
 Codes de démarrage généraux::
 +
@@ -159,7 +192,7 @@ Utilisez ces informations pour vous aider link:troubleshooting-hardware-installa
 Voyants et boutons de l'appareil::
 +
 --
-La figure suivante montre les voyants et les boutons des appareils SG110 et SG1100.
+La figure suivante montre les voyants et les boutons situés à l'avant des appareils SG110 et SG1100.
 
 image::../media/sgf6112_front_indicators.png[Clignotants avant - SG110 et SG1100]
 
@@ -227,6 +260,39 @@ Cette lampe n'est pas utilisée par les appareils SG110 et SG1100 et reste étei
 --
 
 
+La figure suivante montre l'emplacement du bloc d'alimentation et identifie les voyants à l'arrière du SG110 et du SG1100. Des LED d'état et d'activité supplémentaires se trouvent sur les ports de l'appliance. Ces voyants peuvent varier en fonction du modèle de l'appareil.
+
+image::../media/q2024_rear_leds.png[LED arrière SG110 et SG1100]
+
+[cols="1a,2a,3a"]
+|===
+| Légende | LED | État 
+
+
+ a| 
+1
+ a| 
+Voyant d'alimentation
+ a| 
+* Vert, fixe : l'appareil est sous tension, le bouton d'alimentation est sous tension.
+* Vert, clignotant : l'appareil est sous tension, le bouton d'alimentation est hors tension.
+* Éteint : l'appareil n'est pas alimenté.
+* Orange : panne de l'alimentation.
+
+
+
+
+ a| 
+2
+ a| 
+Identifier la LED
+ a| 
+* Bleu clignotant : identifie l'appliance dans l'armoire ou le rack.
+* Bleu, fixe : identifie l'appliance dans l'armoire ou le rack.
+* Éteint : l'appareil n'est pas visuellement identifiable dans l'armoire ou le rack.
+
+
+|===
 [[general_boot_codes]]
 Codes de démarrage généraux::
 +
@@ -475,6 +541,13 @@ Lors d'un démarrage normal de l'appareil, l'écran à sept segments du contrôl
 [cols="1a,3a"]
 |===
 | Code | Indique 
+
+
+ a| 
+HT
+ a| 
+Le script d'amorçage principal attend la fin du démarrage du système d'exploitation.
+
 
 
  a| 
@@ -744,8 +817,7 @@ Vert clignotant : activité Ethernet.
 
 
 .Informations associées
-* https://mysupport.netapp.com/site/global/dashboard["Support NetApp"^]
-
+link:https://mysupport.netapp.com/site/global/dashboard["Support NetApp"^]
 
 --
 .SG6000
@@ -765,7 +837,7 @@ Voyants et boutons d'état sur le contrôleur SG6000-CN::
 --
 Le contrôleur SG6000-CN comprend des indicateurs qui vous aident à déterminer l'état du contrôleur, y compris les voyants et boutons suivants.
 
-La figure suivante montre les indicateurs d'état et les boutons du contrôleur SG6000-CN.
+La figure suivante montre les indicateurs d'état et les boutons situés à l'avant du contrôleur SG6000-CN.
 
 image::../media/sg6000_cn_front_indicators.gif[Clignotants avant - SG6000-CN]
 
@@ -825,6 +897,39 @@ Voyant d'alarme
 --
 
 
+La figure suivante montre l'emplacement de l'alimentation et identifie les LED à l'arrière du contrôleur SG6000-CN. Des LED d'état et d'activité supplémentaires se trouvent sur les ports de l'appliance. Ces voyants peuvent varier en fonction du modèle de l'appareil.
+
+image::../media/q2023_rear_leds.png[LED arrière SG6000-CN]
+
+[cols="1a,2a,3a"]
+|===
+| Légende | LED | État 
+
+
+ a| 
+1
+ a| 
+Voyant d'alimentation
+ a| 
+* Vert, fixe : l'appareil est sous tension, le bouton d'alimentation est sous tension.
+* Vert, clignotant : l'appareil est sous tension, le bouton d'alimentation est hors tension.
+* Éteint : l'appareil n'est pas alimenté.
+* Orange : panne de l'alimentation.
+
+
+
+
+ a| 
+2
+ a| 
+Identifier la LED
+ a| 
+* Bleu clignotant : identifie l'appliance dans l'armoire ou le rack.
+* Bleu, fixe : identifie l'appliance dans l'armoire ou le rack.
+* Éteint : l'appareil n'est pas visuellement identifiable dans l'armoire ou le rack.
+
+
+|===
 [[general_boot_codes_sg6000]]
 Codes de démarrage généraux::
 +
@@ -889,7 +994,7 @@ Utilisez ces informations pour vous aider link:troubleshooting-hardware-installa
 Voyants et boutons de l'appareil::
 +
 --
-La figure suivante présente les voyants et les boutons des appareils SG6100.
+La figure suivante montre les voyants et les boutons situés à l'avant des appareils SG6100.
 
 image::../media/sgf6112_front_indicators.png[Clignotants avant - SGF6112]
 
@@ -957,6 +1062,39 @@ Cette lampe n'est pas utilisée par les appareils SG6100 et reste éteinte.
 --
 
 
+La figure suivante montre l'emplacement du bloc d'alimentation et identifie les voyants à l'arrière des SGF6112 et SG6100-CN. Des LED d'état et d'activité supplémentaires se trouvent sur les ports de l'appliance. Ces voyants peuvent varier en fonction du modèle de l'appareil.
+
+image::../media/q2024_rear_leds.png[LED arrière SGF6112 et SG6100-CN]
+
+[cols="1a,2a,3a"]
+|===
+| Légende | LED | État 
+
+
+ a| 
+1
+ a| 
+Voyant d'alimentation
+ a| 
+* Vert, fixe : l'appareil est sous tension, le bouton d'alimentation est sous tension.
+* Vert, clignotant : l'appareil est sous tension, le bouton d'alimentation est hors tension.
+* Éteint : l'appareil n'est pas alimenté.
+* Orange : panne de l'alimentation.
+
+
+
+
+ a| 
+2
+ a| 
+Identifier la LED
+ a| 
+* Bleu clignotant : identifie l'appliance dans l'armoire ou le rack.
+* Bleu, fixe : identifie l'appliance dans l'armoire ou le rack.
+* Éteint : l'appareil n'est pas visuellement identifiable dans l'armoire ou le rack.
+
+
+|===
 [[general_boot_codes_SG6100]]
 Codes de démarrage généraux::
 +
@@ -1013,8 +1151,7 @@ Bleu (clignotant) : accès au lecteur
 
 
 .Informations associées
-* https://mysupport.netapp.com/site/global/dashboard["Support NetApp"^]
-
+https://mysupport.netapp.com/site/global/dashboard["Support NetApp"^]
 
 --
 ====

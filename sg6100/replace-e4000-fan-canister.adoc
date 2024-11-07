@@ -50,7 +50,7 @@ Le fichier est enregistré dans le dossier Téléchargements de votre navigateur
 . Dans le Gestionnaire système SANtricity, déterminez quelle cartouche de ventilateur est défectueuse.
 +
 .. Sélectionnez *matériel*.
-.. Regarder le ventilateur image:../media/sam1130_ss_hardware_fan_icon_maint-e2800.gif[""] Icône située à droite des listes déroulantes *Shelf* pour déterminer quel appareil est doté du boîtier de ventilation défectueux.
+.. Regardez l'icône de ventilateur image:../media/sam1130_ss_hardware_fan_icon_maint-e2800.gif["Icône de ventilateur"]à droite des listes déroulantes *Shelf* pour déterminer quel appareil est doté du boîtier de ventilateur défectueux.
 +
 Si un composant est défectueux, cette icône est rouge.
 

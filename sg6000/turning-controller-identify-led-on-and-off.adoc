@@ -37,8 +37,7 @@ NOTE: Si un panneau est installé sur le contrôleur, il peut être difficile de
 
 
 .Informations associées
-link:reinstalling-fibre-channel-hba.html#verify-fibre-channel-hba-to-replace["Vérifiez que la carte HBA Fibre Channel doit être remplacée"]
+* link:reinstalling-fibre-channel-hba.html#verify-fibre-channel-hba-to-replace["Vérifiez que la carte HBA Fibre Channel doit être remplacée"]
+* link:locating-controller-in-data-center.html["Localiser le contrôleur dans le data Center"]
+* link:../installconfig/accessing-bmc-interface.html["Accéder à l'interface BMC"]
 
-link:locating-controller-in-data-center.html["Localiser le contrôleur dans le data Center"]
-
-link:../installconfig/accessing-bmc-interface.html["Accéder à l'interface BMC"]

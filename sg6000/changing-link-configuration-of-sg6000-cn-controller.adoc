@@ -41,7 +41,7 @@ NOTE: Vous risquez de perdre votre connexion si vous avez apporté des modificat
 `*https://_Appliance_Controller_IP_:8443*`
 
 +
-Si vous avez modifié les paramètres VLAN, le sous-réseau de l'appliance a peut-être changé. Si vous devez modifier les adresses IP de l'appareil, suivez la https://docs.netapp.com/us-en/storagegrid-118/maintain/configuring-ip-addresses.html["Configurez les adresses IP"^] instructions.
+Si vous avez modifié les paramètres VLAN, le sous-réseau de l'appliance a peut-être changé. Si vous devez modifier les adresses IP de l'appareil, suivez les https://docs.netapp.com/us-en/storagegrid/maintain/configuring-ip-addresses.html["Configurez les adresses IP"^] instructions.
 
 +
 link:../installconfig/setting-ip-configuration.html["Configurez les adresses IP StorageGRID"]

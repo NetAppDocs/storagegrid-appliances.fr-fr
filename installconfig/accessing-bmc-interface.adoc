@@ -22,7 +22,7 @@ Vous pouvez accéder à l'interface du contrôleur BMC à l'aide de l'adresse IP
 
 
 .Avant de commencer
-* Le client de gestion utilise un https://docs.netapp.com/us-en/storagegrid-118/admin/web-browser-requirements.html["navigateur web pris en charge"^].
+* Le client de gestion utilise un https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["navigateur web pris en charge"^].
 * Le port de gestion BMC de l'appliance est connecté au réseau de gestion que vous prévoyez d'utiliser.
 +
 [role="tabbed-block"]

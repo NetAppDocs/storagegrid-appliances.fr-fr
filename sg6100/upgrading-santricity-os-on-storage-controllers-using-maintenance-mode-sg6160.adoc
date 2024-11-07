@@ -41,7 +41,7 @@ CAUTION: La mise à niveau de plusieurs appliances StorageGRID peut entraîner u
 
 CAUTION: La NVSRAM est spécifique à l'appliance StorageGRID. N'utilisez pas le téléchargement standard de NVSRAM.
 
-. Suivez les instructions du _Upgrade SANtricity OS_ guide ou de l'aide en ligne de SANtricity System Manager pour mettre à niveau le micrologiciel et la NVSRAM.
+. Suivez les instructions https://docs.netapp.com/us-en/e-series-santricity/sm-support/upgrade-controller-software-and-firmware.html["_Mise à niveau de SANtricity OS_ guide"^] de la ou de l'aide en ligne de SANtricity System Manager pour mettre à niveau le micrologiciel et la NVSRAM.
 +
 
 NOTE: Activez immédiatement les fichiers de mise à niveau. Ne différez pas l'activation.

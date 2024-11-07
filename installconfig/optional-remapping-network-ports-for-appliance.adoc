@@ -14,11 +14,10 @@ summary: 'Vous pouvez éventuellement remapper les ports internes d"un nœud d"a
 Vous pouvez éventuellement remapper les ports internes d'un nœud d'appliance sur différents ports externes. Par exemple, il peut être nécessaire de remappage les ports en raison d'un problème de pare-feu.
 
 .Avant de commencer
-* Vous avez déjà accédé au programme d'installation de l'appliance StorageGRID.
-
+Vous avez déjà accédé au programme d'installation de l'appliance StorageGRID.
 
 .Description de la tâche
-Vous ne pouvez pas utiliser de ports remappés pour les terminaux d'équilibrage de charge. Si vous devez supprimer un port remappé, suivez les étapes de la section https://docs.netapp.com/us-en/storagegrid-118/maintain/removing-port-remaps.html["Supprimer les mappages de port"^].
+Vous ne pouvez pas utiliser de ports remappés pour les terminaux d'équilibrage de charge. Si vous devez supprimer un port remappé, suivez les étapes de la section https://docs.netapp.com/us-en/storagegrid/maintain/removing-port-remaps.html["Supprimer les mappages de port"^].
 
 .Étapes
 . Dans le programme d'installation de l'appliance StorageGRID, sélectionnez *configurer la mise en réseau* > *Remap ports*.
