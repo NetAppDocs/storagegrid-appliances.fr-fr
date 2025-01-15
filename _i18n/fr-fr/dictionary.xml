@@ -5648,7 +5648,6 @@ Affiche Oui, indiquant qu'il est possible de retirer ce composant en toute sécu
   <block id="2060996e4ea036c84fe524f4bb640ff0" category="list-text">*Réseau de gestion pour SANtricity* (facultatif pour les dispositifs de stockage, non requis pour le SGF6112) : ce réseau permet d'accéder à SANtricity System Manager, ce qui vous permet de surveiller et de gérer les composants matériels de l'appliance et du tiroir du contrôleur de stockage. Ce réseau de gestion peut être le même que le réseau d'administration pour StorageGRID, ou il peut s'agir d'un réseau de gestion indépendant.</block>
   <block id="e6b3f8c787f110e738041acfec63cd45" category="admonition">Pour plus d'informations sur les réseaux StorageGRID, reportez-vous au<block ref="c9a67c39cb366102345c95ea9d802249" category="inline-link-rx"></block> .</block>
   <block id="79ffe998f527a3998a83d054ff067c7e" category="list-text"><block ref="79ffe998f527a3998a83d054ff067c7e" category="inline-link-macro-rx"></block></block>
-  <block id="44ef269732748f70c763abafc0361990" category="list-text"><block ref="44ef269732748f70c763abafc0361990" category="inline-link-macro-rx"></block></block>
   <block id="2b5994be0ad1518a670726d49503aef3" category="admonition">Les paramètres BMC définis par cette procédure peuvent ne pas être conservés en cas de défaillance d'un contrôleur ou d'une appliance et doivent être remplacés. Assurez-vous d'avoir un enregistrement de tous les paramètres que vous avez appliqués afin de pouvoir les réappliquer facilement après un remplacement de matériel si nécessaire.</block>
   <block id="156e455630a4e49e7afff2a829c35531" category="open-title">StorageGRID 11.9 et versions ultérieures</block>
   <block id="1433f3dea3005561ee1f9e94e4de877d" category="paragraph">Dans l'interface BMC, utilisez les options *gestion des utilisateurs* et *filtres d'événements de plate-forme* de la page Paramètres pour configurer les notifications par e-mail.</block>
@@ -5761,4 +5760,5 @@ Affiche Oui, indiquant qu'il est possible de retirer ce composant en toute sécu
   <block id="4f45c0c0b55884bea7e7649654813e35" category="sidebar">Gestion des disques (SG110, SG1100, SGF6112 et SG6160)</block>
   <block id="3f7fe61f120f9ba5cf2d622ad7597a37" category="sidebar">Utilisez l'interface BMC</block>
   <block id="6aa2cc2f099a383774f35aa72c7c8c6d" category="paragraph"><block ref="6aa2cc2f099a383774f35aa72c7c8c6d" category="inline-link-rx"></block></block>
+  <block id="06670f0887e1e6231759b0c18c236453" category="list-text"><block ref="06670f0887e1e6231759b0c18c236453" category="inline-link-macro-rx"></block></block>
 </blocks>
