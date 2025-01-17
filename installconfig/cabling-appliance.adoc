@@ -1124,6 +1124,7 @@ Réseau Grid
 
 
 . Si vous envisagez d'utiliser le réseau d'administration pour StorageGRID, connectez le port réseau d'administration de l'appliance au réseau d'administration à l'aide d'un câble Ethernet.
+. Si votre appliance est équipée d'un tiroir d'extension, reportez-vous à la pour plus d'informations sur le link:../sg6100/adding-expansion-shelf-to-deployed-sg6160.html["Instructions d'ajout d'un tiroir d'extension à un SG6160 déployé"]câblage.
 
 
 --
