@@ -26,9 +26,25 @@ Suivez ces procédures pour :
 .Avant de commencer
 * Vous avez link:verify-component-to-replace-sg6000cn.html["Vérifiez l'appareil dans lequel la pile CMOS doit être remplacée - effectué"].
 * Vous avez link:locating-controller-in-data-center.html["Emplacement physique du contrôleur SG6000-CN"] là où vous remplacez la pile CMOS dans le centre de données.
+* Vous avez enregistré la configuration BMC actuelle de l'appliance, si elle reste disponible.
++
+.. Connectez-vous à l'appliance à remplacer :
++
+... Saisissez la commande suivante : `ssh admin@_grid_node_IP_`
+... Entrez le mot de passe indiqué dans le `Passwords.txt` fichier.
+... Entrez la commande suivante pour passer à la racine : `su -`
+... Entrez le mot de passe indiqué dans le `Passwords.txt` fichier.
++
+Lorsque vous êtes connecté en tant que root, l'invite passe de `$` à `#`.
+
+
+
+.. Entrée : `*run-host-command ipmitool lan print*` permet d'afficher la configuration BMC actuelle de l'appliance.
 +
 
 NOTE: Un link:power-sg6000-cn-controller-off-on.html["arrêt contrôlé de l'appareil"] est nécessaire avant de retirer l'appareil du rack.
+
+
 
 * Vous avez déconnecté tous les câbles et link:reinstalling-sg6000-cn-controller-cover.html["retirez le capot de l'appareil - effectué"].
 

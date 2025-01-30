@@ -26,9 +26,25 @@ Suivez ces procédures pour :
 .Avant de commencer
 * Vous avez link:verify-component-to-replace.html["Vérifiez l'appareil dans lequel la pile CMOS doit être remplacée - effectué"].
 * Vous avez link:locating-sgf6112-in-data-center.html["Emplacement physique de l'appliance SGF6112 ou du contrôleur SG6100-CN"] Emplacement de remplacement de la pile CMOS dans le centre de données.
+* Vous avez enregistré la configuration BMC actuelle de l'appliance, si elle reste disponible.
++
+.. Connectez-vous à l'appliance à remplacer :
++
+... Saisissez la commande suivante : `ssh admin@_grid_node_IP_`
+... Entrez le mot de passe indiqué dans le `Passwords.txt` fichier.
+... Entrez la commande suivante pour passer à la racine : `su -`
+... Entrez le mot de passe indiqué dans le `Passwords.txt` fichier.
++
+Lorsque vous êtes connecté en tant que root, l'invite passe de `$` à `#`.
+
+
+
+.. Entrée : `*run-host-command ipmitool lan print*` permet d'afficher la configuration BMC actuelle de l'appliance.
 +
 
 NOTE: Un link:power-sgf6112-off-on.html#shut-down-the-sgf6112-appliance-or-sg6100-cn-controller["arrêt contrôlé de l'appareil"] est nécessaire avant de retirer l'appareil du rack.
+
+
 
 * Vous avez déconnecté tous les câbles et link:reinstalling-sgf6112-cover.html["retirez le capot de l'appareil - effectué"].
 

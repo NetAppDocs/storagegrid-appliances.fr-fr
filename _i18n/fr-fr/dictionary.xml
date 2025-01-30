@@ -5763,4 +5763,6 @@ Affiche Oui, indiquant qu'il est possible de retirer ce composant en toute sécu
   <block id="06670f0887e1e6231759b0c18c236453" category="list-text"><block ref="06670f0887e1e6231759b0c18c236453" category="inline-link-macro-rx"></block></block>
   <block id="125c3dfed61415188958ef328818fc0b" category="inline-link-macro">Instructions d'ajout d'un tiroir d'extension à un SG6160 déployé</block>
   <block id="813eb6e57b4706c7df0e13ae0defacd8" category="list-text">Si votre appliance est équipée d'un tiroir d'extension, reportez-vous à la pour plus d'informations sur le <block ref="ba1bb7195a934f0a465563dc7e705dd7" category="inline-link-macro-rx"></block>câblage.</block>
+  <block id="c6ce792d1a06c8b72936713f0001140a" category="list-text">Vous avez enregistré la configuration BMC actuelle de l'appliance, si elle reste disponible.</block>
+  <block id="df5c8b40026819d555dd6dbdc002fb3e" category="list-text">Entrée :<block ref="73a1c7bb6f54767f7e51d6973cad4923" prefix=" " category="inline-code"></block> permet d'afficher la configuration BMC actuelle de l'appliance.</block>
 </blocks>

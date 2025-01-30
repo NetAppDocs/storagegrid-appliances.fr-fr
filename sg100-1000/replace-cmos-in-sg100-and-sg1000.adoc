@@ -26,9 +26,25 @@ Suivez ces procédures pour :
 .Avant de commencer
 * Vous avez link:verify-component-to-replace-sg100-and-sg1000.html["Vérifiez que la pile CMOS du SG100 ou du SG1000 doit être remplacée - effectué"].
 * Vous avez link:locating-controller-in-data-center.html["Emplacement physique de l'appliance SG100 ou SG1000"] là où vous remplacez la pile CMOS dans le centre de données.
+* Vous avez enregistré la configuration BMC actuelle de l'appliance, si elle reste disponible.
++
+.. Connectez-vous à l'appliance à remplacer :
++
+... Saisissez la commande suivante : `ssh admin@_grid_node_IP_`
+... Entrez le mot de passe indiqué dans le `Passwords.txt` fichier.
+... Entrez la commande suivante pour passer à la racine : `su -`
+... Entrez le mot de passe indiqué dans le `Passwords.txt` fichier.
++
+Lorsque vous êtes connecté en tant que root, l'invite passe de `$` à `#`.
+
+
+
+.. Entrée : `*run-host-command ipmitool lan print*` permet d'afficher la configuration BMC actuelle de l'appliance.
 +
 
 NOTE: Un link:shut-down-sg100-and-sg1000.html["arrêt contrôlé de l'appareil"] est nécessaire avant de retirer l'appareil du rack.
+
+
 
 * Vous avez déconnecté tous les câbles et link:reinstalling-sg100-and-sg1000-controller-cover.html["retirez le capot de l'appareil - effectué"].
 
