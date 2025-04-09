@@ -57,7 +57,7 @@ Le panneau des détails du lecteur s'affiche.
 
 . Sélectionnez *Activer le centreur lumineux*.
 +
-** Une icône d'ampoule image:../media/icon_drive-light-bulb.png["ampoule de feu de route"] s'affiche pour le lecteur.
+** Une icône d'ampoule image:../media/icon_drive-light-bulb.png["ampoule de feu de route"]s'affiche pour le lecteur.
 ** Un voyant orange clignote sur le disque physique.
 
 

@@ -311,7 +311,7 @@ Le fichier est enregistré dans le dossier Téléchargements de votre navigateur
 
 
 
-. Si vous avez placé l'appliance en mode maintenance pendant cette procédure, quittez le mode maintenance et attendez que le nœud redémarre et rejoint la grille. Ce processus peut prendre jusqu'à 20 minutes. Ensuite, dans le Gestionnaire de grille, vérifiez que la page nœuds affiche un état normal (icône de coche verte) image:../media/icon_alert_green_checkmark.png["coche verte"] à gauche du nom du nœud) pour le nœud de l'appliance, indiquant qu'aucune alerte n'est active et que le nœud est connecté à la grille.
+. Si vous avez placé l'appliance en mode maintenance pendant cette procédure, quittez le mode maintenance et attendez que le nœud redémarre et rejoint la grille. Ce processus peut prendre jusqu'à 20 minutes. Ensuite, dans Grid Manager, vérifiez que la page nœuds affiche un état normal (icône de coche verte image:../media/icon_alert_green_checkmark.png["coche verte"]à gauche du nom du nœud) pour le nœud de l'appliance, ce qui indique qu'aucune alerte n'est active et que le nœud est connecté à la grille.
 +
 image::../media/nodes_menu.png[Le nœud d'appliance a rejoint la grille]
 

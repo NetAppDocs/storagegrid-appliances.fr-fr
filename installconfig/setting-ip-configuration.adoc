@@ -67,8 +67,8 @@ Si vous avez des sous-réseaux de grille, la passerelle de réseau de grille est
 NOTE: La route par défaut n'est pas répertoriée. Si le réseau client n'est pas activé, la route par défaut utilise la passerelle réseau Grid.
 
 +
-*** Pour ajouter un sous-réseau, cliquez sur l'icône d'insertion image:../media/icon_plus_sign_black_on_white.gif["insérer l'icône"] à droite de la dernière entrée.
-*** Pour supprimer un sous-réseau inutilisé, cliquez sur l'icône Supprimer image:../media/icon_nms_delete_new.gif["icône supprimer"].
+*** Pour ajouter un sous-réseau, cliquez sur l'icône d'insertion image:../media/icon_plus_sign_black_on_white.gif["insérer l'icône"]située à droite de la dernière entrée.
+*** Pour supprimer un sous-réseau inutilisé, cliquez sur l'icône de suppression image:../media/icon_nms_delete_new.gif["icône supprimer"].
 
 
 .. Cliquez sur *Enregistrer*.
@@ -92,8 +92,8 @@ Si vous avez des sous-réseaux de grille, la passerelle de réseau de grille est
 NOTE: La route par défaut n'est pas répertoriée. Si le réseau client n'est pas activé, la route par défaut utilise la passerelle réseau Grid.
 
 +
-*** Pour ajouter un sous-réseau, cliquez sur l'icône d'insertion image:../media/icon_plus_sign_black_on_white.gif["insérer l'icône"] à droite de la dernière entrée.
-*** Pour supprimer un sous-réseau inutilisé, cliquez sur l'icône Supprimer image:../media/icon_nms_delete_new.gif["icône supprimer"].
+*** Pour ajouter un sous-réseau, cliquez sur l'icône d'insertion image:../media/icon_plus_sign_black_on_white.gif["insérer l'icône"]située à droite de la dernière entrée.
+*** Pour supprimer un sous-réseau inutilisé, cliquez sur l'icône de suppression image:../media/icon_nms_delete_new.gif["icône supprimer"].
 
 
 .. Si vous souhaitez utiliser des trames jumbo, remplacez le champ MTU par une valeur adaptée aux trames jumbo, comme 9000. Sinon, conservez la valeur par défaut 1500.
@@ -148,8 +148,8 @@ Vous devez vérifier que tous les sous-réseaux peuvent être atteints à l'aide
 NOTE: La route par défaut ne peut pas être établie pour utiliser la passerelle réseau Admin.
 
 +
-*** Pour ajouter un sous-réseau, cliquez sur l'icône d'insertion image:../media/icon_plus_sign_black_on_white.gif["insérer l'icône"] à droite de la dernière entrée.
-*** Pour supprimer un sous-réseau inutilisé, cliquez sur l'icône Supprimer image:../media/icon_nms_delete_new.gif["icône supprimer"].
+*** Pour ajouter un sous-réseau, cliquez sur l'icône d'insertion image:../media/icon_plus_sign_black_on_white.gif["insérer l'icône"]située à droite de la dernière entrée.
+*** Pour supprimer un sous-réseau inutilisé, cliquez sur l'icône de suppression image:../media/icon_nms_delete_new.gif["icône supprimer"].
 
 
 .. Cliquez sur *Enregistrer*.
@@ -173,8 +173,8 @@ Vous devez vérifier que tous les sous-réseaux peuvent être atteints à l'aide
 NOTE: La route par défaut ne peut pas être établie pour utiliser la passerelle réseau Admin.
 
 +
-*** Pour ajouter un sous-réseau, cliquez sur l'icône d'insertion image:../media/icon_plus_sign_black_on_white.gif["insérer l'icône"] à droite de la dernière entrée.
-*** Pour supprimer un sous-réseau inutilisé, cliquez sur l'icône Supprimer image:../media/icon_nms_delete_new.gif["icône supprimer"].
+*** Pour ajouter un sous-réseau, cliquez sur l'icône d'insertion image:../media/icon_plus_sign_black_on_white.gif["insérer l'icône"]située à droite de la dernière entrée.
+*** Pour supprimer un sous-réseau inutilisé, cliquez sur l'icône de suppression image:../media/icon_nms_delete_new.gif["icône supprimer"].
 
 
 .. Si vous souhaitez utiliser des trames jumbo, remplacez le champ MTU par une valeur adaptée aux trames jumbo, comme 9000. Sinon, conservez la valeur par défaut 1500.

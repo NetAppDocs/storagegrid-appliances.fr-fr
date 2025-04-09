@@ -34,7 +34,6 @@
   <block id="16e036b76973c9fbae0f82be319571c0" category="list-text">Sélectionnez *redémarrer en mode maintenance* pour redémarrer le contrôleur avec le nœud restant en mode de maintenance. (Cette option n'est disponible que lorsque le contrôleur est en mode de maintenance.) Sélectionnez cette option si des opérations de maintenance supplémentaires doivent être effectuées sur le nœud avant de rejoindre la grille.</block>
   <block id="abae4054ff73709d783731ccc01cb620" category="image-alt">Redémarrez le contrôleur en mode de maintenance</block>
   <block id="3626aefc9cb2effa31b269c155b93cb3" category="inline-image-macro">coche verte</block>
-  <block id="4a7896c4df016b109cb969cdc361c49f" category="paragraph">L'appliance peut redémarrer et rejoindre la grille en 20 minutes. Pour confirmer que le redémarrage est terminé et que le nœud a rejoint la grille, retournez à la grille Manager. La page *NODES* doit afficher un état normal (icône de coche verte <block ref="b0c066af00a4ff17f603acf55958d068" category="inline-image-macro-rx" type="image"></block> à gauche du nom du nœud) pour le nœud de l'appliance, indiquant qu'aucune alerte n'est active et que le nœud est connecté à la grille.</block>
   <block id="4a7717f111c2730f0f856e7f7bce4120" category="image-alt">Le nœud d'appliance a rejoint la grille</block>
   <block id="d302ab60418523bd0761c847d8a30df9" category="summary">Identifiez le contrôleur pour effectuer des opérations de maintenance ou de mise à niveau du matériel.</block>
   <block id="5a98db7f59331b6532861044538d04ed" category="doc">Localiser SG100 ou SG1000 dans le data Center</block>
@@ -586,7 +585,6 @@
   <block id="d3b48700951a0b8b77b211e773016d08" category="paragraph">La figure montre comment les quatre ports réseau sont liés en mode de liaison port fixe (configuration par défaut).</block>
   <block id="9ee14927da820774398c3df40695487e" category="image-alt">SGF6112 mode liaison port fixe</block>
   <block id="38c9a563fec2225ed2a9f5d6933738cf" category="paragraph">La figure montre comment les quatre ports réseau sont liés en mode agrégation de liens de port.</block>
-  <block id="7a94e0e125ccb659b8287a71266ad626" category="image-alt">SGF6112 mode de liaison de port agrégé</block>
   <block id="911e75012e8614cfd0f98a9d0a4a1ded" category="image-alt">Ports réseau d'administration mis en liaison SGF6112</block>
   <block id="0739ae8aa2b43e4e7e5a0617281bed7e" category="list-text">Dans la barre de menus du programme d'installation de l'appliance StorageGRID, cliquez sur *configurer réseau* &gt; *Configuration lien*.</block>
   <block id="243a7c2280790d37c7a538bdc19d52a0" category="paragraph">La page Configuration de la liaison réseau affiche un schéma de votre appliance avec le réseau et les ports de gestion numérotés.</block>
@@ -710,7 +708,6 @@
   <block id="0e152e55698c28ee0f75725b3f0f1f3a" category="image-alt">Avant et arrière de l'appliance SG5760</block>
   <block id="0e9c6b4af603c29f7da7a818c51d0535" category="section-title">Composants SG5760</block>
   <block id="cee3e5c26f498528ac4a0236cc79321a" category="paragraph">Le SG5760 inclut deux contrôleurs, deux blocs de ventilation et deux blocs d'alimentation.</block>
-  <block id="cbfb14f470701bf93424d757c624369a" category="image-alt">Contrôleurs</block>
   <block id="e14810f3f4c905323dafce88216fa5cc" category="paragraph">Cartouche de ventilateur (1 sur 2)</block>
   <block id="a063d58fb5fae2bdfac1676614f7ee07" category="paragraph">Boîtier de puissance (1 sur 2)</block>
   <block id="6b2b65ea7978b5b9a25b2cb94431e653" category="section-title">SG5760X, vues avant et arrière</block>
@@ -1070,7 +1067,6 @@ Dans l'API de gestion de grille, utilisez le terminal privé :<block ref="d6808d
   <block id="f4f8856aa71072c7ffcae15cdd730581" category="open-title">Appliance de stockage</block>
   <block id="2294b3e981e790cc87d4da57bd1cbbfb" category="list-text">Pour contrôler la progression de l'installation, cliquez sur *Monitor installation*.</block>
   <block id="5180436222e4cab27793145585243c85" category="paragraph">La page installation du moniteur affiche la progression de l'installation.</block>
-  <block id="137110384a36d8791ecfd822e2cec069" category="image-alt">Cette image est expliquée par le texte qui l'entoure.</block>
   <block id="de54811cbfae5b1dad2e97b4d2bc5d37" category="paragraph">La barre d'état bleue indique la tâche en cours. Les barres d'état vertes indiquent que les tâches ont été effectuées avec succès.</block>
   <block id="242b3abd41f6ed6b0544bfba71c75862" category="admonition">Le programme d'installation s'assure que les tâches terminées lors d'une installation précédente ne sont pas réexécutées. Si vous exécutez à nouveau une installation, toutes les tâches qui n'ont pas besoin d'être réexécutées s'affichent avec une barre d'état verte et un état de « `barrét' ».</block>
   <block id="500b135abdc51d28fdb66659c88a91cb" category="list-text">Passez en revue la progression des deux premières étapes d'installation.</block>
@@ -1346,7 +1342,6 @@ Dans l'API de gestion de grille, utilisez le terminal privé :<block ref="d6808d
   <block id="f961c0bd93f3e244eccfb936f758a1b9" category="summary">Suivez ces étapes générales pour installer et configurer une appliance StorageGRID et la déployer comme nœud dans votre système StorageGRID.</block>
   <block id="93524d04199bd4798a3fe31a7af76e9b" category="doc">Démarrage rapide pour l'installation de l'appareil</block>
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">Une seule</block>
-  <block id="61d7360b301a1cb885e62542da3bb7d4" category="list-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> Avant l'installation</block>
   <block id="729465e8ee73495ad13bac2190f3bf21" category="list-text">Automatisez l'installation et la configuration avec votre consultant en services professionnels NetApp. Voir <block ref="da9e5f931ee7f07fa7e39b6838d21cb5" category="inline-link-macro-rx"></block>.</block>
   <block id="61a31f57e1f0397cc5e4b75b9e9a8235" category="paragraph">Cette étape est facultative. Cependant, la rationalisation et l'automatisation des étapes de configuration peuvent faire gagner du temps et assurer la cohérence de la configuration de plusieurs appliances.</block>
   <block id="908d6500c8720fda63973247d6cf6dd8" category="inline-link-macro">Préparer le site</block>
@@ -1357,7 +1352,6 @@ Dans l'API de gestion de grille, utilisez le terminal privé :<block ref="d6808d
   <block id="5b3bc2041b779a6eb06cd20122f89cea" category="inline-link-macro">Collecte d'informations sur le réseau</block>
   <block id="adb08abc85034bf5521a8cf194dd40f7" category="list-text"><block ref="adb08abc85034bf5521a8cf194dd40f7" category="inline-link-macro-rx"></block></block>
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">Deux</block>
-  <block id="8277df7af5b96bf4a80b559c3ba178a8" category="list-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> Installer le matériel de fixation</block>
   <block id="5a4d04406745c2904f6018d2e497f94e" category="inline-link-macro">Enregistrez le matériel</block>
   <block id="4f29770bc91ba4e0ac93deb8a75d6ab4" category="list-text"><block ref="4f29770bc91ba4e0ac93deb8a75d6ab4" category="inline-link-macro-rx"></block></block>
   <block id="925131ecbd4fcd6869a82902a137f0f5" category="list-text">Installez-le dans l'armoire ou sur le rack</block>
@@ -1368,7 +1362,6 @@ Dans l'API de gestion de grille, utilisez le terminal privé :<block ref="d6808d
   <block id="d2ac588ca1c2e36ed5fe68add0ef2b5b" category="inline-link-macro">Afficher les indicateurs d'état et les codes</block>
   <block id="a858da9bda9e3877715430e0088bb5dc" category="list-text"><block ref="a858da9bda9e3877715430e0088bb5dc" category="inline-link-macro-rx"></block></block>
   <block id="ca8a2087e5557e317599344687a57391" category="inline-image-macro">Trois</block>
-  <block id="c0d04cbe5d2a655bbb5f1f3f1e6451d9" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> Configurer le matériel</block>
   <block id="2accf2cbaee75c29a846d3926d71c01a" category="paragraph">Si vous configurez et déployez plusieurs appliances, utilisez l'outil NetApp ConfigBuilder pour automatiser les étapes suivantes de configuration et de déploiement. Pour obtenir de l'aide, contactez votre consultant en services professionnels NetApp. Voir <block ref="da9e5f931ee7f07fa7e39b6838d21cb5" category="inline-link-macro-rx"></block>.</block>
   <block id="689516ae21d375042165861bc9946283" category="list-text">Configurer les connexions StorageGRID</block>
   <block id="7d96b927cf251ec29cb794b34748cc6f" category="list-text"><block ref="91a798f25e7b04bd5397635b1ec1a030" category="inline-link-macro-rx"></block> et vérifiez que vous utilisez la version la plus récente</block>
@@ -1383,7 +1376,6 @@ Dans l'API de gestion de grille, utilisez le terminal privé :<block ref="d6808d
   <block id="2171ee6f1f3ccc6f315dabf2a4d9915c" category="inline-link-macro">Remappez les ports réseau</block>
   <block id="c34a1892850e29f57586c61eaab0d8f1" category="list-text"><block ref="c34a1892850e29f57586c61eaab0d8f1" category="inline-link-macro-rx"></block></block>
   <block id="981b8fcee42e1e726a67a2b9a98ea6e9" category="inline-image-macro">Quatre</block>
-  <block id="75be3472a8a2dba2c67b3d12a39d8714" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> Déployez le nœud de l'appliance</block>
   <block id="007b9954a5c681c7ea309c9471bd96d1" category="paragraph">Déployez l'appliance comme un nouveau nœud dans votre système StorageGRID.</block>
   <block id="34fa5050343060315a25cd328438a2ce" category="inline-link-macro">Déployez le nœud de stockage de l'appliance</block>
   <block id="c1d39a1019e538dbace4710b28fbd450" category="list-text"><block ref="c1d39a1019e538dbace4710b28fbd450" category="inline-link-macro-rx"></block></block>
@@ -1475,9 +1467,7 @@ Dans l'API de gestion de grille, utilisez le terminal privé :<block ref="d6808d
   <block id="1e5525a7408a5f05eab0a28d87fbf2b2" category="paragraph">Si vous avez des sous-réseaux de grille, la passerelle de réseau de grille est requise. Tous les sous-réseaux de la grille spécifiés doivent être accessibles via cette passerelle. Ces sous-réseaux du réseau Grid doivent également être définis dans la liste de sous-réseaux du réseau Grid sur le nœud d'administration principal lorsque vous démarrez l'installation de StorageGRID.</block>
   <block id="95c601a1b60eb13cd59109591804d00a" category="admonition">La route par défaut n'est pas répertoriée. Si le réseau client n'est pas activé, la route par défaut utilise la passerelle réseau Grid.</block>
   <block id="408ea845582fc67ccb1d6fd994905d7e" category="inline-image-macro">insérer l'icône</block>
-  <block id="625b1517f7fc50c8790976add6a30b85" category="list-text">Pour ajouter un sous-réseau, cliquez sur l'icône d'insertion <block ref="0e4a78bb3476d4c9221dc56813d32390" category="inline-image-macro-rx" type="image"></block> à droite de la dernière entrée.</block>
   <block id="5f11c7889df3330ff1f653f5e5702931" category="inline-image-macro">icône supprimer</block>
-  <block id="20d1f9afba77fd8b189e95eebc04fa3c" category="list-text">Pour supprimer un sous-réseau inutilisé, cliquez sur l'icône Supprimer <block ref="ae4b0d0edca14814d378e9b1121d1fb3" category="inline-image-macro-rx" type="image"></block>.</block>
   <block id="a46bbb4dd037b68158879e9e446ba4ab" category="list-text">Si vous avez sélectionné *DHCP*, procédez comme suit pour configurer le réseau de grille :</block>
   <block id="140b4bda6d38a9f86842d22758d11a13" category="list-text">Après avoir sélectionné le bouton radio *DHCP*, cliquez sur *Enregistrer*.</block>
   <block id="a1563c17c233f64f135160e3aaf751c8" category="paragraph">Les champs *adresse IPv4*, *passerelle* et *sous-réseaux* sont automatiquement renseignés. Si le serveur DHCP est configuré pour attribuer une valeur MTU, le champ *MTU* est renseigné avec cette valeur et le champ devient en lecture seule.</block>
@@ -2596,7 +2586,6 @@ Dans l'API de gestion de grille, utilisez le terminal privé :<block ref="d6808d
   <block id="235328827141e650f44c482c6868c490" category="list-text">*Plus de 4 entrées MEL critiques au cours des 7 derniers jours*</block>
   <block id="6b108eb8b08f0ff8a5a6e884a1ac6474" category="list-text">*Redémarrer dans StorageGRID*.</block>
   <block id="ff893ef835261129935a9f82f297a8d3" category="list-text">*Redémarrer en mode Maintenance*. Redémarrez le contrôleur et laissez le nœud en mode de maintenance. Sélectionnez cette option si des échecs se sont produits au cours de la procédure et que vous souhaitez recommencer. Une fois le redémarrage du nœud en mode maintenance terminé, redémarrez à partir de l'étape appropriée de la procédure ayant échoué.</block>
-  <block id="c7c19b3cb79ee9f5fdbc22cfac916b00" category="paragraph">L'appliance peut redémarrer et rejoindre la grille en 20 minutes. Pour confirmer que le redémarrage est terminé et que le nœud a rejoint la grille, retournez à la grille Manager. La page nœuds doit afficher un état normal (icône en forme de coche verte) <block ref="b0c066af00a4ff17f603acf55958d068" category="inline-image-macro-rx" type="image"></block> à gauche du nom du nœud) pour le nœud de l'appliance, indiquant qu'aucune alerte n'est active et que le nœud est connecté à la grille.</block>
   <block id="5d4d9bbd71eda7ec2ba074c8e6717b0b" category="list-text">Vous disposez du numéro de série du dispositif de stockage sur lequel le composant doit être remplacé.</block>
   <block id="620e2edf2db0c3c3cad57aeb246c6bfe" category="list-text">Blocs d'alimentation</block>
   <block id="4604f841b0b16d3013cac1e2078e5b1b" category="list-text">Ventilateurs</block>
@@ -3255,15 +3244,12 @@ Pour redémarrer le clonage du nœud source, redémarrez le processus de clonage
   <block id="ebd9bec4d70abc789d439c1f136b0538" category="list-text">Mise en page</block>
   <block id="a92cd291617f14a6abada995fa7b9a3f" category="list-text">Disposition des disques de stockage des données dans l'appliance. Sélectionnez un lecteur pour afficher les détails du lecteur.</block>
   <block id="802e7305dd85cea6e2113cfcd28efcc4" category="inline-image-macro">Onglet gérer les lecteurs vue disposition</block>
-  <block id="d27c8e7332b9c04db30add2b10a3b985" category="paragraph"><block ref="d27c8e7332b9c04db30add2b10a3b985" category="inline-image-macro-rx" type="image"></block></block>
   <block id="51c45b795d5d18a3e4e0c37e8b20a141" category="list-text">Tableau</block>
   <block id="bb9b3538a9d87d44908bc9e32d8d569f" category="list-text">Répertorie les informations relatives à chaque lecteur. Sélectionnez un lecteur pour afficher les détails du lecteur.</block>
   <block id="a3dca7d34e55df93c7cde51419b56b4d" category="inline-image-macro">Onglet gérer les lecteurs vue Tableau</block>
-  <block id="c6a460c7204d47ea03281d6c34b4082c" category="paragraph"><block ref="c6a460c7204d47ea03281d6c34b4082c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7839b3083725aa9cf29f17e556f51b13" category="list-text">Détails du disque</block>
   <block id="f1fcb7890d507bd18507b76b7fac911e" category="list-text">Récapitulatif pour chaque disque. Sélectionnez le bouton de tâche approprié, comme décrit dans les étapes ci-dessous.</block>
   <block id="41bba69dcc44894611fbb8408556ecf0" category="inline-image-macro">Onglet gérer les lecteurs Détails des lecteurs</block>
-  <block id="b20d6e66b629a10a6645afcf7cdaea19" category="paragraph"><block ref="b20d6e66b629a10a6645afcf7cdaea19" category="inline-image-macro-rx" type="image"></block></block>
   <block id="75388568d69331a73edddf1bb8200063" category="section-title">Allumer ou éteindre le centreur lumineux</block>
   <block id="eee8e9d047abcc6f2a1bd835ce94940f" category="paragraph">Pour localiser physiquement un lecteur dans l'appliance :</block>
   <block id="c32ef8b996f19c9a382163fff2884c3e" category="list-text">Dans le Gestionnaire de grille, sélectionnez *NODES* &gt; *_data Center_*.</block>
@@ -3271,7 +3257,6 @@ Pour redémarrer le clonage du nœud source, redémarrez le processus de clonage
   <block id="2ec674c0e23e478f263eb7f0dd38dcfa" category="paragraph">Le panneau des détails du lecteur s'affiche.</block>
   <block id="91a78dae50662df15b3511db31bb992d" category="list-text">Sélectionnez *Activer le centreur lumineux*.</block>
   <block id="4b2ae8cd6761e598cde2ed97ebfc2c52" category="inline-image-macro">ampoule de feu de route</block>
-  <block id="7702526375f4228115e6c43395e88831" category="list-text">Une icône d'ampoule <block ref="94ab247b1d8795573f258b884cbb3205" category="inline-image-macro-rx" type="image"></block> s'affiche pour le lecteur.</block>
   <block id="388c626a588c91ea293598aef2749584" category="list-text">Un voyant orange clignote sur le disque physique.</block>
   <block id="1abcc8c99c25daaf0201a5a5f9f76f0c" category="list-text">Lorsque vous souhaitez éteindre la lumière du localisateur, sélectionnez *Désactiver la lumière du localisateur*.</block>
   <block id="936feabbf1d089b08420a3d98b966130" category="section-title">[[logiquement-replace-drive]]remplace logiquement le disque</block>
@@ -3367,7 +3352,6 @@ Pour redémarrer le clonage du nœud source, redémarrez le processus de clonage
   <block id="d795e8cd8371a6b73f2b41ac93cd4af7" category="list-text">Ramenez l'appareil en mode de fonctionnement normal. Dans le programme d'installation de l'appliance StorageGRID, sélectionnez *Avancé* &gt; *redémarrer le contrôleur*, puis sélectionnez *redémarrer dans StorageGRID*.</block>
   <block id="3e66fa5bf36f76d2fc581f1ef343369d" category="list-text">Durant le redémarrage, surveillez l'état du nœud pour déterminer quand il a rejoint la grille.</block>
   <block id="8086a95cfc7eadf19603caa0b59c297b" category="paragraph">L'appareil redémarre et rejoint la grille. Ce processus peut prendre jusqu'à 20 minutes.</block>
-  <block id="92509bf687a8af21fffd7107378de538" category="list-text">Vérifiez que le redémarrage est terminé et que le nœud a rejoint à nouveau la grille. Dans le Gestionnaire de grille, vérifiez que la page nœuds affiche un état normal (icône avec une coche verte) <block ref="b0c066af00a4ff17f603acf55958d068" category="inline-image-macro-rx" type="image"></block> à gauche du nom du nœud) pour le nœud de l'appliance, indiquant qu'aucune alerte n'est active et que le nœud est connecté à la grille.</block>
   <block id="f2c451e5cfa0cef9d6f648da8cc4b64d" category="list-text">Depuis SANtricity System Manager, confirmer que le nouveau contrôleur est optimal et collecter les données de support</block>
   <block id="f838b84263c45aeb4f1be3728754e3ad" category="summary">Vous devrez peut-être remplacer le contrôleur E5700SG s'il ne fonctionne pas de manière optimale ou s'il est défectueux.</block>
   <block id="add9671f6034ac41fcd287a17504e8bd" category="doc">Remplacez le contrôleur de calcul E5700SG</block>
@@ -3808,7 +3792,6 @@ Voir les informations sur la gestion des objets avec la gestion du cycle de vie 
   <block id="0411119e4f79ad1707ac7d0f4dcfe1f9" category="sidebar">Procédures fréquemment effectuées</block>
   <block id="aefc32c543633d03426c4468621c16d0" category="sidebar">Mettez l'appareil hors tension et sous tension</block>
   <block id="a676111fb737fcb72e7e7c965f76150f" category="sidebar">Mettez à niveau SANtricity</block>
-  <block id="c55b834e11341e1ae1654b547833e156" category="sidebar">Mettre à niveau le micrologiciel du lecteur</block>
   <block id="4ca89cce8de48db97e7da87c4da0f321" category="sidebar">Procédures de rack</block>
   <block id="e2a9fe764a1470ce20c66da753bdd352" category="sidebar">Remplacez le contrôleur dans le rack</block>
   <block id="ee483790c835a22a06c38b59fd4f5d99" category="sidebar">Ajouter le tiroir d'extension</block>
@@ -4092,7 +4075,6 @@ Voir les informations sur la gestion des objets avec la gestion du cycle de vie 
   <block id="3646dc64c9984fb8e4916b069a738c4d" category="list-text"><block ref="3646dc64c9984fb8e4916b069a738c4d" category="inline-link-macro-rx"></block></block>
   <block id="1eb5174a3405ee92fa2cb06763568414" category="paragraph">Les figures montrent comment les quatre ports réseau du SG1100 ou du SG110 sont liés en mode de liaison port fixe (configuration par défaut).</block>
   <block id="80373303baca203e4e14cdd9e3730d3a" category="image-alt">Mode agrégation de liaisons de port SG1100</block>
-  <block id="d724879fa330fae85100664fb33bd284" category="image-alt">SG110 mode de liaison de port agrégé</block>
   <block id="c185e2af57eb486402a7055cd7b9584b" category="image-alt">Ports réseau d'administration mis en liaison avec le SG1100</block>
   <block id="168fbbc8217ae40bd5086de4e4935611" category="image-alt">Ports réseau d'administration mis en liaison SG110</block>
   <block id="835d59e48069a93606ecd047daaf1f61" category="summary">L'appliance de services StorageGRID SG110 et l'appliance de services SG1100 peuvent fonctionner comme un nœud de passerelle et comme un nœud d'administration afin de fournir des services d'équilibrage des charges haute disponibilité dans un système StorageGRID. Les deux appliances peuvent fonctionner en tant que nœuds de passerelle et nœuds d'administration \(primaires ou non-primaires\) en même temps.</block>
@@ -4724,9 +4706,6 @@ Libérez le contrôleur de l'appareil en appuyant sur le loquet de la poignée d
   <block id="b35ee31644277b926d6f67755bed8262" category="list-text">Éviter les champs magnétiques :</block>
   <block id="4f6fd854157171bc29496e1302686c0d" category="list-text">Tenir les disques à l'écart des dispositifs magnétiques.</block>
   <block id="f66258d021b41e6fa19a1649533ef172" category="paragraph">Les champs magnétiques peuvent détruire toutes les données du lecteur et causer des dommages irréparables au circuit d'entraînement.</block>
-  <block id="c43f428e44c60919263219fc69f78b27" category="doc">Mettez à niveau le micrologiciel du lecteur SG5800 à l'aide du Gestionnaire système SANtricity</block>
-  <block id="f92e54d30593fb7cc6d4478240b8477c" category="paragraph">Mettez à niveau le micrologiciel des lecteurs de votre appareil pour vous assurer que vous disposez des dernières fonctionnalités et des derniers correctifs.</block>
-  <block id="cc65b159b524b20be43aac2014954759" category="paragraph">Directive non résolue dans &lt;stdin&gt; - include:../_include/upgrading-drive-firmware-using-santricity-system-Manager.adoc[]</block>
   <block id="03dcfd6af80c1707e647b3cee9c7ee65" category="list-text">Vérifiez que le voyant de gauche du lecteur à remplacer clignote en orange. Si un problème de lecteur a été signalé dans l'interface utilisateur Grid Manager ou BMC, HDD02 ou HDD2 reportez-vous au lecteur dans le logement supérieur et HDD03 ou HDD3 reportez-vous au lecteur dans le logement inférieur.</block>
   <block id="445e825246156afbf483be98791c154f" category="inline-link-macro">SG5800</block>
   <block id="9cef5aeb63436914780167a988745b83" category="list-text"><block ref="9cef5aeb63436914780167a988745b83" category="inline-link-macro-rx"></block></block>
@@ -5024,7 +5003,6 @@ Libérez le contrôleur de l'appareil en appuyant sur le loquet de la poignée d
   <block id="6a39f57ac2d1612428addd88ffb4531c" category="image-alt">Illustration montrant comment les ports 10/25-GbE du contrôleur SG5800 sont liés en mode fixe</block>
   <block id="4036333a04d1013d0a2ff245b1743cf3" category="image-alt">Illustration montrant comment les ports 10/25-GbE du contrôleur SG5800 sont liés en mode agrégat</block>
   <block id="21beafac072af3624f5cf77d3c470a43" category="paragraph">*SG6100* :</block>
-  <block id="0fdec1cb4e0f4aebdbf64754e3c5c26a" category="image-alt">SG6100-CN mode de liaison de port agrégé</block>
   <block id="cc5f703bb883e7b54c8db00321eecaae" category="paragraph">Cette figure montre comment les deux ports de gestion 1 GbE sont liés en mode liaison réseau Active-Backup pour le réseau d'administration.</block>
   <block id="6cb92c0d4f550369b07be209fb280050" category="image-alt">Ports réseau d'administration mis en liaison SG6100-CN</block>
   <block id="dc5df6ed37801dd73543ef70db9fc07c" category="paragraph">Si vous prévoyez d'utiliser la vitesse de liaison 25 GbE pour les ports réseau SG6100, SG6000, SG5800 ou SG5700 :</block>
@@ -5097,7 +5075,6 @@ Libérez le contrôleur de l'appareil en appuyant sur le loquet de la poignée d
   <block id="73b8548764adcb2d821a3a30eee387e8" category="list-text">Si nécessaire, redistribuez tous les volumes au propriétaire de votre choix à l'aide de SANtricity System Manager.</block>
   <block id="829a1819c04fe8b6abc000f5eaa2f3da" category="list-text">Sélectionnez *stockage › volumes*.</block>
   <block id="8a63702912777d73eaad4a55fa4ab3fc" category="list-text">Sélectionnez *plus › redistribuer les volumes*.</block>
-  <block id="a1ed4021c752a35d3fbd57d904dce03b" category="list-text">Si vous avez placé l'appliance en mode maintenance pendant cette procédure, quittez le mode maintenance et attendez que le nœud redémarre et rejoint la grille. Ce processus peut prendre jusqu'à 20 minutes. Ensuite, dans le Gestionnaire de grille, vérifiez que la page nœuds affiche un état normal (icône de coche verte) <block ref="b0c066af00a4ff17f603acf55958d068" category="inline-image-macro-rx" type="image"></block> à gauche du nom du nœud) pour le nœud de l'appliance, indiquant qu'aucune alerte n'est active et que le nœud est connecté à la grille.</block>
   <block id="f64ac56cef1f5e4f7896043e6750dc53" category="paragraph">Le remplacement de votre contrôleur est terminé. Vous pouvez reprendre les opérations normales.</block>
   <block id="af8eaf0890f6f3a0074f43cec79c1e06" category="doc">Remplacement des modules DIMM dans le tiroir contrôleur de stockage (SG6160)</block>
   <block id="7a49dba6d57fb82bb002544c4cff4173" category="paragraph">Vous pouvez remplacer un module DIMM dans le E4000 si une mémoire ne correspond pas ou si vous avez un module DIMM défectueux.</block>
@@ -5155,7 +5132,6 @@ Affiche Oui, indiquant qu'il est possible de retirer ce composant en toute sécu
   <block id="125aeb33ae4459fc8222ee9ed2b717aa" category="doc">Remplacement du disque dans le tiroir contrôleur de stockage ou le tiroir d'extension (SG6160)</block>
   <block id="5ee472a2b6b33fddd49024587c88b2f3" category="paragraph">Vous pouvez remplacer un disque dans un tiroir de contrôleur de stockage SG6160 ou un tiroir d'extension (DE460C).</block>
   <block id="e2b67368d81a86fe4528ce75a038bafd" category="paragraph">StorageGRID Grid Manager surveille l'état des baies de stockage et émet des alertes en cas de panne de disque.  Lorsque Grid Manager déclenche une alerte, ou à tout moment, vous pouvez utiliser la fonctionnalité Recovery Guru dans SANtricity System Manager pour obtenir plus d'informations sur le disque concerné par la défaillance.  Lorsqu'un disque est en panne, le voyant d'avertissement orange s'allume. Vous pouvez remplacer à chaud un disque défectueux alors que la matrice de stockage reçoit des E/S.</block>
-  <block id="1cdc03d12ae7d748296aee00f5109883" category="doc">Mettez à niveau le firmware du disque SG6160 à l'aide du gestionnaire de système SANtricity</block>
   <block id="994ab9a6584338b6df623d7d022d41de" category="doc">Mise à niveau de SANtricity OS sur le contrôleur E4000 en mode maintenance (SG6160)</block>
   <block id="67ecfade4f78d4256e50f887e4676271" category="list-text">Suivez les instructions du guide de mise à niveau du micrologiciel et du logiciel SANtricity _E4000 et E5800_ ou de l'aide en ligne du Gestionnaire système SANtricity pour mettre à niveau le micrologiciel et la NVSRAM du contrôleur E4000.</block>
   <block id="45f3c485a67ff8478a381e767f0f6661" category="doc">Mise à niveau du firmware des disques SG6100 à l'aide de la méthode en ligne de SANtricity System Manager (SG6160)</block>
@@ -5291,7 +5267,6 @@ Affiche Oui, indiquant qu'il est possible de retirer ce composant en toute sécu
   <block id="f3d66eb150682e2a60af093e5d16adc7" category="sidebar">Systèmes de stockage SG5800</block>
   <block id="6cce22fcbeb08d45ad6d5da04f7403d3" category="sidebar">Informations réseau SG5800</block>
   <block id="f8d63b4eb5f7dd79754fe681c6077d13" category="sidebar">Mise à niveau de SANtricity (SG6160)</block>
-  <block id="bb16bf046b2fd7560a2b14a7f9ad9e54" category="sidebar">Mise à niveau du firmware du disque (SG6160)</block>
   <block id="1dc91b81c3c8c4d17ed44a4e5d4339f6" category="sidebar">Remplacement du contrôleur SG6100-CN (SG6160)</block>
   <block id="e96b749f34b2756fc2a0b8eac5a9e783" category="sidebar">Remplacement du contrôleur de stockage (SG6160)</block>
   <block id="4b1c1ad38150ad91104a761cfb5a1382" category="sidebar">Remplacement du bloc d'alimentation du tiroir contrôleur de stockage ou du tiroir d'extension (SG6160)</block>
@@ -5708,10 +5683,7 @@ Affiche Oui, indiquant qu'il est possible de retirer ce composant en toute sécu
   <block id="0757f3b26ab245447cc41936cd3afefe" category="image-alt">Référence de légende 2</block>
   <block id="3cbfcbda43179f1df024e2d6051f5271" category="list-text">Dans le Gestionnaire de grille, sélectionnez *NODES* &gt; *_appliance node_* &gt; *SANtricity System Manager*. Les informations du contrôleur se trouvent sur le<block ref="5f7e3517d1392ee1637563255b3cc9f7" category="inline-link-rx"></block>.</block>
   <block id="dd3e050849166c9b784e0ff7ea3bc78b" category="inline-image-macro">Icône de ventilateur</block>
-  <block id="54e682c1e932dd0c4bfed689b5838167" category="list-text">Regardez l'icône de ventilateur à <block ref="d8ed16a4ae23dc8d3334a7f3c4e05005" category="inline-image-macro-rx" type="image"></block>droite des listes déroulantes *Shelf* pour déterminer quelle étagère est dotée du boîtier de ventilateur défectueux.</block>
   <block id="192a91d56dc6ef980c24ab2e0ae1423b" category="inline-image-macro">Icône d'alimentation</block>
-  <block id="0b1e2ac5c16b80c880fa2636f10e31c2" category="list-text">Regardez l'icône d'alimentation <block ref="2acf1b34d22964e8dbaecf0651bd6755" category="inline-image-macro-rx" type="image"></block>située à droite des listes déroulantes *Shelf* pour déterminer quel shelf est le boîtier d'alimentation défectueux.</block>
-  <block id="d5dc60c63c442be4b800edee5dfd7825" category="list-text">Examinez les icônes d'alimentation <block ref="2acf1b34d22964e8dbaecf0651bd6755" category="inline-image-macro-rx" type="image"></block> et de ventilateur <block ref="d8ed16a4ae23dc8d3334a7f3c4e05005" category="inline-image-macro-rx" type="image"></block>situées à droite des listes déroulantes *Shelf* pour déterminer quel shelf est celui qui présente le bloc d'alimentation défectueux.</block>
   <block id="385670e63395d954db81d385b46f8236" category="doc">À propos de la mise à niveau de SANtricity OS sur un contrôleur de stockage SG5800</block>
   <block id="461fe7b94ee4ef21c8144bcd702f1c6b" category="paragraph">Déterminez la dernière version de SANtricity OS compatible avec votre appliance StorageGRID en la consultant et en<block ref="17b838622e0459e6c950b0d070de6b4f" category="inline-link-rx"></block> la téléchargeant si nécessaire.</block>
   <block id="b87441e57987f2ad30acc24d0989a299" category="paragraph">L'icône de coche verte signifie qu'aucune alerte n'est active et que le nœud est connecté à la grille. Pour une description des icônes de nœud, reportez-vous àla section<block ref="9d01e9b7dd507e2d1821030b4fd4830d" category="inline-link-rx"></block>.</block>
@@ -5731,7 +5703,6 @@ Affiche Oui, indiquant qu'il est possible de retirer ce composant en toute sécu
   <block id="c844d01687ddbc9954f7c427da1d4706" category="paragraph"><block ref="865edf77b3eba053e29e61ca4d9fc799" category="inline-link-macro-rx"></block>.</block>
   <block id="9a221fc8827a4991817e2b249cd1cf3d" category="admonition">Un <block ref="441002811e4fb104a452cffe39690fc5" category="inline-link-macro-rx"></block> est nécessaire avant de retirer l'appareil du rack.</block>
   <block id="638734fcdf0d50595d78d81bb639fd1b" category="paragraph">Lorsque les deux disques SSD fonctionnent normalement, le système restaure automatiquement la fonctionnalité de cache de lecture. Vous pouvez<block ref="735aff2661f88efa8f6e8cceeb96bac0" category="inline-link-rx"></block> contrôler le taux d'accès au cache de lecture. Comme le cache vient d'être reconstruit, le taux d'accès peut être faible au départ, mais il devrait augmenter au fil du temps lorsque le cache est rerempli par les clients accédant aux données d'objet.</block>
-  <block id="ae4fa539a7c5cac501cec6d0e59f538b" category="list-text">Regardez l'icône de ventilateur <block ref="d8ed16a4ae23dc8d3334a7f3c4e05005" category="inline-image-macro-rx" type="image"></block>à droite des listes déroulantes *Shelf* pour déterminer quel appareil est doté du boîtier de ventilateur défectueux.</block>
   <block id="b8e55daf0cd7d7e3973b1e259f86f0cd" category="admonition">Si vous avez déjà utilisé une règle ILM qui ne crée qu'une seule copie d'un objet, vous devez remplacer la carte réseau au cours d'une fenêtre de maintenance planifiée, car vous risquez de perdre temporairement l'accès à ces objets au cours de cette procédure. Voir les informations sur<block ref="7b41c2a82ff7a44a340b8559b6012e92" category="inline-link-rx"></block>.</block>
   <block id="7da93c6e68a43a9bce834b5ab317044f" category="admonition">Le remplacement à chaud est *non* pris en charge pour cette procédure. Un <block ref="441002811e4fb104a452cffe39690fc5" category="inline-link-macro-rx"></block> est nécessaire avant de débrancher les câbles et de retirer la carte réseau.</block>
   <block id="f23564587172dfdbfe2370e00a02a9e5" category="paragraph">Pour éviter toute interruption de service, vérifiez que tous les autres nœuds de stockage sont connectés à la grille avant de commencer le remplacement de la carte d'interface réseau (NIC) ou remplacez-la lors d'une fenêtre de maintenance planifiée lorsque les périodes d'interruption de service sont acceptables. Voir les informations sur <block ref="5059dc4531f4f3adf649d818b95a89ff" category="inline-link-macro-rx"></block>.</block>
@@ -5765,4 +5736,30 @@ Affiche Oui, indiquant qu'il est possible de retirer ce composant en toute sécu
   <block id="813eb6e57b4706c7df0e13ae0defacd8" category="list-text">Si votre appliance est équipée d'un tiroir d'extension, reportez-vous à la pour plus d'informations sur le <block ref="ba1bb7195a934f0a465563dc7e705dd7" category="inline-link-macro-rx"></block>câblage.</block>
   <block id="c6ce792d1a06c8b72936713f0001140a" category="list-text">Vous avez enregistré la configuration BMC actuelle de l'appliance, si elle reste disponible.</block>
   <block id="df5c8b40026819d555dd6dbdc002fb3e" category="list-text">Entrée :<block ref="73a1c7bb6f54767f7e51d6973cad4923" prefix=" " category="inline-code"></block> permet d'afficher la configuration BMC actuelle de l'appliance.</block>
+  <block id="b79224966bc8b470ef537d5ffb51ff44" category="paragraph">L'appliance peut redémarrer et rejoindre la grille en 20 minutes. Pour confirmer que le redémarrage est terminé et que le nœud a rejoint la grille, retournez à la grille Manager. La page nœuds doit afficher un état normal (icône en forme de coche verte <block ref="b0b297f2207075ba577efa61b059ed87" category="inline-image-macro-rx" type="image"></block>à gauche du nom du nœud) pour le nœud d'appliance, indiquant qu'aucune alerte n'est active et que le nœud est connecté à la grille.</block>
+  <block id="df14b12403607f270bd6e168ec91f2c5" category="paragraph">L'appliance peut redémarrer et rejoindre la grille en 20 minutes. Pour confirmer que le redémarrage est terminé et que le nœud a rejoint la grille, retournez à la grille Manager. La page *NODES* doit afficher un état normal (icône de coche verte <block ref="b0b297f2207075ba577efa61b059ed87" category="inline-image-macro-rx" type="image"></block>à gauche du nom du nœud) pour le nœud de l'appliance, indiquant qu'aucune alerte n'est active et que le nœud est connecté à la grille.</block>
+  <block id="e1a4e21f94e19d24dcb24587293cd8bc" category="paragraph"><block ref="e1a4e21f94e19d24dcb24587293cd8bc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a071a7c175c6fede0936ac6e354e5055" category="paragraph"><block ref="a071a7c175c6fede0936ac6e354e5055" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="97d53609a22bc5ffa749725baf5ee763" category="paragraph"><block ref="97d53609a22bc5ffa749725baf5ee763" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="37a27ac52f6f7bdf04dde9ad07bfbadf" category="list-text">Une icône d'ampoule <block ref="7c1d5f8a3cb7dab00bcff0bcc128dacf" category="inline-image-macro-rx" type="image"></block>s'affiche pour le lecteur.</block>
+  <block id="498ddb51986797c3286426de2dd0f64e" category="image-alt">SG110 mode agrégation de port Bond</block>
+  <block id="51a72060d29230ddba01b8db16fadc81" category="image-alt">SGF6112 mode agrégation de port Bond</block>
+  <block id="1728dd14177dbcdd0a6fa80cf61b4898" category="image-alt">SG6100-CN mode agrégation de port Bond</block>
+  <block id="80e3a4394232e9dc2d44663fd4b2fc7f" category="image-alt">Contrôleurs, ventilateurs et blocs d'alimentation dans l'appliance SG5760</block>
+  <block id="f8f749c27179878518aca7ac5b2d8019" category="image-alt">Contrôleurs, ventilateurs et blocs d'alimentation dans l'appliance SG5760X</block>
+  <block id="4b0ead52797d3c32e845ecdb0b2845a2" category="image-alt">Contrôleurs, ventilateurs et blocs d'alimentation du système SG5860</block>
+  <block id="f6885ee1bb99909b74bae4b3f3d7d0ca" category="list-title"><block ref="db1e9f09207f66d8c28f6f11a8cd6159" category="inline-image-macro-rx" type="image"></block> Avant l'installation</block>
+  <block id="575c830a8a4bb78c31fc0a83c2e1be15" category="list-title"><block ref="5b54f0079909bf49360d9930352446ad" category="inline-image-macro-rx" type="image"></block> Installez le matériel de fixation</block>
+  <block id="5d66e252151466a967a4fe44fa8bd12f" category="paragraph-title"><block ref="f665cdd22f26f5f1a45b361806d94264" category="inline-image-macro-rx" type="image"></block> Configurer le matériel</block>
+  <block id="c97913a5c47ca1aaefcb605790ba744c" category="paragraph-title"><block ref="dc7abc674acbb1b3c1270fc1cf1b983a" category="inline-image-macro-rx" type="image"></block> Déployez le nœud de l'appliance</block>
+  <block id="95714c5faee0a7ee22897ffb9bb27d46" category="list-text">Pour ajouter un sous-réseau, cliquez sur l'icône d'insertion <block ref="04a444892ecdd89bfdaa29bcbf799187" category="inline-image-macro-rx" type="image"></block>située à droite de la dernière entrée.</block>
+  <block id="9a70a6ae35e21c6544b20ca5f08a7c77" category="list-text">Pour supprimer un sous-réseau inutilisé, cliquez sur l'icône de suppression <block ref="382e1d9aa4a1ad456c931180513d817a" category="inline-image-macro-rx" type="image"></block>.</block>
+  <block id="a260587fbb1d0830942f420048880c97" category="list-text">Vérifiez que le redémarrage est terminé et que le nœud a rejoint à nouveau la grille. Dans Grid Manager, vérifiez que la page nœuds affiche un état normal (icône de coche verte <block ref="b0b297f2207075ba577efa61b059ed87" category="inline-image-macro-rx" type="image"></block>à gauche du nom du nœud) pour le nœud de l'appliance, ce qui indique qu'aucune alerte n'est active et que le nœud est connecté à la grille.</block>
+  <block id="997a5fbd7bf48a6f361ad63bb5c3ea8b" category="list-text">Regardez l'icône de ventilateur à <block ref="92142d8792a6161b2c79960b384e088a" category="inline-image-macro-rx" type="image"></block>droite des listes déroulantes *Shelf* pour déterminer quelle étagère est dotée du boîtier de ventilateur défectueux.</block>
+  <block id="4679124015a3fb5a2b9a8d50c4bec768" category="list-text">Regardez l'icône d'alimentation <block ref="34a51d44013a1ce73b6f6d4343cad0e8" category="inline-image-macro-rx" type="image"></block>située à droite des listes déroulantes *Shelf* pour déterminer quel shelf est le boîtier d'alimentation défectueux.</block>
+  <block id="73a5f23e1326c160cea1d64fb296d381" category="list-text">Examinez les icônes d'alimentation <block ref="34a51d44013a1ce73b6f6d4343cad0e8" category="inline-image-macro-rx" type="image"></block> et de ventilateur <block ref="92142d8792a6161b2c79960b384e088a" category="inline-image-macro-rx" type="image"></block>situées à droite des listes déroulantes *Shelf* pour déterminer quel shelf est celui qui présente le bloc d'alimentation défectueux.</block>
+  <block id="5be5b200ea87bda5139c19d04ce77e9d" category="list-text">Si vous avez placé l'appliance en mode maintenance pendant cette procédure, quittez le mode maintenance et attendez que le nœud redémarre et rejoint la grille. Ce processus peut prendre jusqu'à 20 minutes. Ensuite, dans Grid Manager, vérifiez que la page nœuds affiche un état normal (icône de coche verte <block ref="b0b297f2207075ba577efa61b059ed87" category="inline-image-macro-rx" type="image"></block>à gauche du nom du nœud) pour le nœud de l'appliance, ce qui indique qu'aucune alerte n'est active et que le nœud est connecté à la grille.</block>
+  <block id="0160256cfe219f6b22fa00049dc8b08b" category="list-text">Regardez l'icône de ventilateur <block ref="92142d8792a6161b2c79960b384e088a" category="inline-image-macro-rx" type="image"></block>à droite des listes déroulantes *Shelf* pour déterminer quel appareil est doté du boîtier de ventilateur défectueux.</block>
+  <block id="1a41776500a52e28aa05db3c32dfc47a" category="sidebar">Mise à niveau du micrologiciel du lecteur (méthode en ligne SG6160)</block>
+  <block id="2c8a2ef75a9a05ce84a4b89f17f20322" category="sidebar">Mettre à niveau le firmware du disque (méthode hors ligne SG6160)</block>
 </blocks>

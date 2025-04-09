@@ -9,8 +9,10 @@ indexpage:
     links:
     - title: Mettez à niveau SANtricity
       url: "../sg6100/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg6160.html"
-    - title: Mise à niveau du firmware du disque (SG6160)
-      url: "../sg6100/upgrade-drive-firmware-using-santricity-system-manager.html"
+    - title: Mise à niveau du micrologiciel du lecteur (méthode en ligne SG6160)
+      url: "../sg6100/upgrading-drive-firmware-using-santricity-system-manager-online.html"
+    - title: Mettre à niveau le firmware du disque (méthode hors ligne SG6160)
+      url: "../sg6100/upgrading-drive-firmware-using-santricity-system-manager-offline.html"
     - title: Allumer ou éteindre la LED Identify
       url: "../sg6100/turning-sgf6112-identify-led-on-and-off.html"
     - title: Localisez l'appliance dans le data Center

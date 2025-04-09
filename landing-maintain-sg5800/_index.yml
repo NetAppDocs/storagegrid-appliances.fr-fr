@@ -11,8 +11,10 @@ indexpage:
       url: "../sg5800/changing-link-configuration-of-e5800sg-controller.html"
     - title: Mettez à niveau SANtricity
       url: "../sg5800/upgrading-santricity-os-on-storage-controller.html"
-    - title: Mettre à niveau le micrologiciel du lecteur
-      url: "../sg5800/upgrading-drive-firmware-using-santricity-system-manager.html"
+    - title: Mettre à niveau le micrologiciel du lecteur (méthode en ligne)
+      url: "../sg5800/upgrading-drive-firmware-using-santricity-system-manager-online.html"
+    - title: Mettre à niveau le firmware du disque (méthode hors ligne)
+      url: "../sg5800/upgrading-drive-firmware-using-santricity-system-manager-offline.html"
   - title: Procédures matérielles
     links:
     - title: Remplacer le contrôleur de calcul SG5800

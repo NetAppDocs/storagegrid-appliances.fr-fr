@@ -114,7 +114,7 @@ image::../media/sg5860_front_and_back_views.png[À l'avant et à l'arrière du S
 
 Le SG5860 comprend deux contrôleurs, deux boîtiers de ventilation et deux blocs d'alimentation.
 
-image::../media/sg5860_with_callouts.png[Contrôleurs,fan canisters,and power canisters in SG5860 appliance]
+image::../media/sg5860_with_callouts.png[Contrôleurs, ventilateurs et blocs d'alimentation du système SG5860]
 
 [cols="1a,2a"]
 |===

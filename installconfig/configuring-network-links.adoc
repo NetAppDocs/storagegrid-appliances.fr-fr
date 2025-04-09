@@ -260,7 +260,7 @@ image::../media/sg1100_aggregate_ports.png[Mode agrégation de liaisons de port 
 
 SG110 :
 
-image::../media/sgf6112_aggregate_ports.png[SG110 mode de liaison de port agrégé]
+image::../media/sgf6112_aggregate_ports.png[SG110 mode agrégation de port Bond]
 
 [cols="1a,3a"]
 |===
@@ -718,11 +718,11 @@ La figure montre comment les quatre ports réseau sont liés en mode agrégation
 
 *SGF6112* :
 
-image::../media/sgf6112_aggregate_ports.png[SGF6112 mode de liaison de port agrégé]
+image::../media/sgf6112_aggregate_ports.png[SGF6112 mode agrégation de port Bond]
 
 *SG6100* :
 
-image::../media/sg6100_cn_aggregate_ports.png[SG6100-CN mode de liaison de port agrégé]
+image::../media/sg6100_cn_aggregate_ports.png[SG6100-CN mode agrégation de port Bond]
 
 [cols="1a,3a"]
 |===

@@ -175,7 +175,7 @@ image::../media/sg5760_front_and_back_views.gif[Avant et arrière de l'appliance
 
 Le SG5760 inclut deux contrôleurs, deux blocs de ventilation et deux blocs d'alimentation.
 
-image::../media/sg5760_with_callouts.gif[Contrôleurs,fan canisters,and power canisters in SG5760 appliance]
+image::../media/sg5760_with_callouts.gif[Contrôleurs, ventilateurs et blocs d'alimentation dans l'appliance SG5760]
 
 [cols="1a,2a"]
 |===
@@ -223,7 +223,7 @@ image::../media/sg5760x_front_and_back_views.gif[À l'avant et à l'arrière de 
 
 Le SG5760X comprend deux contrôleurs, deux boîtiers pour ventilateurs et deux blocs d'alimentation.
 
-image::../media/sg5760x_with_callouts.gif[Contrôleurs,fan canisters,and power canisters in SG5760X appliance]
+image::../media/sg5760x_with_callouts.gif[Contrôleurs, ventilateurs et blocs d'alimentation dans l'appliance SG5760X]
 
 [cols="1a,3a"]
 |===

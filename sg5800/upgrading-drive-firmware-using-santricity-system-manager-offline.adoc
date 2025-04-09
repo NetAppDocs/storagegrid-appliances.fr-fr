@@ -143,7 +143,7 @@ link:troubleshoot-upgrading-drive-firmware-using-santricity-system-manager.html[
 ** *Redémarrer dans StorageGRID*.
 ** *Redémarrer en mode Maintenance*. Redémarrez le contrôleur et laissez le nœud en mode de maintenance. Sélectionnez cette option si des échecs se sont produits au cours de la procédure et que vous souhaitez recommencer. Une fois le redémarrage du nœud en mode maintenance terminé, redémarrez à partir de l'étape appropriée de la procédure ayant échoué.
 +
-L'appliance peut redémarrer et rejoindre la grille en 20 minutes. Pour confirmer que le redémarrage est terminé et que le nœud a rejoint la grille, retournez à la grille Manager. La page nœuds doit afficher un état normal (icône en forme de coche verte) image:../media/icon_alert_green_checkmark.png["coche verte"] à gauche du nom du nœud) pour le nœud de l'appliance, indiquant qu'aucune alerte n'est active et que le nœud est connecté à la grille.
+L'appliance peut redémarrer et rejoindre la grille en 20 minutes. Pour confirmer que le redémarrage est terminé et que le nœud a rejoint la grille, retournez à la grille Manager. La page nœuds doit afficher un état normal (icône en forme de coche verte image:../media/icon_alert_green_checkmark.png["coche verte"]à gauche du nom du nœud) pour le nœud d'appliance, indiquant qu'aucune alerte n'est active et que le nœud est connecté à la grille.
 
 +
 image::../media/nodes_menu.png[Le nœud d'appliance a rejoint la grille]

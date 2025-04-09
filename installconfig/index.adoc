@@ -26,7 +26,7 @@ Cette étape est facultative. Cependant, la rationalisation et l'automatisation 
 . link:reviewing-appliance-network-connections.html["Collecte d'informations sur le réseau"]
 
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Deux"] Installer le matériel de fixation
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Deux"] Installez le matériel de fixation
 [role="quick-margin-list"]
 . link:registering-hardware.html["Enregistrez le matériel"]
 . Installez-le dans l'armoire ou sur le rack
