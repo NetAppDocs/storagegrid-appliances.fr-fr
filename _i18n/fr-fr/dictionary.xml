@@ -2865,7 +2865,6 @@ Une fois la mise à niveau actuelle terminée, téléchargez le fichier SANtrici
   <block id="9bb391312ffed336cc1adbf60045dba8" category="list-text">Vérifiez que les étiquettes apposées à l'avant de l'appareil correspondent à la référence pour vous assurer que vous avez trouvé l'appareil approprié.</block>
   <block id="d3cb531b4f9c05d46c6be8f0489a9b86" category="list-text">Retirez le cadre avant, le cas échéant, pour accéder aux commandes et aux voyants du panneau avant.</block>
   <block id="8727881150b0ace8b598a648cdfcd4e1" category="summary">NetApp StorageGRID est une suite de stockage objet Software-defined qui prend en charge un large éventail d'utilisations dans les environnements multiclouds publics, privés et hybrides. StorageGRID offre une prise en charge native de l'API Amazon S3 et propose des innovations de pointe, telles que la gestion automatisée du cycle de vie, pour stocker, sécuriser, protéger et conserver les données non structurées de manière économique sur de longues périodes.</block>
-  <block id="4fab2171e21f4258294a2a074494fa18" category="doc">Documentation de l'appliance StorageGRID</block>
   <block id="2e1c8345a49fcd97288e52caaad82a49" category="summary">Dans certains cas, vous devrez peut-être mettre à jour les références d'adresse MAC après le remplacement d'un appareil.</block>
   <block id="8731fac4810f4eee46647147bd16bf3d" category="paragraph">Si l'une des interfaces réseau d'une appliance que vous remplacez est configurée pour DHCP, vous devrez peut-être mettre à jour les attributions de bail DHCP permanentes sur les serveurs DHCP pour référencer les adresses MAC de l'appliance de remplacement. Cette mise à jour garantit que l'appliance de remplacement se voit attribuer les adresses IP attendues.</block>
   <block id="5d98e441c401a29a6e5bb2f1212a7a15" category="list-text">Repérez l'étiquette à l'avant de l'appareil. L'étiquette indique l'adresse MAC du port de gestion BMC de l'appliance.</block>
@@ -3865,7 +3864,6 @@ Voir les informations sur la gestion des objets avec la gestion du cycle de vie 
   <block id="8ef596bf4eb7277f78ad1d7ad4cc04de" category="sidebar">Base de connaissances StorageGRID</block>
   <block id="c2d388654878e1108f99fdeaa465fcac" category="sidebar">Blog NetApp</block>
   <block id="a310588c148d934b9b30c31802d4a30b" category="sidebar">Communauté NetApp</block>
-  <block id="69d1c297210c956cee51bf4ccf9dc0d1" category="sidebar">Documents relatifs à l'appliance StorageGRID</block>
   <block id="42201415720ad552ae0536ddda18b94e" category="sidebar">En savoir plus sur les appliances StorageGRID</block>
   <block id="b7cd29c1531745149a88d6056a6c42c4" category="sidebar">Clonage de nœuds d'appliance</block>
   <block id="3b878279a04dc47d60932cb294d96259" category="sidebar">Présentation</block>
@@ -5762,4 +5760,5 @@ Affiche Oui, indiquant qu'il est possible de retirer ce composant en toute sécu
   <block id="0160256cfe219f6b22fa00049dc8b08b" category="list-text">Regardez l'icône de ventilateur <block ref="92142d8792a6161b2c79960b384e088a" category="inline-image-macro-rx" type="image"></block>à droite des listes déroulantes *Shelf* pour déterminer quel appareil est doté du boîtier de ventilateur défectueux.</block>
   <block id="1a41776500a52e28aa05db3c32dfc47a" category="sidebar">Mise à niveau du micrologiciel du lecteur (méthode en ligne SG6160)</block>
   <block id="2c8a2ef75a9a05ce84a4b89f17f20322" category="sidebar">Mettre à niveau le firmware du disque (méthode hors ligne SG6160)</block>
+  <block id="d07792f91c33735c12a1ce89b21df7a3" category="sidebar">Documentation de l'appliance StorageGRID</block>
 </blocks>
