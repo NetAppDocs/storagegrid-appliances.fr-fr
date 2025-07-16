@@ -28,6 +28,26 @@ Pour modifier la configuration de la liaison, reportez-vous aux instructions sui
 * link:../sg6100/changing-link-configuration-of-sgf6112-appliance.html["Modifier la configuration de la liaison de l'appliance SG6100"]
 
 
+[NOTE]
+====
+N'utilisez pas de sous-réseaux contenant les adresses IPv4 suivantes pour le réseau de grille, le réseau d'administration ou le réseau client d'un nœud :
+
+* 192 168 130 101
+* 192 168 131 101
+* 192 168 130 102
+* 192 168 131 102
+* 198.51.100.2
+* 198.51.100.4
+
+
+Par exemple, n'utilisez pas les plages de sous-réseaux suivantes pour le réseau de grille, le réseau d'administration ou le réseau client d'un nœud :
+
+* 192.168.130.0/24 car cette plage de sous-réseaux contient les adresses IP 192.168.130.101 et 192.168.130.102
+* 192.168.131.0/24 car cette plage de sous-réseaux contient les adresses IP 192.168.131.101 et 192.168.131.102
+* 198.51.100.0/24 car cette plage de sous-réseaux contient les adresses IP 198.51.100.2 et 198.51.100.4
+
+
+====
 .Étapes
 . Dans le programme d'installation de l'appliance StorageGRID, sélectionnez *configurer le réseau* > *Configuration IP*.
 +

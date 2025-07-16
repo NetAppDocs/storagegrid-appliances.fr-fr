@@ -252,6 +252,27 @@ Connecting to +https://10.224.2.30:8443+ (Checking version and connectivity.)
 +
 `./configure-sga.py configure --admin-ip 172.16.2.99 _SGA-INSTALL-IP_`
 
++
+[NOTE]
+====
+N'utilisez pas de sous-réseaux contenant les adresses IPv4 suivantes pour le réseau de grille, le réseau d'administration ou le réseau client d'un nœud :
+
+** 192 168 130 101
+** 192 168 131 101
+** 192 168 130 102
+** 192 168 131 102
+** 198.51.100.2
+** 198.51.100.4
+
+
+Par exemple, n'utilisez pas les plages de sous-réseaux suivantes pour le réseau de grille, le réseau d'administration ou le réseau client d'un nœud :
+
+** 192.168.130.0/24 car cette plage de sous-réseaux contient les adresses IP 192.168.130.101 et 192.168.130.102
+** 192.168.131.0/24 car cette plage de sous-réseaux contient les adresses IP 192.168.131.101 et 192.168.131.102
+** 198.51.100.0/24 car cette plage de sous-réseaux contient les adresses IP 198.51.100.2 et 198.51.100.4
+
+
+====
 . [[back-up-appliance-config]] si vous souhaitez sauvegarder la configuration de l'appliance dans un fichier JSON, utilisez les options avancées et `backup-file` sous-commandes. Par exemple, si vous souhaitez sauvegarder la configuration d'une appliance avec une adresse IP `_SGA-INSTALL-IP_` à un fichier nommé `appliance-SG1000.json`, entrez les informations suivantes : +
 `./configure-sga.py advanced --backup-file appliance-SG1000.json _SGA-INSTALL-IP_`
 +
