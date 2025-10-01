@@ -118,6 +118,8 @@ Vous pouvez cloner une appliance de nœud source SG100 vers une appliance cible 
 
 Vous pouvez cloner une appliance de nœud source SG110 vers une cible d'appliance de services SG1100 afin d'optimiser les fonctionnalités du nœud d'administration ou du nœud de passerelle.
 
+Le clonage de nœud n'est pas pris en charge à partir d'un dispositif de nœud source SG110 sans chiffrement de nœud vers une cible d'appareil SG110 avec chiffrement de nœud.
+
 
 
 === Informations et restrictions de clonage de l'appliance SG1000
@@ -137,6 +139,8 @@ Vous pouvez cloner une appliance de nœud source SG1100 vers une appliance cible
 * Le clonage du SG1100 vers une appliance cible de services SG110 vous permet de redéployer le SG1100 pour une application plus exigeante. Par exemple, si une appliance de nœud source SG1100 est utilisée en tant que nœud d'administration et que vous souhaitez l'utiliser comme nœud d'équilibrage de charge dédié.
 * Le remplacement d'une appliance de nœud source SG1100 par une appliance de services cible SG110 réduit la vitesse maximale des ports réseau de 100 GbE à 25 GbE.
 
+
+Le clonage de nœud n'est pas pris en charge à partir d'un dispositif de nœud source SG1100 sans chiffrement de nœud vers une cible d'appareil SG1100 avec chiffrement de nœud.
 
 
 
@@ -173,6 +177,12 @@ Vous pouvez cloner une appliance SG5860 en tant que source ou cible avec certain
 * Vous pouvez cloner une appliance de nœud source SG6060 sans aucun tiroir d'extension vers une appliance cible de stockage SG6160 sans tiroir d'extension si les tailles de disques et les modes RAID sont identiques.
 * Une appliance de nœud source SG6060 avec un nombre illimité de tiroirs d'extension _ne peut pas_ être clonée vers une appliance de stockage cible SG6160 même si le nombre de tiroirs d'extension, la taille des disques et les modes RAID sont identiques.
 
+
+
+
+=== Informations et restrictions sur le clonage de l'appareil SGF6112
+
+Le clonage de nœud n'est pas pris en charge à partir d'un dispositif de nœud source SGF6112 sans chiffrement de nœud vers une cible d'appareil SGF6112 avec chiffrement de nœud.
 
 
 

@@ -817,7 +817,7 @@ Vert clignotant : activité Ethernet.
 
 
 .Informations associées
-link:https://mysupport.netapp.com/site/global/dashboard["Support NetApp"^]
+https://mysupport.netapp.com/site/global/dashboard["Support NetApp"^]
 
 --
 .SG6000

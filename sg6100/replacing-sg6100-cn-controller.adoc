@@ -54,9 +54,42 @@ Lorsque vous êtes connecté en tant que root, l'invite passe de `$` à `#`.
 
 CAUTION: Pour éviter toute dégradation des performances, ne tordez pas, ne pliez pas, ne pincez pas ou ne montez pas sur les câbles.
 
-.. Retirez le contrôleur défectueux de l'armoire ou du rack.
-.. Installez le contrôleur de remplacement dans l'armoire ou le rack.
-.. Remplacez les câbles.
+.. link:reinstalling-sgf6112-into-cabinet-or-rack.html["Retirez le contrôleur défectueux de l'armoire ou du rack"] .
+.. Notez la position des composants remplaçables (deux blocs d’alimentation, trois cartes réseau et deux SSD) dans le contrôleur défaillant.
++
+Les deux disques se trouvent aux emplacements suivants dans le châssis (avant du châssis avec le panneau retiré) :
+
++
+image::../media/sg6100cn_ssds_locations.png[Emplacements des disques]
+
++
+|===
+|  | Lecteur 
+
+
+ a| 
+1
+ a| 
+HDD00
+
+
+
+ a| 
+2
+ a| 
+HDD01
+
+|===
+.. Transférez les composants remplaçables vers le contrôleur de remplacement.
++
+Suivez les instructions de maintenance fournies pour réinstaller les composants remplaçables.
+
++
+
+CAUTION: Si vous souhaitez conserver les données sur les disques, insérez les disques SSD dans les mêmes emplacements qu'ils occupaient dans l'appareil défaillant.  Si vous ne le faites pas, le programme d'installation de l'appareil affichera un avertissement et vous devrez placer les lecteurs dans les emplacements appropriés et redémarrer le contrôleur avant que le contrôleur puisse rejoindre le réseau.
+
+.. link:reinstalling-sgf6112-into-cabinet-or-rack.html["Installez le contrôleur de remplacement dans l'armoire ou le rack"] .
+.. Remplacez les câbles et les émetteurs-récepteurs optiques.
 .. Mettez le contrôleur sous tension et surveillez les LED du contrôleur.
 
 

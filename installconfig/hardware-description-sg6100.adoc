@@ -32,6 +32,7 @@ NOTE: Selon la règle ILM configurée, les demandes d'objets indisponibles local
 
 * Restauration complète, pendant la mise en service, suite à des pannes de disque SSD qui ne provoquent pas d'endommagement extrême du RAID hébergeant le volume racine du nœud (le système d'exploitation StorageGRID).
 * Si plusieurs pannes de disques SSD entraînent une perte locale de données, les données d'objet peuvent être restaurées automatiquement à partir de copies ou de blocs de code d'effacement sur d'autres nœuds.
+* Capacité à fonctionner comme un https://docs.netapp.com/us-en/storagegrid/admin/managing-load-balancing.html["Nœud de passerelle avec mise en cache"^] .
 
 
 Le SG6160 offre les fonctionnalités de protection des données suivantes :

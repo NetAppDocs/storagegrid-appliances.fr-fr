@@ -77,7 +77,7 @@ image::../media/fan_removal.png[Retrait du ventilateur]
 
 . Faites glisser le ventilateur de remplacement dans le logement ouvert du châssis.
 +
-Veillez à aligner le connecteur du ventilateur avec la prise de la carte de circuit imprimé.
+Alignez le connecteur du ventilateur avec la prise du circuit imprimé.
 
 . Enfoncez fermement le connecteur du ventilateur dans la carte de circuit imprimé (prise en surbrillance).
 +

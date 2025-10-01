@@ -17,6 +17,8 @@ indexpage:
       url: "../sg6000/changing-link-configuration-of-sg6000-cn-controller.html"
     - title: Mettez à niveau SANtricity
       url: "../sg6000/upgrading-santricity-os-on-storage-controllers.html"
+    - title: Mise à niveau du micrologiciel du lecteur (méthode de redémarrage automatique)
+      url: "../sg6000/upgrading-drive-firmware-using-auto-reboot.html"
     - title: Mettre à niveau le micrologiciel du lecteur (méthode en ligne)
       url: "../sg6000/upgrading-drive-firmware-using-santricity-system-manager-online.html"
     - title: Mettre à niveau le firmware du disque (méthode hors ligne)
@@ -43,5 +45,7 @@ indexpage:
       url: "../sg6000/replacing-one-or-both-power-supplies-in-sg6000-cn-controller.html"
     - title: Remplacez la carte HBA Fibre Channel
       url: "../sg6000/reinstalling-fibre-channel-hba.html"
+    - title: Remplacer le ventilateur du contrôleur
+      url: "../sg6000/replacing-fan-in-sg6000cn.html"
     - title: Remplacez la pile CMOS
       url: "../sg6000/replace-cmos-in-sg6000cn.html"

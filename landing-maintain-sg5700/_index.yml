@@ -11,6 +11,8 @@ indexpage:
       url: "../sg5700/changing-link-configuration-of-e5700sg-controller.html"
     - title: Mettez à niveau SANtricity
       url: "../sg5700/upgrading-santricity-os-on-storage-controller.html"
+    - title: Mise à niveau du micrologiciel du lecteur (méthode de redémarrage automatique)
+      url: "../sg5700/upgrading-drive-firmware-using-auto-reboot.html"
     - title: Mettre à niveau le micrologiciel du lecteur (méthode en ligne)
       url: "../sg5700/upgrading-drive-firmware-using-santricity-system-manager-online.html"
     - title: Mettre à niveau le firmware du disque (méthode hors ligne)

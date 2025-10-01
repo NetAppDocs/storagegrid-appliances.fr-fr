@@ -14,6 +14,9 @@ summary: 'Avant de cloner un nœud d"appliance, vous devez comprendre les consid
 Avant de cloner un nœud d'appliance, vous devez comprendre les considérations et les exigences.
 
 
+TIP: Le clonage de nœud est désactivé pour les nœuds de passerelle.  Pour remplacer un nœud de passerelle, mettez-le hors service, puis effectuez une extension pour ajouter un nouveau nœud de passerelle d'appliance.  La procédure de mise hors service et d’extension est beaucoup plus rapide pour un nœud de passerelle que pour un nœud de stockage.
+
+
 
 == Configuration matérielle requise pour l'appliance de remplacement
 
@@ -21,11 +24,11 @@ Assurez-vous que l'appareil de remplacement répond aux critères suivants :
 
 * Le nœud source (appliance en cours de remplacement) et la cible (nouvelle) appliance doivent être du même type d'appliance :
 +
-** Vous pouvez cloner uniquement une appliance de nœud d'administration ou une appliance de nœud de passerelle vers une nouvelle appliance de services.
+** Vous ne pouvez cloner qu'un dispositif de nœud d'administration vers un nouveau dispositif de services.
 ** Vous ne pouvez cloner qu'une appliance de nœud de stockage sur une nouvelle appliance de stockage.
 
 
-* Pour les appliances de nœud d'administration ou de nœud de passerelle, l'appliance de nœud source et l'appliance cible n'ont pas besoin d'être le même modèle d'appliance. Toutefois, pour changer de modèle d'appliance, il peut être nécessaire de remplacer les câbles ou les modules SFP.
+* Pour un dispositif de nœud d'administration, le dispositif de nœud source et le dispositif cible n'ont pas besoin d'être du même modèle d'appareil ; toutefois, la modification du modèle d'appareil peut nécessiter le remplacement des câbles ou des modules SFP.
 +
 Par exemple, vous pouvez remplacer une appliance SG1000 par une appliance SG100 ou remplacer une appliance SG100 par une appliance SG1000.
 
@@ -37,7 +40,7 @@ Par exemple, vous pouvez remplacer une appliance SG5700 nœuds par une appliance
 
 ** L'appliance cible doit disposer d'un nombre égal ou supérieur de volumes de stockage objet à celui de l'appliance source.
 +
-Par exemple, vous ne pouvez pas remplacer une appliance de nœuds SG6000 (16 volumes de magasin d'objets) par une appliance SGF6112 (12 volumes de magasin d'objets).
+Par exemple, vous ne pouvez pas remplacer un appareil de nœud SG6000 (16 volumes de magasin d'objets) par un appareil SGF6112 (12 volumes de magasin d'objets).
 
 
 
@@ -60,9 +63,18 @@ Les adresses IP temporaires se trouvent généralement sur le même sous-réseau
 
 NOTE: L'utilisation du réseau d'administration 1 GbE pour le transfert des données de clonage entraîne un clonage plus lent.
 
-* Déterminez si le chiffrement des nœuds à l'aide d'un serveur de gestion des clés (KMS) sera utilisé sur l'appliance cible. Vous pouvez ainsi activer le chiffrement des nœuds lors de l'installation initiale de l'appliance cible avant le clonage. Vous pouvez vérifier si le chiffrement de nœud est activé sur le nœud de l'appliance source, comme indiqué dans la section link:../installconfig/optional-enabling-node-encryption.html["activation du chiffrement de nœud"].
+* Déterminez si vous utiliserez le chiffrement des nœuds à l'aide d'un serveur de gestion de clés (KMS) sur l'appliance cible, afin de pouvoir activer le chiffrement des nœuds lors de l'installation initiale de l'appliance cible avant le clonage.  Vous pouvez vérifier si le chiffrement du nœud est activé sur le nœud de l'appareil source comme décrit dans lelink:../installconfig/optional-enabling-node-encryption.html["activation du chiffrement de nœud"] .
 +
-Le nœud source et l'appliance cible peuvent avoir des paramètres de chiffrement de nœud différents. Le décryptage et le cryptage des données s'effectuent automatiquement pendant le transfert de données et lorsque le nœud cible redémarre et rejoint la grille.
+Le nœud source et l'appliance cible peuvent avoir des paramètres de chiffrement de nœud différents avec les exceptions suivantes.  Le clonage de nœuds n'est pas pris en charge à partir de sources de nœuds non chiffrées vers des cibles chiffrées pour les appliances suivantes :
+
++
+** Un appareil de nœud SGF6112 sans cryptage de nœud vers un appareil SGF6112 avec cryptage de nœud
+** Un appareil de nœud SG1100 sans cryptage de nœud vers un appareil SG1100 avec cryptage de nœud
+** Un appareil de nœud SG110 sans cryptage de nœud vers un appareil SG110 avec cryptage de nœud
+
+
++
+Le décryptage et le cryptage des données sont effectués automatiquement pendant le transfert de données et lorsque le nœud cible redémarre et rejoint la grille.
 
 * Déterminez si le mode RAID de l'appliance cible doit être modifié par défaut, afin que vous puissiez spécifier ces informations lors de l'installation initiale de l'appliance cible avant le clonage. Vous pouvez afficher des informations sur le mode RAID actuel du nœud de l'appliance source sur la page *NODES* dans Grid Manager. Sélectionnez l'onglet *matériel* de l'appareil.
 +

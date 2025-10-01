@@ -31,9 +31,6 @@ Par exemple, si le serveur DNS de la grille change alors qu'un nœud chiffré é
 .Étapes
 . Dans le programme d'installation de l'appliance StorageGRID, sélectionnez *configurer le réseau* > *Configuration DNS*.
 . Vérifiez que les serveurs DNS spécifiés sont corrects.
-+
-image::../media/dns_configuration.png[Configuration DNS]
-
 . Si nécessaire, modifiez les serveurs DNS.
 +
 
@@ -48,17 +45,16 @@ Le nœud utilise les paramètres de serveur DNS spécifiés sur cette page pour 
 ** Sélectionnez *Reboot dans StorageGRID* pour redémarrer le contrôleur avec le noeud qui rejoint la grille. Sélectionnez cette option si vous avez terminé de travailler en mode maintenance et que vous êtes prêt à rétablir le fonctionnement normal du nœud.
 ** Sélectionnez *redémarrer en mode maintenance* pour redémarrer le contrôleur avec le nœud restant en mode de maintenance. (Cette option n'est disponible que lorsque le contrôleur est en mode de maintenance.) Sélectionnez cette option si des opérations de maintenance supplémentaires doivent être effectuées sur le nœud avant de rejoindre la grille.
 +
-image::../media/reboot_controller_from_maintenance_mode.png[Redémarrez le contrôleur en mode de maintenance]
-
-+
 
 NOTE: Lorsque le nœud redémarre et rejoint la grille, il utilise les serveurs DNS du système répertoriés dans Grid Manager. Après avoir rejoint la grille, l'appliance n'utilise plus les serveurs DNS temporaires spécifiés dans le programme d'installation de l'appliance StorageGRID pendant que l'appliance était en mode de maintenance.
 
 +
-L'appliance peut redémarrer et rejoindre la grille en 20 minutes. Pour confirmer que le redémarrage est terminé et que le nœud a rejoint la grille, retournez à la grille Manager. La page *NODES* doit afficher un état normal (icône de coche verte image:../media/icon_alert_green_checkmark.png["coche verte"]à gauche du nom du nœud) pour le nœud de l'appliance, indiquant qu'aucune alerte n'est active et que le nœud est connecté à la grille.
+Le redémarrage de l'appareil et sa reconnexion au réseau peuvent prendre jusqu'à 20 minutes.  Pour confirmer que le redémarrage est terminé et que le nœud a rejoint la grille :
 
 +
-image::../media/nodes_menu.png[Le nœud d'appliance a rejoint la grille]
+... Dans le gestionnaire de grille, sélectionnez *NODES*.
+... Vérifiez que le nœud de l'appareil a un état normal (icône de coche verte)image:../media/icon_alert_green_checkmark.png["coche verte"] à gauche du nom du nœud), ce qui indique qu'aucune alerte n'est active et que le nœud est connecté au réseau.
+
 
 
 

@@ -21,8 +21,11 @@ entries:
     - title: Mettre à niveau le système d'exploitation SANtricity sur les contrôleurs
         de stockage à l'aide du mode de maintenance
       url: "/sg6000/upgrading-santricity-os-on-storage-controllers-using-maintenance-mode-sg6000.html"
-  - title: Mise à niveau du firmware des disques à l'aide de SANtricity System Manager
+  - title: Mettre à niveau le micrologiciel du lecteur
     entries:
+    - title: Mettre à niveau automatiquement le micrologiciel du lecteur SG6000 lors
+        du redémarrage de l'appareil
+      url: "/sg6000/upgrading-drive-firmware-using-auto-reboot.html"
     - title: Mettez à niveau le firmware du disque SG6000 à l'aide du Gestionnaire
         système SANtricity en utilisant la méthode en ligne
       url: "/sg6000/upgrading-drive-firmware-using-santricity-system-manager-online.html"
@@ -57,6 +60,8 @@ entries:
     url: "/sg6000/replacing-sg6000-cn-controller.html"
   - title: Remplacez une ou les deux alimentations du contrôleur SG6000-CN
     url: "/sg6000/replacing-one-or-both-power-supplies-in-sg6000-cn-controller.html"
+  - title: Remplacer le ventilateur
+    url: "/sg6000/replacing-fan-in-sg6000cn.html"
   - title: Remplacez la pile CMOS dans le contrôleur SG6000-CN
     url: "/sg6000/replace-cmos-in-sg6000cn.html"
   - title: Remplacez le contrôleur dans le rack

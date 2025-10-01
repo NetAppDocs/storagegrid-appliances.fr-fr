@@ -11,14 +11,14 @@ summary: 'Le programme d"installation de l"appliance StorageGRID vous permet de 
 
 
 [role="lead"]
-Le programme d'installation de l'appliance StorageGRID vous permet de configurer les adresses IP et les informations de routage utilisées pour l'appliance de services ou le nœud de stockage de l'appliance sur les réseaux StorageGRID Grid, Admin et client.
+Utilisez le programme d'installation de l'appliance StorageGRID pour configurer les adresses IP et le routage de l'appliance de services ou du nœud de stockage sur les réseaux Grid, Admin et Client.
 
 Si vous utilisez ConfigBuilder pour générer un fichier JSON, vous pouvez configurer automatiquement les adresses IP. Voir link:automating-appliance-installation-and-configuration.html["Automatisez l'installation et la configuration de l'appliance"].
 
 .Description de la tâche
-Vous devez attribuer une adresse IP statique à l'appliance sur chaque réseau connecté ou attribuer un bail permanent à l'adresse sur le serveur DHCP.
+Vous devez soit attribuer une adresse IP statique à l'appareil sur chaque réseau réseau ou réseau d'administration connecté, soit attribuer un bail permanent pour l'adresse sur le serveur DHCP.  L'adresse IP statique ou la configuration DHCP est facultative pour un réseau client connecté.
 
-Pour modifier la configuration de la liaison, reportez-vous aux instructions suivantes :
+Pour activer ou désactiver un lien ou modifier la configuration du lien, consultez les instructions suivantes :
 
 * link:../sg100-1000/changing-link-configuration-of-services-appliance.html["Modifier la configuration de la liaison de l'appliance de services SG100 ou SG1000"]
 * link:../sg110-1100/changing-link-configuration-of-sg110-and-sg1100-appliance.html["Modifier la configuration de la liaison de l'appliance de services SG110 ou SG1100"]
@@ -53,9 +53,14 @@ Par exemple, n'utilisez pas les plages de sous-réseaux suivantes pour le résea
 +
 La page Configuration IP s'affiche.
 
-. Pour configurer le réseau de grille, sélectionnez *statique* ou *DHCP* dans la section *réseau de grille* de la page.
-. Si vous avez sélectionné *statique*, procédez comme suit pour configurer le réseau de grille :
+. Pour configurer le réseau en grille, sélectionnez *Statique* ou *DHCP* dans la section *Réseau en grille* de la page, puis entrez vos paramètres réseau.
 +
+[role="tabbed-block"]
+====
+.Statique
+--
+Si vous avez sélectionné *statique*, procédez comme suit pour configurer le réseau de grille :
+
 .. Entrez l'adresse IPv4 statique à l'aide de la notation CIDR.
 .. Entrez la passerelle.
 +
@@ -84,18 +89,20 @@ Si vous avez des sous-réseaux de grille, la passerelle de réseau de grille est
 
 +
 
-NOTE: La route par défaut n'est pas répertoriée. Si le réseau client n'est pas activé, la route par défaut utilise la passerelle réseau Grid.
+NOTE: Si le réseau client n'est pas activé, l'itinéraire par défaut utilisera la passerelle du réseau Grid.
 
 +
 *** Pour ajouter un sous-réseau, cliquez sur l'icône d'insertion image:../media/icon_plus_sign_black_on_white.gif["insérer l'icône"]située à droite de la dernière entrée.
 *** Pour supprimer un sous-réseau inutilisé, cliquez sur l'icône de suppression image:../media/icon_nms_delete_new.gif["icône supprimer"].
 
 
-.. Cliquez sur *Enregistrer*.
 
 
-. Si vous avez sélectionné *DHCP*, procédez comme suit pour configurer le réseau de grille :
-+
+--
+.DHCP
+--
+Si vous avez sélectionné *DHCP*, procédez comme suit pour configurer le réseau de grille :
+
 .. Après avoir sélectionné le bouton radio *DHCP*, cliquez sur *Enregistrer*.
 +
 Les champs *adresse IPv4*, *passerelle* et *sous-réseaux* sont automatiquement renseignés. Si le serveur DHCP est configuré pour attribuer une valeur MTU, le champ *MTU* est renseigné avec cette valeur et le champ devient en lecture seule.
@@ -109,7 +116,7 @@ Si vous avez des sous-réseaux de grille, la passerelle de réseau de grille est
 
 +
 
-NOTE: La route par défaut n'est pas répertoriée. Si le réseau client n'est pas activé, la route par défaut utilise la passerelle réseau Grid.
+NOTE: Si le réseau client n'est pas activé, l'itinéraire par défaut utilisera la passerelle du réseau Grid.
 
 +
 *** Pour ajouter un sous-réseau, cliquez sur l'icône d'insertion image:../media/icon_plus_sign_black_on_white.gif["insérer l'icône"]située à droite de la dernière entrée.
@@ -128,19 +135,23 @@ NOTE: Pour des performances réseau optimales, tous les nœuds doivent être con
 .. Cliquez sur *Enregistrer*.
 
 
-. Pour configurer le réseau d'administration, sélectionnez *statique* ou *DHCP* dans la section *réseau d'administration* de la page.
+--
+====
+. Pour configurer le réseau d'administration, sélectionnez *Statique* ou *DHCP* dans la section *Réseau d'administration* de la page, puis entrez vos paramètres réseau.
 +
 
 NOTE: Pour configurer le réseau d'administration, activez le réseau d'administration sur la page Configuration de la liaison.
 
 +
-image::../media/admin_network_static.png[IP du réseau d'administration]
+[role="tabbed-block"]
+====
+.Statique
+--
+Si vous avez sélectionné *statique*, procédez comme suit pour configurer le réseau d'administration :
 
-. Si vous avez sélectionné *statique*, procédez comme suit pour configurer le réseau d'administration :
-+
 .. Saisissez l'adresse IPv4 statique, en utilisant la notation CIDR, pour le port de gestion 1 de l'appliance.
 +
-Le port de gestion 1 se trouve à gauche des deux ports RJ45 1 GbE situés à l'extrémité droite de l'appliance.
+Voirlink:../installconfig/cabling-appliance.html["Appareil câblé"] pour l'emplacement du port de gestion 1 sur votre appareil.
 
 .. Entrez la passerelle.
 +
@@ -172,11 +183,13 @@ NOTE: La route par défaut ne peut pas être établie pour utiliser la passerell
 *** Pour supprimer un sous-réseau inutilisé, cliquez sur l'icône de suppression image:../media/icon_nms_delete_new.gif["icône supprimer"].
 
 
-.. Cliquez sur *Enregistrer*.
 
 
-. Si vous avez sélectionné *DHCP*, procédez comme suit pour configurer le réseau d'administration :
-+
+--
+.DHCP
+--
+Si vous avez sélectionné *DHCP*, procédez comme suit pour configurer le réseau d'administration :
+
 .. Après avoir sélectionné le bouton radio *DHCP*, cliquez sur *Enregistrer*.
 +
 Les champs *adresse IPv4*, *passerelle* et *sous-réseaux* sont automatiquement renseignés. Si le serveur DHCP est configuré pour attribuer une valeur MTU, le champ *MTU* est renseigné avec cette valeur et le champ devient en lecture seule.
@@ -205,16 +218,20 @@ CAUTION: La valeur MTU du réseau doit correspondre à la valeur configurée sur
 .. Cliquez sur *Enregistrer*.
 
 
-. Pour configurer le réseau client, sélectionnez *statique* ou *DHCP* dans la section *réseau client* de la page.
+--
+====
+. Pour configurer le réseau client, sélectionnez *Statique*, *DHCP* ou *Aucun* dans la section *Réseau client* de la page, puis entrez vos paramètres réseau.
 +
 
-NOTE: Pour configurer le réseau client, activez le réseau client sur la page Configuration de la liaison.
+NOTE: Pour configurer le réseau client, assurez-vous que le réseau client est activé sur la page Configuration du lien.
 
 +
-image::../media/client_network_static.png[IP du réseau client]
+[role="tabbed-block"]
+====
+.Statique
+--
+Si vous avez sélectionné *statique*, procédez comme suit pour configurer le réseau client :
 
-. Si vous avez sélectionné *statique*, procédez comme suit pour configurer le réseau client :
-+
 .. Entrez l'adresse IPv4 statique à l'aide de la notation CIDR.
 .. Cliquez sur *Enregistrer*.
 .. Vérifiez que l'adresse IP de la passerelle du réseau client est correcte.
@@ -230,8 +247,11 @@ CAUTION: La valeur MTU du réseau doit correspondre à la valeur configurée sur
 .. Cliquez sur *Enregistrer*.
 
 
-. Si vous avez sélectionné *DHCP*, procédez comme suit pour configurer le réseau client :
-+
+--
+.DHCP
+--
+Si vous avez sélectionné *DHCP*, procédez comme suit pour configurer le réseau client :
+
 .. Après avoir sélectionné le bouton radio *DHCP*, cliquez sur *Enregistrer*.
 +
 Les champs *adresse IPv4* et *passerelle* sont automatiquement renseignés. Si le serveur DHCP est configuré pour attribuer une valeur MTU, le champ *MTU* est renseigné avec cette valeur et le champ devient en lecture seule.
@@ -251,4 +271,11 @@ CAUTION: La valeur MTU du réseau doit correspondre à la valeur configurée sur
 
 
 
+--
+.Aucune
+--
+Sélectionnez *Aucun* pour activer le réseau client sans spécifier d’adresse IP.  Le réseau client n'a besoin que d'une adresse IP pour un accès direct.  L'activation du réseau client sans adresse IP vous permet de configurer les interfaces VLAN du réseau client dans StorageGRID.
+
+--
+====
 

@@ -21,8 +21,11 @@ entries:
     - title: Mettez à niveau SANtricity OS sur le contrôleur E2800 à l'aide du mode
         de maintenance
       url: "/sg5700/upgrading-santricity-os-on-e2800-controller-using-maintenance-mode.html"
-  - title: Mise à niveau du firmware des disques à l'aide de SANtricity System Manager
+  - title: Mettre à niveau le micrologiciel du lecteur
     entries:
+    - title: Mettre à niveau automatiquement le micrologiciel du lecteur SG5700 lors
+        du redémarrage de l'appareil
+      url: "/sg5700/upgrading-drive-firmware-using-auto-reboot.html"
     - title: Mettez à niveau le firmware du disque à l'aide du Gestionnaire système
         SANtricity en utilisant la méthode en ligne
       url: "/sg5700/upgrading-drive-firmware-using-santricity-system-manager-online.html"

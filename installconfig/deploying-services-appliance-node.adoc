@@ -22,6 +22,10 @@ Lorsque vous déployez une appliance de services en tant que nœud d'administrat
 .Avant de commencer
 * L'appliance a été installée dans un rack ou une armoire, connectée à vos réseaux et sous tension.
 * Les liens réseau, les adresses IP et le remappage des ports (si nécessaire) ont été configurés pour le serveur à l'aide du programme d'installation de l'appliance StorageGRID.
++
+
+NOTE: La prise en charge du remappage des ports est obsolète et sera supprimée dans une prochaine version.  Pour supprimer les ports remappés, reportez-vous à https://docs.netapp.com/us-en/storagegrid/maintain/removing-port-remaps.html["Supprimer les remappages de ports sur les appliances StorageGRID"^] .
+
 * Vous avez un ordinateur portable de service avec un https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["navigateur web pris en charge"^].
 * Vous connaissez l'une des adresses IP attribuées à l'appliance. Vous pouvez utiliser l'adresse IP de n'importe quel réseau StorageGRID connecté.
 
@@ -54,9 +58,6 @@ https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab
 .. Extrayez l'archive.
 .. Dans le programme d'installation de l'appliance StorageGRID, sélectionnez *Avancé* > *Télécharger le logiciel StorageGRID*.
 .. Cliquez sur *Supprimer* pour supprimer le progiciel actuel.
-+
-image::../media/appliance_installer_rmv_current_software.png[Programme d'installation de l'appliance - Supprimer le logiciel actuel]
-
 .. Cliquez sur *Parcourir* pour trouver le progiciel que vous avez téléchargé et extrait. Sélectionner `storagegrid-webscale-images-_version_.deb` création de package.
 .. Sélectionnez *Accueil* pour revenir à la page d'accueil.
 
@@ -67,9 +68,6 @@ image::../media/appliance_installer_rmv_current_software.png[Programme d'install
 NOTE: Si vous déployez l'appliance Admin Node en tant que cible de clonage de nœud, arrêtez le processus de déploiement ici et continuez link:../commonhardware/appliance-node-cloning-procedure.html["procédure de clonage de nœud"].
 
 . Dans la page d'accueil du programme d'installation de l'appliance StorageGRID, cliquez sur *Démarrer l'installation*.
-+
-image::../media/appliance_installer_home_start_installation_enabled_primary_an.png[Installation du nœud d'administration principal de l'appliance]
-
 +
 L'état actuel passe à « installation en cours » et la page installation du moniteur s'affiche.
 
@@ -88,6 +86,10 @@ Lorsque vous déployez une appliance de services en tant que nœud de passerelle
 .Avant de commencer
 * L'appliance a été installée dans un rack ou une armoire, connectée à vos réseaux et sous tension.
 * Les liens réseau, les adresses IP et le remappage des ports (si nécessaire) ont été configurés pour le serveur à l'aide du programme d'installation de l'appliance StorageGRID.
++
+
+NOTE: La prise en charge du remappage des ports est obsolète et sera supprimée dans une prochaine version.  Pour supprimer les ports remappés, reportez-vous à https://docs.netapp.com/us-en/storagegrid/maintain/removing-port-remaps.html["Supprimer les remappages de ports sur les appliances StorageGRID"^] .
+
 * Le nœud d'administration principal du système StorageGRID a été déployé.
 * Tous les sous-réseaux de réseau Grid répertoriés sur la page de configuration IP du programme d'installation de l'appliance StorageGRID ont été définis dans la liste de sous-réseaux de réseau de grille sur le nœud d'administration principal.
 * Vous avez un ordinateur portable de service avec un https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["navigateur web pris en charge"^].
@@ -145,7 +147,7 @@ Détection automatique de tous les nœuds d'administration principaux connectés
  a| 
 .. Cochez la case *Activer la découverte du noeud d'administration*.
 .. Attendez que la liste des adresses IP découvertes s'affiche.
-.. Sélectionnez le nœud d'administration principal de la grille dans laquelle ce nœud de stockage de l'appliance sera déployé.
+.. Sélectionnez le nœud d’administration principal pour la grille où cette passerelle d’appareil ou ce nœud d’administration non principal sera déployé.
 .. Cliquez sur *Enregistrer*.
 .. Attendez que l'état de connexion de la nouvelle adresse IP soit prêt.
 
@@ -153,7 +155,7 @@ Détection automatique de tous les nœuds d'administration principaux connectés
 |===
 . Dans le champ *Nom du nœud*, indiquez le nom du système que vous souhaitez utiliser pour ce nœud d'appliance, puis cliquez sur *Enregistrer*.
 +
-Le nom qui apparaît ici correspond au nom système du nœud de l'appliance. Les noms de système sont requis pour les opérations StorageGRID internes et ne peuvent pas être modifiés.
+Le nom qui apparaît ici sera le nom système du nœud de l'appareil.  Les noms de système sont requis pour les opérations StorageGRID internes et ne peuvent pas être modifiés.  Pour modifier le nom d'affichage d'un nœud d'appareil, voir https://docs.netapp.com/us-en/storagegrid/maintain/rename-grid-site-node.html#how-to-rename-grid-sites-or-nodes["Comment renommer une grille, des sites ou des nœuds"^] .
 
 . Si vous souhaitez installer une autre version du logiciel StorageGRID, procédez comme suit :
 +
@@ -164,9 +166,6 @@ https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab
 .. Extrayez l'archive.
 .. Dans le programme d'installation de l'appliance StorageGRID, sélectionnez *Avancé* > *Télécharger le logiciel StorageGRID*.
 .. Cliquez sur *Supprimer* pour supprimer le progiciel actuel.
-+
-image::../media/appliance_installer_rmv_current_software.png[Programme d'installation de l'appliance - Supprimer le logiciel actuel]
-
 .. Cliquez sur *Parcourir* pour trouver le progiciel que vous avez téléchargé et extrait. Sélectionner `storagegrid-webscale-images-_version_.deb` création de package.
 .. Sélectionnez *Accueil* pour revenir à la page d'accueil.
 

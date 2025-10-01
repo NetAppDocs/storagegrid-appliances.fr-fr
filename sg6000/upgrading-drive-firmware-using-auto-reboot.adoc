@@ -1,0 +1,35 @@
+---
+permalink: sg6000/upgrading-drive-firmware-using-auto-reboot.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, upgrade, firmware, drive, disk, automatic 
+summary: 'Le programme d"installation de l"appliance StorageGRID installe automatiquement les derniers fichiers du micrologiciel du lecteur E-Series lors du redémarrage de l"appliance.' 
+---
+= Mettre à niveau automatiquement le micrologiciel du lecteur SG6000 lors du redémarrage de l'appareil
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le programme d'installation de l'appliance StorageGRID installe automatiquement les derniers fichiers du micrologiciel du lecteur E-Series lors du redémarrage de l'appliance.
+
+Les fichiers du micrologiciel du lecteur de la série E sont inclus dans le logiciel StorageGRID .  Ces mises à jour sont installées automatiquement à chaque redémarrage d'un appareil StorageGRID :
+
+* Danslink:../installconfig/rebooting-appliance-while-sg-appliance-installer-is-running.html["mode maintenance"]
+* Dans le cadre d'un https://docs.netapp.com/us-en/storagegrid/maintain/rolling-reboot-procedure.html["redémarrage progressif"]
+* Au cours d'une https://docs.netapp.com/us-en/storagegrid/upgrade/performing-upgrade.html["Mise à niveau de la version StorageGRID"] ou https://docs.netapp.com/us-en/storagegrid/maintain/applying-hotfix.html["installation du correctif"]
+* Au cours d'unelink:../sg6000/upgrading-santricity-os-on-storage-controllers-using-maintenance-mode-sg6000.html["Mise à niveau du système d'exploitation SANtricity"] en utilisant le mode maintenance
+
+
+
+CAUTION: La mise à niveau du micrologiciel du lecteur n'est pas tentée pour les nœuds dont le statut est « Nécessite une attention particulière ».
+
+
+NOTE: Lorsqu'un appareil redémarre, l'activité d'E/S (entrée/sortie) vers le contrôleur de stockage est arrêtée.
+
+Vous pouvez également installer manuellement les mises à niveau du micrologiciel du lecteur à l'aide du gestionnaire système SANtricitylink:upgrading-drive-firmware-using-santricity-system-manager-online.html["en ligne"] oulink:upgrading-drive-firmware-using-santricity-system-manager-offline.html["hors ligne"] méthode:
+
+* Pour appliquer une nouvelle mise à niveau du micrologiciel du lecteur avant qu'il ne soit intégré dans le logiciel StorageGRID
+* Si une mise à niveau automatique du micrologiciel du lecteur échoue
+* Pour utiliser le gestionnaire de système SANtricitylink:upgrading-drive-firmware-using-santricity-system-manager-online.html["mise à niveau du micrologiciel du lecteur en ligne"] depuis Grid Manager au lieu de redémarrer le nœud
+

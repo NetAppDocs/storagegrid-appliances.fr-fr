@@ -121,7 +121,7 @@ Pour les appliances de stockage SG5700 et SG5800, suivez les étapes générales
 --
 .SG6060
 --
-Pour l'appliance de stockage SG6060, la sécurité des disques peut être automatiquement activée sur les disques SSD uniquement si la gestion des clés a été configurée avant l'installation de l'appliance de stockage.
+Pour le dispositif de stockage SG6060, la sécurité du lecteur peut être automatiquement activée sur les lecteurs SSD uniquement si la gestion des clés a été configurée avant l'installation du dispositif de stockage.
 
 .. Equipez votre baie de stockage de disques compatibles sécurité (disques FDE ou FIPS).
 +
@@ -130,7 +130,7 @@ Pour l'appliance de stockage SG6060, la sécurité des disques peut être automa
 *** Un disque FDE ne peut pas être ajouté ou utilisé comme disque de secours dans un groupe de volumes ou un pool FIPS.
 
 
-.. Pour le tiroir contrôleur E4000, créez une clé de sécurité (une chaîne de caractères partagée par le contrôleur et les lecteurs pour l'accès en lecture et en écriture).
+.. Pour l'étagère du contrôleur E2800, créez une clé de sécurité (une chaîne de caractères partagée par le contrôleur et les lecteurs pour l'accès en lecture et en écriture).
 +
 *** Vous pouvez https://docs.netapp.com/us-en/e-series-santricity/sm-settings/create-internal-security-key.html["créer une clé interne"^] utiliser la mémoire persistante du contrôleur ou une clé externe fournie par un serveur de gestion des clés.
 *** Pour utiliser une clé externe fournie par un serveur de gestion des clés, vous devez d'abord utiliser https://docs.netapp.com/us-en/e-series-santricity/sm-settings/overview-drive-security.html["établissez l'authentification avec un serveur de gestion des clés"^] SANtricity System Manager.
@@ -250,9 +250,6 @@ DHCP est la méthode par défaut d'assignation d'une adresse IP au port de gesti
 
 NOTE: L'affichage des valeurs DHCP peut prendre quelques minutes.
 
-+
-image::../media/storage_controller_network_config_ipv4.gif[IPv4 de configuration réseau du contrôleur de stockage]
-
 . Vous pouvez également définir une adresse IP statique pour le port de gestion du contrôleur de stockage.
 +
 
@@ -262,9 +259,6 @@ NOTE: Vous devez attribuer une adresse IP statique au port de gestion ou attribu
 .. Sélectionnez *statique*.
 .. Saisissez l'adresse IPv4 à l'aide de la notation CIDR.
 .. Saisissez la passerelle par défaut.
-+
-image::../media/storage_controller_ipv4_and_def_gateway.gif[Configuration réseau du contrôleur de stockage IPv4 et passerelle par défaut]
-
 .. Cliquez sur *Enregistrer*.
 +
 L'application de vos modifications peut prendre quelques minutes.

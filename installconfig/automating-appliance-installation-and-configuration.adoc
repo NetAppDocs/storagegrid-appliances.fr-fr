@@ -24,6 +24,7 @@ Vous pouvez automatiser la configuration des éléments suivants :
 ** Mode de liaison du port
 ** Mode de liaison réseau
 ** Vitesse de liaison
+** Politique de hachage de transmission LACP et taux de PDU
 
 
 
@@ -81,16 +82,13 @@ Une fois que vous avez généré un fichier JSON, vous pouvez automatiser la con
 
 .Étapes
 . Dans le programme d'installation de l'appareil StorageGRID, sélectionnez *Avancé* > *mettre à jour la configuration de l'appareil*. La page mise à jour de la configuration de l'appliance s'affiche.
-. Recherchez et sélectionnez le fichier JSON avec la configuration que vous souhaitez télécharger.
+. Dans la section Télécharger JSON, recherchez et sélectionnez le fichier de configuration JSON que vous souhaitez télécharger.
 +
 Le fichier est téléchargé et validé. Une fois le processus de validation terminé, le nom du fichier s'affiche à côté d'une coche verte.
 
 +
 
 NOTE: Vous risquez de perdre la connexion à l'appliance si la configuration du fichier JSON inclut des sections pour `link_config`, `networks`, ou les deux. Si vous n'êtes pas reconnecté dans un délai d'une minute, saisissez à nouveau l'URL de l'appliance en utilisant l'une des autres adresses IP attribuées à l'appliance.
-
-+
-image::../media/update_appliance_configuration_valid_json.png[Mettez à jour la configuration de l'appliance JSON chargée]
 
 +
 La liste déroulante *Nom de nœud* contient les noms de nœud de niveau supérieur définis dans le fichier JSON.

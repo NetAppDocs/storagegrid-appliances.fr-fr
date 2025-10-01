@@ -23,10 +23,7 @@ Le programme d'installation de l'appliance StorageGRID se met automatiquement à
 
 .Étapes
 . Dans le programme d'installation de l'appliance StorageGRID, sélectionnez *Avancé* > *mise à niveau du micrologiciel*.
-. Comparez la version actuelle du micrologiciel avec la version logicielle installée sur votre système StorageGRID. (En haut de Grid Manager, sélectionnez l'icône d'aide et sélectionnez *About*.)
-+
-Le second chiffre des deux versions doit correspondre. Par exemple, si votre système StorageGRID exécute la version 11.*6*._x_._y_, la version du programme d'installation de l'appliance StorageGRID doit être 3.*6*._z_.
-
+. Assurez-vous que la version actuelle du micrologiciel correspond à la version du logiciel installée sur votre système StorageGRID .  (En haut du gestionnaire de grille, sélectionnez l'icône d'aide et sélectionnez *À propos*.)
 . Si l'appliance dispose d'une version de niveau inférieur du programme d'installation de l'appliance StorageGRID, passez à https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["Téléchargement NetApp : appliance StorageGRID"^].
 +
 Connectez-vous avec le nom d'utilisateur et le mot de passe de votre compte NetApp.

@@ -21,8 +21,11 @@ entries:
     - title: Mettez à niveau SANtricity OS sur le contrôleur E4000 en utilisant le
         mode de maintenance
       url: "/sg5800/upgrading-santricity-os-on-e4000-controller-using-maintenance-mode.html"
-  - title: Mise à niveau du firmware des disques à l'aide de SANtricity System Manager
+  - title: Mettre à niveau le micrologiciel du lecteur
     entries:
+    - title: Mettre à niveau automatiquement le micrologiciel du lecteur SG5800 lors
+        du redémarrage de l'appareil
+      url: "/sg5800/upgrading-drive-firmware-using-auto-reboot.html"
     - title: Mettez à niveau le micrologiciel du lecteur SG5800 à l'aide de la méthode
         en ligne du Gestionnaire système SANtricity
       url: "/sg5800/upgrading-drive-firmware-using-santricity-system-manager-online.html"

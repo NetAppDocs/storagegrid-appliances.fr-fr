@@ -21,12 +21,6 @@ Cette procédure s'applique uniquement lorsque le serveur exécute le programme 
 +
 ** Sélectionnez *Reboot dans StorageGRID* pour redémarrer le contrôleur avec le noeud qui rejoint la grille. Sélectionnez cette option si vous avez terminé de travailler en mode maintenance et que vous êtes prêt à rétablir le fonctionnement normal du nœud.
 ** Sélectionnez *redémarrer en mode maintenance* pour redémarrer le contrôleur avec le nœud restant en mode de maintenance. (Cette option n'est disponible que lorsque le contrôleur est en mode de maintenance.) Sélectionnez cette option si des opérations de maintenance supplémentaires doivent être effectuées sur le nœud avant de rejoindre la grille.
-+
-image::../media/reboot_controller_from_maintenance_mode.png[Redémarrez le contrôleur en mode de maintenance]
-
-+
-L'appliance est redémarrée.
-
 
 
 

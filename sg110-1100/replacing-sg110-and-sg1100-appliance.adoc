@@ -86,7 +86,7 @@ Suivez les instructions de maintenance fournies pour réinstaller les composants
 
 +
 
-CAUTION: Si vous souhaitez conserver les données sur les disques, veillez à insérer les disques SSD dans les emplacements de disque qu'ils occupaient dans l'appliance en panne. Si ce n'est pas le cas, le programme d'installation de l'appliance affichera un message d'avertissement et vous devrez placer les disques dans les emplacements appropriés et redémarrer l'appliance avant que l'appliance puisse rejoindre à nouveau la grille.
+CAUTION: Si vous souhaitez conserver les données sur les disques, insérez les disques SSD dans les mêmes emplacements qu'ils occupaient dans l'appareil défaillant.  Si vous ne le faites pas, le programme d'installation de l'appareil affichera un avertissement et vous devrez placer les disques dans les emplacements appropriés et redémarrer l'appareil avant que celui-ci puisse rejoindre le réseau.
 
 .. link:reinstalling-sg110-and-sg1100-into-cabinet-or-rack.html["Installez l'appareil de remplacement dans l'armoire ou le rack"].
 .. Remplacez les câbles et les émetteurs-récepteurs optiques.

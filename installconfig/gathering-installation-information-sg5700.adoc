@@ -464,6 +464,5 @@ image::../media/e5700sg_bonded_management_ports.gif[Port de gestion autonome E57
 
 .Informations associées
 * link:cabling-appliance-sg5700.html["Appliance pour câble (SG5700)"]
-* link:gathering-installation-information-sg5700.html#port-bond-modes["Modes de liaison des ports (contrôleur E5700SG)"]
 * link:configuring-hardware.html["Configuration du matériel (SG5700)"]
 

@@ -40,9 +40,6 @@ Pour préserver les performances du réseau StorageGRID et la disponibilité des
 +
 La section connexion au nœud d'administration principal est remplacée par la section connexion au nœud cible clone.
 
-+
-image::../media/clone_peer_node_connection_section.png[Section connexion de nœud cible clone]
-
 . Pour *Clone Target node IP*, entrez l'adresse IP temporaire attribuée au nœud cible pour que le réseau utilise pour le trafic de transfert de données clone, puis sélectionnez *Enregistrer*.
 +
 En général, vous entrez l'adresse IP du réseau Grid, mais si vous devez utiliser un autre réseau pour le trafic de transfert de données clone, entrez l'adresse IP du nœud cible sur ce réseau.
@@ -64,9 +61,6 @@ Lorsque *Démarrer le clonage* est activé, l'état *actuel* indique le réseau 
 . Surveillez la progression du clonage à l'aide du programme d'installation de l'appliance StorageGRID sur le nœud source ou cible.
 +
 Le programme d'installation de l'appliance StorageGRID sur les nœuds source et cible indique un état similaire.
-
-+
-image::../media/cloning_progress.png[Progression du clonage]
 
 +
 La page Monitor Cloning indique la progression détaillée de chaque étape du processus de clonage :

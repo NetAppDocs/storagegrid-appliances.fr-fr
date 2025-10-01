@@ -17,6 +17,10 @@ Après avoir installé et configuré l'appliance de stockage, vous pouvez la dé
 * Si vous clonez un nœud d'appliance, continuez à suivre les instructions de la section link:../commonhardware/appliance-node-cloning-procedure.html["clonage des nœuds de l'appliance"] processus.
 * L'appliance a été installée dans un rack ou une armoire, connectée à vos réseaux et sous tension.
 * Les liens réseau, les adresses IP et le remappage des ports (si nécessaire) ont été configurés pour le serveur à l'aide du programme d'installation de l'appliance StorageGRID.
++
+
+NOTE: La prise en charge du remappage des ports est obsolète et sera supprimée dans une prochaine version.  Pour supprimer les ports remappés, reportez-vous à https://docs.netapp.com/us-en/storagegrid/maintain/removing-port-remaps.html["Supprimer les remappages de ports sur les appliances StorageGRID"^] .
+
 * Vous connaissez l'une des adresses IP attribuées au contrôleur de calcul de l'appliance. Vous pouvez utiliser l'adresse IP de n'importe quel réseau StorageGRID connecté.
 * Le nœud d'administration principal du système StorageGRID a été déployé.
 * Tous les sous-réseaux de réseau Grid répertoriés sur la page de configuration IP du programme d'installation de l'appliance StorageGRID ont été définis dans la liste de sous-réseaux de réseau de grille sur le nœud d'administration principal.
@@ -57,7 +61,7 @@ NOTE: Seules les métadonnées peuvent être sélectionnées lors du déploiemen
 
 . Dans le champ *Nom du nœud*, indiquez le nom du système que vous souhaitez utiliser pour ce nœud d'appliance, puis cliquez sur *Enregistrer*.
 +
-Le nom qui apparaît ici correspond au nom système du nœud de l'appliance. Les noms de système sont requis pour les opérations StorageGRID internes et ne peuvent pas être modifiés.
+Le nom qui apparaît ici sera le nom système du nœud de l'appareil.  Les noms de système sont requis pour les opérations StorageGRID internes et ne peuvent pas être modifiés.  Pour modifier le nom d'affichage d'un nœud d'appareil, voir https://docs.netapp.com/us-en/storagegrid/maintain/rename-grid-site-node.html#how-to-rename-grid-sites-or-nodes["Comment renommer une grille, des sites ou des nœuds"^] .
 
 . Dans la section *connexion au noeud d'administration principal*, déterminez si vous devez spécifier l'adresse IP du noeud d'administration principal.
 +

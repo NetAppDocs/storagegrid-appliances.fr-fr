@@ -20,8 +20,7 @@ Vous pouvez arrêter le contrôleur SG6000-CN et le remettre sous tension pour e
 Arrêtez le contrôleur SG6000-CN pour effectuer la maintenance du matériel.
 
 .Avant de commencer
-* Vous avez installé physiquement le contrôleur SG6000-CN nécessitant une maintenance dans le centre de données. Voir link:locating-controller-in-data-center.html["Localiser le contrôleur dans le data Center"].
-
+Vous avez installé physiquement le contrôleur SG6000-CN nécessitant une maintenance dans le centre de données. Voir link:locating-controller-in-data-center.html["Localiser le contrôleur dans le data Center"].
 
 .Description de la tâche
 Pour éviter les interruptions de service, vérifiez que tous les autres nœuds de stockage sont connectés à la grille avant d'arrêter le contrôleur ou d'arrêter le contrôleur durant une fenêtre de maintenance planifiée en cas d'interruption de service. Voir les informations sur https://docs.netapp.com/us-en/storagegrid/monitor/monitoring-system-health.html#monitor-node-connection-states["contrôle de l'état de connexion du nœud"^].
@@ -84,7 +83,7 @@ image::../media/bmc_power_control_page_controller_off.png[Page de contrôle de l
 
 
 
-== Mettez le contrôleur SG6000-CN sous tension et vérifiez son fonctionnement
+== [[poweron]]Allumez le contrôleur SG6000-CN et vérifiez le fonctionnement
 
 Mettez le contrôleur sous tension après la fin de la maintenance.
 

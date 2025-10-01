@@ -24,15 +24,13 @@ Les options permettant de modifier la configuration de la liaison Ethernet de l'
 
 * Changement du mode *Port bond* de fixe à agrégé, ou d'agrégat à fixe
 * Passage du mode de liaison réseau * d'Active-Backup à LACP, ou de LACP à Active-Backup
+* Modification des valeurs de la *politique de hachage de transmission LACP* et du *taux PDU LACP*
 * Activation ou désactivation du balisage VLAN ou modification de la valeur d'une balise VLAN
 * Modification de la vitesse de liaison
 
 
 .Étapes
 . Dans le programme d'installation de l'appliance StorageGRID, sélectionnez *configurer réseau* > *Configuration lien*.
-+
-image::../media/link_configuration_option.gif[Configuration du lien]
-
 . Apportez les modifications souhaitées à la configuration de liaison.
 +
 Pour plus d'informations sur les options, reportez-vous à la section link:../installconfig/configuring-network-links.html["Configurer les liaisons réseau"].
@@ -57,13 +55,12 @@ En plus des autres tests que vous choisissez d'effectuer, confirmez que vous pou
 ** Sélectionnez *Reboot dans StorageGRID* pour redémarrer le contrôleur avec le noeud qui rejoint la grille. Sélectionnez cette option si vous avez terminé de travailler en mode maintenance et que vous êtes prêt à rétablir le fonctionnement normal du nœud.
 ** Sélectionnez *redémarrer en mode maintenance* pour redémarrer le contrôleur avec le nœud restant en mode de maintenance. (Cette option n'est disponible que lorsque le contrôleur est en mode de maintenance.) Sélectionnez cette option si des opérations de maintenance supplémentaires doivent être effectuées sur le nœud avant de rejoindre la grille.
 +
-image::../media/reboot_controller_from_maintenance_mode.png[Redémarrez le contrôleur en mode de maintenance]
+Le redémarrage de l'appareil et sa reconnexion au réseau peuvent prendre jusqu'à 20 minutes.  Pour confirmer que le redémarrage est terminé et que le nœud a rejoint la grille :
 
 +
-L'appliance peut redémarrer et rejoindre la grille en 20 minutes. Pour confirmer que le redémarrage est terminé et que le nœud a rejoint la grille, retournez à la grille Manager. La page *NODES* doit afficher un état normal (icône de coche verte image:../media/icon_alert_green_checkmark.png["coche verte"]à gauche du nom du nœud) pour le nœud de l'appliance, indiquant qu'aucune alerte n'est active et que le nœud est connecté à la grille.
+... Dans le gestionnaire de grille, sélectionnez *NODES*.
+... Vérifiez que le nœud de l'appareil a un état normal (icône de coche verte)image:../media/icon_alert_green_checkmark.png["coche verte"] à gauche du nom du nœud), ce qui indique qu'aucune alerte n'est active et que le nœud est connecté au réseau.
 
-+
-image::../media/nodes_menu.png[Le nœud d'appliance a rejoint la grille]
 
 
 

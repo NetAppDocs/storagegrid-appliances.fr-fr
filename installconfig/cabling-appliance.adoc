@@ -680,6 +680,10 @@ Port d'interconnexion 2 sur le contrôleur SG5800
 |===
 . Vous pouvez également connecter le port de gestion 1 (P1) du contrôleur E4000 (port RJ-45 sur la gauche) au réseau de gestion du Gestionnaire système SANtricity à l'aide d'un câble Ethernet.
 . Si vous prévoyez d'utiliser le réseau d'administration pour StorageGRID, connectez le port de gestion 1 du contrôleur SG5800 (port RJ-45 de gauche) au réseau d'administration à l'aide d'un câble Ethernet.
++
+
+NOTE: L'état de la liaison physique pour le port 1 n'est pas disponible dans le logiciel et doit être vérifié à ce stade à l'aide du voyant d'état sur le contrôleur SG5800.
+
 . Connectez les ports 10/25-GbE du contrôleur SG5800 aux commutateurs réseau appropriés à l'aide de câbles en cuivre ou optiques et d'émetteurs-récepteurs SFP+ ou SFP28.
 +
 

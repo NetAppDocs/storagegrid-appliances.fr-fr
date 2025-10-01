@@ -23,9 +23,6 @@ Pour plus d'informations sur l'implémentation de KMS pour les appliances Storag
 .Étapes
 . Dans le programme d'installation de l'appliance StorageGRID, sélectionnez *configurer le matériel* > *cryptage de nœud*.
 +
-image::../media/fde_monitor_in_maint_mode.png[CONFIGURATION DE l'effacement DES KMS]
-
-+
 La page Node Encryption comprend trois sections :
 
 +
@@ -49,13 +46,12 @@ CAUTION: L'effacement de la configuration KMS supprime les données de l'applian
 ** Sélectionnez *Reboot dans StorageGRID* pour redémarrer le contrôleur avec le noeud qui rejoint la grille. Sélectionnez cette option si vous avez terminé de travailler en mode maintenance et que vous êtes prêt à rétablir le fonctionnement normal du nœud.
 ** Sélectionnez *redémarrer en mode maintenance* pour redémarrer le contrôleur avec le nœud restant en mode de maintenance. (Cette option n'est disponible que lorsque le contrôleur est en mode de maintenance.) Sélectionnez cette option si des opérations de maintenance supplémentaires doivent être effectuées sur le nœud avant de rejoindre la grille.
 +
-image::../media/reboot_controller_from_maintenance_mode.png[Redémarrez le contrôleur en mode de maintenance]
+Le redémarrage de l'appareil et sa reconnexion au réseau peuvent prendre jusqu'à 20 minutes.  Pour confirmer que le redémarrage est terminé et que le nœud a rejoint la grille :
 
 +
-L'appliance peut redémarrer et rejoindre la grille en 20 minutes. Pour confirmer que le redémarrage est terminé et que le nœud a rejoint la grille, retournez à la grille Manager. La page *NODES* doit afficher un état normal (icône de coche verte image:../media/icon_alert_green_checkmark.png["coche verte"]à gauche du nom du nœud) pour le nœud de l'appliance, indiquant qu'aucune alerte n'est active et que le nœud est connecté à la grille.
+... Dans le gestionnaire de grille, sélectionnez *NODES*.
+... Vérifiez que le nœud de l'appareil a un état normal (icône de coche verte)image:../media/icon_alert_green_checkmark.png["coche verte"] à gauche du nom du nœud), ce qui indique qu'aucune alerte n'est active et que le nœud est connecté au réseau.
 
-+
-image::../media/nodes_menu.png[Le nœud d'appliance a rejoint la grille]
 
 
 
@@ -87,7 +83,7 @@ CAUTION: N'effacez pas la configuration KMS si vous prévoyez de réinstaller un
 
 * Avant de pouvoir récupérer et réinstaller un nœud où la configuration KMS était perdue et où la clé KMS n'est pas récupérable.
 * Avant de retourner tout appareil déjà utilisé sur votre site.
-* Après la désaffectation d'une appliance qui avait activé le chiffrement de nœud.
+* Après la mise hors service d'un appareil sur lequel le chiffrement des nœuds était activé.
 
 
 
@@ -112,7 +108,7 @@ CAUTION: Si la configuration KMS est effacée, les données de l'appliance seron
 . En bas de la fenêtre, sélectionnez *Effacer la clé KMS et Supprimer les données*.
 . Si vous êtes sûr de vouloir effacer la configuration KMS, tapez `*clear*` Dans la boîte de dialogue d'avertissement et sélectionnez *Effacer la clé KMS et Supprimer les données*.
 +
-La clé de chiffrement KMS et toutes les données sont supprimées du nœud, et l'appliance redémarre. Cette opération peut prendre jusqu'à 20 minutes.
+La clé de chiffrement KMS et toutes les données sont supprimées du nœud et l'appliance redémarre.  Une boîte de dialogue s'affiche pendant le redémarrage de l'appareil, ce qui peut prendre jusqu'à 20 minutes.
 
 . Ouvrez un navigateur et entrez l'une des adresses IP du contrôleur de calcul de l'appliance. +
 `*https://_Controller_IP_:8443*`

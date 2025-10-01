@@ -4,7 +4,7 @@ permalink: whats-new-appliances.html
 keywords: storagegrid, appliance, whats new 
 summary: Découvrez les nouveautés de ce site de documentation. 
 ---
-= Nouveautés des appliances
+= Nouveautés des appliances StorageGRID
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,28 +14,40 @@ summary: Découvrez les nouveautés de ce site de documentation.
 
 
 [role="lead"]
-Découvrez les nouveautés des appliances StorageGRID.
+Découvrez les nouveautés des appliances StorageGRID .
+
+
+
+== Le réseau client peut être configuré sans adresse IP
+
+Vous pouvez désormais activer le réseau client sans spécifier d’adresse IP.  Cela permet au réseau client d'avoir des interfaces VLAN configurées dans StorageGRID sans nécessiter une adresse IP supplémentaire pour l'interface elle-même. link:.//installconfig/setting-ip-configuration.html["Configurez les adresses IP StorageGRID"] .
+
+
+
+== Alignement des numéros de version du logiciel StorageGRID et du programme d'installation de l'appliance
+
+Avec la version 12.0 de StorgeGRID, le numéro de version du programme d'installation de l'appliance StorageGRID correspond à la version du logiciel StorageGRID .  Les utilisateurs n’ont plus besoin de déterminer quelles versions fonctionnent ensemble. link:./installconfig/verifying-and-upgrading-storagegrid-appliance-installer-version.html["Vérifiez et mettez à niveau la version du programme d'installation de l'appliance StorageGRID"] .
 
 
 
 == Informations sur les BMC
 
-Des informations détaillées sur l'utilisation de l'interface BMC de l'appliance StorageGRID sont disponibles. Voir link:./commonhardware/use-bmc.html["Utilisation du contrôleur de gestion de la carte mère (BMC) de l'appliance StorageGRID"].
+Des informations détaillées sur l'utilisation de l'interface BMC de l'appliance StorageGRID sont désormais disponibles. link:./commonhardware/use-bmc.html["Utilisation du contrôleur de gestion de la carte mère (BMC) de l'appliance StorageGRID"] .
 
 
 
 == Appareils SG5812 et SG5860
 
-Les nouvelles appliances StorageGRID SG5812 et SG5860 sont des plateformes de stockage et de calcul intégrées qui fonctionnent comme des nœuds de stockage dans un grid StorageGRID. Consultez le link:./installconfig/hardware-description-sg5800.html["Appareils SG5800 : présentation"] pour en savoir plus.
+Les appliances StorageGRID SG5812 et SG5860 sont des plates-formes de stockage et de calcul intégrées qui fonctionnent comme des nœuds de stockage dans une grille StorageGRID .  Reportez-vous à lalink:./installconfig/hardware-description-sg5800.html["Appareils SG5800 : présentation"] pour en savoir plus.
 
 
 
 == Appliance SG6160
 
-La nouvelle appliance StorageGRID SG6160 inclut un contrôleur de calcul et un tiroir de contrôleur de stockage contenant deux contrôleurs de stockage et 60 disques, ainsi que deux disques SSD NVMe pour la mise en cache. Des tiroirs d'extension de 60 disques peuvent également être ajoutés au SG6160. Voir link:./installconfig/hardware-description-sg6100.html["Appliances SGF6100 : présentation"] pour en savoir plus.
+Le nouveau dispositif StorageGRID SG6160 comprend un contrôleur de calcul et une étagère de contrôleur de stockage contenant deux contrôleurs de stockage et 60 disques, ainsi que deux disques SSD NVMe pour la mise en cache.  En option, des étagères d'extension de 60 disques peuvent être ajoutées au SG6160.  Se référer àlink:./installconfig/hardware-description-sg6100.html["Appliances SGF6100 : présentation"] pour en savoir plus.
 
 
 
 == Appliances de services SG110 et SG1100
 
-Les nouvelles appliances de services StorageGRID SG110 et SG1100 sont une mise à jour matérielle évolutive qui améliore les performances d'administration et d'équilibrage de la charge. Voir link:./installconfig/hardware-description-sg110-and-1100.html["Appliance de services SG110 et SG1100 : présentation"].
+Les nouveaux appareils de services StorageGRID SG110 et SG1100 sont une mise à jour matérielle évolutive qui offre des performances d'administration et d'équilibrage de charge améliorées. link:./installconfig/hardware-description-sg110-and-1100.html["Appliance de services SG110 et SG1100 : présentation"] .

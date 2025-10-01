@@ -109,9 +109,6 @@ L'alerte n'apparaît pas la prochaine fois que vous accédez à cette URL.
 +
 La page d'accueil du programme d'installation de l'appliance StorageGRID s'affiche. Les informations et les messages affichés lorsque vous accédez pour la première fois à cette page dépendent de la manière dont votre appareil est actuellement connecté aux réseaux StorageGRID. Des messages d'erreur peuvent s'afficher et seront résolus dans les étapes suivantes.
 
-+
-image::../media/appliance_installer_home_5700_5600.png[Capture d'écran de la partie supérieure de la page d'accueil du programme d'installation de l'appliance StorageGRID]
-
 
 
 . Si vous ne parvenez pas à obtenir une adresse IP à l'aide de DHCP, vous pouvez utiliser une connexion lien-local.
@@ -205,7 +202,4 @@ Après avoir accédé au programme d'installation de l'appliance StorageGRID :
 link:verifying-and-upgrading-storagegrid-appliance-installer-version.html["Vérifiez et mettez à niveau la version du programme d'installation de l'appliance StorageGRID"]
 
 * Vérifiez tous les messages affichés sur la page d'accueil du programme d'installation de l'appliance StorageGRID et configurez la configuration du lien et la configuration IP, selon les besoins.
-+
-image::../media/appliance_installer_home_services_appliance.png[Accueil du programme d'installation de l'appareil]
-
 

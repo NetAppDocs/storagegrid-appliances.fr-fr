@@ -552,7 +552,6 @@ Le port de gauche est connecté au réseau Admin. Le port de droite est disponib
 .Informations associées
 * link:../installconfig/hardware-description-sg6000.html#sg6000-controllers["Contrôleurs SG6000"]
 * link:../installconfig/reviewing-appliance-network-connections.html["Identification des connexions réseau de l'appliance"]
-* link:../installconfig/gathering-installation-information-sg6000.html#port-bond-modes["Modes de liaison du port (contrôleur SG6000-CN)"]
 * link:cabling-appliance.html["Appareil câblé"]
 * link:../installconfig/setting-ip-configuration.html["Configurez les adresses IP StorageGRID"]
 

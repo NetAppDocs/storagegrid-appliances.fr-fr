@@ -263,9 +263,14 @@ Le fichier est enregistré dans le dossier Téléchargements de votre navigateur
 
 
 
-. Vérifiez que le redémarrage est terminé et que le nœud a rejoint à nouveau la grille. Dans le Gestionnaire de grille, vérifiez que la page *nœuds* affiche un état normal (coche verte à gauche du nom du nœud) pour le nœud de l'appliance, indiquant qu'aucune alerte n'est active et que le nœud est connecté à la grille.
+. Confirmez que le redémarrage est terminé et que le nœud a rejoint la grille :
++
+.. Dans le gestionnaire de grille, sélectionnez *NODES*.
+.. Vérifiez que le nœud de l'appareil a un état normal (icône de coche verte)image:../media/icon_alert_green_checkmark.png["coche verte"] à gauche du nom du nœud), ce qui indique qu'aucune alerte n'est active et que le nœud est connecté au réseau.
 +
 
-NOTE: L'opération peut prendre 20 minutes entre la mise sous tension des boutons d'alimentation et le moment où le nœud rejoint la grille et affiche un état normal dans Grid Manager. »
+NOTE: cela peut prendre 20 minutes à partir du moment où vous allumez les interrupteurs d'alimentation jusqu'au moment où le nœud rejoint le réseau et affiche un état normal dans Grid Manager.
+
+
 
 

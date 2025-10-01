@@ -29,6 +29,8 @@ Si vous activez le chiffrement des nœuds, les disques de votre appliance peuven
 
 Si vous utilisez ConfigBuilder pour générer un fichier JSON, vous pouvez activer le chiffrement de nœud automatiquement. Voir link:automating-appliance-installation-and-configuration.html["Automatisez l'installation et la configuration de l'appliance"].
 
+De plus, lorsque vous activez le mode FIPS après avoir activé le chiffrement des nœuds, le module NetApp StorageGRID Kernel Crypto API 6.1.129-1-ntap1-amd64 est utilisé pour le chiffrement des données au repos. Se référer à https://review.docs.netapp.com/us-en/storagegrid_storagegrid-120-dev/admin/manage-tls-ssh-policy.html#select-a-security-policy["Sélectionnez une politique de sécurité"^] pour plus d'informations.
+
 .Avant de commencer
 Passez en revue les informations sur https://docs.netapp.com/us-en/storagegrid/admin/kms-configuring.html["Configuration de KMS"^].
 
@@ -42,7 +44,7 @@ Un KMS peut être configuré dans Grid Manager avant ou après l'installation de
 
 
 
-CAUTION: Lorsqu'un dispositif est installé et que le chiffrement de nœud est activé, une clé temporaire est attribuée. Les données de l'appliance ne sont pas protégées tant que l'appliance n'est pas connectée au système de gestion des clés (KMS) et qu'une clé de sécurité KMS n'est pas installée. Pour plus d'informations, reportez-vous au https://docs.netapp.com/us-en/storagegrid/admin/kms-overview-of-kms-and-appliance-configuration.html["Présentation de la configuration de l'appliance KM"^].
+CAUTION: Lorsqu'un appareil est installé avec le chiffrement de nœud activé, une clé temporaire est attribuée.  Les données sur l'appareil ne sont pas protégées tant que l'appareil n'est pas connecté au système de gestion des clés (KMS) et qu'une clé de sécurité KMS n'est pas définie.  Reportez-vous à la https://docs.netapp.com/us-en/storagegrid/admin/kms-overview-of-kms-and-appliance-configuration.html["Présentation de la configuration de l'appliance KM"^] pour plus d'informations.
 
 Sans la clé KMS requise pour décrypter le disque, les données de l'appliance ne peuvent pas être récupérées et sont perdues. C'est le cas lorsque la clé de déchiffrement ne peut pas être récupérée à partir du KMS. La clé devient inaccessible si un client efface la configuration KMS, une clé KMS expire, la connexion au KMS est perdue ou l'appliance est supprimée du système StorageGRID dans lequel ses clés KMS sont installées.
 
@@ -62,9 +64,6 @@ La page d'accueil du programme d'installation de l'appliance StorageGRID s'affic
 CAUTION: Une fois l'appliance chiffrée à l'aide d'une clé KMS, les disques de l'appliance ne peuvent pas être déchiffrés sans utiliser la même clé KMS.
 
 . Sélectionnez *configurer le matériel* > *cryptage de nœud*.
-+
-image::../media/kms_fde_enabled.png[KMS FDE activés]
-
 . Sélectionnez *Activer le cryptage de noeud*.
 +
 Avant l'installation de l'appliance, vous pouvez effacer *Activer le chiffrement de nœud* sans risque de perte de données. Lorsque l'installation commence, le nœud de l'appliance accède aux clés de chiffrement KMS dans votre système StorageGRID et commence le chiffrement des disques. Une fois l'appliance installée, vous ne pouvez pas désactiver le chiffrement des nœuds.
@@ -104,7 +103,9 @@ Les disques SED cryptés se verrouillent automatiquement lorsque l'appareil est 
 
 Le chiffrement de disque ne s'applique pas aux disques gérés par SANtricity. Si vous disposez d'un système StorageGRID avec disques SED et contrôleurs SANtricity, vous pouvez activer la sécurité des disques dans link:../installconfig/accessing-and-configuring-santricity-system-manager.html["SANtricity System Manager"].
 
-Vous pouvez activer le chiffrement des lecteurs lors de l'installation initiale de l'appliance avant de charger Grid Manager. Vous pouvez également activer le chiffrement des nœuds ou modifier votre phrase secrète en plaçant l'appliance en mode maintenance.
+Lorsque vous activez le chiffrement de lecteur pour un dispositif StorageGRID avec des lecteurs FIPS, le chiffrement FIPS fourni par les lecteurs FIPS est utilisé pour le chiffrement des données au repos.
+
+Vous pouvez activer le chiffrement du lecteur lors de l'installation initiale de l'appliance avant de charger Grid Manager.  Vous pouvez également activer le chiffrement du lecteur ou modifier votre phrase secrète en plaçant l'appareil en mode maintenance.
 
 .Avant de commencer
 Passez en revue les informations sur https://docs.netapp.com/us-en/storagegrid/admin/reviewing-storagegrid-encryption-methods.html["Méthodes de cryptage StorageGRID"^].
@@ -121,14 +122,14 @@ CAUTION: Assurez-vous de stocker la phrase de passe de cryptage de lecteur dans 
 
 . Accédez au programme d'installation de l'appliance StorageGRID.
 +
-** Lors de l'installation initiale de l'appliance, ouvrez un navigateur et entrez l'une des adresses IP du contrôleur de calcul de l'appliance.
+** link:../commonhardware/placing-appliance-into-maintenance-mode.html["Mettez l'appareil en mode de maintenance"].
+** Ouvrez un navigateur et entrez l'une des adresses IP du contrôleur de calcul de l'appliance.
 +
 `*https://_Controller_IP_:8443*`
 
 +
 `_Controller_IP_` Est l'adresse IP du contrôleur de calcul (pas le contrôleur de stockage) sur l'un des trois réseaux StorageGRID.
 
-** Pour une appliance StorageGRID existante, link:../commonhardware/placing-appliance-into-maintenance-mode.html["mettez l'appareil en mode de maintenance"].
 
 
 . Sur la page d'accueil du programme d'installation de l'appliance StorageGRID, sélectionnez *configurer le matériel* > *chiffrement de lecteur*.
@@ -169,6 +170,7 @@ Vous devez saisir une phrase secrète pour accéder à un disque chiffré après
 
 . Accédez au programme d'installation de l'appliance StorageGRID.
 +
+** link:../commonhardware/placing-appliance-into-maintenance-mode.html["Mettez l'appareil en mode de maintenance"].
 ** Ouvrez un navigateur et entrez l'une des adresses IP du contrôleur de calcul de l'appliance.
 +
 `*https://_Controller_IP_:8443*`
@@ -176,7 +178,6 @@ Vous devez saisir une phrase secrète pour accéder à un disque chiffré après
 +
 `_Controller_IP_` Est l'adresse IP du contrôleur de calcul (pas le contrôleur de stockage) sur l'un des trois réseaux StorageGRID.
 
-** link:../commonhardware/placing-appliance-into-maintenance-mode.html["Mettez l'appareil en mode de maintenance"].
 
 
 . Dans le programme d'installation de l'appliance StorageGRID, sélectionnez le lien *cryptage de lecteur* dans la bannière d'avertissement.
@@ -199,6 +200,7 @@ Les bannières d'avertissement ne s'affichent plus lorsque les disques sont dév
 
 . Accédez au programme d'installation de l'appliance StorageGRID.
 +
+** link:../commonhardware/placing-appliance-into-maintenance-mode.html["Mettez l'appareil en mode de maintenance"].
 ** Ouvrez un navigateur et entrez l'une des adresses IP du contrôleur de calcul de l'appliance.
 +
 `*https://_Controller_IP_:8443*`
@@ -206,7 +208,6 @@ Les bannières d'avertissement ne s'affichent plus lorsque les disques sont dév
 +
 `_Controller_IP_` Est l'adresse IP du contrôleur de calcul (pas le contrôleur de stockage) sur l'un des trois réseaux StorageGRID.
 
-** link:../commonhardware/placing-appliance-into-maintenance-mode.html["Mettez l'appareil en mode de maintenance"].
 
 
 . Dans le programme d'installation de l'appliance StorageGRID, sélectionnez *configurer le matériel* > *cryptage de lecteur*.
@@ -230,6 +231,7 @@ CAUTION: Après avoir défini une nouvelle phrase de passe, les disques chiffré
 
 . Accédez au programme d'installation de l'appliance StorageGRID.
 +
+** link:../commonhardware/placing-appliance-into-maintenance-mode.html["Mettez l'appareil en mode de maintenance"].
 ** Ouvrez un navigateur et entrez l'une des adresses IP du contrôleur de calcul de l'appliance.
 +
 `*https://_Controller_IP_:8443*`
@@ -237,7 +239,6 @@ CAUTION: Après avoir défini une nouvelle phrase de passe, les disques chiffré
 +
 `_Controller_IP_` Est l'adresse IP du contrôleur de calcul (pas le contrôleur de stockage) sur l'un des trois réseaux StorageGRID.
 
-** link:../commonhardware/placing-appliance-into-maintenance-mode.html["Mettez l'appareil en mode de maintenance"].
 
 
 . Dans le programme d'installation de l'appliance StorageGRID, sélectionnez *configurer le matériel* > *cryptage de lecteur*.

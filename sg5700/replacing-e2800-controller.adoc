@@ -375,16 +375,15 @@ Si le port de gestion 1 est connecté à un réseau avec un serveur DHCP, le nou
 
 . Si l'appliance utilise des disques sécurisés, suivez les instructions de la procédure de remplacement du contrôleur E2800 pour importer la clé de sécurité du disque.
 . Ramenez l'appareil en mode de fonctionnement normal. Dans le programme d'installation de l'appliance StorageGRID, sélectionnez *Avancé* > *redémarrer le contrôleur*, puis sélectionnez *redémarrer dans StorageGRID*.
-+
-image::../media/reboot_controller_from_maintenance_mode.png[Redémarrez le contrôleur en mode de maintenance]
-
 . Durant le redémarrage, surveillez l'état du nœud pour déterminer quand il a rejoint la grille.
 +
 L'appareil redémarre et rejoint la grille. Ce processus peut prendre jusqu'à 20 minutes.
 
-. Vérifiez que le redémarrage est terminé et que le nœud a rejoint à nouveau la grille. Dans Grid Manager, vérifiez que la page nœuds affiche un état normal (icône de coche verte image:../media/icon_alert_green_checkmark.png["coche verte"]à gauche du nom du nœud) pour le nœud de l'appliance, ce qui indique qu'aucune alerte n'est active et que le nœud est connecté à la grille.
+. Confirmez que le redémarrage est terminé et que le nœud a rejoint la grille :
 +
-image::../media/nodes_menu.png[Le nœud d'appliance a rejoint la grille]
+.. Dans le gestionnaire de grille, sélectionnez *NODES*.
+.. Vérifiez que le nœud de l'appareil a un état normal (icône de coche verte)image:../media/icon_alert_green_checkmark.png["coche verte"] à gauche du nom du nœud), ce qui indique qu'aucune alerte n'est active et que le nœud est connecté au réseau.
+
 
 . Depuis SANtricity System Manager, confirmer que le nouveau contrôleur est optimal et collecter les données de support
 

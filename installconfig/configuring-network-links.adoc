@@ -31,12 +31,12 @@ Si vous prévoyez d'utiliser le mode de liaison de port d'agrégat, le mode de l
 
 
 .Description de la tâche
-Vous ne devez configurer les paramètres de la page Configuration des liens que si vous souhaitez utiliser un paramètre autre que celui par défaut.
+Vous n'avez besoin de configurer les paramètres sur la page Configuration du lien que si vous souhaitez utiliser des valeurs autres que<<default_values,paramètres par défaut>> .
 
 
-NOTE: La politique de hachage de transmission LACP est layer2+3.
+NOTE: Les modifications du débit PDU LACP effectuées à la suite de ces instructions restent persistantes dans l'environnement StorageGRID .  Pour apporter des modifications temporaires au débit PDU LACP lors de l'exécution d'opérations de maintenance sur les composants réseau installés sur votre appliance, consultez https://docs.netapp.com/us-en/storagegrid/maintain/changing-nodes-network-configuration.html#temporarily-changing-the-lacp-pdu-rate["Modification temporaire du taux de PDU LACP"^] .
 
-Les figures et les tableaux résument les options pour le mode de liaison du port et le mode de liaison du réseau pour chaque appliance. Pour plus d'informations, reportez-vous aux sections suivantes :
+[[port_config_tables]]Les figures et les tableaux résument les options pour le mode de liaison de port et le mode de liaison réseau pour chaque appareil.  Pour plus d'informations, voir les éléments suivants :
 
 * link:gathering-installation-information-sg100-and-sg1000.html#port-bond-modes["Modes de liaison de port (SG1000 et SG100)"]
 * link:gathering-installation-information-sg110-and-sg1100.html#port-bond-modes["Modes de liaison de port (SG1100 et SG110)"]
@@ -85,7 +85,7 @@ Le tableau récapitule les options de configuration des quatre ports réseau. Vo
 
 [cols="1a,2a,2a"]
 |===
-| Mode de liaison réseau | Réseau client désactivé (par défaut) | Réseau client activé 
+| Mode de liaison réseau | Réseau client désactivé | Réseau client activé (par défaut) 
 
 
  a| 
@@ -109,11 +109,13 @@ LACP (802.3ad)
 * Les ports 2 et 4 utilisent une liaison LACP pour le réseau Grid.
 * Les ports 1 et 3 ne sont pas utilisés.
 * Une balise VLAN est facultative.
+* Les valeurs du taux PDU LACP et de la politique de hachage de transmission LACP peuvent être spécifiées dans la section Réseau de grille.
 
  a| 
 * Les ports 2 et 4 utilisent une liaison LACP pour le réseau Grid.
 * Les ports 1 et 3 utilisent une liaison LACP pour le réseau client.
 * Les balises VLAN peuvent être spécifiées pour les deux réseaux pour le confort de l'administrateur réseau.
+* Les valeurs du taux PDU LACP et de la politique de hachage de transmission LACP peuvent être spécifiées dans les sections Réseau de grille et Réseau client.
 
 
 |===
@@ -146,7 +148,7 @@ Le tableau récapitule les options de configuration des quatre ports réseau. Vo
 
 [cols="1a,2a,2a"]
 |===
-| Mode de liaison réseau | Réseau client désactivé (par défaut) | Réseau client activé 
+| Mode de liaison réseau | Réseau client désactivé | Réseau client activé (par défaut) 
 
 
  a| 
@@ -154,10 +156,12 @@ LACP (802.3ad) uniquement
  a| 
 * Les ports 1-4 utilisent une liaison LACP unique pour le réseau Grid.
 * Une balise VLAN unique identifie les paquets réseau Grid.
+* Les valeurs du taux PDU LACP et de la politique de hachage de transmission LACP peuvent être spécifiées dans la section Paramètres de liaison.
 
  a| 
 * Les ports 1-4 utilisent une liaison LACP unique pour le réseau Grid et le réseau client.
 * Deux balises VLAN permettent de isoler les paquets réseau Grid des paquets réseau client.
+* Les valeurs du taux PDU LACP et de la politique de hachage de transmission LACP peuvent être spécifiées dans la section Paramètres de liaison.
 
 
 |===
@@ -216,7 +220,7 @@ Le tableau récapitule les options de configuration des quatre ports réseau. Vo
 
 [cols="1a,2a,2a"]
 |===
-| Mode de liaison réseau | Réseau client désactivé (par défaut) | Réseau client activé 
+| Mode de liaison réseau | Réseau client désactivé | Réseau client activé (par défaut) 
 
 
  a| 
@@ -240,11 +244,13 @@ LACP (802.3ad)
 * Les ports 2 et 4 utilisent une liaison LACP pour le réseau Grid.
 * Les ports 1 et 3 ne sont pas utilisés.
 * Une balise VLAN est facultative.
+* Les valeurs du taux PDU LACP et de la politique de hachage de transmission LACP peuvent être spécifiées dans la section Réseau de grille.
 
  a| 
 * Les ports 2 et 4 utilisent une liaison LACP pour le réseau Grid.
 * Les ports 1 et 3 utilisent une liaison LACP pour le réseau client.
 * Les balises VLAN peuvent être spécifiées pour les deux réseaux pour le confort de l'administrateur réseau.
+* Les valeurs du taux PDU LACP et de la politique de hachage de transmission LACP peuvent être spécifiées dans les sections Réseau de grille et Réseau client.
 
 
 |===
@@ -277,7 +283,7 @@ Le tableau récapitule les options de configuration des ports réseau. Vous ne d
 
 [cols="1a,2a,2a"]
 |===
-| Mode de liaison réseau | Réseau client désactivé (par défaut) | Réseau client activé 
+| Mode de liaison réseau | Réseau client désactivé | Réseau client activé (par défaut) 
 
 
  a| 
@@ -285,10 +291,12 @@ LACP (802.3ad) uniquement
  a| 
 * Les ports 1-4 utilisent une liaison LACP unique pour le réseau Grid.
 * Une balise VLAN unique identifie les paquets réseau Grid.
+* Les valeurs du taux PDU LACP et de la politique de hachage de transmission LACP peuvent être spécifiées dans la section Paramètres de liaison.
 
  a| 
 * Les ports 1-4 utilisent une liaison LACP unique pour le réseau Grid et le réseau client.
 * Deux balises VLAN permettent de isoler les paquets réseau Grid des paquets réseau client.
+* Les valeurs du taux PDU LACP et de la politique de hachage de transmission LACP peuvent être spécifiées dans la section Paramètres de liaison.
 
 
 |===
@@ -341,7 +349,7 @@ Le tableau récapitule les options de configuration des quatre ports 10/25-GbE. 
 
 [cols="1a,2a,2a"]
 |===
-| Mode de liaison réseau | Réseau client désactivé (par défaut) | Réseau client activé 
+| Mode de liaison réseau | Réseau client désactivé | Réseau client activé (par défaut) 
 
 
  a| 
@@ -365,11 +373,13 @@ LACP (802.3ad)
 * Les ports 2 et 4 utilisent une liaison LACP pour le réseau Grid.
 * Les ports 1 et 3 ne sont pas utilisés.
 * Une balise VLAN est facultative.
+* Les valeurs du taux PDU LACP et de la politique de hachage de transmission LACP peuvent être spécifiées dans la section Réseau de grille.
 
  a| 
 * Les ports 2 et 4 utilisent une liaison LACP pour le réseau Grid.
 * Les ports 1 et 3 utilisent une liaison LACP pour le réseau client.
 * Les balises VLAN peuvent être spécifiées pour les deux réseaux pour le confort de l'administrateur réseau.
+* Les valeurs du taux PDU LACP et de la politique de hachage de transmission LACP peuvent être spécifiées dans les sections Réseau de grille et Réseau client.
 
 
 |===
@@ -396,7 +406,7 @@ Le tableau récapitule les options de configuration des quatre ports 10/25-GbE. 
 
 [cols="1a,2a,2a"]
 |===
-| Mode de liaison réseau | Réseau client désactivé (par défaut) | Réseau client activé 
+| Mode de liaison réseau | Réseau client désactivé | Réseau client activé (par défaut) 
 
 
  a| 
@@ -404,10 +414,12 @@ LACP (802.3ad) uniquement
  a| 
 * Les ports 1-4 utilisent une liaison LACP unique pour le réseau Grid.
 * Une balise VLAN unique identifie les paquets réseau Grid.
+* Les valeurs du taux PDU LACP et de la politique de hachage de transmission LACP peuvent être spécifiées dans la section Paramètres de liaison.
 
  a| 
 * Les ports 1-4 utilisent une liaison LACP unique pour le réseau Grid et le réseau client.
 * Deux balises VLAN permettent de isoler les paquets réseau Grid des paquets réseau client.
+* Les valeurs du taux PDU LACP et de la politique de hachage de transmission LACP peuvent être spécifiées dans la section Paramètres de liaison.
 
 
 |===
@@ -454,7 +466,7 @@ Le tableau récapitule les options de configuration des quatre ports 10/25-GbE. 
 
 [cols="1a,2a,2a"]
 |===
-| Mode de liaison réseau | Réseau client désactivé (par défaut) | Réseau client activé 
+| Mode de liaison réseau | Réseau client désactivé | Réseau client activé (par défaut) 
 
 
  a| 
@@ -478,11 +490,13 @@ LACP (802.3ad)
 * Les ports 2 et 4 utilisent une liaison LACP pour le réseau Grid.
 * Les ports 1 et 3 ne sont pas utilisés.
 * Une balise VLAN est facultative.
+* Les valeurs du taux PDU LACP et de la politique de hachage de transmission LACP peuvent être spécifiées dans la section Réseau de grille.
 
  a| 
 * Les ports 2 et 4 utilisent une liaison LACP pour le réseau Grid.
 * Les ports 1 et 3 utilisent une liaison LACP pour le réseau client.
 * Les balises VLAN peuvent être spécifiées pour les deux réseaux pour le confort de l'administrateur réseau.
+* Les valeurs du taux PDU LACP et de la politique de hachage de transmission LACP peuvent être spécifiées dans les sections Réseau de grille et Réseau client.
 
 
 |===
@@ -509,7 +523,7 @@ Le tableau récapitule les options de configuration des quatre ports 10/25-GbE. 
 
 [cols="1a,2a,2a"]
 |===
-| Mode de liaison réseau | Réseau client désactivé (par défaut) | Réseau client activé 
+| Mode de liaison réseau | Réseau client désactivé | Réseau client activé (par défaut) 
 
 
  a| 
@@ -517,10 +531,12 @@ LACP (802.3ad) uniquement
  a| 
 * Les ports 1-4 utilisent une liaison LACP unique pour le réseau Grid.
 * Une balise VLAN unique identifie les paquets réseau Grid.
+* Les valeurs du taux PDU LACP et de la politique de hachage de transmission LACP peuvent être spécifiées dans la section Paramètres de liaison.
 
  a| 
 * Les ports 1-4 utilisent une liaison LACP unique pour le réseau Grid et le réseau client.
 * Deux balises VLAN permettent de isoler les paquets réseau Grid des paquets réseau client.
+* Les valeurs du taux PDU LACP et de la politique de hachage de transmission LACP peuvent être spécifiées dans la section Paramètres de liaison.
 
 
 |===
@@ -559,7 +575,7 @@ Le tableau récapitule les options de configuration des ports réseau. Vous ne d
 
 [cols="1a,3a,3a"]
 |===
-| Mode de liaison réseau | Réseau client désactivé (par défaut) | Réseau client activé 
+| Mode de liaison réseau | Réseau client désactivé | Réseau client activé (par défaut) 
 
 
  a| 
@@ -583,11 +599,13 @@ LACP (802.3ad)
 * Les ports 2 et 4 utilisent une liaison LACP pour le réseau Grid.
 * Les ports 1 et 3 ne sont pas utilisés.
 * Une balise VLAN est facultative.
+* Les valeurs du taux PDU LACP et de la politique de hachage de transmission LACP peuvent être spécifiées dans la section Réseau de grille.
 
  a| 
 * Les ports 2 et 4 utilisent une liaison LACP pour le réseau Grid.
 * Les ports 1 et 3 utilisent une liaison LACP pour le réseau client.
 * Les balises VLAN peuvent être spécifiées pour les deux réseaux pour le confort de l'administrateur réseau.
+* Les valeurs du taux PDU LACP et de la politique de hachage de transmission LACP peuvent être spécifiées dans les sections Réseau de grille et Réseau client.
 
 
 |===
@@ -614,7 +632,7 @@ Le tableau récapitule les options de configuration des ports réseau. Vous ne d
 
 [cols="1a,3a,3a"]
 |===
-| Mode de liaison réseau | Réseau client désactivé (par défaut) | Réseau client activé 
+| Mode de liaison réseau | Réseau client désactivé | Réseau client activé (par défaut) 
 
 
  a| 
@@ -622,10 +640,12 @@ LACP (802.3ad) uniquement
  a| 
 * Les ports 1-4 utilisent une liaison LACP unique pour le réseau Grid.
 * Une balise VLAN unique identifie les paquets réseau Grid.
+* Les valeurs du taux PDU LACP et de la politique de hachage de transmission LACP peuvent être spécifiées dans la section Paramètres de liaison.
 
  a| 
 * Les ports 1-4 utilisent une liaison LACP unique pour le réseau Grid et le réseau client.
 * Deux balises VLAN permettent de isoler les paquets réseau Grid des paquets réseau client.
+* Les valeurs du taux PDU LACP et de la politique de hachage de transmission LACP peuvent être spécifiées dans la section Paramètres de liaison.
 
 
 |===
@@ -678,7 +698,7 @@ Le tableau récapitule les options de configuration des ports réseau. Vous ne d
 
 [cols="1a,2a,2a"]
 |===
-| Mode de liaison réseau | Réseau client désactivé (par défaut) | Réseau client activé 
+| Mode de liaison réseau | Réseau client désactivé | Réseau client activé (par défaut) 
 
 
  a| 
@@ -702,11 +722,13 @@ LACP (802.3ad)
 * Les ports 2 et 4 utilisent une liaison LACP pour le réseau Grid.
 * Les ports 1 et 3 ne sont pas utilisés.
 * Une balise VLAN est facultative.
+* Les valeurs du taux PDU LACP et de la politique de hachage de transmission LACP peuvent être spécifiées dans la section Réseau de grille.
 
  a| 
 * Les ports 2 et 4 utilisent une liaison LACP pour le réseau Grid.
 * Les ports 1 et 3 utilisent une liaison LACP pour le réseau client.
 * Les balises VLAN peuvent être spécifiées pour les deux réseaux pour le confort de l'administrateur réseau.
+* Les valeurs du taux PDU LACP et de la politique de hachage de transmission LACP peuvent être spécifiées dans les sections Réseau de grille et Réseau client.
 
 
 |===
@@ -739,7 +761,7 @@ Le tableau récapitule les options de configuration des ports réseau. Vous ne d
 
 [cols="1a,2a,2a"]
 |===
-| Mode de liaison réseau | Réseau client désactivé (par défaut) | Réseau client activé 
+| Mode de liaison réseau | Réseau client désactivé | Réseau client activé (par défaut) 
 
 
  a| 
@@ -747,10 +769,12 @@ LACP (802.3ad) uniquement
  a| 
 * Les ports 1-4 utilisent une liaison LACP unique pour le réseau Grid.
 * Une balise VLAN unique identifie les paquets réseau Grid.
+* Les valeurs du taux PDU LACP et de la politique de hachage de transmission LACP peuvent être spécifiées dans la section Paramètres de liaison.
 
  a| 
 * Les ports 1-4 utilisent une liaison LACP unique pour le réseau Grid et le réseau client.
 * Deux balises VLAN permettent de isoler les paquets réseau Grid des paquets réseau client.
+* Les valeurs du taux PDU LACP et de la politique de hachage de transmission LACP peuvent être spécifiées dans la section Paramètres de liaison.
 
 
 |===
@@ -782,14 +806,20 @@ La page Configuration de la liaison réseau affiche un schéma de votre applianc
 Le tableau État de la liaison répertorie l'état de la liaison, la vitesse de la liaison et les autres statistiques des ports numérotés.
 
 +
-La première fois que vous accédez à cette page :
+
+NOTE: Pour le SG5800, l'état de liaison pour le port 1 n'est pas disponible dans le logiciel et doit être vérifié physiquement à l'aide du voyant d'état sur le contrôleur SG5800.
+
++
+[[default_values]]La première fois que vous accédez à cette page, les valeurs par défaut sont :
 
 +
 ** *Vitesse de liaison* est définie sur *Auto*.
 ** *Le mode de liaison de port* est défini sur *fixe*.
+** *La politique de hachage de transmission LACP* est définie sur *Layer2+3*.
+** *Le taux PDU LACP* est défini sur *Rapide*.
 ** *Le mode de liaison réseau* est défini sur *Active-Backup* pour le réseau de grille.
 ** Le *réseau d'administration* est activé et le mode de liaison réseau est défini sur *indépendant*.
-** Le *réseau client* est désactivé.
+** Le *Réseau client* est activé.
 
 
 . Sélectionnez la vitesse de liaison des ports réseau dans la liste déroulante *Link Speed*.
@@ -817,17 +847,9 @@ Les paramètres réseau du client pour les ports de carte réseau de données so
 
 
 
-. Reportez-vous au tableau et configurez le mode de liaison de port et le mode de liaison réseau.
+. Reportez-vous à la<<port_config_tables,tableau de configuration du mode de liaison des ports fixes et agrégés>> pour chaque type d'appareil, et configurez le mode de liaison de port et le mode de liaison réseau pour qu'ils correspondent à votre configuration réseau.
 +
-Cet exemple montre :
-
-+
-** *Agrégat* et *LACP* sélectionnés pour la grille et les réseaux clients. Vous devez spécifier une balise VLAN unique pour chaque réseau. Vous pouvez sélectionner des valeurs comprises entre 0 et 4095.
-** *Sauvegarde active* sélectionnée pour le réseau d'administration.
-+
-image::../media/sg1000_network_link_configuration_aggregate.png[Agrégat de configuration de Network Link]
-
-
+Vous devez spécifier des balises VLAN uniques pour la grille et les réseaux clients.  Vous pouvez sélectionner des valeurs entre 0 et 4095.
 
 . Lorsque vous êtes satisfait de vos sélections, cliquez sur *Enregistrer*.
 +

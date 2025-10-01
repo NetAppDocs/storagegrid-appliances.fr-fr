@@ -78,21 +78,15 @@ La page d'accueil du programme d'installation de l'appliance StorageGRID s'affic
 
 . Sélectionnez *configurer le matériel* > *BMC Configuration*.
 +
-image::../media/bmc_configuration_page.gif[Capture d'écran montrant l'option Advanced > BMC Configuration]
-
-+
 La page Configuration du contrôleur de gestion de la carte mère s'affiche.
 
-. Notez l'adresse IPv4 qui s'affiche automatiquement.
+. Dans les paramètres IP LAN, notez l’adresse IPv4 qui s’affiche automatiquement.
 +
 DHCP est la méthode par défaut pour attribuer une adresse IP à ce port.
 
 +
 
 NOTE: L'affichage des valeurs DHCP peut prendre quelques minutes.
-
-+
-image::../media/bmc_configuration_dhcp_address.gif[Page de configuration du contrôleur de gestion de sous-sol affichant l'adresse DHCP]
 
 . Vous pouvez également définir une adresse IP statique pour le port de gestion BMC.
 +
@@ -103,9 +97,6 @@ NOTE: Vous devez attribuer une adresse IP statique au port de gestion BMC ou att
 .. Sélectionnez *statique*.
 .. Saisissez l'adresse IPv4 à l'aide de la notation CIDR.
 .. Saisissez la passerelle par défaut.
-+
-image::../media/bmc_configuration_static_ip.gif[Option statique de configuration du contrôleur Baseboard Management]
-
 .. Cliquez sur *Enregistrer*.
 +
 L'application de vos modifications peut prendre quelques minutes.

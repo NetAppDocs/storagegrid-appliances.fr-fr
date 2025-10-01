@@ -138,16 +138,16 @@ Module d'E/S B pour le tiroir d'extension 2
 En cinq minutes environ, les tiroirs d'extension sont mis sous tension et détectés par le système. La page d'accueil indique le nombre de nouveaux tiroirs d'extension détectés et le bouton Démarrer l'extension est activé.
 
 +
-La capture d'écran présente des exemples de messages qui peuvent apparaître sur la page d'accueil, selon le nombre de tiroirs d'extension existants ou nouveaux, comme suit :
+Exemples de messages qui pourraient apparaître sur la page d'accueil, en fonction du nombre d'étagères d'extension existantes ou nouvelles :
 
 +
-** La bannière entourée en haut de la page indique le nombre total de étagères d'extension détectées.
+** Une bannière qui s'affiche en haut de la page indique le nombre total d'étagères d'extension détectées.
 +
 *** La bannière indique le nombre total de tiroirs d'extension, que ceux-ci soient configurés et déployés ou nouveaux et non configurés.
 *** Si aucun tiroir d'extension n'est détecté, la bannière n'apparaît pas.
 
 
-** Le message encerclé en bas de la page indique qu'une extension est prête à être démarrée.
+** Un message en bas de la page indique qu'une extension est prête à être démarrée.
 +
 *** Ce message indique le nombre de nouveaux tiroirs d'extension détectés par StorageGRID. « Connecté » indique que la tablette est détectée. « Non configuré » indique que le tiroir est nouveau et qu'il n'est pas encore configuré à l'aide du programme d'installation de l'appliance StorageGRID.
 +
@@ -155,9 +155,6 @@ La capture d'écran présente des exemples de messages qui peuvent apparaître s
 NOTE: Les tiroirs d'extension déjà déployés ne sont pas inclus dans ce message. Ils sont inclus dans le compte dans la bannière en haut de la page.
 
 *** Le message ne s'affiche pas si de nouveaux tiroirs d'extension ne sont pas détectés.
-+
-image::../media/appl_installer_home_expansion_shelf_ready_to_install.png[Installation des tiroirs d'extension]
-
 
 
 
@@ -177,9 +174,6 @@ NOTE: Si les nouveaux tiroirs d'extension n'ont pas été détectés, vérifiez 
 Des barres de progression apparaissent sur la page Web, comme elles le font lors de l'installation initiale.
 
 +
-image::../media/monitor_expansion_for_new_appliance_shelf.png[Contrôle de la configuration des tiroirs d'extension]
-
-+
 Une fois la configuration terminée, l'appliance redémarre automatiquement pour quitter le mode de maintenance et rejoindre à nouveau la grille. Ce processus peut prendre jusqu'à 20 minutes.
 
 +
@@ -187,10 +181,7 @@ Une fois la configuration terminée, l'appliance redémarre automatiquement pour
 NOTE: Pour relancer la configuration du tiroir d'extension en cas d'échec, accédez au programme d'installation de l'appliance StorageGRID, sélectionnez *Avancé* > *redémarrer le contrôleur*, puis sélectionnez *redémarrer en mode de maintenance*. Une fois le nœud redémarré, réessayez dans <<start_expansion,configuration des tiroirs d'extension>>.
 
 +
-Une fois le redémarrage terminé, l'onglet *tâches* ressemble à la capture d'écran suivante :
-
-+
-image::../media/appliance_installer_reboot_complete.png[Redémarrage terminé]
+Une fois le redémarrage terminé, l'onglet *Tâches* s'affiche avec des sélections pour redémarrer le nœud ou placer l'appliance en mode maintenance.
 
 . Vérifiez l'état du nœud de stockage de l'appliance et des nouveaux tiroirs d'extension.
 +

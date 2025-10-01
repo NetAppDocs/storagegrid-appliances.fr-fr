@@ -17,14 +17,16 @@ entries:
     - title: Mise à niveau du système d'exploitation SANtricity sur le contrôleur
         SG6160 en mode de maintenance
       url: "/sg6100/upgrading-santricity-os-on-storage-controllers-using-maintenance-mode-sg6160.html"
-  - title: Mise à niveau du firmware des disques à l'aide du gestionnaire système
-      SANtricity (SG6160)
+  - title: Mise à niveau du micrologiciel du lecteur (SG6160)
     entries:
-    - title: Mise à niveau du firmware du disque SG6100 à l'aide de la méthode en
-        ligne de SANtricity System Manager
+    - title: Mettre à niveau automatiquement le micrologiciel du lecteur SG6160 lors
+        du redémarrage de l'appareil
+      url: "/sg6100/upgrading-drive-firmware-using-auto-reboot.html"
+    - title: Mettre à niveau le micrologiciel du lecteur SG6160 à l'aide de la méthode
+        en ligne SANtricity System Manager
       url: "/sg6100/upgrading-drive-firmware-using-santricity-system-manager-online.html"
-    - title: Mise à niveau du firmware du disque SG6100 à l'aide de la méthode hors
-        ligne de SANtricity System Manager
+    - title: Mettre à niveau le micrologiciel du lecteur SG6160 à l'aide de la méthode
+        hors ligne SANtricity System Manager
       url: "/sg6100/upgrading-drive-firmware-using-santricity-system-manager-offline.html"
     - title: Dépannez les erreurs de mise à niveau du firmware des disques
       url: "/sg6100/troubleshoot-upgrading-drive-firmware-using-santricity-system-manager.html"
@@ -63,9 +65,9 @@ entries:
       url: "/sg6100/replace-6160-drives-60.html"
   - title: Remplacez la carte réseau
     entries:
-    - title: Carte réseau interne (SGF6112 et SG6160)
+    - title: Carte réseau interne (SGF6112 ou SG6100-CN)
       url: "/sg6100/replace-nic-in-sgf6112.html"
-    - title: Carte réseau externe (SG6160)
+    - title: Carte réseau externe (SG6100-CN)
       url: "/sg6100/replace-ocp-nic-sg6100-cn.html"
   - title: Remplacez la pile CMOS
     url: "/sg6100/replace-cmos-in-sgf6112.html"
