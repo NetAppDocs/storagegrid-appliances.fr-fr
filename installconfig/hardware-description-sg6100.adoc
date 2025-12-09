@@ -296,7 +296,7 @@ Ventilateur (1 sur 2) pour tiroir contrôleur E4000
  a| 
 4
  a| 
-Contrôleur de stockage E-Series E400 (1 sur 2) et connecteurs
+Contrôleur de stockage série E E4000 (1 sur 2) et connecteurs
 
 
 

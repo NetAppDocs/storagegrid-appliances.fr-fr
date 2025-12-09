@@ -11,7 +11,7 @@ summary: Vous mettez à niveau le micrologiciel de votre lecteur pour vous assur
 
 
 [role="lead"]
-Utilisez la méthode en ligne du Gestionnaire système SANtricity pour mettre à niveau le firmware des disques de votre appliance et vous assurer que vous disposez des dernières fonctionnalités et des derniers correctifs.
+Utilisez la méthode hors ligne du Gestionnaire système SANtricity pour mettre à niveau le firmware des disques de votre appliance et vous assurer que vous disposez des dernières fonctionnalités et des derniers correctifs.
 
 .Avant de commencer
 * Le dispositif de stockage est à l'état optimal.

@@ -4685,7 +4685,6 @@ Libérez le contrôleur de l'appareil en appuyant sur le loquet de la poignée d
   <block id="023a03630e96cd25b69d134411531e8c" category="paragraph">Alimentation (1 sur 2) du contrôleur de calcul SG6100-CN</block>
   <block id="471615f4f3a518f7bbbe1d1ef8f319de" category="paragraph">Connecteurs pour contrôleur de calcul SG6100-CN</block>
   <block id="cc53c11094cddf3f51bd4537e9e7158b" category="paragraph">Ventilateur (1 sur 2) pour tiroir contrôleur E4000</block>
-  <block id="e5a8c894ca52500bc6bcb77e429cb813" category="paragraph">Contrôleur de stockage E-Series E400 (1 sur 2) et connecteurs</block>
   <block id="8e6dd71ab1d82f641fffaf74f1a6f6b8" category="paragraph">Alimentation (1 sur 2) du tiroir contrôleur E4000</block>
   <block id="7f515b7b271e2f2650ab9205041ae23a" category="section-title">Contrôleurs SG6100</block>
   <block id="e095a9ee88152254e105acb911c6ddc3" category="section-title">Contrôleur de calcul SG6100-CN</block>
@@ -5808,4 +5807,5 @@ Affiche Oui, indiquant qu'il est possible de retirer ce composant en toute sécu
   <block id="883368f2f68b2c26ebcfb31f09f529d5" category="sidebar">Mettre à niveau le micrologiciel du lecteur SG6160 à l'aide de la méthode hors ligne SANtricity System Manager</block>
   <block id="58abe205d3265bf2555ee7c37bee89cb" category="sidebar">Carte réseau interne (SGF6112 ou SG6100-CN)</block>
   <block id="b883da35aa37ea53f8afe4d94c8d01ee" category="sidebar">Carte réseau externe (SG6100-CN)</block>
+  <block id="45d6f533deefe293ac89312b73991e3c" category="paragraph">Contrôleur de stockage série E E4000 (1 sur 2) et connecteurs</block>
 </blocks>
