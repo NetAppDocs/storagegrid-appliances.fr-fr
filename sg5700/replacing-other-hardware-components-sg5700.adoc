@@ -35,14 +35,14 @@ Pour remplacer un lecteur, un boîtier de ventilateur de puissance, un boîtier 
  a| 
 Lecteur
  a| 
-Remplacement d'un disque dans des tiroirs E2800 de 12 ou 24 disques
+link:https://docs.netapp.com/us-en/e-series/maintenance-e2800/drives-12-24-supertask-task.html["Remplacement d'un disque dans des tiroirs E2800 de 12 ou 24 disques"^]
 
 
 
  a| 
 Absorbeur de ventilateur d'alimentation
  a| 
-Réinstallation d'une cartouche de ventilateur à commande électrique dans les tiroirs E2800
+link:https://docs.netapp.com/us-en/e-series/maintenance-e2800/canisters-fan-supertask-task.html["Réinstallation d'une cartouche de ventilateur à commande électrique dans les tiroirs E2800"^]
 
 |===
 
@@ -57,27 +57,27 @@ Réinstallation d'une cartouche de ventilateur à commande électrique dans les 
  a| 
 Lecteur
  a| 
-Remplacement d'un disque dans les tiroirs E2860
+link:https://docs.netapp.com/us-en/e-series/maintenance-e2800/drives-12-24-supertask-task.html["Remplacement d'un disque dans les tiroirs E2860"^]
 
 
 
  a| 
 Réservoir d'alimentation
  a| 
-Remplacement d'un boîtier électrique dans les tiroirs E2860
+link:https://docs.netapp.com/us-en/e-series/maintenance-e2800/canisters-60-replace-power-task.html["Remplacement d'un boîtier électrique dans les tiroirs E2860"^]
 
 
 
  a| 
 Boîtier de ventilateur
  a| 
-Remplacement d'un boîtier de ventilateur dans les tiroirs E2860
+link:https://docs.netapp.com/us-en/e-series/maintenance-e2800/canisters-fan-supertask-task.html["Remplacement d'un boîtier de ventilateur dans les tiroirs E2860"^]
 
 
 
  a| 
 Tiroir d'entraînement
  a| 
-Remplacement d'un tiroir disque dans les tiroirs E2860
+link:https://docs.netapp.com/us-en/e-series/maintenance-e2800/drives-60-supertask-task.html["Remplacement d'un tiroir disque dans les tiroirs E2860"^]
 
 |===

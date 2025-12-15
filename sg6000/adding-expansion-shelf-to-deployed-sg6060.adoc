@@ -16,7 +16,7 @@ Pour augmenter la capacité de stockage, vous pouvez ajouter une ou deux tiroirs
 .Avant de commencer
 * Vous devez disposer de la phrase secrète pour le provisionnement.
 * Vous devez exécuter StorageGRID 11.4 ou version ultérieure.
-* Le tiroir d'extension et deux câbles SAS pour chaque tiroir d'extension sont disponibles.
+* Vous disposez du plateau d'extension et de quatre câbles SAS pour chaque plateau d'extension.
 * Vous avez trouvé l'appliance de stockage où vous ajoutez le tiroir d'extension dans le data Center.
 +
 link:locating-controller-in-data-center.html["Localiser le contrôleur dans le data Center"]
