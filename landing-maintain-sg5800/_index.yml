@@ -23,6 +23,8 @@ indexpage:
       url: "../sg5800/replace-controller-5800sg.html"
     - title: Remplacez le contrôleur de stockage E4000
       url: "../sg5800/replace-controller-e4000-simplex.html"
+    - title: Remplacez la pile CMOS
+      url: "../sg5800/replace-cmos-battery-sg5800.html"
     - title: Remplacer le boîtier du ventilateur
       url: "../sg5800/replace-fan-canister.html"
     - title: Remplacez le boîtier d'alimentation

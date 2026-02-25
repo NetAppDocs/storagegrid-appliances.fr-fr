@@ -1,0 +1,106 @@
+---
+permalink: sg5800/replace-cmos-battery-sg5800.html 
+sidebar: sidebar 
+keywords: cmos, battery, replace, sg5800, controller 
+summary: 'Il vous faudra peut-être remplacer la pile CMOS dans le contrôleur SG5800 afin que les services et applications de votre système bénéficient d"une synchronisation horaire précise et continuent de fonctionner normalement.' 
+---
+= Remplacer la pile CMOS dans le contrôleur SG5800
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Il vous faudra peut-être remplacer la pile CMOS dans le contrôleur SG5800 afin que les services et applications de votre système bénéficient d'une synchronisation horaire précise et continuent de fonctionner normalement.
+
+.Description de la tâche
+Vous ne pourrez pas accéder au Storage Node de l'appareil lors du remplacement de la pile CMOS. Pour éviter toute interruption de service, confirmez que tous les autres Storage Nodes sont connectés au grid avant de commencer le remplacement de la pile CMOS ou remplacez la pile pendant une fenêtre de maintenance planifiée lorsque des périodes d'interruption de service sont acceptables.
+
+
+
+== Étape 1 : Arrêtez le contrôleur SG5800
+
+.Étapes
+. Connectez-vous au nœud grid :
++
+.. Saisissez la commande suivante : `ssh admin@grid_node_IP`
+.. Entrez le mot de passe indiqué dans le `Passwords.txt` fichier.
+.. Entrez la commande suivante pour passer à la racine : `su -`
+.. Entrez le mot de passe indiqué dans le `Passwords.txt` fichier.
++
+Lorsque vous êtes connecté en tant que root, l'invite passe de `$` à `#`.
+
+
+
+. Arrêtez le contrôleur SG5800 :
++
+*`shutdown -h now`*
+
+
+
+
+
+== Étape 2 : Retirez le contrôleur de l’appareil
+
+.Étapes
+. Placez un bracelet antistatique ou prenez d'autres précautions antistatiques.
+. Etiqueter les câbles puis débrancher les câbles et les SFP.
++
+
+NOTE: Pour éviter une dégradation des performances, ne tordez pas, ne pliez pas, ne pincez pas et ne marchez pas sur les câbles.
+
+. Libérez le contrôleur de l'appareil en appuyant sur le loquet de la poignée de came jusqu'à ce qu'il se relâche, puis ouvrez la poignée de came vers la droite.
+. A l'aide de deux mains et de la poignée de came, faites glisser le contrôleur hors de l'appareil.
++
+
+NOTE: Toujours utiliser deux mains pour soutenir le poids du contrôleur.
+
+. Retournez le module de commande et placez-le sur une surface plane et stable.
+. Ouvrez le couvercle en appuyant sur les boutons bleus situés sur les côtés du module de commande, puis faites pivoter le couvercle vers le haut et retirez-le du module de commande.
++
+image::../media/drw_sg5800_open_controller_module_cover_IEOPS-695.svg[Ouvrir le couvercle du module contrôleur SG5800]
+
+
+
+
+
+== Étape 3 : Remplacez la pile CMOS
+
+.Étapes
+. Repérez la pile CMOS.
++
+image::../media/drw_sg5800_replace_rtc_battery_IEOPS-701.svg[Remplacer l'emplacement de la pile CMOS dans le contrôleur SG5800]
+
++
+
+NOTE: Votre contrôleur peut être différent de celui illustré. Cependant, l'emplacement de la pile CMOS est le même.
+
+. Poussez délicatement et faites pivoter la batterie pour l’éloigner du support, puis retirez-la de l’appareil.
++
+
+NOTE: Notez la polarité de la pile lorsque vous la retirez de son logement. La pile est marquée d'un signe plus et doit être positionnée correctement dans son logement. Un signe plus près du logement indique comment la pile doit être positionnée.
+
+. Retirez la batterie de remplacement du sac antistatique d'expédition.
+. Repérez le logement de la pile vide dans le module de commande.
+. Notez la polarité de la pile CMOS, puis insérez-la dans le support en inclinant la pile selon un angle et en appuyant vers le bas.
+. Vérifiez visuellement que la batterie est complètement installée dans le support et que la polarité est correcte.
+. Réinstallez le couvercle du contrôleur.
+
+
+
+
+== Étape 4 : Réinstallez le contrôleur dans l’appareil
+
+.Étapes
+. Installez le contrôleur dans l'appareil :
++
+.. Retournez la manette de sorte que le couvercle amovible soit orienté vers le bas.
+.. Avec la poignée de came en position ouverte, faites glisser le contrôleur complètement dans l'appareil.
+.. Déplacez la poignée de came vers la gauche pour verrouiller le contrôleur en place.
+.. Rebranchez les câbles.
+
+
+. Une fois le contrôleur redémarré et l'appareil rejoint le réseau, vérifiez que le nœud de stockage de l'appareil apparaît dans le gestionnaire de grille et qu'aucune alarme n'apparaît.
+
+
+Après le remplacement de la pièce, renvoyez la pièce défectueuse à NetApp, en suivant les instructions RMA (retour de matériel) livrées avec le kit. Voir la https://mysupport.netapp.com/site/info/rma["Retour de pièce et amp ; remplacements"] pour plus d'informations.

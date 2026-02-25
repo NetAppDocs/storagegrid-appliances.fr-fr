@@ -43,6 +43,8 @@ entries:
     url: "/sg5800/replace-controller-5800sg.html"
   - title: Remplacer le contrôleur E4000
     url: "/sg5800/replace-controller-e4000-simplex.html"
+  - title: Remplacez la pile CMOS
+    url: "/sg5800/replace-cmos-battery-sg5800.html"
   - title: Remplacement du ventilateur (SG5860)
     url: "/sg5800/replace-fan-canister.html"
   - title: Remplacement du bloc d'alimentation (SG5812)

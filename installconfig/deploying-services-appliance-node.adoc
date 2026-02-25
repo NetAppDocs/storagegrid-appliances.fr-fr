@@ -184,3 +184,6 @@ NOTE: Si vous devez accéder manuellement à la page installation du moniteur, c
 
 . Si votre grid inclut plusieurs nœuds d'appliance, répétez les étapes précédentes pour chaque appliance.
 
+
+.Et la suite ?
+Apprenez-en plus sur link:https://docs.netapp.com/us-en/storagegrid/swnodes/navigating-to-grid-manager.html["configuration de la grille et finalisation de l'installation"^] et link:monitoring-appliance-installation.html["surveillance de l'installation de l'appareil"].

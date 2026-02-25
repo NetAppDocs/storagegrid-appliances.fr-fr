@@ -119,3 +119,6 @@ NOTE: Si vous devez accéder manuellement à la page installation du moniteur, c
 NOTE: Si vous avez besoin de déployer plusieurs nœuds de stockage à la fois, vous pouvez automatiser le processus d'installation en utilisant le lien :./installconfig/automaticating-appliance-installation-and-configuration.html#automation-with-configure-sga-py-script[`configure-sga.py` Script d'installation de l'appliance].
 
 
+
+.Et la suite ?
+Apprenez-en plus sur link:https://docs.netapp.com/us-en/storagegrid/swnodes/navigating-to-grid-manager.html["configuration de la grille et finalisation de l'installation"^] et link:monitoring-appliance-installation.html["surveillance de l'installation de l'appareil"].
