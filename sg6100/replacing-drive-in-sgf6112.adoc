@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sgf6112, Replacing, replace, drive, remove, removing, removal, install, installing, installation 
 summary: 'Le dispositif de stockage SGF6112 contient 12 disques SSD. Les données des disques sont protégées par un schéma RAID qui permet à l"appliance de restaurer les données en cas de panne d"un disque sans avoir à copier les données à partir d"un autre nœud. ' 
 ---
-= Remplacez les disques du SGF6112
+= Remplacez les disques durs d'un SGF6112
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -123,7 +123,7 @@ HDD11
 
 |===
 +
-Vous pouvez également utiliser Grid Manager pour contrôler l'état des disques SSD. Sélectionnez *NOEUDS*. Puis faire `*Storage Node*` > *matériel*. Si un lecteur est défectueux, le champ Storage RAID mode contient un message indiquant quel lecteur est défectueux.
+Vous pouvez également utiliser le Gestionnaire de grille pour surveiller l'état des disques SSD. Sélectionnez *Nœuds*. Puis sélectionnez  `*Storage Node*` > *Matériel*. Si un disque est en panne, le champ Mode RAID de stockage contient un message indiquant quel disque est en panne.
 
 
 
@@ -161,8 +161,8 @@ Le lecteur remplacé est automatiquement reconstruit avec les données en miroir
 +
 Vous pouvez vérifier l'état de la reconstruction à l'aide du Gestionnaire de grille.
 
-. Si plusieurs disques sont défectueux et ont été remplacés, des alertes vous indiquent que certains volumes doivent être restaurés. Si vous recevez une alerte, avant de tenter une récupération de volume, sélectionnez *NODES* > `*appliance Storage Node*` > *matériel*. Dans la section dispositif StorageGRID de la page, vérifiez que le mode RAID de stockage est en bon état ou qu'il est en cours de reconstruction. Si l'état indique un ou plusieurs disques défaillants, corrigez cette condition avant de tenter la restauration du volume.
-. Dans le Gestionnaire de grille, accédez à *NODES* > `*appliance Storage Node*` > *matériel*. Dans la section dispositif StorageGRID de la page, vérifiez que le mode RAID de stockage fonctionne correctement.
+. Si plusieurs disques ont subi une panne et ont été remplacés, des alertes peuvent vous indiquer que certains volumes doivent être restaurés. Si vous recevez une alerte, avant de tenter une récupération de volume, sélectionnez *Nœuds* > `*appliance Storage Node*` > *Matériel*. Dans la section Appliance StorageGRID de la page, vérifiez que le mode RAID de stockage est sain ou en cours de reconstruction. Si l’état indique un ou plusieurs disques défaillants, corrigez ce problème avant de tenter une restauration de volume.
+. Dans le Gestionnaire de grille, accédez à *Nœuds* > `*appliance Storage Node*` > *Matériel*. Dans la section StorageGRID Appliance de la page, vérifiez que le mode RAID de stockage est opérationnel.
 
 
-Après le remplacement de la pièce, renvoyez la pièce défectueuse à NetApp, en suivant les instructions RMA (retour de matériel) livrées avec le kit. Voir la https://mysupport.netapp.com/site/info/rma["Retour de pièce et amp ; remplacements"^] pour plus d'informations.
+Après avoir remplacé la pièce, retournez la pièce défectueuse à NetApp, comme indiqué dans les instructions RMA fournies avec le kit. Consultez la page  https://mysupport.netapp.com/site/info/rma["Retours et remplacements de pièces"^] pour plus d'informations.

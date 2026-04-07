@@ -1,0 +1,44 @@
+---
+permalink: sg120-1200/locating-sg120-and-sg1200-in-data-center.html 
+sidebar: sidebar 
+keywords: storagegrid, sg120, sg1200, appliance, locate, find, locating, finding, identify, blue led, blue light 
+summary: 'Localisez l"appliance pour pouvoir effectuer les opérations de maintenance ou de mise à niveau du matériel.' 
+---
+= Localisez SG120 ou SG1200 dans le centre de données
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Localisez l'appliance pour pouvoir effectuer les opérations de maintenance ou de mise à niveau du matériel.
+
+.Avant de commencer
+* Vous avez déterminé quel appareil doit être entretenu.
+* Pour vous aider à localiser l'appareil dans votre centre de données, link:turning-sg120-and-sg1200-identify-led-on-and-off.html["Activez le voyant d'identification bleu"].
+
+
+.Étapes
+. Trouvez l'appliance dans le data Center.
++
+** Recherchez un voyant d'identification bleu allumé à l'avant ou à l'arrière de l'appareil.
++
+Le voyant d'identification avant se trouve derrière le cadre avant et peut être difficile à voir si le cadre est installé.
+
++
+image::../media/s25_front_identify_led.png[Voyant d'identification avant - allumé]
+
++
+La LED d'identification arrière se trouve au centre de l'appareil, à côté de l'emplacement pour carte Micro-SD.
+
+** Vérifiez que les étiquettes apposées à l'avant de l'appareil correspondent à la référence pour vous assurer que vous avez trouvé l'appareil approprié.
+
+
+. Retirez le cadre avant, le cas échéant, pour accéder aux commandes et aux voyants du panneau avant.
+. link:turning-sg120-and-sg1200-identify-led-on-and-off.html["Éteindre la LED bleue Identify"] si vous l'avez utilisé pour localiser l'appareil.
++
+** Appuyez sur le commutateur LED Identify situé sur le panneau avant de l'appareil.
+** Utilisez l'interface BMC de l'appliance.
+
+
+

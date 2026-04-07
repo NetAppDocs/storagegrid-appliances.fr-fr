@@ -1,0 +1,71 @@
+---
+permalink: sg120-1200/replacing-drive-in-sg120-and-sg1200.html 
+sidebar: sidebar 
+keywords: storagegrid, sg120, sg1200, Replacing, replace, drive, remove, removing, removal, install, installing, installation 
+summary: 'Les appliances de service SG120 et SG1200 intègrent deux disques SSD. Les disques sont configurés en RAID1 pour la redondance. Si l"un des disques tombe en panne, vous devez le remplacer dès que possible pour garantir la redondance.' 
+---
+= Remplacez les disques durs du SG120 ou du SG1200
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les appliances de service SG120 et SG1200 intègrent deux disques SSD. Les disques sont mis en miroir à l'aide du RAID1 pour la redondance. Si l'un des disques tombe en panne, vous devez le remplacer dès que possible pour garantir la redondance.
+
+.Avant de commencer
+* Vous avez link:locating-sg120-and-sg1200-in-data-center.html["l'appareil se trouve physiquement"].
+* Vous avez vérifié quel disque est défaillant en notant que le voyant de gauche du disque est orange fixe ou en utilisant Grid Manager pour link:verify-component-to-replace.html["afficher l'alerte causée par le disque défectueux"].
++
+
+IMPORTANT: Reportez-vous aux informations sur l'affichage des indicateurs d'état pour vérifier l'échec.
+
+* Vous avez obtenu le disque de remplacement.
+* Vous avez obtenu une protection ESD appropriée.
+
+
+.Étapes
+. Vérifiez que le voyant de panne gauche du disque est orange ou utilisez l'ID de logement de disque de l'alerte pour localiser le disque.
++
+Les disques sont aux emplacements suivants dans le châssis (avant du châssis avec le panneau retiré) :
+
++
+image::../media/sg120_sg1200_front_with_ssds.png[Emplacements des disques SG120 et SG1200]
+
+
+
+. Enroulez l'extrémité du bracelet antistatique autour de votre poignet et fixez l'extrémité du clip à une masse métallique afin d'éviter toute décharge statique.
+. Déballez le lecteur de remplacement et placez-le sur une surface plane et sans électricité statique près de l'appareil.
++
+Conservez tous les matériaux d'emballage.
+
+. Appuyez sur le bouton de déverrouillage du disque défectueux.
++
+image::../media/drw_s2025_drive_replace_ieops-2553.svg[Retirer un disque du châssis]
+
++
+La poignée des ressorts d'entraînement s'ouvre partiellement et l'entraînement se relâche de la fente.
+
+. Ouvrez la poignée, faites glisser l'entraînement vers l'extérieur et placez-le sur une surface plane et non statique.
++
+
+NOTE: Vérifiez que la poignée du tiroir est complètement ouverte avant de tenter de retirer le disque.
+
+. Appuyez sur le bouton de dégagement du disque de remplacement avant de l'insérer dans le slot.
++
+Les ressorts de verrouillage s'ouvrent.
+
+. Insérez le lecteur de remplacement dans son logement, puis fermez la poignée du lecteur.
++
+
+IMPORTANT: Ne forcez pas trop lorsque vous fermez la poignée.
+
++
+Lorsque le lecteur est complètement inséré, vous entendez un clic.
+
++
+Le disque remplacé est automatiquement reconstruit à partir des données du disque fonctionnel. Vous pouvez vérifier l'état de la reconstruction à l'aide du Grid Manager. Accédez à *Nodes* > `*Appliance Node*` > *Hardware*. Le champ Storage RAID Mode contient un message « rebuilding » jusqu'à ce que le disque soit complètement reconstruit.
+
+
+
+Après avoir remplacé la pièce, retournez la pièce défectueuse à NetApp, comme indiqué dans les instructions RMA fournies avec le kit. Consultez la page  https://mysupport.netapp.com/site/info/rma["Retours et remplacements de pièces"^] pour plus d'informations.

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sgf6112, storage node, install, installing, installation, cabinet, rack, rail, rails 
 summary: 'Vous installez un ensemble de rails pour l"appareil dans votre armoire ou rack, puis faites glisser l"appareil sur les rails.' 
 ---
-= Installation dans l'armoire ou le rack (SGF6112)
+= Installez le SGF6112 dans une armoire ou un rack
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

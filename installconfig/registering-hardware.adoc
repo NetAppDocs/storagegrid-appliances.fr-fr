@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: register, registering, registration, support 
 summary: 'L"enregistrement du matériel offre des avantages de support.' 
 ---
-= Enregistrez le matériel
+= Enregistrez le matériel de l'appliance StorageGRID
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

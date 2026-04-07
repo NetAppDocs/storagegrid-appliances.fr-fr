@@ -2,9 +2,9 @@
 permalink: sg110-1100/power-sg110-and-sg1100-off-on.html 
 sidebar: sidebar 
 keywords: storagegrid, sg110, sg1100, power off, turn off, shut off, shutdown, shut down, power on, turn on, start 
-summary: 'Vous pouvez arrêter l"appliance SGF6112 et la remettre sous tension pour effectuer des opérations de maintenance.' 
+summary: 'Vous pouvez arrêter l"appliance SG110 ou SG1100 et la remettre sous tension pour effectuer des opérations de maintenance.' 
 ---
-= Mettez le SG110 ou le SG1100 hors tension et sous tension
+= Mettre sous tension et hors tension un SG110 ou un SG1100
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

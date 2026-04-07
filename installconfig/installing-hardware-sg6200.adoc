@@ -1,0 +1,46 @@
+---
+permalink: installconfig/installing-hardware-sg6200.html 
+sidebar: sidebar 
+keywords: install, sg6200, sg6212, expansion shelf, cabinet, rack, drives 
+summary: Pour les SG6260 et SGF6212, vous installez des rails dans votre armoire ou rack et faites glisser l’étagère du contrôleur, les étagères d’extension et le contrôleur de calcul sur les rails. 
+---
+= Installez le SG6200 dans une armoire ou un rack
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Pour les SG6260 et SGF6212, vous installez des rails dans votre armoire ou rack et faites glisser l’étagère du contrôleur, les étagères d’extension et le contrôleur de calcul sur les rails.
+
+[cols="1a,2a,2a"]
+|===
+| Modèle | Installer | Pour plus d'informations 
+
+
+ a| 
+SG6260
+ a| 
+tiroir contrôleur de 60 disques et tiroir d'extension de 60 disques
+ a| 
+link:sg6260-installing-60-drive-shelves-into-cabinet-or-rack.html["Installez les tiroirs de 60 disques"]
+
+
+
+ a| 
+SG6212
+ a| 
+tiroir appliance de 12 disques
+ a| 
+link:installing-appliance-in-cabinet-or-rack-sgf6212.html["Installez les tiroirs de 12 disques"]
+
+
+
+ a| 
+SG6260
+ a| 
+Contrôleur de calcul SG6200-CN
+ a| 
+link:sg6200-cn-installing-into-cabinet-or-rack.html["Installer le contrôleur SG6200-CN"]
+
+|===

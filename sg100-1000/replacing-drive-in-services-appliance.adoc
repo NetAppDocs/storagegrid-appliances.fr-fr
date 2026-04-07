@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, Replacing, replace, drive, remove, removing, removal, install, installing, installation 
 summary: 'Les disques SSD de l"appliance de services contiennent le système d"exploitation StorageGRID. En outre, lorsque l"appliance est configurée en tant que nœud d"administration, les disques SSD contiennent également des journaux d"audit, des mesures et des tables de base de données. Les disques sont mis en miroir à l"aide de RAID1 pour la redondance. Si l"un des lecteurs tombe en panne, vous devez le remplacer dès que possible pour assurer la redondance.' 
 ---
-= Remplacez le disque dans SG100 ou SG1000
+= Remplacer un disque dans un SG100 ou un SG1000
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -33,7 +33,7 @@ CAUTION: Si vous retirez le disque en fonctionnement, le nœud de l'appliance es
 .Étapes
 . Vérifiez que le voyant de gauche du lecteur à remplacer clignote en orange. Si un problème de lecteur a été signalé dans l'interface utilisateur Grid Manager ou BMC, HDD02 ou HDD2 reportez-vous au lecteur dans le logement supérieur et HDD03 ou HDD3 reportez-vous au lecteur dans le logement inférieur.
 +
-Vous pouvez également utiliser Grid Manager pour contrôler l'état des disques SSD. Sélectionnez *NOEUDS*. Puis faire `*Appliance Node*` > *matériel*. Si un lecteur est défectueux, le champ Storage RAID mode contient un message indiquant quel lecteur est défectueux.
+Vous pouvez également utiliser le Gestionnaire de grille pour surveiller l'état des SSD. Sélectionnez *Nœuds*. Puis sélectionnez  `*Appliance Node*` > *Matériel*. Si un disque a échoué, le champ Mode RAID de stockage contient un message indiquant quel disque a échoué.
 
 . Enroulez l'extrémité du bracelet antistatique autour de votre poignet et fixez l'extrémité du clip à une masse métallique afin d'éviter toute décharge statique.
 . Déballez le lecteur de remplacement et placez-le sur une surface plane et sans électricité statique près de l'appareil.
@@ -64,8 +64,8 @@ CAUTION: Ne forcez pas trop lorsque vous fermez la poignée.
 Lorsque le lecteur est complètement inséré, vous entendez un clic.
 
 +
-Le lecteur est automatiquement reconstruit à l'aide de données en miroir provenant du disque de travail. Vous pouvez vérifier l'état de la reconstruction à l'aide du Gestionnaire de grille. Sélectionnez *NOEUDS*. Puis faire `*Appliance Node*` > *matériel*. Le champ Storage RAID mode contient un message de « reconstitution » jusqu'à ce que le disque soit entièrement reconstruit.
+Le disque est automatiquement reconstruit à partir des données du disque fonctionnel. Vous pouvez vérifier l'état de la reconstruction à l'aide du Grid Manager. Sélectionnez *Nœuds*. Puis sélectionnez  `*Appliance Node*` > *Matériel*. Le champ Storage RAID Mode contient le message « rebuilding » jusqu'à ce que le disque soit complètement reconstruit.
 
 
 
-Après le remplacement de la pièce, renvoyez la pièce défectueuse à NetApp, en suivant les instructions RMA (retour de matériel) livrées avec le kit. Voir la https://mysupport.netapp.com/site/info/rma["Retour de pièce et amp ; remplacements"^] pour plus d'informations.
+Après avoir remplacé la pièce, retournez la pièce défectueuse à NetApp, comme indiqué dans les instructions RMA fournies avec le kit. Consultez la page  https://mysupport.netapp.com/site/info/rma["Retours et remplacements de pièces"^] pour plus d'informations.

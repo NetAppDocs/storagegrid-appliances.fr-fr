@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, wire, wiring, cabling, cable, Connecting, connect, power cords, power, applying power, apply power, turn on, power up, ac, ac power 
 summary: 'Après avoir branché les câbles réseau, vous êtes prêt à alimenter l"appareil.' 
 ---
-= Branchez les câbles d'alimentation et mettez le système sous tension
+= Branchez les cordons d'alimentation et mettez sous tension les appliances StorageGRID
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -30,6 +30,23 @@ N'appuyez pas de nouveau sur le bouton d'alimentation pendant le processus de mi
 
 --
 .SG110 et SG1100
+--
+.Étapes
+. Connectez un cordon d'alimentation à chacune des deux unités d'alimentation de l'appareil.
+. Branchez ces deux cordons d'alimentation à deux unités de distribution d'alimentation différentes dans l'armoire ou le rack.
+. Si le bouton d'alimentation situé à l'avant de l'appareil n'est pas allumé en bleu, appuyez sur le bouton pour mettre l'appareil sous tension.
++
+N'appuyez pas de nouveau sur le bouton d'alimentation pendant le processus de mise sous tension.
+
++
+Le voyant du bloc d'alimentation doit être allumé en vert sans clignoter.
+
+. En cas d'erreur, corrigez tout problème.
+. Si vous avez retiré le cadre avant, fixez-le à l'appareil.
+
+
+--
+.SG120 et SG1200
 --
 .Étapes
 . Connectez un cordon d'alimentation à chacune des deux unités d'alimentation de l'appareil.
@@ -173,6 +190,54 @@ N'appuyez pas de nouveau sur le bouton d'alimentation pendant le processus de mi
 . Une fois les composants démarrés, vérifiez que le bouton d'alimentation situé à l'avant du contrôleur SG6100-CN est allumé.
 . En cas d'erreur, corrigez tout problème.
 . Fixez le panneau avant au contrôleur SG6100-CN s'il a été retiré.
+
+
+--
+.SG6200
+--
+*SGF6212* :
+
+.Étapes
+. Connectez un cordon d'alimentation à chacune des deux unités d'alimentation de l'appareil.
+. Branchez ces deux cordons d'alimentation à deux unités de distribution d'alimentation différentes dans l'armoire ou le rack.
+. Si le bouton d'alimentation situé à l'avant de l'appareil n'est pas allumé en bleu, appuyez sur le bouton pour mettre l'appareil sous tension.
+. N'appuyez pas de nouveau sur le bouton d'alimentation pendant le processus de mise sous tension.
+. Le voyant du bloc d'alimentation doit être allumé en vert sans clignoter.
+. En cas d'erreur, corrigez tout problème.
+. Si vous avez retiré le cadre avant, fixez-le à l'appareil.
+
+
+*SG6260* :
+
+.Étapes
+. Vérifier que les deux contrôleurs du tiroir de contrôleur de stockage sont éteints
++
+
+CAUTION: *Risque d'électrocution* -- avant de connecter les cordons d'alimentation, assurez-vous que les interrupteurs d'alimentation de chacun des deux contrôleurs de stockage sont éteints.
+
+. Si vous disposez de tiroirs d'extension, vérifiez que les deux boutons d'alimentation du module sont éteints.
++
+
+CAUTION: *Risque d'électrocution* -- avant de connecter les cordons d'alimentation, assurez-vous que les deux commutateurs d'alimentation de chacun des étagères d'extension sont éteints.
+
+. Connectez un cordon d'alimentation à chacune des deux unités d'alimentation du contrôleur SG6200-CN.
+. Branchez ces deux cordons d'alimentation à deux unités de distribution d'alimentation différentes dans l'armoire ou le rack.
+. Connectez un cordon d'alimentation à chacune des deux unités d'alimentation du tiroir de contrôleur de stockage.
+. Si vous disposez de tiroirs d'extension, connectez un cordon d'alimentation à chacune des deux unités d'alimentation de chaque tiroir d'extension.
+. Connectez les deux câbles d'alimentation de chaque tiroir de stockage (y compris les tiroirs d'extension en option) à deux unités PDU différentes dans l'armoire ou le rack.
+. Si le bouton d'alimentation situé à l'avant du contrôleur SG6200-CN n'est pas actuellement éclairé en bleu, appuyez sur le bouton pour mettre le contrôleur sous tension.
++
+N'appuyez pas de nouveau sur le bouton d'alimentation pendant le processus de mise sous tension.
+
+. Si vous avez des étagères d'extension, allumez d'abord les deux interrupteurs de chaque étagère. Ensuite, allumez les deux interrupteurs situés à l'arrière de l'étagère du contrôleur de stockage.
++
+** N'éteignez pas les interrupteurs d'alimentation pendant le processus de mise sous tension.
+** Au premier démarrage, les ventilateurs du tiroir de contrôleur de stockage et les tiroirs d'extension en option peuvent être très bruyants. Le bruit est normal au démarrage.
+
+
+. Une fois les composants démarrés, vérifiez que le bouton d'alimentation situé à l'avant du contrôleur SG6200-CN est allumé.
+. En cas d'erreur, corrigez tout problème.
+. Fixez le panneau avant au contrôleur SG6200-CN si vous l'avez retiré.
 
 
 --

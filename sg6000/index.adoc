@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6000, storage node, storage appliance, maintain, maintaining, hardware, procedures, tasks 
 summary: 'Vous devrez peut-être effectuer des procédures de maintenance sur l"appareil SG6000. Les procédures décrites dans cette section supposent que l"appliance a déjà été déployée en tant que nœud de stockage dans un système StorageGRID.' 
 ---
-= Entretenir l'appareil SG6000
+= Effectuez la maintenance de l'appareil SG6000
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

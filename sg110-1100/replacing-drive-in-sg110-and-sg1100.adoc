@@ -63,8 +63,8 @@ IMPORTANT: Ne forcez pas trop lorsque vous fermez la poignée.
 Lorsque le lecteur est complètement inséré, vous entendez un clic.
 
 +
-Le lecteur remplacé est automatiquement reconstruit avec les données en miroir du lecteur en fonctionnement.  Vous pouvez vérifier l'état de la reconstruction à l'aide du Gestionnaire de grille. Accédez à *NODES* > `*Appliance Node*` > *matériel*. Le champ Storage RAID mode (mode RAID de stockage) contient un message de reconstruction jusqu'à ce que le lecteur soit entièrement reconstruit.
+Le disque remplacé est automatiquement reconstruit à partir des données du disque fonctionnel. Vous pouvez vérifier l'état de la reconstruction à l'aide du Grid Manager. Accédez à *Nodes* > `*Appliance Node*` > *Hardware*. Le champ Storage RAID Mode contient un message « rebuilding » jusqu'à ce que le disque soit complètement reconstruit.
 
 
 
-Après le remplacement de la pièce, renvoyez la pièce défectueuse à NetApp, en suivant les instructions RMA (retour de matériel) livrées avec le kit. Voir la https://mysupport.netapp.com/site/info/rma["Retour de pièce et amp ; remplacements"^] pour plus d'informations.
+Après avoir remplacé la pièce, retournez la pièce défectueuse à NetApp, comme indiqué dans les instructions RMA fournies avec le kit. Consultez la page  https://mysupport.netapp.com/site/info/rma["Retours et remplacements de pièces"^] pour plus d'informations.

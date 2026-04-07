@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6160, storage node, storage appliance, upgrade, firmware, drive, disk, automatic 
 summary: 'Le programme d"installation de l"appliance StorageGRID installe automatiquement les derniers fichiers du micrologiciel du lecteur E-Series lors du redémarrage de l"appliance.' 
 ---
-= Mettre à niveau automatiquement le micrologiciel du lecteur SG6160 lors du redémarrage de l'appareil
+= Mise à niveau du firmware des disques SG6160 lors du redémarrage de l'appliance
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storage node, storage appliance, deploy node, deploying node, node, deploy, deploying 
 summary: 'Après avoir installé et configuré l"appliance de stockage, vous pouvez la déployer en tant que nœud de stockage dans un système StorageGRID. Lorsque vous déployez une appliance en tant que nœud de stockage, utilisez le programme d"installation de l"appliance StorageGRID inclus sur l"appliance.' 
 ---
-= Déployez le nœud de stockage de l'appliance
+= Déployer un nœud de stockage StorageGRID appliance
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

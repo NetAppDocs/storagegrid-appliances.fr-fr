@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg5700, troubleshoot, storage node, storage appliance, upgrade, upgrading, firmware, drive, disk, SANtricity System Manager, SANtricity 
 summary: Résolvez les erreurs qui peuvent se produire lorsque vous utilisez SANtricity System Manager pour mettre à niveau le firmware des disques de votre appliance. 
 ---
-= Dépannage des erreurs de mise à niveau du firmware des disques (SG6160)
+= Dépanner les erreurs de mise à niveau du firmware des disques SG6160
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -1,0 +1,170 @@
+---
+permalink: sg6200/replacing-drive-in-sgf6212.html 
+sidebar: sidebar 
+keywords: storagegrid, sgf6212, Replacing, replace, drive, remove, removing, removal, install, installing, installation 
+summary: 'Le système de stockage SGF6212 intègre 12 disques SSD. Les données sur les disques sont protégées par un système RAID qui permet à l"appliance de se remettre d"une panne disque sans avoir à copier les données depuis un autre nœud.' 
+---
+= Remplacez les disques dans le SGF6212
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Le système de stockage SGF6212 intègre 12 disques SSD. Pour un SGF6212 fonctionnant comme nœud de stockage, les données sur les disques sont protégées par un schéma RAID qui permet à l'appliance de se remettre de toute panne disque sans avoir à copier les données depuis un autre nœud. Pour un SGF6212 fonctionnant comme nœud passerelle, une panne disque entraîne une réduction de la capacité du cache.
+
+Si le SGF6212 fonctionne comme nœud de stockage, la panne disque d'un second disque avant que la panne disque initiale n'ait été corrigée peut nécessiter la copie de données depuis d'autres nœuds afin de rétablir la redondance. Ce rétablissement de la redondance peut prendre plus de temps, voire être impossible, si des règles ILM à copie unique sont ou ont été utilisées, ou si la redondance des données a été affectée par des pannes sur d'autres nœuds. Par conséquent, en cas de panne disque d'un des disques du SGF6212, vous devez le remplacer dès que possible pour garantir la redondance.
+
+Si le SGF6212 fonctionne comme nœud de passerelle, chaque panne disque dans un SGF6212 entraîne une réduction supplémentaire de la capacité du cache. De plus, toutes les données mises en cache sur le disque en panne ne seront plus mises en cache. D'autres pannes disque peuvent entraîner une défaillance du système d'exploitation, il est donc impératif de remplacer un disque en panne dès que possible afin de garantir la disponibilité.
+
+
+CAUTION: Si trois disques ou plus tombent en panne, le nœud risque de ne plus pouvoir exécuter StorageGRID. Il quittera alors la grille, redémarrera et lancera le StorageGRID Appliance Installer afin de faciliter le diagnostic et la réparation du problème de stockage.
+
+.Avant de commencer
+* Vous avez link:locating-sg6200-in-data-center.html["l'appareil se trouve physiquement"].
+* Vous avez vérifié quel disque est défaillant en notant que le voyant de gauche du disque est orange fixe ou en utilisant Grid Manager pour link:verify-component-to-replace.html["afficher l'alerte causée par le disque défectueux"].
++
+
+NOTE: Reportez-vous aux informations sur l'affichage des indicateurs d'état pour vérifier l'échec.
+
+* Vous avez obtenu le disque de remplacement.
+* Vous avez obtenu une protection ESD appropriée.
+
+
+.Étapes
+. Vérifiez que le voyant de panne gauche du disque est orange ou utilisez l'ID de logement de disque de l'alerte pour localiser le disque.
++
+Les douze disques se trouvent aux emplacements suivants dans le châssis (avant du châssis avec le cadre retiré) :
+
++
+image::../media/sgf6212_front_with_ssds.png[Emplacements des disques]
+
++
+|===
+| Position | Lecteur 
+
+
+ a| 
+1
+ a| 
+HDD00
+
+
+
+ a| 
+2
+ a| 
+HDD01
+
+
+
+ a| 
+3
+ a| 
+HDD02
+
+
+
+ a| 
+4
+ a| 
+HDD03
+
+
+
+ a| 
+5
+ a| 
+HDD04
+
+
+
+ a| 
+6
+ a| 
+HDD05
+
+
+
+ a| 
+7
+ a| 
+HDD06
+
+
+
+ a| 
+8
+ a| 
+HDD07
+
+
+
+ a| 
+9
+ a| 
+HDD08
+
+
+
+ a| 
+10
+ a| 
+HDD09
+
+
+
+ a| 
+11
+ a| 
+HDD10
+
+
+
+ a| 
+12
+ a| 
+HDD11
+
+|===
++
+Vous pouvez également utiliser le Gestionnaire de grille pour surveiller l'état des disques SSD. Sélectionnez *Nœuds*. Puis sélectionnez  `*Storage Node*` > *Matériel*. Si un disque est en panne, le champ Mode RAID de stockage contient un message indiquant quel disque est en panne.
+
+
+
+. Enroulez l'extrémité du bracelet antistatique autour de votre poignet et fixez l'extrémité du clip à une masse métallique afin d'éviter toute décharge statique.
+. Déballez le lecteur de remplacement et placez-le sur une surface plane et sans électricité statique près de l'appareil.
++
+Conservez tous les matériaux d'emballage.
+
+. Appuyez sur le bouton de déverrouillage du disque défectueux.
++
+image:../media/drw_s2025_drive_replace_ieops-2553.svg["Retirer un disque du châssis"]
+
++
+La poignée des ressorts d'entraînement s'ouvre partiellement et l'entraînement se relâche de la fente.
+
+. Ouvrez la poignée, faites glisser l'entraînement vers l'extérieur et placez-le sur une surface plane et non statique.
+. Appuyez sur le bouton de dégagement du disque de remplacement avant de l'insérer dans le slot.
++
+Les ressorts de verrouillage s'ouvrent.
+
+. Insérez le lecteur de remplacement dans son logement, puis fermez la poignée du lecteur.
++
+
+NOTE: Ne forcez pas trop lorsque vous fermez la poignée.
+
++
+Lorsque le lecteur est complètement inséré, vous entendez un clic.
+
++
+Le lecteur remplacé est automatiquement reconstruit avec les données en miroir des lecteurs en fonctionnement. Le voyant du lecteur doit d'abord clignoter, mais cesse de clignoter dès que le système détermine que le lecteur dispose d'une capacité suffisante et qu'il est fonctionnel.
+
++
+Vous pouvez vérifier l'état de la reconstruction à l'aide du Gestionnaire de grille.
+
+. Si le SGF6212 fonctionne comme nœud de stockage et que plusieurs disques ont subi une panne et ont été remplacés, il se peut que vous receviez des alertes indiquant que certains volumes doivent être restaurés. Si vous recevez une alerte, avant de tenter une récupération de volume, sélectionnez *Nodes* > `*appliance Storage Node*` > *Hardware*. Dans la section Appliance StorageGRID de la page, vérifiez que le mode RAID de stockage est sain ou en cours de reconstruction. Si l’état indique un ou plusieurs disques en panne, corrigez cette situation avant de tenter une restauration de volume.
+. Dans le Gestionnaire de grille, accédez à *Nœuds* > `*appliance Storage Node*` > *Matériel*. Dans la section StorageGRID Appliance de la page, vérifiez que le mode RAID de stockage est opérationnel.
+
+
+Après avoir remplacé la pièce, retournez la pièce défectueuse à NetApp, comme indiqué dans les instructions RMA fournies avec le kit. Consultez la page  https://mysupport.netapp.com/site/info/rma["Retours et remplacements de pièces"^] pour plus d'informations.

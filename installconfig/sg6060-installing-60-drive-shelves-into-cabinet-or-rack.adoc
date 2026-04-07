@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6000, storage node, storage appliance, sg6060, install, installing, installation, 60-drive shelves, 60-drive shelf, 60 drive shelves, 60 drive shelf, 60 drive, 60-drive, shelf, shelves, drive, disk, 60 
 summary: 'Vous installez un ensemble de rails pour le tiroir contrôleur E2860 dans votre armoire ou votre rack, puis faites glisser le tiroir contrôleur sur les rails. Si vous installez des tiroirs d"extension de 60 disques, la même procédure s"applique.' 
 ---
-= Installation des tiroirs de 60 disques (SG6060)
+= Installez les tiroirs pour 60 disques pour un SG6060
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

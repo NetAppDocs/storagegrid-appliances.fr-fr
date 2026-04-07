@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E4000 replace drive, replacing E4000 drive, E4000 replace drive, replacing E4000 drive, E4000, sg5860 
 summary: Vous pouvez remplacer un lecteur dans le SG5860. 
 ---
-= Remplacez le lecteur dans le SG5860
+= Remplacer un disque dans le SG5860
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -26,7 +26,7 @@ Cette procédure s'applique aux tiroirs disques DCM et DCM2.
 ** Un bracelet antistatique ou d'autres précautions antistatiques.
 ** Accès à SANtricity System Manager :
 +
-*** Dans le Gestionnaire de grille, sélectionnez *NODES* > *_appliance node_* > *SANtricity System Manager*. Les informations du contrôleur se trouvent sur le https://docs.netapp.com/us-en/storagegrid/monitor/viewing-santricity-system-manager-tab.html["Onglet Gestionnaire système SANtricity"].
+*** Dans Grid Manager, sélectionnez *Nœuds* > *_appliance node_* > *SANtricity System Manager*. Les informations du contrôleur se trouvent sur le https://docs.netapp.com/us-en/storagegrid/monitor/viewing-santricity-system-manager-tab.html["Onglet Gestionnaire système SANtricity"].
 *** Pointez un navigateur de votre station de gestion vers le nom de domaine ou l'adresse IP du contrôleur.
 
 

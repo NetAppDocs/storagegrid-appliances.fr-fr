@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: site prep, site preparation, preparing site, site requirements, requirements, site, dimensions, weight, weights, temperature, humidity, altitude, airflow, heat, wiring, power, grounding, facility 
 summary: 'Avant d"installer l"appliance, assurez-vous que le site et l"armoire ou le rack que vous souhaitez utiliser correspondent aux spécifications d"une appliance StorageGRID.' 
 ---
-= Préparer le site
+= Préparez le site pour l'installation de l'appliance StorageGRID
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -33,6 +33,13 @@ SG100 et SG1000
 SG110 et SG1100
  a| 
 100 à 240 volts c.a.
+
+
+
+ a| 
+SG120 et SG1200
+ a| 
+240 volts CA
 
 
 
@@ -90,12 +97,22 @@ SG6160
  a| 
 240 volts c.a.
 
+
+
+ a| 
+SGF6212
+ a| 
+240 volts CA
+
+
+
+ a| 
+SG6260
+ a| 
+240 volts CA
+
 |===
 . Vérifiez que votre emplacement est conforme aux exigences d'alimentation de votre appareil :
-+
-
-NOTE: Les alimentations des appliances StorageGRID sont évaluées pour des puissances significativement plus élevées que celles utilisées par le matériel de l'appliance StorageGRID, même pendant les périodes de consommation électrique maximale. NetApp recommande d'utiliser les chiffres du tableau suivant pour déterminer si la disposition des racks proposée, incluant des appliances StorageGRID, est compatible avec votre budget d'alimentation en rack.
-
 +
 [cols="1a,1a,1a"]
 |===
@@ -135,6 +152,24 @@ SG1100
 422
  a| 
 700
+
+
+
+ a| 
+SG120
+ a| 
+432
+ a| 
+519
+
+
+
+ a| 
+SG1200
+ a| 
+557
+ a| 
+668
 
 
 
@@ -208,7 +243,29 @@ SG6160
  a| 
 1800
 
+
+
+ a| 
+SGF6212
+ a| 
+673
+ a| 
+808
+
+
+
+ a| 
+SG6260
+ a| 
+580
+ a| 
+696
+
 |===
++
+
+NOTE: Les alimentations des appliances StorageGRID sont dimensionnées pour des puissances nettement supérieures à celles utilisées par le matériel StorageGRID, même lors des périodes de consommation maximale. NetApp recommande d'utiliser le  https://hwu.netapp.com["NetApp Hardware Universe"^] pour déterminer si une configuration de rack proposée incluant des appliances StorageGRID est compatible avec le budget d'alimentation de votre rack.
+
 . Procurez-vous une armoire ou un rack de 19 pouces (48.3 cm) pour les étagères de la taille suivante (sans câbles).
 +
 [role="tabbed-block"]
@@ -262,6 +319,55 @@ SG6160
 43.83 lb
 
 (19.88 kg)
+
+|===
+--
+.SG120 et SG1200
+--
+[cols="1a,1a,1a,1a,1a"]
+|===
+| Modèle de type appliance | Hauteur | Largeur | Profondeur | Poids maximum 
+
+
+ a| 
+SG120
+ a| 
+1.70 po
+
+(4.32 cm)
+ a| 
+18.98 po
+
+(48,21 cm)
+ a| 
+30,56 pouces
+
+(77,62 cm)
+ a| 
+42,13 lb.
+
+(19,11 kg)
+
+
+
+ a| 
+SG1200
+ a| 
+1.70 po
+
+(4.32 cm)
+ a| 
+18.98 po
+
+(48,21 cm)
+ a| 
+30,56 pouces
+
+(77,62 cm)
+ a| 
+43,43 lb.
+
+(19,70 kg)
 
 |===
 --
@@ -553,15 +659,90 @@ Tiroir d'extension (SG6160) : en option
 
 |===
 --
+.SG6200
+--
+[cols="1a,1a,1a,1a,1a"]
+|===
+| Modèle/type d'étagère de l'appareil | Hauteur | Largeur | Profondeur | Poids maximum 
+
+
+ a| 
+Appareil SGF6212
+ a| 
+1,70 po (4,32 cm)
+ a| 
+18,98 po (48,21 cm)
+ a| 
+30,56 po (77,62 cm)
+ a| 
+55,98 lb (25,39 kg)
+
+
+
+ a| 
+Contrôleur de calcul SG6200-CN (SG6260)
+ a| 
+1,70 po (4,32 cm)
+ a| 
+18,98 po (48,21 cm)
+ a| 
+30,56 po (77,62 cm)
+ a| 
+44,0 lb (19,70 kg)
+
+
+
+ a| 
+Étagère de contrôleur E4060 (SG6260)
+ a| 
+6.87 po
+
+(17.45 cm)
+ a| 
+17.64 po
+
+(44.8 cm)
+ a| 
+36.3 po
+
+(97.16 cm)
+ a| 
+223.58 lb
+
+(101.42 kg)
+
+
+
+ a| 
+Tiroir d'extension (SG6260) - Optionnel
+ a| 
+6.87 po
+
+(17.45 cm)
+ a| 
+17.64 po
+
+(44.8 cm)
+ a| 
+36.3 po
+
+(97.16 cm)
+ a| 
+223.58 lb
+
+(101.42 kg)
+
+|===
+--
 ====
 . Choisissez où vous allez installer l'appareil.
 +
 
-CAUTION: Lors de l'installation du tiroir contrôleur E2860 ou E4000 ou des tiroirs d'extension en option, installez le matériel du bas vers le haut du rack ou de l'armoire pour éviter que l'équipement ne bascule. Pour vous assurer que l'équipement le plus lourd se trouve au bas de l'armoire ou du rack, installez le contrôleur SG6000-CN ou SG6100-CN au-dessus du tiroir de contrôleur E2860 ou E4000 et des tiroirs d'extension.
+CAUTION: Lors de l'installation du tiroir de contrôleur E2860 ou E4000 ou des tiroirs d'extension optionnels, installez le matériel du bas vers le haut du rack ou de l'armoire afin d'éviter que l'équipement ne bascule. Pour garantir que les équipements les plus lourds se trouvent en bas de l'armoire ou du rack, installez le contrôleur SG6000-CN, SG6100-CN ou SG6200-CN au-dessus du tiroir de contrôleur E2860 ou E4000 et des tiroirs d'extension.
 
 +
 
-NOTE: Avant de valider l'installation, vérifiez que les câbles livrés avec une appliance SG6000 ou SG6100, ou les câbles que vous fournissez, sont suffisamment longs pour la configuration planifiée.
+NOTE: Avant de vous engager dans l'installation, vérifiez que les câbles livrés avec un SG6000, SG6100 ou SG6200 appliance, ou les câbles que vous fournissez, sont suffisamment longs pour la configuration prévue.
 
 . Installez les commutateurs réseau requis. Voir la link:https://imt.netapp.com/matrix/#welcome["Matrice d'interopérabilité NetApp"^] pour obtenir des informations sur la compatibilité.
 

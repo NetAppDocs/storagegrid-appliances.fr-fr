@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SNMP, configure, setup, set up 
 summary: 'Si vous connaissez la configuration de SNMP pour le matériel, vous pouvez utiliser l"interface BMC pour configurer les paramètres SNMP des appliances SG6100, SG6000 et services. Vous pouvez fournir des chaînes de communauté sécurisées, activer le Trap SNMP et spécifier jusqu"à cinq destinations SNMP.' 
 ---
-= Configurer les paramètres SNMP pour le contrôleur BMC
+= Configurez les paramètres SNMP pour le BMC dans les appliances StorageGRID
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -15,7 +15,7 @@ Si vous connaissez la configuration de SNMP pour le matériel, vous pouvez utili
 
 [role="tabbed-block"]
 ====
-.SG110, SG1100, SG6100-CN, SGF6112
+.SG110, SG120, SG1100, SG1200, SG6100, SG6200
 --
 .Avant de commencer
 * Vous savez comment link:../installconfig/accessing-bmc-interface.html["Accéder au tableau de bord BMC"].

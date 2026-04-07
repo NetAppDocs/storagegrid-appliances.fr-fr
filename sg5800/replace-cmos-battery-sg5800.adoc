@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: cmos, battery, replace, sg5800, controller 
 summary: 'Il vous faudra peut-être remplacer la pile CMOS dans le contrôleur SG5800 afin que les services et applications de votre système bénéficient d"une synchronisation horaire précise et continuent de fonctionner normalement.' 
 ---
-= Remplacer la pile CMOS dans le contrôleur SG5800
+= Remplacez la pile CMOS du contrôleur SG5800
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: remap appliance ports, network, internal to external port mapping 
 summary: 'Vous pouvez éventuellement remapper les ports internes d"un nœud d"appliance sur différents ports externes. Par exemple, il peut être nécessaire de remappage les ports en raison d"un problème de pare-feu.' 
 ---
-= Facultatif : remappage des ports réseau pour l'appliance
+= Réaffecter les ports réseau pour les appliances StorageGRID
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

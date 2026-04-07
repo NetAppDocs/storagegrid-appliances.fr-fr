@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6100, storage node, storage appliance, controller, e4000, storage controller, upgrade, upgrading, SANtricity OS, SANtricity, maintenance mode 
 summary: Vous pouvez utiliser le mode maintenance pour mettre à niveau SANtricity OS sur le contrôleur E4000. 
 ---
-= Mise à niveau de SANtricity OS sur le contrôleur E4000 en mode maintenance (SG6160)
+= Mettez à niveau le système d'exploitation SANtricity sur un SG6160 E4000 en mode maintenance
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -52,7 +52,7 @@ NOTE: Activez immédiatement les fichiers de mise à niveau. Ne différez pas l'
 Le redémarrage de l'appareil et sa reconnexion au réseau peuvent prendre jusqu'à 20 minutes.  Pour confirmer que le redémarrage est terminé et que le nœud a rejoint la grille :
 
 +
-... Dans le gestionnaire de grille, sélectionnez *NODES*.
+... Dans le Gestionnaire de grille, sélectionnez *Nœuds*.
 ... Vérifiez que le nœud de l'appareil a un état normal (icône de coche verte)image:../media/icon_alert_green_checkmark.png["coche verte"] à gauche du nom du nœud), ce qui indique qu'aucune alerte n'est active et que le nœud est connecté au réseau.
 
 

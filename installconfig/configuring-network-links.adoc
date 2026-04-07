@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: links, network links, configure, setup, set up, grid network connections, grid network connection, link speed, bond mode 
 summary: 'Vous pouvez configurer des liaisons réseau pour les ports utilisés pour connecter l"appliance au réseau Grid, au réseau client et au réseau Admin. Vous pouvez définir la vitesse de liaison ainsi que les modes de port et de liaison réseau.' 
 ---
-= Configurer les liaisons réseau
+= Configurer les liaisons réseau pour une appliance StorageGRID
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -40,10 +40,12 @@ NOTE: Les modifications du débit PDU LACP effectuées à la suite de ces instru
 
 * link:gathering-installation-information-sg100-and-sg1000.html#port-bond-modes["Modes de liaison de port (SG1000 et SG100)"]
 * link:gathering-installation-information-sg110-and-sg1100.html#port-bond-modes["Modes de liaison de port (SG1100 et SG110)"]
+* link:gathering-installation-information-sg120-and-sg1200.html#port-bond-modes["Modes de liaison des ports (SG1200 et SG120)"]
 * link:gathering-installation-information-sg5700.html#port-bond-modes["Modes de liaison du port (E5700SG)"]
 * link:gathering-installation-information-sg5800.html#port-bond-modes["Modes de liaison du port (SG5800)"]
 * link:gathering-installation-information-sg6000.html#port-bond-modes["Modes de liaison de port (SG6000-CN)"]
 * link:gathering-installation-information-sg6100.html#port-bond-modes["Modes de liaison de port (SGF6112 et SG6100-CN)"]
+* link:gathering-installation-information-sg6200.html#port-bond-modes["Modes de liaison des ports (SGF6212 et SG6200-CN)"]
 
 
 [role="tabbed-block"]
@@ -313,6 +315,141 @@ image::../media/sg1100_bonded_management_ports.png[Ports réseau d'administratio
 SG110 :
 
 image::../media/sgf6112_bonded_management_ports.png[Ports réseau d'administration mis en liaison SG110]
+
+--
+
+
+--
+.SG120 et SG1200
+--
+Mode de liaison port fixe (par défaut)::
++
+--
+Les figures montrent comment les quatre ports réseau sur les SG120 et SG1200 sont liés en mode de liaison de port fixe (configuration par défaut).
+
+SG120 :
+
+image::../media/sg120_fixed_port.png[Mode de liaison à port fixe SG120]
+
+SG1200 :
+
+image::../media/sg1200_fixed_port.png[Mode de liaison à port fixe SG1200]
+
+[cols="1a,3a"]
+|===
+| Légende | Quels ports sont liés 
+
+
+ a| 
+C
+ a| 
+Les ports 1 et 3 sont liés ensemble pour le réseau client, si ce réseau est utilisé.
+
+
+
+ a| 
+G
+ a| 
+Les ports 2 et 4 sont liés ensemble pour le réseau de grille.
+
+|===
+Le tableau récapitule les options de configuration des quatre ports réseau. Vous ne devez configurer les paramètres de la page Configuration des liens que si vous souhaitez utiliser un paramètre autre que celui par défaut.
+
+[cols="1a,2a,2a"]
+|===
+| Mode de liaison réseau | Réseau client désactivé | Réseau client activé (par défaut) 
+
+
+ a| 
+Sauvegarde active/active (par défaut)
+ a| 
+* Les ports 2 et 4 utilisent une liaison de sauvegarde active pour le réseau Grid.
+* Les ports 1 et 3 ne sont pas utilisés.
+* Une balise VLAN est facultative.
+
+ a| 
+* Les ports 2 et 4 utilisent une liaison de sauvegarde active pour le réseau Grid.
+* Les ports 1 et 3 utilisent une liaison de sauvegarde active pour le réseau client.
+* Les balises VLAN peuvent être spécifiées pour les deux réseaux pour le confort de l'administrateur réseau.
+
+
+
+
+ a| 
+LACP (802.3ad)
+ a| 
+* Les ports 2 et 4 utilisent une liaison LACP pour le réseau Grid.
+* Les ports 1 et 3 ne sont pas utilisés.
+* Une balise VLAN est facultative.
+* Les valeurs du taux PDU LACP et de la politique de hachage de transmission LACP peuvent être spécifiées dans la section Réseau de grille.
+
+ a| 
+* Les ports 2 et 4 utilisent une liaison LACP pour le réseau Grid.
+* Les ports 1 et 3 utilisent une liaison LACP pour le réseau client.
+* Les balises VLAN peuvent être spécifiées pour les deux réseaux pour le confort de l'administrateur réseau.
+* Les valeurs du taux PDU LACP et de la politique de hachage de transmission LACP peuvent être spécifiées dans les sections Réseau de grille et Réseau client.
+
+
+|===
+--
+Mode de liaison du port agrégé::
++
+--
+Ces figures montrent comment les quatre ports réseau sont liés en mode agrégation port bond.
+
+SG120 :
+
+image::../media/sg120_aggregate_ports.png[Mode de liaison du port agrégé SG120]
+
+SG1200 :
+
+image::../media/sg1200_aggregate_ports.png[Mode de liaison de port agrégé SG1200]
+
+[cols="1a,3a"]
+|===
+| Légende | Quels ports sont liés 
+
+
+ a| 
+1
+ a| 
+Les quatre ports sont regroupés en une seule liaison LACP, ce qui permet d'utiliser tous les ports pour le trafic Grid Network et client Network.
+
+|===
+Le tableau récapitule les options de configuration des ports réseau. Vous ne devez configurer les paramètres de la page Configuration des liens que si vous souhaitez utiliser un paramètre autre que celui par défaut.
+
+[cols="1a,2a,2a"]
+|===
+| Mode de liaison réseau | Réseau client désactivé | Réseau client activé (par défaut) 
+
+
+ a| 
+LACP (802.3ad) uniquement
+ a| 
+* Les ports 1-4 utilisent une liaison LACP unique pour le réseau Grid.
+* Une balise VLAN unique identifie les paquets réseau Grid.
+* Les valeurs du taux PDU LACP et de la politique de hachage de transmission LACP peuvent être spécifiées dans la section Paramètres de liaison.
+
+ a| 
+* Les ports 1-4 utilisent une liaison LACP unique pour le réseau Grid et le réseau client.
+* Deux balises VLAN permettent de isoler les paquets réseau Grid des paquets réseau client.
+* Les valeurs du taux PDU LACP et de la politique de hachage de transmission LACP peuvent être spécifiées dans la section Paramètres de liaison.
+
+
+|===
+--
+Mode de liaison réseau Active-Backup pour les ports de gestion::
++
+--
+Ces figures montrent comment les deux ports de gestion 1 GbE des dispositifs sont liés en mode liaison réseau Active-Backup pour le réseau d'administration.
+
+SG120 :
+
+image::../media/sg120_bonded_management_ports.png[Ports réseau d'administration agrégés SG120]
+
+SG1200 :
+
+image::../media/sg1200_bonded_management_ports.png[Ports réseau d'administration agrégés SG1200]
 
 --
 
@@ -796,6 +933,141 @@ image::../media/sg6100_cn_bonded_management_ports.png[Ports réseau d'administra
 
 
 --
+.SG6200
+--
+Mode de liaison port fixe (par défaut)::
++
+--
+La figure montre comment les quatre ports réseau sont liés en mode de liaison port fixe (configuration par défaut).
+
+*SGF6212* :
+
+image::../media/sgf6212_fixed_port.png[Mode de liaison à port fixe SGF6212]
+
+*SG6200-CN* :
+
+image::../media/sg6200_cn_fixed_port.png[Mode de liaison à port fixe SG6200-CN]
+
+[cols="1a,3a"]
+|===
+| Légende | Quels ports sont liés 
+
+
+ a| 
+C
+ a| 
+Les ports 1 et 3 sont liés ensemble pour le réseau client, si ce réseau est utilisé.
+
+
+
+ a| 
+G
+ a| 
+Les ports 2 et 4 sont liés ensemble pour le réseau de grille.
+
+|===
+Le tableau récapitule les options de configuration des ports réseau. Vous ne devez configurer les paramètres de la page Configuration des liens que si vous souhaitez utiliser un paramètre autre que celui par défaut.
+
+[cols="1a,2a,2a"]
+|===
+| Mode de liaison réseau | Réseau client désactivé | Réseau client activé (par défaut) 
+
+
+ a| 
+Sauvegarde active/active (par défaut)
+ a| 
+* Les ports 2 et 4 utilisent une liaison de sauvegarde active pour le réseau Grid.
+* Les ports 1 et 3 ne sont pas utilisés.
+* Une balise VLAN est facultative.
+
+ a| 
+* Les ports 2 et 4 utilisent une liaison de sauvegarde active pour le réseau Grid.
+* Les ports 1 et 3 utilisent une liaison de sauvegarde active pour le réseau client.
+* Les balises VLAN peuvent être spécifiées pour les deux réseaux pour le confort de l'administrateur réseau.
+
+
+
+
+ a| 
+LACP (802.3ad)
+ a| 
+* Les ports 2 et 4 utilisent une liaison LACP pour le réseau Grid.
+* Les ports 1 et 3 ne sont pas utilisés.
+* Une balise VLAN est facultative.
+* Les valeurs du taux PDU LACP et de la politique de hachage de transmission LACP peuvent être spécifiées dans la section Réseau de grille.
+
+ a| 
+* Les ports 2 et 4 utilisent une liaison LACP pour le réseau Grid.
+* Les ports 1 et 3 utilisent une liaison LACP pour le réseau client.
+* Les balises VLAN peuvent être spécifiées pour les deux réseaux pour le confort de l'administrateur réseau.
+* Les valeurs du taux PDU LACP et de la politique de hachage de transmission LACP peuvent être spécifiées dans les sections Réseau de grille et Réseau client.
+
+
+|===
+--
+Mode de liaison du port agrégé::
++
+--
+La figure montre comment les quatre ports réseau sont liés en mode agrégation de liens de port.
+
+*SGF6212* :
+
+image::../media/sgf6212_aggregate_ports.png[Mode de liaison de port agrégé SGF6212]
+
+*SG6200* :
+
+image::../media/sg6200_cn_aggregate_ports.png[Mode de liaison de port agrégé SG6200-CN]
+
+[cols="1a,3a"]
+|===
+| Légende | Quels ports sont liés 
+
+
+ a| 
+1
+ a| 
+Les quatre ports sont regroupés en une seule liaison LACP, ce qui permet d'utiliser tous les ports pour le trafic Grid Network et client Network.
+
+|===
+Le tableau récapitule les options de configuration des ports réseau. Vous ne devez configurer les paramètres de la page Configuration des liens que si vous souhaitez utiliser un paramètre autre que celui par défaut.
+
+[cols="1a,2a,2a"]
+|===
+| Mode de liaison réseau | Réseau client désactivé | Réseau client activé (par défaut) 
+
+
+ a| 
+LACP (802.3ad) uniquement
+ a| 
+* Les ports 1-4 utilisent une liaison LACP unique pour le réseau Grid.
+* Une balise VLAN unique identifie les paquets réseau Grid.
+* Les valeurs du taux PDU LACP et de la politique de hachage de transmission LACP peuvent être spécifiées dans la section Paramètres de liaison.
+
+ a| 
+* Les ports 1-4 utilisent une liaison LACP unique pour le réseau Grid et le réseau client.
+* Deux balises VLAN permettent de isoler les paquets réseau Grid des paquets réseau client.
+* Les valeurs du taux PDU LACP et de la politique de hachage de transmission LACP peuvent être spécifiées dans la section Paramètres de liaison.
+
+
+|===
+--
+Mode de liaison réseau Active-Backup pour les ports de gestion::
++
+--
+Cette figure montre comment les deux ports de gestion 1 GbE sont liés en mode liaison réseau Active-Backup pour le réseau d'administration.
+
+*SGF6212* :
+
+image::../media/sgf6212_bonded_management_ports.png[Ports réseau d'administration agrégés SGF6212]
+
+*SG6200* :
+
+image::../media/sg6200_cn_bonded_management_ports.png[Ports réseau d'administration agrégés SG6200-CN]
+
+--
+
+
+--
 ====
 .Étapes
 . Dans la barre de menus du programme d'installation de l'appliance StorageGRID, cliquez sur *configurer réseau* > *Configuration lien*.
@@ -827,12 +1099,12 @@ NOTE: Pour le SG5800, l'état de liaison pour le port 1 n'est pas disponible dan
 Les commutateurs réseau que vous utilisez pour le réseau Grid et le réseau client doivent également prendre en charge et être configurés pour cette vitesse. Vous devez utiliser les adaptateurs ou émetteurs-récepteurs appropriés pour la vitesse de liaison configurée. Utilisez la vitesse de liaison automatique lorsque cela est possible car cette option négocie à la fois la vitesse de liaison et le mode de correction d'erreur de marche avant (FEC) avec le partenaire de liaison.
 
 +
-Si vous prévoyez d'utiliser la vitesse de liaison 25 GbE pour les ports réseau SG6100, SG6000, SG5800 ou SG5700 :
+Si vous prévoyez d'utiliser la vitesse de liaison 25 GbE pour les ports réseau SG6200, SG6100, SG6000, SG5800 ou SG5700 :
 
 +
 ** Utilisez les émetteurs-récepteurs SFP28 et les câbles TwinAx SFP28 ou les câbles optiques.
 ** Pour l'appliance SG5700, sélectionnez *25GbE* dans la liste déroulante *vitesse de liaison*.
-** Pour SGS5800, SG6000 ou SG6100, sélectionnez *Auto* dans la liste déroulante *vitesse de liaison*.
+** Pour les SG5800, SG6000, SG6100 ou SG6200, sélectionnez *Auto* dans la liste déroulante *Link speed*.
 
 
 . Activez ou désactivez les réseaux StorageGRID que vous souhaitez utiliser.

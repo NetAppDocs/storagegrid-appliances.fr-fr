@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: appliance installer, installer, access, accessing, start, starting 
 summary: 'Vous devez accéder au programme d"installation de l"appliance StorageGRID pour vérifier la version du programme d"installation et configurer les connexions entre l"appliance et les trois réseaux StorageGRID : le réseau Grid, le réseau d"administration \(facultatif\) et le réseau client \(facultatif\).' 
 ---
-= Accédez au programme d'installation de l'appliance StorageGRID
+= Accédez à l'installateur d'appliance StorageGRID
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -13,6 +13,9 @@ summary: 'Vous devez accéder au programme d"installation de l"appliance Storage
 [role="lead"]
 Vous devez accéder au programme d'installation de l'appliance StorageGRID pour vérifier la version du programme d'installation et configurer les connexions entre l'appliance et les trois réseaux StorageGRID : le réseau Grid, le réseau d'administration (facultatif) et le réseau client (facultatif).
 
+.Description de la tâche
+Pour accéder initialement au programme d'installation de l'appliance StorageGRID, vous pouvez utiliser l'adresse IP attribuée par DHCP pour le port réseau d'administration sur l'appliance de services ou le contrôleur de l'appliance de stockage (en supposant qu'il est connecté au réseau d'administration). vous pouvez également connecter un ordinateur portable de service directement à l'appliance de services ou au contrôleur de l'appliance de stockage.
+
 .Avant de commencer
 * Vous utilisez n'importe quel client de gestion pouvant vous connecter au réseau d'administration StorageGRID ou vous disposez d'un ordinateur portable de service.
 * Le client ou l'ordinateur portable de service a un https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["navigateur web pris en charge"^].
@@ -20,9 +23,6 @@ Vous devez accéder au programme d'installation de l'appliance StorageGRID pour 
 * Vous connaissez l'adresse IP, la passerelle et le sous-réseau de l'appliance de services ou du contrôleur d'appliance de stockage sur ces réseaux.
 * Vous avez configuré les commutateurs réseau que vous prévoyez d'utiliser.
 
-
-.Description de la tâche
-Pour accéder initialement au programme d'installation de l'appliance StorageGRID, vous pouvez utiliser l'adresse IP attribuée par DHCP pour le port réseau d'administration sur l'appliance de services ou le contrôleur de l'appliance de stockage (en supposant qu'il est connecté au réseau d'administration). vous pouvez également connecter un ordinateur portable de service directement à l'appliance de services ou au contrôleur de l'appliance de stockage.
 
 .Étapes
 . Si possible, utilisez l'adresse DHCP du port Admin Network sur l'appliance de services ou le contrôleur de l'appliance de stockage. Le port réseau d'administration est mis en surbrillance dans la figure suivante. (Utilisez l'adresse IP sur le réseau Grid si le réseau Admin n'est pas connecté.)
@@ -39,6 +39,11 @@ image::../media/sg100_admin_network_port.png[Port réseau Admin sur le SG100]
 image::../media/sg6100_admin_network_port.png[Port réseau d'administration sur le SG110]
 
 --
+.SG120
+--
+image::../media/sg120_admin_network_port.png[Port réseau d'administration sur le SG120]
+
+--
 .SG1000
 --
 image::../media/sg1000_admin_network_port.png[Port réseau Admin sur le SG1000]
@@ -47,6 +52,11 @@ image::../media/sg1000_admin_network_port.png[Port réseau Admin sur le SG1000]
 .SG1100
 --
 image::../media/sg1100_admin_network_port.png[Port réseau d'administration sur le SG1100]
+
+--
+.SG1200
+--
+image::../media/sg1200_admin_network_port.png[Port réseau d'administration sur le SG1200]
 
 --
 .E5700SG
@@ -89,9 +99,19 @@ image::../media/sg6000_cn_admin_network_port.png[Port Admin Network du contrôle
 image::../media/sg6100_cn_admin_network_port.png[Port Admin Network du contrôleur SG6000-CN]
 
 --
+.SG6200-CN
+--
+image::../media/sg6200_cn_admin_network_port.png[Port réseau d'administration sur le contrôleur SG6200-CN]
+
+--
 .SGF6112
 --
 image::../media/sg6100_admin_network_port.png[Port réseau d'administration sur le SGF6112]
+
+--
+.SGF6212
+--
+image::../media/sgf6212_admin_network_port.png[Port réseau d'administration sur le SGF6212]
 
 --
 ====
@@ -129,6 +149,13 @@ Connectez un ordinateur portable de service directement au port RJ-45 le plus à
 image::../media/sg6100_link_local_port.png[Connexion lien-local SG110]
 
 --
+.SG120
+--
+Connectez un ordinateur portable de service directement au port RJ-45 le plus à droite de l'appareil, à l'aide d'un câble Ethernet.
+
+image::../media/sg120_link_local_port.png[Connexion locale SG120]
+
+--
 .SG1000
 --
 Connectez un ordinateur portable de service directement au port RJ-45 le plus à droite de l'appareil de services à l'aide d'un câble Ethernet.
@@ -141,6 +168,13 @@ image::../media/sg1000_link_local_port.png[Liaison SG1000 - connexion locale]
 Connectez un ordinateur portable de service directement au port RJ-45 le plus à droite de l'appareil, à l'aide d'un câble Ethernet.
 
 image::../media/sg1100_link_local_port.png[Connexion lien-local SG1100]
+
+--
+.SG1200
+--
+Connectez un ordinateur portable de service directement au port RJ-45 le plus à droite de l'appareil, à l'aide d'un câble Ethernet.
+
+image::../media/sg1200_link_local_port.png[Connexion locale SG1200]
 
 --
 .E5700SG
@@ -171,11 +205,25 @@ Connectez un ordinateur portable de service directement au port RJ-45 le plus à
 image::../media/sg6100_cn_link_local_port.png[Emplacement du port de gestion pour SG6100-CN]
 
 --
+.SG6200-CN
+--
+Connectez un ordinateur portable de service directement au port RJ-45 le plus à droite du contrôleur SG6200-CN, à l'aide d'un câble Ethernet.
+
+image::../media/sg6200_cn_link_local_port.png[Emplacement du port de gestion pour SG6200-CN]
+
+--
 .SGF6112
 --
 Connectez un ordinateur portable de service directement au port RJ-45 le plus à droite de l'appareil, à l'aide d'un câble Ethernet.
 
 image::../media/sg6100_link_local_port.png[Connexion lien-local SGF6112]
+
+--
+.SGF6212
+--
+Connectez un ordinateur portable de service directement au port RJ-45 le plus à droite de l'appareil, à l'aide d'un câble Ethernet.
+
+image::../media/sgf6212_link_local_port.png[Connexion locale SGF6212]
 
 --
 ====

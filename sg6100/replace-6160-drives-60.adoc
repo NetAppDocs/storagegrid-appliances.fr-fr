@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E4000 replace drive, replacing E4000 drive, E4000 replace drive, replacing E4000 drive, E4000, sg6160, sg6100cn 
 summary: 'Remplacez un disque d"un E4000 par un tiroir de 60 disques.' 
 ---
-= Remplacement du disque dans le tiroir contrôleur de stockage ou le tiroir d'extension (SG6160)
+= Remplacez un disque dans un shelf contrôleur de stockage SG6160 ou tiroir d'extension
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -24,7 +24,7 @@ StorageGRID Grid Manager surveille l'état des baies de stockage et émet des al
 ** Un bracelet antistatique ou d'autres précautions antistatiques.
 ** Accès à SANtricity System Manager :
 +
-*** Dans le Gestionnaire de grille, sélectionnez *NODES* > *_appliance node_* > *SANtricity System Manager*. Les informations du contrôleur se trouvent sur le https://docs.netapp.com/us-en/storagegrid/monitor/viewing-santricity-system-manager-tab.html["Onglet Gestionnaire système SANtricity"].
+*** Dans Grid Manager, sélectionnez *Nœuds* > *_appliance node_* > *SANtricity System Manager*. Les informations du contrôleur se trouvent sur le https://docs.netapp.com/us-en/storagegrid/monitor/viewing-santricity-system-manager-tab.html["Onglet Gestionnaire système SANtricity"].
 *** Pointez un navigateur de votre station de gestion vers le nom de domaine ou l'adresse IP du contrôleur.
 
 

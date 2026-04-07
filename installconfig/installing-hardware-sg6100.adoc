@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: install, sg6100, sg6112, expansion shelf, cabinet, rack, drives 
 summary: 'Pour les systèmes SG6160 et SGF6112, vous installez des rails dans votre armoire ou rack et faites glisser le tiroir contrôleur, les tiroirs d"extension éventuels et le contrôleur de calcul sur les rails.' 
 ---
-= Installation dans l'armoire ou le rack (SG6100)
+= Installez le SG6100 dans une armoire ou un rack
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

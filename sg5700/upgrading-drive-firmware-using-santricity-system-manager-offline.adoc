@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg5700, storage node, storage appliance, upgrade, upgrading, firmware, drive, disk, SANtricity System Manager, SANtricity 
 summary: Vous mettez à niveau le micrologiciel de votre lecteur pour vous assurer que vous disposez de toutes les dernières fonctionnalités et correctifs. 
 ---
-= Mise à niveau du firmware du disque SG5700 à l'aide de SANtricity System Manager via la méthode hors ligne
+= Mettez à niveau le firmware des disques à l'aide de la méthode hors ligne de SANtricity System Manager.
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -36,7 +36,7 @@ La méthode hors ligne est plus rapide que la méthode en ligne et sera beaucoup
 . Pour accéder à SANtricity System Manager, utilisez l'une des méthodes suivantes :
 +
 ** Utilisez le programme d'installation de l'appliance StorageGRID et sélectionnez *Avancé* > *Gestionnaire système SANtricity*
-** Utilisez le Gestionnaire de grille et sélectionnez *NODES* > *_noeud de stockage_* > *Gestionnaire système SANtricity*
+** Utilisez le Grid Manager et sélectionnez *Nodes* > *_Storage Node_* > *SANtricity System Manager*
 ** Pour utiliser SANtricity System Manager, accédez à l'adresse IP du contrôleur de stockage :
 +
 `*https://_Storage_Controller_IP_*`
@@ -145,7 +145,7 @@ link:troubleshoot-upgrading-drive-firmware-using-santricity-system-manager.html[
 Le redémarrage de l'appareil et sa reconnexion au réseau peuvent prendre jusqu'à 20 minutes.  Pour confirmer que le redémarrage est terminé et que le nœud a rejoint la grille :
 
 +
-... Dans le gestionnaire de grille, sélectionnez *NODES*.
+... Dans le Gestionnaire de grille, sélectionnez *Nœuds*.
 ... Vérifiez que le nœud de l'appareil a un état normal (icône de coche verte)image:../media/icon_alert_green_checkmark.png["coche verte"] à gauche du nom du nœud), ce qui indique qu'aucune alerte n'est active et que le nœud est connecté au réseau.
 
 

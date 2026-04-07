@@ -1,0 +1,39 @@
+---
+indexpage:
+  title: Maintenance du matériel des appliances SG120 et SG1200
+  summary: Assurez la maintenance du matériel de votre appliance de services SG120
+    et SG1200.
+  keywords: maintain storagegrid sg120, maintain storagegrid sg1200
+  lead: Assurez la maintenance du matériel de votre appliance de services SG120 et
+    SG1200.
+  tiles:
+  - title: Procédures fréquemment effectuées
+    links:
+    - title: Allumer ou éteindre la LED Identify
+      url: "../sg120-1200/turning-sg120-and-sg1200-identify-led-on-and-off.html"
+    - title: Localisez l'appliance dans le data Center
+      url: "../sg120-1200/locating-sg120-and-sg1200-in-data-center.html"
+    - title: Mettez l'appareil hors tension et sous tension
+      url: "../sg120-1200/power-sg120-and-sg1200-off-on.html"
+    - title: Modifier la configuration du lien
+      url: "../sg120-1200/changing-link-configuration-of-sg120-and-sg1200-appliance.html"
+  - title: Procédures de rack
+    links:
+    - title: Remplacez l'appareil SG120 ou SG1200
+      url: "../sg120-1200/replacing-sg120-and-sg1200-appliance.html"
+    - title: Déplacer le SG120 ou le SG1200 dans un rack
+      url: "../sg120-1200/reinstalling-sg120-and-sg1200-into-cabinet-or-rack.html"
+  - title: Procédures matérielles
+    links:
+    - title: Remettez le couvercle en place
+      url: "../sg120-1200/reinstalling-sg120-and-sg1200-cover.html"
+    - title: Remplacez l'alimentation électrique
+      url: "../sg120-1200/replacing-one-or-more-power-supplies-in-sg120-and-sg1200-appliance.html"
+    - title: Remplacer le ventilateur
+      url: "../sg120-1200/replacing-fan-in-sg120-and-sg1200.html"
+    - title: Remplacez le lecteur
+      url: "../sg120-1200/replacing-drive-in-sg120-and-sg1200.html"
+    - title: Remplacez la carte réseau
+      url: "../sg120-1200/replace-nic-in-sg120-and-sg1200.html"
+    - title: Remplacer les piles CMOS
+      url: "../sg120-1200/replace-cmos-in-sg120-and-sg1200.html"

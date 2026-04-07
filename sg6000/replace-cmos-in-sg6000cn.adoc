@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6000-cn, storage node, storage appliance, Replacing, replace, CMOS, battery 
 summary: Utilisez cette procédure pour remplacer la pile bouton CMOS de la carte système. 
 ---
-= Remplacez la pile CMOS SG6000-CN
+= Remplacez la pile CMOS du SG6000-CN
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: Avant de remplacer un lecteur E4000, vérifiez les exigences et les considérations. 
 ---
-= Remplacement du lecteur SG5800
+= Exigences de remplacement du disque SG5800
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

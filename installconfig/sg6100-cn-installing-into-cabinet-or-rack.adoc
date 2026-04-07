@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6100, storage node, storage appliance, install, installing, installation, cabinet, rack, controller, sg6100-cn, rail, rails, sg6160 
 summary: Vous installez un ensemble de rails pour le contrôleur SG6100-CN dans votre armoire ou rack, puis faites glisser le contrôleur sur les rails. 
 ---
-= Installation du contrôleur SG6100-CN (SG6160)
+= Installez le contrôleur SG6100-CN pour un SG6160
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

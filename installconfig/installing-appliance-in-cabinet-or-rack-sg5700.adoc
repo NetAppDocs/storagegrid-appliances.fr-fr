@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg5700, sg5712, sg5760, install, cabinet, rack, rails, drives 
 summary: 'Vous installez un ensemble de rails dans votre armoire ou rack, puis faites glisser l"appareil sur les rails. Si vous disposez d"un SG5760, installez les lecteurs après l"installation de l"appliance.' 
 ---
-= Installation dans l'armoire ou le rack (SG5700)
+= Installez le SG5700 dans une armoire ou un rack
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6000-cn, storage node, storage appliance, replacing, replace, fan, remove, removing, removal, install, installing, installation 
 summary: Le contrôleur de calcul SG6000-CN dispose de huit ventilateurs de refroidissement.  Si l’un des ventilateurs tombe en panne, vous devez le remplacer dès que possible pour garantir un refroidissement adéquat du contrôleur. 
 ---
-= Remplacer le ventilateur du contrôleur de calcul SG6000-CN
+= Remplacez un ventilateur dans le contrôleur de calcul SG6000-CN
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -56,4 +56,4 @@ image::../media/fan_connector_check.png[Contrôle du connecteur du ventilateur]
 . Vérifiez que le nœud de l'appliance s'affiche dans Grid Manager et qu'aucune alerte n'apparaît.
 
 
-Après le remplacement de la pièce, renvoyez la pièce défectueuse à NetApp, en suivant les instructions RMA (retour de matériel) livrées avec le kit. Voir la https://mysupport.netapp.com/site/info/rma["Retour de pièce et amp ; remplacements"^] pour plus d'informations.
+Après avoir remplacé la pièce, retournez la pièce défectueuse à NetApp, comme indiqué dans les instructions RMA fournies avec le kit. Consultez la page  https://mysupport.netapp.com/site/info/rma["Retours et remplacements de pièces"^] pour plus d'informations.

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6000, storage node, storage appliance, install, installing, installation, cabinet, rack, controller, sg6000-cn, remove, removing, removal 
 summary: 'Retirez le contrôleur SG6000-CN d"une armoire ou d"un rack pour accéder au capot supérieur ou pour déplacer l"appliance vers un autre emplacement, puis réinstallez le contrôleur dans une armoire ou un rack une fois la maintenance matérielle terminée.' 
 ---
-= Déplacer le contrôleur SG6000-CN dans l'armoire ou le rack
+= Déplacez le contrôleur SG6000-CN dans une armoire ou un rack
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -51,7 +51,7 @@ Le capot supérieur du contrôleur est accessible.
 . Facultatif : si vous retirez complètement le contrôleur de l'armoire ou du rack, suivez les instructions du kit de rails pour retirer le contrôleur des rails.
 
 
-Après le remplacement de la pièce, renvoyez la pièce défectueuse à NetApp, en suivant les instructions RMA (retour de matériel) livrées avec le kit. Voir la https://mysupport.netapp.com/site/info/rma["Retour de pièce et amp ; remplacements"^] pour plus d'informations.
+Après avoir remplacé la pièce, retournez la pièce défectueuse à NetApp, comme indiqué dans les instructions RMA fournies avec le kit. Consultez la page  https://mysupport.netapp.com/site/info/rma["Retours et remplacements de pièces"^] pour plus d'informations.
 
 
 

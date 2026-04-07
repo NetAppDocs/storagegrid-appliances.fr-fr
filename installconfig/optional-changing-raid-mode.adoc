@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storage node, storage appliance, raid, raid mode, change, changing, modify, DDP, ddp16, RAID 6 
 summary: 'Sur certains modèles d"appliance, vous pouvez changer de mode RAID sur l"appliance pour répondre à vos besoins en stockage et en restauration. Vous ne pouvez modifier le mode qu"avant de déployer l"appliance Storage Node.' 
 ---
-= Facultatif : changement de mode RAID (SG5760, SG5860, SG6000 et SG6160)
+= Modifier le mode RAID pour un SG5760, SG5860, SG6000, SG6160 ou SG6260
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -14,6 +14,16 @@ summary: 'Sur certains modèles d"appliance, vous pouvez changer de mode RAID su
 Sur certains modèles d'appliance, vous pouvez changer de mode RAID sur l'appliance pour répondre à vos besoins en stockage et en restauration. Vous ne pouvez modifier le mode qu'avant de déployer l'appliance Storage Node.
 
 Si vous utilisez ConfigBuilder pour générer un fichier JSON, vous pouvez modifier le mode RAID automatiquement. Voir link:automating-appliance-installation-and-configuration.html["Automatisez l'installation et la configuration de l'appliance"].
+
+Vous pouvez modifier le mode RAID sur les équipements suivants :
+
+* SG5760
+* SG5860
+* SGF6024
+* SG6060
+* SG6160
+* SG6260
+
 
 .Description de la tâche
 Si votre appliance est prise en charge, vous pouvez choisir l'une des options de configuration de volume suivantes :
@@ -25,7 +35,7 @@ NOTE: La taille des volumes n'est pas cohérente entre tous les types DDP et RAI
 +
 ** Par rapport au niveau RAID 6, les pools de disques dynamiques offrent de meilleures performances du système, un temps de reconstruction réduit après une panne disque et une gestion simplifiée.
 ** Un pool de disques est créé par appliance de stockage ou tiroir d'extension.
-** DDP protège les appliances SG5760, SG5860 et SG6160 en cas de perte de tiroir.
+** Le DDP assure la protection contre la perte des tiroirs dans les appareils SG5760, SG5860, SG6160 et SG6260.
 +
 
 NOTE: La technologie DDP ne protège pas la perte de tiroirs dans les appliances SG6060, à cause des deux disques SSD. La protection contre la perte des tiroirs est effective dans toutes les étagères d'extension ajoutées à une SG6060.
@@ -120,6 +130,30 @@ La page d'accueil du programme d'installation de l'appliance StorageGRID s'affic
 
 --
 .SG6160
+--
+.Avant de commencer
+* Vous utilisez n'importe quel client pouvant vous connecter à StorageGRID.
+* Le client a un  https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["navigateur web pris en charge"^].
+
+
+.Étapes
+. Ouvrez un navigateur et entrez l'une des adresses IP du contrôleur de calcul de l'appliance.
++
+`*https://_Controller_IP_:8443*`
+
++
+`_Controller_IP_` Est l'adresse IP du contrôleur de calcul (pas le contrôleur de stockage) sur l'un des trois réseaux StorageGRID.
+
++
+La page d'accueil du programme d'installation de l'appliance StorageGRID s'affiche.
+
+. Sélectionnez *Avancé* > *mode RAID*.
+. Sur la page *configurer le mode RAID*, sélectionnez le mode RAID souhaité dans la liste déroulante mode.
+. Cliquez sur *Enregistrer*.
+
+
+--
+.SG6260
 --
 .Avant de commencer
 * Vous utilisez n'importe quel client pouvant vous connecter à StorageGRID.

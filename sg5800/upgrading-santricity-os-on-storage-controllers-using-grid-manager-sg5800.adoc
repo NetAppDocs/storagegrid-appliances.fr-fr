@@ -2,16 +2,16 @@
 permalink: sg5800/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg5800.html 
 sidebar: sidebar 
 keywords: storage node, storage appliance, controller, storage controller, upgrade, upgrading, SANtricity OS, SANtricity 
-summary: 'Pour les contrôleurs de stockage qui utilisent actuellement SANtricity OS 08.42.20.00 \(11.42\) ou version ultérieure, vous devez utiliser Grid Manager pour appliquer une mise à niveau.' 
+summary: Vous pouvez utiliser le Gestionnaire de grille pour appliquer une mise à niveau. 
 ---
-= Mettez à niveau SANtricity OS sur les contrôleurs de stockage SG5800 à l'aide de Grid Manager
+= Mettez à niveau le système d'exploitation SANtricity sur les contrôleurs de stockage SG5800 à l'aide de Grid Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-Pour les contrôleurs de stockage qui utilisent SANtricity OS 08.42.20.00 (11.42) ou version ultérieure, vous pouvez utiliser le Gestionnaire de grille pour appliquer une mise à niveau. Vous pouvez également link:upgrading-santricity-os-on-storage-controller.html["utilisez le mode maintenance pour appliquer une mise à niveau"].
+Vous pouvez utiliser le Gestionnaire de grille pour appliquer une mise à niveau. Vous pouvez également link:upgrading-santricity-os-on-storage-controller.html["utilisez le mode maintenance pour appliquer une mise à niveau"].
 
 .Avant de commencer
 * Si vous n'avez pas obtenu la version du système d'exploitation SANtricity que vous souhaitez mettre à niveau vers à partir de https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["Téléchargement NetApp : appliance StorageGRID"^], vous avez consulté https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["Téléchargement NetApp : appliance StorageGRID"^] ou le https://imt.netapp.com/matrix/#welcome["Matrice d'interopérabilité NetApp (IMT)"^] Pour vérifier que la version de SANtricity OS utilisée pour la mise à niveau est compatible avec votre appliance.
@@ -114,7 +114,7 @@ CAUTION: N'approuvez pas la mise à niveau de SANtricity OS pour un nœud de sto
 
 NOTE: Si l'ordre dans lequel les nœuds sont mis à niveau est important, approuvez les nœuds ou les groupes de nœuds un par un et attendez que la mise à niveau soit terminée sur chaque nœud avant d'approuver le nœud suivant.
 
-** Sélectionnez un ou plusieurs boutons *Approve* pour ajouter un ou plusieurs nœuds à la file d'attente de mise à niveau de SANtricity OS. Le bouton *Approve* est désactivé si l'état n'est pas nominal.
+** Sélectionnez un ou plusieurs boutons *Approuver* pour ajouter un ou plusieurs nœuds à la file d'attente de mise à niveau du système d'exploitation SANtricity. Le bouton *Approuver* est désactivé si l'état n'est pas Nominal.
 +
 Après avoir sélectionné *Approve*, le processus de mise à niveau détermine si le noeud peut être mis à niveau. Si un nœud peut être mis à niveau, il est ajouté à la file d'attente de mise à niveau.
 
@@ -160,14 +160,14 @@ Aucune autre action n'est requise.
 
 
  a| 
-La mise à niveau de SANtricity OS n'est pas applicable à ce nœud.
+La mise à niveau du système d'exploitation SANtricity n'est pas applicable à ce nœud.
  a| 
 Le nœud ne dispose d'aucun contrôleur de stockage qui peut être géré par le système StorageGRID. Terminez le processus de mise à niveau sans mettre à niveau le nœud affichant ce message.
 
 
 
  a| 
-SANtricity OS fichier n'est pas compatible avec ce nœud.
+Le fichier SANtricity OS n'est pas compatible avec ce nœud.
  a| 
 Le nœud nécessite un fichier SANtricity OS différent de celui que vous avez sélectionné.
 Une fois la mise à niveau actuelle terminée, téléchargez le fichier SANtricity OS approprié pour le nœud et répétez le processus de mise à niveau.

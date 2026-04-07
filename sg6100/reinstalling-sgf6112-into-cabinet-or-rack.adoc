@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sgf6112, storage node, storage appliance, install, installing, installation, cabinet, rack 
 summary: 'Retirez le SGF6112 d"une armoire ou d"un rack pour accéder au capot supérieur ou pour déplacer l"appliance vers un autre emplacement, puis réinstallez l"appliance dans une armoire ou un rack une fois la maintenance matérielle terminée.' 
 ---
-= Déplacer le SGF6112 ou le SG6100-CN dans une armoire ou un rack
+= Déplacez un SGF6112 ou un SG6100-CN dans une armoire ou un rack
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -46,7 +46,7 @@ Le capot supérieur de l'appareil est accessible.
 . Facultatif : si vous retirez complètement l'appareil de l'armoire ou du rack, suivez les instructions du kit de rails pour retirer l'appareil des rails.
 
 
-Après le remplacement de la pièce, renvoyez la pièce défectueuse à NetApp, en suivant les instructions RMA (retour de matériel) livrées avec le kit. Voir la https://mysupport.netapp.com/site/info/rma["Retour de pièce et amp ; remplacements"^] pour plus d'informations.
+Après avoir remplacé la pièce, retournez la pièce défectueuse à NetApp, comme indiqué dans les instructions RMA fournies avec le kit. Consultez la page  https://mysupport.netapp.com/site/info/rma["Retours et remplacements de pièces"^] pour plus d'informations.
 
 
 

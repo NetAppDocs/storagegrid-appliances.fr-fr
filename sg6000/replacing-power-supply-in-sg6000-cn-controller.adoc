@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6000, storage node, storage appliance, Replacing, replace, sg6000-cn, power supply, remove, removing, removal, install, installing, installation 
 summary: 'Le contrôleur SG6000-CN dispose de deux blocs d"alimentation pour la redondance. En cas de panne de l"un des blocs d"alimentation, vous devez le remplacer dès que possible afin de s"assurer que le contrôleur de calcul est alimenté en redondance.' 
 ---
-= Remplacez l'alimentation du contrôleur SG6000-CN
+= Remplacer l'alimentation d'un contrôleur SG6000-CN
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

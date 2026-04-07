@@ -1,0 +1,84 @@
+---
+permalink: sg6200/reinstalling-sg6200-into-cabinet-or-rack.html 
+sidebar: sidebar 
+keywords: storagegrid, sgf6212, sg6200, sg6200cn, storage node, storage appliance, install, installing, installation, cabinet, rack 
+summary: 'Retirez le SGF6212 d"une armoire ou d"un rack pour accéder au couvercle supérieur ou pour déplacer l"appareil vers un autre emplacement, puis réinstallez l"appareil dans une armoire ou un rack une fois la maintenance matérielle terminée.' 
+---
+= Déplacez le SGF6212 ou le SG6200-CN dans l'armoire ou le rack
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Retirez le SGF6212 ou le SG6200-CN d'une armoire ou d'un rack pour accéder au couvercle supérieur ou pour déplacer l'appareil vers un autre emplacement, puis réinstallez l'appareil dans une armoire ou un rack une fois la maintenance matérielle terminée.
+
+
+
+== Retirez le SGF6212 ou le SG6200-CN de l'armoire ou du rack
+
+.Avant de commencer
+* Vous disposez d'étiquettes pour identifier chaque câble connecté au SGF6212 ou au SG6200-CN.
+* Vous avez link:locating-sg6200-in-data-center.html["physiquement situé le SGF6212 ou SG6200-CN"] où vous effectuez la maintenance dans le centre de données.
+* Vous avez link:power-sg6200-off-on.html#shut-down-the-sgf6212-appliance-or-sg6200-cn-controller["Éteignez le SGF6212 ou le SG6200-CN"].
++
+
+CAUTION: N'éteignez pas l'appareil à l'aide de l'interrupteur d'alimentation.
+
+
+
+.Étapes
+. Etiquetez puis débranchez les câbles d'alimentation de l'appareil.
+. Enroulez l'extrémité du bracelet antistatique autour de votre poignet et fixez l'extrémité du clip à une masse métallique afin d'éviter toute décharge statique.
+. Etiquetez puis débranchez les câbles de données de l'appliance et les émetteurs-récepteurs SFP+ ou SFP28.
++
+
+NOTE: Pour éviter toute dégradation des performances, ne tordez pas, ne pliez pas, ne pincez pas ou ne montez pas sur les câbles.
+
+. Desserrez les deux vis imperdables situées sur le panneau avant de l'appareil.
++
+image::../media/s25_rack_retaining_screws.png[vis de fixation de rack SGF6212 ou SG6200-CN]
+
+. Faites glisser le SGF6212 ou le SG6200-CN vers l'avant hors du rack jusqu'à ce que les rails de montage soient complètement déployés et que vous entendiez les loquets des deux côtés s'enclencher.
++
+Le capot supérieur de l'appareil est accessible.
+
+. Facultatif : si vous retirez complètement l'appareil de l'armoire ou du rack, suivez les instructions du kit de rails pour retirer l'appareil des rails.
+
+
+Après avoir remplacé la pièce, retournez la pièce défectueuse à NetApp, comme indiqué dans les instructions RMA fournies avec le kit. Consultez la page  https://mysupport.netapp.com/site/info/rma["Retours et remplacements de pièces"^] pour plus d'informations.
+
+
+
+== Réinstallez le SGF6212 ou le SG6200-CN dans l'armoire ou le rack
+
+.Avant de commencer
+Vous avez link:reinstalling-sg6200-cover.html["réinstallez le capot de l'appareil - effectué"].
+
+.Étapes
+. Appuyez sur le rail bleu pour libérer simultanément les deux rails du rack et faites glisser le SGF6212 ou le SG6200-CN dans le rack jusqu'à ce qu'il soit complètement en place.
++
+Lorsque vous ne pouvez plus déplacer le contrôleur, tirez sur les loquets bleus des deux côtés du châssis pour faire glisser le contrôleur complètement vers l'intérieur.
+
++
+image::../media/sg6000_cn_rails_blue_button.gif[Rails coulissants SG6000]
+
++
+
+NOTE: Ne fixez le panneau avant qu'après la mise sous tension du contrôleur.
+
+. Serrez les vis imperdables du panneau avant du contrôleur pour fixer le contrôleur dans le rack.
++
+image::../media/s25_rack_retaining_screws.png[Vis de fixation du rack SG6060]
+
+. Enroulez l'extrémité du bracelet antistatique autour de votre poignet et fixez l'extrémité du clip à une masse métallique afin d'éviter toute décharge statique.
+. link:../installconfig/cabling-appliance.html["Rebranchez les câbles de données du contrôleur et tous les émetteurs-récepteurs SFP+, SFP28, QSFP+, QSFP28 ou QSFP56"].
++
+
+NOTE: Pour éviter toute dégradation des performances, ne tordez pas, ne pliez pas, ne pincez pas ou ne montez pas sur les câbles.
+
+. link:../installconfig/connecting-power-cords-and-applying-power.html["Rebranchez les câbles d'alimentation du contrôleur"].
+
+
+.Une fois que vous avez terminé
+link:power-sg6200-off-on.html#power-on-sgf6212-or-sg6200-cn-and-verify-operation["Redémarrez l'appareil"].

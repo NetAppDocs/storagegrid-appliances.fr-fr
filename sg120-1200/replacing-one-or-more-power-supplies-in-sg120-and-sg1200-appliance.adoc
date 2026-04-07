@@ -1,0 +1,66 @@
+---
+permalink: sg120-1200/replacing-one-or-more-power-supplies-in-sg120-and-sg1200-appliance.html 
+sidebar: sidebar 
+keywords: storagegrid, sg120, sg1200, Replacing, replace, power supply, remove, removing, removal, install, installing, installation 
+summary: 'Les appliances SG120 et SG1200 disposent de deux alimentations pour la redondance. Si l"une des alimentations tombe en panne, vous devez la remplacer dès que possible afin de garantir que l"appliance dispose d"une alimentation redondante. Les deux alimentations utilisées dans l"appliance doivent être du même modèle et de la même puissance.' 
+---
+= Remplacez une ou les deux alimentations du SG120 ou du SG1200
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Les appliances SG120 et SG1200 sont équipées de deux alimentations pour la redondance. Si l'une des alimentations tombe en panne, vous devez la remplacer dès que possible afin de garantir que l'appliance dispose d'une alimentation redondante. Les deux alimentations utilisées dans l'appliance doivent être du même modèle et de la même puissance.
+
+.Description de la tâche
+La figure montre les deux blocs d'alimentation pour les modèles SG120 et SG1200. Les blocs d'alimentation sont accessibles depuis l'arrière de l'appareil.
+
+image::../media/sg120_sg1200_power_supplies.png[Arrière du SG120/SG1200 avec deux alimentations]
+
+.Avant de commencer
+* Vous avez link:locating-sg120-and-sg1200-in-data-center.html["l'appareil se trouve physiquement"] avec l'alimentation électrique à remplacer.
+* Vous avez link:verify-component-to-replace.html["déterminez l'emplacement du bloc d'alimentation à remplacer - effectué"].
+* Si vous remplacez une seule alimentation :
++
+** Vous avez déballé le bloc d'alimentation de remplacement et vous êtes assuré qu'il est le même modèle et la même puissance que l'unité d'alimentation que vous remplacez.
+** Vous avez confirmé que l'autre bloc d'alimentation est installé et en cours d'exécution.
+
+
+* Si vous remplacez les deux alimentations en même temps, assurez-vous qu'elles soient du même modèle et de la même puissance.
+
+
+.Étapes
+. Si vous ne remplacez qu'un seul bloc d'alimentation, il n'est pas nécessaire d'éteindre l'appareil. Passez à l'<<Unplug_the_power_cord,Débranchez le cordon d'alimentation>>étape. Si vous remplacez les deux blocs d'alimentation en même temps, link:power-sg120-and-sg1200-off-on.html#shut-down-the-sg120-or-sg1200-appliance["Arrêtez l'appareil"]avant de débrancher les cordons d'alimentation.
+. [[débrancher_the_power_cordon, START=2]]débranchez le cordon d'alimentation de chaque alimentation à remplacer.
++
+Vu de l'arrière de l'appareil, le bloc D'alimentation A (PSU0) se trouve à droite et le bloc d'alimentation B (PSU1) à gauche.
+
+. Soulevez la poignée de la première alimentation à remplacer.
++
+image::../media/sg6000_cn_lift_cam_handle_psu.gif[Soulèvement de la poignée pour retirer le bloc d'alimentation]
+
+. Appuyez sur le loquet bleu et retirez le bloc d'alimentation.
++
+image::../media/sg6000_cn_remove_power_supply.gif[Retrait d'un bloc d'alimentation]
+
+. Avec le loquet bleu sur la droite, faites glisser le bloc d'alimentation de remplacement dans le châssis.
++
+
+IMPORTANT: Les deux blocs d'alimentation installés doivent être du même modèle et de la même puissance.
+
++
+Assurez-vous que le loquet bleu se trouve sur le côté droit lorsque vous faites glisser l'unité de rechange.
+
++
+Vous sentirez un clic lorsque le bloc d'alimentation est verrouillé en place.
+
++
+image::../media/sg6000_cn_insert_power_supply.gif[Insertion du bloc d'alimentation]
+
+. Poussez la poignée vers le bas contre le corps du bloc d'alimentation.
+. Si vous remplacez les deux blocs d'alimentation, répétez les étapes 2 à 6 pour remplacer la seconde.
+. link:../installconfig/connecting-power-cords-and-applying-power.html["Branchez les câbles d'alimentation aux unités remplacées et mettez-les sous tension"].
+
+
+Après avoir remplacé la pièce, retournez la pièce défectueuse à NetApp, comme indiqué dans les instructions RMA fournies avec le kit. Consultez la page  https://mysupport.netapp.com/site/info/rma["Retours et remplacements de pièces"^] pour plus d'informations.

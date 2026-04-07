@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E4000 replace canister, replacing E4000 canister, E4000 replace power supply, replacing E4000 power supply, E4000 replace fan, replacing E4000 fan, E4000, E-Series, eseries 
 summary: Passez en revue les types de canister E4000 et les exigences. 
 ---
-= Remplacement du bloc d'alimentation du tiroir du contrôleur de stockage (SG6160)
+= Remplacez l'alimentation d'un châssis de contrôleur de stockage SG6160
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -33,7 +33,7 @@ NOTE: Ne mélangez pas des blocs d'alimentation de différents types de tension.
 ** Un bracelet antistatique ou d'autres précautions antistatiques.
 ** Accès à SANtricity System Manager :
 +
-*** Dans le Gestionnaire de grille, sélectionnez *NODES* > *_appliance node_* > *SANtricity System Manager*. Les informations du contrôleur se trouvent sur le https://docs.netapp.com/us-en/storagegrid/monitor/viewing-santricity-system-manager-tab.html["Onglet Gestionnaire système SANtricity"].
+*** Dans Grid Manager, sélectionnez *Nœuds* > *_appliance node_* > *SANtricity System Manager*. Les informations du contrôleur se trouvent sur le https://docs.netapp.com/us-en/storagegrid/monitor/viewing-santricity-system-manager-tab.html["Onglet Gestionnaire système SANtricity"].
 *** Pointez un navigateur de votre station de gestion vers le nom de domaine ou l'adresse IP du contrôleur.
 
 

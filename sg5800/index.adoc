@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= Maintenance de l'appliance SG5800
+= Entretien de l'appareil SG5800
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

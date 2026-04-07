@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg110, sg1100, storage node, install, installing, installation, cabinet, rack, rail, rails 
 summary: 'Vous installez un ensemble de rails pour l"appareil dans votre armoire ou rack, puis faites glisser l"appareil sur les rails.' 
 ---
-= Installation dans l'armoire ou le rack (SG110 ou SG1100)
+= Installez le SG110 ou le SG1100 dans une armoire ou un rack
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

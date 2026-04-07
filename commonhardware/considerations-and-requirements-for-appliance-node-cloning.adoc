@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, clone appliance node, cloning appliance node 
 summary: 'Avant de cloner un nœud d"appliance, vous devez comprendre les considérations et les exigences.' 
 ---
-= Considérations et configuration requise pour le clonage des nœuds d'appliance
+= Exigences pour le clonage des nœuds de l'appliance StorageGRID
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -65,18 +65,20 @@ NOTE: L'utilisation du réseau d'administration 1 GbE pour le transfert des donn
 
 * Déterminez si vous utiliserez le chiffrement des nœuds à l'aide d'un serveur de gestion de clés (KMS) sur l'appliance cible, afin de pouvoir activer le chiffrement des nœuds lors de l'installation initiale de l'appliance cible avant le clonage.  Vous pouvez vérifier si le chiffrement du nœud est activé sur le nœud de l'appareil source comme décrit dans lelink:../installconfig/optional-enabling-node-encryption.html["activation du chiffrement de nœud"] .
 +
-Le nœud source et l'appliance cible peuvent avoir des paramètres de chiffrement de nœud différents avec les exceptions suivantes.  Le clonage de nœuds n'est pas pris en charge à partir de sources de nœuds non chiffrées vers des cibles chiffrées pour les appliances suivantes :
+Le nœud source et l'appliance cible peuvent avoir des paramètres de chiffrement de nœud différents, à quelques exceptions près. Le clonage de nœuds n'est pas pris en charge depuis des sources non chiffrées vers des cibles chiffrées pour les appliances suivantes :
 
 +
 ** Un appareil de nœud SGF6112 sans cryptage de nœud vers un appareil SGF6112 avec cryptage de nœud
 ** Un appareil de nœud SG1100 sans cryptage de nœud vers un appareil SG1100 avec cryptage de nœud
+** Passer d'un dispositif SG1200 sans chiffrement à un dispositif SG1200 avec chiffrement
 ** Un appareil de nœud SG110 sans cryptage de nœud vers un appareil SG110 avec cryptage de nœud
+** Passer d'un dispositif de nœud SG120 sans chiffrement à un dispositif SG120 avec chiffrement
 
 
 +
 Le décryptage et le cryptage des données sont effectués automatiquement pendant le transfert de données et lorsque le nœud cible redémarre et rejoint la grille.
 
-* Déterminez si le mode RAID de l'appliance cible doit être modifié par défaut, afin que vous puissiez spécifier ces informations lors de l'installation initiale de l'appliance cible avant le clonage. Vous pouvez afficher des informations sur le mode RAID actuel du nœud de l'appliance source sur la page *NODES* dans Grid Manager. Sélectionnez l'onglet *matériel* de l'appareil.
+* Déterminez si le mode RAID de l'appliance cible doit être modifié par rapport à sa configuration par défaut afin de pouvoir spécifier cette information lors de l'installation initiale de l'appliance cible avant le clonage. Vous pouvez consulter les informations relatives au mode RAID actuel du nœud de l'appliance source sur la page *Nodes* de Grid Manager. Sélectionnez l'onglet *Hardware* de l'appliance.
 +
 Le nœud source et l'appliance cible peuvent avoir des paramètres RAID différents.
 

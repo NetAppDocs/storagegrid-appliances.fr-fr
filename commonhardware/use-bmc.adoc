@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, bmc 
 summary: 'Certaines appliances StorageGRID incluent un contrôleur de gestion de carte de base (BMC) qui permet un accès matériel de bas niveau pour la configuration, la surveillance et le diagnostic des appliances.' 
 ---
-= Utilisation du contrôleur de gestion de la carte mère (BMC) de l'appliance StorageGRID
+= Contrôleur de gestion de carte mère pour les appliances StorageGRID
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -17,10 +17,13 @@ L'interface BMC est prise en charge par les modèles d'appliance StorageGRID sui
 
 * SG100
 * SG110
+* SG120
 * SG1000
 * SG1100
+* SG1200
 * SG6000
 * SG6100
+* SG6200
 
 
 Pour plus d'informations sur l'utilisation de l'interface BMC de ces dispositifs, reportez-vous au https://kb.netapp.com/hybrid/StorageGRID/Platforms/How_to_use_StorageGRID_Appliance_BMC_with_vendor_supplied_user_guide["Guide de l'utilisateur BMC"^]. Vous ne devez accéder aux fonctions BMC qui sont _non_ documentées dans la documentation StorageGRID que lorsque vous êtes dirigé par le support technique.
@@ -42,26 +45,32 @@ Les procédures BMC suivantes sont documentées pour une utilisation avec les ap
 * link:../installconfig/setting-up-email-notifications-for-alerts.html["Configurez les notifications d'alertes par e-mail"]
 * Dépannage de l'installation matérielle :
 +
-** link:../installconfig/troubleshooting-hardware-installation-sg100-and-sg1000.html["SG1000 et SG100"]
-** link:../installconfig/troubleshooting-hardware-installation-sg110-and-sg1100.html["SG1100 et SG110"]
+** link:../installconfig/troubleshooting-hardware-installation-sg100-and-sg1000.html["SG100 et SG1000"]
+** link:../installconfig/troubleshooting-hardware-installation-sg110-and-sg1100.html["SG110 et SG1100"]
+** link:../installconfig/troubleshooting-hardware-installation-sg120-and-sg1200.html["SG120 et SG1200"]
 ** link:../installconfig/troubleshooting-hardware-installation.html["SG6000"]
 ** link:../installconfig/troubleshooting-hardware-installation-sg6100.html["SG6100"]
+** link:../installconfig/troubleshooting-hardware-installation-sg6200.html["SG6200"]
 
 
 * Déterminez l'état d'alimentation de l'appareil :
 +
 ** link:../sg100-1000/shut-down-sg100-and-sg1000.html["SG1000 et SG100"]
-** link:../sg110-1100/power-sg110-and-sg1100-off-on.html["SG1100 et SG110"]
+** link:../sg110-1100/power-sg110-and-sg1100-off-on.html["SG110 et SG1100"]
+** link:../sg120-1200/power-sg120-and-sg1200-off-on.html["SG120 et SG1200"]
 ** link:../sg6000/power-sg6000-cn-controller-off-on.html["SG6000"]
 ** link:../sg6100/power-sgf6112-off-on.html["SG6100"]
+** link:../sg6200/power-sg6200-off-on.html["SG6200"]
 
 
 * Allumez et éteignez le voyant d'identification de l'appareil :
 +
 ** link:../sg100-1000/turning-controller-identify-led-on-and-off.html["SG1000 et SG100"]
 ** link:../sg110-1100/turning-sg110-and-sg1100-identify-led-on-and-off.html["SG1100 et SG110"]
+** link:../sg120-1200/turning-sg120-and-sg1200-identify-led-on-and-off.html["SG120 et SG1200"]
 ** link:../sg6000/turning-controller-identify-led-on-and-off.html["SG6000"]
 ** link:../sg6100/turning-sgf6112-identify-led-on-and-off.html["SG6100"]
+** link:../sg6200/turning-sg6200-identify-led-on-and-off.html["SG6200"]
 
 
 

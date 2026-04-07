@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E4000 replace 60-drive power canister, replacing E4000 power canister, E4000, E-Series, eseries 
 summary: 'Remplacez un tiroir de contrôleur de 60 disques ou un tiroir de disque, qui inclut deux blocs d"alimentation pour la redondance de l"alimentation.' 
 ---
-= Remplacement du boîtier d'alimentation dans le tiroir du contrôleur de stockage ou le tiroir d'extension (SG6160)
+= Remplacez un bloc d'alimentation dans un châssis de contrôleur de stockage SG6160 ou tiroir d'extension
 :allow-uri-read: 
 :experimental: 
 :icons: font

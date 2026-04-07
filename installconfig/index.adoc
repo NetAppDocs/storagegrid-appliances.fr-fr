@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Installation, deployment, Install, deploy, Installing, deploying 
 summary: Suivez ces étapes générales pour installer et configurer une appliance StorageGRID et la déployer comme nœud dans votre système StorageGRID. 
 ---
-= Démarrage rapide pour l'installation de l'appareil
+= Démarrage rapide pour l'installation de l'appliance StorageGRID
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -33,10 +33,12 @@ Cette étape est facultative. Cependant, la rationalisation et l'automatisation 
 +
 ** link:installing-appliance-in-cabinet-or-rack-sg100-and-sg1000.html["SG100 et SG1000"]
 ** link:installing-appliance-in-cabinet-or-rack-sg110-and-sg1100.html["SG110 et SG1100"]
+** link:installing-appliance-in-cabinet-or-rack-sg120-and-sg1200.html["SG120 et SG1200"]
 ** link:installing-appliance-in-cabinet-or-rack-sg5700.html["SG5700"]
 ** link:installing-appliance-in-cabinet-or-rack-sg5800.html["SG5800"]
 ** link:installing-hardware-sg6000.html["SG6000"]
 ** link:installing-hardware-sg6100.html["SG6100"]
+** link:installing-hardware-sg6200.html["SG6200"]
 
 
 . link:cabling-appliance.html["Appareil câblé"]
@@ -58,12 +60,12 @@ Si vous configurez et déployez plusieurs appliances, utilisez l'outil NetApp Co
 ** link:verifying-port-level-network-connections.html["Vérifiez les connexions réseau au niveau des ports"]
 
 
-. link:accessing-and-configuring-santricity-system-manager.html["Accès à SANtricity System Manager et configuration de celui-ci"] (SG6160, SG5700, SG5800 ET SG6000)
-. link:configuring-bmc-interface.html["Configurez l'interface BMC"] (SG6100, SG6000 et appliances de services)
+. link:accessing-and-configuring-santricity-system-manager.html["Accès à SANtricity System Manager et configuration de celui-ci"] (SG6260, SG6160, SG5700, SG5800 et SG6000)
+. link:configuring-bmc-interface.html["Configurez l'interface BMC"] (SG6200, SG6100, SG6000 et appareils de service)
 . Effectuez les étapes de configuration facultatives
 +
 ** link:optional-enabling-node-encryption.html["Activez le chiffrement des nœuds ou des disques"]
-** link:optional-changing-raid-mode.html["Changement de mode RAID (SG6160, SG6000, SG5860 et SG5760)"]
+** link:optional-changing-raid-mode.html["Changer le mode RAID"](SG6260, SG6160, SG6000, SG5860 et SG5760)
 ** link:optional-remapping-network-ports-for-appliance.html["Remappez les ports réseau"]
 
 

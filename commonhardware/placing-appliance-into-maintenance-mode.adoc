@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6000, storage node, storage appliance, maintenance mode 
 summary: 'Vous devez mettre l"appareil en mode maintenance avant d"effectuer des procédures de maintenance spécifiques.' 
 ---
-= Mettez l'appareil en mode maintenance
+= Placez une appliance StorageGRID en mode maintenance
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -25,7 +25,7 @@ Dans de rares cas, le fait de placer une appliance StorageGRID en mode de mainte
 NOTE: Le mot de passe du compte admin et les clés d'hôte SSH d'une appliance StorageGRID en mode maintenance restent identiques à ceux de l'appliance lorsqu'elle était en service.
 
 .Étapes
-. Dans Grid Manager, sélectionnez *NODES*.
+. Dans le Gestionnaire de grille, sélectionnez *Nœuds*.
 . Dans l'arborescence de la page nœuds, sélectionnez le nœud de stockage de l'appliance.
 . Sélectionnez *tâches*.
 . Sélectionnez *Maintenance mode*. Une boîte de dialogue de confirmation s'affiche.
@@ -54,7 +54,7 @@ NOTE: Si vous disposez d'une connexion directe au port de gestion de l'appliance
 Le redémarrage de l'appareil et sa reconnexion au réseau peuvent prendre jusqu'à 20 minutes.  Pour confirmer que le redémarrage est terminé et que le nœud a rejoint la grille :
 
 +
-.. Dans le gestionnaire de grille, sélectionnez *NODES*.
+.. Dans le Gestionnaire de grille, sélectionnez *Nœuds*.
 .. Vérifiez que le nœud de l'appareil a un état normal (icône de coche verte)image:../media/icon_alert_green_checkmark.png["coche verte"] à gauche du nom du nœud), ce qui indique qu'aucune alerte n'est active et que le nœud est connecté au réseau.
 
 

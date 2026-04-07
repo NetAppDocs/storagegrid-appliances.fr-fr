@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6000, storage node, storage appliance, upgrade, firmware, drive, disk, SANtricity System Manager, SANtricity 
 summary: Vous mettez à niveau le micrologiciel de votre lecteur pour vous assurer que vous disposez de toutes les dernières fonctionnalités et correctifs. 
 ---
-= Mettez à niveau le firmware du disque SG6000 à l'aide du Gestionnaire système SANtricity en utilisant la méthode en ligne
+= Mettez à niveau le firmware des disques SG6000 avec la méthode en ligne de SANtricity System Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -35,7 +35,7 @@ Il existe deux types de disques : les disques SSD et les disques durs. Vous deve
 . Pour accéder à SANtricity System Manager, utilisez l'une des méthodes suivantes :
 +
 ** Utilisez le programme d'installation de l'appliance StorageGRID et sélectionnez *Avancé* > *Gestionnaire système SANtricity*
-** Utilisez le Gestionnaire de grille et sélectionnez *NODES* > *_noeud de stockage_* > *Gestionnaire système SANtricity*
+** Utilisez le Grid Manager et sélectionnez *Nodes* > *_Storage Node_* > *SANtricity System Manager*
 ** Pour utiliser SANtricity System Manager, accédez à l'adresse IP du contrôleur de stockage :
 +
 `*https://_Storage_Controller_IP_*`

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6000, storage node, storage appliance, Replacing, replace, sg6000-cn, controller, remove, removing, removal, install, installing, installation 
 summary: 'Vous devrez peut-être remplacer le contrôleur SG6000-CN s"il ne fonctionne pas de manière optimale ou s"il est défectueux.' 
 ---
-= Remplacer le contrôleur SG6000-CN
+= Remplacer un contrôleur SG6000-CN
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -119,7 +119,7 @@ NOTE: Il se peut qu'une connexion de service-ordinateur portable ne soit pas dis
 . Vérifiez que le nœud de l'appliance s'affiche dans Grid Manager et qu'aucune alerte n'apparaît.
 
 
-Après le remplacement de la pièce, renvoyez la pièce défectueuse à NetApp, en suivant les instructions RMA (retour de matériel) livrées avec le kit. Voir la https://mysupport.netapp.com/site/info/rma["Retour de pièce et amp ; remplacements"^] pour plus d'informations.
+Après avoir remplacé la pièce, retournez la pièce défectueuse à NetApp, comme indiqué dans les instructions RMA fournies avec le kit. Consultez la page  https://mysupport.netapp.com/site/info/rma["Retours et remplacements de pièces"^] pour plus d'informations.
 
 .Informations associées
 * link:../installconfig/sg6000-cn-installing-into-cabinet-or-rack.html["Installez le SG6000-CN dans l'armoire ou le rack"]

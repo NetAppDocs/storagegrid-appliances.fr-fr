@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: kms, key management server, monitor, monitoring, status, encryption 
 summary: 'Si vous avez activé le chiffrement de nœud pour l"appliance lors de l"installation, vous pouvez surveiller l"état du chiffrement de nœud de chaque nœud d"appliance, y compris les informations relatives à l"état de chiffrement de nœud et au serveur de gestion des clés \(KMS\).' 
 ---
-= Surveillez le chiffrement des nœuds en mode de maintenance
+= Surveiller le chiffrement d'un appareil StorageGRID en mode maintenance
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -49,7 +49,7 @@ CAUTION: L'effacement de la configuration KMS supprime les données de l'applian
 Le redémarrage de l'appareil et sa reconnexion au réseau peuvent prendre jusqu'à 20 minutes.  Pour confirmer que le redémarrage est terminé et que le nœud a rejoint la grille :
 
 +
-... Dans le gestionnaire de grille, sélectionnez *NODES*.
+... Dans le Gestionnaire de grille, sélectionnez *Nœuds*.
 ... Vérifiez que le nœud de l'appareil a un état normal (icône de coche verte)image:../media/icon_alert_green_checkmark.png["coche verte"] à gauche du nom du nœud), ce qui indique qu'aucune alerte n'est active et que le nœud est connecté au réseau.
 
 

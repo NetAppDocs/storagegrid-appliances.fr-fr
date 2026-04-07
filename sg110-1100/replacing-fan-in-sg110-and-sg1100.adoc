@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg110, sg1100, admin appliance, replacing, replace, fan, remove, removing, removal, install, installing 
 summary: 'Les appareils SG110 ou SG1100 sont équipés de huit ventilateurs de refroidissement. Si l"un des ventilateurs tombe en panne, vous devez le remplacer dès que possible pour vous assurer que l"appareil est bien refroidi.' 
 ---
-= Remplacez le ventilateur dans un SG110 ou un SG1100
+= Remplacer un ventilateur dans un SG110 ou un SG1100
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -129,4 +129,4 @@ Utilisez l'interface BMC pour surveiller l'état de démarrage.
 . Vérifiez que le nœud de l'appliance s'affiche dans Grid Manager et qu'aucune alerte n'apparaît.
 
 
-Après le remplacement de la pièce, renvoyez la pièce défectueuse à NetApp, en suivant les instructions RMA (retour de matériel) livrées avec le kit. Voir la https://mysupport.netapp.com/site/info/rma["Retour de pièce et amp ; remplacements"^] pour plus d'informations.
+Après avoir remplacé la pièce, retournez la pièce défectueuse à NetApp, comme indiqué dans les instructions RMA fournies avec le kit. Consultez la page  https://mysupport.netapp.com/site/info/rma["Retours et remplacements de pièces"^] pour plus d'informations.

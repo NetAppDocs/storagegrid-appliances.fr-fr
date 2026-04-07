@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: equipment to install appliance, tools for installation 
 summary: 'Avant d"installer une appliance StorageGRID, vérifiez que vous disposez de tous les équipements et outils supplémentaires dont vous avez besoin.' 
 ---
-= Procurez-vous des équipements et outils supplémentaires
+= Obtenez des équipements et des outils supplémentaires pour les appliances StorageGRID
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -83,7 +83,7 @@ Câbles optiques et émetteurs-récepteurs::
 *** Adaptateur QSFP-to-SFP (QSA) et SFP+ 10 GbE
 *** Adaptateur QSFP-to-SFP (QSA) à 25 GbE et SFP28
 *** QSFP+ 40 GbE
-*** QFSP28 100 GbE
+*** QSFP28 à 100 GbE
 
 
 
@@ -121,7 +121,46 @@ Câbles optiques et émetteurs-récepteurs::
 *** Adaptateur QSFP-to-SFP (QSA) et SFP+ 10 GbE
 *** Adaptateur QSFP-to-SFP (QSA) à 25 GbE et SFP28
 *** QSFP+ 40 GbE
-*** QFSP28 100 GbE
+*** QSFP28 à 100 GbE
+
+
+
+
+
+
+--
+Câbles Ethernet:: RJ-45 (Cat5/Cat5e/Cat6/Cat6a)
+
+
+--
+.SG120 et SG1200
+--
+Vous aurez besoin des équipements supplémentaires suivants pour installer et configurer le matériel SG120 et SG1200.
+
+Câbles optiques et émetteurs-récepteurs::
++
+--
+* Câbles, 1 à 4 de l'un ou l'autre :
++
+** Twinax/cuivre
+** Fibre optique
+
+
+* Émetteurs-récepteurs/adaptateurs, 1 à 4 de chaque, en fonction de la vitesse de liaison (les vitesses mixtes ne sont pas prises en charge) :
++
+** SG120 :
++
+*** SFP+ 10 GbE
+*** 25 GbE SFP28
+
+
+** SG1200 :
++
+*** Adaptateur QSFP-to-SFP (QSA) et SFP+ 10 GbE
+*** Adaptateur QSFP-to-SFP (QSA) à 25 GbE et SFP28
+*** QSFP+ 40 GbE
+*** QSFP28 à 100 GbE
+*** 200-GbE QSFP56 (carte réseau 200GbE uniquement)
 
 
 
@@ -211,6 +250,36 @@ Câbles et émetteurs-récepteurs::
 ** SFP+ 10 GbE
 ** 25 GbE SFP28
 ** QSFP28 à 100 GbE
+
+
+
+
+--
+Câbles Ethernet:: RJ-45 (Cat5/Cat5e/Cat6/Cat6a)
+Outils en option:: Levage mécanisé pour les tiroirs de 60 disques
+
+
+--
+.SG6200
+--
+Vous avez besoin de l'équipement supplémentaire suivant pour installer et configurer le matériel SG6100.
+
+Câbles et émetteurs-récepteurs::
++
+--
+* Câbles, 1 à 4 de l'un ou l'autre :
++
+** Twinax/cuivre
+** Fibre optique
+
+
+* Émetteurs-récepteurs/adaptateurs, 1 à 8 de chaque, en fonction de la vitesse de liaison (les vitesses mixtes ne sont pas prises en charge) :
++
+** SFP+ 10 GbE
+** 25 GbE SFP28
+** QSFP+ 40 GbE
+** QSFP28 à 100 GbE
+** QSFP56 200-GbE (carte réseau 200-GbE uniquement)
 
 
 

@@ -27,7 +27,7 @@ Identifier la LED
  a| 
 * Bleu clignotant : identifie l'appliance dans l'armoire ou le rack.
 * Bleu, fixe : identifie l'appliance dans l'armoire ou le rack.
-* Éteint : l'appareil n'est pas visuellement identifiable dans l'armoire ou le rack.
+* Éteint : L'appareil n'est pas visuellement identifiable dans l'armoire ou le rack.
 
 
 |===

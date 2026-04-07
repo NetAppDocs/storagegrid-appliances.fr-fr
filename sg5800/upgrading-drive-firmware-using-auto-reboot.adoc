@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg5800, storage node, storage appliance, upgrade, firmware, drive, disk, automatic 
 summary: 'Le programme d"installation de l"appliance StorageGRID installe automatiquement les derniers fichiers du micrologiciel du lecteur E-Series lors du redémarrage de l"appliance.' 
 ---
-= Mettre à niveau automatiquement le micrologiciel du lecteur SG5800 lors du redémarrage de l'appareil
+= Mettez à niveau automatiquement le firmware des disques SG5800 lors du redémarrage
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

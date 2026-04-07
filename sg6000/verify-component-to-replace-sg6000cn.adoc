@@ -14,12 +14,12 @@ summary: 'Si vous n"êtes pas sûr du composant matériel à remplacer dans votr
 Si vous n'êtes pas sûr du composant matériel à remplacer dans votre appareil, suivez cette procédure pour identifier le composant et l'emplacement de l'appareil dans le centre de données.
 
 .Avant de commencer
-* Vous disposez du numéro de série du dispositif de stockage sur lequel le composant doit être remplacé.
+* Vous disposez du numéro de série de l'appareil dont la pièce doit être remplacée.
 * Vous êtes connecté au Gestionnaire de grille à l'aide d'un https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["navigateur web pris en charge"^].
 
 
 .Description de la tâche
-Utilisez cette procédure pour identifier l'appareil dont le matériel est défectueux et lequel des composants matériels remplaçables ne fonctionne pas correctement. Les composants susceptibles d'être identifiés en vue d'un remplacement peuvent être les suivants :
+Utilisez cette procédure pour identifier l'appareil présentant une défaillance matérielle et déterminer quel composant remplaçable ne fonctionne pas correctement. Les composants susceptibles d'être remplacés peuvent inclure :
 
 * Blocs d'alimentation
 * Ventilateurs
@@ -48,14 +48,14 @@ image::../media/nic-alert-sgf6112.png[Alerte avec ID de composant]
 
 . Identifiez le châssis avec le composant qui doit être remplacé.
 +
-.. Dans Grid Manager, sélectionnez *NODES*.
-.. Dans le tableau de la page nœuds, sélectionnez le nom du nœud de stockage de l'appliance avec le composant défaillant.
+.. Dans le Gestionnaire de grille, sélectionnez *Nœuds*.
+.. Dans le tableau de la page Nœuds, sélectionnez le nom de l'appliance StorageGRID dont le composant est défaillant.
 .. Sélectionnez l'onglet *matériel*.
 +
 Vérifiez le *numéro de série du contrôleur de calcul* dans la section appareil StorageGRID. Vérifiez si le numéro de série correspond au numéro de série du dispositif de stockage sur lequel vous remplacez le composant. Si le numéro de série correspond, vous avez trouvé l'appareil approprié.
 
 +
-*** Si la section StorageGRID Appliance du Gestionnaire de grille ne s'affiche pas, le nœud sélectionné n'est pas une appliance StorageGRID. Sélectionnez un nœud différent dans l'arborescence.
+*** Si la section Appliance StorageGRID dans Grid Manager ne s'affiche pas, le nœud sélectionné n'est pas une appliance StorageGRID. Sélectionnez un nœud différent dans l'arborescence.
 *** Si les numéros de série ne correspondent pas, sélectionnez un autre nœud dans l'arborescence.
 
 

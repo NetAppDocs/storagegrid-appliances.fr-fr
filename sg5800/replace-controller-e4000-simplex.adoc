@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg5800, storage node, storage appliance, Replacing, replace, e4000, controller, remove, removing, removal, install, installing, installation 
 summary: 'Vous devrez peut-être remplacer le contrôleur E4000 s"il ne fonctionne pas de manière optimale ou s"il est défectueux.' 
 ---
-= Remplacer le contrôleur E4000 (SG5800)
+= Remplacez le contrôleur E4000 dans un SG5800
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -27,7 +27,7 @@ NOTE: Ne vous fiez pas aux instructions E-Series pour remplacer un contrôleur d
 * Vous devez être connecté au Gestionnaire de grille à l'aide d'un https://docs.netapp.com/us-en/storagegrid/admin/web-browser-requirements.html["navigateur web pris en charge"^].
 * Accès à SANtricity System Manager :
 +
-** Dans le Gestionnaire de grille, sélectionnez *NODES* > *_appliance node_* > *SANtricity System Manager*. Les informations du contrôleur se trouvent sur le https://docs.netapp.com/us-en/storagegrid/monitor/viewing-santricity-system-manager-tab.html["Onglet Gestionnaire système SANtricity"^].
+** Dans Grid Manager, sélectionnez *Nœuds* > *_nœud d'appliance_* > *SANtricity System Manager*. Les informations du contrôleur se trouvent sur le https://docs.netapp.com/us-en/storagegrid/monitor/viewing-santricity-system-manager-tab.html["Onglet Gestionnaire système SANtricity"^].
 ** Pointez un navigateur de votre station de gestion vers le nom de domaine ou l'adresse IP du contrôleur.
 
 
@@ -360,7 +360,7 @@ L'appareil redémarre et rejoint la grille. Ce processus peut prendre jusqu'à 2
 
 . Confirmez que le redémarrage est terminé et que le nœud a rejoint la grille :
 +
-.. Dans le gestionnaire de grille, sélectionnez *NODES*.
+.. Dans le Gestionnaire de grille, sélectionnez *Nœuds*.
 .. Vérifiez que le nœud de l'appareil a un état normal (icône de coche verte)image:../media/icon_alert_green_checkmark.png["coche verte"] à gauche du nom du nœud), ce qui indique qu'aucune alerte n'est active et que le nœud est connecté au réseau.
 
 
@@ -387,4 +387,4 @@ Le fichier est enregistré dans le dossier Téléchargements de votre navigateur
 
 
 .Et la suite ?
-Après le remplacement de la pièce, renvoyez la pièce défectueuse à NetApp, en suivant les instructions RMA (retour de matériel) livrées avec le kit. Voir la https://mysupport.netapp.com/site/info/rma["Retour de pièce et amp ; remplacements"^] pour plus d'informations.
+Après avoir remplacé la pièce, retournez la pièce défectueuse à NetApp, comme indiqué dans les instructions RMA fournies avec le kit. Consultez la page  https://mysupport.netapp.com/site/info/rma["Retours et remplacements de pièces"^] pour plus d'informations.

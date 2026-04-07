@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= Remplacer la batterie dans E4000 (SG5800)
+= Remplacez la pile du contrôleur E4000 dans un SG5800
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -23,7 +23,7 @@ Si vous envisagez de remplacer une batterie défectueuse, vous devez disposer de
 * Étiquettes permettant d'identifier chaque câble connecté au boîtier du contrôleur.
 * Accès à SANtricity System Manager :
 +
-** Dans le Gestionnaire de grille, sélectionnez *NODES* > *_appliance node_* > *SANtricity System Manager*. Les informations du contrôleur se trouvent sur le https://docs.netapp.com/us-en/storagegrid/monitor/viewing-santricity-system-manager-tab.html["Onglet Gestionnaire système SANtricity"].
+** Dans Grid Manager, sélectionnez *Nœuds* > *_appliance node_* > *SANtricity System Manager*. Les informations du contrôleur se trouvent sur le https://docs.netapp.com/us-en/storagegrid/monitor/viewing-santricity-system-manager-tab.html["Onglet Gestionnaire système SANtricity"].
 ** Pointez un navigateur de votre station de gestion vers le nom de domaine ou l'adresse IP du contrôleur.
 
 
@@ -245,7 +245,7 @@ Le fichier est enregistré dans le dossier Téléchargements de votre navigateur
 
 . Confirmez que le redémarrage est terminé et que le nœud a rejoint la grille :
 +
-.. Dans le gestionnaire de grille, sélectionnez *NODES*.
+.. Dans le Gestionnaire de grille, sélectionnez *Nœuds*.
 .. Vérifiez que le nœud de l'appareil a un état normal (icône de coche verte)image:../media/icon_alert_green_checkmark.png["coche verte"] à gauche du nom du nœud), ce qui indique qu'aucune alerte n'est active et que le nœud est connecté au réseau.
 +
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: sg6000, sg6060, sg6060x, storage appliance 
 summary: Les appliances StorageGRID SG6060 et SG6060X incluent un contrôleur de calcul et un tiroir de contrôleur de stockage contenant deux contrôleurs de stockage et 60 disques. 
 ---
-= Appliances SG6060 et SG6060X : présentation
+= StorageGRID SG6060 et SG6060X appliances
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -137,7 +137,7 @@ Identifier la LED
  a| 
 * Bleu clignotant : identifie l'appliance dans l'armoire ou le rack.
 * Bleu, fixe : identifie l'appliance dans l'armoire ou le rack.
-* Éteint : l'appareil n'est pas visuellement identifiable dans l'armoire ou le rack.
+* Éteint : L'appareil n'est pas visuellement identifiable dans l'armoire ou le rack.
 
 
 |===

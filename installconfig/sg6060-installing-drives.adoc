@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6000, storage node, storage appliance, drives, drive, disk, disks, install, installing, installation 
 summary: 'Après avoir installé le tiroir de 60 disques dans une armoire ou un rack, installez les 60 disques dans le tiroir. Le numéro d"expédition du tiroir contrôleur E2860 comprend deux disques SSD que vous devez installer dans le tiroir supérieur du tiroir contrôleur. Chaque tiroir d"extension en option comprend 60 disques durs et aucun disque SSD.' 
 ---
-= Installation des disques (SG6060)
+= Installez les disques dans les tiroirs de disques SG6060
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

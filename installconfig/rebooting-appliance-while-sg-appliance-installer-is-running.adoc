@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storage node, storage appliance, service appliance, services appliance, gateway Node, admin node, reboot, restart 
 summary: 'Vous devrez peut-être redémarrer l"appliance pendant l"exécution du programme d"installation de l"appliance StorageGRID. Par exemple, vous devrez peut-être redémarrer l"appliance si l"installation échoue.' 
 ---
-= Redémarrez l'appliance pendant que le programme d'installation de l'appliance StorageGRID est en cours d'exécution
+= Redémarrez un appareil pendant que le StorageGRID Appliance Installer est en cours d'exécution
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6000, storage node, storage appliance, locate, find, locating, finding, identify, blue led, blue light 
 summary: 'Il est possible d"allumer la LED d"identification bleue à l"avant et à l"arrière du contrôleur pour localiser l"appliance dans un data Center.' 
 ---
-= Allumer et éteindre le voyant d'identification du contrôleur SG6000-CN
+= Activez et désactivez la LED d'identification du contrôleur SG6000-CN
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: install, sg6000, sg6060, sgf6024, expansion shelf, cabinet, rack, drives 
 summary: 'Pour les SGSGSGF6024 et SGF6024, vous installez des rails dans votre armoire ou rack et faites glisser le tiroir contrôleur, les tiroirs d"extension éventuels et le contrôleur de calcul sur les rails. Dans le cas des SG6060, n"installez pas les disques dans chaque shelf avant que les shelfs soient installés.' 
 ---
-= Installation dans l'armoire ou le rack (SG6000)
+= Installez le SG6000 dans une armoire ou un rack
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

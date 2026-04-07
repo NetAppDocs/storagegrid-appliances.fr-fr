@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: status, indicators, lights, leds, light, led, display, switch , button, power, reset, identify, alarm, ssd, indicator, boot codes, boot, code, start, startup, start up, start-up, progress 
 summary: 'Les appareils et les contrôleurs comprennent des indicateurs qui vous aident à déterminer l"état des composants de l"appliance.' 
 ---
-= Afficher les indicateurs d'état et les codes
+= Consultez les indicateurs d'état et les codes sur les appareils StorageGRID
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -118,7 +118,7 @@ Identifier la LED
  a| 
 * Bleu clignotant : identifie l'appliance dans l'armoire ou le rack.
 * Bleu, fixe : identifie l'appliance dans l'armoire ou le rack.
-* Éteint : l'appareil n'est pas visuellement identifiable dans l'armoire ou le rack.
+* Éteint : L'appareil n'est pas visuellement identifiable dans l'armoire ou le rack.
 
 
 |===
@@ -289,7 +289,7 @@ Identifier la LED
  a| 
 * Bleu clignotant : identifie l'appliance dans l'armoire ou le rack.
 * Bleu, fixe : identifie l'appliance dans l'armoire ou le rack.
-* Éteint : l'appareil n'est pas visuellement identifiable dans l'armoire ou le rack.
+* Éteint : L'appareil n'est pas visuellement identifiable dans l'armoire ou le rack.
 
 
 |===
@@ -315,6 +315,176 @@ Indicateurs SSD::
 +
 --
 La figure suivante présente les voyants SSD des appliances SG110 et SG1100.
+
+image::../media/ssd_indicators.png[Indicateurs SSD]
+
+[cols="1a,2a,2a"]
+|===
+| LED | Afficher | État 
+
+
+ a| 
+1
+ a| 
+État/défaut du lecteur
+ a| 
+* Bleu (continu) : le lecteur est en ligne
+* Orange (fixe) : panne de disque
+* OFF : l'emplacement est vide
+
+
+
+
+ a| 
+2
+ a| 
+Entraînement actif
+ a| 
+Bleu (clignotant) : accès au lecteur
+
+|===
+--
+
+
+--
+.SG120 et SG1200
+--
+L'appliance inclut des indicateurs qui vous permettent de déterminer l'état du contrôleur de l'appliance et des disques SSD :
+
+* <<appliance_indicators_sg120_sg1200,Voyants et boutons de l'appareil>>
+* <<general_boot_codes_sg120_sg1200,Codes de démarrage généraux>>
+* <<ssd_indicators_sg120_sg1200,Indicateurs SSD>>
+
+
+Utilisez ces informations pour vous aider link:troubleshooting-hardware-installation-sg120-and-sg1200.html["Dépanner l'installation matérielle SG120 et SG1200"].
+
+[[appliance_indicators_sg120_sg1200]]
+Voyants et boutons de l'appareil::
++
+--
+La figure suivante montre les indicateurs et les boutons situés sur la face avant des appliances SG120 et SG1200.
+
+image::../media/sg120_sg1200_front_indicators.png[Indicateurs avant - SG120 et SG1200]
+
+[cols="1a,2a,3a"]
+|===
+| Légende | Afficher | État 
+
+
+ a| 
+1
+ a| 
+Bouton d'alimentation
+ a| 
+* Bleu : l'appareil est sous tension.
+* Éteint : l'appareil est hors tension.
+
+
+
+
+ a| 
+2
+ a| 
+Bouton de réinitialisation
+ a| 
+Utilisez ce bouton pour effectuer une réinitialisation matérielle du contrôleur.
+
+
+
+ a| 
+3
+ a| 
+Bouton identifier
+ a| 
+A l'aide du contrôleur BMC, ce bouton peut être défini sur clignotant, activé (fixe) ou Désactivé.
+
+* Bleu clignotant : identifie l'appliance dans l'armoire ou le rack.
+* Bleu, fixe : identifie l'appliance dans l'armoire ou le rack.
+* Éteint : l'appareil n'est pas visuellement identifiable dans l'armoire ou le rack.
+
+
+
+
+ a| 
+4
+ a| 
+Voyant d'état
+ a| 
+* Orange, fixe : une erreur s'est produite.
++
+*Note:* pour afficher les codes de démarrage et d'erreur, link:accessing-bmc-interface.html["Accédez à l'interface BMC"].
+
+* OFF : aucune erreur n'est présente.
+
+
+
+
+ a| 
+5
+ a| 
+PFR
+ a| 
+Ce voyant n'est pas utilisé par les appareils SG120 et SG1200 et reste éteint.
+
+|===
+--
+
+
+La figure ci-dessous illustre l'emplacement de l'alimentation et des voyants d'identification à l'arrière des SG120 et SG1200. Des voyants supplémentaires d'état et d'activité sont présents sur les ports de l'appliance. Ces voyants peuvent varier selon le modèle d'appliance.
+
+image::../media/sg120_sg1200_rear_leds.png[LED arrière SG120 et SG1200]
+
+[cols="1a,2a,3a"]
+|===
+| Légende | LED | État 
+
+
+ a| 
+1
+ a| 
+Voyant d'alimentation
+ a| 
+* Vert, fixe : l'appareil est sous tension, le bouton d'alimentation est sous tension.
+* Vert, clignotant : l'appareil est sous tension, le bouton d'alimentation est hors tension.
+* Éteint : l'appareil n'est pas alimenté.
+* Orange : panne de l'alimentation.
+
+
+
+
+ a| 
+2
+ a| 
+Identifier la LED
+ a| 
+* Bleu clignotant : identifie l'appliance dans l'armoire ou le rack.
+* Bleu, fixe : identifie l'appliance dans l'armoire ou le rack.
+* Éteint : L'appareil n'est pas visuellement identifiable dans l'armoire ou le rack.
+
+
+|===
+[[general_boot_codes_sg120_sg1200]]
+Codes de démarrage généraux::
++
+--
+Lors du démarrage ou après une réinitialisation matérielle de l'appareil, les événements suivants se produisent :
+
+. Le contrôleur BMC (Baseboard Management Controller) consigne les codes de la séquence de démarrage, y compris les erreurs qui se produisent.
+. Le bouton d'alimentation s'allume.
+. Si des erreurs se produisent au démarrage, le voyant d'alarme s'allume.
++
+Pour afficher les codes de démarrage et d'erreur, link:accessing-bmc-interface.html["Accédez à l'interface BMC"].
+
+
+
+--
+
+
+[[ssd_indicators_sg120_sg1200]]
+Indicateurs SSD::
++
+--
+La figure suivante présente les indicateurs SSD sur les appliances SG120 et SG1200.
 
 image::../media/ssd_indicators.png[Indicateurs SSD]
 
@@ -926,7 +1096,7 @@ Identifier la LED
  a| 
 * Bleu clignotant : identifie l'appliance dans l'armoire ou le rack.
 * Bleu, fixe : identifie l'appliance dans l'armoire ou le rack.
-* Éteint : l'appareil n'est pas visuellement identifiable dans l'armoire ou le rack.
+* Éteint : L'appareil n'est pas visuellement identifiable dans l'armoire ou le rack.
 
 
 |===
@@ -1091,7 +1261,7 @@ Identifier la LED
  a| 
 * Bleu clignotant : identifie l'appliance dans l'armoire ou le rack.
 * Bleu, fixe : identifie l'appliance dans l'armoire ou le rack.
-* Éteint : l'appareil n'est pas visuellement identifiable dans l'armoire ou le rack.
+* Éteint : L'appareil n'est pas visuellement identifiable dans l'armoire ou le rack.
 
 
 |===
@@ -1136,6 +1306,181 @@ image::../media/ssd_indicators.png[Indicateurs SSD]
 
 
 *Remarque :* si un nouveau disque SSD en fonctionnement est inséré dans un nœud StorageGRID SGF6112 ou SG6160 en fonctionnement, les voyants du disque SSD doivent d'abord clignoter, mais cessent de clignoter dès que le système détermine que le disque dur a une capacité suffisante et qu'il est fonctionnel.
+
+
+
+ a| 
+2
+ a| 
+Entraînement actif
+ a| 
+Bleu (clignotant) : accès au lecteur
+
+|===
+--
+
+
+.Informations associées
+https://mysupport.netapp.com/site/global/dashboard["Support NetApp"^]
+
+--
+.SG6200
+--
+L'appliance inclut des indicateurs qui vous permettent de déterminer l'état du contrôleur de l'appliance et des disques SSD :
+
+* <<appliance_indicators_SG6200,Voyants et boutons de l'appareil>>
+* <<general_boot_codes_SG6200,Codes de démarrage généraux>>
+* <<ssd_indicators_SG6200,Indicateurs SSD>>
+
+
+Utilisez ces informations pour vous aider link:troubleshooting-hardware-installation-sg6200.html["Dépanner l'installation matérielle SG6200"].
+
+[[appliance_indicators_SG6200]]
+Voyants et boutons de l'appareil::
++
+--
+La figure suivante illustre les indicateurs et les boutons situés sur la face avant des appliances SG6200.
+
+image::../media/s25_front_indicators.png[Voyants avant - SG6200]
+
+[cols="1a,2a,3a"]
+|===
+| Légende | Afficher | État 
+
+
+ a| 
+1
+ a| 
+Bouton d'alimentation
+ a| 
+* Bleu : l'appareil est sous tension.
+* Éteint : l'appareil est hors tension.
+
+
+
+
+ a| 
+2
+ a| 
+Bouton de réinitialisation
+ a| 
+Utilisez ce bouton pour effectuer une réinitialisation matérielle du contrôleur.
+
+
+
+ a| 
+3
+ a| 
+Bouton identifier
+ a| 
+A l'aide du contrôleur BMC, ce bouton peut être défini sur clignotant, activé (fixe) ou Désactivé.
+
+* Bleu clignotant : identifie l'appliance dans l'armoire ou le rack.
+* Bleu, fixe : identifie l'appliance dans l'armoire ou le rack.
+* Éteint : l'appareil n'est pas visuellement identifiable dans l'armoire ou le rack.
+
+
+
+
+ a| 
+4
+ a| 
+Voyant d'état
+ a| 
+* Orange, fixe : une erreur s'est produite.
++
+*Note:* pour afficher les codes de démarrage et d'erreur, link:accessing-bmc-interface.html["Accédez à l'interface BMC"].
+
+* OFF : aucune erreur n'est présente.
+
+
+
+
+ a| 
+5
+ a| 
+PFR
+ a| 
+Ce voyant n'est pas utilisé par les appareils SG6200 et reste éteint.
+
+|===
+--
+
+
+La figure ci-dessous illustre l'emplacement de l'alimentation et des voyants d'identification à l'arrière des SGF6212 et SG6200-CN. Des voyants supplémentaires d'état et d'activité sont présents sur les ports de l'appliance. Ces voyants peuvent varier selon le modèle d'appliance.
+
+image::../media/s25_rear_leds.png[LED arrière SGF6212 et SG6200-CN]
+
+[cols="1a,2a,3a"]
+|===
+| Légende | LED | État 
+
+
+ a| 
+1
+ a| 
+Voyant d'alimentation
+ a| 
+* Vert, fixe : l'appareil est sous tension, le bouton d'alimentation est sous tension.
+* Vert, clignotant : l'appareil est sous tension, le bouton d'alimentation est hors tension.
+* Éteint : l'appareil n'est pas alimenté.
+* Orange : panne de l'alimentation.
+
+
+
+
+ a| 
+2
+ a| 
+Identifier la LED
+ a| 
+* Bleu clignotant : identifie l'appliance dans l'armoire ou le rack.
+* Bleu, fixe : identifie l'appliance dans l'armoire ou le rack.
+* Éteint : L'appareil n'est pas visuellement identifiable dans l'armoire ou le rack.
+
+
+|===
+[[general_boot_codes_SG6200]]
+Codes de démarrage généraux::
++
+--
+Lors du démarrage ou après une réinitialisation matérielle de l'appareil, les événements suivants se produisent :
+
+. Le contrôleur BMC (Baseboard Management Controller) consigne les codes de la séquence de démarrage, y compris les erreurs qui se produisent.
+. Le bouton d'alimentation s'allume.
+. Si des erreurs se produisent au démarrage, le voyant d'alarme s'allume.
++
+Pour afficher les codes de démarrage et d'erreur, link:accessing-bmc-interface.html["Accédez à l'interface BMC"].
+
+
+
+--
+
+
+[[ssd_indicators_SG6200]]
+Indicateurs SSD::
++
+--
+La figure suivante montre les indicateurs SSD sur l'appliance SGF6212 ou SG6260.
+
+image::../media/ssd_indicators.png[Indicateurs SSD]
+
+[cols="1a,2a,2a"]
+|===
+| LED | Afficher | État 
+
+
+ a| 
+1
+ a| 
+État/défaut du lecteur
+ a| 
+* Bleu (continu) : le lecteur est en ligne
+* Orange (fixe) : panne de disque
+* OFF : l'emplacement est vide
+
+
+*Remarque :* Si un nouveau SSD fonctionnel est inséré dans un nœud StorageGRID SGF6212 ou SG6260 fonctionnel, les LED du SSD doivent clignoter initialement, mais cesser de clignoter dès que le système détermine que le disque a une capacité suffisante et est fonctionnel.
 
 
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sgf6112, sg6100-cn, sg6160, storage appliance, Replacing, replace, fan, remove, removing, removal, install, installing 
 summary: 'L"appliance SGF6112 et le contrôleur SG6100-CN disposent de huit ventilateurs. Si l"un des ventilateurs tombe en panne, vous devez le remplacer dès que possible pour vous assurer que l"appareil est bien refroidi.' 
 ---
-= Remplacement du ventilateur dans un SGF6112 ou SG6100-CN (SG6160)
+= Remplacez un ventilateur dans le SGF6112 ou le SG6100-CN
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -132,4 +132,4 @@ Utilisez l'interface BMC pour surveiller l'état de démarrage.
 . Vérifiez que le nœud de l'appliance s'affiche dans Grid Manager et qu'aucune alerte n'apparaît.
 
 
-Après le remplacement de la pièce, renvoyez la pièce défectueuse à NetApp, en suivant les instructions RMA (retour de matériel) livrées avec le kit. Voir la https://mysupport.netapp.com/site/info/rma["Retour de pièce et amp ; remplacements"^] pour plus d'informations.
+Après avoir remplacé la pièce, retournez la pièce défectueuse à NetApp, comme indiqué dans les instructions RMA fournies avec le kit. Consultez la page  https://mysupport.netapp.com/site/info/rma["Retours et remplacements de pièces"^] pour plus d'informations.

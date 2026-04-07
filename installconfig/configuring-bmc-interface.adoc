@@ -2,18 +2,42 @@
 permalink: installconfig/configuring-bmc-interface.html 
 sidebar: sidebar 
 keywords: BMC, baseboard management controller, configure, setup, set up 
-summary: 'L"interface utilisateur du contrôleur de gestion de la carte de base \(BMC\) sur le système SG6100, SG6000 ou services fournit des informations sur l"état du matériel et vous permet de configurer les paramètres SNMP et d"autres options pour les appliances.' 
+summary: 'L"interface utilisateur du contrôleur de gestion de la carte mère (BMC) sur le SG6200, le SG6100, le SG6000 ou l"appliance de services fournit des informations d"état sur le matériel et vous permet de configurer les paramètres SNMP et d"autres options pour les appliances.' 
 ---
-= INTERFACE BMC : PRÉSENTATION (SG100, SG110, SG1000, SG1100, SG6000, et SG6100)
+= Interface BMC pour les appliances StorageGRID SG6000, SG6100 et SG6200 et les appliances de services
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-L'interface utilisateur du contrôleur BMC (Baseboard Management Controller) sur le système SG6100, SG6000 ou services fournit des informations sur l'état du matériel et vous permet de configurer les paramètres SNMP et d'autres options pour les appliances.
+L'interface utilisateur du contrôleur de gestion de la carte mère (BMC) fournit des informations d'état sur votre matériel et permet un accès matériel de bas niveau pour la configuration, la surveillance et le diagnostic de l'appliance.
 
-Utilisez les procédures suivantes de cette section pour configurer le contrôleur BMC lors de l'installation de l'appliance :
+Vous pouvez utiliser le BMC pour :
+
+* Dépannez votre installation matérielle
+* Configurer les paramètres SNMP
+* Déterminez l'état d'alimentation de votre appareil
+* Contrôlez la LED d'identification de votre appareil
+
+
+Les appliances StorageGRID suivantes prennent en charge l'interface BMC :
+
+* SG100
+* SG110
+* SG120
+* SG1000
+* SG1100
+* SG1200
+* SGF6024
+* SGF6112
+* SGF6212
+* SG6060
+* SG6160
+* SG6260
+
+
+Si vous installez votre appareil, utilisez les procédures suivantes pour configurer le BMC :
 
 * link:../installconfig/changing-root-password-for-bmc-interface.html["Modifier le mot de passe admin ou root de l'interface BMC"]
 * link:../installconfig/setting-ip-address-for-bmc-management-port.html["Définissez l'adresse IP du port de gestion BMC"]
@@ -22,12 +46,10 @@ Utilisez les procédures suivantes de cette section pour configurer le contrôle
 * link:../installconfig/setting-up-email-notifications-for-alerts.html["Configurez les notifications par e-mail pour les alertes BMC"]
 
 
-[NOTE]
-====
-Si l'appliance a déjà été installée dans une grille et exécute le logiciel StorageGRID, procédez comme suit :
+Si vous avez déjà installé l'appliance dans une grille et qu'elle exécute le logiciel StorageGRID, suivez les procédures suivantes :
 
 * link:../commonhardware/placing-appliance-into-maintenance-mode.html["Mettez l'appareil en mode de maintenance"] Pour accéder au programme d'installation de l'appliance StorageGRID.
-* Voir link:../installconfig/setting-ip-address-for-bmc-management-port.html["Définissez l'adresse IP du port de gestion BMC"] Pour plus d'informations sur l'accès à l'interface BMC à l'aide du programme d'installation de l'appliance StorageGRID.
+* Reportez-vous à link:../installconfig/setting-ip-address-for-bmc-management-port.html["Définissez l'adresse IP du port de gestion BMC"] pour obtenir des informations sur l'accès à l'interface BMC à l'aide de StorageGRID Appliance Installer.
 
 
-====
+Pour en savoir plus sur les fonctionnalités que vous pouvez utiliser avec le BMC après l'avoir configuré, reportez-vous à link:../commonhardware/use-bmc.html["Utilisez l'interface BMC"] et au  https://kb.netapp.com/hybrid/StorageGRID/Platforms/How_to_use_StorageGRID_Appliance_BMC_with_vendor_supplied_user_guide["Guide de l'utilisateur BMC"^].

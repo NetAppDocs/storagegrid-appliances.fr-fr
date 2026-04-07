@@ -71,4 +71,4 @@ image::../media/sg6000_cn_insert_power_supply.gif[Insertion du bloc d'alimentati
 . link:../installconfig/connecting-power-cords-and-applying-power.html["Branchez les câbles d'alimentation aux unités remplacées et mettez-les sous tension"].
 
 
-Après le remplacement de la pièce, renvoyez la pièce défectueuse à NetApp, en suivant les instructions RMA (retour de matériel) livrées avec le kit. Voir la https://mysupport.netapp.com/site/info/rma["Retour de pièce et amp ; remplacements"^] pour plus d'informations.
+Après avoir remplacé la pièce, retournez la pièce défectueuse à NetApp, comme indiqué dans les instructions RMA fournies avec le kit. Consultez la page  https://mysupport.netapp.com/site/info/rma["Retours et remplacements de pièces"^] pour plus d'informations.

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6100, SGF6112, storage node, storage appliance, Replacing, replace, CMOS, battery, sg6160 
 summary: Utilisez cette procédure pour remplacer la pile bouton CMOS de la carte système. 
 ---
-= Remplacez la pile CMOS SGF6112 ou SG6100-CN
+= Remplacez la pile CMOS d'un SGF6112 ou d'un SG6100-CN
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

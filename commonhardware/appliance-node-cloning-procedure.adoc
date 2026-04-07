@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, appliance node clone, appliance node cloning, node clone, node cloning 
 summary: 'Le processus de clonage peut prendre plusieurs jours pour transférer les données entre le nœud source \(appliance en cours de remplacement\) et l"appliance \(nouvelle\) cible.' 
 ---
-= Clonez le nœud d'appliance
+= Cloner un nœud d'appliance StorageGRID
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -52,7 +52,7 @@ NOTE: L'utilisation du réseau d'administration 1 GbE pour le transfert des donn
 Une fois l'appliance cible configurée et validée, dans la section installation, *Start Cloning* est activé sur le nœud source.
 
 +
-Si des problèmes empêchent le clonage, *Démarrer le clonage* n'est pas activé et les problèmes que vous devez résoudre sont répertoriés comme l'état *connexion*. Ces problèmes sont répertoriés sur la page d'accueil du programme d'installation de l'appliance StorageGRID du nœud source et de l'appliance cible. Un seul problème s'affiche à la fois et l'état se met automatiquement à jour en fonction des changements de conditions. Résolvez tous les problèmes de clonage pour activer *Démarrer le clonage*.
+En cas de problèmes empêchant le clonage, *Démarrer le clonage* n'est pas activé et les problèmes que vous devez résoudre sont affichés comme *État de la connexion*. Ces problèmes sont listés sur la page d'accueil de l'installateur StorageGRID Appliance, aussi bien sur le nœud source que sur l'appliance cible. Un seul problème est affiché à la fois et l'état est mis à jour automatiquement à mesure que les conditions changent. Résolvez tous les problèmes de clonage pour activer *Démarrer le clonage*.
 
 +
 Lorsque *Démarrer le clonage* est activé, l'état *actuel* indique le réseau StorageGRID sélectionné pour le clonage du trafic, ainsi que des informations sur l'utilisation de cette connexion réseau. Voir link:considerations-and-requirements-for-appliance-node-cloning.html["Considérations et configuration requise pour le clonage des nœuds d'appliance"].

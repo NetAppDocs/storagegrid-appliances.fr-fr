@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= Remplacement des modules DIMM dans E4000 (SGS800)
+= Remplacez les barrettes DIMM du contrôleur E4000 dans un SG5800
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -29,7 +29,7 @@ Le nœud de stockage de l'appliance peut ne pas être accessible lorsque vous re
 
 * Accès à SANtricity System Manager :
 +
-** Dans le Gestionnaire de grille, sélectionnez *NODES* > *_appliance node_* > *SANtricity System Manager*. Les informations du contrôleur se trouvent sur le https://docs.netapp.com/us-en/storagegrid/monitor/viewing-santricity-system-manager-tab.html["Onglet Gestionnaire système SANtricity"].
+** Dans Grid Manager, sélectionnez *Nœuds* > *_appliance node_* > *SANtricity System Manager*. Les informations du contrôleur se trouvent sur le https://docs.netapp.com/us-en/storagegrid/monitor/viewing-santricity-system-manager-tab.html["Onglet Gestionnaire système SANtricity"].
 +
 
 NOTE: Il se peut que vous ne puissiez pas accéder au Gestionnaire système SANtricity à l'aide du Gestionnaire de grille au cours de certaines étapes de cette procédure. Si le contrôleur SG5800 est arrêté, vous devez accéder au Gestionnaire système SANtricity à l'aide de votre navigateur.
@@ -265,7 +265,7 @@ Le fichier est enregistré dans le dossier Téléchargements de votre navigateur
 
 . Confirmez que le redémarrage est terminé et que le nœud a rejoint la grille :
 +
-.. Dans le gestionnaire de grille, sélectionnez *NODES*.
+.. Dans le Gestionnaire de grille, sélectionnez *Nœuds*.
 .. Vérifiez que le nœud de l'appareil a un état normal (icône de coche verte)image:../media/icon_alert_green_checkmark.png["coche verte"] à gauche du nom du nœud), ce qui indique qu'aucune alerte n'est active et que le nœud est connecté au réseau.
 +
 

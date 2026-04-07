@@ -73,14 +73,14 @@ Lorsque le loquet s'enclenche, le bas des crochets de verrouillage se trouve dan
 . Retournez le contrôleur pour vérifier que la batterie est correctement installée.
 +
 
-CAUTION: *Dommages matériels possibles* -- la bride métallique à l'avant de la batterie doit être complètement insérée dans le logement du contrôleur (comme indiqué sur la première figure). Si la batterie n'est pas installée correctement (comme illustré sur la deuxième figure), la bride métallique peut entrer en contact avec la carte contrôleur, ce qui peut endommager la carte.
+CAUTION: *Risque d'endommagement matériel* – La bride métallique située à l'avant de la batterie doit être complètement insérée dans son logement sur le contrôleur (comme illustré sur la première figure). Si la batterie n'est pas correctement installée (comme illustré sur la deuxième figure), la bride métallique risque d'entrer en contact avec la carte du contrôleur et de l'endommager.
 
 +
 ** *Correct -- la bride métallique de la batterie est complètement insérée dans le logement du contrôleur:*
 +
 image::../media/e2800_battery_flange_ok.gif[Bride de batterie conforme]
 
-** *Incorrect -- la bride métallique de la batterie n'est pas insérée dans le logement du contrôleur :*
+** *Incorrect – La bride métallique de la batterie n'est pas insérée dans la fente du contrôleur :*
 +
 image::../media/e2800_battery_flange_not_ok.gif[Bride de batterie incorrecte]
 

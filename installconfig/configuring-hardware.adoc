@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storage node, storage appliance, hardware, configure, configuration, set up, setup, network, networking 
 summary: 'Après avoir mis l"appareil sous tension, vous configurez les connexions réseau qui seront utilisées par StorageGRID. ' 
 ---
-= Configuration du matériel : présentation
+= Configurer le matériel de l'appliance StorageGRID
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -15,55 +15,94 @@ Après avoir mis l'appareil sous tension, vous configurez les connexions réseau
 
 
 
-== Configurez les connexions réseau requises
-
-Pour tous les dispositifs, vous devez effectuer plusieurs tâches pour configurer les connexions réseau requises, telles que :
-
-* Accédez au programme d'installation de l'appliance
-* Configurer les liaisons réseau
-* Vérifiez les connexions réseau au niveau des ports
+== Configurations matérielles requises
 
 
 
+=== Connexions réseau
 
-== Configuration supplémentaire éventuellement nécessaire
+Vous devez configurer et vérifier les connexions réseau requises pour tous les appareils :
 
-Selon le type d'appliance que vous configurez, une configuration matérielle supplémentaire peut être nécessaire.
+* link:../installconfig/accessing-storagegrid-appliance-installer.html["Accédez au programme d'installation de l'appliance"]
+* link:../installconfig/configuring-network-links.html["Configurer les liaisons réseau"]
+* link:../installconfig/verifying-port-level-network-connections.html["Vérifiez les connexions réseau au niveau des ports"]
 
-
-
-=== SANtricity System Manager
-
-Pour les systèmes SG6160, SG6000, SG5800 et SG5700, vous configurez SANtricity System Manager. Le logiciel SANtricity est utilisé pour contrôler le matériel de ces dispositifs.
 
 
 
 === Interface BMC
 
-Les appliances suivantes ont une interface BMC qui doit être configurée :
+Vous devez link:../installconfig/configuring-bmc-interface.html["configurer l’interface du contrôleur de gestion de la carte mère (BMC)"] si vous installez l'un des appareils suivants :
 
 * SG100
 * SG110
+* SG120
 * SG1000
 * SG1100
-* SG6000
-* SG6100
+* SG1200
+* SGF6024
+* SGF6112
+* SGF6212
+* SG6060
+* SG6160
+* SG6260
+
+
+Vous pouvez utiliser l'interface BMC pour configurer SNMP et d'autres paramètres de bas niveau pour vos appliances. Elle permet également de dépanner votre installation matérielle, de déterminer l'état d'alimentation de votre appliance et de contrôler la LED d'identification sur votre appliance.
+
+Pour en savoir plus sur les fonctionnalités que vous pouvez utiliser avec le BMC, reportez-vous à link:../commonhardware/use-bmc.html["Utilisez l'interface BMC"].
+
+
+
+== Configurations matérielles optionnelles
+
+
+
+=== SANtricity System Manager
+
+Vous pouvez link:../installconfig/accessing-and-configuring-santricity-system-manager.html["Configurer SANtricity System Manager"] si vous possédez l'un des appareils suivants :
+
+* SG5712
+* SG5760
+* SG5812
+* SG5860
+* SGF6024
+* SG6060
+* SG6160
+* SG6260
+
+
+Le logiciel SANtricity System Manager vous permet de :
+
+* Surveillez les données de performance du système, l'état des composants matériels et les fonctions de support de votre appareil
+* Gérez les clés de sécurité des disques, les alertes SNMP et syslofg, ainsi que les mots de passe d'administrateur pour accéder à SANtricity System Manager
+* Configurer l'accès à E-Series AutoSupport
 
 
 
 
-== Configuration facultative
+=== Activez le chiffrement des nœuds ou des disques
 
-* Appliances de stockage
-+
-** Configurez le logiciel SANtricity System Manager (SG5700, SGS5800, SG6000 et SG6100) que vous utiliserez pour surveiller le matériel
-** Changer de mode RAID
-** link:../installconfig/accessing-bmc-interface.html["Accéder à l'interface BMC"] Pour le contrôleur SG6000-CN ou SG6100-CN
-
-
-* Appliances de services
-+
-** link:../installconfig/accessing-bmc-interface.html["Accéder à l'interface BMC"] Pour les systèmes SG100, SG110, SG1000 et SG1100
+Vous pouvez link:../installconfig/optional-enabling-node-encryption.html["activer le chiffrement du nœud ou du disque"] protéger les lecteurs et les disques de votre appareil.
 
 
 
+=== Changer le mode RAID
+
+Vous pouvez link:../installconfig/optional-changing-raid-mode.html["modifier le mode RAID de votre périphérique de stockage"] pour répondre à vos besoins de stockage et de récupération.
+
+Les appareils suivants prennent en charge la modification du mode RAID :
+
+* SG5760
+* SG5860
+* SGF6024
+* SG6060
+* SG6160
+* SG6260
+
+
+
+
+=== Remappez les ports réseau
+
+Vous pouvez link:../installconfig/optional-remapping-network-ports-for-appliance.html["reconfigurez les ports réseau de votre appareil"] pour optimiser vos connexions réseau.

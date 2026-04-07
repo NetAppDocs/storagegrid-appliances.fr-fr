@@ -15,12 +15,16 @@ indexpage:
       url: "../installconfig/installing-hardware-sg6000.html"
     - title: SG6100
       url: "../installconfig/installing-hardware-sg6100.html"
+    - title: SG6200
+      url: "../installconfig/installing-hardware-sg6200.html"
   - title: Installez l'appliance de services en armoire ou en rack
     links:
     - title: SG100 et SG1000
       url: "../installconfig/installing-appliance-in-cabinet-or-rack-sg100-and-sg1000.html"
     - title: SG110 et SG1100
       url: "../installconfig/installing-appliance-in-cabinet-or-rack-sg110-and-sg1100.html"
+    - title: SG120 et SG1200
+      url: "../installconfig/installing-appliance-in-cabinet-or-rack-sg120-and-sg1200.html"
   - title: Câbler et mettre sous tension
     links:
     - title: Branchez les câbles

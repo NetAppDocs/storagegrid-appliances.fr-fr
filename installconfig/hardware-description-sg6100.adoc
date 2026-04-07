@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6100, sgf6112, storage node, storage appliance, appliance models, appliance features, specifications 
 summary: 'Les appliances StorageGRID SG6100 fonctionnent comme des nœuds de stockage dans un système StorageGRID.  Comme toutes les appliances StorageGRID, elles peuvent être librement mixtes avec d"autres modèles d"appliance et des nœuds exclusivement logiciels dans un déploiement unique.' 
 ---
-= Appliances SG6100 : présentation
+= Appliances StorageGRID SG6100
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -59,7 +59,7 @@ Des plateformes de calcul et de stockage:: Un serveur à une unité de rack (1U)
 * Deux processeurs 2.1/2.6 GHz 165 W fournissant 48 cœurs (96 threads)
 * 256 GO DE RAM
 * 2 ports GBase-T 1/10
-* 4 ports Ethernet 10/25 GbE pour le trafic réseau Grid/client
+* 4 ports Ethernet 10/25 GbE pour le trafic réseau Grid/Client (ou jusqu'à 4 × 100 GbE avec l'option 100G NIC SKU)
 * 1 lecteur de démarrage interne de 256 Go (logiciel StorageGRID inclus)
 * Le contrôleur de gestion de la carte mère (BMC) simplifie la gestion du matériel
 * Alimentations et ventilateurs redondants
@@ -229,7 +229,7 @@ Identifier la LED
  a| 
 * Bleu clignotant : identifie l'appliance dans l'armoire ou le rack.
 * Bleu, fixe : identifie l'appliance dans l'armoire ou le rack.
-* Éteint : l'appareil n'est pas visuellement identifiable dans l'armoire ou le rack.
+* Éteint : L'appareil n'est pas visuellement identifiable dans l'armoire ou le rack.
 
 
 |===
@@ -438,7 +438,7 @@ Identifier la LED
  a| 
 * Bleu clignotant : identifie l'appliance dans l'armoire ou le rack.
 * Bleu, fixe : identifie l'appliance dans l'armoire ou le rack.
-* Éteint : l'appareil n'est pas visuellement identifiable dans l'armoire ou le rack.
+* Éteint : L'appareil n'est pas visuellement identifiable dans l'armoire ou le rack.
 
 
 |===

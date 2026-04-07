@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, Replacing, replace, power supply, remove, removing, removal, install, installing, installation 
 summary: 'L"appareil de services dispose de deux blocs d"alimentation pour assurer la redondance. Si l"un des blocs d"alimentation tombe en panne, vous devez le remplacer dès que possible pour vous assurer que l"appareil est alimenté de manière redondante. Les deux blocs d"alimentation qui fonctionnent au niveau du contrôleur doivent être du même modèle et de la même puissance.' 
 ---
-= Remplacez l'une ou les deux alimentations du SG100 ou du SG1000
+= Remplacez une ou les deux alimentations d'un SG100 ou SG1000
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -67,4 +67,4 @@ image::../media/sg6000_cn_insert_power_supply.gif[Alimentation coulissante en SG
 . link:../installconfig/connecting-power-cords-and-applying-power.html["Branchez les câbles d'alimentation aux unités remplacées et mettez-les sous tension"].
 
 
-Après le remplacement de la pièce, renvoyez la pièce défectueuse à NetApp, en suivant les instructions RMA (retour de matériel) livrées avec le kit. Voir la https://mysupport.netapp.com/site/info/rma["Retour de pièce et amp ; remplacements"^] pour plus d'informations.
+Après avoir remplacé la pièce, retournez la pièce défectueuse à NetApp, comme indiqué dans les instructions RMA fournies avec le kit. Consultez la page  https://mysupport.netapp.com/site/info/rma["Retours et remplacements de pièces"^] pour plus d'informations.

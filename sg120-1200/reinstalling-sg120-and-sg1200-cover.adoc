@@ -1,0 +1,43 @@
+---
+permalink: sg120-1200/reinstalling-sg120-and-sg1200-cover.html 
+sidebar: sidebar 
+keywords: storagegrid, sg120, sg1200, storage node, admin appliance, cover, install, installing, installation, reinstall, reinstalling, reinstallation 
+summary: 'Retirez le couvercle de l"appareil pour accéder aux composants internes à des fins d"entretien et remettez-le en place une fois l"opération terminée.' 
+---
+= Remplacer le couvercle SG120 et SG1200
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Retirez le couvercle de l'appareil pour accéder aux composants internes à des fins d'entretien et remettez-le en place une fois l'opération terminée.
+
+
+
+== Étape 1 : Retirer le couvercle
+
+.Étapes
+. Enroulez l'extrémité de la sangle d'un bracelet antistatique autour de votre poignet et fixez l'extrémité de la pince à une terre métallique pour éviter toute décharge statique lors d'une intervention à l'intérieur de l'appareil.
+. link:reinstalling-sg120-and-sg1200-into-cabinet-or-rack.html["Retirez l'appareil de l'armoire ou du rack"] pour accéder au couvercle supérieur.
+
+
+. Déverrouillez le loquet du couvercle en appuyant sur le bouton de verrouillage bleu situé sur le couvercle de l'appareil.
++
+image:../media/drw_s2025_cover_replace_ieops-2559.svg["Déverrouillage et retrait du couvercle de l'appareil"]
+
+. Faites pivoter le loquet vers le haut et vers l'arrière du châssis de l'appareil jusqu'à ce qu'il s'arrête, puis soulevez avec précaution le capot du châssis et mettez-le de côté.
+
+
+
+
+== Étape 2 : Réinstaller le couvercle
+
+.Étapes
+. Avec le loquet du couvercle ouvert, alignez le couvercle au-dessus du châssis et abaissez-le avec précaution.
+. Faites pivoter le loquet du capot vers l'avant et vers le bas jusqu'à ce qu'il s'arrête et que le capot s'insère complètement dans le châssis. Vérifier qu'il n'y a pas d'espace le long du bord avant du couvercle.
++
+Si le capot n'est pas bien en place, il se peut que vous ne puissiez pas faire glisser l'appareil dans le rack.
+
+. link:reinstalling-sg120-and-sg1200-into-cabinet-or-rack.html["Réinstallez l'appareil dans l'armoire ou le rack"].
+

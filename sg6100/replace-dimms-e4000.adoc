@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= Remplacement des modules DIMM dans le tiroir contrôleur de stockage (SG6160)
+= Remplacez les barrettes DIMM dans un châssis de contrôleur de stockage SG6160
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -25,7 +25,7 @@ Pour remplacer un module DIMM, vous devez vérifier la taille du cache de votre 
 ** Étiquettes permettant d'identifier chaque câble connecté au boîtier du contrôleur.
 ** Accès à SANtricity System Manager :
 +
-*** Dans le Gestionnaire de grille, sélectionnez *NODES* > *_appliance node_* > *SANtricity System Manager*. Les informations du contrôleur se trouvent sur le https://docs.netapp.com/us-en/storagegrid/monitor/viewing-santricity-system-manager-tab.html["Onglet Gestionnaire système SANtricity"].
+*** Dans Grid Manager, sélectionnez *Nœuds* > *_appliance node_* > *SANtricity System Manager*. Les informations du contrôleur se trouvent sur le https://docs.netapp.com/us-en/storagegrid/monitor/viewing-santricity-system-manager-tab.html["Onglet Gestionnaire système SANtricity"].
 *** Pointez un navigateur de votre station de gestion vers le nom de domaine ou l'adresse IP du contrôleur.
 
 

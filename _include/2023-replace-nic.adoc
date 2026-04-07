@@ -136,4 +136,4 @@ image::../media/sgf6112_one-slot-riser_system-pin.png[Goupille de guidage sur l'
 .Une fois que vous avez terminé
 Si vous n'avez aucune autre procédure de maintenance à effectuer dans l'appareil, réinstallez le capot de l'appareil, replacez l'appareil sur le rack, branchez les câbles et mettez l'appareil sous tension.
 
-Après le remplacement de la pièce, renvoyez la pièce défectueuse à NetApp, en suivant les instructions RMA (retour de matériel) livrées avec le kit. Voir la https://mysupport.netapp.com/site/info/rma["Retour de pièce et amp ; remplacements"^] pour plus d'informations.
+Après avoir remplacé la pièce, retournez la pièce défectueuse à NetApp, comme indiqué dans les instructions RMA fournies avec le kit. Consultez la page  https://mysupport.netapp.com/site/info/rma["Retours et remplacements de pièces"^] pour plus d'informations.

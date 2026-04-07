@@ -1,0 +1,29 @@
+= 
+:allow-uri-read: 
+
+
+.Avant de commencer
+Vous disposez de l'adresse IP BMC de l'appliance que vous souhaitez identifier.
+
+.Étapes
+. link:../installconfig/accessing-bmc-interface.html["Accédez à l'interface BMC de l'appliance"].
+. Sélectionnez *identification du serveur*.
++
+L'état actuel de la LED Identify est sélectionné.
+
+. Sélectionnez *ON*, *OFF* ou *BLINK*, puis sélectionnez *Perform Action*.
++
+Lorsque vous sélectionnez *ON*, les voyants bleus d'identification s'allument à l'avant et à l'arrière de l'appareil.
+
++
+image::../media/s25_front_identify_led.png[Voyant d'identification avant - allumé]
+
++
+
+NOTE: Si un panneau est installé sur le contrôleur, il peut être difficile de voir le voyant d'identification avant.
+
++
+La LED d'identification arrière se trouve au centre de l'appareil, à côté de l'emplacement pour carte Micro-SD.
+
+. Allumer et éteindre les LED Identify selon les besoins.
+

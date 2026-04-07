@@ -1,10 +1,10 @@
 ---
 permalink: commonhardware/manage-drives-tab.html 
 sidebar: sidebar 
-keywords: sgf6112, sg110, sg1100, sg6160, manage drives tab, locate drive, fail drive, logically replace drive 
+keywords: sgf6112, sg110, sg1100, sg6160, sg6200, sg6260, sgf6212 manage drives tab, locate drive, fail drive, logically replace drive 
 summary: 'Vous pouvez utiliser l"onglet gérer les lecteurs dans le Gestionnaire de grille pour effectuer des tâches de dépannage et de maintenance sur les lecteurs pour les appliances qui prennent en charge cette fonctionnalité.' 
 ---
-= Utilisez l'onglet gérer les lecteurs (SG110, SG1100, SGF6112 et SG6160)
+= Utilisez l'onglet Gérer les lecteurs pour les appliances StorageGRID SG110, SG120, SG1100, SG1200, SG6100 et SG6200
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -50,7 +50,7 @@ image:../media/manage_drives_tab_details.png["Onglet gérer les lecteurs Détail
 
 Pour localiser physiquement un lecteur dans l'appliance :
 
-. Dans le Gestionnaire de grille, sélectionnez *NODES* > *_data Center_*.
+. Dans le Gestionnaire de grille, sélectionnez *Nœuds* > *_data center_*.
 . Sélectionnez *_appliance Storage node_* > *Manage Drives* > *Layout* > *_drive_*.
 +
 Le panneau des détails du lecteur s'affiche.
@@ -70,7 +70,7 @@ Le panneau des détails du lecteur s'affiche.
 
 Si un lecteur de l'appliance de stockage doit être reconstruit ou réinitialisé :
 
-. Dans le Gestionnaire de grille, sélectionnez *NODES* > *_data Center_*.
+. Dans le Gestionnaire de grille, sélectionnez *Nœuds* > *_data center_*.
 . Sélectionnez *_appliance Storage node_* > *Manage Drives* > *Layout* > *_drive_*.
 +
 Le panneau des détails du lecteur s'affiche.
@@ -87,7 +87,7 @@ Sur le panneau de détails du lecteur, l'état du lecteur indique _reconstructio
 
 Pour le dépannage, vous pouvez « faire échouer » manuellement un disque que vous soupçonnez défectueux. Le système fonctionnera alors sans ce lecteur.
 
-. Dans le Gestionnaire de grille, sélectionnez *NODES* > *_data Center_*.
+. Dans le Gestionnaire de grille, sélectionnez *Nœuds* > *_data center_*.
 . Sélectionnez *_appliance Storage node_* > *Manage Drives* > *Layout* > *_drive_*.
 +
 Le panneau des détails du lecteur s'affiche.

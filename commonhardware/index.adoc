@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: maintain overview, maintenance overview, about maintain, about maintenance 
 summary: Suivez ces instructions pour entretenir votre système StorageGRID. 
 ---
-= Procédures courantes de maintenance des nœuds : présentation
+= Procédures d'entretien courantes pour les appliances StorageGRID
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -38,10 +38,12 @@ NOTE: Dans ces instructions, « Linux » fait référence à un déploiement Red
 
 Les procédures de maintenance spécifiques pour chaque type d'appliance StorageGRID se trouvent dans les sections relatives à la maintenance de l'appliance :
 
+* link:../sg6200/index.html["Maintenance de l'appareil SG6200"]
 * link:../sg6100/index.html["Maintenance de l'appliance SG6100"]
 * link:../sg6000/index.html["Entretenir l'appareil SG6000"]
-* link:../sg5800/index.html["Maintenance de l'appliance SG5800"]
 * link:../sg5700/index.html["Conservez l'appliance SG5700"]
-* link:../sg110-1100/index.html["Maintenance des appliances SG110 et SG1100"]
+* link:../sg5800/index.html["Maintenance de l'appliance SG5800"]
 * link:../sg100-1000/index.html["Maintenance des appliances SG100 et SG1000"]
+* link:../sg110-1100/index.html["Maintenance des appliances SG110 et SG1100"]
+* link:../sg120-1200/index.html["Assurer la maintenance des appliances SG120 et SG1200"]
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: 'storage node, storage appliance, troubleshoot, troubleshooting, hardware, install, installation, sg6000, storage node, storage appliance, boot codes, boot-up codes, start codes, codes, boot, start, sg6000-cn, error codes, errors, error, codes, setup, hang, hangs, fails, failure, stop, terminate, terminates, stuck, connection, unable to connect, no connection, Expansion, shelves, don"t appear, Appliance Installer, missing, not shown, synchronize, synchronizing, synchronization, SANtricity OS Software, santricity' 
 summary: 'Si vous rencontrez des problèmes lors de l"installation, il peut s"avérer utile de consulter les informations de dépannage relatives à la configuration du matériel et aux problèmes de connectivité.' 
 ---
-= Dépannage de l'installation matérielle (SG5700 ou SG6000)
+= Dépannage de l'installation matérielle pour un SG5700 ou un SG6000
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

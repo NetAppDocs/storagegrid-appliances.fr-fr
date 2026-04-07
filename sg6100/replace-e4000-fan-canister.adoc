@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E4000 replace canister, replacing E4000 canister, E4000 replace fan, replacing E4000 fan, E4000, E-Series, eseries 
 summary: Passez en revue les types de canister E4000 et les exigences. 
 ---
-= Remplacement du boîtier du ventilateur dans le tiroir du contrôleur de stockage ou le tiroir d'extension (SG6160)
+= Remplacez le boîtier du ventilateur d'un contrôleur de stockage SG6160 ou d'un tiroir d'extension
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

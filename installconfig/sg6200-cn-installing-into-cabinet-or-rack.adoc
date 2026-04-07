@@ -1,0 +1,44 @@
+---
+permalink: installconfig/sg6200-cn-installing-into-cabinet-or-rack.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6200, storage node, storage appliance, install, installing, installation, cabinet, rack, controller, sg6200-cn, rail, rails, sg6260 
+summary: Vous installez un ensemble de rails pour le contrôleur SG6200-CN dans votre armoire ou rack, puis vous faites glisser le contrôleur sur les rails. 
+---
+= Installez le contrôleur SG6200-CN pour un SG6260
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Vous installez un ensemble de rails pour le contrôleur SG6200-CN dans votre armoire ou rack, puis vous faites glisser le contrôleur sur les rails.
+
+.Avant de commencer
+* Vous avez passé en revue le https://library.netapp.com/ecm/ecm_download_file/ECMP12475945["Avis de sécurité"^] document inclus dans l'emballage et comprendre les précautions à prendre pour déplacer et installer le matériel.
+* Les instructions sont fournies avec le kit de rails.
+* Vous avez installé le tiroir et les lecteurs du contrôleur E4000.
+
+
+.Étapes
+. Suivez attentivement les instructions du kit de rails pour installer les rails dans votre armoire ou rack.
+. Sur les deux rails installés dans l'armoire ou le rack, étendez les pièces mobiles des rails jusqu'à ce que vous entendiez un clic.
++
+image::../media/rails_extended_out.gif[Rails SG6200]
+
+. Insérez le contrôleur SG6200-CN dans les rails.
+. Faites glisser le contrôleur dans l'armoire ou le rack.
++
+Lorsque vous ne pouvez plus déplacer le contrôleur, tirez sur les loquets bleus des deux côtés du châssis pour faire glisser le contrôleur complètement vers l'intérieur.
+
++
+image::../media/sg6000_cn_rails_blue_button.gif[SG6200 Coulissant sur rails]
+
++
+
+NOTE: Ne fixez le panneau avant qu'après la mise sous tension du contrôleur.
+
+. Serrez les vis imperdables du panneau avant du contrôleur pour fixer le contrôleur dans le rack.
++
+image::../media/s25_rack_retaining_screws.png[vis de fixation du rack SG6260]
+
+

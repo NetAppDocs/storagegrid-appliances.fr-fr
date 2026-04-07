@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: network connections, network connection, network, connection, connectivity, verify, verifying, check, checking, ports, port, port-level, port level, test, testing, udp, Client Network, Admin Network 
 summary: 'Pour vous assurer que l"accès entre le programme d"installation de l"appliance StorageGRID et d"autres nœuds n"est pas obstrué par des pare-feu, vérifiez que le programme d"installation de l"appliance StorageGRID peut se connecter à un port TCP spécifique ou à un ensemble de ports sur l"adresse IP ou la plage d"adresses spécifiée.' 
 ---
-= Vérifiez les connexions réseau au niveau des ports
+= Vérifiez les connexions réseau au niveau des ports sur les appliances StorageGRID
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

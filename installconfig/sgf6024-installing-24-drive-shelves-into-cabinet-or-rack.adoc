@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6000, storage node, storage appliance, install, installing, installation, cabinet, rack, controller, drive shelf, drive shelves, 24-drive, shelf, shelves, rail, rails 
 summary: Vous installez un ensemble de rails pour le tiroir contrôleur EF570 dans votre armoire ou votre rack, puis faites glisser la baie sur les rails. 
 ---
-= Installation des tiroirs de 24 disques (SGF6024)
+= Installez les tiroirs à 24 disques pour un SGF6024
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6100, storage node, storage appliance, sg6160, expansion shelf, expansion, drive, disk, install, installing, installation, add, adding, expand 
 summary: 'Pour augmenter la capacité de stockage, vous pouvez ajouter un ou deux tiroirs d"extension au système SG6160 déployé dans un système StorageGRID.' 
 ---
-= Ajout du tiroir d'extension au SG6160 déployé
+= Ajouter un tiroir d'extension à un SG6160 déployé
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -184,7 +184,7 @@ Une fois le redémarrage terminé, l'onglet *Tâches* s'affiche avec des sélect
 
 . Vérifiez l'état du nœud de stockage de l'appliance et des nouveaux tiroirs d'extension.
 +
-.. Dans le Gestionnaire de grille, sélectionnez *NODES* et vérifiez que le noeud de stockage de l'appliance possède une icône de coche verte.
+.. Dans le Gestionnaire de grille, sélectionnez *Nœuds* et vérifiez que le nœud de stockage de l'appliance possède une icône de coche verte.
 +
 L'icône de coche verte signifie qu'aucune alerte n'est active et que le nœud est connecté à la grille. Pour une description des icônes de nœud, reportez-vous àla section https://docs.netapp.com/us-en/storagegrid/monitor/monitoring-system-health.html#monitor-node-connection-states["Surveiller les États de connexion du nœud"^].
 

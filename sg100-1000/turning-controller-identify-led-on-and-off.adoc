@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, locate, find, locating, finding, identify, blue led, blue light 
 summary: 'Il est possible d"allumer la LED d"identification bleue à l"avant et à l"arrière du contrôleur pour localiser l"appliance dans un data Center.' 
 ---
-= Allumer et éteindre le voyant d'identification SG100 ou SG1000
+= Allumez et éteignez la LED d'identification SG100 ou SG1000
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

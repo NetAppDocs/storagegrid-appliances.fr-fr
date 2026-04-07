@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: sg5800, sg5812, sg5860, storage appliance 
 summary: 'Le système SG5800 StorageGRID est une plateforme informatique et de stockage intégrée qui fonctionne comme un nœud de stockage dans un grid StorageGRID. L"appliance peut être utilisée dans un environnement de grid hybride qui combine des nœuds de stockage d"appliance et des nœuds de stockage virtuels \(basés sur logiciel\).' 
 ---
-= Appareils SG5800 : présentation
+= Appliances StorageGRID SG5800
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

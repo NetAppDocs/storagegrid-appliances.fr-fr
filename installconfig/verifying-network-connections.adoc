@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: network connections, network connection, network, connection, connectivity, verify, verifying, check, checking, mtu, test, testing 
 summary: 'Vérifiez que vous pouvez accéder aux réseaux StorageGRID que vous utilisez à partir de l"appliance. Pour valider le routage via des passerelles réseau, vous devez tester la connectivité entre le programme d"installation de l"appliance StorageGRID et les adresses IP sur différents sous-réseaux. Vous pouvez également vérifier le paramètre MTU.' 
 ---
-= Vérifiez les connexions réseau
+= Vérifiez les connexions réseau sur les appliances StorageGRID
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

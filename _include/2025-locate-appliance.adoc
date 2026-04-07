@@ -1,0 +1,22 @@
+= 
+:allow-uri-read: 
+
+
+.Étapes
+. Trouvez l'appliance dans le data Center.
++
+** Recherchez un voyant d'identification bleu allumé à l'avant ou à l'arrière de l'appareil.
++
+Le voyant d'identification avant se trouve derrière le cadre avant et peut être difficile à voir si le cadre est installé.
+
++
+image::../media/s25_front_identify_led.png[Voyant d'identification avant - allumé]
+
++
+La LED d'identification arrière se trouve au centre de l'appareil, à côté de l'emplacement pour carte Micro-SD.
+
+** Vérifiez que les étiquettes apposées à l'avant de l'appareil correspondent à la référence pour vous assurer que vous avez trouvé l'appareil approprié.
+
+
+. Retirez le cadre avant, le cas échéant, pour accéder aux commandes et aux voyants du panneau avant.
+

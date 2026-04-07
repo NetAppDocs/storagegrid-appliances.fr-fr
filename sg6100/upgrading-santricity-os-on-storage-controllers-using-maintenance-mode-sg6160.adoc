@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6160, storage node, storage appliance, controller, storage controller, upgrade, upgrading, SANtricity OS, SANtricity, maintenance mode 
 summary: 'Pour les contrôleurs de stockage qui utilisent actuellement SANtricity OS antérieurs à 08.42.20.00 \(11.42\), vous devez utiliser la procédure du mode de maintenance pour appliquer une mise à niveau.' 
 ---
-= Mise à niveau du système d'exploitation SANtricity sur le contrôleur de stockage SG6160 en mode maintenance
+= Mettez à niveau le système d'exploitation SANtricity sur les contrôleurs de stockage SG6160 en utilisant le mode de maintenance
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -12,8 +12,6 @@ summary: 'Pour les contrôleurs de stockage qui utilisent actuellement SANtricit
 
 [role="lead"]
 Vous pouvez utiliser le mode maintenance pour mettre à niveau le système d'exploitation SANtricity sur le contrôleur SG6160.
-
-Pour les contrôleurs de stockage qui utilisent actuellement SANtricity OS antérieurs à la version 08.42.20.00 (11.42), vous devez utiliser la procédure du mode de maintenance pour appliquer une mise à niveau.
 
 
 NOTE: Pour les contrôleurs de stockage utilisant actuellement un système d'exploitation SANtricity plus récent que 08.42.20.00 (11.42), il est recommandé de link:upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg6160.html["Utilisez Grid Manager pour appliquer une mise à niveau"]. Toutefois, vous pouvez utiliser la procédure du mode maintenance si vous le préférez ou si vous y avez reçu des instructions du support technique.
@@ -54,7 +52,7 @@ NOTE: Activez immédiatement les fichiers de mise à niveau. Ne différez pas l'
 Le redémarrage de l'appareil et sa reconnexion au réseau peuvent prendre jusqu'à 20 minutes.  Pour confirmer que le redémarrage est terminé et que le nœud a rejoint la grille :
 
 +
-... Dans le gestionnaire de grille, sélectionnez *NODES*.
+... Dans le Gestionnaire de grille, sélectionnez *Nœuds*.
 ... Vérifiez que le nœud de l'appareil a un état normal (icône de coche verte)image:../media/icon_alert_green_checkmark.png["coche verte"] à gauche du nom du nœud), ce qui indique qu'aucune alerte n'est active et que le nœud est connecté au réseau.
 
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6000, storage node, storage appliance, Replacing, replace, storage controller, e2800, ef570, controller, remove, removing, removal, install, installing, installation 
 summary: Vous devrez peut-être remplacer un contrôleur E2800 ou EF570 si ce dernier ne fonctionne pas de manière optimale ou en cas de défaillance. 
 ---
-= Remplacez le contrôleur de stockage dans le SG6000
+= Remplacer un contrôleur de stockage dans le SG6000
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -238,14 +238,14 @@ Lorsque le loquet s'enclenche, le bas des crochets de verrouillage se trouve dan
 . Retournez le contrôleur pour vérifier que la batterie est correctement installée.
 +
 
-CAUTION: *Dommages matériels possibles* -- la bride métallique à l'avant de la batterie doit être complètement insérée dans le logement du contrôleur (comme indiqué sur la première figure). Si la batterie n'est pas installée correctement (comme illustré sur la deuxième figure), la bride métallique peut entrer en contact avec la carte contrôleur, ce qui peut endommager la carte.
+CAUTION: *Risque d'endommagement matériel* – La bride métallique située à l'avant de la batterie doit être complètement insérée dans son logement sur le contrôleur (comme illustré sur la première figure). Si la batterie n'est pas correctement installée (comme illustré sur la deuxième figure), la bride métallique risque d'entrer en contact avec la carte du contrôleur et de l'endommager.
 
 +
 ** *Correct -- la bride métallique de la batterie est complètement insérée dans le logement du contrôleur:*
 +
 image::../media/e2800_battery_flange_ok.gif[Bride de batterie conforme]
 
-** *Incorrect -- la bride métallique de la batterie n'est pas insérée dans le logement du contrôleur :*
+** *Incorrect – La bride métallique de la batterie n'est pas insérée dans la fente du contrôleur :*
 +
 image::../media/e2800_battery_flange_not_ok.gif[Bride de batterie incorrecte]
 
@@ -395,4 +395,4 @@ NOTE: Si le contrôleur d'origine n'a pas utilisé DHCP pour l'adresse IP, le no
 . Confirmer que le nouveau contrôleur est optimal et collecter les données de support.
 
 
-Après le remplacement de la pièce, renvoyez la pièce défectueuse à NetApp, en suivant les instructions RMA (retour de matériel) livrées avec le kit. Voir la https://mysupport.netapp.com/site/info/rma["Retour de pièce et amp ; remplacements"^] pour plus d'informations.
+Après avoir remplacé la pièce, retournez la pièce défectueuse à NetApp, comme indiqué dans les instructions RMA fournies avec le kit. Consultez la page  https://mysupport.netapp.com/site/info/rma["Retours et remplacements de pièces"^] pour plus d'informations.
