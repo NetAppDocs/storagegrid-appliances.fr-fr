@@ -83,7 +83,7 @@ image::../media/bmc_power_control_page_controller_off.png[Page de contrôle de l
 
 
 
-== [[poweron]]Allumez le contrôleur SG6000-CN et vérifiez le fonctionnement
+== Mettez le contrôleur SG6000-CN sous tension et vérifiez son fonctionnement
 
 Mettez le contrôleur sous tension après la fin de la maintenance.
 

@@ -29,7 +29,7 @@ Si vous activez le chiffrement des nœuds, les disques de votre appliance peuven
 
 Si vous utilisez ConfigBuilder pour générer un fichier JSON, vous pouvez activer le chiffrement de nœud automatiquement. Voir link:automating-appliance-installation-and-configuration.html["Automatisez l'installation et la configuration de l'appliance"].
 
-De plus, lorsque vous activez le mode FIPS après avoir activé le chiffrement des nœuds, le module NetApp StorageGRID Kernel Crypto API 6.1.129-1-ntap1-amd64 est utilisé pour le chiffrement des données au repos. Se référer à https://review.docs.netapp.com/us-en/storagegrid_storagegrid-120-dev/admin/manage-tls-ssh-policy.html#select-a-security-policy["Sélectionnez une politique de sécurité"^] pour plus d'informations.
+De plus, lorsque vous activez le mode FIPS après avoir activé le chiffrement des nœuds, le module NetApp StorageGRID Kernel Crypto API 6.1.129-1-ntap1-amd64 est utilisé pour le chiffrement des données au repos. Consultez  https://docs.netapp.com/us-en/storagegrid/admin/manage-tls-ssh-policy.html#select-a-security-policy["Sélectionnez une politique de sécurité"^] pour plus d'informations.
 
 .Avant de commencer
 Passez en revue les informations sur https://docs.netapp.com/us-en/storagegrid/admin/kms-configuring.html["Configuration de KMS"^].
