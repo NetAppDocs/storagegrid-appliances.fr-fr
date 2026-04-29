@@ -6586,4 +6586,5 @@ Affiche Oui, indiquant qu'il est possible de retirer ce composant en toute sécu
   <block id="2ba40bc143304c6482f4d84aed967cc7" category="sidebar">Contrôleur SG6200-CN (SG6260)</block>
   <block id="966b0abd256df531996f5779b0267572" category="sidebar">Contrôleur E4000 (SG6260)</block>
   <block id="7a6eea70e2a063993169b9f20b674a54" category="paragraph">De plus, lorsque vous activez le mode FIPS après avoir activé le chiffrement des nœuds, le module NetApp StorageGRID Kernel Crypto API 6.1.129-1-ntap1-amd64 est utilisé pour le chiffrement des données au repos. Consultez <block ref="fb536484ccdd3f2f62bef4c60558bb81" category="inline-link-rx"></block> pour plus d'informations.</block>
+  <block id="8eca4ebb793a1236eac6e1dd47dd0f10" category="section-title">[[poweron]]Mettez le contrôleur SG6000-CN sous tension et vérifiez son fonctionnement</block>
 </blocks>
