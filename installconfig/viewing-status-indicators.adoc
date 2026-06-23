@@ -330,6 +330,7 @@ image::../media/ssd_indicators.png[Indicateurs SSD]
  a| 
 * Bleu (continu) : le lecteur est en ligne
 * Orange (fixe) : panne de disque
+* Orange (clignotant) : le voyant de localisation du lecteur est allumé
 * OFF : l'emplacement est vide
 
 
@@ -1302,6 +1303,7 @@ image::../media/ssd_indicators.png[Indicateurs SSD]
  a| 
 * Bleu (continu) : le lecteur est en ligne
 * Orange (fixe) : panne de disque
+* Orange (clignotant) : le voyant de localisation du lecteur est allumé
 * OFF : l'emplacement est vide
 
 
