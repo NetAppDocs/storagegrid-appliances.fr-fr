@@ -23,6 +23,7 @@ Pour plus d'informations sur toutes les méthodes de chiffrement disponibles pou
 
 
 
+[[enable-node-encryption]]
 == Activez le chiffrement de nœud
 
 Si vous activez le chiffrement des nœuds, les disques de votre appliance peuvent être protégés par le chiffrement sécurisé des serveurs de gestion des clés (KMS) contre les pertes physiques ou la suppression du site. Vous devez sélectionner et activer le chiffrement des nœuds lors de l'installation de l'appliance. Vous ne pouvez pas désactiver le chiffrement de nœud après le démarrage du processus de chiffrement KMS.
@@ -88,6 +89,7 @@ Vous pouvez afficher l'état du chiffrement de nœud, les détails KMS et les ce
 
 
 
+[[drive-encryption]]
 == Chiffrement de disque
 
 Le chiffrement de disque est géré sur du matériel à disques autochiffrés (SED) pendant les processus d'écriture et de lecture. L'accès aux données sur ces disques est contrôlé par une phrase secrète définie par l'utilisateur.
@@ -118,6 +120,7 @@ CAUTION: Assurez-vous de stocker la phrase de passe de cryptage de lecteur dans 
 
 
 
+[[enable-drive-encryption]]
 === Activez le chiffrement de disque
 
 . Accédez au programme d'installation de l'appliance StorageGRID.
@@ -156,6 +159,7 @@ Enregistrez le texte d'affichage de la phrase de passe et de la phrase de passe 
 
 
 
+[[view-drive-encryption-status]]
 === Afficher l'état du chiffrement de disque
 
 . link:../commonhardware/placing-appliance-into-maintenance-mode.html["Mettez l'appareil en mode de maintenance"].
@@ -164,6 +168,7 @@ Enregistrez le texte d'affichage de la phrase de passe et de la phrase de passe 
 
 
 
+[[access-an-encrypted-drive]]
 === Accéder à un disque chiffré
 
 Vous devez saisir une phrase secrète pour accéder à un disque chiffré après le remplacement du nœud de calcul ou après le déplacement d'un disque vers un nouveau nœud de calcul.
@@ -196,6 +201,7 @@ Les bannières d'avertissement ne s'affichent plus lorsque les disques sont dév
 
 
 
+[[change-the-drive-encryption-passphrase]]
 === Modifiez la phrase de passe de chiffrement de disque
 
 . Accédez au programme d'installation de l'appliance StorageGRID.
@@ -227,6 +233,7 @@ CAUTION: Après avoir défini une nouvelle phrase de passe, les disques chiffré
 
 
 
+[[disable-drive-encryption]]
 === Désactivez le chiffrement de lecteur
 
 . Accédez au programme d'installation de l'appliance StorageGRID.

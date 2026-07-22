@@ -17,10 +17,12 @@ L'appliance StorageGRID SG6260 comprend un contrôleur de calcul doté de deux S
 
 
 
+[[appliance-features]]
 == Caractéristiques de l'appareil
 
 
 
+[[general-features]]
 === Caractéristiques générales
 
 Les appareils SGF6212 et SG6260 offrent les fonctionnalités suivantes :
@@ -32,6 +34,7 @@ Les appareils SGF6212 et SG6260 offrent les fonctionnalités suivantes :
 
 
 
+[[data-protection-features]]
 === fonctionnalités de protection des données
 
 Le SGF6212 offre les fonctionnalités de protection des données suivantes :
@@ -57,10 +60,12 @@ Le SG6260 offre les fonctionnalités de protection des données suivantes :
 
 
 
+[[sg6200-hardware-components]]
 == Composants matériels SG6200
 
 
 
+[[sgf6212-appliance]]
 === Appareil SGF6212
 
 L'appareil SGF6212 comprend les composants suivants :
@@ -68,8 +73,9 @@ L'appareil SGF6212 comprend les composants suivants :
 Des plateformes de calcul et de stockage:: Un serveur à une unité de rack (1U) qui comprend :
 +
 --
+* Un processeur AMD de 3,55 GHz offrant 32 cœurs (64 threads)
 * 256 GO DE RAM
-* Disque de démarrage interne de 240 Go (inclut le logiciel StorageGRID)
+* Disque de démarrage interne de 256 Go (inclut le logiciel StorageGRID)
 * 2 ports GBase-T 1/10
 * 4 ports Ethernet 10/25/40/100GbE pour le trafic réseau Grid/Client (ou 4 x 200GbE avec carte réseau 200GbE en option)
 * 12 SSD NVMe pour stockage des données
@@ -82,6 +88,7 @@ Des plateformes de calcul et de stockage:: Un serveur à une unité de rack (1U)
 
 
 
+[[sg6260-appliance]]
 === Appliance SG6260
 
 L'appareil SG6260 comprend les composants suivants :
@@ -89,8 +96,9 @@ L'appareil SG6260 comprend les composants suivants :
 Contrôleur de calcul:: Le contrôleur SG6200-CN est un serveur au format 1U (unité de rack) qui comprend :
 +
 --
+* Un processeur AMD de 3,55 GHz offrant 32 cœurs (64 threads)
 * 256 GO DE RAM
-* Disque de démarrage interne de 240 Go (inclut le logiciel StorageGRID)
+* Disque de démarrage interne de 256 Go (inclut le logiciel StorageGRID)
 * 2 ports GBase-T 1/10
 * 4 ports Ethernet 10/25/40/100GbE pour le trafic réseau Grid/Client (ou 4 x 200GbE avec carte réseau 200GbE en option)
 * 1 port d'interconnexion de stockage 100 GbE
@@ -124,10 +132,12 @@ Le boîtier E-Series DE460C est un tiroir 4U qui comprend :
 
 
 
+[[sgf6212-and-sg6260-diagrams]]
 == Schémas SGF6212 et SG6260
 
 
 
+[[sgf6212-front-view]]
 === Vue de face du SGF6212
 
 Cette figure montre la face avant du SGF6212 sans le panneau. L'appliance comprend une plateforme de calcul et de stockage 1U équipée de 12 disques SSD.
@@ -136,6 +146,7 @@ image::../media/s25_front_with_ssds.png[Vue de face du SGF6212]
 
 
 
+[[sgf6212-rear-view]]
 === Vue arrière du SGF6212
 
 Cette figure montre l'arrière du SGF6212, y compris les ports, les ventilateurs et les alimentations.
@@ -246,6 +257,7 @@ Identifier la LED
 |===
 
 
+[[sg6260-front-view]]
 === Vue de face du SG6260
 
 Cette figure montre la face avant du SG6260, qui comprend un contrôleur de calcul 1U et une étagère 4U contenant deux contrôleurs de stockage et 60 disques répartis dans cinq tiroirs.
@@ -272,6 +284,7 @@ Tiroir contrôleur E4000 avec panneau avant retiré (le tiroir d'extension en op
 |===
 
 
+[[sg6260-rear-view]]
 === Vue arrière du SG6260
 
 Cette figure montre l'arrière du SG6260, y compris les contrôleurs de calcul et de stockage, les ventilateurs et les alimentations.
@@ -307,7 +320,7 @@ Ventilateur (1 sur 2) pour tiroir contrôleur E4000
  a| 
 4
  a| 
-Contrôleur de stockage E-Series E400 (1 sur 2) et connecteurs
+Contrôleur de stockage série E E4000 (1 sur 2) et connecteurs
 
 
 
@@ -319,10 +332,12 @@ Alimentation (1 sur 2) du tiroir contrôleur E4000
 |===
 
 
+[[sg6200-controllers]]
 == Contrôleurs SG6200
 
 
 
+[[sg6200-cn-compute-controller]]
 === Contrôleur de calcul SG6200-CN
 
 * Fournit des ressources de calcul pour l'appliance.
@@ -452,6 +467,7 @@ Identifier la LED
 |===
 
 
+[[sg6260-e4000-storage-controller]]
 === SG6260 : Contrôleur de stockage E4000
 
 * Deux contrôleurs pour la prise en charge du basculement.
@@ -527,6 +543,7 @@ Il existe quatre connexions au contrôleur SG6200-CN (deux de chaque E4000).
 |===
 
 
+[[sg6260-ioms-for-optional-expansion-shelves]]
 === SG6260 : Modules d’interface pour étagères d’extension optionnelles
 
 Le tiroir d'extension contient deux modules d'entrée/sortie qui se connectent aux contrôleurs de stockage ou à d'autres tiroirs d'extension.

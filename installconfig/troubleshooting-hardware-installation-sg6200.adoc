@@ -15,6 +15,7 @@ Si vous rencontrez des problèmes lors de l'installation, il peut s'avérer util
 
 
 
+[[view-boot-codesview-boot-up-codes-sgf6212-and-sg6260-only]]
 == [[view-boot-codes]]Afficher les codes de démarrage (SGF6212 et SG6260 uniquement)
 
 Lorsque vous mettez l'appliance sous tension, le contrôleur BMC consigne une série de codes de démarrage. Vous pouvez afficher ces codes sur une console graphique connectée au port de gestion BMC.
@@ -188,6 +189,7 @@ StorageGRID est en cours d'exécution.
 
 
 
+[[view-error-codesview-error-codes-sgf6212-and-sg6260-only]]
 == [[view-error-codes]]Afficher les codes d'erreur (SGF6212 et SG6260 uniquement)
 
 Si une erreur matérielle se produit lors du démarrage de l'appliance, le contrôleur BMC consigne un code d'erreur. Si nécessaire, vous pouvez afficher ces codes d'erreur à l'aide du port série de l'appareil, puis travailler avec le support technique pour résoudre le problème.
@@ -560,6 +562,8 @@ MRC : ERR_INTERLEAVE_FAILURE
 
 
 
+[[hardware-setup-appears-to-hang]]
+[[hardware-setup-hangs]]
 == La configuration du matériel semble être suspendue
 
 Il se peut que le programme d'installation de l'appliance StorageGRID ne soit pas disponible si des défauts matériels ou des erreurs de câblage empêchent l'appliance de terminer son processus de démarrage.
@@ -571,10 +575,12 @@ Il se peut que le programme d'installation de l'appliance StorageGRID ne soit pa
 
 
 
+[[connection-issues]]
 == Problèmes de connexion
 
 
 
+[[expansion-shelves-dont-appear-in-appliance-installer-sg6260]]
 === Les tiroirs d'extension n'apparaissent pas dans Appliance Installer (SG6260)
 
 Si vous avez installé des tiroirs d'extension et qu'ils n'apparaissent pas dans le programme d'installation de l'appliance StorageGRID, vérifiez que ces tiroirs ont été complètement installés et sous tension.
@@ -599,6 +605,7 @@ Si les pages du programme d'installation de l'appliance StorageGRID n'indiquent 
 
 
 
+[[unable-to-connect-to-appliance]]
 === Connexion à l'appareil impossible
 
 Si vous ne parvenez pas à vous connecter à l'appliance de stockage, il se peut qu'il y ait un problème de réseau ou que l'installation matérielle n'ait pas été correctement effectuée.

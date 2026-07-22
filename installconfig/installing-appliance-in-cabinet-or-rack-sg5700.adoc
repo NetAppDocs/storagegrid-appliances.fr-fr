@@ -20,6 +20,7 @@ Vous installez un ensemble de rails dans votre armoire ou rack, puis faites glis
 
 
 
+[[install-sg5712]]
 == Installer SG5712
 
 Procédez comme suit pour installer une appliance SG5712 dans un rack ou une armoire.
@@ -40,6 +41,7 @@ CAUTION: Installez le matériel depuis le bas du rack ou de l'armoire, ou montez
 
 
 
+[[install-sg5760]]
 == Installer SG5760
 
 Suivez ces étapes pour installer une appliance SG5760 et tout tiroir d'extension dans un rack ou une armoire.

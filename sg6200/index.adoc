@@ -27,6 +27,7 @@ Les procédures décrites dans cette section supposent que l'appliance a déjà 
 
 
 
+[[drive-firmware-upgrade]]
 == Mise à niveau du firmware des disques
 
 Le firmware des disques dans le SG6260 est automatiquement vérifié à chaque redémarrage de l'appliance. Lorsque cela est nécessaire, le firmware est automatiquement mis à niveau vers la version attendue par la version actuelle de StorageGRID. En général, les mises à niveau du firmware ont lieu lors des mises à niveau logicielles de StorageGRID. Toute mise à niveau nécessaire du firmware des disques pour les versions existantes de StorageGRID sera incluse dans les correctifs. Suivez les instructions fournies avec chaque correctif pour vous assurer que la mise à niveau est appliquée à tous les disques qui pourraient en bénéficier.
@@ -38,6 +39,7 @@ NOTE: SANtricity System Manager n'est pas nécessaire pour la maintenance du dis
 
 
 
+[[general-maintenance-procedures]]
 == Procédures générales de maintenance
 
 Voir link:../commonhardware/index.html["Procédures de maintenance courantes"] pour les procédures identiques pour tous les dispositifs, telles que l'application d'un correctif, la récupération d'un nœud ou d'un site et la maintenance du réseau.

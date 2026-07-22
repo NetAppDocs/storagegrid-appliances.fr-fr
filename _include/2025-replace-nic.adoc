@@ -4,6 +4,7 @@
 
 
 
+[[step-1-remove-the-nic]]
 == Étape 1 : Retirez la carte réseau
 
 [role="tabbed-block"]
@@ -48,6 +49,7 @@ image:../media/drw_s2025_IO_card_replace_ieops-2557.svg["Retrait d'une carte d'E
 ====
 
 
+[[step-2-reinstall-the-internal-nic]]
 == Étape 2 : Réinstaller la carte réseau interne
 
 Installez la carte réseau de remplacement au même emplacement que celui qui a été retiré.

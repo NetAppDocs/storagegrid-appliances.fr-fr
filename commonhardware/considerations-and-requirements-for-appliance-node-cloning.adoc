@@ -18,6 +18,7 @@ TIP: Le clonage de nœud est désactivé pour les nœuds de passerelle.  Pour re
 
 
 
+[[hardware-requirements-for-the-replacement-appliance]]
 == Configuration matérielle requise pour l'appliance de remplacement
 
 Assurez-vous que l'appareil de remplacement répond aux critères suivants :
@@ -50,6 +51,7 @@ Contactez votre ingénieur commercial StorageGRID pour savoir comment choisir de
 
 
 
+[[prepare-to-clone-an-appliance-node]]
 == Préparez-vous à cloner un nœud d'appliance
 
 Avant de cloner un nœud d'appliance, vous devez disposer des informations suivantes :
@@ -58,6 +60,7 @@ Avant de cloner un nœud d'appliance, vous devez disposer des informations suiva
 +
 Les adresses IP temporaires se trouvent généralement sur le même sous-réseau que l'appliance de nœud source clonée, et ne sont pas nécessaires une fois le clonage terminé. Les appliances source et cible doivent se connecter au nœud d'administration principal de votre StorageGRID pour établir une connexion de clonage.
 
+* Si vous activez le DHCP sur des ports du nœud cible qui étaient configurés en statique sur le nœud source, assurez-vous qu'il n'existe aucun bail DHCP permanent pour aucune des adresses MAC du nœud source. Dans le cas contraire, un conflit d'adresses IP pourrait survenir à la fin du processus de clonage.
 * Déterminer le réseau à utiliser pour le clonage du trafic de transfert de données qui offre les meilleures performances de transfert de données sans affecter les performances du réseau StorageGRID ni la disponibilité des données.
 +
 

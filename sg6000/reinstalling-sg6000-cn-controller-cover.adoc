@@ -15,6 +15,7 @@ Retirez le couvercle de l'appareil pour accéder aux composants internes à des 
 
 
 
+[[remove-sg6000-cn-controller-cover]]
 == Déposer le couvercle du contrôleur SG6000-CN
 
 Retirer le capot du contrôleur pour accéder aux composants internes en vue de leur maintenance.
@@ -40,6 +41,7 @@ Après avoir remplacé la pièce, retournez la pièce défectueuse à NetApp, co
 
 
 
+[[reinstall-sg6000-cn-controller-cover]]
 == Réinstallez le couvercle du contrôleur SG6000-CN
 
 Réinstallez le capot du contrôleur une fois la maintenance matérielle interne terminée.

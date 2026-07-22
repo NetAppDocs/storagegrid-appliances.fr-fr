@@ -2,7 +2,7 @@
 permalink: installconfig/deploying-services-appliance-node.html 
 sidebar: sidebar 
 keywords: storagegrid, sg110, sg1100, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, deploy node, deploying node, node, deploy, deploying, primary, primary admin node, non-primary admin node, non-primary 
-summary: 'Vous pouvez déployer une appliance de services en tant que nœud d"administration principal, nœud d"administration non primaire ou nœud de passerelle. Toutes les appliances de services peuvent fonctionner simultanément en tant que nœuds de passerelle et nœuds d"administration \(principal ou non principal\).' 
+summary: 'Vous pouvez déployer une appliance de services en tant que nœud d"administration principal, nœud d"administration non primaire ou nœud de passerelle. Toutes les appliances de services peuvent fonctionner en même temps que des nœuds de passerelle et des nœuds d"administration (primaires ou non).' 
 ---
 = Déployer un nœud d'appliance de services StorageGRID
 :allow-uri-read: 
@@ -15,6 +15,7 @@ Vous pouvez déployer une appliance de services en tant que nœud d'administrati
 
 
 
+[[deploy-services-appliance-as-primary-admin-node]]
 == Déployez l'appliance de services en tant que nœud d'administration principal
 
 Lorsque vous déployez une appliance de services en tant que nœud d'administration principal, utilisez le programme d'installation de l'appliance StorageGRID inclus sur l'appliance pour installer le logiciel StorageGRID ou téléchargez la version du logiciel que vous souhaitez installer. Vous devez installer et configurer le nœud d'administration principal avant d'installer tout autre type de nœud d'appliance. Un nœud d'administration principal peut se connecter au réseau Grid et au réseau d'administration et au réseau client en option, si un ou les deux sont configurés.
@@ -79,6 +80,7 @@ NOTE: Si vous devez accéder manuellement à la page installation du moniteur, c
 
 
 
+[[deploy-services-appliance-as-gateway-or-non-primary-admin-node]]
 == Déployez une appliance de services en tant que passerelle ou nœud d'administration non primaire
 
 Lorsque vous déployez une appliance de services en tant que nœud de passerelle ou nœud d'administration non primaire, utilisez le programme d'installation de l'appliance StorageGRID inclus sur l'appliance.

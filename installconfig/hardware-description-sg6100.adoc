@@ -45,10 +45,12 @@ Le SG6160 offre les fonctionnalités de protection des données suivantes :
 
 
 
+[[sg6100-hardware-components]]
 == Composants matériels du SG6100
 
 
 
+[[sgf6112-appliance]]
 === Appliance SGF6112
 
 L'appliance SGF6112 inclut les composants suivants :
@@ -70,6 +72,7 @@ Des plateformes de calcul et de stockage:: Un serveur à une unité de rack (1U)
 
 
 
+[[sg6160-appliance]]
 === Appliance SG6160
 
 L'appliance SG6160 comprend les composants suivants :
@@ -114,10 +117,12 @@ Le boîtier E-Series DE460C est un tiroir 4U qui comprend :
 
 
 
+[[sgf6112-and-sg6160-diagrams]]
 == Schémas SGF6112 et SG6160
 
 
 
+[[sgf6112-front-view]]
 === Vue avant du SGF6112
 
 Cette figure illustre l'avant du SGF6112 sans le cadre. L'appliance inclut une plateforme de calcul et de stockage 1U qui contient 12 disques SSD.
@@ -126,6 +131,7 @@ image::../media/sgf6112_front_with_ssds.png[Vue avant du SGF6112]
 
 
 
+[[sgf6112-rear-view]]
 === Vue arrière du SGF6112
 
 Cette figure illustre l'arrière du SGF6112, y compris les ports, les ventilateurs et les blocs d'alimentation.
@@ -235,6 +241,7 @@ Identifier la LED
 |===
 
 
+[[sg6160-front-view]]
 === Vue avant du SG6160
 
 Cette figure présente la façade du modèle SG6160, qui comprend un contrôleur de calcul 1U et un tiroir 4U contenant deux contrôleurs de stockage et 60 disques dans cinq tiroirs.
@@ -261,6 +268,7 @@ Tiroir contrôleur E4000 avec panneau avant retiré (le tiroir d'extension en op
 |===
 
 
+[[sg6160-rear-view]]
 === Vue arrière du SG6160
 
 Cette figure représente l'arrière du SG6160, y compris les contrôleurs de calcul et de stockage, les ventilateurs et les blocs d'alimentation.
@@ -308,10 +316,12 @@ Alimentation (1 sur 2) du tiroir contrôleur E4000
 |===
 
 
+[[sg6100-controllers]]
 == Contrôleurs SG6100
 
 
 
+[[sg6100-cn-compute-controller]]
 === Contrôleur de calcul SG6100-CN
 
 * Fournit des ressources de calcul pour l'appliance.
@@ -444,6 +454,7 @@ Identifier la LED
 |===
 
 
+[[sg6160-e4000-storage-controller]]
 === SG6160 : contrôleur de stockage E4000
 
 * Deux contrôleurs pour la prise en charge du basculement.
@@ -519,6 +530,7 @@ Il existe quatre connexions au contrôleur SG6100-CN (deux de chaque E4000).
 |===
 
 
+[[sg6160-ioms-for-optional-expansion-shelves]]
 === SG6160 : modules d'E/S pour tiroirs d'extension en option
 
 Le tiroir d'extension contient deux modules d'entrée/sortie qui se connectent aux contrôleurs de stockage ou à d'autres tiroirs d'extension.

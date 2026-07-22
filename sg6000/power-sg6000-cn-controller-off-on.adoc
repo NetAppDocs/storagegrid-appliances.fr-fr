@@ -15,6 +15,7 @@ Vous pouvez arrêter le contrôleur SG6000-CN et le remettre sous tension pour e
 
 
 
+[[shut-down-sg6000-cn-controller]]
 == Arrêtez le contrôleur SG6000-CN
 
 Arrêtez le contrôleur SG6000-CN pour effectuer la maintenance du matériel.
@@ -83,6 +84,7 @@ image::../media/bmc_power_control_page_controller_off.png[Page de contrôle de l
 
 
 
+[[poweronpower-on-sg6000-cn-controller-and-verify-operation]]
 == [[poweron]]Mettez le contrôleur SG6000-CN sous tension et vérifiez son fonctionnement
 
 Mettez le contrôleur sous tension après la fin de la maintenance.

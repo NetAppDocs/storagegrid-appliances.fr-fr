@@ -80,6 +80,7 @@ image::../media/one-slot-assembly-sgf6112.png[Carte réseau dans le dispositif d
 
 
 
+[[reinstall-the-internal-nic]]
 == Réinstallez la carte réseau interne
 
 Installez la carte réseau de remplacement au même emplacement que celui qui a été retiré.

@@ -15,10 +15,12 @@ Après avoir mis l'appareil sous tension, vous configurez les connexions réseau
 
 
 
+[[required-hardware-configurations]]
 == Configurations matérielles requises
 
 
 
+[[network-connections]]
 === Connexions réseau
 
 Vous devez configurer et vérifier les connexions réseau requises pour tous les appareils :
@@ -30,6 +32,7 @@ Vous devez configurer et vérifier les connexions réseau requises pour tous les
 
 
 
+[[bmc-interface]]
 === Interface BMC
 
 Vous devez link:../installconfig/configuring-bmc-interface.html["configurer l’interface du contrôleur de gestion de la carte mère (BMC)"] si vous installez l'un des appareils suivants :
@@ -54,10 +57,12 @@ Pour en savoir plus sur les fonctionnalités que vous pouvez utiliser avec le BM
 
 
 
+[[optional-hardware-configurations]]
 == Configurations matérielles optionnelles
 
 
 
+[[santricity-system-manager]]
 === SANtricity System Manager
 
 Vous pouvez link:../installconfig/accessing-and-configuring-santricity-system-manager.html["Configurer SANtricity System Manager"] si vous possédez l'un des appareils suivants :
@@ -81,12 +86,14 @@ Le logiciel SANtricity System Manager vous permet de :
 
 
 
+[[enable-node-or-drive-encryption]]
 === Activez le chiffrement des nœuds ou des disques
 
 Vous pouvez link:../installconfig/optional-enabling-node-encryption.html["activer le chiffrement du nœud ou du disque"] protéger les lecteurs et les disques de votre appareil.
 
 
 
+[[change-raid-mode]]
 === Changer le mode RAID
 
 Vous pouvez link:../installconfig/optional-changing-raid-mode.html["modifier le mode RAID de votre périphérique de stockage"] pour répondre à vos besoins de stockage et de récupération.
@@ -103,6 +110,7 @@ Les appareils suivants prennent en charge la modification du mode RAID :
 
 
 
+[[remap-network-ports]]
 === Remappez les ports réseau
 
 Vous pouvez link:../installconfig/optional-remapping-network-ports-for-appliance.html["reconfigurez les ports réseau de votre appareil"] pour optimiser vos connexions réseau.

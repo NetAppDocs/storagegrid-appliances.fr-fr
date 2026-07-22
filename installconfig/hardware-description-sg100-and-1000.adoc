@@ -2,7 +2,7 @@
 permalink: installconfig/hardware-description-sg100-and-1000.html 
 sidebar: sidebar 
 keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, overview, models, features, applications, how to use, services 
-summary: 'Le dispositif des services StorageGRID SG100 et l"appliance des services SG1000 peuvent fonctionner en tant que nœud de passerelle et en tant que nœud d"administration pour fournir des services d"équilibrage de charge haute disponibilité dans un système StorageGRID. Les deux appliances peuvent fonctionner en tant que nœuds de passerelle et nœuds d"administration \(primaires ou non-primaires\) en même temps.' 
+summary: 'Le dispositif des services StorageGRID SG100 et l"appliance des services SG1000 peuvent fonctionner en tant que nœud de passerelle et en tant que nœud d"administration pour fournir des services d"équilibrage de charge haute disponibilité dans un système StorageGRID. Les deux appliances peuvent fonctionner en tant que nœuds de passerelle et de nœud d"administration (principal ou non primaire) à la fois.' 
 ---
 = StorageGRID SG100 et SG1000 appliances
 :allow-uri-read: 
@@ -15,6 +15,7 @@ Le dispositif des services StorageGRID SG100 et l'appliance des services SG1000 
 
 
 
+[[appliance-features]]
 == Caractéristiques de l'appareil
 
 Les deux modèles de l'appareil de services offrent les fonctionnalités suivantes :
@@ -33,6 +34,7 @@ Les deux modèles de l'appareil de services offrent les fonctionnalités suivant
 
 
 
+[[sg100-and-sg1000-diagrams]]
 == Schémas SG100 et SG1000
 
 Cette figure montre l'avant du SG100 et du SG1000 avec le cadre retiré. À partir de l'avant, les deux appareils sont identiques, à l'exception du nom du produit sur le cadre.
@@ -78,6 +80,7 @@ Identifier la LED
 |===
 
 
+[[sg100-connectors]]
 == Connecteurs SG100
 
 Cette figure montre les connecteurs à l'arrière du SG100.
@@ -153,6 +156,7 @@ Options :
 |===
 
 
+[[sg1000-connectors]]
 == Connecteurs SG1000
 
 Cette figure montre les connecteurs à l'arrière du SG1000.
@@ -228,6 +232,7 @@ Options :
 |===
 
 
+[[sg100-and-sg1000-applications]]
 == Applications SG100 et SG1000
 
 Vous pouvez configurer les appliances de services StorageGRID de différentes façons pour fournir des services de passerelle ainsi que la redondance de certains services d'administration de grille.

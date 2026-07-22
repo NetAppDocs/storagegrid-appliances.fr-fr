@@ -57,6 +57,7 @@ NOTE: Dans la plupart des modèles d'appliance, les contrôleurs de stockage n'i
 
 
 
+[[step-1-prepare-the-replacement-controller]]
 == Étape 1 : préparer le contrôleur de remplacement
 
 Préparez le contrôleur E2800A ou E2800B de rechange.
@@ -114,6 +115,7 @@ La carte d'interface hôte 4 ports (HIC). Cette carte doit être déplacée vers
 |===
 
 
+[[step-2-take-the-controller-offline]]
 == Étape 2 : mettre le contrôleur hors ligne
 
 Vous préparer à retirer le contrôleur défectueux et à le mettre hors ligne.
@@ -146,6 +148,7 @@ NOTE: La collecte des données de support avant et après le remplacement d'un c
 
 
 
+[[step-3-remove-the-controller]]
 == Étape 3 : retirez le contrôleur
 
 Retirez le contrôleur défectueux de l'appliance.
@@ -169,6 +172,7 @@ CAUTION: Toujours utiliser deux mains pour soutenir le poids du contrôleur.
 
 
 
+[[step-4-move-battery-to-the-new-controller]]
 == Étape 4 : déplacer la batterie vers le nouveau contrôleur
 
 Retirez la batterie du contrôleur défectueux et installez-la dans le contrôleur de remplacement.
@@ -256,6 +260,7 @@ image::../media/e2800_battery_flange_not_ok.gif[Bride de batterie incorrecte]
 
 
 
+[[step-5-move-hic-to-new-controller-if-needed]]
 == Étape 5 : déplacer HIC vers le nouveau contrôleur, si nécessaire
 
 Si le contrôleur défectueux est équipé d'une carte d'interface hôte (HIC), déplacez la carte HIC du contrôleur défectueux vers le contrôleur de remplacement.
@@ -364,6 +369,8 @@ image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.png[Vis de façade
 ====
 
 
+[[step-6-replace-controller]]
+[[step6_replace_controller]]
 == Étape 6 : remplacer le contrôleur
 
 Installez le contrôleur de remplacement et vérifiez qu'il a rejoint la grille.

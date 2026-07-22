@@ -25,6 +25,8 @@ CAUTION: N'éteignez pas l'appareil à l'aide de l'interrupteur d'alimentation.
 
 
 
+[[step-1-remove-sg120-or-sg1200-from-cabinet-or-rack]]
+[[remove-from-rack]]
 == Étape 1 : Retirez le SG120 ou le SG1200 de l’armoire ou du rack
 
 .Étapes
@@ -51,6 +53,7 @@ NOTE: Si vous retirez complètement l'appareil de l'armoire ou du rack, suivez l
 
 
 
+[[step-2-reinstall-sg120-or-sg1200-into-cabinet-or-rack]]
 == Étape 2 : Réinstallez le SG120 ou le SG1200 dans l’armoire ou le rack
 
 .Étapes

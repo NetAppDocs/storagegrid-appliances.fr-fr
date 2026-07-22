@@ -32,6 +32,7 @@ Si vous envisagez de remplacer une batterie défectueuse, vous devez disposer de
 
 
 
+[[step-1-prepare-to-replace-battery]]
 == Étape 1 : préparez-vous à remplacer la batterie
 
 Vous devez mettre le contrôleur affecté hors ligne pour pouvoir retirer la batterie défectueuse en toute sécurité. Le contrôleur que vous ne mettez pas hors ligne doit être en ligne (dans l'état optimal).
@@ -100,6 +101,7 @@ NOTE: Si vous accédez à SANtricity System Manager à l'aide du contrôleur que
 
 
 
+[[step-2-remove-e4000-controller-canister]]
 == Étape 2 : retirez le boîtier du contrôleur E4000
 
 Vous devez retirer le boîtier du contrôleur du shelf contrôleur afin que vous puissiez retirer la batterie.
@@ -124,6 +126,7 @@ CAUTION: Pour éviter de dégrader les performances, ne pas tordre, plier, pince
 
 
 
+[[step-3-install-the-new-battery]]
 == Étape 3 : installez la nouvelle batterie
 
 Vous devez retirer la batterie défectueuse et la remplacer.
@@ -180,6 +183,7 @@ Assurez-vous que la fiche se verrouille dans la prise batterie de la carte mère
 
 
 
+[[step-4-reinstall-the-controller-canister]]
 == Étape 4 : réinstallez le boîtier du contrôleur
 
 Après avoir remplacé les composants du boîtier du contrôleur, réinstallez-le dans le châssis.
@@ -212,6 +216,7 @@ Le contrôleur commence à démarrer dès qu'il est assis dans le châssis.
 
 
 
+[[step-5-complete-battery-replacement]]
 == Étape 5 : remplacement complet de la batterie
 
 Mettre le contrôleur en ligne.

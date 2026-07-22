@@ -2,7 +2,7 @@
 permalink: commonhardware/appliance-node-cloning-procedure.html 
 sidebar: sidebar 
 keywords: storagegrid, appliance node clone, appliance node cloning, node clone, node cloning 
-summary: 'Le processus de clonage peut prendre plusieurs jours pour transférer les données entre le nœud source \(appliance en cours de remplacement\) et l"appliance \(nouvelle\) cible.' 
+summary: 'Le processus de clonage peut prendre plusieurs jours pour transférer les données entre le nœud source (appliance à remplacer) et l"appliance cible (nouvelle).' 
 ---
 = Cloner un nœud d'appliance StorageGRID
 :allow-uri-read: 
@@ -19,6 +19,7 @@ Le processus de clonage peut prendre plusieurs jours pour transférer les donné
 * L'appliance cible est configurée, y compris la configuration des connexions StorageGRID, SANtricity System Manager (dispositifs de stockage uniquement) et l'interface BMC.
 +
 ** Lors de la configuration des connexions StorageGRID, utilisez les adresses IP temporaires.
+** Si vous activez le DHCP sur des ports du nœud cible qui étaient configurés en statique sur le nœud source, assurez-vous qu'il n'existe aucun bail DHCP permanent pour aucune des adresses MAC du nœud source. Dans le cas contraire, un conflit d'adresses IP pourrait survenir à la fin du processus de clonage.
 ** Lors de la configuration des liaisons réseau, utilisez la configuration de liaison finale.
 
 
@@ -88,6 +89,10 @@ Une fois le clonage terminé :
 * Les nœuds source et cible échangent des adresses IP :
 +
 ** Le nœud cible utilise désormais les adresses IP initialement attribuées au nœud source pour les réseaux Grid, Admin et client.
++
+
+NOTE: Si vous rencontrez un conflit d'adresses IP à la fin du processus de clonage, assurez-vous qu'aucun bail DHCP permanent n'a été attribué à l'une des adresses MAC des ports qui avaient des adresses IP statiques sur le nœud source et qui ont été activés pour le DHCP sur le nœud cible. Supprimez ou mettez à jour les baux DHCP permanents sur le serveur DHCP pour résoudre ce conflit.
+
 ** Le nœud source utilise maintenant l'adresse IP temporaire initialement attribuée au nœud cible.
 
 

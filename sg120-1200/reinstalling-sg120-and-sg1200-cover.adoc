@@ -15,6 +15,7 @@ Retirez le couvercle de l'appareil pour accéder aux composants internes à des 
 
 
 
+[[step-1-remove-cover]]
 == Étape 1 : Retirer le couvercle
 
 .Étapes
@@ -31,6 +32,7 @@ image:../media/drw_s2025_cover_replace_ieops-2559.svg["Déverrouillage et retrai
 
 
 
+[[step-2-reinstall-cover]]
 == Étape 2 : Réinstaller le couvercle
 
 .Étapes

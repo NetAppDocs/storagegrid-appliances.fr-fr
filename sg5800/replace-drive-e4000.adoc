@@ -15,6 +15,7 @@ Avant de remplacer un lecteur dans un SG5812 ou un SG5860, consultez les exigenc
 
 
 
+[[drive-handling]]
 == Gestion des disques
 
 Les disques de votre appareil sont fragiles. Une manipulation incorrecte des disques est l'une des principales causes de défaillance des disques.

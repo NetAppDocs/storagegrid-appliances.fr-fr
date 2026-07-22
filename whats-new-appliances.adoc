@@ -18,36 +18,42 @@ Découvrez les nouveautés des appliances StorageGRID .
 
 
 
+[[sg120-and-sg1200-services-appliances]]
 == Appareils de service SG120 et SG1200
 
 Les nouveaux appliances de services StorageGRID SG120 et SG1200 constituent une évolution matérielle offrant des performances d'administration et d'équilibrage de charge améliorées. Consultez link:./installconfig/hardware-description-sg120-and-1200.html["Dispositif de services SG120 et SG1200 : Vue d’ensemble"] pour en savoir plus.
 
 
 
+[[sgf6212-appliance]]
 == Appareil SGF6212
 
 Le nouveau boîtier de stockage StorageGRID SGF6212 se distingue par sa conception compacte intégrant le contrôleur de calcul et le contrôleur de stockage dans un châssis 1U. Le boîtier prend en charge 12 disques SSD NVMe en RAID, offrant un stockage objet résilient. Voir link:installconfig/hardware-description-sg6200.html["Appareil SGF6212 : Vue d’ensemble"] pour en savoir plus.
 
 
 
+[[sg6260-appliance]]
 == Appliance SG6260
 
 Le nouvel appareil StorageGRID SG6260 comprend un contrôleur de calcul et un tiroir de contrôleur de stockage contenant deux contrôleurs de stockage et 60 disques, ainsi que deux disques SSD NVMe pour la mise en cache. En option, des tiroirs d'extension de 60 disques peuvent être ajoutés au SG6260. Reportez-vous à link:./installconfig/hardware-description-sg6200.html["Appareils SGF6200 : Vue d’ensemble"] pour en savoir plus.
 
 
 
+[[client-network-can-be-configured-without-an-ip-address]]
 == Le réseau client peut être configuré sans adresse IP
 
 Vous pouvez désormais activer le réseau client sans spécifier d’adresse IP.  Cela permet au réseau client d'avoir des interfaces VLAN configurées dans StorageGRID sans nécessiter une adresse IP supplémentaire pour l'interface elle-même. link:.//installconfig/setting-ip-configuration.html["Configurez les adresses IP StorageGRID"] .
 
 
 
+[[version-numbers-for-storagegrid-software-and-appliance-installer-aligned]]
 == Alignement des numéros de version du logiciel StorageGRID et du programme d'installation de l'appliance
 
 Avec la version 12.0 de StorgeGRID, le numéro de version du programme d'installation de l'appliance StorageGRID correspond à la version du logiciel StorageGRID .  Les utilisateurs n’ont plus besoin de déterminer quelles versions fonctionnent ensemble. link:./installconfig/verifying-and-upgrading-storagegrid-appliance-installer-version.html["Vérifiez et mettez à niveau la version du programme d'installation de l'appliance StorageGRID"] .
 
 
 
+[[bmc-information]]
 == Informations sur les BMC
 
 Des informations détaillées sur l'utilisation de l'interface BMC de l'appliance StorageGRID sont désormais disponibles. link:./commonhardware/use-bmc.html["Utilisation du contrôleur de gestion de la carte mère (BMC) de l'appliance StorageGRID"] .

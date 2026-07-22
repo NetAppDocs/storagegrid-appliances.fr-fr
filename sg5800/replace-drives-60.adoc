@@ -36,6 +36,7 @@ Cette procédure s'applique aux tiroirs disques DCM et DCM2.
 
 
 
+[[step-1-prepare-to-replace-drive]]
 == Étape 1 : préparer le remplacement de l'entraînement
 
 Préparation au remplacement d'un disque en vérifiant la fonctionnalité Recovery Guru dans SANtricity System Manager et en effectuant les étapes préalables requises. Vous pouvez ensuite localiser le composant défectueux.
@@ -75,6 +76,7 @@ Les LED d'avertissement du tiroir disque se trouvent sur le côté gauche de cha
 
 
 
+[[step-2-remove-failed-drive]]
 == Étape 2 : retrait du disque défectueux
 
 Retirez un disque défectueux pour le remplacer par un nouveau disque.
@@ -103,6 +105,7 @@ NOTE: Si vous retirez accidentellement un lecteur actif, attendez au moins 30 se
 
 
 
+[[step-3-install-new-drive]]
 == Étape 3 : installer un nouveau lecteur
 
 Installez un nouveau lecteur pour remplacer le lecteur défectueux.
@@ -129,6 +132,7 @@ Selon votre configuration, le contrôleur peut reconstruire automatiquement les 
 
 
 
+[[step-4-complete-drive-replacement]]
 == Étape 4 : remplacement complet du disque
 
 Vérifiez que le nouveau lecteur fonctionne correctement.

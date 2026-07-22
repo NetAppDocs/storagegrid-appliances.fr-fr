@@ -32,6 +32,7 @@ CAUTION: *Dommages possibles à l'équipement* -- si vous effectuez cette procé
 
 
 
+[[step-1-prepare-to-replace-fan-canister]]
 == Étape 1 : préparer le remplacement du boîtier du ventilateur
 
 Préparez-vous à remplacer une cartouche de ventilateur en recueillant les données de support relatives à votre matrice de stockage et en localisant le composant défectueux.
@@ -77,6 +78,7 @@ Vous devez remplacer le boîtier du ventilateur dont le voyant d'avertissement e
 
 
 
+[[step-2-remove-failed-fan-canister-and-install-new-one]]
 == Étape 2 : retirer le boîtier de ventilateur défectueux et en installer un nouveau
 
 Retirez un boîtier de ventilateur défectueux pour le remplacer par un neuf.
@@ -96,6 +98,7 @@ Conservez tous les matériaux d'emballage pour les réutiliser lors du retour du
 
 
 
+[[step-3-complete-fan-canister-replacement]]
 == Étape 3 : remplacement complet du boîtier du ventilateur
 
 Vérifier que le nouveau boîtier du ventilateur fonctionne correctement, recueillir les données de support et reprendre le fonctionnement normal.

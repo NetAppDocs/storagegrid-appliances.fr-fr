@@ -2,7 +2,7 @@
 permalink: sg6100/upgrading-santricity-os-on-storage-controllers-using-maintenance-mode-sg6160.html 
 sidebar: sidebar 
 keywords: storagegrid, sg6160, storage node, storage appliance, controller, storage controller, upgrade, upgrading, SANtricity OS, SANtricity, maintenance mode 
-summary: 'Pour les contrôleurs de stockage qui utilisent actuellement SANtricity OS antérieurs à 08.42.20.00 \(11.42\), vous devez utiliser la procédure du mode de maintenance pour appliquer une mise à niveau.' 
+summary: 'Pour les contrôleurs de stockage qui utilisent actuellement SANtricity OS antérieurs à la version 08.42.20.00 (11.42), vous devez utiliser la procédure du mode de maintenance pour appliquer une mise à niveau.' 
 ---
 = Mettez à niveau le système d'exploitation SANtricity sur les contrôleurs de stockage SG6160 en utilisant le mode de maintenance
 :allow-uri-read: 

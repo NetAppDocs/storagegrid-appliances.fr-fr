@@ -34,10 +34,47 @@ Les trois cartes réseau de l'appareil sont réparties dans trois ensembles de c
 +
 image:../media/drw_s2025_io_numbers_ieops-2554.svg["Emplacement des cartes réseau dans l'appareil"]
 
++
+[cols="1a,3a,5a"]
+|===
+|  | Nom du périphérique ou de la pièce | Description 
+
+
+ a| 
+1
+ a| 
+NIC 1 dans l'ensemble de rehausse à un emplacement
+ a| 
+Ports réseau Ethernet 10/25 GbE pour les réseaux Grid et Client
+
+
+
+ a| 
+2
+ a| 
+NIC 2 dans l'ensemble de rehausseur à un emplacement
+ a| 
+Ports réseau Ethernet 1/10 GbE pour le réseau d'administration
+
+
+
+ a| 
+3
+ a| 
+NIC 3 dans l'ensemble de rehausse à un emplacement
+ a| 
+Ports réseau Ethernet 10/25 GbE pour les réseaux Grid et Client
+
+|===
++
+
+NOTE: Certains appareils prennent en charge les ports réseau à plus haut débit et peuvent être équipés de cartes réseau à plus haut débit.
 
 
 
 
+
+[[step-1-remove-the-nic]]
 == Étape 1 : Retirez la carte réseau
 
 [role="tabbed-block"]
@@ -82,6 +119,7 @@ image:../media/drw_s2025_IO_card_replace_ieops-2557.svg["Retrait d'une carte d'E
 ====
 
 
+[[step-2-reinstall-the-internal-nic]]
 == Étape 2 : Réinstaller la carte réseau interne
 
 Installez la carte réseau de remplacement au même emplacement que celui qui a été retiré.

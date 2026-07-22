@@ -2,7 +2,7 @@
 permalink: installconfig/accessing-bmc-interface.html 
 sidebar: sidebar 
 keywords: BMC, baseboard management controller, access, open, login 
-summary: 'Vous pouvez accéder à l"interface du contrôleur BMC à l"aide de l"adresse IP DHCP ou statique du port de gestion du contrôleur BMC sur les modèles d"appliance suivants : ' 
+summary: 'Vous pouvez accéder à l"interface BMC en utilisant l"adresse IP DHCP ou statique du port de gestion BMC sur certains modèles d"appliances.' 
 ---
 = Accédez à l'interface BMC sur un appareil StorageGRID
 :allow-uri-read: 

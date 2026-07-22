@@ -2,7 +2,7 @@
 permalink: installconfig/hardware-description-sg5800.html 
 sidebar: sidebar 
 keywords: sg5800, sg5812, sg5860, storage appliance 
-summary: 'Le système SG5800 StorageGRID est une plateforme informatique et de stockage intégrée qui fonctionne comme un nœud de stockage dans un grid StorageGRID. L"appliance peut être utilisée dans un environnement de grid hybride qui combine des nœuds de stockage d"appliance et des nœuds de stockage virtuels \(basés sur logiciel\).' 
+summary: 'L"appliance StorageGRID SG5800 est une plateforme intégrée de stockage et de calcul qui fonctionne comme un nœud de stockage dans une grille StorageGRID. L"appliance peut être utilisée dans un environnement de grille hybride combinant des nœuds de stockage appliance et des nœuds de stockage virtuels (basés sur logiciel).' 
 ---
 = Appliances StorageGRID SG5800
 :allow-uri-read: 
@@ -26,6 +26,7 @@ Le SG5512 et le SG5860 sont disponibles en deux modèles.
 
 
 
+[[sg5800-components]]
 == Composants du SG5800
 
 Les modèles SG5800 comprennent les composants suivants :
@@ -57,10 +58,12 @@ La capacité de stockage brute maximale disponible dans l'appliance StorageGRID 
 
 
 
+[[sg5800-diagrams]]
 == Diagrammes SG5800
 
 
 
+[[sg5812-front-and-rear-views]]
 === Vue avant et arrière du SG5812
 
 Les figures illustrent l'avant et l'arrière du SG5812, un boîtier 2U pouvant contenir 12 disques.
@@ -69,6 +72,7 @@ image::../media/sg5812_front_and_back_views.png[À l'avant et à l'arrière de l
 
 
 
+[[sg5812-components]]
 === Composants du SG5812
 
 Le SG5812 comprend deux contrôleurs et deux boîtiers pour ventilateurs d'alimentation.
@@ -102,6 +106,7 @@ Blocs d'alimentation
 |===
 
 
+[[sg5860-front-and-rear-views]]
 === Vue avant et arrière du SG5860
 
 Les figures illustrent l'avant et l'arrière du modèle SG5860, un boîtier 4U contenant 60 disques dans 5 tiroirs.
@@ -110,6 +115,7 @@ image::../media/sg5860_front_and_back_views.png[À l'avant et à l'arrière du S
 
 
 
+[[sg5860-components]]
 === Composants du SG5860
 
 Le SG5860 comprend deux contrôleurs, deux boîtiers de ventilation et deux blocs d'alimentation.
@@ -150,12 +156,14 @@ Boîtier de puissance (1 sur 2)
 |===
 
 
+[[sg5800-controller]]
 == Contrôleur SG5800
 
 Les modèles SG5812 à 12 disques et SG5860 à 60 disques de l'appliance StorageGRID incluent un contrôleur de calcul SG5800 et un contrôleur de stockage E-Series E4000.
 
 
 
+[[sg5800-compute-controller]]
 === Contrôleur de calcul SG5800
 
 * Fonctionne comme serveur de calcul pour l'appliance.
@@ -238,6 +246,7 @@ Connectez-vous au réseau Grid et au réseau client pour StorageGRID.
 |===
 
 
+[[e4000-storage-controller]]
 === Contrôleur de stockage E4000
 
 Le contrôleur de stockage de la série E4000 présente les caractéristiques suivantes :

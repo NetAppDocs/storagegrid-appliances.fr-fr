@@ -21,6 +21,7 @@ Suivez ces procédures pour :
 
 
 
+[[remove-the-cmos-battery]]
 == Retirez la pile CMOS
 
 .Avant de commencer
@@ -73,6 +74,7 @@ image::../media/SGF6112-battery-cmos.png[Clip de pile CMOS]
 
 
 
+[[reinstall-the-cmos-battery]]
 == Réinstallez la pile CMOS
 
 Installez la pile CMOS de remplacement dans le support de la carte système.

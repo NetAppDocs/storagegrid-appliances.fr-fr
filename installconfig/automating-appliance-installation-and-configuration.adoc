@@ -31,11 +31,12 @@ Vous pouvez automatiser la configuration des éléments suivants :
 
 
 
+[[automation-options]]
 == Options d'automatisation
 
 Pour automatiser l'installation et la configuration de l'appliance, utilisez une ou plusieurs des options suivantes :
 
-* Générez un fichier JSON contenant les détails de la configuration. Collaborez avec votre consultant en services professionnels NetApp pour utiliser le link:https://configbuilder.netapp.com/index.aspx["Outil NetApp ConfigBuilder"^] pour effectuer ces étapes :
+* Générez un fichier JSON contenant les détails de configuration. Collaborez avec votre consultant NetApp Professional Services pour utiliser le link:https://configbuilder.netapp.com/Index.aspx["Outil NetApp ConfigBuilder"^] (connexion requise) et effectuer les étapes suivantes :
 +
 .. Consultez les services professionnels NetApp pour obtenir un numéro de commande.
 .. Téléchargez le manuel depuis ConfigBuilder.
@@ -69,6 +70,8 @@ NOTE: Vous pouvez utiliser directement les scripts Python d'automatisation Stora
 
 
 
+[[automate-appliance-configuration-using-storagegrid-appliance-installer]]
+[[automate-with-appliance-installer]]
 == Automatisez la configuration de l'appliance avec le programme d'installation de l'appliance StorageGRID
 
 Une fois que vous avez généré un fichier JSON, vous pouvez automatiser la configuration d'une ou plusieurs appliances en utilisant le programme d'installation de l'appliance StorageGRID pour télécharger le fichier JSON.
@@ -109,6 +112,8 @@ La configuration est appliquée au nœud sélectionné.
 
 
 
+[[automate-appliance-installation-and-configuration-using-configure-sga-py-script]]
+[[automate-with-configure-sga-py-script]]
 == Automatisez l'installation et la configuration de l'appliance à l'aide du script configure-sga.py
 
 Si vous êtes un utilisateur avancé, vous pouvez utiliser le `configure-sga.py` Script permettant d'automatiser la plupart des tâches d'installation et de configuration des nœuds d'appliance StorageGRID, notamment l'installation et la configuration d'un nœud d'administration principal. Ce script peut être utile si vous avez un grand nombre d'appliances à configurer.

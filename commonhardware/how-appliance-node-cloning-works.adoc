@@ -17,6 +17,7 @@ Le clonage de nœuds d'appliance vous permet de remplacer facilement un nœud d'
 
 
 
+[[why-clone-an-appliance-node]]
 == Pourquoi cloner un nœud d'appliance ?
 
 Il est possible de cloner un nœud d'appliance si vous avez besoin de :
@@ -30,6 +31,7 @@ Il est possible de cloner un nœud d'appliance si vous avez besoin de :
 
 
 
+[[which-storagegrid-network-is-used]]
 == Quel réseau StorageGRID est utilisé ?
 
 Le clonage transfère les données du nœud source directement vers l'appliance cible sur l'un des trois réseaux StorageGRID. Le réseau Grid est généralement utilisé, mais vous pouvez également utiliser le réseau Admin ou le réseau client si l'appliance source est connectée à ces réseaux. Choisir le réseau à utiliser pour le trafic de clonage qui fournit les meilleures performances de transfert de données sans affecter les performances du réseau StorageGRID ni la disponibilité des données.
@@ -38,6 +40,7 @@ Lorsque vous installez l'appliance de remplacement, vous devez spécifier des ad
 
 
 
+[[what-information-is-not-cloned]]
 == Quelles informations ne sont pas clonées ?
 
 Les configurations d'appliance suivantes ne sont pas transférées vers l'appliance de remplacement pendant le clonage. Vous devez les configurer lors de la configuration initiale de l'appliance de remplacement.
@@ -51,20 +54,27 @@ Les configurations d'appliance suivantes ne sont pas transférées vers l'applia
 
 
 
+[[what-issues-prevent-cloning]]
 == Quels problèmes empêchent le clonage ?
 
 Si l'un des problèmes suivants est rencontré lors du clonage, le processus de clonage s'arrête et un message d'erreur est généré :
 
+* Clonage déjà en cours
 * Configuration réseau incorrecte
+* L'appliance cible ne peut pas atteindre le nœud d'administration principal
 * Manque de connectivité entre les appareils source et cible
-* Incompatibilité entre l'appareil source et l'appareil cible
-* Pour les nœuds de stockage, une appliance de remplacement de capacité insuffisante
+* Les appliances source et cible ne sont pas compatibles
+* Les appliances source et cible sont dans des états de mode de maintenance différents
+* Les versions de l'installateur StorageGRID sur les appliances source et cible ne correspondent pas
+* Pour les nœuds de stockage, l'appliance cible dispose d'un stockage incompatible ou d'une capacité insuffisante
+* L'appareil cible n'est pas prêt
 
 
 Vous devez résoudre chaque problème pour que le clonage puisse continuer.
 
 
 
+[[target-appliance-compatibility]]
 == Compatibilité de l'appareil cible
 
 Les appliances de remplacement doivent être du même type que le nœud source qu'elles remplacent et doivent tous deux faire partie du même site StorageGRID logique.
@@ -73,6 +83,7 @@ Avant de procéder au clonage, examinez les considérations générales relative
 
 
 
+[[general-services-appliance-cloning-considerations]]
 === Considérations générales sur le clonage des appliances de services
 
 * Le modèle d'une appliance de services de remplacement peut être différent du nœud d'administration ou du nœud de passerelle qu'elle remplace.
@@ -81,6 +92,7 @@ Avant de procéder au clonage, examinez les considérations générales relative
 
 
 
+[[general-storage-appliance-cloning-considerations]]
 === Considérations générales sur le clonage des appliances de stockage
 
 * Une appliance de stockage de remplacement doit avoir une capacité supérieure à celle du nœud de stockage qu'elle remplace.
@@ -109,12 +121,14 @@ Vous pouvez consulter les informations relatives au mode RAID actuel du nœud so
 
 
 
+[[sg100-appliance-cloning-information-and-restrictions]]
 === Informations et restrictions de clonage de l'appliance SG100
 
 Vous pouvez cloner une appliance de nœud source SG100 vers une appliance cible de services SG110, SG1000 ou SG1100. Le clonage du système SG100 vers une appliance cible de services SG1000 ou SG1100 offre des fonctionnalités supérieures au nœud d'administration ou au nœud de passerelle.
 
 
 
+[[sg110-appliance-cloning-information-and-restrictions]]
 === Informations et restrictions de clonage de l'appliance SG110
 
 Vous pouvez cloner une appliance de nœud source SG110 vers une cible d'appliance de services SG1100 afin d'optimiser les fonctionnalités du nœud d'administration ou du nœud de passerelle.
@@ -123,6 +137,7 @@ Le clonage de nœud n'est pas pris en charge à partir d'un dispositif de nœud 
 
 
 
+[[sg120-appliance-cloning-information-and-restrictions]]
 === Informations et restrictions relatives au clonage de l'appareil SG120
 
 Vous pouvez cloner un nœud source SG120 sur un nœud de services cible SG1200 afin d'offrir au nœud d'administration ou au nœud de passerelle des capacités accrues.
@@ -131,6 +146,7 @@ Le clonage de nœuds n'est pas pris en charge à partir d'un nœud source SG120 
 
 
 
+[[sg1000-appliance-cloning-information-and-restrictions]]
 === Informations et restrictions de clonage de l'appliance SG1000
 
 Vous pouvez cloner une appliance de nœud source SG1000 vers une appliance cible de services SG100, SG110 ou SG1100.
@@ -141,6 +157,7 @@ Vous pouvez cloner une appliance de nœud source SG1000 vers une appliance cible
 
 
 
+[[sg1100-appliance-cloning-information-and-restrictions]]
 === Informations et restrictions de clonage de l'appliance SG1100
 
 Vous pouvez cloner une appliance de nœud source SG1100 vers une appliance cible de services SG110.
@@ -153,6 +170,7 @@ Le clonage de nœud n'est pas pris en charge à partir d'un dispositif de nœud 
 
 
 
+[[sg1200-appliance-cloning-information-and-restrictions]]
 === Informations et restrictions relatives au clonage de l'appareil SG1200
 
 Vous pouvez cloner un nœud source SG1200 sur une appliance cible de services SG120.
@@ -165,12 +183,14 @@ Le clonage de nœuds n'est pas pris en charge à partir d'un nœud source SG1200
 
 
 
+[[sg5712-appliance-cloning-information-and-restrictions]]
 === Informations et restrictions de clonage de l'appliance SG5712
 
 Vous pouvez cloner une appliance de nœud source SG5712 configurée avec DDP sur une appliance de stockage cible SG5812.
 
 
 
+[[sg5760-appliance-cloning-information-and-restrictions]]
 === Informations et restrictions de clonage de l'appliance SG5760
 
 * Vous pouvez cloner une appliance de nœud source SG5760 configurée avec DDP16 vers une appliance de stockage cible SG5860 configurée avec DDP16.
@@ -180,18 +200,21 @@ Vous pouvez cloner une appliance de nœud source SG5712 configurée avec DDP sur
 
 
 
+[[sg5812-appliance-cloning-information-and-restrictions]]
 === Informations et restrictions de clonage de l'appliance SG5812
 
 Vous pouvez cloner une appliance SG5812 en tant que source ou cible.
 
 
 
+[[sg5860-appliance-cloning-information-and-restrictions]]
 === Informations et restrictions de clonage de l'appliance SG5860
 
 Vous pouvez cloner une appliance SG5860 en tant que source ou cible avec certaines restrictions (répertoriées dans les informations de clonage de l'appliance et les restrictions applicables à chaque source).
 
 
 
+[[sg6060-appliance-cloning-information-and-restrictions]]
 === Informations et restrictions sur le clonage de l'appliance SG6060
 
 * Vous pouvez cloner une appliance de nœud source SG6060 configurée avec DDP ou DDP16 vers une appliance de stockage cible SG5860 avec un mode RAID correspondant.
@@ -201,12 +224,14 @@ Vous pouvez cloner une appliance SG5860 en tant que source ou cible avec certain
 
 
 
+[[sgf6112-appliance-cloning-information-and-restrictions]]
 === Informations et restrictions sur le clonage de l'appareil SGF6112
 
 Le clonage de nœuds n'est pas pris en charge à partir d'un nœud source SGF6112 sans chiffrement vers un nœud cible SGF6112 ou SGF6212 avec chiffrement.
 
 
 
+[[sg6160-and-sg6260-appliance-cloning-information-and-restrictions]]
 === Informations et restrictions relatives au clonage des appliances SG6160 et SG6260
 
 Vous pouvez cloner une appliance SG6160 en tant que source ou cible avec certaines restrictions (répertoriées dans les informations de clonage de l'appliance et les restrictions applicables à chaque source).

@@ -26,6 +26,7 @@ Si le réseau client ou administrateur n'a pas été configuré dans le programm
 
 
 
+[[change-the-mtu-setting-using-the-change-ip-tool]]
 == Modifiez le paramètre MTU à l'aide de l'outil Modifier l'IP
 
 .Avant de commencer
@@ -36,6 +37,7 @@ Accédez à l'outil Modifier IP et mettez à jour les paramètres MTU comme déc
 
 
 
+[[change-the-mtu-setting-using-maintenance-mode]]
 == Modifiez le paramètre MTU en mode maintenance
 
 Modifiez le paramètre MTU en mode maintenance si vous ne parvenez pas à accéder à ces paramètres à l'aide de l'outil Modifier IP.

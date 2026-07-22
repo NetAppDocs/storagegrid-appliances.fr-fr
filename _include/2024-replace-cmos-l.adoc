@@ -17,6 +17,7 @@ image::../media/sg6060_riser_assembly_location.jpg[Emplacement de l'ensemble de 
 
 
 
+[[reinstall-the-cmos-battery]]
 == Réinstallez la pile CMOS
 
 Installez la pile CMOS de remplacement dans le support de la carte système.

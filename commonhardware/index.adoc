@@ -15,6 +15,7 @@ Suivez ces instructions pour entretenir votre système StorageGRID.
 
 
 
+[[about-these-instructions]]
 == À propos de ces instructions
 
 Ces instructions décrivent les procédures communes à tous les nœuds, telles que l'application d'un correctif logiciel, la récupération de nœuds de grille, la restauration d'un site en panne, la désaffectation de nœuds de grille ou d'un site entier, la maintenance du réseau, la réalisation de procédures de maintenance au niveau de l'hôte et du middleware et la réalisation des procédures de nœud de grille.
@@ -24,6 +25,7 @@ NOTE: Dans ces instructions, « Linux » fait référence à un déploiement Red
 
 
 
+[[before-you-begin]]
 == Avant de commencer
 
 * Vous avez une bonne compréhension du système StorageGRID.
@@ -34,6 +36,7 @@ NOTE: Dans ces instructions, « Linux » fait référence à un déploiement Red
 
 
 
+[[maintenance-procedures-for-appliances]]
 == Procédures de maintenance des appareils
 
 Les procédures de maintenance spécifiques pour chaque type d'appliance StorageGRID se trouvent dans les sections relatives à la maintenance de l'appliance :

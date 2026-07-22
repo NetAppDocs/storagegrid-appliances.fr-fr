@@ -17,6 +17,7 @@ Des tiroirs d'extension de 60 disques peuvent également être ajoutés aux deux
 
 
 
+[[sg6060-and-sg6060x-components]]
 == SG6060 et SG6060X
 
 Les appliances SG6060 et SG6060X comprennent les composants suivants :
@@ -64,12 +65,14 @@ Le boîtier E-Series DE460C est un tiroir 4U qui comprend :
 
 
 
+[[sg6060-and-sg6060x-diagrams]]
 == Diagrammes SG6060 et SG6060X
 
 Les faces avant des SG6060 et SG6060X sont identiques.
 
 
 
+[[sg6060-or-sg6060x-front-view]]
 === Vue avant SG6060 ou SG6060X
 
 Cette figure présente l'avant du SG6060 ou du SG6060X, qui inclut un contrôleur de calcul 1U et un tiroir 4U contenant deux contrôleurs de stockage et 60 disques dans cinq tiroirs disques.
@@ -143,6 +146,7 @@ Identifier la LED
 |===
 
 
+[[sg6060-rear-view]]
 === Vue arrière SG6060
 
 Cette figure illustre la arrière du SG6060, y compris des contrôleurs de calcul et de stockage, des ventilateurs et des blocs d'alimentation.
@@ -190,6 +194,7 @@ Alimentation (1 sur 2) pour le tiroir contrôleur E2860
 |===
 
 
+[[sg6060x-rear-view]]
 === Vue arrière du SG6060X
 
 Cette figure illustre l'arrière du SG6060X.
@@ -237,6 +242,7 @@ Alimentation (1 sur 2) pour le tiroir contrôleur E2860
 |===
 
 
+[[expansion-shelf]]
 === Tiroir d'extension
 
 Cette figure illustre l'arrière du tiroir d'extension en option pour les SG6060 et SG6060X, notamment des modules d'entrée/sortie (IOM), des ventilateurs et des blocs d'alimentation. Chaque SG6060 peut être installé avec un ou deux tiroirs d'extension, qui peuvent être inclus dans l'installation initiale ou ajoutés ultérieurement.
@@ -270,12 +276,14 @@ Bloc d'alimentation (1 sur 2) pour le tiroir d'extension
 |===
 
 
+[[sg6000-controllers]]
 == Contrôleurs SG6000
 
 Chaque modèle de l'appliance StorageGRID SG6000 est doté d'un contrôleur de calcul SG6000-CN dans un boîtier 1U et de contrôleurs de stockage E-Series duplex dans un boîtier 2U ou 4U, selon le modèle. Consultez les schémas pour en savoir plus sur chaque type de contrôleur.
 
 
 
+[[sg6000-cn-compute-controller]]
 === Contrôleur de calcul SG6000-CN
 
 * Fournit des ressources de calcul pour l'appliance.
@@ -374,6 +382,7 @@ Options :
 |===
 
 
+[[sgf6024-ef570-storage-controllers]]
 === SGF6024 : contrôleurs de stockage EF570
 
 * Deux contrôleurs pour la prise en charge du basculement.
@@ -447,6 +456,7 @@ Ethernet 1 Gbit (RJ-45)
 |===
 
 
+[[sg6060-and-sg6060x-e2800-storage-controllers]]
 === SG6060 et SG6060X : contrôleurs de stockage E2800
 
 * Deux contrôleurs pour la prise en charge du basculement.
@@ -632,6 +642,7 @@ Connectez les ports aux ports d'extension de disque sur les IOM du tiroir d'exte
 |===
 
 
+[[sg6060-and-sg6060x-ioms-for-optional-expansion-shelves]]
 === SG6060 et SG6060X : modules d'E/S pour tiroirs d'extension en option
 
 Le tiroir d'extension contient deux modules d'entrée/sortie qui se connectent aux contrôleurs de stockage ou à d'autres tiroirs d'extension.

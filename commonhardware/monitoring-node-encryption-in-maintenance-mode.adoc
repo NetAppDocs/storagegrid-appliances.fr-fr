@@ -2,7 +2,7 @@
 permalink: commonhardware/monitoring-node-encryption-in-maintenance-mode.html 
 sidebar: sidebar 
 keywords: kms, key management server, monitor, monitoring, status, encryption 
-summary: 'Si vous avez activé le chiffrement de nœud pour l"appliance lors de l"installation, vous pouvez surveiller l"état du chiffrement de nœud de chaque nœud d"appliance, y compris les informations relatives à l"état de chiffrement de nœud et au serveur de gestion des clés \(KMS\).' 
+summary: 'Si vous avez activé le chiffrement des nœuds pour l"appliance lors de l"installation, vous pouvez surveiller l"état du chiffrement des nœuds de chaque nœud d"appliance, notamment les informations détaillées sur l"état de chiffrement des nœuds et le serveur de gestion des clés (KMS).' 
 ---
 = Surveiller le chiffrement d'un appareil StorageGRID en mode maintenance
 :allow-uri-read: 
@@ -59,6 +59,7 @@ Le redémarrage de l'appareil et sa reconnexion au réseau peuvent prendre jusqu
 
 
 
+[[clear-key-management-server-configuration]]
 == Effacez la configuration du serveur de gestion des clés
 
 L'effacement de la configuration du serveur de gestion des clés (KMS) désactive le cryptage des nœuds sur votre appliance. Une fois la configuration KMS effacée, les données de votre appliance sont définitivement supprimées et ne sont plus accessibles. Ces données ne peuvent pas être récupérées.

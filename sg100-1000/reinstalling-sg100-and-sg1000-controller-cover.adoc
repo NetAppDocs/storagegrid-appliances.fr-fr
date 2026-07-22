@@ -15,6 +15,7 @@ Retirez le couvercle de l'appareil pour accéder aux composants internes à des 
 
 
 
+[[remove-sg100-or-sg1000-appliance-cover]]
 == Retirez le capot de l'appliance SG100 ou SG1000
 
 Retirez le couvercle de l'appareil pour accéder aux composants internes à des fins d'entretien.
@@ -40,6 +41,7 @@ Après avoir remplacé la pièce, retournez la pièce défectueuse à NetApp, co
 
 
 
+[[reinstall-sg100-or-sg1000-appliance-cover]]
 == Réinstallez le capot de l'appliance SG100 ou SG1000
 
 Réinstallez le capot de l'appareil une fois la maintenance matérielle interne terminée.

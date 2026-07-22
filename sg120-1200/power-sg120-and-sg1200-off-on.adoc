@@ -15,6 +15,7 @@ Vous pouvez éteindre l'appareil SG120 ou SG1200 et le rallumer pour effectuer l
 
 
 
+[[shut-down-the-sg120-or-sg1200-appliance]]
 == Éteignez l'appareil SG120 ou SG1200
 
 Arrêtez l'appliance pour effectuer une maintenance matérielle.
@@ -60,6 +61,7 @@ Cette commande peut prendre jusqu'à 10 minutes.
 
 
 
+[[power-on-sg120-or-sg1200-and-verify-operation]]
 == Mettez sous tension SG120 ou SG1200 et vérifiez son fonctionnement
 
 Mettez le contrôleur sous tension après la fin de la maintenance.

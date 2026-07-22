@@ -15,6 +15,7 @@ Vous pouvez arrêter l'appliance SG110 ou SG1100 et la remettre sous tension pou
 
 
 
+[[shut-down-the-sg110-or-sg1100-appliance]]
 == Arrêtez l'appliance SG110 ou SG1100
 
 Arrêtez l'appliance pour effectuer une maintenance matérielle.
@@ -60,6 +61,7 @@ Cette commande peut prendre jusqu'à 10 minutes.
 
 
 
+[[power-on-sg110-or-sg1100-and-verify-operation]]
 == Mettez le SG110 ou le SG1100 sous tension et vérifiez le fonctionnement
 
 Mettez le contrôleur sous tension après la fin de la maintenance.

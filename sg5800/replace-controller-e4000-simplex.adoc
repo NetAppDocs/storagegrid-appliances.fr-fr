@@ -44,6 +44,7 @@ L'appliance Storage Node ne sera pas accessible lors du remplacement du contrôl
 
 
 
+[[step-1-prepare-to-replace-controller]]
 == Étape 1 : préparer le remplacement du contrôleur
 
 Préparez-vous à remplacer un boîtier de contrôleur en enregistrant la clé de sécurité du lecteur, en sauvegardant la configuration et en recueillant les données de support. Vous pouvez ensuite arrêter les opérations d'E/S hôte et mettre le tiroir contrôleur hors tension.
@@ -105,6 +106,7 @@ Le fichier est enregistré dans le dossier Téléchargements de votre navigateur
 
 
 
+[[step-2-place-the-controller-offline]]
 == Étape 2 : mettez le contrôleur hors ligne
 
 Mettre le contrôleur hors ligne et vérifier que toutes les opérations sont terminées.
@@ -127,6 +129,7 @@ La LED verte cache actif située à l'arrière du contrôleur est allumée lorsq
 
 
 
+[[step-3-remove-e4000-controller-canister]]
 == Étape 3 : retirez le boîtier du contrôleur E4000
 
 Retirez un boîtier de contrôleur E4000.
@@ -146,6 +149,7 @@ CAUTION: Pour éviter de dégrader les performances, ne pas tordre, plier, pince
 
 
 
+[[step-4-determine-parts-to-transfer-to-replacement-controller]]
 == Étape 4 : déterminer les pièces à transférer vers le contrôleur de remplacement
 
 Votre contrôleur de remplacement peut être livré avec des pièces préinstallées. Déterminer quelles pièces doivent être transférées vers le boîtier de contrôleur de remplacement.
@@ -162,6 +166,8 @@ Votre contrôleur de remplacement peut être livré avec des pièces préinstall
 
 
 
+[[step-5-remove-the-battery]]
+[[step5_remove_battery]]
 == Étape 5 : retirez la batterie
 
 Retirez la batterie du contrôleur défectueux et installez-la dans le contrôleur de remplacement - effectué.
@@ -200,6 +206,8 @@ image::../media/legend_icon_02.png[Référence de légende 2]
 
 
 
+[[step-6-move-the-dimms]]
+[[step6_remove_dimm]]
 == Étape 6 : déplacez les modules DIMM
 
 Retirez les modules DIMM du boîtier du contrôleur défectueux et installez-les dans le boîtier du contrôleur de remplacement.
@@ -258,6 +266,8 @@ NOTE: Inspectez visuellement le module DIMM pour vérifier qu'il est bien align�
 
 
 
+[[step-7-install-the-battery]]
+[[step7_install_battery]]
 == Étape 7 : installez la batterie
 
 Installer la batterie dans le boîtier de contrôleur de remplacement.
@@ -274,6 +284,8 @@ Assurez-vous que la fiche se verrouille dans la prise batterie de la carte mère
 
 
 
+[[step-8-replace-controller]]
+[[step8_replace_controller]]
 == Étape 8 : remplacer le contrôleur
 
 Installez le contrôleur de remplacement et vérifiez que le nœud a rejoint la grille.

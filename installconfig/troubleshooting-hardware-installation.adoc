@@ -15,6 +15,8 @@ Si vous rencontrez des problèmes lors de l'installation, il peut s'avérer util
 
 
 
+[[view-boot-up-codes-sg6000-cn-controller]]
+[[view-boot-codes]]
 == Afficher les codes de démarrage (contrôleur SG6000-CN)
 
 Lorsque vous mettez l'appareil sous tension, le contrôleur BMC consigne une série de codes de démarrage pour le contrôleur SG6000-CN. Vous pouvez afficher ces codes de plusieurs façons.
@@ -188,6 +190,8 @@ StorageGRID est en cours d'exécution.
 
 
 
+[[view-error-codes-sg6000-cn-controller]]
+[[error-codes]]
 == Afficher les codes d'erreur (contrôleur SG6000-CN)
 
 Si une erreur matérielle se produit lors du démarrage du contrôleur SG6000-CN, le contrôleur BMC consigne un code d'erreur. Si nécessaire, vous pouvez afficher ces codes d'erreur via l'interface BMC ou le port série de l'appareil, puis travailler avec le support technique pour résoudre le problème.
@@ -584,6 +588,8 @@ MRC : ERR_INTERLEAVE_FAILURE
 
 
 
+[[hardware-setup-appears-to-hang-sg6000-or-sg5700]]
+[[hardware-setup-hangs]]
 == La configuration matérielle semble suspendue (SG6000 ou SG5700)
 
 Le programme d'installation de l'appliance StorageGRID peut ne pas être disponible si des pannes matérielles ou des erreurs de câblage empêchent les contrôleurs de stockage ou le contrôleur de l'appliance d'effectuer leur démarrage.
@@ -647,12 +653,15 @@ Pendant l'initialisation du matériel pendant la mise sous tension, les deux aff
 ====
 
 
+[[connection-issues-sg5700-or-sg6000]]
+[[connection-issues]]
 == Problèmes de connexion (SG5700 ou SG6000)
 
 Si vous rencontrez des problèmes de connexion lors de l'installation de l'appliance StorageGRID, vous devez effectuer les actions correctives indiquées.
 
 
 
+[[unable-to-connect-to-sg6000-appliance]]
 === Impossible de se connecter à l'appliance SG6000
 
 Si vous ne parvenez pas à vous connecter à l'appliance, il se peut qu'il y ait un problème de réseau ou que l'installation matérielle n'ait pas été effectuée correctement.
@@ -703,6 +712,7 @@ La page d'accueil s'affiche.
 
 
 
+[[sg6060-expansion-shelves-dont-appear-in-appliance-installer]]
 === Les tiroirs d'extension SG6060 n'apparaissent pas dans le programme d'installation de l'appliance
 
 Si vous avez installé des tiroirs d'extension pour le SG6060 et qu'ils n'apparaissent pas dans le programme d'installation de l'appliance StorageGRID, vérifiez que ces tiroirs ont été complètement installés et sous tension.
@@ -729,6 +739,7 @@ Si les pages du programme d'installation de l'appliance StorageGRID n'indiquent 
 
 
 
+[[unable-to-connect-to-sg5700-appliance]]
 === Connexion à l'appliance SG5700 impossible
 
 Si vous ne parvenez pas à vous connecter à l'appliance, il se peut qu'il y ait un problème de réseau ou que l'installation matérielle n'ait pas été effectuée correctement.
@@ -778,6 +789,8 @@ La page d'accueil s'affiche.
 
 
 
+[[he-error-error-synchronizing-with-santricity-os-software-sg5700]]
+[[he-error]]
 == Erreur HE : erreur lors de la synchronisation avec le logiciel SANtricity OS (SG5700)
 
 L'affichage à sept segments sur le contrôleur de calcul indique un code d'erreur SI le programme d'installation de l'appliance StorageGRID ne peut pas se synchroniser avec le logiciel SANtricity OS.

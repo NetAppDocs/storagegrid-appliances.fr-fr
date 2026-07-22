@@ -34,6 +34,7 @@ Pendant cette opération, l'autre cartouche d'alimentation alimente les deux ven
 
 
 
+[[step-1-prepare-to-replace-power-canister]]
 == Étape 1 : préparer le remplacement du boîtier d'alimentation
 
 Préparez-vous à remplacer une cartouche d'alimentation dans un tiroir de contrôleur de 60 disques ou un tiroir disque.
@@ -80,6 +81,7 @@ Vous devez remplacer le boîtier d'alimentation dont le voyant d'avertissement e
 
 
 
+[[step-2-remove-failed-power-canister]]
 == Étape 2 : retirer le boîtier d'alimentation défectueux
 
 Retirez une cartouche défectueuse pour pouvoir la remplacer par une nouvelle.
@@ -102,6 +104,7 @@ CAUTION: Lors du retrait d'une cartouche de puissance, toujours utiliser deux ma
 
 
 
+[[step-3-install-new-power-canister]]
 == Étape 3 : installer un nouveau réservoir d'alimentation
 
 Installez un nouveau réservoir d'alimentation pour remplacer le boîtier défectueux.
@@ -120,6 +123,7 @@ CAUTION: N'utilisez pas de force excessive lorsque vous faites glisser la cartou
 
 
 
+[[step-4-complete-power-canister-replacement]]
 == Étape 4 : remplacement complet du réservoir d'alimentation
 
 Vérifier que le nouveau réservoir d'alimentation fonctionne correctement, recueillir les données de support et reprendre le fonctionnement normal.

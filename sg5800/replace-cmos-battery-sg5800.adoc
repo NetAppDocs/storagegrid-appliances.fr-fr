@@ -18,6 +18,7 @@ Vous ne pourrez pas accéder au Storage Node de l'appareil lors du remplacement 
 
 
 
+[[step-1-shut-down-the-sg5800-controller]]
 == Étape 1 : Arrêtez le contrôleur SG5800
 
 .Étapes
@@ -40,6 +41,7 @@ Lorsque vous êtes connecté en tant que root, l'invite passe de `$` à `#`.
 
 
 
+[[step-2-remove-the-controller-from-the-appliance]]
 == Étape 2 : Retirez le contrôleur de l’appareil
 
 .Étapes
@@ -64,6 +66,7 @@ image::../media/drw_sg5800_open_controller_module_cover_IEOPS-695.svg[Ouvrir le 
 
 
 
+[[step-3-replace-the-cmos-battery]]
 == Étape 3 : Remplacez la pile CMOS
 
 .Étapes
@@ -89,6 +92,7 @@ NOTE: Notez la polarité de la pile lorsque vous la retirez de son logement. La 
 
 
 
+[[step-4-reinstall-the-controller-into-the-appliance]]
 == Étape 4 : Réinstallez le contrôleur dans l’appareil
 
 .Étapes

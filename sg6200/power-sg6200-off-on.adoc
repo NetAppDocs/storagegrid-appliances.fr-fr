@@ -15,6 +15,7 @@ Vous pouvez éteindre l'appareil SGF6212 ou le contrôleur SG6200-CN et les rall
 
 
 
+[[shut-down-the-sgf6212-appliance-or-sg6200-cn-controller]]
 == Mettez hors tension l'appareil SGF6212 ou le contrôleur SG6200-CN
 
 Arrêtez l'appliance pour effectuer une maintenance matérielle.
@@ -60,6 +61,7 @@ Cette commande peut prendre jusqu'à 10 minutes.
 
 
 
+[[power-on-sgf6212-or-sg6200-cn-and-verify-operation]]
 == Mettez sous tension le SGF6212 ou le SG6200-CN et vérifiez son fonctionnement
 
 Mettez le contrôleur sous tension après la fin de la maintenance.

@@ -46,6 +46,7 @@ image:../media/manage_drives_tab_details.png["Onglet gérer les lecteurs Détail
 
 
 
+[[turn-locator-light-on-or-off]]
 == Allumer ou éteindre le centreur lumineux
 
 Pour localiser physiquement un lecteur dans l'appliance :
@@ -66,6 +67,7 @@ Le panneau des détails du lecteur s'affiche.
 
 
 
+[[logically-replace-drivelogically-replace-drive]]
 == [[logiquement-replace-drive]]remplace logiquement le disque
 
 Si un lecteur de l'appliance de stockage doit être reconstruit ou réinitialisé :
@@ -83,6 +85,7 @@ Sur le panneau de détails du lecteur, l'état du lecteur indique _reconstructio
 
 
 
+[[fail-drive]]
 == Disque défaillant
 
 Pour le dépannage, vous pouvez « faire échouer » manuellement un disque que vous soupçonnez défectueux. Le système fonctionnera alors sans ce lecteur.

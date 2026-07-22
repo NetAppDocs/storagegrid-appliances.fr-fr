@@ -15,6 +15,8 @@ Retirez le SGF6112 ou le SG6100-CN d'une armoire ou d'un rack pour accéder au c
 
 
 
+[[remove-sgf6112-or-sg6100-cn-from-cabinet-or-rack]]
+[[remove-from-rack]]
 == Retirez le SGF6112 ou le SG6100-CN de l'armoire ou du rack
 
 .Avant de commencer
@@ -50,6 +52,7 @@ Après avoir remplacé la pièce, retournez la pièce défectueuse à NetApp, co
 
 
 
+[[reinstall-sgf6112-or-sg6100-cn-into-cabinet-or-rack]]
 == Réinstallez le SGF6112 ou le SG6100-CN dans l'armoire ou le rack
 
 .Avant de commencer

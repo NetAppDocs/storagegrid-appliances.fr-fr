@@ -18,6 +18,7 @@ TIP: Au lieu d'utiliser les tableaux, utilisez le manuel fourni avec ConfigBuild
 
 
 
+[[check-storagegrid-version]]
 == Vérifiez la version de StorageGRID
 
 Avant d'installer un appareil SGF6212 ou SG6260, confirmez que votre système StorageGRID utilise une version requise du logiciel StorageGRID.
@@ -42,6 +43,7 @@ SG6260
 |===
 
 
+[[connect-to-santricity-system-manager]]
 == Connectez-vous à SANtricity System Manager
 
 Vous connectez les deux contrôleurs de stockage du boîtier SG6260 au réseau de gestion que vous utiliserez pour SANtricity System Manager. Le contrôleur A est placé en haut et le contrôleur B en bas.
@@ -142,6 +144,7 @@ Doit être :
 |===
 
 
+[[administration-and-maintenance-ports]]
 == Ports d'administration et de maintenance
 
 Le réseau d'administration pour StorageGRID est un réseau facultatif, utilisé pour l'administration et la maintenance du système. L'appliance se connecte au réseau d'administration via les ports 1/10-GbE suivants de l'appliance.
@@ -222,6 +225,7 @@ Sous-réseaux du réseau d'administration (CIDR)
 |===
 
 
+[[networking-ports]]
 == Ports réseau
 
 Les quatre ports réseau de l'appliance se connectent au réseau StorageGRID Grid et au réseau client en option.
@@ -282,6 +286,7 @@ Port de commutation pour le port 4 (réseau Grid pour mode fixe)
 |===
 
 
+[[grid-network-ports]]
 == Ports réseau de la grille
 
 Le réseau Grid Network pour StorageGRID est un réseau requis, utilisé pour l'ensemble du trafic StorageGRID interne. L'appliance se connecte au réseau Grid à l'aide des quatre ports réseau.
@@ -353,6 +358,7 @@ Réglage de l'unité de transmission maximale (MTU) (facultatif). Vous pouvez ut
 |===
 
 
+[[client-network-ports]]
 == Ports réseau client
 
 Le réseau client pour StorageGRID est un réseau facultatif, généralement utilisé pour fournir l'accès du protocole client à la grille. Le serveur se connecte au réseau client à l'aide des quatre ports réseau.
@@ -423,6 +429,7 @@ Adresse IP statique que vous prévoyez d'utiliser pour le nœud de l'appliance s
 |===
 
 
+[[bmc-management-network-ports]]
 == Ports réseau de gestion BMC
 
 Vous pouvez accéder à l'interface BMC sur l'appliance à l'aide du port de gestion 1 GbE entouré dans le schéma. Ce port prend en charge la gestion à distance du matériel du contrôleur via Ethernet en utilisant la norme IPMI (Intelligent Platform Management interface).
@@ -472,12 +479,14 @@ Adresse IP statique que vous prévoyez d'utiliser pour le port de gestion BMC
 |===
 
 
+[[port-bond-modes]]
 == Modes de liaison de port
 
 Lorsque link:configuring-network-links.html["configuration des liens réseau"] pour le dispositif SGF6212, vous pouvez utiliser l'agrégation de liens pour les ports connectés au réseau Grid et au réseau client (en option), ainsi que pour les ports de gestion 1/10 GbE connectés au réseau d'administration (en option). L'agrégation de liens contribue à protéger vos données en fournissant des chemins redondants entre les réseaux StorageGRID et le dispositif.
 
 
 
+[[network-bond-modes]]
 === Modes de liaison réseau
 
 Les ports réseau de l'appliance prennent en charge le mode de liaison de port fixe ou le mode de liaison de port agrégé pour les connexions réseau Grid et réseau client.
@@ -563,6 +572,7 @@ NOTE: Si vous choisissez d'utiliser moins de quatre ports réseau, sachez qu'une
 
 
 
+[[network-bond-modes-for-management-ports]]
 === Modes de liaison réseau pour les ports de gestion
 
 Pour les deux ports de gestion 1/10-GbE, vous pouvez choisir le mode de liaison réseau indépendant ou le mode de liaison réseau Active-Backup pour vous connecter au réseau d'administration facultatif.

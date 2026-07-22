@@ -18,6 +18,7 @@ TIP: Au lieu d'utiliser les tableaux, utilisez le manuel fourni avec ConfigBuild
 
 
 
+[[information-needed-to-connect-to-santricity-system-manager-on-storage-controllers]]
 == Informations nécessaires pour la connexion à SANtricity System Manager sur les contrôleurs de stockage
 
 Vous connectez les deux contrôleurs de stockage de l'appliance (les contrôleurs E2800 Series ou EF570) au réseau de gestion que vous utiliserez pour SANtricity System Manager. Les contrôleurs sont situés sur chaque appliance comme suit :
@@ -122,6 +123,7 @@ Doit être :
 |===
 
 
+[[information-needed-to-connect-sg6000-cn-controller-to-admin-network]]
 == Informations nécessaires pour connecter le contrôleur SG6000-CN au réseau Admin
 
 Le réseau d'administration pour StorageGRID est un réseau facultatif, utilisé pour l'administration et la maintenance du système. Le dispositif se connecte au réseau d'administration à l'aide des ports de gestion 1 GbE suivants sur le contrôleur SG6000-CN.
@@ -204,6 +206,7 @@ Sous-réseaux du réseau d'administration (CIDR)
 |===
 
 
+[[information-needed-to-connect-and-configure-1025-gbe-ports-on-sg6000-cn-controller]]
 == Informations nécessaires pour connecter et configurer les ports 10/25 GbE sur le contrôleur SG6000-CN
 
 Les quatre ports 10/25 GbE du contrôleur SG6000-CN se connectent au réseau de réseau StorageGRID et au réseau client en option.
@@ -261,6 +264,7 @@ Port de commutation pour le port 4 (réseau Grid pour mode fixe)
 |===
 
 
+[[information-needed-to-connect-sg6000-cn-controller-to-grid-network]]
 == Informations nécessaires pour connecter le contrôleur SG6000-CN au réseau Grid
 
 Le réseau Grid Network pour StorageGRID est un réseau requis, utilisé pour l'ensemble du trafic StorageGRID interne. L'appareil se connecte au réseau Grid à l'aide des ports 10/25 GbE du contrôleur SG6000-CN.
@@ -326,6 +330,7 @@ Sous-réseaux du réseau de grille (CIDR)
 |===
 
 
+[[information-needed-to-connect-sg6000-cn-controller-to-client-network]]
 == Informations nécessaires pour connecter le contrôleur SG6000-CN au réseau client
 
 Le réseau client pour StorageGRID est un réseau facultatif, généralement utilisé pour fournir l'accès du protocole client à la grille. L'appliance se connecte au réseau client à l'aide des ports 10/25 GbE du contrôleur SG6000-CN.
@@ -396,6 +401,7 @@ Adresse IP statique que vous prévoyez d'utiliser pour le noeud de stockage de l
 |===
 
 
+[[information-needed-to-connect-sg6000-cn-controller-to-bmc-management-network]]
 == Informations nécessaires pour connecter le contrôleur SG6000-CN au réseau de gestion BMC
 
 Vous pouvez accéder à l'interface BMC sur le contrôleur SG6000-CN à l'aide du port de gestion 1 GbE suivant. Ce port prend en charge la gestion à distance du matériel du contrôleur via Ethernet en utilisant la norme IPMI (Intelligent Platform Management interface).
@@ -437,12 +443,14 @@ Adresse IP statique que vous prévoyez d'utiliser pour le port de gestion BMC
 |===
 
 
+[[port-bond-modes]]
 == Modes de liaison de port
 
 Quand link:configuring-network-links.html["configuration des liens réseau"] Pour le contrôleur SG6000-CN, vous pouvez utiliser la liaison de port pour les ports 10/25-GbE qui se connectent au réseau Grid et au réseau client en option, ainsi que les ports de gestion 1-GbE qui se connectent au réseau Admin en option. La liaison de ports contribue à protéger vos données en fournissant des chemins redondants entre les réseaux StorageGRID et l'appliance.
 
 
 
+[[network-bond-modes-for-1025-gbe-ports]]
 === Modes de liaison réseau pour les ports 10/25 GbE
 
 Les ports réseau 10/25-GbE du contrôleur SG6000-CN prennent en charge le mode de liaison de port fixe ou le mode de liaison de port agrégé pour les connexions réseau Grid et réseau client.
@@ -518,6 +526,7 @@ NOTE: Si vous choisissez d'utiliser moins de quatre ports, sachez qu'une ou plus
 
 
 
+[[network-bond-modes-for-1-gbe-management-ports]]
 === Modes de liaison réseau pour les ports de gestion 1 GbE
 
 Pour les deux ports de gestion 1 GbE du contrôleur SG6000-CN, vous pouvez choisir le mode de liaison réseau indépendant ou le mode de liaison réseau Active-Backup pour vous connecter au réseau d'administration facultatif.

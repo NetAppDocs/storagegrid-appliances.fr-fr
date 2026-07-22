@@ -4,6 +4,7 @@
 
 
 
+[[step-4-move-battery-to-the-new-controller]]
 == Étape 4 : déplacer la batterie vers le nouveau contrôleur
 
 Retirez la batterie du contrôleur défectueux et installez-la dans le contrôleur de remplacement.

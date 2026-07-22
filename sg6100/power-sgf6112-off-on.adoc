@@ -15,6 +15,7 @@ Vous pouvez arrêter l'appliance SGF6112 ou le contrôleur SG6100-CN et les reme
 
 
 
+[[shut-down-the-sgf6112-appliance-or-sg6100-cn-controller]]
 == Arrêtez l'appliance SGF6112 ou le contrôleur SG6100-CN
 
 Arrêtez l'appliance pour effectuer une maintenance matérielle.
@@ -60,6 +61,7 @@ Cette commande peut prendre jusqu'à 10 minutes.
 
 
 
+[[power-on-sgf6112-or-sg6100-cn-and-verify-operation]]
 == Mettez le SGF6112 ou le SG6100-CN sous tension et vérifiez le fonctionnement
 
 Mettez le contrôleur sous tension après la fin de la maintenance.

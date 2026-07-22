@@ -16,6 +16,7 @@ CAUTION: Enroulez l'extrémité de la sangle d'un bracelet antistatique autour d
 
 
 
+[[reinstall-cover]]
 == Réinstallez le couvercle
 
 .Avant de commencer

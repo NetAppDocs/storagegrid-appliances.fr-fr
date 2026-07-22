@@ -15,6 +15,7 @@ Retirez le contrôleur SG6000-CN d'une armoire ou d'un rack pour accéder au cap
 
 
 
+[[remove-sg6000-cn-controller-from-cabinet-or-rack]]
 == Retirez le contrôleur SG6000-CN de l'armoire ou du rack
 
 Retirez le contrôleur SG6000-CN d'une armoire ou d'un rack pour accéder au capot supérieur ou pour déplacer le contrôleur à un autre emplacement.
@@ -55,6 +56,7 @@ Après avoir remplacé la pièce, retournez la pièce défectueuse à NetApp, co
 
 
 
+[[reinstall-sg6000-cn-controller-into-cabinet-or-rack]]
 == Réinstallez le contrôleur SG6000-CN dans l'armoire ou le rack
 
 Une fois la maintenance matérielle terminée, réinstallez le contrôleur dans une armoire ou un rack.

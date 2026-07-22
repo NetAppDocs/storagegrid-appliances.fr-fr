@@ -4,6 +4,7 @@
 
 
 
+[[step-5-move-hic-to-new-controller-if-needed]]
 == Étape 5 : déplacer HIC vers le nouveau contrôleur, si nécessaire
 
 Si le contrôleur défectueux est équipé d'une carte d'interface hôte (HIC), déplacez la carte HIC du contrôleur défectueux vers le contrôleur de remplacement.

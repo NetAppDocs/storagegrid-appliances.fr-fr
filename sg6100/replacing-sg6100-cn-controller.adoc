@@ -116,6 +116,9 @@ CAUTION: Si vous souhaitez conserver les données sur les disques, insérez les 
 +
 ... Pour restaurer la configuration du contrôleur BMC afin d'utiliser une adresse IP statique, un masque de réseau et une passerelle, entrez les commandes suivantes :
 +
+`*run-host-command ipmitool lan set 1 ipsrc static*`
+
++
 `*run-host-command ipmitool lan set 1 ipaddr _Appliance_IP_*`
 
 +

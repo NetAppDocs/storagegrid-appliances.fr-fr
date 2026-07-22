@@ -25,6 +25,7 @@ Pour remplacer un lecteur, un boîtier de ventilateur de puissance, un boîtier 
 
 
 
+[[sg5712-component-replacement-instructions]]
 == Instructions de remplacement des composants SG5712
 
 [cols="1a,3a"]
@@ -47,6 +48,7 @@ link:https://docs.netapp.com/us-en/e-series/maintenance-e2800/canisters-fan-supe
 |===
 
 
+[[sg5760-component-replacement-instructions]]
 == Instructions de remplacement des composants SG5760
 
 [cols="1a,3a"]
