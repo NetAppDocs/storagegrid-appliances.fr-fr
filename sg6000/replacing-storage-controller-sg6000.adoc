@@ -118,12 +118,10 @@ La carte d'interface hôte 4 ports (HIC). Cette carte doit être déplacée vers
 [[step-2-take-the-controller-offline]]
 == Étape 2 : mettre le contrôleur hors ligne
 
-Vous préparer à retirer le contrôleur défectueux et à le mettre hors ligne.
+Préparez-vous à retirer le contrôleur défaillant et à le mettre hors ligne. Utilisez SANtricity System Manager pour effectuer ces étapes.
 
 .Étapes
-. Préparez-vous à retirer le contrôleur. Ces étapes sont réalisées à l'aide de SANtricity System Manager.
-+
-.. Vérifiez que le numéro de référence de la référence de remplacement du contrôleur défectueux est identique à celui de la référence de l'unité remplaçable sur site du contrôleur de remplacement.
+. Vérifiez que le numéro de référence de la référence de remplacement du contrôleur défectueux est identique à celui de la référence de l'unité remplaçable sur site du contrôleur de remplacement.
 +
 Lorsqu'un contrôleur présente une défaillance et doit être remplacé, la référence du remplacement est affichée dans la zone Détails du Recovery Guru. Si vous avez besoin de trouver ce numéro manuellement, vous pouvez consulter l'onglet *base* du contrôleur.
 
@@ -131,19 +129,16 @@ Lorsqu'un contrôleur présente une défaillance et doit être remplacé, la ré
 
 CAUTION: *Perte possible de l'accès aux données et#8212;* si les deux numéros de pièce ne sont pas les mêmes, ne pas tenter cette procédure.
 
-.. Sauvegardez la base de données de configuration.
+. Sauvegardez la base de données de configuration.
 +
 Si un problème survient lorsque vous supprimez un contrôleur, vous pouvez utiliser le fichier enregistré pour restaurer votre configuration.
 
-.. Collecte des données d'assistance pour l'appareil.
+. Collecte des données d'assistance pour l'appareil.
 +
 
 NOTE: La collecte des données de support avant et après le remplacement d'un composant vous permet d'envoyer un ensemble complet de journaux au support technique si le remplacement ne résout pas le problème.
 
-.. Mettre le contrôleur que vous prévoyez de remplacer hors ligne.
-
-
-. Met le tiroir contrôleur hors tension.
+. Mettre le contrôleur que vous prévoyez de remplacer hors ligne.
 
 
 

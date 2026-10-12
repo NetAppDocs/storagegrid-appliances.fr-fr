@@ -67,7 +67,7 @@ Conservez les matériaux d'emballage à utiliser lors de l'expédition du contr�
 [[step-2-take-the-controller-offline]]
 == Étape 2 : mettre le contrôleur hors ligne
 
-Vous préparer à retirer le contrôleur défectueux et à le mettre hors ligne. Vous pouvez utiliser SANtricity System Manager pour effectuer ces étapes.
+Préparez-vous à retirer le contrôleur défaillant et à le mettre hors ligne. Vous pouvez utiliser SANtricity System Manager pour effectuer ces étapes.
 
 .Étapes
 . Vérifiez que le numéro de référence de la référence de remplacement du contrôleur défectueux est identique à celui de la référence de l'unité remplaçable sur site du contrôleur de remplacement.

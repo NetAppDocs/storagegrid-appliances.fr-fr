@@ -11,7 +11,7 @@ summary:
 
 
 [role="lead"]
-Vous devrez peut-être remplacer un contrôleur E4000 s'il ne fonctionne pas de manière optimale ou s'il est défectueux.
+Vous devrez peut-être remplacer un contrôleur E4000 s'il ne fonctionne pas de manière optimale ou s'il est tombé en panne.
 
 .Avant de commencer
 * Vous disposez d'un contrôleur de remplacement avec la même référence que le contrôleur que vous remplacez.
@@ -67,7 +67,7 @@ Conservez les matériaux d'emballage à utiliser lors de l'expédition du contr�
 [[step-2-take-the-controller-offline]]
 == Étape 2 : mettre le contrôleur hors ligne
 
-Vous préparer à retirer le contrôleur défectueux et à le mettre hors ligne. Vous pouvez utiliser SANtricity System Manager pour effectuer ces étapes.
+Préparez-vous à retirer le contrôleur défaillant et à le mettre hors ligne. Vous pouvez utiliser SANtricity System Manager pour effectuer ces étapes.
 
 .Étapes
 . Vérifiez que le numéro de référence de la référence de remplacement du contrôleur défectueux est identique à celui de la référence de l'unité remplaçable sur site du contrôleur de remplacement.
@@ -135,6 +135,7 @@ CAUTION: Pour éviter de dégrader les performances, ne pas tordre, plier, pince
 
 Votre contrôleur de remplacement peut être livré avec des pièces préinstallées. Déterminer quelles pièces doivent être transférées vers le boîtier de contrôleur de remplacement.
 
+.Étapes
 . Placez le contrôleur de remplacement sur une surface plane et antistatique, le capot amovible orienté vers le haut.
 . Ouvrez le capot en appuyant sur les boutons bleus situés sur les côtés du boîtier du contrôleur pour libérer le capot, puis faites pivoter le capot vers le haut et hors du boîtier du contrôleur.
 . Déterminez si le contrôleur de remplacement contient une batterie et/ou des modules DIMM. Si c'est le cas, réinstallez le capot du contrôleur et passez à l' <<step8_replace_controller,Étape 8 : remplacer le contrôleur>>. Sinon :

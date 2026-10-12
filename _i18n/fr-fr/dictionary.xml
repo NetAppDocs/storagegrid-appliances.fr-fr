@@ -3460,7 +3460,6 @@ Voir les informations sur la gestion des objets avec la gestion du cycle de vie 
   <block id="ac4aec48ca363c61bde0b90a6357d2e0" category="list-text">Déballez le nouveau contrôleur et placez-le sur une surface plane et sans électricité statique.</block>
   <block id="71e69069470b78afcfd4256b5538ddde" category="paragraph">Conservez les matériaux d'emballage à utiliser lors de l'expédition du contrôleur défectueux.</block>
   <block id="e5a03effd8c40e9251d96a430d99a606" category="list-text">Localisez les étiquettes d'adresse MAC et de référence des FRU à l'arrière du contrôleur de remplacement.</block>
-  <block id="e8eb7bc58567e1c605a82158f0f62428" category="list-text">Préparez-vous à retirer le contrôleur. Ces étapes sont réalisées à l'aide de SANtricity System Manager.</block>
   <block id="270d6e2086af600326a1899c14eefca1" category="list-text">Vérifiez que le numéro de référence de la référence de remplacement du contrôleur défectueux est identique à celui de la référence de l'unité remplaçable sur site du contrôleur de remplacement.</block>
   <block id="3a3cd7aeaa367cf5f0aa0b6e9c59f5d6" category="paragraph">Lorsqu'un contrôleur présente une défaillance et doit être remplacé, la référence du remplacement est affichée dans la zone Détails du Recovery Guru. Si vous avez besoin de trouver ce numéro manuellement, vous pouvez consulter l'onglet *base* du contrôleur.</block>
   <block id="96f2b7281e6f62383360de5bc3626f95" category="admonition">*Perte possible de l'accès aux données et#8212;* si les deux numéros de pièce ne sont pas les mêmes, ne pas tenter cette procédure.</block>
@@ -3734,7 +3733,6 @@ Voir les informations sur la gestion des objets avec la gestion du cycle de vie 
   <block id="b2f9b08b9c77fd0d4c43b02ecac55483" category="paragraph">Installez le contrôleur de remplacement et vérifiez qu'il a rejoint la grille.</block>
   <block id="2afc7927e5f45cc2a3ef83b60ea186cd" category="list-text">Mettez le tiroir contrôleur sous tension.</block>
   <block id="944f002f126d9f60a7abfb7abb8b19a6" category="section-title">Étape 1 : préparer le contrôleur de remplacement</block>
-  <block id="7dc8820948fbd0653bf70cd43dd02d4c" category="paragraph">Vous préparer à retirer le contrôleur défectueux et à le mettre hors ligne.</block>
   <block id="eb10eb07d3a38a1d82d1975eb3a3c409" category="list-text">Si le chiffrement de disque matériel de l'appliance que vous avez remplacée est activé pour les disques SED, vous devez le faire <block ref="f97e47907b7e5dda63e0ea22475313d7" category="inline-link-macro-rx"></block> pour accéder aux disques chiffrés lorsque l'appliance de remplacement démarre pour la première fois.</block>
   <block id="b01853030b7f0a28704ab7f8c1c35ee8" category="list-text">Si le chiffrement de disque de l'appliance que vous avez remplacée a été activé pour les lecteurs SED, vous devez le faire <block ref="f97e47907b7e5dda63e0ea22475313d7" category="inline-link-macro-rx"></block> pour accéder aux disques chiffrés lorsque l'appliance de remplacement démarre pour la première fois.</block>
   <block id="f98925abc6cb4377ae64ff1ac4820659" category="paragraph">Si le contrôleur défectueux est équipé d'une carte d'interface hôte (HIC), déplacez la carte HIC du contrôleur défectueux vers le contrôleur de remplacement.</block>
@@ -4792,7 +4790,6 @@ Libérez le contrôleur de l'appareil en appuyant sur le loquet de la poignée d
   <block id="4172e18c4b5f5ded61ea837b6d174a70" category="paragraph">Vous devrez peut-être remplacer un contrôleur E4000 s'il ne fonctionne pas de manière optimale ou s'il est défectueux.</block>
   <block id="58bdf6822075a4522e563db052cfb6b5" category="list-text">Une alerte Grid Manager indique une panne du contrôleur de stockage. Dans SANtricity System Manager, Grid Manager ou Recovery Guru vous demande de remplacer le contrôleur.</block>
   <block id="6699424a5a659b766310c519be0f253d" category="paragraph">Préparez le contrôleur E4000 de remplacement.</block>
-  <block id="360f56d807bee32cc6fcc9d9bfb9b6f5" category="paragraph">Vous préparer à retirer le contrôleur défectueux et à le mettre hors ligne. Vous pouvez utiliser SANtricity System Manager pour effectuer ces étapes.</block>
   <block id="fe4869120ffec76b394daa282d99bd5b" category="paragraph">Déposer un boîtier de contrôleur.</block>
   <block id="1a2315b8628ae30414325b0eac31bb35" category="paragraph">Retirez la batterie du contrôleur défectueux et installez-la dans le contrôleur de remplacement si nécessaire.</block>
   <block id="29f964bec5ac520e4a2bd92eb3884f71" category="list-text">Déplacez la batterie dans le boîtier de contrôleur de remplacement et installez-la :</block>
@@ -5568,7 +5565,6 @@ Affiche Oui, indiquant qu'il est possible de retirer ce composant en toute sécu
   <block id="9cb2effa5447f497640162f9043211b9" category="section-title">Le réseau client peut être configuré sans adresse IP</block>
   <block id="9b21fb91c113bca08c0dafc981fbde3c" category="paragraph">Vous pouvez désormais activer le réseau client sans spécifier d’adresse IP.  Cela permet au réseau client d'avoir des interfaces VLAN configurées dans StorageGRID sans nécessiter une adresse IP supplémentaire pour l'interface elle-même. <block ref="eed0824756b778339518fbc737f79ca8" category="inline-link-macro-rx"></block> .</block>
   <block id="35fbd63802091eabd711a8d6c290ea7e" category="section-title">Alignement des numéros de version du logiciel StorageGRID et du programme d'installation de l'appliance</block>
-  <block id="07df4015289344b98ba5f422f4375357" category="paragraph">Avec la version 12.0 de StorgeGRID, le numéro de version du programme d'installation de l'appliance StorageGRID correspond à la version du logiciel StorageGRID .  Les utilisateurs n’ont plus besoin de déterminer quelles versions fonctionnent ensemble. <block ref="d2475d6316f915c8f13cbc6042a2740a" category="inline-link-macro-rx"></block> .</block>
   <block id="cc40ed7be5c299ae5a8b275911b0f977" category="paragraph">Des informations détaillées sur l'utilisation de l'interface BMC de l'appliance StorageGRID sont désormais disponibles. <block ref="df528c7928eba5c1226970c2705dfb3a" category="inline-link-macro-rx"></block> .</block>
   <block id="7fb4dbe99c9c5f63516376b6bf611317" category="sidebar">Documentation de StorageGRID 12.0</block>
   <block id="ca92eb1bedb20765e52302f985f5f837" category="sidebar">Mise à niveau du micrologiciel du lecteur (méthode de redémarrage automatique)</block>
@@ -6599,4 +6595,8 @@ Affiche Oui, indiquant qu'il est possible de retirer ce composant en toute sécu
   <block id="04d321322c8bed5ea3ecf52d0cc925ff" category="paragraph">Accédez à <block ref="96bdbd25d3882b5d0b14b10ec28bb02d" category="inline-link-rx"></block> pour savoir comment configurer et utiliser un système StorageGRID 12.1.</block>
   <block id="db37c78d5faa7061d7b5039209b440c1" category="list-text"><block ref="db37c78d5faa7061d7b5039209b440c1" category="inline-link-rx"></block></block>
   <block id="d70a1ab70742f2af598f9acb795fc0f2" category="sidebar">Documentation StorageGRID 12.1</block>
+  <block id="773b50832a8313c20ea7f7ec3cb3c5e4" category="paragraph">Préparez-vous à retirer le contrôleur défaillant et à le mettre hors ligne. Utilisez SANtricity System Manager pour effectuer ces étapes.</block>
+  <block id="5e4e9f34966ee54cc6cc4af50cd4835c" category="paragraph">Vous devrez peut-être remplacer un contrôleur E4000 s'il ne fonctionne pas de manière optimale ou s'il est tombé en panne.</block>
+  <block id="d23e59635824c5cc5d1b8b63a31f939f" category="paragraph">Préparez-vous à retirer le contrôleur défaillant et à le mettre hors ligne. Vous pouvez utiliser SANtricity System Manager pour effectuer ces étapes.</block>
+  <block id="46d7056058f07da95a8d94d297493eb9" category="paragraph">Avec StorageGRID version 12.0, le numéro de version du programme d'installation de l'appliance StorageGRID correspond à la version du logiciel StorageGRID. Les utilisateurs n'ont plus besoin de déterminer quelles versions fonctionnent ensemble. Voir <block ref="d2475d6316f915c8f13cbc6042a2740a" category="inline-link-macro-rx"></block>.</block>
 </blocks>

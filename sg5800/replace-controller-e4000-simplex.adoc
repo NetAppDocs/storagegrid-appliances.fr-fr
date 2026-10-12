@@ -154,6 +154,7 @@ CAUTION: Pour éviter de dégrader les performances, ne pas tordre, plier, pince
 
 Votre contrôleur de remplacement peut être livré avec des pièces préinstallées. Déterminer quelles pièces doivent être transférées vers le boîtier de contrôleur de remplacement.
 
+.Étapes
 . Placez le contrôleur de remplacement sur une surface plane et antistatique, le capot amovible orienté vers le haut.
 . Ouvrez le capot en appuyant sur les boutons bleus situés sur les côtés du boîtier du contrôleur pour libérer le capot, puis faites pivoter le capot vers le haut et hors du boîtier du contrôleur.
 . Déterminez si le contrôleur de remplacement contient une batterie et/ou des modules DIMM. Si c'est le cas, réinstallez le capot du contrôleur et passez à l' <<step8_replace_controller,Étape 8 : remplacer le contrôleur>>. Sinon :
